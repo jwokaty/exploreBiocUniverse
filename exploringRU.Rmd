@@ -1,0 +1,142 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Install [universe](https://github.com/ropensci/universe/) package.
+
+```{r install_universe}
+install.packages("universe", repos = "https://ropensci.r-universe.dev")
+library(universe)
+options(max.print = 3000L)
+```
+
+Get information for all Bioconductor packages in R Universe
+
+```{r}
+ru_pkgs_with_info <- universe_all_packages("bioc", limit = 3000L)
+
+# Available data
+str(ru_pkgs_with_info[1])
+
+# What packages are in bioc universe?
+ru_pkgs <- universe_ls("bioc")
+```
+
+# Get information for all Bioconductor packages in BBS
+
+```{r}
+library(BiocPkgTools)
+
+bioc_version <- BiocManager::version()
+print(paste("Bioconductor version:", bioc_version))
+
+bbs_pkgs_with_info <- BiocPkgTools::biocBuildReport(version = bioc_version,
+                                                    pkgType = "software")
+bbs_pkgs <- unlist(unique(bbs_pkgs_with_info$pkg))
+```
+
+Helper functions
+```{r}
+# There's probably a set operation to do this somewhere?
+# Check if elements in a vector are in another vector
+not_in <- function(xs, ys) {
+  zs <- c()
+  for (x in xs) {
+    if (!(x %in% ys)) {
+      zs <- c(zs, x)
+    }
+  }
+  zs
+}
+```
+
+# Learn more about what packages are in Bioc U but not BBS
+
+```{r}
+library(dplyr)
+data.frame(RU = length(ru_pkgs), BBS = length(bbs_pkgs),
+           row.names = c("Total"))
+not_in_ru <- not_in(bbs_pkgs, ru_pkgs)
+not_in_bbs <- not_in(ru_pkgs, bbs_pkgs)
+
+# There's probably a better way to do this
+pkgs_not_in_bbs <- data.frame(Package = character(), Version = character(), 
+                              Created = character(), Published = character(),
+                              RemoteUrl = character())
+
+for (pkg in not_in_bbs) {
+  pi <- universe_one_package("bioc", pkg)
+  pkgs_not_in_bbs <- pkgs_not_in_bbs |>
+    add_row(Package = pi$Package, Version = pi$Version,
+            Created = pi$`_created`, Published = pi$`_published`,
+            RemoteUrl = pi$RemoteUrl)
+}
+
+```
+
+Why do the above packages show up in the API?
+They're likely added via 
+https://github.com/r-universe/bioc/blob/master/.remotes.json by the maintainers.
+
+# Use the dbdump endpoint with read_bson to dump the API
+
+Use `read_bson` to dump API data into a db
+
+```{r}
+#BiocManager::install("mongolite")
+library(mongolite)
+bioc <- mongolite::read_bson('https://bioc.r-universe.dev/api/dbdump')
+```
+
+# Making sense of runiverse's build status in respect to R CMD build, check, etc.
+
+Looking at the status of linux x86_64 binary builds. The build "status" appears
+to get "success" or "failure" from the GitHub Action overall. The "check" value
+corresponds to `R CMD check`. I interpret the result of "status" to be
+"success" OK and "failure" ERROR for `R CMD build` and NA if some other value?
+
+Some packages don't seem to have a build. I've flagged with a comment for
+additional investigation.
+
+```{r}
+
+ru_status <- data.frame(Package = character(), Version = character(), 
+                        Status = character(), Build = character(),
+                        Check = character(), Comment = character())
+                        #, Buildurl = character(),
+                        # Commit = character())
+
+for (p in ru_pkgs_with_info) {
+  build <- c(status = NA, build = NA, check = NA) #, buildurl = NA)
+  tryCatch({
+    for (b in p$`_binaries`) {
+      if (b$os == "linux" && b$r == "4.5.0") {
+        build <- c(status = b$status, check = b$check)
+             #      ,buildurl = b$buildurl)
+        break
+      }
+    }
+    if (build["status"] == "success") {
+      build["build"] <- "OK"
+    } else if (build["status"] == "failure") {
+      build["build"] <- "ERROR"
+    } else {
+      build["build"] <- NA
+    }
+    comment = ""
+  },
+    error = function(e) {
+      comment = "Was there a build?"
+    }
+  )
+    
+  ru_status <- ru_status |>
+    add_row(Package = p$Package, Version = p$Version, Status = build["status"],
+            Build = build["build"], Check = build["check"], Comment = comment)
+            #, Buildurl = build["buildurl"], Commit = p$`_commit`$id)
+}
+
+# order by Package
+ru_status[order(ru_status$Package), ]
+```
