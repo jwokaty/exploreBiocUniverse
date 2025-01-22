@@ -257,16 +257,13 @@ In some cases, like alabaster.matrix the BBS and R Universe are building differe
 bbs_ru_comparison |> filter(version.x != version.y)
 ```
 
-Except for zlibbioc, deprecated packages like https://bioc.r-universe.dev/chromstaR
-appear to be already removed.
+Except for zlibbioc, deprecated packages like https://bioc.r-universe.dev/chromstaR appear to be already removed.
 
 ```{r}
 bbs_ru_comparison |> filter(Deprecated == TRUE)
 ```
 
-If I focus on same version, removing deprecated packages for builds on x86_64
-Linux for R 4.5, we have just under 200 packages where the BBS and R Universe's
-results don't agree.
+If I focus on same version, removing deprecated packages for builds on x86_64 Linux for R 4.5, we have just under 200 packages where the BBS and R Universe's results don't agree.
 
 ```{r}
 bbs_ru_not_ok2 <- bbs_ru_comparison |>
@@ -284,3 +281,104 @@ If a package repo isn't accessible or an error exists in the DESCRIPTION file, t
 For example, on 1/21 pwalign had an error in its DESCRIPTION file: https://github.com/r-universe/bioc/actions/runs/12879471865. The error is not shown from the bioc R Universe landing page for pwalign, although its discoverable through the link in the sidebar.
 
 Currently, this information is available on the BBS but I wonder if this information is available somewhere for R Universe OR if it would be necessary given that developers would be able to inspect their builds sooner.
+
+# Summary
+
+## Packages not in one or the other
+
+There are 6 packages not in the BBS that have been added by maintainers via the .remotes.json file.
+
+```{r}
+pkgs_not_in_bbs
+```
+
+There are 15 packages not in Bioc R Universe.
+
+```{r}
+not_in_ru
+```
+
+## We can use read_bson to dump the API into a mongodb:
+
+```{r}
+library(mongolite)
+bioc <- mongolite::read_bson('https://bioc.r-universe.dev/api/dbdump')
+```
+
+## Comparison
+
+There is about a difference of 10 packages between the repositories:
+
+```{r}
+data.frame(RU = length(ru_pkgs), BBS = length(bbs_pkgs),
+           row.names = c("Total"))
+```
+
+R Universe has a "status" corresponding to the build, which can be "success", "failure", or "canceled". (There could be other values.) It only has a "check" field that corresponds to the value of R CMD check, which has values of "NOTE", "WARNING" (no S), "OK", or "ERROR". I can guess R CMD build for R Universe is OK for status of "success" and ERROR, TIMEOUT, or skipped for "failure". I leave "canceled" as CANCELED.
+
+Examples: FRASER was canceled.enhancerHomologSearch and erma have compilation failures in R Universe but ok in the BBS.
+
+Except for zlibbioc, deprecated are removed immediately, which is why BEARscc, chromstaR, etc., don't appear.
+
+If a package has bad DESCRIPTION file, the error isn't shown on the individual package landing page; instead, it's shown as an error syncing the registry at https://github.com/r-universe/bioc/actions/workflows/sync.yml.
+
+About 4 packages don't have builds for Intel Linux with R 4.5. It's also not clear how we can make them do that specific build.
+
+```{r}
+bbs_ru_not_ok |>
+  filter(is.na(build.y) & is.na(check.y) & !is.na(version.y))
+```
+
+For example, MungeSumStats is in Bioc R Universe, but it doesn't have an R 4.5 build. From https://github.com/r-universe/bioc/actions/runs/12405409999, there are No space left on device errors. It's not clear if the problem is the runner or the package.
+
+motifbreakR also does not have an x86_64 Linux R 4.5 build on R Universe. The workflow is using an Ubuntu 22 image with R 4.4.2: https://github.com/r-universe/bioc/actions/runs/12803095027/job/35960426692. Refreshing the build retrying the failed build with the button from the dashboard does not correct the problem so how do we get it to build for R 4.5?
+
+About 5 packages, like alabaster.matrix, have different versions in Bioc R Universe and the BBS:
+
+```{r}
+bbs_ru_comparison |> filter(version.x != version.y)
+```
+
+If we remove deprecated packages, packages with wrong versions, and packages that don't have x86_64 linux for R 4.5 builds, we have just under 200 packages that don't agree.
+
+```{r}
+bbs_ru_not_ok2 <- bbs_ru_comparison |>
+  filter(build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE"))) |>
+  filter(Deprecated == FALSE & version.x == version.y & !is.na(status)) |>
+  select(pkg, version.x, install, build.x, build.y, check.x, check.y, status, comment)
+names(bbs_ru_not_ok2) <- c("pkg", "version", "install", "build.bbs", "build.ru",
+                           "check.bbs", "check.ru", "status.ru", "comment")
+```
+
+Lastly, when I look at the builds, they're using various repositories, such p3m,
+r-universe, etc. This might be okay as long as the resulting binaries/tarballs
+are the generally the same. Looking at XVector for both, both the BBS and R
+Universe inject some additional information. R Universe also creates an `extra`
+directory that has citations, manuals, etc.
+
+```
+diff -r bbsXVector_0.47.2 ruXVector_0.47.2
+diff -r bbsXVector_0.47.2/XVector/DESCRIPTION ruXVector_0.47.2/XVector/DESCRIPTION
+5c5
+< 	"externally" (e.g. behind an R external pointer, or on disk).
+---
+>         "externally" (e.g. behind an R external pointer, or on disk).
+28,33c28,31
+< git_url: https://git.bioconductor.org/packages/XVector
+< git_branch: devel
+< git_last_commit: 9f44218
+< git_last_commit_date: 2025-01-07
+< Repository: Bioconductor 3.21
+< Date/Publication: 2025-01-08
+---
+> Repository: https://bioc.r-universe.dev
+> RemoteUrl: https://github.com/bioc/XVector
+> RemoteRef: HEAD
+> RemoteSha: 9f44218308f9d5867f0b9df5fae60d217f4e7d65
+35c33
+< Packaged: 2025-01-09 00:57:29 UTC; biocbuild
+---
+> Packaged: 2025-01-08 03:05:41 UTC; root
+Only in ruXVector_0.47.2/XVector: extra
+Only in ruXVector_0.47.2/XVector: manual.pdf
+```
