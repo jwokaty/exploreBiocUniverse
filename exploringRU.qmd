@@ -1,0 +1,286 @@
+---
+title: "exploringRU"
+format: html
+editor: visual
+---
+
+# bioc R Universe
+
+We can use the [universe](https://github.com/ropensci/universe/) package to explore the R Universe API. (We might need to increase the `max.print` to show all packages.)
+
+```{r install_universe}
+install.packages("universe", repos = "https://ropensci.r-universe.dev")
+library(universe)
+options(max.print = 3000L)
+```
+
+Get data for the bioc Universe.
+
+```{r}
+ru_pkgs_with_info <- universe_all_packages("bioc", limit = 3000L)
+```
+
+The structure of a package looks like
+
+```{r}
+str(ru_pkgs_with_info[1])
+```
+
+What packages are in bioc universe?
+
+```{r}
+ru_pkgs <- universe_ls("bioc")
+ru_pkgs
+```
+
+# BBS
+
+Get Bioconductor packages in BBS
+
+```{r}
+library(BiocPkgTools)
+
+bbs_pkgs_with_info <- BiocPkgTools::biocBuildReport(
+  version = BiocManager::version(),
+  pkgType = "software")
+bbs_pkgs <- unlist(unique(bbs_pkgs_with_info$pkg))
+bbs_pkgs
+```
+
+Helper function to check items from a vector not in another vector
+
+```{r}
+# There's probably a set operation to do this somewhere?
+# Check if elements in a vector are in another vector
+not_in <- function(xs, ys) {
+  zs <- c()
+  for (x in xs) {
+    if (!(x %in% ys)) {
+      zs <- c(zs, x)
+    }
+  }
+  zs
+}
+```
+
+What packages are in bioc R Universe but not the BBS?
+
+```{r}
+library(dplyr)
+
+data.frame(RU = length(ru_pkgs), BBS = length(bbs_pkgs),
+           row.names = c("Total"))
+
+not_in_ru <- not_in(bbs_pkgs, ru_pkgs)
+not_in_bbs <- not_in(ru_pkgs, bbs_pkgs)
+
+# There's probably a better way to do this
+pkgs_not_in_bbs <- data.frame(Package = character(), Version = character(), 
+                              Created = character(), Published = character(),
+                              RemoteUrl = character())
+not_in_ru
+
+for (pkg in not_in_bbs) {
+  pi <- universe_one_package("bioc", pkg)
+  pkgs_not_in_bbs <- pkgs_not_in_bbs |>
+    add_row(Package = pi$Package, Version = pi$Version,
+            Created = pi$`_created`, Published = pi$`_published`,
+            RemoteUrl = pi$RemoteUrl)
+}
+
+pkgs_not_in_bbs
+
+```
+
+Why do the above packages show up in the API? They're likely added via https://github.com/r-universe/bioc/blob/master/.remotes.json by the maintainers.
+
+# Important: Use the dbdump endpoint with read_bson to dump the API
+
+Use `read_bson` to dump API data into a db
+
+```{r}
+#BiocManager::install("mongolite")
+library(mongolite)
+bioc <- mongolite::read_bson('https://bioc.r-universe.dev/api/dbdump')
+
+# Note: it returns 2268 records rather than 2276 (fewer retrieved through
+# another endpoint)
+```
+
+# Making sense of R Universe's build status in respect to R CMD build, check, etc.
+
+Looking at the status of linux x86_64 binary builds. The build "status" appears to get "success", "failure", or "cancelled" from the GitHub Action overall. The "check" value corresponds to `R CMD check`. I interpret the result of "status" to be "success" OK and "failure" ERROR for `R CMD build`. We'll use CANCELLED as it is. There's also a special status for documentation, which I haven't included.
+
+Some packages don't seem to have a build (those with NAs). I've flagged with a comment for additional investigation.
+
+-   FRASER was CANCELLED
+-   enhancerHomologSearch appears to have a compilation failure: https://bioc.r-universe.dev/api/packages/enhancerHomologSearch. It's okay in the BBS: https://bioconductor.org/checkResults/3.21/bioc-LATEST/enhancerHomologSearch/
+-   erma has a similar failure: https://bioc.r-universe.dev/api/packages/erma
+
+Packages with my comment "Was there a build?" did have data in the API; however, they didn't have builds at least on x86_64 linux with R 4.5.
+
+```{r}
+ru_status <- data.frame(Package = character(), Version = character(), 
+                        Status = character(), Build = character(),
+                        Check = character(), Comment = character())
+                        #, Buildurl = character(),
+                        # Commit = character())
+
+for (p in ru_pkgs_with_info) {
+  build <- c(status = NA, build = NA, check = NA, buildurl = NA)
+  comment = ""
+  for (b in p$`_binaries`) {
+    if (b$os == "linux" && b$r == "4.5.0") {
+      build <- c(status = b$status, check = b$check, buildurl = b$buildurl)
+      break
+    }
+  }
+  if (is.na(build["status"])) {
+    comment = "Was there a build?" 
+  } else if (build["status"] == "success") {
+    build["build"] <- "OK"
+  } else if (build["status"] == "failure") {
+    build["build"] <- "ERROR, TIMEOUT, or skipped"
+    comment = build["buildurl"]
+  } else if (build["status"] == "cancelled") {
+    build["build"] <- "CANCELLED"
+    comment = build["buildurl"]
+  }
+  ru_status <- ru_status |>
+    add_row(Package = p$Package, Version = p$Version, Status = build["status"],
+            Build = build["build"], Check = build["check"], Comment = comment)
+            #, Buildurl = build["buildurl"], Commit = p$`_commit`$id)
+}
+
+# order by Package
+ru_status <- ru_status[order(ru_status$Package), ] 
+ru_status
+```
+
+# Packages in the BBS
+
+```{r}
+library(purrr)
+
+# Helper functions
+get_result <- function(x) {
+  entry <- bbs_pkgs_with_info |>
+    filter(pkg == x["pkg"], stage == x["stage"], node == x["node"])
+  if (dim(entry)[1] == 0) {
+    entry <- ""
+  } else {
+    entry$result
+  }
+}
+
+get_install <- function(pkg) {
+  get_result(c(pkg = pkg, stage = "install", node = "nebbiolo1"))
+}
+
+get_build <- function(pkg) {
+  get_result(c(pkg = pkg, stage = "buildsrc", node = "nebbiolo1"))
+}
+
+get_check <- function(pkg) {
+  get_result(c(pkg = pkg, stage = "checksrc", node = "nebbiolo1"))
+}
+
+bbs_status <- bbs_pkgs_with_info |>
+  filter(node == "nebbiolo1") |>
+  select(pkg, version, Deprecated) |>
+  distinct(pkg, .keep_all = TRUE) |>
+  mutate(install = map_chr(pkg, get_install)) |>
+  mutate(build = map_chr(pkg, get_build)) |>
+  mutate(check = map_chr(pkg, get_check))
+
+bbs_status
+
+#bbs_status["install"] <- NA
+#bbs_status["build"] <- NA
+#bbs_status["check"] <- NA
+#
+#for (i in 1:dim(bbs_pkgs_with_info)[1]) {
+#  stage <- bbs_pkgs_with_info[i, ]$stage
+#  if (stage %in% c("install", "buildsrc", "checksrc")) {
+#    pkg <- bbs_pkgs_with_info[i, ]$pkg
+#   stage <- bbs_pkgs_with_info[i, ]$stage
+#    result <- bbs_pkgs_with_info[i, ]$result
+#    bbs_status[bbs_status$pkg == pkg, ][gsub("src", "", stage)] <- result
+#  }
+#}
+```
+
+# Compare the two
+
+We can only compare check and build, so we'll check if those columns agree. Note that in the BBS, check can show "WARNINGS" whereas R Universe can show "WARNING" (no s) as well as "OK", "NOTE", "ERROR", or NA.
+
+```{r}
+
+names(ru_status) <- c("pkg", "version", "status", "build", "check", "comment")
+bbs_ru_comparison <- merge(x = bbs_status, y = ru_status, by = "pkg",
+                           all.x = TRUE)
+bbs_ru_not_ok <- bbs_ru_comparison |>
+  filter(build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE")))
+
+# Packages not in agreement between BBS and R Universe
+bbs_ru_not_ok
+```
+
+About \~220 packages are not in agreement regarding build status.
+
+```{r}
+# Build or Check is NA for R Universe
+ru_nas <- bbs_ru_not_ok |>
+  filter(is.na(build.y) | is.na(check.y)) |>
+  select(pkg, build.y, check.y, comment)
+
+# Packages not in R Universe
+bbs_ru_not_ok |>
+  filter(is.na(build.y) & is.na(check.y) & is.na(version.y) & is.na(comment))
+
+# Packages in bioc R Universe but without an x86_64 Linux build for R 4.5
+bbs_ru_not_ok |>
+  filter(is.na(build.y) & is.na(check.y) & !is.na(version.y))
+```
+
+\~27 packages don't appear to have x86_64 Linux R 4.5 builds in R Universe.
+
+For example, MungeSumStats is in Bioc R Universe, but it doesn't have an R 4.5 build. From https://github.com/r-universe/bioc/actions/runs/12405409999, there are `No space left on device` errors. It's not clear if the problem is the runner or the package.
+
+motifbreakR also does not have an x86_64 Linux R 4.5 build on R Universe. The workflow is using an Ubuntu 22 image with R 4.4.2: https://github.com/r-universe/bioc/actions/runs/12803095027/job/35960426692. Refreshing the build retrying the failed build with the button from the dashboard does not correct the problem so how do we get it to build for R 4.5?
+
+paxtoolsr should be in Bioc R Universe, but it isn't. Why?
+
+In some cases, like alabaster.matrix the BBS and R Universe are building different versions:
+
+```{r}
+bbs_ru_comparison |> filter(version.x != version.y)
+```
+
+Except for zlibbioc, deprecated packages like https://bioc.r-universe.dev/chromstaR
+appear to be already removed.
+
+```{r}
+bbs_ru_comparison |> filter(Deprecated == TRUE)
+```
+
+If I focus on same version, removing deprecated packages for builds on x86_64
+Linux for R 4.5, we have just under 200 packages where the BBS and R Universe's
+results don't agree.
+
+```{r}
+bbs_ru_not_ok2 <- bbs_ru_comparison |>
+  filter(build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE"))) |>
+  filter(Deprecated == FALSE & version.x == version.y & !is.na(status)) |>
+  select(pkg, version.x, install, build.x, build.y, check.x, check.y, status, comment)
+names(bbs_ru_not_ok2) <- c("pkg", "version", "install", "build.bbs", "build.ru",
+                           "check.bbs", "check.ru", "status.ru", "comment")
+```
+
+# Other
+
+If a package repo isn't accessible or an error exists in the DESCRIPTION file, there will be an error in the registry for that submodule and it will show up at https://github.com/r-universe/bioc/actions/workflows/sync.yml. The red triangle on https://bioc.r-universe.dev/ will take you to the specific workflow error.
+
+For example, on 1/21 pwalign had an error in its DESCRIPTION file: https://github.com/r-universe/bioc/actions/runs/12879471865. The error is not shown from the bioc R Universe landing page for pwalign, although its discoverable through the link in the sidebar.
+
+Currently, this information is available on the BBS but I wonder if this information is available somewhere for R Universe OR if it would be necessary given that developers would be able to inspect their builds sooner.
