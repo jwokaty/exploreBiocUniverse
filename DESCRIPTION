@@ -1,0 +1,13 @@
+Package: exploreBiocUniverse 
+Title: Compare Bioconductor package build results in R-universe and the BBS 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Andres", "Wokaty", role = c("aut", "cre"))
+Description: Attempts to compare the build results for Bioconductor packages
+    in R-universe and the BBS. 
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Imports: BiocPkgTools
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

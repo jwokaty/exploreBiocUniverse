@@ -23,23 +23,16 @@ jobs:
 
     - uses: r-lib/actions/setup-pandoc@v2
 
-    - name: Install dependencies
-      run: |
-        install.packages("universe", repos = "https://ropensci.r-universe.dev")
-        pkgs <- c("pkgdown", "BiocPkgTools", "dplyr", "purrr", "knitr", "kable", "kableExtra")
-        BiocManager::install(pkgs, dependencies = TRUE)    
-      shell: Rscript {0}
+    - uses: r-lib/actions/setup-r-dependencies@v2
+      with:
+        cache: true
+        extra-packages: any::pkgdown, any::purrr, any::knitr, any::kable, any::kableExtra, any::dplyr, local::.
+        install-quarto: true
+        needs: website
 
     - name: Build site
       run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
       shell: Rscript {0}
-
-    - name: Cache R packages 
-      id: cache-r-packages
-      uses: actions/cache@v4
-      with:
-        path: /usr/local/lib/R/site-library
-        key: ${{ runner.os }}-r-site-library
 
     - name: Deploy to GitHub pages 🚀
       if: github.event_name != 'pull_request'
