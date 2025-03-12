@@ -25,9 +25,8 @@ jobs:
 
     - uses: r-lib/actions/setup-r-dependencies@v2
       with:
-        cache: true
+        cache: false
         install-quarto: true
-        needs: website
 
     - name: Install Bioconductor dependencies
       run: |
