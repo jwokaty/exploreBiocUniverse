@@ -2,83 +2,64 @@
 title: "exploringRU"
 format: html
 editor: visual
+engine: knitr
 ---
 
-# bioc R Universe
+# Comparing Bioconductor packages in R-Universe and the BBS
 
-We can use the [universe](https://github.com/ropensci/universe/) package to explore the R Universe API. (We might need to increase the `max.print` to show all packages.)
+Skip to [Packages not in agreements](#packages-not-in-agreement).
 
-```{r install_universe}
-install.packages("universe", repos = "https://ropensci.r-universe.dev")
+## R Universe
+
+We can use the [universe](https://github.com/ropensci/universe/) package to explore the R-Universe (RU) API. (We might need to increase the `max.print` to show all packages.)
+
+```{r install_universe, eval = "hide", message = FALSE}
+if (!require("universe", quietly = TRUE))
+    install.packages("universe", repos = "https://ropensci.r-universe.dev")
 library(universe)
 options(max.print = 3000L)
 ```
 
-Get data for the bioc Universe.
+Get data for the Bioc Universe (BU).
 
-```{r}
-ru_pkgs_with_info <- universe_all_packages("bioc", limit = 3000L)
-```
-
-The structure of a package looks like
-
-```{r}
-str(ru_pkgs_with_info[1])
+```{r all_bioc_ru}
+ru_pkgs_i <- universe_all_packages("bioc", limit = 3000L)
 ```
 
 What packages are in bioc universe?
 
-```{r}
+```{r get_a_pkg_in_ru}
 ru_pkgs <- universe_ls("bioc")
-ru_pkgs
 ```
 
-# BBS
+## BBS
 
 Get Bioconductor packages in BBS
 
-```{r}
+```{r get_pkgs_in_bbs, message = FALSE}
 library(BiocPkgTools)
 
-bbs_pkgs_with_info <- BiocPkgTools::biocBuildReport(
+bbs_pkgs_i <- BiocPkgTools::biocBuildReport(
   version = BiocManager::version(),
   pkgType = "software")
-bbs_pkgs <- unlist(unique(bbs_pkgs_with_info$pkg))
-bbs_pkgs
+bbs_pkgs <- unlist(unique(bbs_pkgs_i$pkg))
 ```
 
-Helper function to check items from a vector not in another vector
+Packages in RU vs BBS
 
-```{r}
-# There's probably a set operation to do this somewhere?
-# Check if elements in a vector are in another vector
-not_in <- function(xs, ys) {
-  zs <- c()
-  for (x in xs) {
-    if (!(x %in% ys)) {
-      zs <- c(zs, x)
-    }
-  }
-  zs
-}
-```
-
-What packages are in bioc R Universe but not the BBS?
-
-```{r}
+```{r number_of_pkgs, message = FALSE}
 library(dplyr)
 
 data.frame(RU = length(ru_pkgs), BBS = length(bbs_pkgs),
            row.names = c("Total"))
 
-not_in_ru <- not_in(bbs_pkgs, ru_pkgs)
-not_in_bbs <- not_in(ru_pkgs, bbs_pkgs)
+not_in_ru <- setdiff(bbs_pkgs, ru_pkgs)
+not_in_bbs <- setdiff(ru_pkgs, bbs_pkgs)
 
 # There's probably a better way to do this
 pkgs_not_in_bbs <- data.frame(Package = character(), Version = character(), 
                               Created = character(), Published = character(),
                               RemoteUrl = character())
-not_in_ru
 
 for (pkg in not_in_bbs) {
   pi <- universe_one_package("bioc", pkg)
@@ -87,46 +68,62 @@ for (pkg in not_in_bbs) {
             Created = pi$`_created`, Published = pi$`_published`,
             RemoteUrl = pi$RemoteUrl)
 }
-
-pkgs_not_in_bbs
-
 ```
 
-Why do the above packages show up in the API? They're likely added via https://github.com/r-universe/bioc/blob/master/.remotes.json by the maintainers.
+### Packages not in BBS but in RU
 
-# Important: Use the dbdump endpoint with read_bson to dump the API
+Packages in RU but not in the BBS are likely added by maintainers via 
+[https://github.com/r-universe/bioc/blob/master/.remotes.json](https://github.com/r-universe/bioc/blob/master/.remotes.json).
 
-Use `read_bson` to dump API data into a db
-
-```{r}
-#BiocManager::install("mongolite")
-library(mongolite)
-bioc <- mongolite::read_bson('https://bioc.r-universe.dev/api/dbdump')
-
-# Note: it returns 2268 records rather than 2276 (fewer retrieved through
-# another endpoint)
+```{r pkgs_not_in_bbs}
+pkgs_not_in_bbs |> knitr::kable() |>
+  kableExtra::kable_styling(
+    bootstrap_options = c("hover", "responsive")
+  )
 ```
 
-# Making sense of R Universe's build status in respect to R CMD build, check, etc.
+### Packages in BBS but not in RU
 
-Looking at the status of linux x86_64 binary builds. The build "status" appears to get "success", "failure", or "cancelled" from the GitHub Action overall. The "check" value corresponds to `R CMD check`. I interpret the result of "status" to be "success" OK and "failure" ERROR for `R CMD build`. We'll use CANCELLED as it is. There's also a special status for documentation, which I haven't included.
+```{r bbs_pkgs_not_in_ru}
+not_in_ru
+```
 
-Some packages don't seem to have a build (those with NAs). I've flagged with a comment for additional investigation.
+The following packages are not deprecated but are not in RU. Why? AgiMicroRna,
+arrayMount, skewr, MEAL, methylGSA, and MineICA are in github.com/bioc but it
+hasn't seen any commits outside of version bumps in a few years.
 
--   FRASER was CANCELLED
--   enhancerHomologSearch appears to have a compilation failure: https://bioc.r-universe.dev/api/packages/enhancerHomologSearch. It's okay in the BBS: https://bioconductor.org/checkResults/3.21/bioc-LATEST/enhancerHomologSearch/
--   erma has a similar failure: https://bioc.r-universe.dev/api/packages/erma
+DMRcate has had nonversion bump commits within the past year.
 
-Packages with my comment "Was there a build?" did have data in the API; however, they didn't have builds at least on x86_64 linux with R 4.5.
+HiCParser is newer.
 
-```{r}
+```{r deprecated_pkgs}
+depre_pkgs <- filter(bbs_pkgs_i, Deprecated == TRUE) |> pull(pkg) |>
+  unique()
+setdiff(not_in_ru, depre_pkgs)
+```
+
+## Making sense of R Universe's build status in respect to R CMD build, check, etc.
+
+Looking at the status of linux x86_64 binary builds. The build "status" appears
+to get "success", "failure", or "cancelled" from the GitHub Action overall. The
+"check" value corresponds to `R CMD check`. I interpret the result of "status"
+to be "success" OK and "failure" ERROR for `R CMD build` but it may mean something
+else. We'll use CANCELLED as it is. There's also a special status for
+documentation, which is handled separately from build/check, which may account
+for some discrepancies. Not sure if the build status for vignettes is available
+in the API.
+
+Packages with my comment "Missing R4.5 on Linux" did have data in the API but no
+x86_64 linux with R 4.5.
+
+```{r ru_status}
 ru_status <- data.frame(Package = character(), Version = character(), 
                         Status = character(), Build = character(),
                         Check = character(), Comment = character())
                         #, Buildurl = character(),
                         # Commit = character())
 
-for (p in ru_pkgs_with_info) {
+for (p in ru_pkgs_i) {
   build <- c(status = NA, build = NA, check = NA, buildurl = NA)
   comment = ""
   for (b in p$`_binaries`) {
@@ -136,7 +133,7 @@ for (p in ru_pkgs_with_info) {
     }
   }
   if (is.na(build["status"])) {
-    comment = "Was there a build?" 
+    comment = "Missing R4.5 on Linux" 
   } else if (build["status"] == "success") {
     build["build"] <- "OK"
   } else if (build["status"] == "failure") {
@@ -153,18 +150,16 @@ for (p in ru_pkgs_with_info) {
 }
 
 # order by Package
-ru_status <- ru_status[order(ru_status$Package), ] 
-ru_status
+ru_status <- ru_status[order(ru_status$Package), ]
 ```
 
-# Packages in the BBS
 
-```{r}
+```{r bbs_status, message = FALSE}
 library(purrr)
 
 # Helper functions
 get_result <- function(x) {
-  entry <- bbs_pkgs_with_info |>
+  entry <- bbs_pkgs_i |>
     filter(pkg == x["pkg"], stage == x["stage"], node == x["node"])
   if (dim(entry)[1] == 0) {
     entry <- ""
@@ -185,170 +180,92 @@ get_check <- function(pkg) {
   get_result(c(pkg = pkg, stage = "checksrc", node = "nebbiolo1"))
 }
 
-bbs_status <- bbs_pkgs_with_info |>
+bbs_status <- bbs_pkgs_i |>
   filter(node == "nebbiolo1") |>
   select(pkg, version, Deprecated) |>
   distinct(pkg, .keep_all = TRUE) |>
   mutate(install = map_chr(pkg, get_install)) |>
   mutate(build = map_chr(pkg, get_build)) |>
   mutate(check = map_chr(pkg, get_check))
-
-bbs_status
-
-#bbs_status["install"] <- NA
-#bbs_status["build"] <- NA
-#bbs_status["check"] <- NA
-#
-#for (i in 1:dim(bbs_pkgs_with_info)[1]) {
-#  stage <- bbs_pkgs_with_info[i, ]$stage
-#  if (stage %in% c("install", "buildsrc", "checksrc")) {
-#    pkg <- bbs_pkgs_with_info[i, ]$pkg
-#   stage <- bbs_pkgs_with_info[i, ]$stage
-#    result <- bbs_pkgs_with_info[i, ]$result
-#    bbs_status[bbs_status$pkg == pkg, ][gsub("src", "", stage)] <- result
-#  }
-#}
 ```
 
-# Compare the two
+### Compare the status of packages in RU and BBS
 
-We can only compare check and build, so we'll check if those columns agree. Note that in the BBS, check can show "WARNINGS" whereas R Universe can show "WARNING" (no s) as well as "OK", "NOTE", "ERROR", or NA.
+We can only compare `check` and `build`, so we'll check if those columns agree.
+Note that in the BBS, `check` can show "WARNINGS" whereas R Universe can show 
+"WARNING" (no s) as well as "OK", "NOTE", "ERROR", or NA.
 
-```{r}
-
+```{r bbs_ru_comparison}
 names(ru_status) <- c("pkg", "version", "status", "build", "check", "comment")
 bbs_ru_comparison <- merge(x = bbs_status, y = ru_status, by = "pkg",
                            all.x = TRUE)
 bbs_ru_not_ok <- bbs_ru_comparison |>
-  filter(build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE")))
+  filter((build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE"))) & Deprecated == FALSE) |>
+           select(pkg, install, build.x, build.y, check.x, check.y, version.x,
+                  version.y, status, comment)
 
-# Packages not in agreement between BBS and R Universe
-bbs_ru_not_ok
+names(bbs_ru_not_ok) <- c("Package", "BBS_install", "BBS_build", "RU_build",
+                          "BBS_check", "RU_check", "BBS_version", "RU_version",
+                          "RU_status", "Comment")
 ```
 
-About \~220 packages are not in agreement regarding build status.
+### Packages not in agreement
 
-```{r}
-# Build or Check is NA for R Universe
-ru_nas <- bbs_ru_not_ok |>
-  filter(is.na(build.y) | is.na(check.y)) |>
-  select(pkg, build.y, check.y, comment)
-
-# Packages not in R Universe
-bbs_ru_not_ok |>
-  filter(is.na(build.y) & is.na(check.y) & is.na(version.y) & is.na(comment))
-
+```{r pkgs_not_in_agreement}
 # Packages in bioc R Universe but without an x86_64 Linux build for R 4.5
 bbs_ru_not_ok |>
-  filter(is.na(build.y) & is.na(check.y) & !is.na(version.y))
+  filter(Comment == "Missing R4.5 on Linux") |>
+  knitr::kable(caption = "Packages in RU without an x86_64 linux build for R 4.5") |>
+  kableExtra::kable_styling(
+    bootstrap_options = c("hover", "responsive")
+  )
 ```
 
-\~27 packages don't appear to have x86_64 Linux R 4.5 builds in R Universe.
+-   Retrying to refresh the build on the dashboard failed for some packages. How can we rebuild a package that hasn't received a push in 3 months?
 
-For example, MungeSumStats is in Bioc R Universe, but it doesn't have an R 4.5 build. From https://github.com/r-universe/bioc/actions/runs/12405409999, there are `No space left on device` errors. It's not clear if the problem is the runner or the package.
+-   paxtoolsr should be in Bioc R Universe, but it isn't. Why?
 
-motifbreakR also does not have an x86_64 Linux R 4.5 build on R Universe. The workflow is using an Ubuntu 22 image with R 4.4.2: https://github.com/r-universe/bioc/actions/runs/12803095027/job/35960426692. Refreshing the build retrying the failed build with the button from the dashboard does not correct the problem so how do we get it to build for R 4.5?
+-   Deprecated packages are removed immedately in R Universe.
 
-paxtoolsr should be in Bioc R Universe, but it isn't. Why?
-
-In some cases, like alabaster.matrix the BBS and R Universe are building different versions:
-
-```{r}
-bbs_ru_comparison |> filter(version.x != version.y)
-```
-
-Except for zlibbioc, deprecated packages like https://bioc.r-universe.dev/chromstaR appear to be already removed.
-
-```{r}
-bbs_ru_comparison |> filter(Deprecated == TRUE)
-```
+## Status of package builds in BBS and RU
 
 If I focus on same version, removing deprecated packages for builds on x86_64 Linux for R 4.5, we have just under 200 packages where the BBS and R Universe's results don't agree.
 
-```{r}
+```{r the_comparison}
 bbs_ru_not_ok2 <- bbs_ru_comparison |>
   filter(build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE"))) |>
   filter(Deprecated == FALSE & version.x == version.y & !is.na(status)) |>
-  select(pkg, version.x, install, build.x, build.y, check.x, check.y, status, comment)
-names(bbs_ru_not_ok2) <- c("pkg", "version", "install", "build.bbs", "build.ru",
-                           "check.bbs", "check.ru", "status.ru", "comment")
+  select(pkg, version.x, install, build.x, build.y, check.x, check.y,
+         status, comment)
+names(bbs_ru_not_ok2) <- c("Package", "BBS_version", "BBS_install", "BBS_build",
+                           "RU_build", "BBS_check", "RU_check", "RU_status", "Comment")
+bbs_ru_not_ok2 |>
+  knitr::kable(caption = "Packages with different build results between BBS and RU")  |>
+  kableExtra::kable_styling(
+    bootstrap_options = c("hover", "responsive")
+  )
 ```
 
 # Other
 
-If a package repo isn't accessible or an error exists in the DESCRIPTION file, there will be an error in the registry for that submodule and it will show up at https://github.com/r-universe/bioc/actions/workflows/sync.yml. The red triangle on https://bioc.r-universe.dev/ will take you to the specific workflow error.
-
-For example, on 1/21 pwalign had an error in its DESCRIPTION file: https://github.com/r-universe/bioc/actions/runs/12879471865. The error is not shown from the bioc R Universe landing page for pwalign, although its discoverable through the link in the sidebar.
+If a package repo isn't accessible or an error exists in the DESCRIPTION file, there will be an error in the registry for that submodule and it will show up at <https://github.com/r-universe/bioc/actions/workflows/sync.yml>. The red triangle on <https://bioc.r-universe.dev/> will take you to the specific workflow error.
 
 Currently, this information is available on the BBS but I wonder if this information is available somewhere for R Universe OR if it would be necessary given that developers would be able to inspect their builds sooner.
 
-# Summary
+### Important: Use the dbdump endpoint with read_bson to dump the API
 
-## Packages not in one or the other
+Use `read_bson` to dump API data into a db
 
-There are 6 packages not in the BBS that have been added by maintainers via the .remotes.json file.
-
-```{r}
-pkgs_not_in_bbs
-```
-
-There are 15 packages not in Bioc R Universe.
-
-```{r}
-not_in_ru
-```
-
-## We can use read_bson to dump the API into a mongodb:
-
-```{r}
+```{r read_bson, eval = FALSE}
+#BiocManager::install("mongolite")
 library(mongolite)
 bioc <- mongolite::read_bson('https://bioc.r-universe.dev/api/dbdump')
+
+# Note: it returns 2268 records rather than 2276 (fewer retrieved through
+# another endpoint)
 ```
 
-## Comparison
-
-There is about a difference of 10 packages between the repositories:
-
-```{r}
-data.frame(RU = length(ru_pkgs), BBS = length(bbs_pkgs),
-           row.names = c("Total"))
-```
-
-R Universe has a "status" corresponding to the build, which can be "success", "failure", or "canceled". (There could be other values.) It only has a "check" field that corresponds to the value of R CMD check, which has values of "NOTE", "WARNING" (no S), "OK", or "ERROR". I can guess R CMD build for R Universe is OK for status of "success" and ERROR, TIMEOUT, or skipped for "failure". I leave "canceled" as CANCELED.
-
-Examples: FRASER was canceled.enhancerHomologSearch and erma have compilation failures in R Universe but ok in the BBS.
-
-Except for zlibbioc, deprecated are removed immediately, which is why BEARscc, chromstaR, etc., don't appear.
-
-If a package has bad DESCRIPTION file, the error isn't shown on the individual package landing page; instead, it's shown as an error syncing the registry at https://github.com/r-universe/bioc/actions/workflows/sync.yml.
-
-About 4 packages don't have builds for Intel Linux with R 4.5. It's also not clear how we can make them do that specific build.
-
-```{r}
-bbs_ru_not_ok |>
-  filter(is.na(build.y) & is.na(check.y) & !is.na(version.y))
-```
-
-For example, MungeSumStats is in Bioc R Universe, but it doesn't have an R 4.5 build. From https://github.com/r-universe/bioc/actions/runs/12405409999, there are No space left on device errors. It's not clear if the problem is the runner or the package.
-
-motifbreakR also does not have an x86_64 Linux R 4.5 build on R Universe. The workflow is using an Ubuntu 22 image with R 4.4.2: https://github.com/r-universe/bioc/actions/runs/12803095027/job/35960426692. Refreshing the build retrying the failed build with the button from the dashboard does not correct the problem so how do we get it to build for R 4.5?
-
-About 5 packages, like alabaster.matrix, have different versions in Bioc R Universe and the BBS:
-
-```{r}
-bbs_ru_comparison |> filter(version.x != version.y)
-```
-
-If we remove deprecated packages, packages with wrong versions, and packages that don't have x86_64 linux for R 4.5 builds, we have just under 200 packages that don't agree.
-
-```{r}
-bbs_ru_not_ok2 <- bbs_ru_comparison |>
-  filter(build.x != build.y | !(check.x %in% c("OK", "WARNINGS")) | !(check.y %in% c("OK", "WARNING", "NOTE"))) |>
-  filter(Deprecated == FALSE & version.x == version.y & !is.na(status)) |>
-  select(pkg, version.x, install, build.x, build.y, check.x, check.y, status, comment)
-names(bbs_ru_not_ok2) <- c("pkg", "version", "install", "build.bbs", "build.ru",
-                           "check.bbs", "check.ru", "status.ru", "comment")
-```
+### Comparing a tarball from RU and BBS
 
 Lastly, when I look at the builds, they're using various repositories, such p3m,
 r-universe, etc. This might be okay as long as the resulting binaries/tarballs
@@ -356,11 +273,11 @@ are the generally the same. Looking at XVector for both, both the BBS and R
 Universe inject some additional information. R Universe also creates an `extra`
 directory that has citations, manuals, etc.
 
-```
+```{bash comparing_tarballs, eval = FALSE}
 diff -r bbsXVector_0.47.2 ruXVector_0.47.2
 diff -r bbsXVector_0.47.2/XVector/DESCRIPTION ruXVector_0.47.2/XVector/DESCRIPTION
 5c5
-< 	"externally" (e.g. behind an R external pointer, or on disk).
+<   "externally" (e.g. behind an R external pointer, or on disk).
 ---
 >         "externally" (e.g. behind an R external pointer, or on disk).
 28,33c28,31
@@ -381,4 +298,12 @@ diff -r bbsXVector_0.47.2/XVector/DESCRIPTION ruXVector_0.47.2/XVector/DESCRIPTI
 > Packaged: 2025-01-08 03:05:41 UTC; root
 Only in ruXVector_0.47.2/XVector: extra
 Only in ruXVector_0.47.2/XVector: manual.pdf
+```
+
+### Structure of a package through universe
+
+The structure of a package looks like
+
+```{r pkg_structure_in_ru, eval = "hide"}
+head(str(ru_pkgs_i[1]))
 ```
