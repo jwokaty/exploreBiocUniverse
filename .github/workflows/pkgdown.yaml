@@ -26,13 +26,14 @@ jobs:
     - uses: r-lib/actions/setup-r-dependencies@v2
       with:
         cache: true
-        extra-packages: any::purrr, any::knitr, any::kable, any::kableExtra, any::dplyr
         install-quarto: true
         needs: website
 
     - name: Install Bioconductor dependencies
       run: |
-        BiocManager::install("BiocPkgTools", dependencies = TRUE)
+        install.packages("universe", repos = "https://ropensci.r-universe.dev")
+        pkgs <- ("purrr", "knitr", "kable", "kableExtra", "dplyr", "BiocPkgTools")
+        BiocManager::install(pkgs, dependencies = TRUE)
       shell: Rscript {0}
 
     - name: Build site
