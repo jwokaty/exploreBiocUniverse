@@ -26,13 +26,18 @@ jobs:
     - uses: r-lib/actions/setup-r-dependencies@v2
       with:
         cache: true
-        extra-packages: any::pkgdown, any::purrr, any::knitr, any::kable, any::kableExtra, any::dplyr, local::.
+        extra-packages: any::purrr, any::knitr, any::kable, any::kableExtra, any::dplyr
         install-quarto: true
         needs: website
 
-    - name: Build site
-      run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
+    - name: Install Bioconductor dependencies
+      run: |
+        BiocManager::install("BiocPkgTools", dependencies = TRUE)
       shell: Rscript {0}
+
+    - name: Build site
+      run: |
+        quarto render vignettes/exploreRU.qmd
 
     - name: Deploy to GitHub pages 🚀
       if: github.event_name != 'pull_request'
