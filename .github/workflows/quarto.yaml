@@ -38,7 +38,7 @@ jobs:
 
     - name: Build site
       run: |
-        quarto render $GITHUB_WORKSPACE/vignettes/exploreRU.qmd
+        quarto render $GITHUB_WORKSPACE/vignettes/exploringRU.qmd
 
     - name: Deploy to GitHub pages 🚀
       if: github.event_name != 'pull_request'
