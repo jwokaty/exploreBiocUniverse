@@ -9,33 +9,42 @@ name: pkgdown.yaml
 permissions: read-all
 
 jobs:
-  pkgdown:
+  build:
     runs-on: ubuntu-latest
     container: bioconductor/bioconductor_docker:devel
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
+
     steps:
-      - uses: actions/checkout@v4
 
-      - uses: r-lib/actions/setup-pandoc@v2
+    - uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          install.packages("universe", repos = "https://ropensci.r-universe.dev")
-          pkgs <- c("pkgdown", "BiocPkgTools", "dplyr", "purrr", "knitr", "kable", "kableExtra")
-          BiocManager::install(pkgs, dependencies = TRUE)    
-        shell: Rscript {0}
+    - uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Build site
-        run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
-        shell: Rscript {0}
+    - name: Install dependencies
+      run: |
+        install.packages("universe", repos = "https://ropensci.r-universe.dev")
+        pkgs <- c("pkgdown", "BiocPkgTools", "dplyr", "purrr", "knitr", "kable", "kableExtra")
+        BiocManager::install(pkgs, dependencies = TRUE)    
+      shell: Rscript {0}
 
-      - name: Deploy to GitHub pages 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
-        with:
-          clean: false
-          branch: gh-pages
-          folder: docs
+    - name: Build site
+      run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
+      shell: Rscript {0}
+
+    - name: Cache R packages 
+      id: cache-r-packages
+      uses: actions/cache@v4
+      with:
+        path: /usr/local/lib/R/site-library
+        key: ${{ runner.os }}-r-site-library
+
+    - name: Deploy to GitHub pages 🚀
+      if: github.event_name != 'pull_request'
+      uses: JamesIves/github-pages-deploy-action@v4.5.0
+      with:
+        clean: false
+        branch: gh-pages
+        folder: docs
