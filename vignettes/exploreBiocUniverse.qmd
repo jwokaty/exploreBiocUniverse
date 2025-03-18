@@ -1,5 +1,5 @@
 ---
-title: "exploringRU"
+title: "exploreBiocUniverse"
 format: html
 editor: visual
 engine: knitr
