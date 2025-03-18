@@ -29,6 +29,10 @@ jobs:
         curl -sSL https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-linux-amd64.deb -o quarto.deb
         sudo dpkg -i quarto.deb
 
+    - name: Install rsync 
+      run: |
+        apt update && apt install -y rsync
+
     - name: Install Bioconductor dependencies
       run: |
         install.packages("universe", repos = "https://ropensci.r-universe.dev", dependencies = TRUE)
