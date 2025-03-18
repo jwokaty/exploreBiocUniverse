@@ -44,6 +44,8 @@ jobs:
       run: |
         mkdir $GITHUB_WORKSPACE/docs
         quarto render $GITHUB_WORKSPACE/vignettes/exploreBiocUniverse.qmd --output-dir $GITHUB_WORKSPACE/docs
+        # Move to index since it's the only document
+        $GITHUB_WORKSPACE/docs/exploreBiocUniverse.html $GITHUB_WORKSPACE/docs/index.html
 
     - name: Deploy to GitHub pages 🚀
       if: github.event_name != 'pull_request'

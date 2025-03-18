@@ -72,8 +72,7 @@ for (pkg in not_in_bbs) {
 
 ### Packages not in BBS but in RU
 
-Packages in RU but not in the BBS are likely added by maintainers via 
-[https://github.com/r-universe/bioc/blob/master/.remotes.json](https://github.com/r-universe/bioc/blob/master/.remotes.json).
+Packages in RU but not in the BBS are likely added by maintainers via <https://github.com/r-universe/bioc/blob/master/.remotes.json>.
 
 ```{r pkgs_not_in_bbs}
 pkgs_not_in_bbs |> knitr::kable() |>
@@ -88,9 +87,7 @@ pkgs_not_in_bbs |> knitr::kable() |>
 not_in_ru
 ```
 
-The following packages are not deprecated but are not in RU. Why? AgiMicroRna,
-arrayMount, skewr, MEAL, methylGSA, and MineICA are in github.com/bioc but it
-hasn't seen any commits outside of version bumps in a few years.
+The following packages are not deprecated but are not in RU. Why? AgiMicroRna, arrayMount, skewr, MEAL, methylGSA, and MineICA are in github.com/bioc but it hasn't seen any commits outside of version bumps in a few years.
 
 DMRcate has had nonversion bump commits within the past year.
 
@@ -104,17 +101,9 @@ setdiff(not_in_ru, depre_pkgs)
 
 ## Making sense of R Universe's build status in respect to R CMD build, check, etc.
 
-Looking at the status of linux x86_64 binary builds. The build "status" appears
-to get "success", "failure", or "cancelled" from the GitHub Action overall. The
-"check" value corresponds to `R CMD check`. I interpret the result of "status"
-to be "success" OK and "failure" ERROR for `R CMD build` but it may mean something
-else. We'll use CANCELLED as it is. There's also a special status for
-documentation, which is handled separately from build/check, which may account
-for some discrepancies. Not sure if the build status for vignettes is available
-in the API.
+Looking at the status of linux x86_64 binary builds. The build "status" appears to get "success", "failure", or "cancelled" from the GitHub Action overall. The "check" value corresponds to `R CMD check`. I interpret the result of "status" to be "success" OK and "failure" ERROR for `R CMD build` but it may mean something else. We'll use CANCELLED as it is. There's also a special status for documentation, which is handled separately from build/check, which may account for some discrepancies. Not sure if the build status for vignettes is available in the API.
 
-Packages with my comment "Missing R4.5 on Linux" did have data in the API but no
-x86_64 linux with R 4.5.
+Packages with my comment "Missing R4.5 on Linux" did have data in the API but no x86_64 linux with R 4.5.
 
 ```{r ru_status}
 ru_status <- data.frame(Package = character(), Version = character(), 
@@ -153,7 +142,6 @@ for (p in ru_pkgs_i) {
 ru_status <- ru_status[order(ru_status$Package), ]
 ```
 
-
 ```{r bbs_status, message = FALSE}
 library(purrr)
 
@@ -191,9 +179,11 @@ bbs_status <- bbs_pkgs_i |>
 
 ### Compare the status of packages in RU and BBS
 
-We can only compare `check` and `build`, so we'll check if those columns agree.
-Note that in the BBS, `check` can show "WARNINGS" whereas R Universe can show 
-"WARNING" (no s) as well as "OK", "NOTE", "ERROR", or NA.
+We can only compare `check` and `build`, so we'll check if those columns agree. Note that in the BBS, `check` can show "WARNINGS" whereas R Universe can show "WARNING" (no s) as well as "OK", "NOTE", "ERROR", or NA.
+
+Note: - Deprecated packages are removed immedately in R Universe. - Packages may have different versions since R-Universe builds new versions after detecting a "push".
+
+The following includes packages not deprecated in BBS where build and check don't agree.
 
 ```{r bbs_ru_comparison}
 names(ru_status) <- c("pkg", "version", "status", "build", "check", "comment")
@@ -209,10 +199,11 @@ names(bbs_ru_not_ok) <- c("Package", "BBS_install", "BBS_build", "RU_build",
                           "RU_status", "Comment")
 ```
 
-### Packages not in agreement
+#### Packages without x86_64 Linux builds for R 4.5
+
+The following are packages in bioc R Universe but without an x86_64 Linux build for R 4.5.
 
 ```{r pkgs_not_in_agreement}
-# Packages in bioc R Universe but without an x86_64 Linux build for R 4.5
 bbs_ru_not_ok |>
   filter(Comment == "Missing R4.5 on Linux") |>
   knitr::kable(caption = "Packages in RU without an x86_64 linux build for R 4.5") |>
@@ -221,15 +212,11 @@ bbs_ru_not_ok |>
   )
 ```
 
--   Retrying to refresh the build on the dashboard failed for some packages. How can we rebuild a package that hasn't received a push in 3 months?
+Notes: - Retrying to refresh the build on the dashboard failed for some packages. How can we rebuild a package that hasn't received a push in 3 months? - paxtoolsr should be in Bioc R Universe, but it isn't. Why?
 
--   paxtoolsr should be in Bioc R Universe, but it isn't. Why?
+## Packages not in agreement {#packages-not-in-agreement}
 
--   Deprecated packages are removed immedately in R Universe.
-
-## Status of package builds in BBS and RU
-
-If I focus on same version, removing deprecated packages for builds on x86_64 Linux for R 4.5, we have just under 200 packages where the BBS and R Universe's results don't agree.
+Looking at packages with the same version and removing deprecated packages, we have the following packages where the BBS and R Universe's results don't agree.
 
 ```{r the_comparison}
 bbs_ru_not_ok2 <- bbs_ru_comparison |>
@@ -245,6 +232,8 @@ bbs_ru_not_ok2 |>
     bootstrap_options = c("hover", "responsive")
   )
 ```
+
+`r dim(bbs_ru_not_ok2)[1]` packages disagree.
 
 # Other
 
@@ -267,11 +256,7 @@ bioc <- mongolite::read_bson('https://bioc.r-universe.dev/api/dbdump')
 
 ### Comparing a tarball from RU and BBS
 
-Lastly, when I look at the builds, they're using various repositories, such p3m,
-r-universe, etc. This might be okay as long as the resulting binaries/tarballs
-are the generally the same. Looking at XVector for both, both the BBS and R
-Universe inject some additional information. R Universe also creates an `extra`
-directory that has citations, manuals, etc.
+Lastly, when I look at the builds, they're using various repositories, such p3m, r-universe, etc. This might be okay as long as the resulting binaries/tarballs are the generally the same. Looking at XVector for both, both the BBS and R Universe inject some additional information. R Universe also creates an `extra` directory that has citations, manuals, etc.
 
 ```{bash comparing_tarballs, eval = FALSE}
 diff -r bbsXVector_0.47.2 ruXVector_0.47.2
