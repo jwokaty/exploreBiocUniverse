@@ -87,11 +87,7 @@ pkgs_not_in_bbs |> knitr::kable() |>
 not_in_ru
 ```
 
-The following packages are not deprecated but are not in RU. Why? AgiMicroRna, arrayMount, skewr, MEAL, methylGSA, and MineICA are in github.com/bioc but it hasn't seen any commits outside of version bumps in a few years.
-
-DMRcate has had nonversion bump commits within the past year.
-
-HiCParser is newer.
+The following packages are not deprecated but are not in RU.
 
 ```{r deprecated_pkgs}
 depre_pkgs <- filter(bbs_pkgs_i, Deprecated == TRUE) |> pull(pkg) |>
@@ -169,7 +165,7 @@ get_check <- function(pkg) {
 }
 
 bbs_status <- bbs_pkgs_i |>
-  filter(node == "nebbiolo1") |>
+  filter(node == "nebbiolo2") |>
   select(pkg, version, Deprecated) |>
   distinct(pkg, .keep_all = TRUE) |>
   mutate(install = map_chr(pkg, get_install)) |>
