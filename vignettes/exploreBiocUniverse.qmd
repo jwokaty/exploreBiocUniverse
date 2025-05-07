@@ -141,6 +141,8 @@ ru_status <- ru_status[order(ru_status$Package), ]
 ```{r bbs_status, message = FALSE}
 library(purrr)
 
+DEVEL_LINUX_BUILDER = "nebbiolo2"
+
 # Helper functions
 get_result <- function(x) {
   entry <- bbs_pkgs_i |>
@@ -153,19 +155,19 @@ get_result <- function(x) {
 }
 
 get_install <- function(pkg) {
-  get_result(c(pkg = pkg, stage = "install", node = "nebbiolo1"))
+  get_result(c(pkg = pkg, stage = "install", node = DEVEL_LINUX_BUILDER))
 }
 
 get_build <- function(pkg) {
-  get_result(c(pkg = pkg, stage = "buildsrc", node = "nebbiolo1"))
+  get_result(c(pkg = pkg, stage = "buildsrc", node = DEVEL_LINUX_BUILDER))
 }
 
 get_check <- function(pkg) {
-  get_result(c(pkg = pkg, stage = "checksrc", node = "nebbiolo1"))
+  get_result(c(pkg = pkg, stage = "checksrc", node = DEVEL_LINUX_BUILDER))
 }
 
 bbs_status <- bbs_pkgs_i |>
-  filter(node == "nebbiolo2") |>
+  filter(node == DEVEL_LINUX_BUILDER) |>
   select(pkg, version, Deprecated) |>
   distinct(pkg, .keep_all = TRUE) |>
   mutate(install = map_chr(pkg, get_install)) |>
