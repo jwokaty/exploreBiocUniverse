@@ -122,7 +122,7 @@ for (p in ru_pkgs_i) {
   } else if (build["status"] == "success") {
     build["build"] <- "OK"
   } else if (build["status"] == "failure") {
-    build["build"] <- "ERROR, TIMEOUT, or skipped"
+    build["build"] <- "ERROR*"
     comment = build["buildurl"]
   } else if (build["status"] == "cancelled") {
     build["build"] <- "CANCELLED"
@@ -230,8 +230,13 @@ bbs_ru_not_ok2 |>
     bootstrap_options = c("hover", "responsive")
   )
 ```
+Note: `ERROR*` could be an `ERROR`, `TIMEOUT`, or `skipped`.
 
-`r dim(bbs_ru_not_ok2)[1]` packages disagree.
+### Total packages not in agreement
+
+```{R disagreement-count}
+dim(bbs_ru_not_ok2)[1]
+```
 
 # Other
 
