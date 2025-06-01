@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="exploreBiocUniverse_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="exploreBiocUniverse_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="exploreBiocUniverse_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="exploreBiocUniverse_files/libs/bootstrap/bootstrap-02b59dbdb5578220b791e780bcd94bcb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="exploreBiocUniverse_files/libs/bootstrap/bootstrap-33e4281bf1546a50b35fbaaa125fd420.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="exploreBiocUniverse_files/libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="exploreBiocUniverse_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
@@ -138,7 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"Total"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        RU  BBS
-Total 2308 2304</code></pre>
+Total 2308 2306</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>not_in_ru <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(bbs_pkgs, ru_pkgs)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>not_in_bbs <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(ru_pkgs, bbs_pkgs)</span>
@@ -178,38 +178,31 @@ Total 2308 2304</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">cmdstanr</td>
-<td style="text-align: left;">0.9.0</td>
-<td style="text-align: left;">2025-05-05T11:53:47.000Z</td>
-<td style="text-align: left;">2025-05-05T12:13:52.414Z</td>
-<td style="text-align: left;">https://github.com/stan-dev/cmdstanr</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">ggpattern</td>
 <td style="text-align: left;">1.1.4</td>
-<td style="text-align: left;">2025-04-28T17:47:03.000Z</td>
-<td style="text-align: left;">2025-04-28T18:16:00.640Z</td>
+<td style="text-align: left;">2025-05-28T05:35:15.000Z</td>
+<td style="text-align: left;">2025-05-28T06:21:34.036Z</td>
 <td style="text-align: left;">https://github.com/coolbutuseless/ggpattern</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">lmms</td>
 <td style="text-align: left;">1.3.3</td>
-<td style="text-align: left;">2025-04-26T23:26:55.000Z</td>
-<td style="text-align: left;">2025-05-13T11:54:54.864Z</td>
+<td style="text-align: left;">2025-05-26T03:54:00.000Z</td>
+<td style="text-align: left;">2025-05-26T03:56:39.266Z</td>
 <td style="text-align: left;">https://github.com/cran/lmms</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">miaTime</td>
 <td style="text-align: left;">0.99.8</td>
 <td style="text-align: left;">2025-05-04T03:24:40.000Z</td>
-<td style="text-align: left;">2025-05-04T03:43:38.320Z</td>
+<td style="text-align: left;">2025-05-13T20:54:51.843Z</td>
 <td style="text-align: left;">https://github.com/microbiome/miaTime</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">tidydr</td>
 <td style="text-align: left;">0.0.5.001</td>
-<td style="text-align: left;">2025-05-13T08:40:16.000Z</td>
-<td style="text-align: left;">2025-05-13T09:40:33.316Z</td>
+<td style="text-align: left;">2025-05-25T03:32:45.000Z</td>
+<td style="text-align: left;">2025-05-25T03:36:06.368Z</td>
 <td style="text-align: left;">https://github.com/YuLab-SMU/tidydr</td>
 </tr>
 </tbody>
@@ -225,7 +218,7 @@ Total 2308 2304</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>not_in_ru</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "lapmix"</code></pre>
+<pre><code>[1] "lapmix"   "Streamer"</code></pre>
 </div>
 </div>
 <p>The following packages are not deprecated but are not in RU.</p>
@@ -363,6 +356,18 @@ Total 2308 2304</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">bamsignals</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.41.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">cn.farms</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -370,36 +375,48 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.57.0</td>
-<td style="text-align: left;">1.55.0</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Missing R4.5 on Linux</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">enhancerHomologSearch</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.15.0</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">GEOmetadb</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">CNEr</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.71.0</td>
+<td style="text-align: left;">1.45.0</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">graper</td>
+<td style="text-align: left;">CNVfilteR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.23.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNViz</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.17.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CopyNumberPlots</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
@@ -411,30 +428,162 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">HilbertVisGUI</td>
+<td style="text-align: left;">crupR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.67.0</td>
+<td style="text-align: left;">1.1.0</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">nondetects</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">enhancerHomologSearch</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">2.39.0</td>
+<td style="text-align: left;">1.15.1</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">epigraHMM</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.17.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GEOmetadb</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.71.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">graper</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.25.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Harshlight</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.81.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HilbertVisGUI</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.67.1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hypeR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2.7.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">karyoploteR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.35.1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MADSEQ</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.35.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NoRCE</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.21.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">normr</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.35.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">qckitfastq</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.25.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">RadioGx</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -446,7 +595,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">ReactomeGraph4R</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -454,6 +603,18 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.17.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rfastp</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -466,6 +627,30 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.63.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">segmenter</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.15.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.5 on Linux</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">seqTools</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.43.0</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -490,7 +675,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">1.15.0</td>
+<td style="text-align: left;">NA</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -573,26 +758,26 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14837348382</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">alabaster.files</td>
-<td style="text-align: left;">1.7.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">alabaster.base</td>
+<td style="text-align: left;">1.9.1</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14711811848</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">alabaster.spatial</td>
-<td style="text-align: left;">1.9.0</td>
+<td style="text-align: left;">AlphaMissenseR</td>
+<td style="text-align: left;">1.5.1</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719153019</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">amplican</td>
@@ -603,7 +788,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14963696600</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15154483624</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">AnnotationHubData</td>
@@ -625,7 +810,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14941659528</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15014472655</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">autonomics</td>
@@ -639,39 +824,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14952207005</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">BadRegionFinder</td>
-<td style="text-align: left;">1.37.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991959639</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">bamsignals</td>
-<td style="text-align: left;">1.41.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">BatchQC</td>
-<td style="text-align: left;">2.5.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14715051224</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">BayesSpace</td>
 <td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">OK</td>
@@ -682,7 +834,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991951290</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">bedbaser</td>
 <td style="text-align: left;">1.1.0</td>
 <td style="text-align: left;">OK</td>
@@ -691,20 +843,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991968200</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15153422051</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">BgeeCall</td>
 <td style="text-align: left;">1.25.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291098762</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">bgx</td>
 <td style="text-align: left;">1.75.0</td>
 <td style="text-align: left;">OK</td>
@@ -713,20 +865,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991944097</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15104042924</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">BiocBook</td>
 <td style="text-align: left;">1.7.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15234189873</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">BiocStyle</td>
 <td style="text-align: left;">2.37.0</td>
 <td style="text-align: left;">OK</td>
@@ -735,7 +887,18 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14714827816</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15234192249</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">biomaRt</td>
+<td style="text-align: left;">2.65.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">BloodGen3Module</td>
@@ -749,6 +912,17 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">branchpointer</td>
+<td style="text-align: left;">1.35.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">BSgenomeForge</td>
 <td style="text-align: left;">1.9.0</td>
 <td style="text-align: left;">OK</td>
@@ -759,17 +933,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14952081203</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">BulkSignalR</td>
-<td style="text-align: left;">1.1.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
 <tr class="even">
 <td style="text-align: left;">BUSpaRse</td>
 <td style="text-align: left;">1.23.0</td>
@@ -779,7 +942,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991961210</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15234214039</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Category</td>
@@ -812,53 +975,42 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991946993</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15072615279</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">CellTrails</td>
-<td style="text-align: left;">1.27.0</td>
+<td style="text-align: left;">CGHcall</td>
+<td style="text-align: left;">2.71.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14713475947</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">cfTools</td>
-<td style="text-align: left;">1.9.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14885222654</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ChemmineOB</td>
-<td style="text-align: left;">1.47.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">NA</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">chevreulShiny</td>
-<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;">ChemmineR</td>
+<td style="text-align: left;">3.61.1</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712477860</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15152683874</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">ChIPpeakAnno</td>
+<td style="text-align: left;">3.43.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">ChromSCape</td>
 <td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">OK</td>
@@ -867,9 +1019,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14885063246</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15360547640</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">cicero</td>
 <td style="text-align: left;">1.27.0</td>
 <td style="text-align: left;">OK</td>
@@ -878,7 +1030,18 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14989651915</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15178045646</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CINdex</td>
+<td style="text-align: left;">1.37.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">cisPath</td>
@@ -892,68 +1055,24 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">clustifyr</td>
-<td style="text-align: left;">1.21.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">CNVfilteR</td>
-<td style="text-align: left;">1.23.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14532838967</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">CNViz</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">CNVRanger</td>
 <td style="text-align: left;">1.25.4</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">concordexR</td>
-<td style="text-align: left;">1.9.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719147991</td>
-</tr>
 <tr class="even">
-<td style="text-align: left;">CopyNumberPlots</td>
-<td style="text-align: left;">1.25.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">CoreGx</td>
+<td style="text-align: left;">2.13.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
@@ -966,9 +1085,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14714818056</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291116907</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">COTAN</td>
+<td style="text-align: left;">2.9.2</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15338384415</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">CPSM</td>
 <td style="text-align: left;">1.1.2</td>
 <td style="text-align: left;">OK</td>
@@ -979,7 +1109,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991944668</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">crisprDesign</td>
 <td style="text-align: left;">1.11.0</td>
 <td style="text-align: left;">ERROR</td>
@@ -990,7 +1120,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719283009</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">crisprScore</td>
 <td style="text-align: left;">1.13.0</td>
 <td style="text-align: left;">ERROR</td>
@@ -1001,7 +1131,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">crisprShiny</td>
 <td style="text-align: left;">1.5.0</td>
 <td style="text-align: left;">ERROR</td>
@@ -1012,7 +1142,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">crisprVerse</td>
 <td style="text-align: left;">1.11.0</td>
 <td style="text-align: left;">ERROR</td>
@@ -1023,7 +1153,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">crisprViz</td>
 <td style="text-align: left;">1.11.0</td>
 <td style="text-align: left;">ERROR</td>
@@ -1034,24 +1164,13 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">crupR</td>
-<td style="text-align: left;">1.1.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14484622319</td>
-</tr>
 <tr class="odd">
 <td style="text-align: left;">cTRAP</td>
 <td style="text-align: left;">1.27.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991960402</td>
@@ -1065,7 +1184,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991952353</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15202047698</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">CyTOFpower</td>
@@ -1079,15 +1198,15 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14963353361</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">cytomapper</td>
-<td style="text-align: left;">1.21.0</td>
+<td style="text-align: left;">Damsel</td>
+<td style="text-align: left;">1.5.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14716523219</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">DAPAR</td>
@@ -1101,28 +1220,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712090078</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">decompTumor2Sig</td>
-<td style="text-align: left;">2.25.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991963224</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">decoupleR</td>
-<td style="text-align: left;">2.15.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">TIMEOUT</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">DeepTarget</td>
 <td style="text-align: left;">1.3.0</td>
 <td style="text-align: left;">OK</td>
@@ -1134,17 +1231,28 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14850876268</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">densvis</td>
-<td style="text-align: left;">1.19.0</td>
+<td style="text-align: left;">DELocal</td>
+<td style="text-align: left;">1.9.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">DEqMS</td>
+<td style="text-align: left;">1.27.1</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14945450835</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">DEXSeq</td>
 <td style="text-align: left;">1.55.0</td>
 <td style="text-align: left;">OK</td>
@@ -1153,7 +1261,18 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712701459</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290725028</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DMRcaller</td>
+<td style="text-align: left;">1.41.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">DMRcate</td>
@@ -1164,31 +1283,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991960249</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15338731824</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">DNAcycP2</td>
-<td style="text-align: left;">1.1.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">DominoEffect</td>
 <td style="text-align: left;">1.29.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290872226</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">DOSE</td>
 <td style="text-align: left;">4.3.0</td>
 <td style="text-align: left;">OK</td>
@@ -1197,20 +1305,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14988135689</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15223323426</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">ELViS</td>
 <td style="text-align: left;">1.1.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15372501686</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">enrichplot</td>
 <td style="text-align: left;">1.29.1</td>
 <td style="text-align: left;">OK</td>
@@ -1219,26 +1327,15 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14746620609</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">epigraHMM</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15338901892</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">EpiMix</td>
 <td style="text-align: left;">1.11.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NOTE</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
@@ -1250,7 +1347,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">NOTE</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
@@ -1263,7 +1360,29 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991961679</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15128699914</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fastreeR</td>
+<td style="text-align: left;">1.99.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">TIMEOUT</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FELLA</td>
+<td style="text-align: left;">1.29.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ffpe</td>
@@ -1307,7 +1426,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991945944</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15338640579</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">GA4GHclient</td>
@@ -1351,7 +1470,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991915500</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15233764283</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">GenVisR</td>
@@ -1362,7 +1481,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14715054659</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15341185286</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">GeomxTools</td>
@@ -1371,31 +1490,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14713438384</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">getDEE2</td>
-<td style="text-align: left;">1.19.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">gINTomics</td>
-<td style="text-align: left;">1.5.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15014473202</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">glmSparseNet</td>
@@ -1403,10 +1500,10 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719381184</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291100835</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">gpuMagic</td>
@@ -1420,17 +1517,28 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">GWASTools</td>
-<td style="text-align: left;">1.55.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">h5vc</td>
+<td style="text-align: left;">2.43.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14713662738</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">hca</td>
+<td style="text-align: left;">1.17.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">HDF5Array</td>
 <td style="text-align: left;">1.37.0</td>
 <td style="text-align: left;">OK</td>
@@ -1439,9 +1547,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14713580082</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15292037537</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Herper</td>
 <td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">OK</td>
@@ -1452,18 +1560,18 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">HiCool</td>
 <td style="text-align: left;">1.9.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">TIMEOUT</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291351741</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">hipathia</td>
 <td style="text-align: left;">3.9.0</td>
 <td style="text-align: left;">OK</td>
@@ -1474,7 +1582,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991961803</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">hiReadsProcessor</td>
 <td style="text-align: left;">1.45.0</td>
 <td style="text-align: left;">OK</td>
@@ -1485,49 +1593,38 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14952099202</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">HuBMAPR</td>
 <td style="text-align: left;">1.3.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
+<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HVP</td>
+<td style="text-align: left;">0.99.4</td>
 <td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">WARNING</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">IdeoViz</td>
-<td style="text-align: left;">1.45.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">WARNINGS</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719294186</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">igvR</td>
-<td style="text-align: left;">1.29.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14716658713</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">immApex</td>
 <td style="text-align: left;">1.3.0</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14886884299</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">TIMEOUT</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">immunogenViewer</td>
@@ -1543,39 +1640,17 @@ Total 2308 2304</code></pre>
 <tr class="even">
 <td style="text-align: left;">immunotation</td>
 <td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">IPO</td>
-<td style="text-align: left;">1.35.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991958792</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">iSEEhub</td>
-<td style="text-align: left;">1.11.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14713011684</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15292490153</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">jazzPanda</td>
-<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;">InterCellar</td>
+<td style="text-align: left;">2.15.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -1585,15 +1660,37 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">karyoploteR</td>
+<td style="text-align: left;">IPO</td>
 <td style="text-align: left;">1.35.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14532826304</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15370529701</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">isomiRs</td>
+<td style="text-align: left;">1.37.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290627837</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KEGGREST</td>
+<td style="text-align: left;">1.49.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15292163948</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">knowYourCG</td>
@@ -1607,28 +1704,17 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14941521482</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">LimROTS</td>
-<td style="text-align: left;">1.1.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">LinTInd</td>
 <td style="text-align: left;">1.13.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15292062423</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">lipidr</td>
 <td style="text-align: left;">2.23.0</td>
 <td style="text-align: left;">OK</td>
@@ -1637,9 +1723,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14850984026</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15074586545</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LOBSTAHS</td>
 <td style="text-align: left;">1.35.0</td>
 <td style="text-align: left;">OK</td>
@@ -1648,18 +1734,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14716696983</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">LRBaseDbi</td>
-<td style="text-align: left;">2.19.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291126701</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">lumi</td>
@@ -1673,50 +1748,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14920938324</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">maaslin3</td>
-<td style="text-align: left;">1.1.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712281156</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MACSr</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">MADSEQ</td>
-<td style="text-align: left;">1.35.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14496353371</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MAIT</td>
-<td style="text-align: left;">1.43.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">maPredictDSC</td>
 <td style="text-align: left;">1.47.0</td>
 <td style="text-align: left;">OK</td>
@@ -1725,7 +1756,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991964497</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15223320378</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">martini</td>
@@ -1764,34 +1795,34 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">mCSEA</td>
 <td style="text-align: left;">1.29.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991960621</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">MEAL</td>
-<td style="text-align: left;">1.39.0</td>
+<td style="text-align: left;">metagene2</td>
+<td style="text-align: left;">1.25.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">NA</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">MetMashR</td>
-<td style="text-align: left;">1.3.0</td>
+<td style="text-align: left;">MGFR</td>
+<td style="text-align: left;">1.35.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14718153555</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290997891</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">mimager</td>
@@ -1802,9 +1833,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14921186037</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15014473038</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">MineICA</td>
+<td style="text-align: left;">1.49.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290914896</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">minfi</td>
 <td style="text-align: left;">1.55.0</td>
 <td style="text-align: left;">OK</td>
@@ -1813,9 +1855,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712835160</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290739520</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">miRspongeR</td>
 <td style="text-align: left;">2.13.0</td>
 <td style="text-align: left;">OK</td>
@@ -1826,82 +1868,27 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14885232065</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">missMethyl</td>
-<td style="text-align: left;">1.43.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">mistyR</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">MOFA2</td>
-<td style="text-align: left;">1.19.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
 <tr class="odd">
 <td style="text-align: left;">Moonlight2R</td>
 <td style="text-align: left;">1.7.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14715516986</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290934006</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">motifbreakR</td>
 <td style="text-align: left;">2.23.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MotifPeeker</td>
-<td style="text-align: left;">1.1.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14718200905</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">MouseFM</td>
-<td style="text-align: left;">1.19.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15106826278</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">MsBackendMetaboLights</td>
@@ -1912,7 +1899,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14772349807</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15359966363</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">MsBackendRawFileReader</td>
@@ -1923,7 +1910,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14886566049</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15027510386</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">MSPrep</td>
@@ -1934,7 +1921,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991965117</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15315745271</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">msqrob2</td>
@@ -1943,22 +1930,33 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">WARNING</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">MSstatsLiP</td>
-<td style="text-align: left;">1.15.0</td>
+<td style="text-align: left;">1.15.1</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14887009042</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15294074918</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">MSstatsShiny</td>
+<td style="text-align: left;">1.11.2</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">multicrispr</td>
 <td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">ERROR</td>
@@ -1969,7 +1967,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991960708</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">multiWGCNA</td>
 <td style="text-align: left;">1.7.0</td>
 <td style="text-align: left;">OK</td>
@@ -1980,7 +1978,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">MungeSumstats</td>
 <td style="text-align: left;">1.17.0</td>
 <td style="text-align: left;">OK</td>
@@ -1989,9 +1987,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991963238</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15361054053</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">NanoStringNCTools</td>
 <td style="text-align: left;">1.17.0</td>
 <td style="text-align: left;">OK</td>
@@ -2002,38 +2000,27 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991946825</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">netSmooth</td>
-<td style="text-align: left;">1.29.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
 <tr class="odd">
-<td style="text-align: left;">netZooR</td>
-<td style="text-align: left;">1.13.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NetSAM</td>
+<td style="text-align: left;">1.49.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14718694107</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290889046</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">NoRCE</td>
-<td style="text-align: left;">1.21.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">netZooR</td>
+<td style="text-align: left;">1.13.2</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15223420615</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">NormalyzerDE</td>
@@ -2044,29 +2031,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991943496</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">normr</td>
-<td style="text-align: left;">1.35.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">OGRE</td>
-<td style="text-align: left;">1.13.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15223217502</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">omicsViewer</td>
@@ -2083,9 +2048,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OmnipathR</td>
 <td style="text-align: left;">3.17.0</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991937277</td>
@@ -2099,7 +2064,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991942032</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15315641572</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">oppti</td>
@@ -2113,39 +2078,72 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">orthos</td>
-<td style="text-align: left;">1.7.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">PharmacoGx</td>
-<td style="text-align: left;">3.13.0</td>
+<td style="text-align: left;">ORFik</td>
+<td style="text-align: left;">1.29.5</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14825374126</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15294061702</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OrganismDbi</td>
+<td style="text-align: left;">1.51.2</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14945451675</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">phantasus</td>
+<td style="text-align: left;">1.29.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290709969</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pigengene</td>
+<td style="text-align: left;">1.35.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15318363386</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Pirat</td>
 <td style="text-align: left;">1.3.0</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15223275788</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PolySTest</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NOTE</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">prebs</td>
 <td style="text-align: left;">1.49.0</td>
 <td style="text-align: left;">OK</td>
@@ -2156,27 +2154,38 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991952732</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">proActiv</td>
 <td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15290924745</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pRoloc</td>
+<td style="text-align: left;">1.49.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">WARNING</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">PRONE</td>
-<td style="text-align: left;">1.3.0</td>
+<td style="text-align: left;">1.3.1</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991962999</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15266617797</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">pvac</td>
@@ -2187,31 +2196,20 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991943765</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15153235458</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">qckitfastq</td>
-<td style="text-align: left;">1.25.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">QFeatures</td>
-<td style="text-align: left;">1.19.0</td>
+<td style="text-align: left;">1.19.2</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991958188</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15266618387</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">qmtools</td>
 <td style="text-align: left;">1.13.0</td>
 <td style="text-align: left;">OK</td>
@@ -2222,7 +2220,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14817237799</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">qPLEXanalyzer</td>
 <td style="text-align: left;">1.27.0</td>
 <td style="text-align: left;">OK</td>
@@ -2231,18 +2229,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991958697</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">R453Plus1Toolbox</td>
-<td style="text-align: left;">1.59.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15234204157</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">randRotation</td>
@@ -2256,17 +2243,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14900539620</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">RareVariantVis</td>
-<td style="text-align: left;">2.37.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14718360871</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">rawDiag</td>
 <td style="text-align: left;">1.5.0</td>
 <td style="text-align: left;">OK</td>
@@ -2277,17 +2253,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14921043405</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">rawrr</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14963269739</td>
-</tr>
 <tr class="even">
 <td style="text-align: left;">rcellminer</td>
 <td style="text-align: left;">2.31.0</td>
@@ -2297,7 +2262,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14714264996</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15361221217</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Rcollectl</td>
@@ -2305,95 +2270,51 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991915128</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rcwl</td>
-<td style="text-align: left;">1.25.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ReactomeGSA</td>
-<td style="text-align: left;">1.23.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14714093854</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15359566449</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">recount3</td>
-<td style="text-align: left;">1.19.0</td>
+<td style="text-align: left;">1.19.2</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991948806</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15062984230</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ReducedExperiment</td>
-<td style="text-align: left;">1.1.1</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">RepViz</td>
 <td style="text-align: left;">1.25.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991959084</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ReUseData</td>
-<td style="text-align: left;">1.9.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">WARNING</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Rfastp</td>
-<td style="text-align: left;">1.19.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">rGADEM</td>
 <td style="text-align: left;">2.57.0</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RGSEA</td>
+<td style="text-align: left;">1.43.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
@@ -2407,29 +2328,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719312306</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">RiboDiPA</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991959770</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rmmquant</td>
-<td style="text-align: left;">1.27.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15153256133</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">rmspc</td>
@@ -2443,6 +2342,28 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991952197</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">RnaSeqSampleSize</td>
+<td style="text-align: left;">2.19.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SARC</td>
+<td style="text-align: left;">1.7.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291011929</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">saseR</td>
 <td style="text-align: left;">1.5.0</td>
 <td style="text-align: left;">OK</td>
@@ -2452,28 +2373,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">WARNING</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">scifer</td>
-<td style="text-align: left;">1.11.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">scp</td>
-<td style="text-align: left;">1.19.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991958731</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">scran</td>
@@ -2487,35 +2386,13 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14921080695</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">scRepertoire</td>
-<td style="text-align: left;">2.5.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14952213781</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">scTensor</td>
-<td style="text-align: left;">2.19.0</td>
+<td style="text-align: left;">2.19.1</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">segmenter</td>
-<td style="text-align: left;">1.15.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">OK</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
@@ -2542,13 +2419,13 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14941584444</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">seqTools</td>
-<td style="text-align: left;">1.43.0</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">SeqGSEA</td>
+<td style="text-align: left;">1.49.0</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">NOTE</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
@@ -2583,7 +2460,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14714475023</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15128524859</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ShortRead</td>
@@ -2597,6 +2474,17 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14884344056</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">sincell</td>
+<td style="text-align: left;">1.41.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">SingleMoleculeFootprinting</td>
 <td style="text-align: left;">2.3.0</td>
 <td style="text-align: left;">OK</td>
@@ -2605,53 +2493,9 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14719056090</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SingleR</td>
-<td style="text-align: left;">2.11.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14921111332</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291078645</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sitadela</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">sketchR</td>
-<td style="text-align: left;">1.5.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">snifter</td>
-<td style="text-align: left;">1.19.0</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">soGGi</td>
 <td style="text-align: left;">1.41.0</td>
 <td style="text-align: left;">OK</td>
@@ -2660,26 +2504,15 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991951848</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SOMNiBUS</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14713214249</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15128539804</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">spatialDE</td>
-<td style="text-align: left;">1.15.1</td>
+<td style="text-align: left;">SpaceMarkers</td>
+<td style="text-align: left;">1.5.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NOTE</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
@@ -2696,15 +2529,37 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991953497</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">SPLINTER</td>
+<td style="text-align: left;">1.35.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPONGE</td>
+<td style="text-align: left;">1.31.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">WARNING</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Statial</td>
 <td style="text-align: left;">1.11.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">WARNINGS</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14718628287</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SVMDO</td>
@@ -2718,17 +2573,28 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14837387802</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">SWATH2stats</td>
+<td style="text-align: left;">1.39.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">systemPipeR</td>
-<td style="text-align: left;">2.15.0</td>
+<td style="text-align: left;">2.15.2</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712299062</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15268196519</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">TCGAbiolinks</td>
 <td style="text-align: left;">2.37.0</td>
 <td style="text-align: left;">OK</td>
@@ -2739,7 +2605,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">TCGAutils</td>
 <td style="text-align: left;">1.29.2</td>
 <td style="text-align: left;">OK</td>
@@ -2749,6 +2615,17 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991959598</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TDbasedUFEadv</td>
+<td style="text-align: left;">1.9.0</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">success</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TEKRABber</td>
@@ -2770,7 +2647,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712965339</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291648918</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TitanCNA</td>
@@ -2781,7 +2658,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">skipped</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991961517</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15223319320</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">topGO</td>
@@ -2817,37 +2694,15 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991943115</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">TSCAN</td>
-<td style="text-align: left;">1.47.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14714687513</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">txcutr</td>
 <td style="text-align: left;">1.15.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Uniquorn</td>
-<td style="text-align: left;">2.29.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR*</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14712914269</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15153217808</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">UPDhmm</td>
@@ -2861,28 +2716,6 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">VariantAnnotation</td>
-<td style="text-align: left;">1.55.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">WARNING</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">VariantFiltering</td>
-<td style="text-align: left;">1.45.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">VariantTools</td>
 <td style="text-align: left;">1.51.0</td>
 <td style="text-align: left;">OK</td>
@@ -2891,7 +2724,7 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">failure</td>
-<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/14991960071</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15338744526</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">velociraptor</td>
@@ -2916,39 +2749,28 @@ Total 2308 2304</code></pre>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">VplotR</td>
-<td style="text-align: left;">1.19.0</td>
+<td style="text-align: left;">yarn</td>
+<td style="text-align: left;">1.35.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NOTE</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">success</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">wppi</td>
-<td style="text-align: left;">1.17.0</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">zellkonverter</td>
 <td style="text-align: left;">1.19.0</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR*</td>
 <td style="text-align: left;">skipped</td>
-<td style="text-align: left;">NOTE</td>
-<td style="text-align: left;">success</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">failure</td>
+<td style="text-align: left;">https://github.com/r-universe/bioc/actions/runs/15291932671</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">zFPKM</td>
 <td style="text-align: left;">1.31.0</td>
 <td style="text-align: left;">OK</td>
@@ -2972,7 +2794,7 @@ Total 2308 2304</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(bbs_ru_not_ok2)[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 220</code></pre>
+<pre><code>[1] 187</code></pre>
 </div>
 </div>
 </section>
@@ -3031,159 +2853,176 @@ Total 2308 2304</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 71
-  ..$ Package                : chr "rigvf"
-  ..$ Title                  : chr "R interface to the IGVF Catalog"
-  ..$ Version                : chr "1.1.1"
-  ..$ Authors@R              : chr "c(person(\n\"Martin\", \"Morgan\", role = \"aut\",\nemail = \"mtmorgan.xyz@gmail.com\",\ncomment = c(ORCID = \""| __truncated__
-  ..$ Description            : chr "The IGVF Catalog provides data on the impact of genomic\nvariants on function. The `rigvf` package provides an "| __truncated__
-  ..$ License                : chr "MIT + file LICENSE"
-  ..$ URL                    : chr "https://IGVF.github.io/rigvf"
-  ..$ BugReports             : chr "https://github.com/IGVF/rigvf/issues"
+ $ :List of 73
+  ..$ Package                : chr "cfTools"
+  ..$ Type                   : chr "Package"
+  ..$ Title                  : chr "Informatics Tools for Cell-Free DNA Study"
+  ..$ Version                : chr "1.9.0"
+  ..$ Authors@R              : chr "c(\nperson(given = \"Ran\",\nfamily = \"Hu\",\nrole = c(\"aut\", \"cre\"),\nemail = \"huran@ucla.edu\",\ncommen"| __truncated__
+  ..$ Description            : chr "The cfTools R package provides methods for cell-free DNA\n(cfDNA) methylation data analysis to facilitate cfDNA"| __truncated__
+  ..$ License                : chr "file LICENSE"
   ..$ Encoding               : chr "UTF-8"
-  ..$ biocViews              : chr "ThirdPartyClient, Annotation, VariantAnnotation,\nFunctionalGenomics, GeneRegulation, GenomicVariation,\nGeneTarget"
-  ..$ Roxygen                : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote            : chr "7.3.2"
-  ..$ VignetteBuilder        : chr "knitr"
   ..$ Config/testthat/edition: chr "3"
-  ..$ Config/pak/sysreqs     : chr "libicu-dev libssl-dev zlib1g-dev"
+  ..$ RoxygenNote            : chr "7.2.3"
+  ..$ StagedInstall          : chr "no"
+  ..$ biocViews              : chr "Software, BiomedicalInformatics, Epigenetics, Sequencing,\nMethylSeq, DNAMethylation, DifferentialMethylation"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ URL                    : chr "https://github.com/jasminezhoulab/cfTools"
+  ..$ BugReports             : chr "https://github.com/jasminezhoulab/cfTools/issues"
+  ..$ Config/pak/sysreqs     : chr "libicu-dev libpng-dev libssl-dev python3 zlib1g-dev"
   ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/rigvf"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/cfTools"
   ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  ..$ NeedsCompilation       : chr "no"
+  ..$ RemoteSha              : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  ..$ NeedsCompilation       : chr "yes"
   ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2025-05-13 07:39:54 UTC"
+  .. ..$ Date: chr "2025-06-01 03:54:13 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Martin Morgan [aut] (ORCID: &lt;https://orcid.org/0000-0002-5874-8148&gt;),\nMichael Love [aut, cre] (ORCID:\n&lt;https:"| __truncated__
-  ..$ Maintainer             : chr "Michael Love &lt;michaelisaiahlove@gmail.com&gt;"
-  ..$ MD5sum                 : chr "bcf22f49fd625654fbba085fdb5446db"
+  ..$ Author                 : chr "Ran Hu [aut, cre] (ORCID: &lt;https://orcid.org/0000-0002-0563-8957&gt;),\nMary Louisa Stackpole [aut] (ORCID:\n&lt;http"| __truncated__
+  ..$ Maintainer             : chr "Ran Hu &lt;huran@ucla.edu&gt;"
+  ..$ MD5sum                 : chr "c3b9f75e8f51a8a45fb4e43525ea078c"
   ..$ _user                  : chr "bioc"
   ..$ _type                  : chr "src"
-  ..$ _file                  : chr "rigvf_1.1.1.tar.gz"
-  ..$ _fileid                : chr "1faf23f2946f1751ea856e8de0354969bff53f2e22f08b96de9aacc3d7506b52"
-  ..$ _filesize              : int 353407
-  ..$ _sha256                : chr "1faf23f2946f1751ea856e8de0354969bff53f2e22f08b96de9aacc3d7506b52"
-  ..$ _created               : chr "2025-05-13T07:39:54.000Z"
-  ..$ _published             : chr "2025-05-13T08:21:41.564Z"
+  ..$ _file                  : chr "cfTools_1.9.0.tar.gz"
+  ..$ _fileid                : chr "57296ddf4566422e2ff8f363efdbad807c3586d42783f697843485e006fe825e"
+  ..$ _filesize              : int 2011829
+  ..$ _sha256                : chr "57296ddf4566422e2ff8f363efdbad807c3586d42783f697843485e006fe825e"
+  ..$ _created               : chr "2025-06-01T03:54:13.000Z"
+  ..$ _published             : chr "2025-06-01T04:20:09.683Z"
   ..$ _distro                : chr "noble"
-  ..$ _jobs                  :List of 9
+  ..$ _jobs                  :List of 13
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 283
-  .. .. ..$ config: chr "source"
-  .. .. ..$ r     : chr "4.5.0"
-  .. .. ..$ check : chr "OK"
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 823
+  .. .. ..$ config: chr "linux-devel-arm64"
+  .. .. ..$ r     : chr "4.6.0"
+  .. .. ..$ check : chr "NOTE"
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 937
-  .. .. ..$ config: chr "wasm-release"
-  .. .. ..$ r     : chr "4.4.2"
-  .. .. ..$ check : chr "OK"
-  .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 253
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 726
   .. .. ..$ config: chr "linux-devel-x86_64"
   .. .. ..$ r     : chr "4.6.0"
-  .. .. ..$ check : chr "ERROR"
+  .. .. ..$ check : chr "NOTE"
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 112
-  .. .. ..$ config: chr "macos-release-arm64"
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 826
+  .. .. ..$ config: chr "linux-release-arm64"
   .. .. ..$ r     : chr "4.5.0"
-  .. .. ..$ check : chr "ERROR"
+  .. .. ..$ check : chr "NOTE"
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 272
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 723
   .. .. ..$ config: chr "linux-release-x86_64"
   .. .. ..$ r     : chr "4.5.0"
-  .. .. ..$ check : chr "ERROR"
+  .. .. ..$ check : chr "NOTE"
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 145
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 837
   .. .. ..$ config: chr "macos-oldrel-arm64"
   .. .. ..$ r     : chr "4.4.3"
   .. .. ..$ check : chr "ERROR"
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 268
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 1464
+  .. .. ..$ config: chr "macos-oldrel-x86_64"
+  .. .. ..$ r     : chr "4.4.3"
+  .. .. ..$ check : chr "ERROR"
+  .. ..$ :List of 5
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 578
+  .. .. ..$ config: chr "macos-release-arm64"
+  .. .. ..$ r     : chr "4.5.0"
+  .. .. ..$ check : chr "ERROR"
+  .. ..$ :List of 5
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 1486
+  .. .. ..$ config: chr "macos-release-x86_64"
+  .. .. ..$ r     : chr "4.5.0"
+  .. .. ..$ check : chr "ERROR"
+  .. ..$ :List of 5
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 729
+  .. .. ..$ config: chr "source"
+  .. .. ..$ r     : chr "4.5.0"
+  .. .. ..$ check : chr "OK"
+  .. ..$ :List of 5
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 95
+  .. .. ..$ config: chr "wasm-release"
+  .. .. ..$ r     : chr "4.4.2"
+  .. .. ..$ check : chr "FAIL"
+  .. ..$ :List of 5
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 650
   .. .. ..$ config: chr "windows-devel"
   .. .. ..$ r     : chr "4.6.0"
   .. .. ..$ check : chr "ERROR"
   .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 241
-  .. .. ..$ config: chr "windows-release"
-  .. .. ..$ r     : chr "4.5.0"
-  .. .. ..$ check : chr "ERROR"
-  .. ..$ :List of 5
-  .. .. ..$ job   : num 4.21e+10
-  .. .. ..$ time  : int 243
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 628
   .. .. ..$ config: chr "windows-oldrel"
   .. .. ..$ r     : chr "4.4.3"
   .. .. ..$ check : chr "ERROR"
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
+  .. ..$ :List of 5
+  .. .. ..$ job   : num 4.32e+10
+  .. .. ..$ time  : int 650
+  .. .. ..$ config: chr "windows-release"
+  .. .. ..$ r     : chr "4.5.0"
+  .. .. ..$ check : chr "ERROR"
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
   ..$ _status                : chr "success"
   ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/rigvf"
+  ..$ _upstream              : chr "https://github.com/bioc/cfTools"
   ..$ _commit                :List of 5
-  .. ..$ id       : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. ..$ author   : chr "Mike Love &lt;mikelove@users.noreply.github.com&gt;"
-  .. ..$ committer: chr "Mike Love &lt;mikelove@users.noreply.github.com&gt;"
-  .. ..$ message  : chr "version bump\n"
-  .. ..$ time     : int 1747074555
-  ..$ _maintainer            :List of 6
-  .. ..$ name    : chr "Michael Love"
-  .. ..$ email   : chr "michaelisaiahlove@gmail.com"
-  .. ..$ login   : chr "mikelove"
-  .. ..$ mastodon: chr "@mikelove@genomic.social"
-  .. ..$ orcid   : chr "0000-0001-8401-0545"
-  .. ..$ uuid    : int 69203
+  .. ..$ id       : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. ..$ author   : chr "RoseHuRan &lt;huran@ucla.edu&gt;"
+  .. ..$ committer: chr "RoseHuRan &lt;huran@ucla.edu&gt;"
+  .. ..$ message  : chr "x.y.z\n"
+  .. ..$ time     : int 1748746001
+  ..$ _maintainer            :List of 5
+  .. ..$ name : chr "Ran Hu"
+  .. ..$ email: chr "huran@ucla.edu"
+  .. ..$ login: chr "rosehuran"
+  .. ..$ uuid : int 29250431
+  .. ..$ orcid: chr "0000-0002-0563-8957"
   ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 21
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.1.0"
-  .. .. ..$ role   : chr "Depends"
+  ..$ _dependencies          :List of 15
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "Rcpp"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BH"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Rcpp"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "httr2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rjsoncons"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "tidyr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rlang"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "memoise"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "cachem"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "whisker"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "GenomicRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ package: chr "basilisk"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDb"
+  .. .. ..$ package: chr "R.utils"
   .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "stats"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "cfToolsData"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "graphics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
@@ -3194,99 +3033,74 @@ Total 2308 2304</code></pre>
   .. .. ..$ package: chr "testthat"
   .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "plyranges"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "plotgardener"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg38.knownGene"
-  .. .. ..$ role   : chr "Suggests"
   ..$ _owner                 : chr "bioc"
   ..$ _selfowned             : logi TRUE
   ..$ _usedby                : int 0
-  ..$ _updates               :List of 12
+  ..$ _updates               :List of 6
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-36"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-37"
+  .. .. ..$ week: chr "2024-32"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-38"
+  .. .. ..$ week: chr "2024-44"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-13"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-39"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-03"
+  .. .. ..$ week: chr "2025-15"
   .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-08"
-  .. .. ..$ n   : int 12
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-09"
-  .. .. ..$ n   : int 6
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-10"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-11"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-12"
-  .. .. ..$ n   : int 3
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-20"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-22"
+  .. .. ..$ n   : int 5
   ..$ _tags                  : list()
   ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.1.0"
+  .. .. ..$ version: chr "1.9.0"
   .. .. ..$ bioc   : chr "3.22"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.0.0"
+  .. .. ..$ version: chr "1.8.0"
   .. .. ..$ bioc   : chr "3.21"
-  ..$ _topics                :List of 7
-  .. ..$ : chr "thirdpartyclient"
-  .. ..$ : chr "annotation"
-  .. ..$ : chr "variantannotation"
-  .. ..$ : chr "functionalgenomics"
-  .. ..$ : chr "generegulation"
-  .. ..$ : chr "genomicvariation"
-  .. ..$ : chr "genetarget"
-  ..$ _stars                 : int 0
-  ..$ _contributors          :List of 2
+  ..$ _topics                :List of 8
+  .. ..$ : chr "software"
+  .. ..$ : chr "biomedicalinformatics"
+  .. ..$ : chr "epigenetics"
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "methylseq"
+  .. ..$ : chr "dnamethylation"
+  .. ..$ : chr "differentialmethylation"
+  .. ..$ : chr "cpp"
+  ..$ _stars                 : int 7
+  ..$ _contributors          :List of 3
   .. ..$ :List of 3
-  .. .. ..$ user : chr "mikelove"
-  .. .. ..$ count: int 30
-  .. .. ..$ uuid : int 69203
+  .. .. ..$ user : chr "rosehuran"
+  .. .. ..$ count: int 54
+  .. .. ..$ uuid : int 29250431
   .. ..$ :List of 3
-  .. .. ..$ user : chr "mtmorgan"
-  .. .. ..$ count: int 6
-  .. .. ..$ uuid : int 118552
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 8
+  .. .. ..$ uuid : int 1744257
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jasminezhoulab"
+  .. .. ..$ count: int 5
+  .. .. ..$ uuid : int 26192143
   ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads             :List of 2
-  .. ..$ count : int 144
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/rigvf"
-  ..$ _devurl                : chr "https://github.com/igvf/rigvf"
-  ..$ _pkgdown               : chr "https://IGVF.github.io/rigvf"
+  .. ..$ count : int 211
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/cfTools"
+  ..$ _devurl                : chr "https://github.com/jasminezhoulab/cftools"
   ..$ _searchresults         : int 2
   ..$ _rbuild                : chr "4.5.0"
   ..$ _assets                :List of 11
+  .. ..$ : chr "extra/cfTools.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -3296,87 +3110,449 @@ Total 2308 2304</code></pre>
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/rigvf.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/igvf/rigvf"
+  ..$ _homeurl               : chr "https://github.com/jasminezhoulab/cftools"
   ..$ _realowner             : chr "bioc"
   ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 9
-  .. ..$ : chr "db_edges"
-  .. ..$ : chr "db_gene_elements"
-  .. ..$ : chr "db_gene_variants"
-  .. ..$ : chr "db_nodes"
-  .. ..$ : chr "element_genes"
-  .. ..$ : chr "elements"
-  .. ..$ : chr "gene_elements"
-  .. ..$ : chr "gene_variants"
-  .. ..$ : chr "variant_genes"
-  ..$ _help                  :List of 4
+  ..$ _exports               :List of 8
+  .. ..$ : chr "CancerDetector"
+  .. ..$ : chr "cfDeconvolve"
+  .. ..$ : chr "cfSort"
+  .. ..$ : chr "GenerateFragMeth"
+  .. ..$ : chr "GenerateMarkerParam"
+  .. ..$ : chr "MergeCpGs"
+  .. ..$ : chr "MergePEReads"
+  .. ..$ : chr "PlotFractionPie"
+  ..$ _datasets              :List of 16
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "CancerDetector.markers"
+  .. .. ..$ title : chr "Cancer-specific marker parameter"
+  .. .. ..$ object: chr "CancerDetector.markers"
+  .. .. ..$ file  : chr "CancerDetector.markers.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 3
+  .. .. .. ..$ : chr "markerName"
+  .. .. .. ..$ : chr "tumor"
+  .. .. .. ..$ : chr "normalPlasma"
+  .. .. ..$ rows  : int 1266
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "CancerDetector.reads"
+  .. .. ..$ title : chr "Fragment-level methylation state for cancer detection"
+  .. .. ..$ object: chr "CancerDetector.reads"
+  .. .. ..$ file  : chr "CancerDetector.reads.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 2
+  .. .. .. ..$ : chr "markerName"
+  .. .. .. ..$ : chr "methState"
+  .. .. ..$ rows  : int 9991
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "CpG_OB_demo"
+  .. .. ..$ title : chr "Methylation information for CpG on the original bottom strand (OB)"
+  .. .. ..$ object: chr "CpG_OB_demo"
+  .. .. ..$ file  : chr "CpG_OB_demo.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 5
+  .. .. .. ..$ : chr "GWNJ.0965.805.GW2108234048th.2.1114.27600.18502_1.N.0.ATTCCT.R1.GAAAATGA.R2.AAGATGCC.F1.TGACT.F2.TGACT"
+  .. .. .. ..$ : chr "X."
+  .. .. .. ..$ : chr "chr21"
+  .. .. .. ..$ : chr "X9498035"
+  .. .. .. ..$ : chr "Z"
+  .. .. ..$ rows  : int 2224
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "CpG_OT_demo"
+  .. .. ..$ title : chr "Methylation information for CpG on the original top strand (OT)"
+  .. .. ..$ object: chr "CpG_OT_demo"
+  .. .. ..$ file  : chr "CpG_OT_demo.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 5
+  .. .. .. ..$ : chr "GWNJ.0965.805.GW2108234048th.2.2108.26250.45136_1.N.0.ATTCCT.R1.CTTTCCAA.R2.GCTTCGAG.F1.TGACT.F2.AGACG"
+  .. .. .. ..$ : chr "X."
+  .. .. .. ..$ : chr "chr21"
+  .. .. .. ..$ : chr "X9438974"
+  .. .. .. ..$ : chr "Z"
+  .. .. ..$ rows  : int 2556
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "beta_matrix"
+  .. .. ..$ title : chr "Beta value matrix"
+  .. .. ..$ object: chr "beta_matrix"
+  .. .. ..$ file  : chr "beta_matrix.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 3
+  .. .. .. ..$ : chr "marker1"
+  .. .. .. ..$ : chr "marker2"
+  .. .. .. ..$ : chr "marker3"
+  .. .. ..$ rows  : int 20
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "cfDeconvolve.markers"
+  .. .. ..$ title : chr "Tissue-specific marker parameter"
+  .. .. ..$ object: chr "cfDeconvolve.markers"
+  .. .. ..$ file  : chr "cfDeconvolve.markers.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 8
+  .. .. .. ..$ : chr "markerName"
+  .. .. .. ..$ : chr "tissue1"
+  .. .. .. ..$ : chr "tissue2"
+  .. .. .. ..$ : chr "tissue3"
+  .. .. .. ..$ : chr "tissue4"
+  .. .. .. ..$ : chr "tissue5"
+  .. .. .. ..$ : chr "tissue6"
+  .. .. .. ..$ : chr "tissue7"
+  .. .. ..$ rows  : int 10
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "cfDeconvolve.reads"
+  .. .. ..$ title : chr "Fragment-level methylation state for tissue deconvolution"
+  .. .. ..$ object: chr "cfDeconvolve.reads"
+  .. .. ..$ file  : chr "cfDeconvolve.reads.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 2
+  .. .. .. ..$ : chr "markerName"
+  .. .. .. ..$ : chr "methState"
+  .. .. ..$ rows  : int 942
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "cfsort_markers"
+  .. .. ..$ title : chr "cfSort markers"
+  .. .. ..$ object: chr "cfsort_markers"
+  .. .. ..$ file  : chr "cfsort_markers.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 4
+  .. .. .. ..$ : chr "marker_index"
+  .. .. .. ..$ : chr "alpha_threshold"
+  .. .. .. ..$ : chr "pair"
+  .. .. .. ..$ : chr "group"
+  .. .. ..$ rows  : int 51035
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "cfsort_reads"
+  .. .. ..$ title : chr "Fragment-level methylation state for cfSort tissue deconvolution"
+  .. .. ..$ object: chr "cfsort_reads"
+  .. .. ..$ file  : chr "cfsort_reads.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 2
+  .. .. .. ..$ : chr "markerName"
+  .. .. .. ..$ : chr "methState"
+  .. .. ..$ rows  : int 99999
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "demo.fragment_level.meth.bed"
+  .. .. ..$ title : chr "Fragment-level methylation information"
+  .. .. ..$ object: chr "demo.fragment_level.meth.bed"
+  .. .. ..$ file  : chr "demo.fragment_level.meth.bed.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 9
+  .. .. .. ..$ : chr "chr"
+  .. .. .. ..$ : chr "start"
+  .. .. .. ..$ : chr "end"
+  .. .. .. ..$ : chr "qname"
+  .. .. .. ..$ : chr "fragmentLength"
+  .. .. .. ..$ : chr "strand"
+  .. .. .. ..$ : chr "cpgNumber"
+  .. .. .. ..$ : chr "cpgPosition"
+  .. .. .. ..$ : chr "methState"
+  .. .. ..$ rows  : int 552
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "demo.refo_frag.bed"
+  .. .. ..$ title : chr "Fragment-level information"
+  .. .. ..$ object: chr "demo.refo_frag.bed"
+  .. .. ..$ file  : chr "demo.refo_frag.bed.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 6
+  .. .. .. ..$ : chr "chr"
+  .. .. .. ..$ : chr "start"
+  .. .. .. ..$ : chr "end"
+  .. .. .. ..$ : chr "fragmentLength"
+  .. .. .. ..$ : chr "strand"
+  .. .. .. ..$ : chr "qname"
+  .. .. ..$ rows  : int 559
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "demo.refo_meth.bed"
+  .. .. ..$ title : chr "Methylation information on fragments"
+  .. .. ..$ object: chr "demo.refo_meth.bed"
+  .. .. ..$ file  : chr "demo.refo_meth.bed.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 8
+  .. .. .. ..$ : chr "chr"
+  .. .. .. ..$ : chr "cpgStart"
+  .. .. .. ..$ : chr "cpgEnd"
+  .. .. .. ..$ : chr "strand"
+  .. .. .. ..$ : chr "cpgNumber"
+  .. .. .. ..$ : chr "cpgPosition"
+  .. .. .. ..$ : chr "methState"
+  .. .. .. ..$ : chr "qname"
+  .. .. ..$ rows  : int 552
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "demo.sorted.bed"
+  .. .. ..$ title : chr "Paired-end sequencing reads"
+  .. .. ..$ object: chr "demo.sorted.bed"
+  .. .. ..$ file  : chr "demo.sorted.bed.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 6
+  .. .. .. ..$ : chr "chr21"
+  .. .. .. ..$ : chr "X9417768"
+  .. .. .. ..$ : chr "X9417888"
+  .. .. .. ..$ : chr "GWNJ.0965.805.GW2108234048th.1.2211.31223.60642_1.N.0.ATTCCT.R1.CAAGTCCC.R2.ACATTATG.F1.TGACT.F2.AGACT.2"
+  .. .. .. ..$ : chr "X0"
+  .. .. .. ..$ : chr "X."
+  .. .. ..$ rows  : int 1117
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "marker_index"
+  .. .. ..$ title : chr "Marker name"
+  .. .. ..$ object: chr "marker_index"
+  .. .. ..$ file  : chr "marker_index.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 1
+  .. .. .. ..$ : chr "markerIndex"
+  .. .. ..$ rows  : int 3
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "markers.bed"
+  .. .. ..$ title : chr "Genomic postions of markers"
+  .. .. ..$ object: chr "markers.bed"
+  .. .. ..$ file  : chr "markers.bed.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 4
+  .. .. .. ..$ : chr "chr"
+  .. .. .. ..$ : chr "start"
+  .. .. .. ..$ : chr "end"
+  .. .. .. ..$ : chr "markerName"
+  .. .. ..$ rows  : int 3
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "sample_type"
+  .. .. ..$ title : chr "Sample type"
+  .. .. ..$ object: chr "sample_type"
+  .. .. ..$ file  : chr "sample_type.txt.gz"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 1
+  .. .. .. ..$ : chr "sampleType"
+  .. .. ..$ rows  : int 20
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  ..$ _help                  :List of 24
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "arango"
-  .. .. ..$ title : chr "Internal interface to ArangoDB REST API"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "arango"
-  .. .. .. ..$ : chr "arango_auth"
-  .. .. .. ..$ : chr "arango_collections"
-  .. .. .. ..$ : chr "arango_cursor"
-  .. .. .. ..$ : chr "arango_request"
+  .. .. ..$ page  : chr "beta_matrix"
+  .. .. ..$ title : chr "Beta value matrix"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "beta_matrix"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "catalog_queries"
-  .. .. ..$ title : chr "Query the IGVF Catalog via REST API"
-  .. .. ..$ topics:List of 6
-  .. .. .. ..$ : chr "catalog_queries"
-  .. .. .. ..$ : chr "elements"
-  .. .. .. ..$ : chr "element_genes"
-  .. .. .. ..$ : chr "gene_elements"
-  .. .. .. ..$ : chr "gene_variants"
-  .. .. .. ..$ : chr "variant_genes"
+  .. .. ..$ page  : chr "CancerDetector"
+  .. .. ..$ title : chr "Cancer Detector"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "CancerDetector"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "db_queries"
-  .. .. ..$ title : chr "Query the IGVF Catalog via ArangoDB"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "db_edges"
-  .. .. .. ..$ : chr "db_gene_elements"
-  .. .. .. ..$ : chr "db_gene_variants"
-  .. .. .. ..$ : chr "db_nodes"
-  .. .. .. ..$ : chr "db_queries"
+  .. .. ..$ page  : chr "CancerDetector.markers"
+  .. .. ..$ title : chr "Cancer-specific marker parameter"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "CancerDetector.markers"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "rigvf"
-  .. .. ..$ title : chr "Package configuration global variable management"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "rigvf"
-  .. .. .. ..$ : chr "rigvf_config"
-  ..$ _readme                : chr "https://github.com/bioc/rigvf/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 42
+  .. .. ..$ page  : chr "CancerDetector.reads"
+  .. .. ..$ title : chr "Fragment-level methylation state for cancer detection"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "CancerDetector.reads"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cfDeconvolve"
+  .. .. ..$ title : chr "cfDNA methylation read deconvolution"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cfDeconvolve"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cfDeconvolve.markers"
+  .. .. ..$ title : chr "Tissue-specific marker parameter"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cfDeconvolve.markers"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cfDeconvolve.reads"
+  .. .. ..$ title : chr "Fragment-level methylation state for tissue deconvolution"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cfDeconvolve.reads"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cfSort"
+  .. .. ..$ title : chr "cfSort: tissue deconvolution"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cfSort"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cfsort_markers"
+  .. .. ..$ title : chr "cfSort markers"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cfsort_markers"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cfsort_reads"
+  .. .. ..$ title : chr "Fragment-level methylation state for cfSort tissue deconvolution"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cfsort_reads"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "CpG_OB_demo"
+  .. .. ..$ title : chr "Methylation information for CpG on the original bottom strand (OB)"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "CpG_OB_demo"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "CpG_OT_demo"
+  .. .. ..$ title : chr "Methylation information for CpG on the original top strand (OT)"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "CpG_OT_demo"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "demo.fragment_level.meth.bed"
+  .. .. ..$ title : chr "Fragment-level methylation information"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "demo.fragment_level.meth.bed"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "demo.refo_frag.bed"
+  .. .. ..$ title : chr "Fragment-level information"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "demo.refo_frag.bed"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "demo.refo_meth.bed"
+  .. .. ..$ title : chr "Methylation information on fragments"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "demo.refo_meth.bed"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "demo.sorted.bed"
+  .. .. ..$ title : chr "Paired-end sequencing reads"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "demo.sorted.bed"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GenerateFragMeth"
+  .. .. ..$ title : chr "Generate fragment-level information about methylation states"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "GenerateFragMeth"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GenerateMarkerParam"
+  .. .. ..$ title : chr "Generate the methylation pattern of markers"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "GenerateMarkerParam"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "marker_index"
+  .. .. ..$ title : chr "Marker name"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "marker_index"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "markers.bed"
+  .. .. ..$ title : chr "Genomic postions of markers"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "markers.bed"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "MergeCpGs"
+  .. .. ..$ title : chr "Generate fragment-level methylation states of CpGs"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "MergeCpGs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "MergePEReads"
+  .. .. ..$ title : chr "Generate fragment-level information for paired-end sequencing reads"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "MergePEReads"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "PlotFractionPie"
+  .. .. ..$ title : chr "Plot Pie Chart"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "PlotFractionPie"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "sample_type"
+  .. .. ..$ title : chr "Sample type"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "sample_type"
+  ..$ _readme                : chr "https://github.com/bioc/cfTools/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 74
+  .. ..$ : chr "AnnotationDbi"
+  .. ..$ : chr "AnnotationHub"
   .. ..$ : chr "askpass"
+  .. ..$ : chr "basilisk"
+  .. ..$ : chr "BH"
+  .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocManager"
+  .. ..$ : chr "BiocVersion"
+  .. ..$ : chr "Biostrings"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "blob"
   .. ..$ : chr "cachem"
+  .. ..$ : chr "cfToolsData"
   .. ..$ : chr "cli"
   .. ..$ : chr "cpp11"
+  .. ..$ : chr "crayon"
   .. ..$ : chr "curl"
+  .. ..$ : chr "DBI"
+  .. ..$ : chr "dbplyr"
+  .. ..$ : chr "dir.expiry"
   .. ..$ : chr "dplyr"
+  .. ..$ : chr "ExperimentHub"
   .. ..$ : chr "fansi"
   .. ..$ : chr "fastmap"
+  .. ..$ : chr "filelock"
   .. ..$ : chr "generics"
   .. ..$ : chr "GenomeInfoDb"
   .. ..$ : chr "GenomicRanges"
   .. ..$ : chr "glue"
+  .. ..$ : chr "here"
   .. ..$ : chr "httr"
   .. ..$ : chr "httr2"
   .. ..$ : chr "IRanges"
   .. ..$ : chr "jsonlite"
+  .. ..$ : chr "KEGGREST"
+  .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
   .. ..$ : chr "magrittr"
+  .. ..$ : chr "Matrix"
   .. ..$ : chr "memoise"
   .. ..$ : chr "mime"
   .. ..$ : chr "openssl"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plogr"
+  .. ..$ : chr "png"
   .. ..$ : chr "purrr"
+  .. ..$ : chr "R.methodsS3"
+  .. ..$ : chr "R.oo"
+  .. ..$ : chr "R.utils"
   .. ..$ : chr "R6"
   .. ..$ : chr "rappdirs"
-  .. ..$ : chr "rjsoncons"
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "RcppTOML"
+  .. ..$ : chr "reticulate"
   .. ..$ : chr "rlang"
+  .. ..$ : chr "rprojroot"
+  .. ..$ : chr "RSQLite"
   .. ..$ : chr "S4Vectors"
   .. ..$ : chr "stringi"
   .. ..$ : chr "stringr"
@@ -3387,119 +3563,185 @@ Total 2308 2304</code></pre>
   .. ..$ : chr "UCSC.utils"
   .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
-  .. ..$ : chr "whisker"
   .. ..$ : chr "withr"
   .. ..$ : chr "XVector"
+  .. ..$ : chr "yaml"
+  ..$ _sysdeps               :List of 1
+  .. ..$ :List of 6
+  .. .. ..$ package    : chr "libstdc++6"
+  .. .. ..$ source     : chr "gcc"
+  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04"
+  .. .. ..$ name       : chr "c++"
+  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
+  .. .. ..$ description: chr "GNU Standard C++ Library v3"
   ..$ _vignettes             :List of 1
-  .. ..$ :List of 8
-  .. .. ..$ source  : chr "rigvf.Rmd"
-  .. .. ..$ filename: chr "rigvf.html"
-  .. .. ..$ title   : chr "Accessing data from the IGVF Catalog"
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "cfTools-vignette.Rmd"
+  .. .. ..$ filename: chr "cfTools-vignette.html"
+  .. .. ..$ title   : chr "Analyzing cell-free DNA methylation data with cfTools"
+  .. .. ..$ author  : chr "Ran Hu, Mary Louisa Stackpole, Shuo Li, Xianghong Jasmine Zhou, Wenyuan Li"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 11
-  .. .. .. ..$ : chr "IGVF background"
-  .. .. .. ..$ : chr "Knowledge graph of variant function"
-  .. .. .. ..$ : chr "The rigvf package"
-  .. .. .. ..$ : chr "Data license"
-  .. .. .. ..$ : chr "Catalog API"
-  .. .. .. ..$ : chr "GRanges-based queries"
-  .. .. .. ..$ : chr "ArangoDB API"
-  .. .. .. ..$ : chr "Use with Bioconductor"
-  .. .. .. ..$ : chr "Compute overlap with plyranges"
-  .. .. .. ..$ : chr "Plot variants with plotgardener"
+  .. .. ..$ headings:List of 14
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Installation"
+  .. .. .. ..$ : chr "Input data preparation"
+  .. .. .. ..$ : chr "Merge paired-end sequencing reads to fragment-level"
+  .. .. .. ..$ : chr "Merge methylation states of CpGs on two strands to fragment-level"
+  .. .. .. ..$ : chr "Generate fragment-level information about methylation states"
+  .. .. .. ..$ : chr "Generate the methylation pattern of markers"
+  .. .. .. ..$ : chr "Fragments intersecting with marker regions"
+  .. .. .. ..$ : chr "Cancer detection with CancerDetector()"
+  .. .. .. ..$ : chr "Tissue deconvolution with cfDeconvolve()"
+  .. .. .. ..$ : chr "Tissue deconvolution with cfSort()"
+  .. .. .. ..$ : chr "Visualization with PlotFractionPie()"
+  .. .. .. ..$ : chr "Reference"
   .. .. .. ..$ : chr "Session info"
-  .. .. ..$ created : chr "2025-03-10 15:59:09"
-  .. .. ..$ modified: chr "2025-05-12 18:28:57"
-  .. .. ..$ commits : int 4
-  ..$ _score                 : num 4.78
+  .. .. ..$ created : chr "2022-03-27 20:48:07"
+  .. .. ..$ modified: chr "2025-05-31 00:51:14"
+  .. .. ..$ commits : int 21
+  ..$ _score                 : num 5.62
   ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "rigvf"
+  ..$ _nocasepkg             : chr "cftools"
   ..$ _universes             :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "mikelove"
-  .. ..$ : chr "igvf"
-  ..$ _binaries              :List of 8
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:12:36.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "cf7880c9c9b72d50fb7b2e45c2e9c1b3ddf10ef407927072a002d92f3464011c"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:12:53.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "ec7bcab15b8654a70c7f5d470ca9ac718f9581eaa5427520e1b316c6ea767995"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
+  .. ..$ : chr "rosehuran"
+  .. ..$ : chr "jasminezhoulab"
+  ..$ _binaries              :List of 12
   .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:17:45.000Z"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "946111afeac479bd2d56c7d2a40a9a209bc7e34210326a1678368e73378f81b4"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
-  .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.5.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:17:28.000Z"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "ae6f4b7c7e4b8881ce96d1e5627efbb1425fa8b010d1d8358bf6325862f56489"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
-  .. ..$ :List of 8
   .. .. ..$ r       : chr "4.4.2"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T07:57:41.000Z"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "7209be9fbd087d38e2dda476010ef0b4cd745910379ee3f6826b5bd1d13a46fc"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-05-07T14:10:12.000Z"
+  .. .. ..$ arch    : chr "emscripten"
+  .. .. ..$ commit  : chr "9ce57ca22c3caa499db376e569611265512bcde9"
+  .. .. ..$ fileid  : chr "f3d1c5e1c1026352102f94f9e8ca39b17eeeb2f914aead83ece8b9ab01dc0f06"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
-  .. ..$ :List of 9
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14885222654"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:57:50.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "b74fe6f72050f0fa166ddfcf5b64f169ecba4be33f6352193553ecbbdd9c22b2"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:57:29.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "17433ffa233c1a97dbd0681554503bfe9097cc3d83745e47a461ebbf690a4c61"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:58:13.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "3ed94004bbd6cda88f2bf5386c150bb3a87e2a8c9565a4f0492398660bdba2b1"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:57:31.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "15208f9a33eb5e4c646712686afbab7b6a3df0da27ec56b0ea742b27d13f14e1"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.4.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:57:14.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "844a7e5dfe3df42ad8f265eeea6eed99c1553a4add81ba4ab00c88a1d753208b"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.4.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:58:35.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "b1430ccc7ec84336e8d368cc3552da018b291c987443540cce6eaa45bffee4ad"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:56:20.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "d0e3d7f9b23c369e263961af471663608567c6c4ec6e1d7e90eb8099f3bb12f2"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T03:58:22.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "df2ec74a7eade32448ac8e168e052c11c8b12830dee8d8cb5fdc20326317d73d"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:12:51.000Z"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "1b536e3179535f8035b42e87f1a5b30ac73a1efefaf0827bf07db638a9221099"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T04:00:35.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "450a7521002489a882b690078ca8f3cefac1c400b68246e05c85b4fceee323a3"
   .. .. ..$ status  : chr "failure"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
-  .. ..$ :List of 9
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:12:22.000Z"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "86bac009b8dcb5c883032efac34ea4c061aa341e8410185d46845b4335314eb2"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T04:00:21.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "b8a9dd933e5df70eb8972491263519aba83d623d37f642e9834cf5dbb9a39182"
   .. .. ..$ status  : chr "failure"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"
-  .. ..$ :List of 9
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.1.1"
-  .. .. ..$ date    : chr "2025-05-13T08:12:26.000Z"
-  .. .. ..$ commit  : chr "646bc71e57d433ea69e7c8287627b565128f4e29"
-  .. .. ..$ fileid  : chr "0a3075ba63292a6bcf2873594c205bb4aa6cfb77d4085e47f8042a71c60fa011"
+  .. .. ..$ version : chr "1.9.0"
+  .. .. ..$ date    : chr "2025-06-01T04:00:34.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "4c08e729ad7398f060a5ed74d86853d3461ae953"
+  .. .. ..$ fileid  : chr "f3a9cbded6044ce46214bd61c807f62cc1b0042927d64120d24b77db02229470"
   .. .. ..$ status  : chr "failure"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/14990783248"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/15370646352"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
