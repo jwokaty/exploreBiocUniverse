@@ -1,18 +1,27 @@
 Package: exploreBiocUniverse 
 Title: Compare Bioconductor package build results in R-universe and the BBS 
-Version: 0.0.0.9000
-Authors@R: 
-    person("Andres", "Wokaty", role = c("aut", "cre"))
+Version: 0.0.0.9001
+Authors@R: c(
+    person("Andres", "Wokaty", role = c("aut", "cre"),
+           email = "andres.wokaty@sph.cuny.edu")
+    )
 Description: Attempts to compare the build results for Bioconductor packages
-    in R-universe and the BBS. 
-License: Artistic-2.0 
-Imports: BiocPkgTools
+    in R-universe and the BBS.
+License: Artistic-2.0
+Imports:
+    BiocPkgTools,
+    DT
 Suggests:
     dplyr,
+    jsonlite,
     knitr,
     kable,
     kableExtra,
-    purrr
+    mongolite,
+    purrr,
+    quarto,
+    stringr,
+    tidyr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
