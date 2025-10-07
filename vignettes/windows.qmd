@@ -5,29 +5,24 @@ editor: visual
 engine: knitr
 ---
 
-# Let's get info about all windows builds
+Let's get info about all windows builds.
 
 ## Install dependencies
 
-```{r install_universe, eval = "hide", message = FALSE}
-if (!require("universe", quietly = TRUE))
-    install.packages("universe", repos = "https://ropensci.r-universe.dev")
+```{r library, eval = "hide", message = FALSE}
 
 library(universe)
+library(BiocPkgTools)
+library(dplyr)
+library(DT)
 
 # set max.print to get all packages
 options(max.print = 3000L)
-
-# We'll install BiocPkgTools so that we can check against build report info
-BiocManager::install(c("BiocPkgTools", "dplyr"))
-
-library(BiocPkgTools)
-library(dplyr)
 ```
 
 Get data for bioc.r-universe.dev and bbs devel
 
-```{r all_bioc_ru}
+```{r all_bioc_ru, message = FALSE}
 devel <- "3.22"
 ru_info <- universe::universe_all_packages("bioc", limit = 3000L)
 bbs_info <- BiocPkgTools::biocPkgList(version = devel, repo="BioCsoft")
@@ -54,7 +49,7 @@ if (!identical(ru_pkgs, bbs_pkgs)) {
 }
 ```
 
-For packages not in BBS
+For packages not in BBS / only in bioc.r-universe.dev
 
 ```{r only_ru}
 
@@ -66,7 +61,7 @@ for (pkg in only_ru) {
     only_ru_info[only_ru_info$Package == pkg, ]$RemoteUrl <- pkg_info$RemoteUrl
 }
 
-only_ru
+only_ru_info
 ```
 
 If any of the above RemoteUrls are not from https://github.com/bioc then they
@@ -76,7 +71,25 @@ We'll need to check why some packages aren't in bioc.r-universe.dev; however,
 we already know `scafari` isn't there because it has files > 100MB in its
 git history.
 
+```{r only_in_bbs}
+only_bbs_info <- bbs_info |>
+  dplyr::filter(Package %in% only_bbs) |>
+  dplyr::mutate(Deprecated = PackageStatus) |>
+  dplyr::select(Package, Deprecated)
+
+  only_bbs_info
+```
+
+So all packages except for `scafari` should be marked for deprecation. Packages
+are removed immediately in bioc.r-universe.dev if they are deprecated. Maybe
+this will affect packages depending on them that expect the longer deprecation
+process in Bioconductor?
+
+## Windows info from bioc.r-universe.dev
+
 Next we want to get the data from all windows builds in bioc.r-universe.dev.
+We'll construct the path to the zip using the data associated with the win
+`_binaries` information associated with our version of R if a commit hash exists.
 
 ```{r find-all-windows-builds}
 library(tibble)
@@ -86,7 +99,7 @@ windows_builds <- data.frame(Package = "",
                              Version = "",
                              JobCheck = "",
                              BinariesCheck = "",
-                             DatePublication = "",
+                             #DatePublication = "",
                              Commit = "",
                              MD5sum = "",
                              RemoteSha = "",
@@ -95,7 +108,8 @@ windows_builds <- data.frame(Package = "",
                              BinariesBuildDate = "",
                              JobId = "",
                              BuildUrl = "",
-                             BinariesStatus = "")
+                             BinariesStatus = "",
+                             File = "")
 
 for (i in seq_along(ru_info)) {
   jobid <- ""
@@ -105,6 +119,7 @@ for (i in seq_along(ru_info)) {
   binariesstatus <- ""
   buildcheck <- ""
   binariesbuilddate <- ""
+  binariesversion <- ""
 
   for (j in seq_along(ru_info[[i]]$`_jobs`)) {
       job <- ru_info[[i]]$`_jobs`[[j]]
@@ -123,45 +138,44 @@ for (i in seq_along(ru_info)) {
           binariesstatus <- binary$status
           buildcheck <- binary$check
           binariesbuilddate <- binary$date
+          binariesversion <- binary$version
           break
       }
   }
+  
+  path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.5/"
+
   windows_builds <- tibble::add_row(windows_builds,
                                     Package = ru_info[[i]]$Package,
                                     Version = ru_info[[i]]$Version,
                                     JobCheck = jobcheck,
                                     BinariesCheck = buildcheck,
-                                    DatePublication = ru_info[[i]]$`Date/Publication`,
-                                    Commit = commit,
-                                    MD5sum = ru_info[[i]]$MD5sum,
-                                    RemoteSha = ru_info[[i]]$RemoteSha,
+                                    #DatePublication = ru_info[[i]]$`Date/Publication`,
+                                    Commit = substr(commit, 1, 5),
+                                    MD5sum = substr(ru_info[[i]]$MD5sum, 1, 5),
+                                    RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 5),
                                     RemoteUrl = ru_info[[i]]$RemoteUrl,
                                     Published = ru_info[[i]]$`_published`,
                                     BinariesBuildDate = binariesbuilddate,
                                     JobId = jobid,
                                     BuildUrl = buildurl,
-                                    BinariesStatus = binariesstatus)
-#                                    Path = paste0(path, ru_info[[i]]$`_file`))
+                                    BinariesStatus = binariesstatus,
+                                    File = ifelse(commit != "", paste0(path, Package, "_", binariesversion, ".zip"), ""))
 }
 
 # drop blank first row
 windows_builds <- windows_builds[c(-1), ]
-```
-
-We'll construct the path to the zip using the data associated with the win
-`_binaries` information associated with our version of R.
-
-```{r path-to-zip}
-library(DT)
-
-path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.5/"
 
 windows_builds <- windows_builds |>
-    dplyr::mutate(File = ifelse(Commit != "", paste0(path, Package, "_", Version, ".zip"), "")) |>
     dplyr::arrange(Package)
 
 DT::datatable(windows_builds)
 ```
+
+Why are some packages missing binaries? Are these are packages that
+have failed to build because Windows isn't supported?
+
+* `infercnv` fails to build due a missing Python dependency.
 
 ```{r packages-without-windows-binaries}
 missing_binaries <- windows_builds |>
@@ -171,12 +185,25 @@ missing_binaries <- windows_builds |>
 missing_binaries
 ```
 
-```{r 3.22-deprecated-packages}
-deprecated_pkgs <- bbs_info |>
-    dplyr::filter(PackageStatus == "Deprecated") |>
-    dplyr::select(Package)
+How many packages are failing on Windows?
 
-deprecated_pkgs
+```{r win-errors}
+
+failing_windows <- windows_builds |>
+    dplyr::filter(BinariesCheck == "ERROR") |>
+    dplyr::select(Package, Version, File, Commit, JobCheck,
+                  BinariesBuildDate, JobId, BuildUrl, BinariesStatus)
+
+DT::datatable(failing_windows)
+```
+
+What is the difference between Job Check and Binaries Check data points in
+R Universe?
+
+```{r job-vs-binaries}
+
+windows_builds |>
+    dplyr::filter(JobCheck != BinariesCheck)
 ```
 
 ```{r sessionInfo}

@@ -7,7 +7,7 @@ engine: knitr
 
 # Comparing Bioconductor packages in R-Universe and the BBS
 
-Skip to [Packages not in agreements](#packages-not-in-agreement).
+Skip to [Packages not in agreements](#packages-not-in-agreement) or go to [windows](windows.qmd).
 
 ## R Universe
 
@@ -230,6 +230,7 @@ bbs_ru_not_ok2 |>
     bootstrap_options = c("hover", "responsive")
   )
 ```
+
 Note: `ERROR*` could be an `ERROR`, `TIMEOUT`, or `skipped`.
 
 ### Total packages not in agreement
