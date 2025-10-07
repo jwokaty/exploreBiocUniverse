@@ -38,7 +38,7 @@ jobs:
     - name: Install Bioconductor dependencies
       run: |
         install.packages("universe", repos = "https://ropensci.r-universe.dev", dependencies = TRUE)
-        pkgs <- c("quarto", "purrr", "knitr", "kable", "kableExtra", "dplyr", "BiocPkgTools")
+        pkgs <- c("quarto", "purrr", "knitr", "kable", "kableExtra", "dplyr", "BiocPkgTools", "DT")
         BiocManager::install(pkgs, dependencies = TRUE)
       shell: Rscript {0}
 
@@ -46,8 +46,7 @@ jobs:
       run: |
         mkdir $GITHUB_WORKSPACE/docs
         quarto render $GITHUB_WORKSPACE/vignettes/exploreBiocUniverse.qmd --output-dir $GITHUB_WORKSPACE/docs
-        # Move to index since it's the only document
-        mv $GITHUB_WORKSPACE/docs/exploreBiocUniverse.html $GITHUB_WORKSPACE/docs/index.html
+        quarto render $GITHUB_WORKSPACE/vignettes/windows.qmd --output-dir $GITHUB_WORKSPACE/docs
 
     - name: Deploy to GitHub pages 🚀
       if: github.event_name != 'pull_request'
