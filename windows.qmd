@@ -1,6 +1,8 @@
 ---
 title: "bioc.r-universe.dev windows devel"
-format: html
+format:
+  html:
+    code-fold: true
 editor: visual
 engine: knitr
 ---
@@ -39,7 +41,6 @@ only_bbs <- c()
 if (!identical(ru_pkgs, bbs_pkgs)) {
     only_ru <- setdiff(ru_pkgs, bbs_pkgs)
     only_bbs <- setdiff(bbs_pkgs, ru_pkgs)
-    message("The two sets are not the same.")
     message("Only in bioc.r-universe.dev: ", paste0(only_ru, collapse = " "))
     message("Only in ", devel, " branch on the BBS: ",
             paste0(only_bbs, collapse = " "))
@@ -64,12 +65,9 @@ for (pkg in only_ru) {
 only_ru_info
 ```
 
-If any of the above RemoteUrls are not from https://github.com/bioc then they
-were added via https://github.com/r-universe/bioc/blob/master/.remotes.json.
+If any of the above RemoteUrls are not from https://github.com/bioc then they were added via https://github.com/r-universe/bioc/blob/master/.remotes.json.
 
-We'll need to check why some packages aren't in bioc.r-universe.dev; however,
-we already know `scafari` isn't there because it has files > 100MB in its
-git history.
+We'll need to check why some packages aren't in bioc.r-universe.dev; however, we already know `scafari` isn't there because it has files \> 100MB in its git history.
 
 ```{r only_in_bbs}
 only_bbs_info <- bbs_info |>
@@ -80,14 +78,11 @@ only_bbs_info <- bbs_info |>
   only_bbs_info
 ```
 
-So all packages except for `scafari` should be marked for deprecation. Packages
-are removed immediately in bioc.r-universe.dev if they are deprecated. Maybe
-this will affect packages depending on them that expect the longer deprecation
-process in Bioconductor?
+So all packages except for `scafari` should be marked for deprecation. Packages are removed immediately in bioc.r-universe.dev if they are deprecated. Maybe this will affect packages depending on them that expect the longer deprecation process in Bioconductor?
 
 ## Windows info from bioc.r-universe.dev
 
-Next we want to get the data from all windows builds in bioc.r-universe.dev.
+Next we want to get the data from *all windows builds* in https://bioc.r-universe.dev.
 We'll construct the path to the zip using the data associated with the win
 `_binaries` information associated with our version of R if a commit hash exists.
 
@@ -99,16 +94,17 @@ windows_builds <- data.frame(Package = "",
                              Version = "",
                              JobCheck = "",
                              BinariesCheck = "",
+                             BinariesBuildDate = "",
+                             JobUrl = "",
+                             #BuildUrl = "",
+                             #JobId = "",
+                             BinariesStatus = "",
                              #DatePublication = "",
                              Commit = "",
                              MD5sum = "",
                              RemoteSha = "",
                              RemoteUrl = "",
                              Published = "",
-                             BinariesBuildDate = "",
-                             JobId = "",
-                             BuildUrl = "",
-                             BinariesStatus = "",
                              File = "")
 
 for (i in seq_along(ru_info)) {
@@ -157,8 +153,12 @@ for (i in seq_along(ru_info)) {
                                     RemoteUrl = ru_info[[i]]$RemoteUrl,
                                     Published = ru_info[[i]]$`_published`,
                                     BinariesBuildDate = binariesbuilddate,
-                                    JobId = jobid,
-                                    BuildUrl = buildurl,
+                                    #JobId = jobid,
+                                    JobUrl = ifelse(!is.null(buildurl),
+                                                    paste0("<a href='",
+                                                           buildurl, "/job/",
+                                                           jobid, "'>Link</a>"),
+                                                    ""),
                                     BinariesStatus = binariesstatus,
                                     File = ifelse(commit != "", paste0(path, Package, "_", binariesversion, ".zip"), ""))
 }
@@ -169,42 +169,65 @@ windows_builds <- windows_builds[c(-1), ]
 windows_builds <- windows_builds |>
     dplyr::arrange(Package)
 
-DT::datatable(windows_builds)
+DT::datatable(windows_builds, escape = FALSE)
 ```
 
-Why are some packages missing binaries? Are these are packages that
-have failed to build because Windows isn't supported?
+## Packages missing binaries
 
-* `infercnv` fails to build due a missing Python dependency.
+The following packages are missing binaries. Why? Are these are packages that
+have failed to build because Windows isn't supported? Or are they just missing
+dependencies to be properly built in R Universe?
+
+-   `infercnv` fails to build due a missing Python dependency.
 
 ```{r packages-without-windows-binaries}
 missing_binaries <- windows_builds |>
     dplyr::filter(File == "") |>
-    dplyr::select(Package)
+    dplyr::select(Package, JobCheck)
 
 missing_binaries
 ```
 
-How many packages are failing on Windows?
+## Packages failing on Windows
+
+After removing packages missing binaries (see above), the following packages are
+failing on Windows.
+
 
 ```{r win-errors}
 
 failing_windows <- windows_builds |>
+    dplyr::filter(!(Package %in% missing_binaries$Package)) |>
     dplyr::filter(BinariesCheck == "ERROR") |>
-    dplyr::select(Package, Version, File, Commit, JobCheck,
-                  BinariesBuildDate, JobId, BuildUrl, BinariesStatus)
+    dplyr::select(Package, Version, JobUrl, BinariesCheck, BinariesStatus,
+                  BinariesBuildDate, Commit, JobCheck, File)
 
-DT::datatable(failing_windows)
+DT::datatable(failing_windows, escape = FALSE)
 ```
 
-What is the difference between Job Check and Binaries Check data points in
-R Universe?
+### Understanding the error
+
+For more details about the error, click on the JobUrl. It may not take you to
+the specific location of the error. You need to look at the `Build R-release for
+Windows` (on left). You can then either expand the `Annotations` or expand
+`R CMD check` to see more details about the error. You must be logged in to see
+more details.
+
+![annotations](images/annotations.png)
+
+![r_cmd_check](images/r_cmd_check.png)
+
+## Miscellaneous
+
+What is the difference between Job Check and Binaries Check data points in R Universe?
 
 ```{r job-vs-binaries}
 
-windows_builds |>
+windows_checks <- windows_builds |>
     dplyr::filter(JobCheck != BinariesCheck)
 ```
+
+## sessionInfo()
 
 ```{r sessionInfo}
 sessionInfo()
