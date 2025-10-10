@@ -6,7 +6,7 @@ on:
   push:
     branches: main
   schedule:
-    - cron: "00 17 1 * *" # Monday 1pm ET 
+    - cron: "30 16 * * *" # 2:30pm ET 
   workflow_dispatch:
 
 name: quarto.yaml
