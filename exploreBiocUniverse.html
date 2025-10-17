@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="exploreBiocUniverse_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="exploreBiocUniverse_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="exploreBiocUniverse_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="exploreBiocUniverse_files/libs/bootstrap/bootstrap-8b443b48ee49e16bb685065ccc83795d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="exploreBiocUniverse_files/libs/bootstrap/bootstrap-1a3527bc3e2b4a0f9e15a0533fa92a68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="exploreBiocUniverse_files/libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="exploreBiocUniverse_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
@@ -138,7 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"Total"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        RU  BBS
-Total 2319 2345</code></pre>
+Total 2319 2352</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>not_in_ru <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(bbs_pkgs, ru_pkgs)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>not_in_bbs <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(ru_pkgs, bbs_pkgs)</span>
@@ -225,17 +225,19 @@ Total 2319 2345</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>not_in_ru</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "BiGGR"                  "ccmap"                  "CellScore"             
- [4] "CINdex"                 "DEP"                    "gpuMagic"              
- [7] "Harshlight"             "hiReadsProcessor"       "hypeR"                 
-[10] "interactiveDisplay"     "interactiveDisplayBase" "lapmix"                
-[13] "LinTInd"                "lute"                   "MADSEQ"                
-[16] "oppti"                  "PhenStat"               "qckitfastq"            
-[19] "ReactomeGraph4R"        "Repitools"              "Rfastp"                
-[22] "rGADEM"                 "rRDP"                   "SARC"                  
-[25] "scafari"                "seqArchR"               "seqTools"              
-[28] "Streamer"               "TitanCNA"               "TransView"             
-[31] "XNAString"             </code></pre>
+<pre><code> [1] "anansi"                 "BiGGR"                  "CalibraCurve"          
+ [4] "ccmap"                  "CellScore"              "CINdex"                
+ [7] "DEP"                    "DOtools"                "gpuMagic"              
+[10] "Harshlight"             "hiReadsProcessor"       "hypeR"                 
+[13] "interactiveDisplay"     "interactiveDisplayBase" "lapmix"                
+[16] "LinTInd"                "lute"                   "MADSEQ"                
+[19] "oppti"                  "PhenStat"               "qckitfastq"            
+[22] "ReactomeGraph4R"        "Repitools"              "Rfastp"                
+[25] "rGADEM"                 "rRDP"                   "SARC"                  
+[28] "scafari"                "scGraphVerse"           "scLANE"                
+[31] "seqArchR"               "seqTools"               "SmartPhos"             
+[34] "STADyUM"                "Streamer"               "TitanCNA"              
+[37] "TransView"              "XNAString"             </code></pre>
 </div>
 </div>
 <p>The following packages are not deprecated but are not in RU.</p>
@@ -244,7 +246,8 @@ Total 2319 2345</code></pre>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unique</span>()</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setdiff</span>(not_in_ru, depre_pkgs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "scafari"</code></pre>
+<pre><code>[1] "anansi"       "CalibraCurve" "DOtools"      "scafari"      "scGraphVerse"
+[6] "scLANE"       "SmartPhos"    "STADyUM"     </code></pre>
 </div>
 </div>
 </section>
@@ -1255,8 +1258,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.51.0</td>
-<td style="text-align: left;">1.51.0</td>
+<td style="text-align: left;">1.51.1</td>
+<td style="text-align: left;">1.51.1</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -1676,7 +1679,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.3.11</td>
-<td style="text-align: left;">1.3.11</td>
+<td style="text-align: left;">1.3.13</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -1939,7 +1942,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.5.9</td>
+<td style="text-align: left;">1.5.10</td>
 <td style="text-align: left;">1.5.10</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -2141,7 +2144,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.19.5</td>
 <td style="text-align: left;">1.19.5</td>
@@ -2297,7 +2300,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.1.3</td>
 <td style="text-align: left;">1.1.3</td>
@@ -2525,7 +2528,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.37.0</td>
 <td style="text-align: left;">1.37.0</td>
@@ -2612,7 +2615,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">0.55.3</td>
-<td style="text-align: left;">0.55.3</td>
+<td style="text-align: left;">0.55.4</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -2933,7 +2936,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">2.65.16</td>
 <td style="text-align: left;">2.65.16</td>
@@ -3607,7 +3610,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">2.15.1</td>
+<td style="text-align: left;">2.15.2</td>
 <td style="text-align: left;">2.15.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -3653,7 +3656,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.43.0</td>
 <td style="text-align: left;">1.43.0</td>
@@ -3819,9 +3822,9 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">cBioPortalData</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">2.21.5</td>
 <td style="text-align: left;">2.21.5</td>
@@ -4481,9 +4484,9 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">3.43.1</td>
+<td style="text-align: left;">3.43.2</td>
 <td style="text-align: left;">3.43.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -6548,7 +6551,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.5.1</td>
-<td style="text-align: left;">1.5.1</td>
+<td style="text-align: left;">1.5.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -8441,10 +8444,10 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.5.1</td>
-<td style="text-align: left;">1.99.0</td>
+<td style="text-align: left;">1.99.1</td>
+<td style="text-align: left;">1.99.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -8455,8 +8458,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.5.0</td>
-<td style="text-align: left;">1.5.0</td>
+<td style="text-align: left;">1.5.1</td>
+<td style="text-align: left;">1.5.1</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -9017,7 +9020,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.17.0</td>
 <td style="text-align: left;">1.17.0</td>
@@ -9737,7 +9740,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.7.0</td>
 <td style="text-align: left;">1.7.0</td>
@@ -10807,7 +10810,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">3.99.0</td>
+<td style="text-align: left;">3.99.1</td>
 <td style="text-align: left;">3.99.1</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -11575,7 +11578,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">0.99.4</td>
+<td style="text-align: left;">0.99.5</td>
 <td style="text-align: left;">0.99.5</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -11957,7 +11960,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.17.0</td>
 <td style="text-align: left;">1.17.0</td>
@@ -12171,9 +12174,9 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">hmdbQuery</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.29.0</td>
 <td style="text-align: left;">1.29.0</td>
@@ -12423,12 +12426,12 @@ Total 2319 2345</code></pre>
 <tr class="odd">
 <td style="text-align: left;">Ibex</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">TIMEOUT</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">0.99.32</td>
-<td style="text-align: left;">0.99.32</td>
+<td style="text-align: left;">0.99.33</td>
+<td style="text-align: left;">0.99.34</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -14479,8 +14482,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.35.1</td>
-<td style="text-align: left;">1.35.1</td>
+<td style="text-align: left;">1.35.2</td>
+<td style="text-align: left;">1.35.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -14947,8 +14950,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.13.2</td>
-<td style="text-align: left;">1.13.2</td>
+<td style="text-align: left;">1.13.3</td>
+<td style="text-align: left;">1.13.3</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -15569,7 +15572,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">TIMEOUT</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.15.1</td>
 <td style="text-align: left;">1.15.1</td>
@@ -15963,11 +15966,11 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">miRspongeR</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">2.13.4</td>
+<td style="text-align: left;">2.13.5</td>
 <td style="text-align: left;">2.13.5</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
@@ -16059,9 +16062,9 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">mitology</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.1.0</td>
 <td style="text-align: left;">1.1.0</td>
@@ -16301,7 +16304,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.7.4</td>
 <td style="text-align: left;">1.7.4</td>
@@ -16481,7 +16484,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.19.1</td>
 <td style="text-align: left;">1.19.1</td>
@@ -16627,8 +16630,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.9.2</td>
-<td style="text-align: left;">1.9.2</td>
+<td style="text-align: left;">1.9.3</td>
+<td style="text-align: left;">1.9.3</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -16831,8 +16834,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">4.17.1</td>
-<td style="text-align: left;">4.17.1</td>
+<td style="text-align: left;">4.17.2</td>
+<td style="text-align: left;">4.17.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -18353,10 +18356,10 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.51.4</td>
-<td style="text-align: left;">1.51.4</td>
+<td style="text-align: left;">1.51.5</td>
+<td style="text-align: left;">1.51.5</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -19035,9 +19038,9 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">pgxRpi</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.5.5</td>
 <td style="text-align: left;">1.5.5</td>
@@ -19049,7 +19052,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.29.0</td>
 <td style="text-align: left;">1.29.0</td>
@@ -20787,9 +20790,9 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">Rcollectl</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.9.0</td>
 <td style="text-align: left;">1.9.0</td>
@@ -22073,7 +22076,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">2.17.0</td>
 <td style="text-align: left;">2.17.0</td>
@@ -23300,7 +23303,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.3.13</td>
-<td style="text-align: left;">1.3.13</td>
+<td style="text-align: left;">1.3.14</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -23681,7 +23684,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.49.0</td>
 <td style="text-align: left;">1.49.0</td>
@@ -25169,7 +25172,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.35.1</td>
 <td style="text-align: left;">1.35.1</td>
@@ -25193,7 +25196,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.31.0</td>
 <td style="text-align: left;">1.31.0</td>
@@ -25519,8 +25522,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">0.99.994</td>
-<td style="text-align: left;">0.99.994</td>
+<td style="text-align: left;">0.99.995</td>
+<td style="text-align: left;">0.99.995</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -26287,8 +26290,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.29.3</td>
-<td style="text-align: left;">1.29.3</td>
+<td style="text-align: left;">1.29.4</td>
+<td style="text-align: left;">1.29.4</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -26647,8 +26650,8 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.31.0</td>
-<td style="text-align: left;">1.31.0</td>
+<td style="text-align: left;">1.31.1</td>
+<td style="text-align: left;">1.31.1</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -27041,7 +27044,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.27.1</td>
 <td style="text-align: left;">1.27.1</td>
@@ -27209,7 +27212,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.5.6</td>
 <td style="text-align: left;">1.5.6</td>
@@ -27329,7 +27332,7 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">2.49.4</td>
 <td style="text-align: left;">2.49.4</td>
@@ -27449,10 +27452,10 @@ Total 2319 2345</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">WARNINGS</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.55.1</td>
-<td style="text-align: left;">1.55.1</td>
+<td style="text-align: left;">1.55.2</td>
+<td style="text-align: left;">1.55.2</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.5 on Linux</td>
 </tr>
@@ -27987,9 +27990,9 @@ Total 2319 2345</code></pre>
 <tr class="even">
 <td style="text-align: left;">XINA</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">TIMEOUT</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.27.0</td>
 <td style="text-align: left;">1.27.0</td>
@@ -28267,663 +28270,1034 @@ Total 2319 2345</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package           : chr "miRspongeR"
-  ..$ Type              : chr "Package"
-  ..$ Title             : chr "Identification and analysis of miRNA sponge regulation"
-  ..$ Version           : chr "2.13.5"
-  ..$ Authors@R         : chr "person(given = \"Junpeng\",\nfamily = \"Zhang\",\nrole=c(\"aut\", \"cre\"),\nemail = \"zjp@dali.edu.cn\")"
-  ..$ Description       : chr "This package provides several functions to explore miRNA\nsponge (also called ceRNA or miRNA decoy) regulation "| __truncated__
-  ..$ License           : chr "GPL-3"
-  ..$ URL               : chr "&lt;https://github.com/zhangjunpeng411/miRspongeR&gt;"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ biocViews         : chr "GeneExpression, BiomedicalInformatics, NetworkEnrichment,\nSurvival, Microarray, Software, SingleCell, Spatial, RNASeq"
-  ..$ RoxygenNote       : chr "7.3.2"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ BugReports        : chr "https://github.com/zhangjunpeng411/miRspongeR/issues"
-  ..$ Config/pak/sysreqs: chr "libcairo2-dev cmake libfontconfig1-dev\nlibfreetype6-dev libfribidi-dev libglpk-dev make\nlibharfbuzz-dev libic"| __truncated__
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-10-16 04:30:26 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/miRspongeR"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  ..$ NeedsCompilation  : chr "yes"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-10-16 06:44:24 UTC"
+ $ :List of 81
+  ..$ Package                    : chr "dar"
+  ..$ Title                      : chr "Differential Abundance Analysis by Consensus"
+  ..$ Version                    : chr "1.5.2"
+  ..$ Date                       : chr "2025-10-14"
+  ..$ Authors@R                  : chr "c(person(given = \"Francesc\",\nfamily = \"Catala-Moll\",\nrole = c(\"aut\", \"cre\"),\nemail = \"fcatala@irsic"| __truncated__
+  ..$ Description                : chr "Differential abundance testing in microbiome data\nchallenges both parametric and non-parametric statistical\nm"| __truncated__
+  ..$ License                    : chr "MIT + file LICENSE"
+  ..$ Encoding                   : chr "UTF-8"
+  ..$ Roxygen                    : chr "list(roclets = c(\"collate\", \"namespace\", \"rd\",\n\"roxytest::testthat_roclet\", \"roxyglobals::global_rocl"| __truncated__
+  ..$ URL                        : chr "https://github.com/MicrobialGenomics-IrsicaixaOrg/dar,\nhttps://microbialgenomics-irsicaixaorg.github.io/dar/"
+  ..$ BugReports                 : chr "https://github.com/MicrobialGenomics-IrsicaixaOrg/dar/issues"
+  ..$ biocViews                  : chr "Software, Sequencing, Microbiome, Metagenomics,\nMultipleComparison, Normalization"
+  ..$ Config/testthat/edition    : chr "3"
+  ..$ LazyData                   : chr "false"
+  ..$ Collate                    : chr "'recipe-class.R' 'aldex2.R' 'ancom.R' 'bake.R' 'corncob.R'\n'dar-package.R' 'data.R' 'deseq2.R' 'filter_by_abun"| __truncated__
+  ..$ VignetteBuilder            : chr "knitr"
+  ..$ Config/roxyglobals/filename: chr "globals.R"
+  ..$ Config/roxyglobals/unique  : chr "TRUE"
+  ..$ Config/testthat/parallel   : chr "true"
+  ..$ RoxygenNote                : chr "7.3.3"
+  ..$ Config/pak/sysreqs         : chr "libcairo2-dev libfontconfig1-dev libfreetype6-dev\nlibfribidi-dev libglpk-dev make libgsl0-dev libharfbuzz-dev\"| __truncated__
+  ..$ Repository                 : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication           : chr "2025-10-17 07:32:02 UTC"
+  ..$ RemoteUrl                  : chr "https://github.com/bioc/dar"
+  ..$ RemoteRef                  : chr "HEAD"
+  ..$ RemoteSha                  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  ..$ NeedsCompilation           : chr "no"
+  ..$ Packaged                   :List of 2
+  .. ..$ Date: chr "2025-10-17 09:33:02 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Junpeng Zhang [aut, cre]"
-  ..$ Maintainer        : chr "Junpeng Zhang &lt;zjp@dali.edu.cn&gt;"
-  ..$ MD5sum            : chr "993f501925053e2e8057396909d4c2bf"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "miRspongeR_2.13.5.tar.gz"
-  ..$ _fileid           : chr "573fd2254c6cd08a11200c93fca4f1bd70e3d5982b2d2373b7529fa0c7a08840"
-  ..$ _filesize         : int 616867
-  ..$ _sha256           : chr "573fd2254c6cd08a11200c93fca4f1bd70e3d5982b2d2373b7529fa0c7a08840"
-  ..$ _created          : chr "2025-10-16T06:44:24.000Z"
-  ..$ _published        : chr "2025-10-16T07:00:37.438Z"
-  ..$ _distro           : chr "noble"
-  ..$ _jobs             :List of 13
+  ..$ Author                     : chr "Francesc Catala-Moll [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-2354-8648&gt;)"
+  ..$ Maintainer                 : chr "Francesc Catala-Moll &lt;fcatala@irsicaixa.es&gt;"
+  ..$ MD5sum                     : chr "5f14099bc6ff91408109c2824040eb8c"
+  ..$ _user                      : chr "bioc"
+  ..$ _type                      : chr "src"
+  ..$ _file                      : chr "dar_1.5.2.tar.gz"
+  ..$ _fileid                    : chr "4dcc9303a90e53f167dcbc1c34ca18bc8c3fb447ea53d6a5a58050d3f4d1252b"
+  ..$ _filesize                  : int 2351652
+  ..$ _sha256                    : chr "4dcc9303a90e53f167dcbc1c34ca18bc8c3fb447ea53d6a5a58050d3f4d1252b"
+  ..$ _created                   : chr "2025-10-17T09:33:02.000Z"
+  ..$ _published                 : chr "2025-10-17T09:45:45.116Z"
+  ..$ _distro                    : chr "noble"
+  ..$ _jobs                      :List of 9
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 451
-  .. .. ..$ config  : chr "linux-devel-arm64"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285186187"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 516
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 675
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285193279"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298108559"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 442
-  .. .. ..$ config  : chr "linux-release-arm64"
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285185022"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 505
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 649
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285191790"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298104524"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 426
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 695
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285194406"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298111823"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 686
-  .. .. ..$ config  : chr "macos-oldrel-x86_64"
-  .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285212142"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 414
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 472
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285187528"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298081201"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 672
-  .. .. ..$ config  : chr "macos-release-x86_64"
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285222907"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 704
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 611
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4285135154"
+  .. .. ..$ artifact: chr "4298012804"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 352
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 273
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4285174945"
+  .. .. ..$ artifact: chr "4298052576"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 487
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 591
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285189833"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298097078"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 894
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 686
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285233899"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298109574"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.29e+10
-  .. .. ..$ time    : int 854
+  .. .. ..$ job     : num 5.3e+10
+  .. .. ..$ time    : int 667
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4285229654"
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/miRspongeR"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. ..$ author   : chr "zhangjunpeng411 &lt;zhangjunpeng_411@yahoo.com&gt;"
-  .. ..$ committer: chr "zhangjunpeng411 &lt;zhangjunpeng_411@yahoo.com&gt;"
-  .. ..$ message  : chr "UPDATE\n"
-  .. ..$ time     : int 1760589026
-  ..$ _maintainer       :List of 2
-  .. ..$ name : chr "Junpeng Zhang"
-  .. ..$ email: chr "zjp@dali.edu.cn"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 24
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4298106948"
+  ..$ _buildurl                  : chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  ..$ _status                    : chr "success"
+  ..$ _host                      : chr "GitHub-Actions"
+  ..$ _upstream                  : chr "https://github.com/bioc/dar"
+  ..$ _commit                    :List of 5
+  .. ..$ id       : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. ..$ author   : chr "Francesc Català-Moll &lt;70643921+xec-cm@users.noreply.github.com&gt;"
+  .. ..$ committer: chr "Francesc Català-Moll &lt;70643921+xec-cm@users.noreply.github.com&gt;"
+  .. ..$ message  : chr "bump\n"
+  .. ..$ time     : int 1760686322
+  ..$ _maintainer                :List of 7
+  .. ..$ name    : chr "Francesc Catala-Moll"
+  .. ..$ email   : chr "fcatala@irsicaixa.es"
+  .. ..$ login   : chr "xec-cm"
+  .. ..$ linkedin: chr "in/francesc-català-moll-11342485"
+  .. ..$ twitter : chr "@fcatalamoll"
+  .. ..$ uuid    : int 70643921
+  .. ..$ orcid   : chr "0000-0002-2354-8648"
+  ..$ _registered                : logi TRUE
+  ..$ _dependencies              :List of 49
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
   .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "corpcor"
+  .. .. ..$ package: chr "cli"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SPONGE"
+  .. .. ..$ package: chr "ComplexHeatmap"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "parallel"
+  .. .. ..$ package: chr "crayon"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "igraph"
+  .. .. ..$ package: chr "dplyr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "MCL"
+  .. .. ..$ package: chr "generics"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "clusterProfiler"
+  .. .. ..$ package: chr "ggplot2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ReactomePA"
+  .. .. ..$ package: chr "glue"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "DOSE"
+  .. .. ..$ package: chr "gplots"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "survival"
+  .. .. ..$ package: chr "heatmaply"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ package: chr "magrittr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
+  .. .. ..$ package: chr "mia"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "phyloseq"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
+  .. .. ..$ package: chr "purrr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "RColorBrewer"
+  .. .. ..$ package: chr "readr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "rlang"
+  .. .. ..$ version: chr "&gt;= 0.4.11"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grid"
+  .. .. ..$ package: chr "scales"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
+  .. .. ..$ package: chr "stringr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "foreach"
+  .. .. ..$ package: chr "tibble"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "doParallel"
+  .. .. ..$ package: chr "tidyr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "UpSetR"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "waldo"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ALDEx2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ANCOMBC"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "apeglm"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ashr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Biobase"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "corncob"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "covr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DESeq2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "devtools"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "furrr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "future"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
+  .. .. ..$ package: chr "lefser"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "limma"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Maaslin2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "metagenomeSeq"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "microbiome"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "roxygen2"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-24"
-  .. .. ..$ n   : int 1
+  .. .. ..$ package: chr "roxyglobals"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-25"
-  .. .. ..$ n   : int 3
+  .. .. ..$ package: chr "roxytest"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rstatix"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TreeSummarizedExperiment"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GenomeInfoDb"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                     : chr "bioc"
+  ..$ _selfowned                 : logi TRUE
+  ..$ _usedby                    : int 0
+  ..$ _updates                   :List of 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-42"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-44"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-11"
+  .. .. ..$ n   : int 15
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-42"
-  .. .. ..$ n   : int 2
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  .. .. ..$ n   : int 3
+  ..$ _tags                      : list()
+  ..$ _bioc                      :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.13.4"
+  .. .. ..$ version: chr "1.5.1"
   .. .. ..$ bioc   : chr "3.22"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.12.0"
+  .. .. ..$ version: chr "1.4.0"
   .. .. ..$ bioc   : chr "3.21"
-  ..$ _topics           :List of 13
-  .. ..$ : chr "geneexpression"
-  .. ..$ : chr "biomedicalinformatics"
-  .. ..$ : chr "networkenrichment"
-  .. ..$ : chr "survival"
-  .. ..$ : chr "microarray"
+  ..$ _topics                    :List of 12
   .. ..$ : chr "software"
-  .. ..$ : chr "singlecell"
-  .. ..$ : chr "spatial"
-  .. ..$ : chr "rnaseq"
-  .. ..$ : chr "cerna"
-  .. ..$ : chr "mirna"
-  .. ..$ : chr "sponge"
-  .. ..$ : chr "cpp"
-  ..$ _stars            : int 5
-  ..$ _contributors     :List of 6
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "microbiome"
+  .. ..$ : chr "metagenomics"
+  .. ..$ : chr "multiplecomparison"
+  .. ..$ : chr "normalization"
+  .. ..$ : chr "bioconductor"
+  .. ..$ : chr "biomarker-discovery"
+  .. ..$ : chr "differential-abundance-analysis"
+  .. ..$ : chr "feature-selection"
+  .. ..$ : chr "microbiology"
+  .. ..$ : chr "phyloseq"
+  ..$ _stars                     : int 4
+  ..$ _contributors              :List of 4
   .. ..$ :List of 3
-  .. .. ..$ user : chr "zhangjunpeng411"
-  .. .. ..$ count: int 194
-  .. .. ..$ uuid : int 10843899
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 2746443
+  .. .. ..$ user : chr "xec-cm"
+  .. .. ..$ count: int 290
+  .. .. ..$ uuid : int 70643921
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 11
+  .. .. ..$ count: int 4
   .. .. ..$ uuid : int 1744257
   .. ..$ :List of 3
+  .. .. ..$ user : chr "juditfarreb"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 67824215
+  .. ..$ :List of 3
   .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 8810451
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vobencha"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2466173
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "link-ny"
   .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 4392950
-  ..$ _userbio          :List of 4
+  .. .. ..$ uuid : int 8810451
+  ..$ _userbio                   :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 290
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/miRspongeR"
-  ..$ _mentions         : int 2
-  ..$ _devurl           : chr "https://github.com/zhangjunpeng411/mirsponger"
-  ..$ _searchresults    : int 8
-  ..$ _rbuild           : chr "4.5.1"
-  ..$ _assets           :List of 11
+  ..$ _downloads                 :List of 2
+  .. ..$ count : int 210
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/dar"
+  ..$ _devurl                    : chr "https://github.com/microbialgenomics-irsicaixaorg/dar"
+  ..$ _pkgdown                   : chr "https://microbialgenomics-irsicaixaorg.github.io/dar/"
+  ..$ _searchresults             : int 9
+  ..$ _rbuild                    : chr "4.5.1"
+  ..$ _assets                    :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/miRspongeR.html"
+  .. ..$ : chr "extra/dar.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/zhangjunpeng411/mirsponger"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 10
-  .. ..$ : chr "integrateMethod"
-  .. ..$ : chr "moduleDEA"
-  .. ..$ : chr "moduleFEA"
-  .. ..$ : chr "moduleSurvival"
-  .. ..$ : chr "netModule"
-  .. ..$ : chr "querymiRTargetbinding"
-  .. ..$ : chr "sample_cor_network"
-  .. ..$ : chr "sponge_sample_specific"
-  .. ..$ : chr "spongeMethod"
-  .. ..$ : chr "spongeValidate"
-  ..$ _help             :List of 11
+  ..$ _homeurl                   : chr "https://github.com/microbialgenomics-irsicaixaorg/dar"
+  ..$ _realowner                 : chr "bioc"
+  ..$ _cranurl                   : logi FALSE
+  ..$ _exports                   :List of 43
+  .. ..$ : chr "abundance_plt"
+  .. ..$ : chr "add_tax"
+  .. ..$ : chr "add_var"
+  .. ..$ : chr "bake"
+  .. ..$ : chr "contains_rarefaction"
+  .. ..$ : chr "cool"
+  .. ..$ : chr "corr_heatmap"
+  .. ..$ : chr "exclusion_plt"
+  .. ..$ : chr "export_steps"
+  .. ..$ : chr "find_intersections"
+  .. ..$ : chr "get_phy"
+  .. ..$ : chr "get_tax"
+  .. ..$ : chr "get_var"
+  .. ..$ : chr "import_steps"
+  .. ..$ : chr "intersection_df"
+  .. ..$ : chr "intersection_plt"
+  .. ..$ : chr "mutual_plt"
+  .. ..$ : chr "otu_table"
+  .. ..$ : chr "overlap_df"
+  .. ..$ : chr "phy_qc"
+  .. ..$ : chr "prep"
+  .. ..$ : chr "rand_id"
+  .. ..$ : chr "read_data"
+  .. ..$ : chr "recipe"
+  .. ..$ : chr "sample_data"
+  .. ..$ : chr "step_aldex"
+  .. ..$ : chr "step_ancom"
+  .. ..$ : chr "step_corncob"
+  .. ..$ : chr "step_deseq"
+  .. ..$ : chr "step_filter_by_abundance"
+  .. ..$ : chr "step_filter_by_prevalence"
+  .. ..$ : chr "step_filter_by_rarity"
+  .. ..$ : chr "step_filter_by_variance"
+  .. ..$ : chr "step_filter_taxa"
+  .. ..$ : chr "step_lefse"
+  .. ..$ : chr "step_maaslin"
+  .. ..$ : chr "step_metagenomeseq"
+  .. ..$ : chr "step_rarefaction"
+  .. ..$ : chr "step_subset_taxa"
+  .. ..$ : chr "step_wilcox"
+  .. ..$ : chr "steps_ids"
+  .. ..$ : chr "tax_table"
+  .. ..$ : chr "zero_otu"
+  ..$ _datasets                  :List of 3
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "metaHIV_phy"
+  .. .. ..$ title : chr "Phyloseq object from metaHIV project"
+  .. .. ..$ object: chr "metaHIV_phy"
+  .. .. ..$ file  : chr "metaHIV_phy.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "phyloseq"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "test_prep_rec"
+  .. .. ..$ title : chr "PrepRecipe for metaHIV_phy data"
+  .. .. ..$ object: chr "test_prep_rec"
+  .. .. ..$ file  : chr "test_prep_rec.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "PrepRecipe"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "test_rec"
+  .. .. ..$ title : chr "Recipe for metaHIV_phy data"
+  .. .. ..$ object: chr "test_rec"
+  .. .. ..$ file  : chr "test_rec.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "Recipe"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  ..$ _help                      :List of 46
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "integrateMethod"
-  .. .. ..$ title : chr "Integrate method for identifying miRNA sponge interactions by integrating different methods"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "integrateMethod"
+  .. .. ..$ page  : chr "abundance_plt"
+  .. .. ..$ title : chr "Abundance boxplot"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "abundance_plt"
+  .. .. .. ..$ : chr "abundance_plt,PrepRecipe-method"
+  .. .. .. ..$ : chr "abundance_plt,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "moduleDEA"
-  .. .. ..$ title : chr "Disease enrichment analysis of modules"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "moduleDEA"
+  .. .. ..$ page  : chr "add_tax"
+  .. .. ..$ title : chr "Adds taxonomic level of interest in the Recipe."
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "add_tax"
+  .. .. .. ..$ : chr "add_tax,PrepRecipe-method"
+  .. .. .. ..$ : chr "add_tax,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "moduleFEA"
-  .. .. ..$ title : chr "Functional GO, KEGG and Reactome enrichment analysis of modules"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "moduleFEA"
+  .. .. ..$ page  : chr "add_var"
+  .. .. ..$ title : chr "Adds variable of interest to the Recipe"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "add_var"
+  .. .. .. ..$ : chr "add_var,PrepRecipe-method"
+  .. .. .. ..$ : chr "add_var,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "moduleSurvival"
-  .. .. ..$ title : chr "Survival analysis of modules"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "moduleSurvival"
+  .. .. ..$ page  : chr "bake"
+  .. .. ..$ title : chr "Define consensus strategies from a Recipe"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "bake"
+  .. .. .. ..$ : chr "bake,PrepRecipe-method"
+  .. .. .. ..$ : chr "bake,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "netModule"
-  .. .. ..$ title : chr "Identifying miRNA sponge modules from network"
+  .. .. ..$ page  : chr "contains_rarefaction"
+  .. .. ..$ title : chr "Checks if Recipe contains a rarefaction step"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "netModule"
+  .. .. .. ..$ : chr "contains_rarefaction"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "precomputed_null_model"
-  .. .. ..$ title : chr "A null model for testing purposes in SPONGE R package"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "precomputed_null_model"
+  .. .. ..$ page  : chr "cool"
+  .. .. ..$ title : chr "Extract results from defined bake"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "cool"
+  .. .. .. ..$ : chr "cool,PrepRecipe-method"
+  .. .. .. ..$ : chr "cool,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "querymiRTargetbinding"
-  .. .. ..$ title : chr "Query miRNA-target interactions by combining expression data and putative miRNA-target interactions"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "querymiRTargetbinding"
+  .. .. ..$ page  : chr "corr_heatmap"
+  .. .. ..$ title : chr "Plot otuput of the 'overlap_df' function as a heatmap."
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "corr_heatmap"
+  .. .. .. ..$ : chr "corr_heatmap,PrepRecipe-method"
+  .. .. .. ..$ : chr "corr_heatmap,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "sample_cor_network"
-  .. .. ..$ title : chr "Identifying sample-sample correlation network"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "sample_cor_network"
+  .. .. ..$ page  : chr "exclusion_plt"
+  .. .. ..$ title : chr "Plot the number of shared DA OTUs between methods."
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "exclusion_plt"
+  .. .. .. ..$ : chr "exclusion_plt,PrepRecipe-method"
+  .. .. .. ..$ : chr "exclusion_plt,Recipe-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "sponge_sample_specific"
-  .. .. ..$ title : chr "Identifying sample-specific miRNA sponge interactions"
+  .. .. ..$ page  : chr "export_steps"
+  .. .. ..$ title : chr "Export step parameters as json."
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "sponge_sample_specific"
+  .. .. .. ..$ : chr "export_steps"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "spongeMethod"
-  .. .. ..$ title : chr "Identifying miRNA sponge interactions"
+  .. .. ..$ page  : chr "find_intersections"
+  .. .. ..$ title : chr "Finds common OTU between method results"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "spongeMethod"
+  .. .. .. ..$ : chr "find_intersections"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "spongeValidate"
-  .. .. ..$ title : chr "Validation of computationally predicted miRNA sponge interactions"
+  .. .. ..$ page  : chr "get_phy"
+  .. .. ..$ title : chr "Returns phyloseq from Recipe-class object"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "get_phy"
+  .. .. .. ..$ : chr "get_phy,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_tax"
+  .. .. ..$ title : chr "Returns tax_info from Recipe-class object"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "get_tax"
+  .. .. .. ..$ : chr "get_tax,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_var"
+  .. .. ..$ title : chr "Returns var_info from Recipe-class object"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "get_var"
+  .. .. .. ..$ : chr "get_var,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "import_steps"
+  .. .. ..$ title : chr "Import steps from json file"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "spongeValidate"
-  ..$ _readme           : chr "https://github.com/bioc/miRspongeR/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 270
+  .. .. .. ..$ : chr "import_steps"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "intersection_df"
+  .. .. ..$ title : chr "Returns data.frame with OTU intersection between methods"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "intersection_df"
+  .. .. .. ..$ : chr "intersection_df,PrepRecipe-method"
+  .. .. .. ..$ : chr "intersection_df,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "intersection_plt"
+  .. .. ..$ title : chr "Plot results using UpSet plot"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "intersection_plt"
+  .. .. .. ..$ : chr "intersection_plt,PrepRecipe-method"
+  .. .. .. ..$ : chr "intersection_plt,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "metaHIV_phy"
+  .. .. ..$ title : chr "Phyloseq object from metaHIV project"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "metaHIV_phy"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "mutual_plt"
+  .. .. ..$ title : chr "Mutual finding plot"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "mutual_plt"
+  .. .. .. ..$ : chr "mutual_plt,PrepRecipe-method"
+  .. .. .. ..$ : chr "mutual_plt,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "otu_table"
+  .. .. ..$ title : chr "Extracts otu_table from phyloseq inside a Recipe"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "otu_table"
+  .. .. .. ..$ : chr "otu_table,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "overlap_df"
+  .. .. ..$ title : chr "Overlap of significant OTUs between tested methods."
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "overlap_df"
+  .. .. .. ..$ : chr "overlap_df,PrepRecipe-method"
+  .. .. .. ..$ : chr "overlap_df,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "phy_qc"
+  .. .. ..$ title : chr "Phyloseq Quality Control Metrics"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "phy_qc"
+  .. .. .. ..$ : chr "phy_qc,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Recipe-class"
+  .. .. ..$ title : chr "Recipe-class object"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "phyloseq_or_null-class"
+  .. .. .. ..$ : chr "Recipe-class"
+  .. .. .. ..$ : chr "show,PrepRecipe-method"
+  .. .. .. ..$ : chr "tibble_or_NULL-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "prep"
+  .. .. ..$ title : chr "Performs all the steps defined in a Recipe"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "prep"
+  .. .. .. ..$ : chr "prep,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "PrepRecipe-class"
+  .. .. ..$ title : chr "PrepRecipe-class object"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "PrepRecipe-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "rand_id"
+  .. .. ..$ title : chr "Make a random identification field for steps"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "rand_id"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "recipe"
+  .. .. ..$ title : chr "Create a Recipe for preprocessing data"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "Recipe"
+  .. .. .. ..$ : chr "recipe"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "sample_data"
+  .. .. ..$ title : chr "Extracts sample_data from phyloseq inside a Recipe"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "sample_data"
+  .. .. .. ..$ : chr "sample_data,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_aldex"
+  .. .. ..$ title : chr "ALDEx2 analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_aldex"
+  .. .. .. ..$ : chr "step_aldex,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_aldex,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_corncob"
+  .. .. ..$ title : chr "corncob analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_corncob"
+  .. .. .. ..$ : chr "step_corncob,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_corncob,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_deseq"
+  .. .. ..$ title : chr "DESeq2 analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_deseq"
+  .. .. .. ..$ : chr "step_deseq,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_deseq,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_filter_by_abundance"
+  .. .. ..$ title : chr "Filter taxa by abundance"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_filter_by_abundance"
+  .. .. .. ..$ : chr "step_filter_by_abundance,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_filter_by_abundance,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_filter_by_prevalence"
+  .. .. ..$ title : chr "Filter taxa by prevalence"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_filter_by_prevalence"
+  .. .. .. ..$ : chr "step_filter_by_prevalence,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_filter_by_prevalence,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_filter_by_rarity"
+  .. .. ..$ title : chr "Filter taxa by rarity"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_filter_by_rarity"
+  .. .. .. ..$ : chr "step_filter_by_rarity,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_filter_by_rarity,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_filter_by_variance"
+  .. .. ..$ title : chr "Filter taxa by variance"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_filter_by_variance"
+  .. .. .. ..$ : chr "step_filter_by_variance,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_filter_by_variance,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_filter_taxa"
+  .. .. ..$ title : chr "Filter taxa based on across-sample OTU abundance criteria"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "step_filter_taxa"
+  .. .. .. ..$ : chr "step_filter_taxa,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_lefse"
+  .. .. ..$ title : chr "lefse analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_lefse"
+  .. .. .. ..$ : chr "step_lefse,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_lefse,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_maaslin"
+  .. .. ..$ title : chr "MaAsLin2 analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_maaslin"
+  .. .. .. ..$ : chr "step_maaslin,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_maaslin,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_metagenomeseq"
+  .. .. ..$ title : chr "MetagenomeSeq analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_metagenomeseq"
+  .. .. .. ..$ : chr "step_metagenomeseq,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_metagenomeseq,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_rarefaction"
+  .. .. ..$ title : chr "Resample an OTU table such that all samples have the same library size."
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_rarefaction"
+  .. .. .. ..$ : chr "step_rarefaction,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_rarefaction,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_subset_taxa"
+  .. .. ..$ title : chr "Subset taxa by taxonomic level"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_subset_taxa"
+  .. .. .. ..$ : chr "step_subset_taxa,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_subset_taxa,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "step_wilcox"
+  .. .. ..$ title : chr "Wilcox analysis"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "step_wilcox"
+  .. .. .. ..$ : chr "step_wilcox,PrepRecipe-method"
+  .. .. .. ..$ : chr "step_wilcox,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "steps_ids"
+  .. .. ..$ title : chr "Get step_ids from recipe"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "steps_ids"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "tax_table"
+  .. .. ..$ title : chr "Extracts tax_table from phyloseq inside a Recipe"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "tax_table"
+  .. .. .. ..$ : chr "tax_table,Recipe-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "test_prep_rec"
+  .. .. ..$ title : chr "PrepRecipe for metaHIV_phy data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "test_prep_rec"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "test_rec"
+  .. .. ..$ title : chr "Recipe for metaHIV_phy data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "test_rec"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "zero_otu"
+  .. .. ..$ title : chr "Extract outs with all 0 values in at least on level of the variable"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "zero_otu"
+  .. .. .. ..$ : chr "zero_otu,phyloseq-method"
+  .. .. .. ..$ : chr "zero_otu,Recipe-method"
+  ..$ _pkglogo                   : chr "https://github.com/bioc/dar/raw/HEAD/man/figures/logo.png"
+  ..$ _readme                    : chr "https://github.com/bioc/dar/raw/HEAD/README.md"
+  ..$ _rundeps                   :List of 219
   .. ..$ : chr "abind"
-  .. ..$ : chr "AnnotationDbi"
+  .. ..$ : chr "ade4"
   .. ..$ : chr "ape"
-  .. ..$ : chr "aplot"
   .. ..$ : chr "askpass"
-  .. ..$ : chr "backports"
+  .. ..$ : chr "assertthat"
+  .. ..$ : chr "assorthead"
   .. ..$ : chr "base64enc"
-  .. ..$ : chr "bayestestR"
+  .. ..$ : chr "beachmat"
+  .. ..$ : chr "beeswarm"
   .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocFileCache"
+  .. ..$ : chr "BiocBaseUtils"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocNeighbors"
   .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "biomaRt"
+  .. ..$ : chr "BiocSingular"
+  .. ..$ : chr "biomformat"
   .. ..$ : chr "Biostrings"
   .. ..$ : chr "bit"
   .. ..$ : chr "bit64"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "boot"
-  .. ..$ : chr "broom"
+  .. ..$ : chr "bitops"
+  .. ..$ : chr "bluster"
   .. ..$ : chr "bslib"
+  .. ..$ : chr "ca"
   .. ..$ : chr "cachem"
+  .. ..$ : chr "Cairo"
   .. ..$ : chr "callr"
-  .. ..$ : chr "car"
-  .. ..$ : chr "carData"
-  .. ..$ : chr "caret"
+  .. ..$ : chr "caTools"
   .. ..$ : chr "cellranger"
-  .. ..$ : chr "checkmate"
   .. ..$ : chr "circlize"
-  .. ..$ : chr "class"
   .. ..$ : chr "cli"
   .. ..$ : chr "clipr"
-  .. ..$ : chr "clock"
   .. ..$ : chr "clue"
   .. ..$ : chr "cluster"
-  .. ..$ : chr "clusterProfiler"
   .. ..$ : chr "codetools"
   .. ..$ : chr "colorspace"
+  .. ..$ : chr "commonmark"
   .. ..$ : chr "ComplexHeatmap"
-  .. ..$ : chr "conflicted"
-  .. ..$ : chr "corpcor"
-  .. ..$ : chr "corrplot"
-  .. ..$ : chr "cowplot"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
+  .. ..$ : chr "crosstalk"
   .. ..$ : chr "curl"
-  .. ..$ : chr "cvms"
   .. ..$ : chr "data.table"
-  .. ..$ : chr "datawizard"
   .. ..$ : chr "DBI"
-  .. ..$ : chr "dbplyr"
-  .. ..$ : chr "Deriv"
-  .. ..$ : chr "diagram"
+  .. ..$ : chr "DECIPHER"
+  .. ..$ : chr "decontam"
+  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "DelayedMatrixStats"
+  .. ..$ : chr "dendextend"
+  .. ..$ : chr "diffobj"
   .. ..$ : chr "digest"
-  .. ..$ : chr "doBy"
+  .. ..$ : chr "DirichletMultinomial"
   .. ..$ : chr "doParallel"
-  .. ..$ : chr "doRNG"
-  .. ..$ : chr "DOSE"
   .. ..$ : chr "dplyr"
-  .. ..$ : chr "dtplyr"
-  .. ..$ : chr "e1071"
-  .. ..$ : chr "enrichplot"
+  .. ..$ : chr "dqrng"
+  .. ..$ : chr "egg"
+  .. ..$ : chr "emmeans"
+  .. ..$ : chr "estimability"
   .. ..$ : chr "evaluate"
-  .. ..$ : chr "expm"
   .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
-  .. ..$ : chr "fastmatch"
-  .. ..$ : chr "fgsea"
-  .. ..$ : chr "filelock"
+  .. ..$ : chr "fillpattern"
+  .. ..$ : chr "FNN"
   .. ..$ : chr "fontawesome"
-  .. ..$ : chr "fontBitstreamVera"
-  .. ..$ : chr "fontLiberation"
-  .. ..$ : chr "fontquiver"
-  .. ..$ : chr "forcats"
   .. ..$ : chr "foreach"
   .. ..$ : chr "formatR"
-  .. ..$ : chr "Formula"
   .. ..$ : chr "fs"
   .. ..$ : chr "futile.logger"
   .. ..$ : chr "futile.options"
-  .. ..$ : chr "future"
-  .. ..$ : chr "future.apply"
-  .. ..$ : chr "gargle"
-  .. ..$ : chr "gdtools"
+  .. ..$ : chr "gclus"
   .. ..$ : chr "generics"
+  .. ..$ : chr "GenomicRanges"
   .. ..$ : chr "GetoptLong"
-  .. ..$ : chr "ggforce"
-  .. ..$ : chr "ggfun"
-  .. ..$ : chr "ggiraph"
+  .. ..$ : chr "ggbeeswarm"
   .. ..$ : chr "ggnewscale"
   .. ..$ : chr "ggplot2"
-  .. ..$ : chr "ggplotify"
-  .. ..$ : chr "ggpubr"
-  .. ..$ : chr "ggraph"
+  .. ..$ : chr "ggrastr"
   .. ..$ : chr "ggrepel"
-  .. ..$ : chr "ggridges"
-  .. ..$ : chr "ggsci"
-  .. ..$ : chr "ggsignif"
-  .. ..$ : chr "ggtangle"
+  .. ..$ : chr "ggtext"
+  .. ..$ : chr "GlobalOptions"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "gplots"
+  .. ..$ : chr "gridExtra"
+  .. ..$ : chr "gridtext"
+  .. ..$ : chr "gtable"
+  .. ..$ : chr "gtools"
+  .. ..$ : chr "heatmaply"
+  .. ..$ : chr "highr"
+  .. ..$ : chr "hms"
+  .. ..$ : chr "htmltools"
+  .. ..$ : chr "htmlwidgets"
+  .. ..$ : chr "httr"
+  .. ..$ : chr "igraph"
+  .. ..$ : chr "IRanges"
+  .. ..$ : chr "irlba"
+  .. ..$ : chr "isoband"
+  .. ..$ : chr "iterators"
+  .. ..$ : chr "jpeg"
+  .. ..$ : chr "jquerylib"
   .. .. [list output truncated]
-  ..$ _sysdeps          :List of 1
-  .. ..$ :List of 6
-  .. .. ..$ package    : chr "libstdc++6"
-  .. .. ..$ source     : chr "gcc"
-  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04"
-  .. .. ..$ name       : chr "c++"
-  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
-  .. .. ..$ description: chr "GNU Standard C++ Library v3"
-  ..$ _vignettes        :List of 1
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "miRspongeR.Rmd"
-  .. .. ..$ filename: chr "miRspongeR.html"
-  .. .. ..$ title   : chr "Identification and analysis of miRNA sponge regulation"
-  .. .. ..$ author  : chr " Junpeng Zhang (zjp@dali.edu.cn) School of Engineering, Dali University"
+  ..$ _vignettes                 :List of 6
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "data_import.Rmd"
+  .. .. ..$ filename: chr "data_import.html"
+  .. .. ..$ title   : chr "Converting Common Data Formats to Phyloseq and TreeSummarizedExperiment"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 20
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Identification of miRNA sponge interactions"
-  .. .. .. ..$ : chr "miRHomology"
-  .. .. .. ..$ : chr "pc"
-  .. .. .. ..$ : chr "sppc"
-  .. .. .. ..$ : chr "hermes"
-  .. .. .. ..$ : chr "ppc"
-  .. .. .. ..$ : chr "muTaME"
-  .. .. .. ..$ : chr "cernia"
-  .. .. .. ..$ : chr "SPONGE"
-  .. .. .. ..$ : chr "integrateMethod"
-  .. .. .. ..$ : chr "Identifying sample-specific miRNA sponge interaction networks"
-  .. .. .. ..$ : chr "Identifying sample-sample correlation network"
-  .. .. .. ..$ : chr "Validation of miRNA sponge interactions"
-  .. .. .. ..$ : chr "Module identification from miRNA sponge network"
-  .. .. .. ..$ : chr "Disease and functional enrichment analysis of miRNA sponge modules"
-  .. .. .. ..$ : chr "Survival analysis of miRNA sponge modules"
-  .. .. .. ..$ : chr "Conclusions"
-  .. .. .. ..$ : chr "References"
-  .. .. .. ..$ : chr "Session information"
-  .. .. ..$ created : chr "2019-03-05 13:50:01"
-  .. .. ..$ modified: chr "2024-08-25 02:43:27"
+  .. .. ..$ headings:List of 8
+  .. .. .. ..$ : chr "Importing Data from biome Format"
+  .. .. .. ..$ : chr "To Phyloseq"
+  .. .. .. ..$ : chr "To TreeSummarizedExperiment"
+  .. .. .. ..$ : chr "Importing Data from qiime Format"
+  .. .. .. ..$ : chr "Importing Data from mothur Format"
+  .. .. .. ..$ : chr "Importing Data from metaphlan Format"
+  .. .. .. ..$ : chr "Conclusion"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2022-08-19 15:39:01"
+  .. .. ..$ modified: chr "2024-10-16 18:04:01"
+  .. .. ..$ commits : int 13
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "filtering_subsetting.Rmd"
+  .. .. ..$ filename: chr "filtering_subsetting.html"
+  .. .. ..$ title   : chr "Filtering and Subsetting"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 9
+  .. .. .. ..$ : chr "step_filter_taxa"
+  .. .. .. ..$ : chr "Convenience Wrappers"
+  .. .. .. ..$ : chr "step_filter_by_abundance"
+  .. .. .. ..$ : chr "step_filter_by_prevalence"
+  .. .. .. ..$ : chr "step_filter_by_rarity"
+  .. .. .. ..$ : chr "step_filter_by_variance"
+  .. .. .. ..$ : chr "subset_taxa"
+  .. .. .. ..$ : chr "Conclusion"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2023-11-29 08:15:01"
+  .. .. ..$ modified: chr "2024-01-10 09:23:53"
+  .. .. ..$ commits : int 3
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "dar.Rmd"
+  .. .. ..$ filename: chr "dar.html"
+  .. .. ..$ title   : chr "Introduction to dar"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 7
+  .. .. .. ..$ : chr "An Example"
+  .. .. .. ..$ : chr "An Initial Recipe"
+  .. .. .. ..$ : chr "Preprocessing Steps"
+  .. .. .. ..$ : chr "Differential Analysis"
+  .. .. .. ..$ : chr "Prep"
+  .. .. .. ..$ : chr "Bake and cool"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2022-08-19 09:06:08"
+  .. .. ..$ modified: chr "2024-01-10 09:23:53"
   .. .. ..$ commits : int 9
-  ..$ _score            : num 5.88
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "mirsponger"
-  ..$ _universes        :List of 2
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "import_export_recipes.Rmd"
+  .. .. ..$ filename: chr "import_export_recipes.html"
+  .. .. ..$ title   : chr "Reproducibility in Microbiome Data Analysis"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 5
+  .. .. .. ..$ : chr "Exporting Steps of a Recipe"
+  .. .. .. ..$ : chr "Importing Steps from a JSON File"
+  .. .. .. ..$ : chr "Limitations and Considerations"
+  .. .. .. ..$ : chr "Conclusion"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2023-09-19 12:37:02"
+  .. .. ..$ modified: chr "2023-11-29 08:15:01"
+  .. .. ..$ commits : int 5
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "article.Rmd"
+  .. .. ..$ filename: chr "article.html"
+  .. .. ..$ title   : chr "Workflow with real data"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 10
+  .. .. .. ..$ : chr "Load dar package and data"
+  .. .. .. ..$ : chr "Recipe initialization"
+  .. .. .. ..$ : chr "Recipe QC and preprocessing steps definition"
+  .. .. .. ..$ : chr "Define Differential Analysis (DA) steps"
+  .. .. .. ..$ : chr "Prep recipe"
+  .. .. .. ..$ : chr "Default results extraction"
+  .. .. .. ..$ : chr "Exploration for consensus strategie definition"
+  .. .. .. ..$ : chr "Define a consesus strategy using bake"
+  .. .. .. ..$ : chr "Extract results"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2023-01-31 07:32:48"
+  .. .. ..$ modified: chr "2025-03-15 12:52:43"
+  .. .. ..$ commits : int 11
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "bioinformatics_vignette.Rmd"
+  .. .. ..$ filename: chr "bioinformatics_vignette.html"
+  .. .. ..$ title   : chr "dar: Case of Study"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 11
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Load dar package and data"
+  .. .. .. ..$ : chr "Recipe Initialization"
+  .. .. .. ..$ : chr "Recipe QC and Preprocessing Steps Definition"
+  .. .. .. ..$ : chr "Define Differential Analysis (DA) steps"
+  .. .. .. ..$ : chr "Prep recipe"
+  .. .. .. ..$ : chr "Default results extraction"
+  .. .. .. ..$ : chr "Exploration for consensus strategie definition"
+  .. .. .. ..$ : chr "Define a consesus strategy using bake"
+  .. .. .. ..$ : chr "Extract results"
+  .. .. .. ..$ : chr "Session Info"
+  .. .. ..$ created : chr "2025-03-15 12:52:43"
+  .. .. ..$ modified: chr "2025-03-15 12:52:43"
+  .. .. ..$ commits : int 2
+  ..$ _score                     : num 6.16
+  ..$ _indexed                   : logi TRUE
+  ..$ _nocasepkg                 : chr "dar"
+  ..$ _universes                 :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "zhangjunpeng411"
-  ..$ _previous         : chr "2.13.4"
-  ..$ _binaries         :List of 12
-  .. ..$ :List of 11
+  .. ..$ : chr "xec-cm"
+  .. ..$ : chr "microbialgenomics-irsicaixaorg"
+  ..$ _previous                  : chr "1.5.1"
+  ..$ _binaries                  :List of 8
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:49:37.000Z"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:38:03.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "2b0f84bcd88884c22ea260cbf5b4ff7bdb762379d860b69bcd32ce5efb3947bd"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "f20eda89d0a62929f4bdb46cfc16650edb6a7877b5647125171948eb29022c70"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:50:13.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "ee01f95e531d5c2d5bed16cceb76ebc69f468eb5a813f82fa0a4077d74765007"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 11
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:49:29.000Z"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:37:33.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "5f70fd72b53fbc953272a2421ba575982ceb6074311501f7593ab8b138e20966"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "10ee502deeed888a149bf2c80f75ec62519a9c0cca554bd1d0a759dff8135c8d"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:50:01.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "faeb883865edf06a957d713cfe069b9ed75b775ce4555f0ec23b7efa50d5e7a7"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:50:05.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "b76cefbeda2db4e0cbf402873af9b4d45b2a498c9ad9ca76e2a6c03fc24c4235"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:51:46.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "47aab5a5fd2f6d27ed9be2f40b4b2f049aab5eaeeac60cea29f34919ad9d303d"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:49:00.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "849fa48e2e869f23609ec0ad63c5c63eb0d38e4649b56bb4b601588eef908c8b"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:52:43.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "b62234e88ac30c191a2f274b475b9d4e5bb9a60d4ed56bf9a8d9abd51269898d"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
   .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.4.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:37:50.000Z"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "7c148352f60860212c5c0d3651b4d23bd729364c6d281782ed721c738d11d0d4"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.5.1"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:35:49.000Z"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "9a5cb2e6b23caac2c38393ba6fa1eb1ede6a2655b5fa564e187bfb33f86a4119"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:50:28.000Z"
-  .. .. ..$ arch    : chr "emscripten"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "0837ac72206e27369535d83cc3e50a7eff07b4ea020c0dba58d7e0e0b58004ed"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:38:09.000Z"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "c7e7d50dd669fc25574ff187f7468f5f4f7f16b0df644a31d8e06c53aba5bb08"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:48:33.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "82188b75a7e638cd769eb673c2d988de1a792b9456fc560c0e3d32263b775b56"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:35:42.000Z"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "6e850be4ebeab1c2f8123139489b782d6159fef67573a06d2b299387f4bb4f91"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:55:31.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "584a1f9434fc3f13a1dd3b90ed6beffd0ac8adef171fdcc1b666cd34d8793e43"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:36:48.000Z"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "18f7bc971bcd6fe14900bbf897930e5fdcb2f5d984cda4c685e5b6c63845f792"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"
-  .. ..$ :List of 10
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.13.5"
-  .. .. ..$ date    : chr "2025-10-16T06:54:22.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "5928b35f6b3517cc35c6e8b39abee57b18c1570e"
-  .. .. ..$ fileid  : chr "b701b437afd42ce431aac339a3bf8a979128d2c7fb4162277ee6fa2cf8c2f4d8"
+  .. .. ..$ version : chr "1.5.2"
+  .. .. ..$ date    : chr "2025-10-17T09:35:40.000Z"
+  .. .. ..$ commit  : chr "9e7cc1205ae5b22dc8ceee1fdac13781a74f4992"
+  .. .. ..$ fileid  : chr "a9f3f632ff4dd4345c669becbbcb50bdc65e53a956896ad1861ba7cd46f0169f"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18552494765"</code></pre>
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18588430935"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
