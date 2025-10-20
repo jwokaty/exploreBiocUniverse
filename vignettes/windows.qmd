@@ -82,9 +82,7 @@ So all packages except for `scafari` should be marked for deprecation. Packages 
 
 ## Windows info from bioc.r-universe.dev
 
-Next we want to get the data from *all windows builds* in https://bioc.r-universe.dev.
-We'll construct the path to the zip using the data associated with the win
-`_binaries` information associated with our version of R if a commit hash exists.
+Next we want to get the data from *all windows builds* in https://bioc.r-universe.dev. We'll construct the path to the zip using the data associated with the win `_binaries` information associated with our version of R if a commit hash exists.
 
 ```{r find-all-windows-builds}
 library(tibble)
@@ -100,7 +98,8 @@ windows_builds <- data.frame(Package = "",
                              #JobId = "",
                              BinariesStatus = "",
                              #DatePublication = "",
-                             Commit = "",
+                             RU_commit = "",
+                             BBS_commit = "",
                              MD5sum = "",
                              RemoteSha = "",
                              RemoteUrl = "",
@@ -129,7 +128,7 @@ for (i in seq_along(ru_info)) {
   for (k in seq_along(ru_info[[i]]$`_binaries`)) {
       binary <- ru_info[[i]]$`_binaries`[[k]]
       if (binary$os == "win" && binary$r == r_version) {
-          commit <- as.character(binary$commit)
+          ru_commit <- as.character(binary$commit)
           buildurl <- binary$buildurl
           binariesstatus <- binary$status
           buildcheck <- binary$check
@@ -140,6 +139,10 @@ for (i in seq_along(ru_info)) {
   }
   
   path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.5/"
+  
+  bbs_commit <- bbs_info |>
+      dplyr::filter(Package == ru_info[[i]]$Package) |>
+      dplyr::pull(git_last_commit)
 
   windows_builds <- tibble::add_row(windows_builds,
                                     Package = ru_info[[i]]$Package,
@@ -147,9 +150,10 @@ for (i in seq_along(ru_info)) {
                                     JobCheck = jobcheck,
                                     BinariesCheck = buildcheck,
                                     #DatePublication = ru_info[[i]]$`Date/Publication`,
-                                    Commit = substr(commit, 1, 5),
-                                    MD5sum = substr(ru_info[[i]]$MD5sum, 1, 5),
-                                    RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 5),
+                                    RU_commit = substr(ru_commit, 1, 7),
+                                    BBS_commit = bbs_commit,
+                                    MD5sum = substr(ru_info[[i]]$MD5sum, 1, 7),
+                                    RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 7),
                                     RemoteUrl = ru_info[[i]]$RemoteUrl,
                                     Published = ru_info[[i]]$`_published`,
                                     BinariesBuildDate = binariesbuilddate,
@@ -160,7 +164,9 @@ for (i in seq_along(ru_info)) {
                                                            jobid, "'>Link</a>"),
                                                     ""),
                                     BinariesStatus = binariesstatus,
-                                    File = ifelse(commit != "", paste0(path, Package, "_", binariesversion, ".zip"), ""))
+                                    File = ifelse(ru_commit != "",
+                                                  paste0(path, Package, "_", binariesversion, ".zip"),
+                                                  ""))
 }
 
 # drop blank first row
@@ -172,11 +178,17 @@ windows_builds <- windows_builds |>
 DT::datatable(windows_builds, escape = FALSE)
 ```
 
+## Packages where the commits don't agree
+
+```{r mismatched-commits}
+mismatch <- windows_builds |> filter(BBS_commit != RU_commit)
+
+DT::datatable(mismatch, escape = FALSE)
+```
+
 ## Packages missing binaries
 
-The following packages are missing binaries. Why? Are these are packages that
-have failed to build because Windows isn't supported? Or are they just missing
-dependencies to be properly built in R Universe?
+The following packages are missing binaries. Why? Are these are packages that have failed to build because Windows isn't supported? Or are they just missing dependencies to be properly built in R Universe?
 
 -   `infercnv` fails to build due a missing Python dependency.
 
@@ -188,11 +200,20 @@ missing_binaries <- windows_builds |>
 missing_binaries
 ```
 
+## Packages passing with binaries and the same commit hash
+
+```{r passing-with-same-commit}
+
+viable_candiates <- windows_builds |>
+    dplyr::filter(BBS_commit == RU_commit) |>
+    dplyr::filter(BinariesCheck %in% c("NOTE", "WARNING", "OK"))
+
+DT::datatable(viable_candiates, escape = FALSE)
+```
+
 ## Packages failing on Windows
 
-After removing packages missing binaries (see above), the following packages are
-failing on Windows.
-
+After removing packages missing binaries (see above), the following packages are failing on Windows.
 
 ```{r win-errors}
 
@@ -200,18 +221,14 @@ failing_windows <- windows_builds |>
     dplyr::filter(!(Package %in% missing_binaries$Package)) |>
     dplyr::filter(BinariesCheck == "ERROR") |>
     dplyr::select(Package, Version, JobUrl, BinariesCheck, BinariesStatus,
-                  BinariesBuildDate, Commit, JobCheck, File)
+                  BinariesBuildDate, RU_commit, BBS_commit, JobCheck, File)
 
 DT::datatable(failing_windows, escape = FALSE)
 ```
 
 ### Understanding the error
 
-For more details about the error, click on the JobUrl. It may not take you to
-the specific location of the error. You need to look at the `Build R-release for
-Windows` (on left). You can then either expand the `Annotations` or expand
-`R CMD check` to see more details about the error. You must be logged in to see
-more details.
+For more details about the error, click on the JobUrl. It may not take you to the specific location of the error. You need to look at the `Build R-release for Windows` (on left). You can then either expand the `Annotations` or expand `R CMD check` to see more details about the error. You must be logged in to see more details.
 
 ![annotations](images/annotations.png)
 
