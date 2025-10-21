@@ -90,14 +90,12 @@ r_version <- "4.5.1"
 
 windows_builds <- data.frame(Package = "",
                              Version = "",
+                             JobUrl = "",
                              JobCheck = "",
                              BinariesCheck = "",
+                             BinariesUrl = "",
                              BinariesBuildDate = "",
-                             JobUrl = "",
-                             #BuildUrl = "",
-                             #JobId = "",
                              BinariesStatus = "",
-                             #DatePublication = "",
                              RU_commit = "",
                              BBS_commit = "",
                              MD5sum = "",
@@ -109,12 +107,11 @@ windows_builds <- data.frame(Package = "",
 for (i in seq_along(ru_info)) {
   jobid <- ""
   jobcheck <- ""
-  commit <- ""
-  buildurl <- ""
-  binariesstatus <- ""
-  buildcheck <- ""
-  binariesbuilddate <- ""
-  binariesversion <- ""
+  binaries_buildurl <- ""
+  binaries_status <- ""
+  binaries_check <- ""
+  binaries_builddate <- ""
+  binaries_version <- ""
 
   for (j in seq_along(ru_info[[i]]$`_jobs`)) {
       job <- ru_info[[i]]$`_jobs`[[j]]
@@ -129,11 +126,11 @@ for (i in seq_along(ru_info)) {
       binary <- ru_info[[i]]$`_binaries`[[k]]
       if (binary$os == "win" && binary$r == r_version) {
           ru_commit <- as.character(binary$commit)
-          buildurl <- binary$buildurl
-          binariesstatus <- binary$status
-          buildcheck <- binary$check
-          binariesbuilddate <- binary$date
-          binariesversion <- binary$version
+          binaries_buildurl <- binary$buildurl
+          binaries_status <- binary$status
+          binaries_check <- binary$check
+          binaries_builddate <- binary$date
+          binaries_version <- binary$version
           break
       }
   }
@@ -147,25 +144,33 @@ for (i in seq_along(ru_info)) {
   windows_builds <- tibble::add_row(windows_builds,
                                     Package = ru_info[[i]]$Package,
                                     Version = ru_info[[i]]$Version,
+                                    JobUrl = ifelse(!is.null(ru_info[[i]]$`_buildurl`),
+                                                    paste0("<a href='",
+                                                           ru_info[[i]]$`_buildurl`, "/job/",
+                                                           jobid, "'>", jobcheck,
+                                                           "</a>"),
+                                                    ""),
                                     JobCheck = jobcheck,
-                                    BinariesCheck = buildcheck,
-                                    #DatePublication = ru_info[[i]]$`Date/Publication`,
+                                    BinariesCheck = binaries_check,
+                                    BinariesUrl = ifelse(binaries_status == "success",
+                                                         paste0("<a href='",
+                                                                binaries_buildurl,
+                                                                "'>", binaries_check,
+                                                                "</a>"),
+                                                         paste0("<a href='",
+                                                                binaries_buildurl,
+                                                                "'>", binaries_status,
+                                                                "</a>")),
                                     RU_commit = substr(ru_commit, 1, 7),
                                     BBS_commit = bbs_commit,
                                     MD5sum = substr(ru_info[[i]]$MD5sum, 1, 7),
                                     RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 7),
                                     RemoteUrl = ru_info[[i]]$RemoteUrl,
                                     Published = ru_info[[i]]$`_published`,
-                                    BinariesBuildDate = binariesbuilddate,
-                                    #JobId = jobid,
-                                    JobUrl = ifelse(!is.null(buildurl),
-                                                    paste0("<a href='",
-                                                           buildurl, "/job/",
-                                                           jobid, "'>Link</a>"),
-                                                    ""),
-                                    BinariesStatus = binariesstatus,
+                                    BinariesBuildDate = binaries_builddate,
+                                    BinariesStatus = binaries_status,
                                     File = ifelse(ru_commit != "",
-                                                  paste0(path, Package, "_", binariesversion, ".zip"),
+                                                  paste0(path, Package, "_", binaries_version, ".zip"),
                                                   ""))
 }
 
@@ -175,60 +180,87 @@ windows_builds <- windows_builds[c(-1), ]
 windows_builds <- windows_builds |>
     dplyr::arrange(Package)
 
-DT::datatable(windows_builds, escape = FALSE)
+windows_builds_clean <- dplyr::rename(windows_builds, "Latest Check" = JobUrl,
+                                      "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+
+DT::datatable(windows_builds_clean, escape = FALSE)
 ```
 
 ## Packages where the commits don't agree
 
 ```{r mismatched-commits}
-mismatch <- windows_builds |> filter(BBS_commit != RU_commit)
+mismatch <- windows_builds_clean |> filter(BBS_commit != RU_commit)
 
 DT::datatable(mismatch, escape = FALSE)
 ```
 
 ## Packages missing binaries
 
-The following packages are missing binaries. Why? Are these are packages that have failed to build because Windows isn't supported? Or are they just missing dependencies to be properly built in R Universe?
-
--   `infercnv` fails to build due a missing Python dependency.
+The following packages may be missing or have bad binaries. Why? Are these are
+packages that have failed to build because Windows isn't supported? Or are they
+just missing dependencies to be properly built in R Universe? Even if a file is
+listed, it may ultimately fail `R CMD check` as well as `R CMD INSTALL` or `R CMD build`.
 
 ```{r packages-without-windows-binaries}
 missing_binaries <- windows_builds |>
-    dplyr::filter(File == "") |>
-    dplyr::select(Package, JobCheck)
+    dplyr::filter(BinariesStatus %in% c("", "failure")) |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesStatus, RU_commit, BBS_commit, BinariesBuildDate,
+                  Published, File)
 
-missing_binaries
+DT::datatable(missing_binaries, escape = FALSE)
 ```
 
 ## Packages passing with binaries and the same commit hash
 
+The following packages have the same commit hash in R-Universe and the BBS. They
+also pass the latest `R CMD check` and their binary also passes `R CMD check`
+with a value of `NOTE`, `WARNING`, or `OK`.
+
 ```{r passing-with-same-commit}
 
 viable_candiates <- windows_builds |>
-    dplyr::filter(BBS_commit == RU_commit) |>
-    dplyr::filter(BinariesCheck %in% c("NOTE", "WARNING", "OK"))
+    dplyr::filter(BBS_commit == RU_commit, 
+                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
+                  JobCheck %in% c("NOTE", "WARNING", "OK"),
+                  BinariesStatus == "success") |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
 
 DT::datatable(viable_candiates, escape = FALSE)
 ```
 
 ## Packages failing on Windows
 
-After removing packages missing binaries (see above), the following packages are failing on Windows.
+The following packages are failing on Windows.
 
 ```{r win-errors}
 
 failing_windows <- windows_builds |>
-    dplyr::filter(!(Package %in% missing_binaries$Package)) |>
-    dplyr::filter(BinariesCheck == "ERROR") |>
-    dplyr::select(Package, Version, JobUrl, BinariesCheck, BinariesStatus,
-                  BinariesBuildDate, RU_commit, BBS_commit, JobCheck, File)
+    dplyr::filter(JobCheck == "ERROR" | BinariesCheck == "ERROR",
+                  BinariesStatus != "success") |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
 
 DT::datatable(failing_windows, escape = FALSE)
 ```
 
 ### Understanding the error
 
-For more details about the error, click on the JobUrl. It may not take you to the specific location of the error. You need to look at the `Build R-release for Windows` (on left). You can then either expand the `Annotations` or expand `R CMD check` to see more details about the error. You must be logged in to see more details.
+For more details about the error, click on the link. The `Latest Check` will go
+to the latest GitHub Action Workflow run's `R CMD check` on the package whereas
+the `Binary Check` will go to the GitHub Action Workflow associated with the
+`R CMD check` associated with the binary. It may not take you to the specific
+location of the error. You need to look at the `Build R-release for Windows`
+(on left), which builds the same package version as Bioconductor devel for the
+correct version of R. You can then either expand the `Annotations` or expand
+`R CMD check` to see more details about the error. You must be logged in to see
+more details.
 
 ![annotations](images/annotations.png)
 
@@ -236,12 +268,17 @@ For more details about the error, click on the JobUrl. It may not take you to th
 
 ## Miscellaneous
 
-What is the difference between Job Check and Binaries Check data points in R Universe?
+What is the difference between `Latest Check` and `Binary Check` data points in
+R Universe? `Latest Check` is associated with the `_jobs` `R CMD check` whereas
+`Binary Check` is associated with the `_binaries` `R CMD check`. The `Latest
+Check` appears to be the latest GitHub Action workflow run of a package whereas
+the `Binary Check` appears to be associated with the creation of a binary, which
+could be associated with a different workflow run.
 
 ```{r job-vs-binaries}
 
-windows_checks <- windows_builds |>
-    dplyr::filter(JobCheck != BinariesCheck)
+windows_checks <- windows_builds_clean |>
+    dplyr::filter(`Latest Check` != `Binary Check`)
 ```
 
 ## sessionInfo()
