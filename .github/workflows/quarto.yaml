@@ -16,7 +16,7 @@ permissions: read-all
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: bioconductor/bioconductor_docker:devel
+    container: bioconductor/bioconductor_docker:RELEASE_3_22
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     permissions:
@@ -26,10 +26,7 @@ jobs:
 
     - uses: actions/checkout@v4
 
-    - name: Install Quarto
-      run: |
-        curl -sSL https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-linux-amd64.deb -o quarto.deb
-        sudo dpkg -i quarto.deb
+    - uses: quarto-dev/quarto-actions/setup@v2
 
     - name: Install rsync 
       run: |

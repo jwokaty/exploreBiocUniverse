@@ -7,6 +7,10 @@ editor: visual
 engine: knitr
 ---
 
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
 Let's get info about all windows builds.
 
 ## Install dependencies
@@ -25,12 +29,12 @@ options(max.print = 3000L)
 Get data for bioc.r-universe.dev and bbs devel
 
 ```{r all_bioc_ru, message = FALSE}
-devel <- "3.22"
+devel <- "3.23"
 ru_info <- universe::universe_all_packages("bioc", limit = 3000L)
 bbs_info <- BiocPkgTools::biocPkgList(version = devel, repo="BioCsoft")
 ```
 
-Are the same packages in bioc.r-universe.dev and 3.22 bbs?
+Are the same packages in bioc.r-universe.dev and 3.23 bbs?
 
 ```{r comparison}
 ru_pkgs <- universe::universe_ls("bioc")
@@ -84,9 +88,10 @@ So all packages except for `scafari` should be marked for deprecation. Packages 
 
 Next we want to get the data from *all windows builds* in https://bioc.r-universe.dev. We'll construct the path to the zip using the data associated with the win `_binaries` information associated with our version of R if a commit hash exists.
 
-```{r find-all-windows-builds}
+```{r find-all-windows-builds, message = FALSE}
 library(tibble)
-r_version <- "4.5.1"
+r_version <- "4.6.0"
+windows_branch <- "windows-devel"
 
 windows_builds <- data.frame(Package = "",
                              Version = "",
@@ -115,7 +120,7 @@ for (i in seq_along(ru_info)) {
 
   for (j in seq_along(ru_info[[i]]$`_jobs`)) {
       job <- ru_info[[i]]$`_jobs`[[j]]
-      if (job$config == "windows-release" && job$r == r_version) {
+      if (job$config == windows_branch && job$r == r_version) {
           jobid <- as.character(job$job)
           jobcheck <- job$check
           break
@@ -135,7 +140,7 @@ for (i in seq_along(ru_info)) {
       }
   }
   
-  path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.5/"
+  path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.6/"
   
   bbs_commit <- bbs_info |>
       dplyr::filter(Package == ru_info[[i]]$Package) |>

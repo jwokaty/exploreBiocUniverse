@@ -1,0 +1,175 @@
+---
+title: "bioconductor-source"
+format: html
+editor: visual
+engine: knitr
+---
+
+What would we want to know about the builds to understand the health of the builds?
+
+How do we know if the ecosystem isn't healthy? We'd want to know
+
+-   what's failing
+-   why are packages failing - error
+-   what's missing from the build (vs all packages in the build)
+-   last built
+-   packages depending on another package
+
+## Set up
+
+```{r helpful-setup, results = "hide"}
+# mongodb access
+library(mongolite)
+library(jsonlite)
+
+# parsing info
+library(tidyr)
+library(dplyr)
+library(purrr)
+library(stringr)
+```
+
+### Let's set the R X_Y version
+
+```{r major-min-version}
+r_x_y_ver <- "4.5"
+```
+
+## Accessing mongodb
+
+```{r connecting-as-biocReader}
+db <- "RELEASE_3_21"
+collection <- "software"
+user <- "biocReader"
+pass <- "5202Coib"
+URI <- paste0("mongodb://", user, ":", pass,
+              "@149.165.171.200:32222/",db)
+conn <- mongo(collection = collection, db = db, url = URI)
+results <- conn$find()
+conn$disconnect() 
+```
+
+## What's available in the results?
+
+```{r available-data-points}
+all_names <- names(results)
+all_names
+```
+
+## Available packages in bioconductor-source universe
+
+The builds on https://bioconductor-source.r-universe.dev/builds are ordered by commit date. We'll order by package name:
+
+```{r packages-in-release}
+# There's probably a better way to order results that's case insensitive
+ordered <- results |>
+    dplyr::mutate(ciname = tolower(Package)) |>
+    dplyr::arrange(ciname) |>
+    dplyr::select(all_of(all_names))
+```
+
+```{r package-versions-available}
+# Package x number of versions/runs
+ordered_w_num_vers <- ordered |>
+    dplyr::count(Package) |>
+    dplyr::rename(Versions = n)
+```
+
+## All GitHub (including past package versions) jobs for RELEASE_3_21 running on R 4.5.x
+
+```{r all-jobs}
+bioc_3_21_jobs <- ordered |>
+    tidyr::unnest(`_jobs`, names_sep = "_", keep_empty = TRUE) |>
+    dplyr::filter(grepl(r_x_y_ver, `_jobs_r`))
+```
+
+## All GitHub jobs for RELEASE_3_21 running on R 4.5.x for latest package version
+
+```{r all-jobs-for-latest-package-versions}
+#     dplyr::filter(`_jobs_check` %in% val_of_intrst) |>
+
+bioc_3_21_jobs_cur_pkg_ver <- bioc_3_21_jobs |>
+    dplyr::mutate(xyz = stringr::str_replace_all(Version, "[.]", "")) |>
+    dplyr::group_by(Package) |>
+    dplyr::filter(!is.na(Version)) |>
+    dplyr::filter(xyz == max(xyz, na.rm = TRUE)) |>
+    dplyr::mutate(`_buildurl_jobs_job` = paste(`_buildurl`, "job", `_jobs_job`, sep = "/")) |>
+    dplyr::select(Package, Version, `_published`, `_jobs_config`, `_jobs_check`,
+                  `_buildurl_jobs_job`, `_jobs_time`, `_status`, `_commit`,
+                  Maintainer, `_dependencies`, `_binaries`, `_sysdeps`,
+                  `_failure`, BugReports, VignetteBuilder, `Config/pak/sysreqs`)
+bioc_3_21_jobs_cur_pkg_ver
+```
+
+## GitHub jobs failing in RELEASE_3_21
+
+### Possible values of `_jobs_check`
+
+```{r check-values}
+check_values <- unique(bioc_3_21_jobs$`_jobs_check`)
+check_values
+```
+
+### Check values of interest
+
+```{r check-values-of-interest}
+val_of_intrst <- check_values[! check_values %in% c('OK', 'NOTE', 'WARNING')]
+val_of_intrst
+```
+
+### Failing jobs for current package version
+
+```{r failing-jobs-for-current-package-versions}
+bioc_3_21_jobs_cur_pkg_ver_failing <- bioc_3_21_jobs_cur_pkg_ver |>
+     dplyr::filter(`_jobs_check` %in% val_of_intrst)
+bioc_3_21_jobs_cur_pkg_ver_failing
+```
+
+## GitHub binaries failing in RELEASE_3_21
+
+## All GitHub (including past package versions) binaries for RELEASE_3_21 running on R 4.5.x
+
+```{r all-binaries}
+bioc_3_21_binaries <- ordered |>
+    tidyr::unnest(`_binaries`, names_sep = "_", keep_empty = TRUE) |>
+    dplyr::filter(grepl(r_x_y_ver, `_binaries_r`)) |>
+    dplyr::select(Package, Version, `_binaries_check`, `_binaries_os`,
+                  `_binaries_version`, `_binaries_date`, `_binaries_arch`,
+                  `_binaries_commit`, `_binaries_fileid`, `_binaries_status`,
+                  `_binaries_buildurl`)
+```
+
+## Current package binaries for RELEASE_3_21 running on R 4.5.x
+
+```{r current-package-version-binaries}
+bioc_3_21_binaries_cur_pkg_ver <- bioc_3_21_binaries |>
+    dplyr::mutate(xyz = stringr::str_replace_all(Version, "[.]", "")) |>
+    dplyr::group_by(Package) |>
+    dplyr::filter(!is.na(Version)) |>
+    dplyr::filter(xyz == max(xyz, na.rm = TRUE)) |>
+    dplyr::select(Package, Version, `_binaries_check`, `_binaries_os`,
+                  `_binaries_version`, `_binaries_date`, `_binaries_arch`,
+                  `_binaries_commit`, `_binaries_fileid`, `_binaries_status`,
+                  `_binaries_buildurl`)
+bioc_3_21_binaries_cur_pkg_ver
+```
+
+## Failing binaries for current package version
+
+```{r current-package-version-binaries-failing}
+bioc_3_21_binaries_cur_pkg_ver_failing <- bioc_3_21_binaries_cur_pkg_ver |>
+    dplyr::filter(`_binaries_check` %in% val_of_intrst)
+bioc_3_21_binaries_cur_pkg_ver_failing
+```
+
+TODO: Get the job to get the specific error or its url
+
+## Appendix
+
+### Structure of a package through universe
+
+The structure of a package looks like
+
+```{r pkg_structure_in_ru, eval = FALSE}
+head(str(results[2, ]))
+```

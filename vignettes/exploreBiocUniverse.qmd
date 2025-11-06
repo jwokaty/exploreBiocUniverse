@@ -14,8 +14,6 @@ Skip to [Packages not in agreements](#packages-not-in-agreement) or go to [windo
 We can use the [universe](https://github.com/ropensci/universe/) package to explore the R-Universe (RU) API. (We might need to increase the `max.print` to show all packages.)
 
 ```{r install_universe, eval = "hide", message = FALSE}
-if (!require("universe", quietly = TRUE))
-    install.packages("universe", repos = "https://ropensci.r-universe.dev")
 library(universe)
 options(max.print = 3000L)
 ```
@@ -99,7 +97,7 @@ setdiff(not_in_ru, depre_pkgs)
 
 Looking at the status of linux x86_64 binary builds. The build "status" appears to get "success", "failure", or "cancelled" from the GitHub Action overall. The "check" value corresponds to `R CMD check`. I interpret the result of "status" to be "success" OK and "failure" ERROR for `R CMD build` but it may mean something else. We'll use CANCELLED as it is. There's also a special status for documentation, which is handled separately from build/check, which may account for some discrepancies. Not sure if the build status for vignettes is available in the API.
 
-Packages with my comment "Missing R4.5 on Linux" did have data in the API but no x86_64 linux with R 4.5.
+Packages with my comment "Missing R4.6 on Linux" did have data in the API but no x86_64 linux with R 4.6.
 
 ```{r ru_status}
 ru_status <- data.frame(Package = character(), Version = character(), 
@@ -112,13 +110,13 @@ for (p in ru_pkgs_i) {
   build <- c(status = NA, build = NA, check = NA, buildurl = NA)
   comment = ""
   for (b in p$`_binaries`) {
-    if (b$os == "linux" && b$r == "4.5.0") {
+    if (b$os == "linux" && b$r == "4.6.0") {
       build <- c(status = b$status, check = b$check, buildurl = b$buildurl)
       break
     }
   }
   if (is.na(build["status"])) {
-    comment = "Missing R4.5 on Linux" 
+    comment = "Missing R4.6 on Linux" 
   } else if (build["status"] == "success") {
     build["build"] <- "OK"
   } else if (build["status"] == "failure") {
@@ -197,14 +195,14 @@ names(bbs_ru_not_ok) <- c("Package", "BBS_install", "BBS_build", "RU_build",
                           "RU_status", "Comment")
 ```
 
-#### Packages without x86_64 Linux builds for R 4.5
+#### Packages without x86_64 Linux builds for R 4.6
 
-The following are packages in bioc R Universe but without an x86_64 Linux build for R 4.5.
+The following are packages in bioc R Universe but without an x86_64 Linux build for R 4.6.
 
 ```{r pkgs_not_in_agreement}
 bbs_ru_not_ok |>
-  filter(Comment == "Missing R4.5 on Linux") |>
-  knitr::kable(caption = "Packages in RU without an x86_64 linux build for R 4.5") |>
+  filter(Comment == "Missing R4.6 on Linux") |>
+  knitr::kable(caption = "Packages in RU without an x86_64 linux build for R 4.6") |>
   kableExtra::kable_styling(
     bootstrap_options = c("hover", "responsive")
   )
