@@ -447,7 +447,7 @@ Total 2325 2361</code></pre>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.18.0</td>
-<td style="text-align: left;">1.17.5</td>
+<td style="text-align: left;">1.19.1</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
@@ -635,236 +635,207 @@ Total 2325 2361</code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
  $ :List of 71
-  ..$ Package           : chr "GSVA"
-  ..$ Version           : chr "2.5.1"
-  ..$ Title             : chr "Gene Set Variation Analysis for Microarray and RNA-Seq Data"
-  ..$ Authors@R         : chr "c(person(\"Robert\", \"Castelo\", role=c(\"aut\", \"cre\"), email=\"robert.castelo@upf.edu\"),\nperson(\"Justin"| __truncated__
-  ..$ Description       : chr "Gene Set Variation Analysis (GSVA) is a non-parametric,\nunsupervised method for estimating variation of gene s"| __truncated__
+  ..$ Package           : chr "SparseArray"
+  ..$ Title             : chr "High-performance sparse data representation and manipulation in\nR"
+  ..$ Description       : chr "The SparseArray package provides array-like containers for\nefficient in-memory representation of multidimensio"| __truncated__
+  ..$ biocViews         : chr "Infrastructure, DataRepresentation"
+  ..$ URL               : chr "https://bioconductor.org/packages/SparseArray"
+  ..$ BugReports        : chr "https://github.com/Bioconductor/SparseArray/issues"
+  ..$ Version           : chr "1.11.1"
   ..$ License           : chr "Artistic-2.0"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ URL               : chr "https://github.com/rcastelo/GSVA"
-  ..$ BugReports        : chr "https://github.com/rcastelo/GSVA/issues"
   ..$ Encoding          : chr "UTF-8"
-  ..$ biocViews         : chr "FunctionalGenomics, Microarray, RNASeq, Pathways,\nGeneSetEnrichment"
-  ..$ Roxygen           : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ Config/pak/sysreqs: chr "libmagick++-dev gsfonts libicu-dev libpng-dev\nlibxml2-dev libssl-dev zlib1g-dev"
+  ..$ Authors@R         : chr "c(\nperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\nemail=\"hpages.on.github@gmail.com\",\ncomment=c(OR"| __truncated__
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ Collate           : chr "utils.R options.R OPBufTree.R thread-control.R\nsparseMatrix-utils.R is_nonzero.R SparseArray-class.R\nCOO_Spar"| __truncated__
+  ..$ Config/pak/sysreqs: chr "zlib1g-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-11-06 07:55:51 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/GSVA"
+  ..$ Date/Publication  : chr "2025-10-31 04:21:39 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/SparseArray"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
+  ..$ RemoteSha         : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
   ..$ NeedsCompilation  : chr "yes"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-11-06 10:33:57 UTC"
+  .. ..$ Date: chr "2025-10-31 09:28:01 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Robert Castelo [aut, cre],\nJustin Guinney [aut],\nAlexey Sergushichev [ctb],\nPablo Sebastian Rodriguez [ctb],"| __truncated__
-  ..$ Maintainer        : chr "Robert Castelo &lt;robert.castelo@upf.edu&gt;"
-  ..$ MD5sum            : chr "7f3eec613d3394eed12431aa411d15d6"
+  ..$ Author            : chr "Hervé Pagès [aut, cre] (ORCID: &lt;https://orcid.org/0009-0002-8272-4522&gt;),\nVince Carey [fnd] (ORCID: &lt;https://or"| __truncated__
+  ..$ Maintainer        : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  ..$ MD5sum            : chr "98a73c0cc344b43dba7646153b92c521"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "GSVA_2.5.1.tar.gz"
-  ..$ _fileid           : chr "933c6364f21163bae51c3f423ab391da2e0107f3b80bf7cb10f69c754fb7af47"
-  ..$ _filesize         : int 3022880
-  ..$ _sha256           : chr "933c6364f21163bae51c3f423ab391da2e0107f3b80bf7cb10f69c754fb7af47"
-  ..$ _created          : chr "2025-11-06T10:33:57.000Z"
-  ..$ _published        : chr "2025-11-06T10:47:54.493Z"
+  ..$ _file             : chr "SparseArray_1.11.1.tar.gz"
+  ..$ _fileid           : chr "a4bf41e5b3ac966370af6d21c5bbf98aec7dc57281f131fcff76ad5c3da220ce"
+  ..$ _filesize         : int 551157
+  ..$ _sha256           : chr "a4bf41e5b3ac966370af6d21c5bbf98aec7dc57281f131fcff76ad5c3da220ce"
+  ..$ _created          : chr "2025-10-31T09:28:01.000Z"
   ..$ _distro           : chr "noble"
   ..$ _jobs             :List of 13
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 509
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 272
   .. .. ..$ config  : chr "linux-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485598298"
+  .. .. ..$ artifact: chr "4427786828"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 566
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 314
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485607126"
+  .. .. ..$ artifact: chr "4427792088"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 553
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 303
   .. .. ..$ config  : chr "linux-release-arm64"
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485605260"
+  .. .. ..$ artifact: chr "4427790935"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 589
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 328
   .. .. ..$ config  : chr "linux-release-x86_64"
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485610321"
+  .. .. ..$ artifact: chr "4427793837"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 527
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 278
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4485600079"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4427785023"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 759
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 580
   .. .. ..$ config  : chr "macos-oldrel-x86_64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4485638351"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4427829444"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 430
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 254
   .. .. ..$ config  : chr "macos-release-arm64"
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485584306"
+  .. .. ..$ artifact: chr "4427781711"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 757
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 438
   .. .. ..$ config  : chr "macos-release-x86_64"
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485638121"
+  .. .. ..$ artifact: chr "4427808247"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 554
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 302
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4485512348"
+  .. .. ..$ artifact: chr "4427748196"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 247
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 129
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4485554223"
+  .. .. ..$ artifact: chr "4427766397"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 582
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 350
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485610413"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4427797027"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 508
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 315
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4485597864"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4427792568"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.47e+10
-  .. .. ..$ time    : int 557
+  .. .. ..$ job     : num 5.42e+10
+  .. .. ..$ time    : int 325
   .. .. ..$ config  : chr "windows-release"
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4485605495"
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ r       : chr "4.5.1"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4427793831"
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/GSVA"
+  ..$ _upstream         : chr "https://github.com/bioc/SparseArray"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. ..$ author   : chr "Robert Castelo &lt;robert.castelo@upf.edu&gt;"
-  .. ..$ committer: chr "Robert Castelo &lt;robert.castelo@upf.edu&gt;"
-  .. ..$ message  : chr "Fixing recovery from errors found during parallelization\n"
-  .. ..$ time     : int 1762415751
+  .. ..$ id       : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ message  : chr "SparseArray 1.11.1: Small teak to unit tests\n"
+  .. ..$ time     : int 1761884499
   ..$ _maintainer       :List of 5
-  .. ..$ name   : chr "Robert Castelo"
-  .. ..$ email  : chr "robert.castelo@upf.edu"
-  .. ..$ login  : chr "rcastelo"
-  .. ..$ twitter: chr "@robertclab"
-  .. ..$ uuid   : int 1677433
+  .. ..$ name    : chr "Hervé Pagès"
+  .. ..$ email   : chr "hpages.on.github@gmail.com"
+  .. ..$ login   : chr "hpages"
+  .. ..$ linkedin: chr "in/hervé-pagès-5038527"
+  .. ..$ uuid    : int 8810451
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 51
+  ..$ _dependencies     :List of 21
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 3.5.0"
+  .. .. ..$ version: chr "&gt;= 4.3.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "cli"
+  .. .. ..$ package: chr "methods"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ version: chr "&gt;= 0.43.1"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "MatrixGenerics"
+  .. .. ..$ version: chr "&gt;= 1.11.1"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ version: chr "&gt;= 0.43.2"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "S4Arrays"
+  .. .. ..$ version: chr "&gt;= 1.9.3"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "LinkingTo"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "XVector"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "MatrixGenerics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Arrays"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "HDF5Array"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SparseArray"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedArray"
+  .. .. ..$ package: chr "matrixStats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "IRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Biobase"
+  .. .. ..$ package: chr "XVector"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GSEABase"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "Matrix"
-  .. .. ..$ version: chr "&gt;= 1.5-0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "parallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SingleCellExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SpatialExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "sparseMatrixStats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedMatrixStats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocSingular"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "cli"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "RUnit"
+  .. .. ..$ package: chr "HDF5Array"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "ExperimentHub"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "testthat"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
@@ -873,221 +844,85 @@ Total 2325 2361</code></pre>
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "limma"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "RColorBrewer"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "genefilter"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "edgeR"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GSVAdata"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "sva"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TENxPBMCData"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scuttle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scran"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "igraph"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shiny"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinydashboard"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "data.table"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "plotly"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "future"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "promises"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinybusy"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinyjs"
+  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 20
-  ..$ _updates          :List of 19
+  ..$ _usedby           : int 1289
+  ..$ _updates          :List of 12
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-45"
+  .. .. ..$ week: chr "2024-44"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-48"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2024-45"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-50"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-51"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-01"
-  .. .. ..$ n   : int 4
+  .. .. ..$ week: chr "2024-46"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-03"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-06"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-08"
   .. .. ..$ n   : int 5
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-09"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-11"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-12"
-  .. .. ..$ n   : int 4
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-14"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-15"
-  .. .. ..$ n   : int 8
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-17"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-40"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-41"
+  .. .. ..$ week: chr "2025-25"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-43"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-29"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ n   : int 6
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 5
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 3
+  .. .. ..$ n   : int 7
   ..$ _tags             : list()
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.5.0"
+  .. .. ..$ version: chr "1.9.1"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.4.0"
+  .. .. ..$ version: chr "1.10.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 8
-  .. ..$ : chr "functionalgenomics"
-  .. ..$ : chr "microarray"
-  .. ..$ : chr "rnaseq"
-  .. ..$ : chr "pathways"
-  .. ..$ : chr "genesetenrichment"
-  .. ..$ : chr "gene-set-enrichment"
-  .. ..$ : chr "genomics"
-  .. ..$ : chr "pathway-enrichment-analysis"
-  ..$ _stars            : int 229
-  ..$ _contributors     :List of 15
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "rcastelo"
-  .. .. ..$ count: int 285
-  .. .. ..$ uuid : int 1677433
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "axelklenk"
-  .. .. ..$ count: int 169
-  .. .. ..$ uuid : int 72612834
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "pablo-rodr-bio2"
-  .. .. ..$ count: int 84
-  .. .. ..$ uuid : int 53177189
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dtenenba"
-  .. .. ..$ count: int 27
-  .. .. ..$ uuid : int 2286826
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 10
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "aabaker99"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 3460359
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "assaron"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 1040217
+  ..$ _topics           :List of 6
+  .. ..$ : chr "infrastructure"
+  .. ..$ : chr "datarepresentation"
+  .. ..$ : chr "bioconductor-package"
+  .. ..$ : chr "core-package"
+  .. ..$ : chr "u24ca289073"
+  .. ..$ : chr "openmp"
+  ..$ _stars            : int 10
+  ..$ _contributors     :List of 2
   .. ..$ :List of 3
   .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 2
+  .. .. ..$ count: int 294
   .. .. ..$ uuid : int 8810451
   .. ..$ :List of 3
-  .. .. ..$ user : chr "peremoles"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 118828870
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vobencha"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2466173
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "joanfernandez"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 22771090
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "pshannon-bioc"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 2285629
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "liubuntu"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 12683977
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "liripo"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 54770415
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 8
+  .. .. ..$ uuid : int 1744257
   ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 13924
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/GSVA"
-  ..$ _mentions         : int 893
-  ..$ _devurl           : chr "https://github.com/rcastelo/gsva"
-  ..$ _searchresults    : int 1904
+  .. ..$ count : int 88675
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/SparseArray"
+  ..$ _devurl           : chr "https://github.com/bioconductor/sparsearray"
+  ..$ _searchresults    : int 103
   ..$ _rbuild           : chr "4.5.1"
   ..$ _assets           :List of 11
   .. ..$ : chr "extra/citation.cff"
@@ -1095,472 +930,968 @@ Total 2325 2361</code></pre>
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/GSVA.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
+  .. ..$ : chr "extra/SparseArray.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/rcastelo/gsva"
+  ..$ _homeurl          : chr "https://github.com/bioconductor/sparsearray"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 21
-  .. ..$ : chr "computeGeneSetsOverlap"
-  .. ..$ : chr "deduplicateGeneSets"
-  .. ..$ : chr "filterGeneSets"
-  .. ..$ : chr "geneIdsToGeneSetCollection"
-  .. ..$ : chr "geneSets"
-  .. ..$ : chr "geneSets&lt;-"
-  .. ..$ : chr "geneSetSizes"
-  .. ..$ : chr "gsva"
-  .. ..$ : chr "gsvaAnnotation"
-  .. ..$ : chr "gsvaAnnotation&lt;-"
-  .. ..$ : chr "gsvaEnrichment"
-  .. ..$ : chr "gsvaParam"
-  .. ..$ : chr "gsvaRanks"
-  .. ..$ : chr "gsvaScores"
-  .. ..$ : chr "guessGeneIdType"
-  .. ..$ : chr "igsva"
-  .. ..$ : chr "plageParam"
-  .. ..$ : chr "readGMT"
-  .. ..$ : chr "spatCor"
-  .. ..$ : chr "ssgseaParam"
-  .. ..$ : chr "zscoreParam"
-  ..$ _help             :List of 20
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "computeGeneSetsOverlap"
-  .. .. ..$ title : chr "Compute gene-sets overlap"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "computeGeneSetsOverlap"
-  .. .. .. ..$ : chr "computeGeneSetsOverlap,GeneSetCollection,character-method"
-  .. .. .. ..$ : chr "computeGeneSetsOverlap,GeneSetCollection,ExpressionSet-method"
-  .. .. .. ..$ : chr "computeGeneSetsOverlap,list,character-method"
-  .. .. .. ..$ : chr "computeGeneSetsOverlap,list,ExpressionSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "deduplicateGeneSets"
-  .. .. ..$ title : chr "Handling of Duplicated Gene Set Names"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "deduplicateGeneSets"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "filterGeneSets"
-  .. .. ..$ title : chr "Filter gene sets"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "filterGeneSets"
-  .. .. .. ..$ : chr "filterGeneSets,GeneSetCollection-method"
-  .. .. .. ..$ : chr "filterGeneSets,list-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "geneIdsToGeneSetCollection"
-  .. .. ..$ title : chr "Construct a GeneSetCollection object from a list of character vectors"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "geneIdsToGeneSetCollection"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "geneSets"
-  .. .. ..$ title : chr "Retrieve or Determine Gene Sets"
-  .. .. ..$ topics:List of 9
-  .. .. .. ..$ : chr "geneSets"
-  .. .. .. ..$ : chr "geneSets,GsvaExprData-method"
-  .. .. .. ..$ : chr "geneSets,GsvaMethodParam-method"
-  .. .. .. ..$ : chr "geneSets,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "geneSets,SpatialExperiment-method"
-  .. .. .. ..$ : chr "geneSets,SummarizedExperiment-method"
-  .. .. .. ..$ : chr "geneSetSizes"
-  .. .. .. ..$ : chr "geneSetSizes,GsvaExprData-method"
-  .. .. .. ..$ : chr "geneSetSizes,GsvaMethodParam-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gsva"
-  .. .. ..$ title : chr "Gene Set Variation Analysis"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "gsva"
-  .. .. .. ..$ : chr "gsva,gsvaParam-method"
-  .. .. .. ..$ : chr "gsva,plageParam-method"
-  .. .. .. ..$ : chr "gsva,ssgseaParam-method"
-  .. .. .. ..$ : chr "gsva,zscoreParam-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gsvaAnnotation"
-  .. .. ..$ title : chr "Store and Retrieve Annotation Metadata"
-  .. .. ..$ topics:List of 16
-  .. .. .. ..$ : chr "gsvaAnnotation"
-  .. .. .. ..$ : chr "gsvaAnnotation,ExpressionSet-method"
-  .. .. .. ..$ : chr "gsvaAnnotation,GeneSetCollection-method"
-  .. .. .. ..$ : chr "gsvaAnnotation,GsvaExprData-method"
-  .. .. .. ..$ : chr "gsvaAnnotation,list-method"
-  .. .. .. ..$ : chr "gsvaAnnotation,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "gsvaAnnotation,SpatialExperiment-method"
-  .. .. .. ..$ : chr "gsvaAnnotation,SummarizedExperiment-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,ExpressionSet,character-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,ExpressionSet,GeneIdentifierType-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,GsvaExprData,GeneIdentifierType-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,list,GeneIdentifierType-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,SingleCellExperiment,GeneIdentifierType-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,SpatialExperiment,GeneIdentifierType-method"
-  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,SummarizedExperiment,GeneIdentifierType-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gsvaEnrichment"
-  .. .. ..$ title : chr "GSVA enrichment data and visualization"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "gsvaEnrichment"
-  .. .. .. ..$ : chr "gsvaEnrichment,gsvaRanksParam-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "GsvaExprData-class"
-  .. .. ..$ title : chr "'GsvaExprData' class"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "GsvaExprData"
-  .. .. .. ..$ : chr "GsvaExprData-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "GsvaGeneSets-class"
-  .. .. ..$ title : chr "'GsvaGeneSets' class"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "GsvaGeneSets-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "GsvaMethodParam-class"
-  .. .. ..$ title : chr "'GsvaMethodParam' class"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "GsvaMethodParam-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gsvaParam-class"
-  .. .. ..$ title : chr "'gsvaParam' class"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "geneSets&lt;-"
-  .. .. .. ..$ : chr "geneSets&lt;-,gsvaRanksParam,GsvaGeneSets-method"
-  .. .. .. ..$ : chr "gsvaParam"
-  .. .. .. ..$ : chr "gsvaParam-class"
-  .. .. .. ..$ : chr "gsvaRanksParam-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gsvaRanks"
-  .. .. ..$ title : chr "GSVA ranks and scores"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "gsvaRanks"
-  .. .. .. ..$ : chr "gsvaRanks,gsvaParam-method"
-  .. .. .. ..$ : chr "gsvaScores"
-  .. .. .. ..$ : chr "gsvaScores,gsvaRanksParam-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "guessGeneIdType"
-  .. .. ..$ title : chr "Guess the gene identifier type from a list of character vectors"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "guessGeneIdType"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "igsva"
-  .. .. ..$ title : chr "Gene Set Variation Analysis"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "igsva"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plageParam-class"
-  .. .. ..$ title : chr "'plageParam' class"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "plageParam"
-  .. .. .. ..$ : chr "plageParam-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "readGMT"
-  .. .. ..$ title : chr "Import Gene Sets from a GMT File"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "readGMT"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "spatCor"
-  .. .. ..$ title : chr "Compute Spatial Autocorrelation for SpatialExperiment objects"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "spatCor"
-  .. .. .. ..$ : chr "spatCor,SpatialExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "ssgseaParam-class"
-  .. .. ..$ title : chr "'ssgseaParam' class"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "anyNA,gsvaParam-method"
-  .. .. .. ..$ : chr "anyNA,ssgseaParam-method"
-  .. .. .. ..$ : chr "ssgseaParam"
-  .. .. .. ..$ : chr "ssgseaParam-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "zscoreParam-class"
-  .. .. ..$ title : chr "'zscoreParam' class"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "zscoreParam"
-  .. .. .. ..$ : chr "zscoreParam-class"
-  ..$ _readme           : chr "https://github.com/bioc/GSVA/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 93
+  ..$ _exports          :List of 99
   .. ..$ : chr "abind"
-  .. ..$ : chr "annotate"
-  .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "askpass"
-  .. ..$ : chr "assorthead"
-  .. ..$ : chr "beachmat"
-  .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocFileCache"
+  .. ..$ : chr "aperm"
+  .. ..$ : chr "aperm.COO_SparseArray"
+  .. ..$ : chr "aperm.NaArray"
+  .. ..$ : chr "aperm.SVT_SparseArray"
+  .. ..$ : chr "Arith"
+  .. ..$ : chr "as.array.COO_SparseArray"
+  .. ..$ : chr "as.array.NaArray"
+  .. ..$ : chr "as.array.SVT_SparseArray"
+  .. ..$ : chr "bindROWS"
+  .. ..$ : chr "cbind"
+  .. ..$ : chr "coerce"
+  .. ..$ : chr "colAlls"
+  .. ..$ : chr "colAnyNAs"
+  .. ..$ : chr "colAnys"
+  .. ..$ : chr "colMaxs"
+  .. ..$ : chr "colMeans"
+  .. ..$ : chr "colMeans2"
+  .. ..$ : chr "colMedians"
+  .. ..$ : chr "colMins"
+  .. ..$ : chr "colProds"
+  .. ..$ : chr "colRanges"
+  .. ..$ : chr "colSds"
+  .. ..$ : chr "colsum"
+  .. ..$ : chr "colSums"
+  .. ..$ : chr "colSums2"
+  .. ..$ : chr "colVars"
+  .. ..$ : chr "Compare"
+  .. ..$ : chr "Complex"
+  .. ..$ : chr "COO_SparseArray"
+  .. ..$ : chr "extract_array"
+  .. ..$ : chr "extract_na_array"
+  .. ..$ : chr "extract_sparse_array"
+  .. ..$ : chr "get_SparseArray_nthread"
+  .. ..$ : chr "is_nonna"
+  .. ..$ : chr "is_nonzero"
+  .. ..$ : chr "is_sparse"
+  .. ..$ : chr "Logic"
+  .. ..$ : chr "Math"
+  .. ..$ : chr "mean"
+  .. ..$ : chr "mean.NaArray"
+  .. ..$ : chr "mean.SparseArray"
+  .. ..$ : chr "NaArray"
+  .. ..$ : chr "nchar"
+  .. ..$ : chr "nnacount"
+  .. ..$ : chr "nnavals"
+  .. ..$ : chr "nnavals&lt;-"
+  .. ..$ : chr "nnawhich"
+  .. ..$ : chr "nzcoo"
+  .. ..$ : chr "nzcount"
+  .. ..$ : chr "nzdata"
+  .. ..$ : chr "nzvals"
+  .. ..$ : chr "nzvals&lt;-"
+  .. ..$ : chr "nzwhich"
+  .. ..$ : chr "pmax"
+  .. ..$ : chr "pmin"
+  .. ..$ : chr "poissonSparseArray"
+  .. ..$ : chr "poissonSparseMatrix"
+  .. ..$ : chr "randomSparseArray"
+  .. ..$ : chr "randomSparseMatrix"
+  .. ..$ : chr "range.COO_SparseArray"
+  .. ..$ : chr "range.NaArray"
+  .. ..$ : chr "range.SVT_SparseArray"
+  .. ..$ : chr "rbind"
+  .. ..$ : chr "read_block_as_sparse"
+  .. ..$ : chr "readSparseCSV"
+  .. ..$ : chr "readSparseTable"
+  .. ..$ : chr "rowAlls"
+  .. ..$ : chr "rowAnyNAs"
+  .. ..$ : chr "rowAnys"
+  .. ..$ : chr "rowMaxs"
+  .. ..$ : chr "rowMeans"
+  .. ..$ : chr "rowMeans2"
+  .. ..$ : chr "rowMedians"
+  .. ..$ : chr "rowMins"
+  .. ..$ : chr "rowProds"
+  .. ..$ : chr "rowRanges"
+  .. ..$ : chr "rowSds"
+  .. ..$ : chr "rowsum"
+  .. ..$ : chr "rowsum.dsparseMatrix"
+  .. ..$ : chr "rowsum.SparseMatrix"
+  .. ..$ : chr "rowSums"
+  .. ..$ : chr "rowSums2"
+  .. ..$ : chr "rowVars"
+  .. ..$ : chr "sd"
+  .. ..$ : chr "set_SparseArray_nthread"
+  .. ..$ : chr "show"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "sparsity"
+  .. ..$ : chr "SVT_SparseArray"
+  .. ..$ : chr "t"
+  .. ..$ : chr "t.NaMatrix"
+  .. ..$ : chr "t.SVT_SparseMatrix"
+  .. ..$ : chr "tune_Array_dims"
+  .. ..$ : chr "type"
+  .. ..$ : chr "type&lt;-"
+  .. ..$ : chr "var"
+  .. ..$ : chr "which"
+  .. ..$ : chr "writeSparseCSV"
+  ..$ _help             :List of 33
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "COO_SparseArray-class"
+  .. .. ..$ title : chr "COO_SparseArray objects"
+  .. .. ..$ topics:List of 43
+  .. .. .. ..$ : chr "as.array,COO_SparseArray-method"
+  .. .. .. ..$ : chr "as.array.COO_SparseArray"
+  .. .. .. ..$ : chr "class:COO_SparseArray"
+  .. .. .. ..$ : chr "class:COO_SparseMatrix"
+  .. .. .. ..$ : chr "coerce,ANY,COO_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,ANY,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseArray,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,COO_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,dgCMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,dgRMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,dgTMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,lgCMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,lgRMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,lgTMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,ngCMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,ngRMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,ngTMatrix-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,SparseArray-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,sparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,dgCMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,dgRMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,lgCMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,lgRMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,Matrix,COO_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,ngCMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,ngRMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,RsparseMatrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,TsparseMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "COO_SparseArray"
+  .. .. .. ..$ : chr "COO_SparseArray-class"
+  .. .. .. ..$ : chr "COO_SparseMatrix"
+  .. .. .. ..$ : chr "COO_SparseMatrix-class"
+  .. .. .. ..$ : chr "is_nonzero,COO_SparseArray-method"
+  .. .. .. ..$ : chr "nzcoo"
+  .. .. .. ..$ : chr "nzcoo,COO_SparseArray-method"
+  .. .. .. ..$ : chr "nzcount,COO_SparseArray-method"
+  .. .. .. ..$ : chr "nzdata"
+  .. .. .. ..$ : chr "nzdata,COO_SparseArray-method"
+  .. .. .. ..$ : chr "nzvals,COO_SparseArray-method"
+  .. .. .. ..$ : chr "nzvals&lt;-,COO_SparseArray-method"
+  .. .. .. ..$ : chr "nzwhich,COO_SparseArray-method"
+  .. .. .. ..$ : chr "type,COO_SparseArray-method"
+  .. .. .. ..$ : chr "type&lt;-,COO_SparseArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "is_nonna"
+  .. .. ..$ title : chr "is_nonna() and the nna*() functions"
+  .. .. ..$ topics:List of 10
+  .. .. .. ..$ : chr "is_nonna"
+  .. .. .. ..$ : chr "is_nonna,ANY-method"
+  .. .. .. ..$ : chr "nnacount"
+  .. .. .. ..$ : chr "nnacount,ANY-method"
+  .. .. .. ..$ : chr "nnavals"
+  .. .. .. ..$ : chr "nnavals,ANY-method"
+  .. .. .. ..$ : chr "nnavals&lt;-"
+  .. .. .. ..$ : chr "nnavals&lt;-,ANY-method"
+  .. .. .. ..$ : chr "nnawhich"
+  .. .. .. ..$ : chr "nnawhich,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "is_nonzero"
+  .. .. ..$ title : chr "is_nonzero() and the nz*() functions"
+  .. .. ..$ topics:List of 20
+  .. .. .. ..$ : chr "is_nonzero"
+  .. .. .. ..$ : chr "is_nonzero,ANY-method"
+  .. .. .. ..$ : chr "is_nonzero,sparseMatrix-method"
+  .. .. .. ..$ : chr "nzcount"
+  .. .. .. ..$ : chr "nzcount,ANY-method"
+  .. .. .. ..$ : chr "nzcount,CsparseMatrix-method"
+  .. .. .. ..$ : chr "nzcount,RsparseMatrix-method"
+  .. .. .. ..$ : chr "nzcount,TsparseMatrix-method"
+  .. .. .. ..$ : chr "nzvals"
+  .. .. .. ..$ : chr "nzvals,ANY-method"
+  .. .. .. ..$ : chr "nzvals,dgCMatrix-method"
+  .. .. .. ..$ : chr "nzvals,lgCMatrix-method"
+  .. .. .. ..$ : chr "nzvals,nMatrix-method"
+  .. .. .. ..$ : chr "nzvals&lt;-"
+  .. .. .. ..$ : chr "nzvals&lt;-,ANY-method"
+  .. .. .. ..$ : chr "nzwhich"
+  .. .. .. ..$ : chr "nzwhich,ANY-method"
+  .. .. .. ..$ : chr "nzwhich,CsparseMatrix-method"
+  .. .. .. ..$ : chr "nzwhich,RsparseMatrix-method"
+  .. .. .. ..$ : chr "sparsity"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-class"
+  .. .. ..$ title : chr "NaArray objects"
+  .. .. ..$ topics:List of 21
+  .. .. .. ..$ : chr "as.array,NaArray-method"
+  .. .. .. ..$ : chr "as.array.NaArray"
+  .. .. .. ..$ : chr "class:NaArray"
+  .. .. .. ..$ : chr "class:NaMatrix"
+  .. .. .. ..$ : chr "coerce,array,NaArray-method"
+  .. .. .. ..$ : chr "coerce,matrix,NaMatrix-method"
+  .. .. .. ..$ : chr "coerce,NaArray,NaMatrix-method"
+  .. .. .. ..$ : chr "coerce,NaMatrix,NaArray-method"
+  .. .. .. ..$ : chr "dim,NaArray-method"
+  .. .. .. ..$ : chr "dimnames,NaArray-method"
+  .. .. .. ..$ : chr "dimnames&lt;-,NaArray,ANY-method"
+  .. .. .. ..$ : chr "is_nonna,NaArray-method"
+  .. .. .. ..$ : chr "NaArray"
+  .. .. .. ..$ : chr "NaArray-class"
+  .. .. .. ..$ : chr "NaMatrix"
+  .. .. .. ..$ : chr "NaMatrix-class"
+  .. .. .. ..$ : chr "nnacount,NaArray-method"
+  .. .. .. ..$ : chr "nnawhich,NaArray-method"
+  .. .. .. ..$ : chr "show,NaArray-method"
+  .. .. .. ..$ : chr "type,NaArray-method"
+  .. .. .. ..$ : chr "type&lt;-,NaArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-abind"
+  .. .. ..$ title : chr "Combine multidimensional NaArray objects"
+  .. .. ..$ topics:List of 8
+  .. .. .. ..$ : chr "abind,NaArray-method"
+  .. .. .. ..$ : chr "bindROWS,NaArray-method"
+  .. .. .. ..$ : chr "cbind,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-abind"
+  .. .. .. ..$ : chr "NaArray-combine"
+  .. .. .. ..$ : chr "NaArray_abind"
+  .. .. .. ..$ : chr "NaArray_combine"
+  .. .. .. ..$ : chr "rbind,NaArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-aperm"
+  .. .. ..$ title : chr "NaArray transposition"
+  .. .. ..$ topics:List of 8
+  .. .. .. ..$ : chr "aperm,NaArray-method"
+  .. .. .. ..$ : chr "aperm.NaArray"
+  .. .. .. ..$ : chr "NaArray-aperm"
+  .. .. .. ..$ : chr "NaArray-transposition"
+  .. .. .. ..$ : chr "NaArray_aperm"
+  .. .. .. ..$ : chr "NaArray_transposition"
+  .. .. .. ..$ : chr "t,NaMatrix-method"
+  .. .. .. ..$ : chr "t.NaMatrix"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-Arith-methods"
+  .. .. ..$ title : chr "'Arith' operations on NaArray objects"
+  .. .. ..$ topics:List of 17
+  .. .. .. ..$ : chr "+,NaArray,missing-method"
+  .. .. .. ..$ : chr "-,NaArray,missing-method"
+  .. .. .. ..$ : chr "Arith,array,NaArray-method"
+  .. .. .. ..$ : chr "Arith,NaArray,array-method"
+  .. .. .. ..$ : chr "Arith,NaArray,NaArray-method"
+  .. .. .. ..$ : chr "Arith,NaArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Arith,NaArray,vector-method"
+  .. .. .. ..$ : chr "Arith,SVT_SparseArray,NaArray-method"
+  .. .. .. ..$ : chr "Arith,vector,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-Arith"
+  .. .. .. ..$ : chr "NaArray-arith"
+  .. .. .. ..$ : chr "NaArray-Arith-methods"
+  .. .. .. ..$ : chr "NaArray-arith-methods"
+  .. .. .. ..$ : chr "NaArray_Arith"
+  .. .. .. ..$ : chr "NaArray_arith"
+  .. .. .. ..$ : chr "NaArray_Arith-methods"
+  .. .. .. ..$ : chr "NaArray_arith-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-Compare-methods"
+  .. .. ..$ title : chr "'Compare' operations on NaArray objects"
+  .. .. ..$ topics:List of 15
+  .. .. .. ..$ : chr "Compare,array,NaArray-method"
+  .. .. .. ..$ : chr "Compare,NaArray,array-method"
+  .. .. .. ..$ : chr "Compare,NaArray,NaArray-method"
+  .. .. .. ..$ : chr "Compare,NaArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Compare,NaArray,vector-method"
+  .. .. .. ..$ : chr "Compare,SVT_SparseArray,NaArray-method"
+  .. .. .. ..$ : chr "Compare,vector,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-Compare"
+  .. .. .. ..$ : chr "NaArray-compare"
+  .. .. .. ..$ : chr "NaArray-Compare-methods"
+  .. .. .. ..$ : chr "NaArray-compare-methods"
+  .. .. .. ..$ : chr "NaArray_Compare"
+  .. .. .. ..$ : chr "NaArray_compare"
+  .. .. .. ..$ : chr "NaArray_Compare-methods"
+  .. .. .. ..$ : chr "NaArray_compare-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-Logic-methods"
+  .. .. ..$ title : chr "'Logic' operations on NaArray objects"
+  .. .. ..$ topics:List of 16
+  .. .. .. ..$ : chr "!,NaArray-method"
+  .. .. .. ..$ : chr "Logic,array,NaArray-method"
+  .. .. .. ..$ : chr "Logic,NaArray,array-method"
+  .. .. .. ..$ : chr "Logic,NaArray,NaArray-method"
+  .. .. .. ..$ : chr "Logic,NaArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Logic,NaArray,vector-method"
+  .. .. .. ..$ : chr "Logic,SVT_SparseArray,NaArray-method"
+  .. .. .. ..$ : chr "Logic,vector,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-Logic"
+  .. .. .. ..$ : chr "NaArray-logic"
+  .. .. .. ..$ : chr "NaArray-Logic-methods"
+  .. .. .. ..$ : chr "NaArray-logic-methods"
+  .. .. .. ..$ : chr "NaArray_Logic"
+  .. .. .. ..$ : chr "NaArray_logic"
+  .. .. .. ..$ : chr "NaArray_Logic-methods"
+  .. .. .. ..$ : chr "NaArray_logic-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-Math-methods"
+  .. .. ..$ title : chr "'Math' and 'Math2' methods for NaArray objects"
+  .. .. ..$ topics:List of 20
+  .. .. .. ..$ : chr "Math,NaArray-method"
+  .. .. .. ..$ : chr "Math2,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-Math"
+  .. .. .. ..$ : chr "NaArray-math"
+  .. .. .. ..$ : chr "NaArray-Math-methods"
+  .. .. .. ..$ : chr "NaArray-math-methods"
+  .. .. .. ..$ : chr "NaArray-Math2"
+  .. .. .. ..$ : chr "NaArray-math2"
+  .. .. .. ..$ : chr "NaArray-Math2-methods"
+  .. .. .. ..$ : chr "NaArray-math2-methods"
+  .. .. .. ..$ : chr "NaArray_Math"
+  .. .. .. ..$ : chr "NaArray_math"
+  .. .. .. ..$ : chr "NaArray_Math2"
+  .. .. .. ..$ : chr "NaArray_math2"
+  .. .. .. ..$ : chr "NaArray_Math2_methods"
+  .. .. .. ..$ : chr "NaArray_math2_methods"
+  .. .. .. ..$ : chr "NaArray_Math_methods"
+  .. .. .. ..$ : chr "NaArray_math_methods"
+  .. .. .. ..$ : chr "round,NaArray-method"
+  .. .. .. ..$ : chr "signif,NaArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-matrixStats"
+  .. .. ..$ title : chr "NaArray col/row summarization"
+  .. .. ..$ topics:List of 21
+  .. .. .. ..$ : chr "colAlls,NaArray-method"
+  .. .. .. ..$ : chr "colAnyNAs,NaArray-method"
+  .. .. .. ..$ : chr "colAnys,NaArray-method"
+  .. .. .. ..$ : chr "colMaxs,NaArray-method"
+  .. .. .. ..$ : chr "colMeans,NaArray-method"
+  .. .. .. ..$ : chr "colMeans2,NaArray-method"
+  .. .. .. ..$ : chr "colMins,NaArray-method"
+  .. .. .. ..$ : chr "colProds,NaArray-method"
+  .. .. .. ..$ : chr "colRanges,NaArray-method"
+  .. .. .. ..$ : chr "colSds,NaArray-method"
+  .. .. .. ..$ : chr "colSums,NaArray-method"
+  .. .. .. ..$ : chr "colSums2,NaArray-method"
+  .. .. .. ..$ : chr "colVars,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-matrixStats"
+  .. .. .. ..$ : chr "NaArray_matrixStats"
+  .. .. .. ..$ : chr "rowAnyNAs,NaArray-method"
+  .. .. .. ..$ : chr "rowMaxs,NaArray-method"
+  .. .. .. ..$ : chr "rowMins,NaArray-method"
+  .. .. .. ..$ : chr "rowRanges,NaArray-method"
+  .. .. .. ..$ : chr "rowSums,NaArray-method"
+  .. .. .. ..$ : chr "rowSums2,NaArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-misc-methods"
+  .. .. ..$ title : chr "Miscellaneous operations on a NaArray object"
+  .. .. ..$ topics:List of 7
+  .. .. .. ..$ : chr "is.infinite,NaArray-method"
+  .. .. .. ..$ : chr "is.na,NaArray-method"
+  .. .. .. ..$ : chr "is.nan,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-misc"
+  .. .. .. ..$ : chr "NaArray-misc-methods"
+  .. .. .. ..$ : chr "NaArray_misc"
+  .. .. .. ..$ : chr "NaArray_misc_methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-subsetting"
+  .. .. ..$ title : chr "Subsetting an NaArray object"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "extract_array,NaArray-method"
+  .. .. .. ..$ : chr "extract_na_array"
+  .. .. .. ..$ : chr "extract_na_array,NaArray-method"
+  .. .. .. ..$ : chr "NaArray-subsetting"
+  .. .. .. ..$ : chr "NaArray_subsetting"
+  .. .. .. ..$ : chr "tune_Array_dims,NaArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "NaArray-summarization"
+  .. .. ..$ title : chr "NaArray summarization methods"
+  .. .. ..$ topics:List of 9
+  .. .. .. ..$ : chr "anyNA,NaArray-method"
+  .. .. .. ..$ : chr "mean,NaArray-method"
+  .. .. .. ..$ : chr "mean.NaArray"
+  .. .. .. ..$ : chr "NaArray-summarization"
+  .. .. .. ..$ : chr "NaArray_summarization"
+  .. .. .. ..$ : chr "range,NaArray-method"
+  .. .. .. ..$ : chr "range.NaArray"
+  .. .. .. ..$ : chr "sd,NaArray-method"
+  .. .. .. ..$ : chr "var,NaArray,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "randomSparseArray"
+  .. .. ..$ title : chr "Random SparseArray object"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "poissonSparseArray"
+  .. .. .. ..$ : chr "poissonSparseMatrix"
+  .. .. .. ..$ : chr "randomSparseArray"
+  .. .. .. ..$ : chr "randomSparseMatrix"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "readSparseCSV"
+  .. .. ..$ title : chr "Read/write a sparse matrix from/to a CSV file"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "readSparseCSV"
+  .. .. .. ..$ : chr "readSparseTable"
+  .. .. .. ..$ : chr "writeSparseCSV"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "rowsum-methods"
+  .. .. ..$ title : chr "rowsum() methods for sparse matrices"
+  .. .. ..$ topics:List of 10
+  .. .. .. ..$ : chr "colsum"
+  .. .. .. ..$ : chr "colsum,dsparseMatrix-method"
+  .. .. .. ..$ : chr "colsum,SparseMatrix-method"
+  .. .. .. ..$ : chr "rowsum"
+  .. .. .. ..$ : chr "rowsum,dsparseMatrix-method"
+  .. .. .. ..$ : chr "rowsum,SparseMatrix-method"
+  .. .. .. ..$ : chr "rowsum-methods"
+  .. .. .. ..$ : chr "rowsum.dsparseMatrix"
+  .. .. .. ..$ : chr "rowsum.SparseMatrix"
+  .. .. .. ..$ : chr "rowsum_methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-class"
+  .. .. ..$ title : chr "SparseArray objects"
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "class:SparseArray"
+  .. .. .. ..$ : chr "class:SparseMatrix"
+  .. .. .. ..$ : chr "dim,SparseArray-method"
+  .. .. .. ..$ : chr "dimnames,SparseArray-method"
+  .. .. .. ..$ : chr "dimnames&lt;-,SparseArray,ANY-method"
+  .. .. .. ..$ : chr "is_sparse,SparseArray-method"
+  .. .. .. ..$ : chr "show,SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray"
+  .. .. .. ..$ : chr "SparseArray-class"
+  .. .. .. ..$ : chr "SparseMatrix"
+  .. .. .. ..$ : chr "SparseMatrix-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-abind"
+  .. .. ..$ title : chr "Combine multidimensional SparseArray objects"
+  .. .. ..$ topics:List of 8
+  .. .. .. ..$ : chr "abind,SparseArray-method"
+  .. .. .. ..$ : chr "bindROWS,SparseArray-method"
+  .. .. .. ..$ : chr "cbind,SparseArray-method"
+  .. .. .. ..$ : chr "rbind,SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-abind"
+  .. .. .. ..$ : chr "SparseArray-combine"
+  .. .. .. ..$ : chr "SparseArray_abind"
+  .. .. .. ..$ : chr "SparseArray_combine"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-aperm"
+  .. .. ..$ title : chr "SparseArray transposition"
+  .. .. ..$ topics:List of 10
+  .. .. .. ..$ : chr "aperm,COO_SparseArray-method"
+  .. .. .. ..$ : chr "aperm,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "aperm.COO_SparseArray"
+  .. .. .. ..$ : chr "aperm.SVT_SparseArray"
+  .. .. .. ..$ : chr "SparseArray-aperm"
+  .. .. .. ..$ : chr "SparseArray-transposition"
+  .. .. .. ..$ : chr "SparseArray_aperm"
+  .. .. .. ..$ : chr "SparseArray_transposition"
+  .. .. .. ..$ : chr "t,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "t.SVT_SparseMatrix"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-Arith-methods"
+  .. .. ..$ title : chr "'Arith' operations on SparseArray objects"
+  .. .. ..$ topics:List of 15
+  .. .. .. ..$ : chr "+,SparseArray,missing-method"
+  .. .. .. ..$ : chr "-,SparseArray,missing-method"
+  .. .. .. ..$ : chr "Arith,array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Arith,SVT_SparseArray,array-method"
+  .. .. .. ..$ : chr "Arith,SVT_SparseArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Arith,SVT_SparseArray,vector-method"
+  .. .. .. ..$ : chr "Arith,vector,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-Arith"
+  .. .. .. ..$ : chr "SparseArray-arith"
+  .. .. .. ..$ : chr "SparseArray-Arith-methods"
+  .. .. .. ..$ : chr "SparseArray-arith-methods"
+  .. .. .. ..$ : chr "SparseArray_Arith"
+  .. .. .. ..$ : chr "SparseArray_arith"
+  .. .. .. ..$ : chr "SparseArray_Arith-methods"
+  .. .. .. ..$ : chr "SparseArray_arith-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-Compare-methods"
+  .. .. ..$ title : chr "'Compare' operations on SparseArray objects"
+  .. .. ..$ topics:List of 13
+  .. .. .. ..$ : chr "Compare,array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Compare,SVT_SparseArray,array-method"
+  .. .. .. ..$ : chr "Compare,SVT_SparseArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Compare,SVT_SparseArray,vector-method"
+  .. .. .. ..$ : chr "Compare,vector,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-Compare"
+  .. .. .. ..$ : chr "SparseArray-compare"
+  .. .. .. ..$ : chr "SparseArray-Compare-methods"
+  .. .. .. ..$ : chr "SparseArray-compare-methods"
+  .. .. .. ..$ : chr "SparseArray_Compare"
+  .. .. .. ..$ : chr "SparseArray_compare"
+  .. .. .. ..$ : chr "SparseArray_Compare-methods"
+  .. .. .. ..$ : chr "SparseArray_compare-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-Complex-methods"
+  .. .. ..$ title : chr "'Complex' methods for SparseArray objects"
+  .. .. ..$ topics:List of 9
+  .. .. .. ..$ : chr "Complex,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-Complex"
+  .. .. .. ..$ : chr "SparseArray-complex"
+  .. .. .. ..$ : chr "SparseArray-Complex-methods"
+  .. .. .. ..$ : chr "SparseArray-complex-methods"
+  .. .. .. ..$ : chr "SparseArray_Complex"
+  .. .. .. ..$ : chr "SparseArray_complex"
+  .. .. .. ..$ : chr "SparseArray_Complex_methods"
+  .. .. .. ..$ : chr "SparseArray_complex_methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-Logic-methods"
+  .. .. ..$ title : chr "'Logic' operations on SparseArray objects"
+  .. .. ..$ topics:List of 14
+  .. .. .. ..$ : chr "!,SparseArray-method"
+  .. .. .. ..$ : chr "Logic,array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Logic,SVT_SparseArray,array-method"
+  .. .. .. ..$ : chr "Logic,SVT_SparseArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Logic,SVT_SparseArray,vector-method"
+  .. .. .. ..$ : chr "Logic,vector,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-Logic"
+  .. .. .. ..$ : chr "SparseArray-logic"
+  .. .. .. ..$ : chr "SparseArray-Logic-methods"
+  .. .. .. ..$ : chr "SparseArray-logic-methods"
+  .. .. .. ..$ : chr "SparseArray_Logic"
+  .. .. .. ..$ : chr "SparseArray_logic"
+  .. .. .. ..$ : chr "SparseArray_Logic-methods"
+  .. .. .. ..$ : chr "SparseArray_logic-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-Math-methods"
+  .. .. ..$ title : chr "'Math' and 'Math2' methods for SparseArray objects"
+  .. .. ..$ topics:List of 20
+  .. .. .. ..$ : chr "Math,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "Math2,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "round,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "signif,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-Math"
+  .. .. .. ..$ : chr "SparseArray-math"
+  .. .. .. ..$ : chr "SparseArray-Math-methods"
+  .. .. .. ..$ : chr "SparseArray-math-methods"
+  .. .. .. ..$ : chr "SparseArray-Math2"
+  .. .. .. ..$ : chr "SparseArray-math2"
+  .. .. .. ..$ : chr "SparseArray-Math2-methods"
+  .. .. .. ..$ : chr "SparseArray-math2-methods"
+  .. .. .. ..$ : chr "SparseArray_Math"
+  .. .. .. ..$ : chr "SparseArray_math"
+  .. .. .. ..$ : chr "SparseArray_Math2"
+  .. .. .. ..$ : chr "SparseArray_math2"
+  .. .. .. ..$ : chr "SparseArray_Math2_methods"
+  .. .. .. ..$ : chr "SparseArray_math2_methods"
+  .. .. .. ..$ : chr "SparseArray_Math_methods"
+  .. .. .. ..$ : chr "SparseArray_math_methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-matrixStats"
+  .. .. ..$ title : chr "SparseArray col/row summarization"
+  .. .. ..$ topics:List of 58
+  .. .. .. ..$ : chr "colAlls"
+  .. .. .. ..$ : chr "colAlls,SparseArray-method"
+  .. .. .. ..$ : chr "colAnyNAs"
+  .. .. .. ..$ : chr "colAnyNAs,SparseArray-method"
+  .. .. .. ..$ : chr "colAnys"
+  .. .. .. ..$ : chr "colAnys,SparseArray-method"
+  .. .. .. ..$ : chr "colMaxs"
+  .. .. .. ..$ : chr "colMaxs,SparseArray-method"
+  .. .. .. ..$ : chr "colMeans"
+  .. .. .. ..$ : chr "colMeans,SparseArray-method"
+  .. .. .. ..$ : chr "colMeans2"
+  .. .. .. ..$ : chr "colMeans2,SparseArray-method"
+  .. .. .. ..$ : chr "colMedians"
+  .. .. .. ..$ : chr "colMedians,SparseArray-method"
+  .. .. .. ..$ : chr "colMins"
+  .. .. .. ..$ : chr "colMins,SparseArray-method"
+  .. .. .. ..$ : chr "colProds"
+  .. .. .. ..$ : chr "colProds,SparseArray-method"
+  .. .. .. ..$ : chr "colRanges"
+  .. .. .. ..$ : chr "colRanges,SparseArray-method"
+  .. .. .. ..$ : chr "colSds"
+  .. .. .. ..$ : chr "colSds,SparseArray-method"
+  .. .. .. ..$ : chr "colSums"
+  .. .. .. ..$ : chr "colSums,SparseArray-method"
+  .. .. .. ..$ : chr "colSums2"
+  .. .. .. ..$ : chr "colSums2,SparseArray-method"
+  .. .. .. ..$ : chr "colVars"
+  .. .. .. ..$ : chr "colVars,SparseArray-method"
+  .. .. .. ..$ : chr "rowAlls"
+  .. .. .. ..$ : chr "rowAlls,SparseArray-method"
+  .. .. .. ..$ : chr "rowAnyNAs"
+  .. .. .. ..$ : chr "rowAnyNAs,SparseArray-method"
+  .. .. .. ..$ : chr "rowAnys"
+  .. .. .. ..$ : chr "rowAnys,SparseArray-method"
+  .. .. .. ..$ : chr "rowMaxs"
+  .. .. .. ..$ : chr "rowMaxs,SparseArray-method"
+  .. .. .. ..$ : chr "rowMeans"
+  .. .. .. ..$ : chr "rowMeans,SparseArray-method"
+  .. .. .. ..$ : chr "rowMeans2"
+  .. .. .. ..$ : chr "rowMeans2,SparseArray-method"
+  .. .. .. ..$ : chr "rowMedians"
+  .. .. .. ..$ : chr "rowMedians,SparseArray-method"
+  .. .. .. ..$ : chr "rowMins"
+  .. .. .. ..$ : chr "rowMins,SparseArray-method"
+  .. .. .. ..$ : chr "rowProds"
+  .. .. .. ..$ : chr "rowProds,SparseArray-method"
+  .. .. .. ..$ : chr "rowRanges"
+  .. .. .. ..$ : chr "rowRanges,SparseArray-method"
+  .. .. .. ..$ : chr "rowSds"
+  .. .. .. ..$ : chr "rowSds,SparseArray-method"
+  .. .. .. ..$ : chr "rowSums"
+  .. .. .. ..$ : chr "rowSums,SparseArray-method"
+  .. .. .. ..$ : chr "rowSums2"
+  .. .. .. ..$ : chr "rowSums2,SparseArray-method"
+  .. .. .. ..$ : chr "rowVars"
+  .. .. .. ..$ : chr "rowVars,SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-matrixStats"
+  .. .. .. ..$ : chr "SparseArray_matrixStats"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-misc-methods"
+  .. .. ..$ title : chr "Miscellaneous operations on a SparseArray object"
+  .. .. ..$ topics:List of 23
+  .. .. .. ..$ : chr "is.infinite"
+  .. .. .. ..$ : chr "is.infinite,COO_SparseArray-method"
+  .. .. .. ..$ : chr "is.infinite,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "is.na"
+  .. .. .. ..$ : chr "is.na,COO_SparseArray-method"
+  .. .. .. ..$ : chr "is.na,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "is.nan"
+  .. .. .. ..$ : chr "is.nan,COO_SparseArray-method"
+  .. .. .. ..$ : chr "is.nan,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "nchar"
+  .. .. .. ..$ : chr "nchar,COO_SparseArray-method"
+  .. .. .. ..$ : chr "pmax"
+  .. .. .. ..$ : chr "pmax,SparseArray-method"
+  .. .. .. ..$ : chr "pmin"
+  .. .. .. ..$ : chr "pmin,SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-misc"
+  .. .. .. ..$ : chr "SparseArray-misc-methods"
+  .. .. .. ..$ : chr "SparseArray_misc"
+  .. .. .. ..$ : chr "SparseArray_misc_methods"
+  .. .. .. ..$ : chr "tolower"
+  .. .. .. ..$ : chr "tolower,COO_SparseArray-method"
+  .. .. .. ..$ : chr "toupper"
+  .. .. .. ..$ : chr "toupper,COO_SparseArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-subassignment"
+  .. .. ..$ title : chr "SparseArray subassignment"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "SparseArray-subassignment"
+  .. .. .. ..$ : chr "SparseArray_subassignment"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-subsetting"
+  .. .. ..$ title : chr "Subsetting a SparseArray object"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "extract_array,COO_SparseArray-method"
+  .. .. .. ..$ : chr "extract_array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "extract_sparse_array,COO_SparseArray-method"
+  .. .. .. ..$ : chr "extract_sparse_array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-subsetting"
+  .. .. .. ..$ : chr "SparseArray_subsetting"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseArray-summarization"
+  .. .. ..$ title : chr "SparseArray summarization methods"
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "anyNA,SparseArray-method"
+  .. .. .. ..$ : chr "mean,SparseArray-method"
+  .. .. .. ..$ : chr "mean.SparseArray"
+  .. .. .. ..$ : chr "range,COO_SparseArray-method"
+  .. .. .. ..$ : chr "range,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "range.COO_SparseArray"
+  .. .. .. ..$ : chr "range.SVT_SparseArray"
+  .. .. .. ..$ : chr "sd,SparseArray-method"
+  .. .. .. ..$ : chr "SparseArray-summarization"
+  .. .. .. ..$ : chr "SparseArray_summarization"
+  .. .. .. ..$ : chr "var,SparseArray,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SparseMatrix-mult"
+  .. .. ..$ title : chr "SparseMatrix multiplication and cross-product"
+  .. .. ..$ topics:List of 22
+  .. .. .. ..$ : chr "%*%"
+  .. .. .. ..$ : chr "%*%,ANY,SparseMatrix-method"
+  .. .. .. ..$ : chr "%*%,matrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "%*%,SparseMatrix,ANY-method"
+  .. .. .. ..$ : chr "%*%,SparseMatrix,matrix-method"
+  .. .. .. ..$ : chr "%*%,SparseMatrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "crossprod"
+  .. .. .. ..$ : chr "crossprod,ANY,SparseMatrix-method"
+  .. .. .. ..$ : chr "crossprod,matrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "crossprod,SparseMatrix,ANY-method"
+  .. .. .. ..$ : chr "crossprod,SparseMatrix,matrix-method"
+  .. .. .. ..$ : chr "crossprod,SparseMatrix,missing-method"
+  .. .. .. ..$ : chr "crossprod,SparseMatrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "SparseMatrix-mult"
+  .. .. .. ..$ : chr "SparseMatrix_mult"
+  .. .. .. ..$ : chr "tcrossprod"
+  .. .. .. ..$ : chr "tcrossprod,ANY,SparseMatrix-method"
+  .. .. .. ..$ : chr "tcrossprod,matrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "tcrossprod,SparseMatrix,ANY-method"
+  .. .. .. ..$ : chr "tcrossprod,SparseMatrix,matrix-method"
+  .. .. .. ..$ : chr "tcrossprod,SparseMatrix,missing-method"
+  .. .. .. ..$ : chr "tcrossprod,SparseMatrix,SparseMatrix-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "SVT_SparseArray-class"
+  .. .. ..$ title : chr "SVT_SparseArray objects"
+  .. .. ..$ topics:List of 41
+  .. .. .. ..$ : chr "as.array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "as.array.SVT_SparseArray"
+  .. .. .. ..$ : chr "class:NULL_OR_list"
+  .. .. .. ..$ : chr "class:SVT_SparseArray"
+  .. .. .. ..$ : chr "class:SVT_SparseMatrix"
+  .. .. .. ..$ : chr "coerce,ANY,SparseArray-method"
+  .. .. .. ..$ : chr "coerce,ANY,SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,ANY,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,ANY,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,array,SparseArray-method"
+  .. .. .. ..$ : chr "coerce,array,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseArray,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,COO_SparseMatrix,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,CsparseMatrix,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,Matrix,SparseArray-method"
+  .. .. .. ..$ : chr "coerce,matrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,matrix,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,sparseMatrix,SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseArray,COO_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseArray,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,COO_SparseMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,dgCMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,dgTMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,lgCMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,lgTMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,ngCMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,ngTMatrix-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,SparseArray-method"
+  .. .. .. ..$ : chr "coerce,SVT_SparseMatrix,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "coerce,TsparseMatrix,SVT_SparseMatrix-method"
+  .. .. .. ..$ : chr "is_nonzero,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "NULL_OR_list"
+  .. .. .. ..$ : chr "NULL_OR_list-class"
+  .. .. .. ..$ : chr "nzcount,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "nzwhich,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "SVT_SparseArray"
+  .. .. .. ..$ : chr "SVT_SparseArray-class"
+  .. .. .. ..$ : chr "SVT_SparseMatrix"
+  .. .. .. ..$ : chr "SVT_SparseMatrix-class"
+  .. .. .. ..$ : chr "type,SVT_SparseArray-method"
+  .. .. .. ..$ : chr "type&lt;-,SVT_SparseArray-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "thread-control"
+  .. .. ..$ title : chr "Number of threads used by SparseArray operations"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "get_SparseArray_nthread"
+  .. .. .. ..$ : chr "set_SparseArray_nthread"
+  .. .. .. ..$ : chr "thread-control"
+  .. .. .. ..$ : chr "thread_control"
+  ..$ _readme           : chr "https://github.com/bioc/SparseArray/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 11
+  .. ..$ : chr "abind"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "BiocSingular"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "cachem"
-  .. ..$ : chr "cli"
-  .. ..$ : chr "codetools"
-  .. ..$ : chr "cpp11"
-  .. ..$ : chr "crayon"
-  .. ..$ : chr "curl"
-  .. ..$ : chr "DBI"
-  .. ..$ : chr "dbplyr"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "DelayedMatrixStats"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "fastmap"
-  .. ..$ : chr "filelock"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
-  .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "glue"
-  .. ..$ : chr "graph"
-  .. ..$ : chr "GSEABase"
-  .. ..$ : chr "h5mread"
-  .. ..$ : chr "HDF5Array"
-  .. ..$ : chr "httr"
-  .. ..$ : chr "httr2"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "irlba"
-  .. ..$ : chr "jsonlite"
-  .. ..$ : chr "KEGGREST"
-  .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
-  .. ..$ : chr "lifecycle"
-  .. ..$ : chr "magick"
-  .. ..$ : chr "magrittr"
   .. ..$ : chr "Matrix"
   .. ..$ : chr "MatrixGenerics"
   .. ..$ : chr "matrixStats"
-  .. ..$ : chr "memoise"
-  .. ..$ : chr "mime"
-  .. ..$ : chr "openssl"
-  .. ..$ : chr "pillar"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plogr"
-  .. ..$ : chr "png"
-  .. ..$ : chr "purrr"
-  .. ..$ : chr "R6"
-  .. ..$ : chr "rappdirs"
-  .. ..$ : chr "Rcpp"
-  .. ..$ : chr "rhdf5"
-  .. ..$ : chr "rhdf5filters"
-  .. ..$ : chr "Rhdf5lib"
-  .. ..$ : chr "rjson"
-  .. ..$ : chr "rlang"
-  .. ..$ : chr "RSQLite"
-  .. ..$ : chr "rsvd"
   .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "ScaledMatrix"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SingleCellExperiment"
-  .. ..$ : chr "snow"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "sparseMatrixStats"
-  .. ..$ : chr "SpatialExperiment"
-  .. ..$ : chr "stringi"
-  .. ..$ : chr "stringr"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "sys"
-  .. ..$ : chr "tibble"
-  .. ..$ : chr "tidyr"
-  .. ..$ : chr "tidyselect"
-  .. ..$ : chr "utf8"
-  .. ..$ : chr "vctrs"
-  .. ..$ : chr "withr"
-  .. ..$ : chr "XML"
-  .. ..$ : chr "xtable"
   .. ..$ : chr "XVector"
-  ..$ _vignettes        :List of 2
+  ..$ _sysdeps          :List of 1
+  .. ..$ :List of 7
+  .. .. ..$ shlib      : chr "libgomp"
+  .. .. ..$ package    : chr "libgomp1"
+  .. .. ..$ source     : chr "gcc"
+  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04"
+  .. .. ..$ name       : chr "openmp"
+  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
+  .. .. ..$ description: chr "GCC OpenMP (GOMP) support library"
+  ..$ _vignettes        :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "GSVA.Rmd"
-  .. .. ..$ filename: chr "GSVA.html"
-  .. .. ..$ title   : chr "GSVA: gene set variation analysis"
-  .. .. ..$ author  : chr "Robert Castelo, Axel Klenk, Justin Guinney"
+  .. .. ..$ source  : chr "SparseArray_objects.Rmd"
+  .. .. ..$ filename: chr "SparseArray_objects.html"
+  .. .. ..$ title   : chr "SparseArray objects"
+  .. .. ..$ author  : chr "Hervé Pagès"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 16
-  .. .. .. ..$ : chr "Quick start"
+  .. .. ..$ headings:List of 28
   .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Overview of the GSVA functionality"
-  .. .. .. ..$ : chr "Gene set definitions and containers"
-  .. .. .. ..$ : chr "Importing gene sets from GMT files"
-  .. .. .. ..$ : chr "Quantification of pathway activity in bulk microarray and RNA-seq data"
-  .. .. .. ..$ : chr "Example applications"
-  .. .. .. ..$ : chr "Molecular signature identification"
-  .. .. .. ..$ : chr "Differential expression at pathway level"
-  .. .. .. ..$ : chr "Data exploration at gene level"
-  .. .. .. ..$ : chr "Running GSVA"
-  .. .. .. ..$ : chr "Data exploration at pathway level"
-  .. .. .. ..$ : chr "Interactive web app"
-  .. .. .. ..$ : chr "Contributing"
+  .. .. .. ..$ : chr "Install and load the package"
+  .. .. .. ..$ : chr "The SparseArray virtual class and its two concrete subclasses"
+  .. .. .. ..$ : chr "SVT_SparseArray objects"
+  .. .. .. ..$ : chr "Construction"
+  .. .. .. ..$ : chr "SVT_SparseArray vs COO_SparseArray"
+  .. .. .. ..$ : chr "The SparseArray API"
+  .. .. .. ..$ : chr "The core array API"
+  .. .. .. ..$ : chr "type() and is_sparse()"
+  .. .. .. ..$ : chr "is_nonzero() and the nz*() functions"
+  .. .. .. ..$ : chr "Subsetting and subassignment"
+  .. .. .. ..$ : chr "Summarization methods (whole array)"
+  .. .. .. ..$ : chr "Operations from the Arith, Compare, Logic, Math, Math2, and Complex groups"
+  .. .. .. ..$ : chr "The 2D API"
+  .. .. .. ..$ : chr "SVT_SparseMatrix objects"
+  .. .. .. ..$ : chr "Transposition"
+  .. .. .. ..$ : chr "Combine multidimensional objects along a given dimension"
+  .. .. .. ..$ : chr "matrixStats methods"
+  .. .. .. ..$ : chr "rowsum() and colsum()"
+  .. .. .. ..$ : chr "Matrix multiplication and cross-product"
+  .. .. .. ..$ : chr "Other operations"
+  .. .. .. ..$ : chr "Generate a random SVT_SparseArray object"
+  .. .. .. ..$ : chr "Read/write a sparse matrix from/to a CSV file"
+  .. .. .. ..$ : chr "Comparison with dgCMatrix objects"
+  .. .. .. ..$ : chr "\"SVT layout\" vs \"CSC layout\""
+  .. .. .. ..$ : chr "Working with a big sparse dataset"
+  .. .. .. ..$ : chr "Learn more"
   .. .. .. ..$ : chr "Session information"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2021-02-05 18:07:16"
-  .. .. ..$ modified: chr "2025-11-04 20:15:17"
-  .. .. ..$ commits : int 17
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "GSVA_scRNAseq.Rmd"
-  .. .. ..$ filename: chr "GSVA_scRNAseq.html"
-  .. .. ..$ title   : chr "GSVA on single-cell RNA-seq data"
-  .. .. ..$ author  : chr "Robert Castelo, Axel Klenk, Justin Guinney"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 12
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Import data"
-  .. .. .. ..$ : chr "Quality assessment and pre-processing"
-  .. .. .. ..$ : chr "Annotate cell types using GSVA"
-  .. .. .. ..$ : chr "Read gene sets in GMT format"
-  .. .. .. ..$ : chr "Add gene identifier type metadata"
-  .. .. .. ..$ : chr "Build parameter object"
-  .. .. .. ..$ : chr "Calculate GSVA scores"
-  .. .. .. ..$ : chr "Using GSVA scores to assign cell types"
-  .. .. .. ..$ : chr "Forthcoming features"
-  .. .. .. ..$ : chr "Session information"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2025-10-27 18:49:02"
-  .. .. ..$ modified: chr "2025-10-27 18:49:02"
-  .. .. ..$ commits : int 1
-  ..$ _score            : num 15
+  .. .. ..$ created : chr "2023-04-06 02:52:56"
+  .. .. ..$ modified: chr "2025-01-14 22:45:19"
+  .. .. ..$ commits : int 25
+  ..$ _score            : num 12.3
   ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "gsva"
-  ..$ _universes        :List of 2
+  ..$ _nocasepkg        : chr "sparsearray"
+  ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "rcastelo"
+  .. ..$ : chr "hpages"
+  .. ..$ : chr "bioconductor"
+  ..$ _previous         : chr "1.11.0"
+  ..$ _failure          :List of 4
+  .. ..$ version : chr "1.11.1"
+  .. ..$ commit  :List of 5
+  .. .. ..$ id       : chr "f62ecd676181d32bb5bfd939d19459cb33c8dfde"
+  .. .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. .. ..$ message  : chr "some improvements to internal helper .subassign_SVT_with_Rarray()\n"
+  .. .. ..$ time     : int 1762499536
+  .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19162641880"
+  .. ..$ date    : chr "2025-11-07T08:34:43.321Z"
   ..$ _binaries         :List of 12
   .. ..$ :List of 11
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:36.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:50.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "5be8e0d4381cd665c2e7af0fdde7df2c301f760adbfba053d0baf6a93bd2a3dc"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "b178d65c01f1b145d44399c40ea08e533cc0c78192abb1cf1eba2a6b8c8e0199"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 11
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:49.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:57.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "a6d77e6429636eedbcaa4f6de24afb86e0c287b8bfec95904d09986de0ef4a2e"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "12c0d202890d7547a0b918187464b459b69af9694faaca57e797270479928864"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:40.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:31:10.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "d6762180dacb95fc372a8202c9ca259256343f4ea6c764ffcf3c5e85c33e468f"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "a5a3321acf2c775d7f47c7a70c18e1b6073873107fcfae6fa6106b5e872bcfba"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:57.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:31:20.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "24771000d00b4758188e3a778cd84ab8675aeec07f914aa526e1e0de8920c269"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "b10d1febc611dea3bab33ff82515d5e19600b4ca8fe9c315c6cb246af88d3a94"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:37:50.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:31:22.000Z"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "2a8503eceb19ff291425ceeccbe11b0387bc045a6a8cea2a59c8cbbd7c442dc1"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "d1dbdd814e554053bc465a8f378e06a1b9ecb93b1e3e952c3146acfb4c12b94b"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:40:04.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:33:44.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "df69aff7cb24c32818d3f234ec7480152fe42636877e87c82f63484f5b4049be"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "2aee8cffe67f36c327c6981f575760f7150ffe46460b022b9405e317a3b2af10"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:37:11.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:57.000Z"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "3d1c0ac0e08e4bb6b6814ac53c468ed7346371b157585b8ca37e409e18481ba3"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "4f22809bfcd06172ce2b5a197ecb0d7aa4234ed90777987da4f8c87d1cff41a5"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:39:54.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:32:30.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "10970201eca53adaac4248de91f2fcd49c31befb2c346404e3b3f995f3b535e0"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "5670bb781f56403b67586f16ccea1cf0f90a8be487fecd3c5cb7baeed6c980c2"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:56.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:48.000Z"
   .. .. ..$ arch    : chr "emscripten"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "053559f120caf75442c5e7d46e202d0f8f3fe48d75afb65887bc2cea986a7920"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "adc3d105864fb7a3cecc696737a2cd19425f08b03878be5ee511b67d7a04a37f"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:10.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:45.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "0fa5de9625d0180b026ff33918e5e7b5c3fb77ed6933226a1c4fbd7427657a4e"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "4c06e9d222c28590a4b17f7fbedd1944f3fd172f05f34505c0962bb5fed9e3ae"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:37:43.000Z"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:11.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "a80ef2ab200a5cf6525f008df62f851f5bd0e12f850fc9d0ac949c29a7beffa8"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.5.1"
-  .. .. ..$ date    : chr "2025-11-06T10:38:12.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "f164b7c95ffd5a09f01dda701a43f93972596886"
-  .. .. ..$ fileid  : chr "5124a5b48dfa701cde715aa1ce95e44bcd656143e9697668c2acc8de45136fe7"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "2454fe5df03fa1ddbde7037503438b0e254646e15164d6926c30ece1a1c8d529"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19132517165"</code></pre>
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.1"
+  .. .. ..$ os      : chr "win"
+  .. .. ..$ version : chr "1.11.1"
+  .. .. ..$ date    : chr "2025-10-31T09:30:13.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "148eea94c07e455a7717479ebade706f7f3fb45f"
+  .. .. ..$ fileid  : chr "9567e5acad72cb2ab72691271d0b1df30f32b04844b614877726cc045be73b2a"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/18968276434"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
