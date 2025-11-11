@@ -1,0 +1,293 @@
+---
+title: "bioc.r-universe.dev windows devel"
+format:
+  html:
+    code-fold: true
+editor: visual
+engine: knitr
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+Let's get info about all windows builds.
+
+## Install dependencies and set larger max
+
+```{r library, eval = "hide", message = FALSE}
+
+library(universe)
+library(BiocPkgTools)
+library(dplyr)
+library(DT)
+
+# set max.print to get all packages
+options(max.print = 3000L)
+```
+
+Get data for bioc.r-universe.dev and bbs devel
+
+```{r all_bioc_ru, message = FALSE}
+devel <- "3.23"
+ru_info <- universe::universe_all_packages("bioc", limit = 3000L)
+bbs_info <- BiocPkgTools::biocPkgList(version = devel, repo="BioCsoft")
+```
+
+Are the same packages in bioc.r-universe.dev and 3.23 bbs?
+
+```{r comparison}
+ru_pkgs <- universe::universe_ls("bioc")
+bbs_pkgs <- bbs_info$Package
+only_ru <- c()
+only_bbs <- c()
+
+if (!identical(ru_pkgs, bbs_pkgs)) {
+    only_ru <- setdiff(ru_pkgs, bbs_pkgs)
+    only_bbs <- setdiff(bbs_pkgs, ru_pkgs)
+    message("Only in bioc.r-universe.dev: ", paste0(only_ru, collapse = " "))
+    message("Only in ", devel, " branch on the BBS: ",
+            paste0(only_bbs, collapse = " "))
+} else {
+    message("The ", devel, " branch on the BBS and bioc.r-universe.dev have",
+            "the same packages.")
+}
+```
+
+For packages not in BBS / only in bioc.r-universe.dev
+
+```{r only_ru}
+
+only_ru_info <- data.frame(Package = only_ru,
+                           RemoteUrl = "")
+
+for (pkg in only_ru) {
+    pkg_info <- universe::universe_one_package("bioc", pkg)
+    only_ru_info[only_ru_info$Package == pkg, ]$RemoteUrl <- pkg_info$RemoteUrl
+}
+
+only_ru_info
+```
+
+If any of the above RemoteUrls are not from https://github.com/bioc then they were added via https://github.com/r-universe/bioc/blob/master/.remotes.json.
+
+We'll need to check why some packages aren't in bioc.r-universe.dev; however, we already know `scafari` isn't there because it has files \> 100MB in its git history.
+
+```{r only_in_bbs}
+only_bbs_info <- bbs_info |>
+  dplyr::filter(Package %in% only_bbs) |>
+  dplyr::mutate(Deprecated = PackageStatus) |>
+  dplyr::select(Package, Deprecated)
+
+  only_bbs_info
+```
+
+So all packages except for `scafari` should be marked for deprecation. Packages are removed immediately in bioc.r-universe.dev if they are deprecated. Maybe this will affect packages depending on them that expect the longer deprecation process in Bioconductor?
+
+## Windows info from bioc.r-universe.dev
+
+Next we want to get the data from *all windows builds* in https://bioc.r-universe.dev. We'll construct the path to the zip using the data associated with the win `_binaries` information associated with our version of R if a commit hash exists.
+
+```{r find-all-windows-builds, message = FALSE}
+library(tibble)
+r_version <- "4.6.0"
+windows_branch <- "windows-devel"
+
+windows_builds <- data.frame(Package = "",
+                             Version = "",
+                             JobUrl = "",
+                             JobCheck = "",
+                             BinariesCheck = "",
+                             BinariesUrl = "",
+                             BinariesBuildDate = "",
+                             BinariesStatus = "",
+                             RU_commit = "",
+                             BBS_commit = "",
+                             MD5sum = "",
+                             RemoteSha = "",
+                             RemoteUrl = "",
+                             Published = "",
+                             File = "")
+
+for (i in seq_along(ru_info)) {
+  jobid <- ""
+  jobcheck <- ""
+  binaries_buildurl <- ""
+  binaries_status <- ""
+  binaries_check <- ""
+  binaries_builddate <- ""
+  binaries_version <- ""
+
+  for (j in seq_along(ru_info[[i]]$`_jobs`)) {
+      job <- ru_info[[i]]$`_jobs`[[j]]
+      if (job$config == windows_branch && job$r == r_version) {
+          jobid <- as.character(job$job)
+          jobcheck <- job$check
+          break
+      }
+  }
+  
+  for (k in seq_along(ru_info[[i]]$`_binaries`)) {
+      binary <- ru_info[[i]]$`_binaries`[[k]]
+      if (binary$os == "win" && binary$r == r_version) {
+          ru_commit <- as.character(binary$commit)
+          binaries_buildurl <- binary$buildurl
+          binaries_status <- binary$status
+          binaries_check <- binary$check
+          binaries_builddate <- binary$date
+          binaries_version <- binary$version
+          break
+      }
+  }
+  
+  path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.6/"
+  
+  bbs_commit <- bbs_info |>
+      dplyr::filter(Package == ru_info[[i]]$Package) |>
+      dplyr::pull(git_last_commit)
+
+  windows_builds <- tibble::add_row(windows_builds,
+                                    Package = ru_info[[i]]$Package,
+                                    Version = ru_info[[i]]$Version,
+                                    JobUrl = ifelse(!is.null(ru_info[[i]]$`_buildurl`),
+                                                    paste0("<a href='",
+                                                           ru_info[[i]]$`_buildurl`, "/job/",
+                                                           jobid, "'>", jobcheck,
+                                                           "</a>"),
+                                                    ""),
+                                    JobCheck = jobcheck,
+                                    BinariesCheck = binaries_check,
+                                    BinariesUrl = ifelse(binaries_status == "success",
+                                                         paste0("<a href='",
+                                                                binaries_buildurl,
+                                                                "'>", binaries_check,
+                                                                "</a>"),
+                                                         paste0("<a href='",
+                                                                binaries_buildurl,
+                                                                "'>", binaries_status,
+                                                                "</a>")),
+                                    RU_commit = substr(ru_commit, 1, 7),
+                                    BBS_commit = bbs_commit,
+                                    MD5sum = substr(ru_info[[i]]$MD5sum, 1, 7),
+                                    RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 7),
+                                    RemoteUrl = ru_info[[i]]$RemoteUrl,
+                                    Published = ru_info[[i]]$`_published`,
+                                    BinariesBuildDate = binaries_builddate,
+                                    BinariesStatus = binaries_status,
+                                    File = ifelse(ru_commit != "",
+                                                  paste0(path, Package, "_", binaries_version, ".zip"),
+                                                  ""))
+}
+
+# drop blank first row
+windows_builds <- windows_builds[c(-1), ]
+
+windows_builds <- windows_builds |>
+    dplyr::arrange(Package)
+
+windows_builds_clean <- dplyr::rename(windows_builds, "Latest Check" = JobUrl,
+                                      "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+
+DT::datatable(windows_builds_clean, escape = FALSE)
+```
+
+## Packages where the commits don't agree
+
+```{r mismatched-commits}
+mismatch <- windows_builds_clean |> filter(BBS_commit != RU_commit)
+
+DT::datatable(mismatch, escape = FALSE)
+```
+
+## Packages missing binaries
+
+The following packages may be missing or have bad binaries. Why? Are these are
+packages that have failed to build because Windows isn't supported? Or are they
+just missing dependencies to be properly built in R Universe? Even if a file is
+listed, it may ultimately fail `R CMD check` as well as `R CMD INSTALL` or `R CMD build`.
+
+```{r packages-without-windows-binaries}
+missing_binaries <- windows_builds |>
+    dplyr::filter(BinariesStatus %in% c("", "failure")) |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesStatus, RU_commit, BBS_commit, BinariesBuildDate,
+                  Published, File)
+
+DT::datatable(missing_binaries, escape = FALSE)
+```
+
+## Packages passing with binaries and the same commit hash
+
+The following packages have the same commit hash in R-Universe and the BBS. They
+also pass the latest `R CMD check` and their binary also passes `R CMD check`
+with a value of `NOTE`, `WARNING`, or `OK`.
+
+```{r passing-with-same-commit}
+
+viable_candiates <- windows_builds |>
+    dplyr::filter(BBS_commit == RU_commit, 
+                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
+                  JobCheck %in% c("NOTE", "WARNING", "OK"),
+                  BinariesStatus == "success") |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+
+DT::datatable(viable_candiates, escape = FALSE)
+```
+
+## Packages failing on Windows
+
+The following packages are failing on Windows.
+
+```{r win-errors}
+
+failing_windows <- windows_builds |>
+    dplyr::filter(JobCheck == "ERROR" | BinariesCheck == "ERROR",
+                  BinariesStatus != "success") |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+
+DT::datatable(failing_windows, escape = FALSE)
+```
+
+### Understanding the error
+
+For more details about the error, click on the link. The `Latest Check` will go
+to the latest GitHub Action Workflow run's `R CMD check` on the package whereas
+the `Binary Check` will go to the GitHub Action Workflow associated with the
+`R CMD check` associated with the binary. It may not take you to the specific
+location of the error. You need to look at the `Build R-release for Windows`
+(on left), which builds the same package version as Bioconductor devel for the
+correct version of R. You can then either expand the `Annotations` or expand
+`R CMD check` to see more details about the error. You must be logged in to see
+more details.
+
+![annotations](images/annotations.png)
+
+![r_cmd_check](images/r_cmd_check.png)
+
+## Miscellaneous
+
+What is the difference between `Latest Check` and `Binary Check` data points in
+R Universe? `Latest Check` is associated with the `_jobs` `R CMD check` whereas
+`Binary Check` is associated with the `_binaries` `R CMD check`. The `Latest
+Check` appears to be the latest GitHub Action workflow run of a package whereas
+the `Binary Check` appears to be associated with the creation of a binary, which
+could be associated with a different workflow run.
+
+```{r job-vs-binaries}
+
+windows_checks <- windows_builds_clean |>
+    dplyr::filter(`Latest Check` != `Binary Check`)
+```
+
+## sessionInfo()
+
+```{r sessionInfo}
+sessionInfo()
+```

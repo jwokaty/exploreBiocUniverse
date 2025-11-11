@@ -1,5 +1,5 @@
 ---
-title: "bioc.r-universe.dev windows devel"
+title: "Windows Builds"
 format:
   html:
     code-fold: true
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 
 Let's get info about all windows builds.
 
-## Install dependencies
+## Install dependencies and set larger max
 
 ```{r library, eval = "hide", message = FALSE}
 
@@ -21,115 +21,119 @@ library(universe)
 library(BiocPkgTools)
 library(dplyr)
 library(DT)
+library(tibble)
 
 # set max.print to get all packages
 options(max.print = 3000L)
-```
 
-Get data for bioc.r-universe.dev and bbs devel
-
-```{r all_bioc_ru, message = FALSE}
-devel <- "3.23"
-ru_info <- universe::universe_all_packages("bioc", limit = 3000L)
-bbs_info <- BiocPkgTools::biocPkgList(version = devel, repo="BioCsoft")
-```
-
-Are the same packages in bioc.r-universe.dev and 3.23 bbs?
-
-```{r comparison}
-ru_pkgs <- universe::universe_ls("bioc")
-bbs_pkgs <- bbs_info$Package
-only_ru <- c()
-only_bbs <- c()
-
-if (!identical(ru_pkgs, bbs_pkgs)) {
-    only_ru <- setdiff(ru_pkgs, bbs_pkgs)
-    only_bbs <- setdiff(bbs_pkgs, ru_pkgs)
-    message("Only in bioc.r-universe.dev: ", paste0(only_ru, collapse = " "))
-    message("Only in ", devel, " branch on the BBS: ",
-            paste0(only_bbs, collapse = " "))
-} else {
-    message("The ", devel, " branch on the BBS and bioc.r-universe.dev have",
-            "the same packages.")
-}
-```
-
-For packages not in BBS / only in bioc.r-universe.dev
-
-```{r only_ru}
-
-only_ru_info <- data.frame(Package = only_ru,
-                           RemoteUrl = "")
-
-for (pkg in only_ru) {
-    pkg_info <- universe::universe_one_package("bioc", pkg)
-    only_ru_info[only_ru_info$Package == pkg, ]$RemoteUrl <- pkg_info$RemoteUrl
+r_xy_ver <- function(x) {
+    xyz <- strsplit(x[[1]], "\\.")
+    paste(xyz[[1]][1], xyz[[1]][2], sep=".")
 }
 
-only_ru_info
-```
+#' Generates the URL to retrieve the snapshot of a universe
+#'
+#' uni character name of the universe
+#' r_versions character R versions
+#' oses character comma separated string of oses without spaces; any combination 
+#'     of src,win,mac,linux,wasm,docs
+#' pkgs character a string of comma-separated package names without spaces or a
+#'     character vector of package names
+make_snapshot_url <- function(uni, r_versions = NULL, oses = NULL, pkgs = NULL) {
+    suffix <- ""
 
-If any of the above RemoteUrls are not from https://github.com/bioc then they were added via https://github.com/r-universe/bioc/blob/master/.remotes.json.
+    if (!is.null(oses)) {
+        suffix <- ifelse(suffix == "", paste0("zip?types=", oses),
+                         paste0(suffix, "&types=", oses))
+    }
 
-We'll need to check why some packages aren't in bioc.r-universe.dev; however, we already know `scafari` isn't there because it has files \> 100MB in its git history.
+    if (!is.null(r_versions)) {
+        versions <- sapply(strsplit(r_versions, ",[ ]*")[[1]], r_xy_ver) |>
+            unname() |>
+            paste(collapse = ",")
+        suffix <- ifelse(suffix == "",
+                         paste0("zip?binaries=", versions),
+                         paste0(suffix, "&binaries=", versions))
+    }
+    if (!is.null(pkgs)) {
+        if (length(pkgs) > 1)
+            pkgs <- paste0(pkgs, collapse = ",")
+        suffix <- paste0(suffix, "&packages=", pkgs, collapse="")
+    }
+    paste0("https://", uni, ".r-universe.dev/api/snapshot/", suffix)
+}
 
-```{r only_in_bbs}
-only_bbs_info <- bbs_info |>
-  dplyr::filter(Package %in% only_bbs) |>
-  dplyr::mutate(Deprecated = PackageStatus) |>
-  dplyr::select(Package, Deprecated)
+uni_pkg_file <- function(pkg, os, bin_ver) {
+    if (os == "windows")
+        ext <- "zip"
+    else if (os == "macosx")
+        ext <- "tgz"
+    else
+        ext <- "tar.gz"
+    paste0(pkg, "_", bin_ver, ".", ext)
+}
 
-  only_bbs_info
-```
+uni_repo_url <- function(uni, os, r_version) {
+    if (os == "macosx")
+        repo_path <- paste(c("bin", os, "big-sur-x86_64"), collapse = "/")
+    else if (os == "windows")
+        repo_path <- paste(c("bin", os), collapse = "/")
+    else
+        repo_path <- "src"
+    root <- paste0("https://", uni, ".r-universe.dev")
+    paste(c(root, repo_path, "contrib", r_xy_ver(r_version), ""), collapse = "/")
+}
 
-So all packages except for `scafari` should be marked for deprecation. Packages are removed immediately in bioc.r-universe.dev if they are deprecated. Maybe this will affect packages depending on them that expect the longer deprecation process in Bioconductor?
+get_binary_os <- function(os) {
+    if (os %in% c("windows", "macos"))
+        os <- substr(os, 1, 3)
+    os
+}
 
-## Windows info from bioc.r-universe.dev
+get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
+    ru_info <- universe::universe_all_packages(uni, limit = 3000L)
+    bbs_info <- BiocPkgTools::biocPkgList(version = bioc_version,
+                                          repo="BioCsoft")
 
-Next we want to get the data from *all windows builds* in https://bioc.r-universe.dev. We'll construct the path to the zip using the data associated with the win `_binaries` information associated with our version of R if a commit hash exists.
+    builds <- data.frame(Package = "",
+                         Version = "",
+                         JobUrl = "",
+                         JobCheck = "",
+                         BinariesCheck = "",
+                         BinariesUrl = "",
+                         BinariesBuildDate = "",
+                         BinariesStatus = "",
+                         RU_commit = "",
+                         BBS_commit = "",
+                         MD5sum = "",
+                         RemoteSha = "",
+                         RemoteUrl = "",
+                         Published = "",
+                         File = "")
 
-```{r find-all-windows-builds, message = FALSE}
-library(tibble)
-r_version <- "4.6.0"
-windows_branch <- "windows-devel"
+    uni_repo <- uni_repo_url(uni, os, r_version)
 
-windows_builds <- data.frame(Package = "",
-                             Version = "",
-                             JobUrl = "",
-                             JobCheck = "",
-                             BinariesCheck = "",
-                             BinariesUrl = "",
-                             BinariesBuildDate = "",
-                             BinariesStatus = "",
-                             RU_commit = "",
-                             BBS_commit = "",
-                             MD5sum = "",
-                             RemoteSha = "",
-                             RemoteUrl = "",
-                             Published = "",
-                             File = "")
-
-for (i in seq_along(ru_info)) {
-  jobid <- ""
-  jobcheck <- ""
-  binaries_buildurl <- ""
-  binaries_status <- ""
-  binaries_check <- ""
-  binaries_builddate <- ""
-  binaries_version <- ""
-
-  for (j in seq_along(ru_info[[i]]$`_jobs`)) {
-      job <- ru_info[[i]]$`_jobs`[[j]]
-      if (job$config == windows_branch && job$r == r_version) {
+    for (i in seq_along(ru_info)) {
+      jobid <- ""
+      jobcheck <- ""
+      binaries_buildurl <- ""
+      binaries_status <- ""
+      binaries_check <- ""
+      binaries_builddate <- ""
+      binaries_version <- ""
+      
+      for (j in seq_along(ru_info[[i]]$`_jobs`)) {
+        job <- ru_info[[i]]$`_jobs`[[j]]
+        if (job$config == paste(os, uni_branch, sep = "-") && job$r == r_version) {
           jobid <- as.character(job$job)
           jobcheck <- job$check
           break
+        }
       }
-  }
-  
-  for (k in seq_along(ru_info[[i]]$`_binaries`)) {
-      binary <- ru_info[[i]]$`_binaries`[[k]]
-      if (binary$os == "win" && binary$r == r_version) {
+      
+      for (k in seq_along(ru_info[[i]]$`_binaries`)) {
+        binary <- ru_info[[i]]$`_binaries`[[k]]
+        if (binary$os == get_binary_os(os) && binary$r == r_version) {
           ru_commit <- as.character(binary$commit)
           binaries_buildurl <- binary$buildurl
           binaries_status <- binary$status
@@ -137,97 +141,80 @@ for (i in seq_along(ru_info)) {
           binaries_builddate <- binary$date
           binaries_version <- binary$version
           break
+        }
       }
-  }
-  
-  path <- "https://bioc.r-universe.dev/bin/windows/contrib/4.6/"
-  
-  bbs_commit <- bbs_info |>
-      dplyr::filter(Package == ru_info[[i]]$Package) |>
-      dplyr::pull(git_last_commit)
+      
+      if (is.null(ru_commit))
+          ru_commit <- ""
+      
+      bbs_commit <- bbs_info |>
+        dplyr::filter(Package == ru_info[[i]]$Package) |>
+        dplyr::pull(git_last_commit)
 
-  windows_builds <- tibble::add_row(windows_builds,
-                                    Package = ru_info[[i]]$Package,
-                                    Version = ru_info[[i]]$Version,
-                                    JobUrl = ifelse(!is.null(ru_info[[i]]$`_buildurl`),
-                                                    paste0("<a href='",
-                                                           ru_info[[i]]$`_buildurl`, "/job/",
-                                                           jobid, "'>", jobcheck,
-                                                           "</a>"),
-                                                    ""),
-                                    JobCheck = jobcheck,
-                                    BinariesCheck = binaries_check,
-                                    BinariesUrl = ifelse(binaries_status == "success",
-                                                         paste0("<a href='",
-                                                                binaries_buildurl,
-                                                                "'>", binaries_check,
-                                                                "</a>"),
-                                                         paste0("<a href='",
-                                                                binaries_buildurl,
-                                                                "'>", binaries_status,
-                                                                "</a>")),
-                                    RU_commit = substr(ru_commit, 1, 7),
-                                    BBS_commit = bbs_commit,
-                                    MD5sum = substr(ru_info[[i]]$MD5sum, 1, 7),
-                                    RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 7),
-                                    RemoteUrl = ru_info[[i]]$RemoteUrl,
-                                    Published = ru_info[[i]]$`_published`,
-                                    BinariesBuildDate = binaries_builddate,
-                                    BinariesStatus = binaries_status,
-                                    File = ifelse(ru_commit != "",
-                                                  paste0(path, Package, "_", binaries_version, ".zip"),
-                                                  ""))
+      pkg_file <- uni_pkg_file(ru_info[[i]]$Package, os, binaries_version)
+      link <- paste0("<a href='", paste0(uni_repo, pkg_file), "'>",
+                     pkg_file, "</a>")
+      builds <- tibble::add_row(builds,
+                                Package = ru_info[[i]]$Package,
+                                Version = ru_info[[i]]$Version,
+                                JobUrl = ifelse(!is.null(ru_info[[i]]$`_buildurl`),
+                                                paste0("<a href='",
+                                                       ru_info[[i]]$`_buildurl`, "/job/",
+                                                       jobid, "'>", jobcheck,
+                                                       "</a>"),
+                                                ""),
+                                JobCheck = jobcheck,
+                                BinariesCheck = binaries_check,
+                                BinariesUrl = ifelse(binaries_status == "success",
+                                                     paste0("<a href='",
+                                                            binaries_buildurl,
+                                                            "'>", binaries_check,
+                                                            "</a>"),
+                                                     paste0("<a href='",
+                                                            binaries_buildurl,
+                                                            "'>", binaries_status,
+                                                            "</a>")),
+                                RU_commit = substr(ru_commit, 1, 7),
+                                BBS_commit = bbs_commit,
+                                MD5sum = substr(ru_info[[i]]$MD5sum, 1, 7),
+                                RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 7),
+                                RemoteUrl = ru_info[[i]]$RemoteUrl,
+                                Published = ru_info[[i]]$`_published`,
+                                BinariesBuildDate = binaries_builddate,
+                                BinariesStatus = binaries_status,
+                                File = ifelse(ru_commit != "", link, ""))
+    }
+    
+    # drop blank first row
+    builds <- builds[c(-1), ]
+    
+    builds |>
+      dplyr::arrange(Package)
 }
-
-# drop blank first row
-windows_builds <- windows_builds[c(-1), ]
-
-windows_builds <- windows_builds |>
-    dplyr::arrange(Package)
-
-windows_builds_clean <- dplyr::rename(windows_builds, "Latest Check" = JobUrl,
-                                      "Binary Check" = BinariesUrl) |>
-    dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
-
-DT::datatable(windows_builds_clean, escape = FALSE)
 ```
 
-## Packages where the commits don't agree
+## Windows Results from bioc.r-universe.dev
 
-```{r mismatched-commits}
-mismatch <- windows_builds_clean |> filter(BBS_commit != RU_commit)
+```{r devel-windows-results, message = FALSE}
+uni_devel_pkgs <- get_uni_pkgs("bioc", "devel", "4.6.0", "windows", "3.23")
 
-DT::datatable(mismatch, escape = FALSE)
+devel_uni_pkgs <- dplyr::rename(uni_devel_pkgs, "Latest Check" = JobUrl,
+                                "Binary Check" = BinariesUrl) |>
+      dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                    BinariesBuildDate, RU_commit, BBS_commit, File)
+
+DT::datatable(devel_uni_pkgs, escape = FALSE)
 ```
 
-## Packages missing binaries
-
-The following packages may be missing or have bad binaries. Why? Are these are
-packages that have failed to build because Windows isn't supported? Or are they
-just missing dependencies to be properly built in R Universe? Even if a file is
-listed, it may ultimately fail `R CMD check` as well as `R CMD INSTALL` or `R CMD build`.
-
-```{r packages-without-windows-binaries}
-missing_binaries <- windows_builds |>
-    dplyr::filter(BinariesStatus %in% c("", "failure")) |>
-    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
-    dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesStatus, RU_commit, BBS_commit, BinariesBuildDate,
-                  Published, File)
-
-DT::datatable(missing_binaries, escape = FALSE)
-```
-
-## Packages passing with binaries and the same commit hash
+## Passing packages with the same commit hash as in BBS
 
 The following packages have the same commit hash in R-Universe and the BBS. They
 also pass the latest `R CMD check` and their binary also passes `R CMD check`
 with a value of `NOTE`, `WARNING`, or `OK`.
 
-```{r passing-with-same-commit}
+```{r devel-passing-with-same-commit, message = FALSE}
 
-viable_candiates <- windows_builds |>
+viable_devel_candidates <- uni_devel_pkgs |>
     dplyr::filter(BBS_commit == RU_commit, 
                   BinariesCheck %in% c("NOTE", "WARNING", "OK"),
                   JobCheck %in% c("NOTE", "WARNING", "OK"),
@@ -236,21 +223,27 @@ viable_candiates <- windows_builds |>
     dplyr::select(Package, Version, "Latest Check", "Binary Check",
                   BinariesBuildDate, RU_commit, BBS_commit, Published, File)
 
-DT::datatable(viable_candiates, escape = FALSE)
+DT::datatable(viable_devel_candidates, escape = FALSE)
+```
+
+## Download a snapshot of passing packages with the same commit hash in the BBS
+
+```{r devel-download-repo-for-passing-packages}
+make_snapshot_url("bioc", "4.6", "win", viable_devel_candidates$Package)
 ```
 
 ## Packages failing on Windows
 
 The following packages are failing on Windows.
 
-```{r win-errors}
+```{r devel-win-errors, message = FALSE}
 
-failing_windows <- windows_builds |>
+failing_windows <- uni_devel_pkgs |>
     dplyr::filter(JobCheck == "ERROR" | BinariesCheck == "ERROR",
                   BinariesStatus != "success") |>
     dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
     dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+                  BinariesBuildDate, RU_commit, BBS_commit, File)
 
 DT::datatable(failing_windows, escape = FALSE)
 ```
@@ -271,19 +264,36 @@ more details.
 
 ![r_cmd_check](images/r_cmd_check.png)
 
-## Miscellaneous
 
-What is the difference between `Latest Check` and `Binary Check` data points in
-R Universe? `Latest Check` is associated with the `_jobs` `R CMD check` whereas
-`Binary Check` is associated with the `_binaries` `R CMD check`. The `Latest
-Check` appears to be the latest GitHub Action workflow run of a package whereas
-the `Binary Check` appears to be associated with the creation of a binary, which
-could be associated with a different workflow run.
+```{r release-windows-results, message = FALSE, eval = FALSE}
+# Failing due to stale branch
+uni_release_pkgs <- get_uni_pkgs("bioconductor-source", "release", "4.5.2", "windows", "3.22")
 
-```{r job-vs-binaries}
+release_uni_pkgs <- dplyr::rename(uni_release_pkgs, "Latest Check" = JobUrl,
+                                  "Binary Check" = BinariesUrl) |>
+      dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                    BinariesBuildDate, RU_commit, BBS_commit, File)
 
-windows_checks <- windows_builds_clean |>
-    dplyr::filter(`Latest Check` != `Binary Check`)
+DT::datatable(release_uni_pkgs, escape = FALSE)
+```
+
+```{r release-passing-with-same-commit, message = FALSE, eval = FALSE}
+# Failing due to stale branch
+viable_release_candidates <- uni_release_pkgs |>
+    dplyr::filter(BBS_commit == RU_commit, 
+                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
+                  JobCheck %in% c("NOTE", "WARNING", "OK"),
+                  BinariesStatus == "success") |>
+    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
+    dplyr::select(Package, Version, "Latest Check", "Binary Check",
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+
+DT::datatable(viable_release_candiates, escape = FALSE)
+```
+
+```{r release-download-repo-for-passing-packages, eval = FALSE}
+# Failing due to stale branch
+make_snapshot_url("bioc", "4.5", "win", viable_release_candiates$Package)
 ```
 
 ## sessionInfo()
