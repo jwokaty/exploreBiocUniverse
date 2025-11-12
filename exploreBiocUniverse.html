@@ -622,218 +622,318 @@ Total 2325 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 71
-  ..$ Package           : chr "crisprDesign"
-  ..$ Title             : chr "Comprehensive design of CRISPR gRNAs for nucleases and base\neditors"
-  ..$ Version           : chr "1.13.1"
-  ..$ Authors@R         : chr "c(\nperson(\"Jean-Philippe\", \"Fortin\", email = \"fortin946@gmail.com\", role = c(\"aut\", \"cre\")),\nperson"| __truncated__
-  ..$ Description       : chr "Provides a comprehensive suite of functions to design and\nannotate CRISPR guide RNA (gRNAs) sequences. This in"| __truncated__
-  ..$ biocViews         : chr "CRISPR, FunctionalGenomics, GeneTarget"
-  ..$ License           : chr "MIT + file LICENSE"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ BugReports        : chr "https://github.com/crisprVerse/crisprDesign/issues"
-  ..$ URL               : chr "https://github.com/crisprVerse/crisprDesign"
-  ..$ LazyData          : chr "true"
-  ..$ Config/pak/sysreqs: chr "make libbz2-dev libicu-dev liblzma-dev libpng-dev\nlibxml2-dev libssl-dev python3 libx11-dev xz-utils zlib1g-dev"
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-11-11 00:34:12 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/crisprDesign"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  ..$ NeedsCompilation  : chr "no"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-11-11 03:23:43 UTC"
+ $ :List of 70
+  ..$ Package            : chr "ChIPpeakAnno"
+  ..$ Type               : chr "Package"
+  ..$ Title              : chr "Batch annotation of the peaks identified from either ChIP-seq,\nChIP-chip experiments, or any experiments that "| __truncated__
+  ..$ Version            : chr "3.45.2"
+  ..$ Encoding           : chr "UTF-8"
+  ..$ Author             : chr "Lihua Julie Zhu, Jianhong Ou, Jun Yu, Kai Hu, Haibo Liu, Junhui\nLi, Hervé Pagès, Claude Gazin, Nathan Lawson, "| __truncated__
+  ..$ Maintainer         : chr "Jianhong Ou &lt;jou@morgridge.org&gt;, Lihua Julie Zhu\n&lt;julie.zhu@umassmed.edu&gt;, Kai Hu &lt;kai.hu@umassmed.edu&gt;, Junhu"| __truncated__
+  ..$ Description        : chr "The package encompasses a range of functions for\nidentifying the closest gene, exon, miRNA, or custom\nfeature"| __truncated__
+  ..$ License            : chr "GPL (&gt;= 2)"
+  ..$ LazyLoad           : chr "yes"
+  ..$ LazyData           : chr "true"
+  ..$ LazyDataCompression: chr "xz"
+  ..$ biocViews          : chr "Annotation, ChIPSeq, ChIPchip"
+  ..$ VignetteBuilder    : chr "knitr"
+  ..$ RoxygenNote        : chr "7.3.3"
+  ..$ Config/pak/sysreqs : chr "make libbz2-dev libicu-dev liblzma-dev libpng-dev\nlibxml2-dev libssl-dev xz-utils zlib1g-dev"
+  ..$ Repository         : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication   : chr "2025-11-12 01:01:42 UTC"
+  ..$ RemoteUrl          : chr "https://github.com/bioc/ChIPpeakAnno"
+  ..$ RemoteRef          : chr "HEAD"
+  ..$ RemoteSha          : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  ..$ NeedsCompilation   : chr "no"
+  ..$ Packaged           :List of 2
+  .. ..$ Date: chr "2025-11-12 04:00:39 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Jean-Philippe Fortin [aut, cre],\nLuke Hoberecht [aut]"
-  ..$ Maintainer        : chr "Jean-Philippe Fortin &lt;fortin946@gmail.com&gt;"
-  ..$ MD5sum            : chr "e0e6d01d55629899449cfe3851c25f78"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "crisprDesign_1.13.1.tar.gz"
-  ..$ _fileid           : chr "9c841599870d51ab99f8d3b90cc6a5485842fa1fa82d76804701a0966f66d144"
-  ..$ _filesize         : int 2798930
-  ..$ _sha256           : chr "9c841599870d51ab99f8d3b90cc6a5485842fa1fa82d76804701a0966f66d144"
-  ..$ _created          : chr "2025-11-11T03:23:43.000Z"
-  ..$ _published        : chr "2025-11-11T03:38:48.994Z"
-  ..$ _distro           : chr "noble"
-  ..$ _jobs             :List of 9
+  ..$ MD5sum             : chr "b0ccc762cec1e26f541e21f82a456fee"
+  ..$ _user              : chr "bioc"
+  ..$ _type              : chr "src"
+  ..$ _file              : chr "ChIPpeakAnno_3.45.2.tar.gz"
+  ..$ _fileid            : chr "26e140df240710c49a8335fb0ec5e56c2f9704e57b46b7fa65a0e0de9ae52c84"
+  ..$ _filesize          : int 22692720
+  ..$ _sha256            : chr "26e140df240710c49a8335fb0ec5e56c2f9704e57b46b7fa65a0e0de9ae52c84"
+  ..$ _created           : chr "2025-11-12T04:00:39.000Z"
+  ..$ _published         : chr "2025-11-12T07:19:05.699Z"
+  ..$ _distro            : chr "noble"
+  ..$ _jobs              :List of 9
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 631
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1123
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527414425"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4538939017"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 663
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1098
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527417634"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4538936596"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 679
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 762
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527422425"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4539937099"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 607
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1058
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527413131"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 487
-  .. .. ..$ config  : chr "source"
-  .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4527343918"
+  .. .. ..$ artifact: chr "4539977802"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 295
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1446
+  .. .. ..$ config  : chr "source"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4538823092"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 671
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4527378032"
+  .. .. ..$ artifact: chr "4538896065"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 817
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1077
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527433465"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4538934594"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 631
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1013
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527414523"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4538927156"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.5e+10
-  .. .. ..$ time    : int 620
+  .. .. ..$ job     : num 5.51e+10
+  .. .. ..$ time    : int 1008
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4527413216"
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/crisprDesign"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. ..$ author   : chr "Jean-Philippe Fortin &lt;fortin946@gmail.com&gt;"
-  .. ..$ committer: chr "Jean-Philippe Fortin &lt;fortin946@gmail.com&gt;"
-  .. ..$ message  : chr "Expanding on amino acids for missense_multiple variants\n"
-  .. ..$ time     : int 1762821252
-  ..$ _maintainer       :List of 6
-  .. ..$ name    : chr "Jean-Philippe Fortin"
-  .. ..$ email   : chr "fortin946@gmail.com"
-  .. ..$ login   : chr "jfortin1"
-  .. ..$ bluesky : chr "@jp-fortin.bsky.social"
-  .. ..$ linkedin: chr "in/jean-philippe-fortin-98a68a47"
-  .. ..$ uuid    : int 2328424
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 33
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4538928077"
+  ..$ _buildurl          : chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
+  ..$ _status            : chr "success"
+  ..$ _host              : chr "GitHub-Actions"
+  ..$ _upstream          : chr "https://github.com/bioc/ChIPpeakAnno"
+  ..$ _commit            :List of 5
+  .. ..$ id       : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. ..$ author   : chr "Jianhong Ou &lt;jianhong.ou@gmail.com&gt;"
+  .. ..$ committer: chr "Jianhong Ou &lt;jianhong.ou@gmail.com&gt;"
+  .. ..$ message  : chr "fix a typo\n"
+  .. ..$ time     : int 1762909302
+  ..$ _maintainer        :List of 2
+  .. ..$ name : chr "Jianhong Ou"
+  .. ..$ email: chr "junhui.li@umassmed.edu"
+  ..$ _registered        : logi TRUE
+  ..$ _dependencies      :List of 72
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.2.0"
+  .. .. ..$ version: chr "&gt;= 3.5"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 3
-  .. .. ..$ package: chr "crisprBase"
-  .. .. ..$ version: chr "&gt;= 1.1.3"
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ version: chr "&gt;= 2.13.12"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "GenomicRanges"
+  .. .. ..$ version: chr "&gt;= 1.31.8"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ version: chr "&gt;= 0.17.25"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
   .. .. ..$ package: chr "AnnotationDbi"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
+  .. ..$ :List of 3
   .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ version: chr "&gt;= 0.1.0"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 3
   .. .. ..$ package: chr "Biostrings"
-  .. .. ..$ version: chr "&gt;= 2.77.2"
+  .. .. ..$ version: chr "&gt;= 2.47.6"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "BSgenome"
-  .. .. ..$ version: chr "&gt;= 1.77.1"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "pwalign"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "crisprBowtie"
-  .. .. ..$ version: chr "&gt;= 0.99.8"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DBI"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "crisprScore"
-  .. .. ..$ version: chr "&gt;= 1.1.6"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "dplyr"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
+  .. ..$ :List of 2
   .. .. ..$ package: chr "GenomeInfoDb"
-  .. .. ..$ version: chr "&gt;= 1.45.7"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GenomicAlignments"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "GenomicFeatures"
-  .. .. ..$ version: chr "&gt;= 1.61.4"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "GenomicRanges"
-  .. .. ..$ version: chr "&gt;= 1.61.1"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ package: chr "RBGL"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ package: chr "Rsamtools"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "MatrixGenerics"
+  .. .. ..$ package: chr "SummarizedExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "VennDiagram"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "biomaRt"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "graph"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "graphics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "grid"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "InteractionSet"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "KEGGREST"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "matrixStats"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "multtest"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "regioneR"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "rtracklayer"
-  .. .. ..$ version: chr "&gt;= 1.69.1"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Seqinfo"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "txdbmaker"
-  .. .. ..$ version: chr "&gt;= 1.5.6"
-  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "VariantAnnotation"
-  .. .. ..$ version: chr "&gt;= 1.55.1"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "universalmotif"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "biomaRt"
+  .. .. ..$ package: chr "stringr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "data.table"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scales"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ensembldb"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "AnnotationHub"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "limma"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "reactome.db"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocManager"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome.Ecoli.NCBI.20080805"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg19"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "org.Ce.eg.db"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "org.Hs.eg.db"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome.Celegans.UCSC.ce10"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome.Drerio.UCSC.danRer7"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg38"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome.Mmusculus.UCSC.mm10"
+  .. .. ..$ package: chr "DelayedArray"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "idr"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "crisprBwa"
-  .. .. ..$ version: chr "&gt;= 0.99.7"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "seqinr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "EnsDb.Hsapiens.v75"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "EnsDb.Hsapiens.v79"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "EnsDb.Hsapiens.v86"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg18.knownGene"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg19.knownGene"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg38.knownGene"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GO.db"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "gplots"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "UpSetR"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
@@ -842,692 +942,794 @@ Total 2325 2361</code></pre>
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rbowtie"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Rbwa"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "RCurl"
+  .. .. ..$ package: chr "reshape2"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "testthat"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 3
-  ..$ _updates          :List of 8
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-06"
+  .. .. ..$ package: chr "trackViewer"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "motifStack"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "OrganismDbi"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocFileCache"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner             : chr "bioc"
+  ..$ _selfowned         : logi TRUE
+  ..$ _usedby            : int 6
+  ..$ _updates           :List of 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-01"
   .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-07"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-10"
-  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-29"
+  .. .. ..$ week: chr "2025-28"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-42"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 11
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 10
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-46"
-  .. .. ..$ n   : int 1
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  .. .. ..$ n   : int 3
+  ..$ _tags              : list()
+  ..$ _bioc              :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.13.0"
+  .. .. ..$ version: chr "3.45.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.12.0"
+  .. .. ..$ version: chr "3.44.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 14
-  .. ..$ : chr "crispr"
-  .. ..$ : chr "functionalgenomics"
-  .. ..$ : chr "genetarget"
-  .. ..$ : chr "bioconductor"
-  .. ..$ : chr "bioconductor-package"
-  .. ..$ : chr "crispr-cas9"
-  .. ..$ : chr "crispr-design"
-  .. ..$ : chr "crispr-target"
-  .. ..$ : chr "genomics-analysis"
-  .. ..$ : chr "grna"
-  .. ..$ : chr "grna-sequence"
-  .. ..$ : chr "grna-sequences"
-  .. ..$ : chr "sgrna"
-  .. ..$ : chr "sgrna-design"
-  ..$ _stars            : int 25
-  ..$ _contributors     :List of 4
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jfortin1"
-  .. .. ..$ count: int 139
-  .. .. ..$ uuid : int 2328424
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lthobbes"
-  .. .. ..$ count: int 19
-  .. .. ..$ uuid : int 31754000
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 10
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 8810451
-  ..$ _userbio          :List of 4
+  ..$ _topics            :List of 3
+  .. ..$ : chr "annotation"
+  .. ..$ : chr "chipseq"
+  .. ..$ : chr "chipchip"
+  ..$ _userbio           :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 415
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/crisprDesign"
-  ..$ _devurl           : chr "https://github.com/crisprverse/crisprdesign"
-  ..$ _searchresults    : int 85
-  ..$ _rbuild           : chr "4.5.1"
-  ..$ _assets           :List of 11
+  ..$ _downloads         :List of 2
+  .. ..$ count : int 2004
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/ChIPpeakAnno"
+  ..$ _mentions          : int 145
+  ..$ _searchresults     : int 768
+  ..$ _rbuild            : chr "4.5.2"
+  ..$ _assets            :List of 11
+  .. ..$ : chr "extra/ChIPpeakAnno.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/crisprDesign.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/crisprverse/crisprdesign"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 89
-  .. ..$ : chr "addCompositeScores"
-  .. ..$ : chr "addConservationScores"
-  .. ..$ : chr "addCrispraiScores"
-  .. ..$ : chr "addCutSites"
-  .. ..$ : chr "addDistanceToTss"
-  .. ..$ : chr "addEditedAlleles"
-  .. ..$ : chr "addEditingSites"
-  .. ..$ : chr "addExonTable"
-  .. ..$ : chr "addGeneAnnotation"
-  .. ..$ : chr "addIsoformAnnotation"
-  .. ..$ : chr "addNtcs"
-  .. ..$ : chr "addOffTargetScores"
-  .. ..$ : chr "addOnTargetScores"
-  .. ..$ : chr "addOpsBarcodes"
-  .. ..$ : chr "addPamScores"
-  .. ..$ : chr "addPfamDomains"
-  .. ..$ : chr "addReinitiationFlag"
-  .. ..$ : chr "addRepeats"
-  .. ..$ : chr "addRestrictionEnzymes"
-  .. ..$ : chr "addSequenceFeatures"
-  .. ..$ : chr "addSNPAnnotation"
-  .. ..$ : chr "addSpacerAlignments"
-  .. ..$ : chr "addSpacerAlignmentsIterative"
-  .. ..$ : chr "addTssAnnotation"
-  .. ..$ : chr "addTxTable"
-  .. ..$ : chr "alignments"
-  .. ..$ : chr "alignments&lt;-"
-  .. ..$ : chr "bsgenome"
-  .. ..$ : chr "convertToMinMaxGRanges"
-  .. ..$ : chr "convertToProtospacerGRanges"
-  .. ..$ : chr "crisprNuclease"
-  .. ..$ : chr "customSequences"
-  .. ..$ : chr "cutLength"
-  .. ..$ : chr "cutSites"
-  .. ..$ : chr "designCompleteAnnotation"
-  .. ..$ : chr "designOpsLibrary"
-  .. ..$ : chr "editedAlleles"
-  .. ..$ : chr "enzymeAnnotation"
-  .. ..$ : chr "enzymeAnnotation&lt;-"
-  .. ..$ : chr "exonTable"
-  .. ..$ : chr "findSpacerPairs"
-  .. ..$ : chr "findSpacers"
-  .. ..$ : chr "flattenGuideSet"
-  .. ..$ : chr "geneAnnotation"
-  .. ..$ : chr "geneAnnotation&lt;-"
-  .. ..$ : chr "getBarcodeDistanceMatrix"
-  .. ..$ : chr "getConsensusIsoform"
-  .. ..$ : chr "getMrnaSequences"
-  .. ..$ : chr "getPAMSequence"
-  .. ..$ : chr "getPAMSiteFromStartAndEnd"
-  .. ..$ : chr "getPreMrnaSequences"
-  .. ..$ : chr "getSpacerAlignments"
-  .. ..$ : chr "getSpacerSequence"
-  .. ..$ : chr "getTssObjectFromTxObject"
-  .. ..$ : chr "getTxDb"
-  .. ..$ : chr "getTxInfoDataFrame"
-  .. ..$ : chr "GuideSet"
-  .. ..$ : chr "GuideSet2DataFrames"
-  .. ..$ : chr "mcols"
-  .. ..$ : chr "offTargets"
-  .. ..$ : chr "onTargets"
-  .. ..$ : chr "PairedGuideSet"
-  .. ..$ : chr "pamDistance"
-  .. ..$ : chr "pamLength"
-  .. ..$ : chr "pamOrientation"
-  .. ..$ : chr "pams"
-  .. ..$ : chr "pamSide"
-  .. ..$ : chr "pamSites"
-  .. ..$ : chr "preparePfamTable"
-  .. ..$ : chr "protospacers"
-  .. ..$ : chr "prototypeSequence"
-  .. ..$ : chr "queryTss"
-  .. ..$ : chr "queryTxObject"
-  .. ..$ : chr "rankSpacers"
-  .. ..$ : chr "removeRepeats"
-  .. ..$ : chr "removeSpacersWithSecondaryTargets"
-  .. ..$ : chr "seqnames"
-  .. ..$ : chr "snps"
-  .. ..$ : chr "snps&lt;-"
-  .. ..$ : chr "spacerDistance"
-  .. ..$ : chr "spacerLength"
-  .. ..$ : chr "spacers"
-  .. ..$ : chr "targetOrigin"
-  .. ..$ : chr "tssAnnotation"
-  .. ..$ : chr "tssAnnotation&lt;-"
-  .. ..$ : chr "TxDb2GRangesList"
-  .. ..$ : chr "txTable"
-  .. ..$ : chr "updateOpsLibrary"
-  .. ..$ : chr "validateOpsLibrary"
-  ..$ _datasets         :List of 6
+  ..$ _homeurl           : chr "https://github.com/jianhong/chippeakanno"
+  ..$ _realowner         : chr "bioc"
+  ..$ _cranurl           : logi FALSE
+  ..$ _exports           :List of 59
+  .. ..$ : chr "addAncestors"
+  .. ..$ : chr "addGeneIDs"
+  .. ..$ : chr "addMetadata"
+  .. ..$ : chr "annoGR"
+  .. ..$ : chr "annoPeaks"
+  .. ..$ : chr "annotatePeakInBatch"
+  .. ..$ : chr "assignChromosomeRegion"
+  .. ..$ : chr "binOverFeature"
+  .. ..$ : chr "binOverGene"
+  .. ..$ : chr "binOverRegions"
+  .. ..$ : chr "coerce"
+  .. ..$ : chr "condenseMatrixByColnames"
+  .. ..$ : chr "convert2EntrezID"
+  .. ..$ : chr "countPatternInSeqs"
+  .. ..$ : chr "cumulativePercentage"
+  .. ..$ : chr "downstreams"
+  .. ..$ : chr "egOrgMap"
+  .. ..$ : chr "enrichmentPlot"
+  .. ..$ : chr "estFragmentLength"
+  .. ..$ : chr "estLibSize"
+  .. ..$ : chr "featureAlignedDistribution"
+  .. ..$ : chr "featureAlignedExtendSignal"
+  .. ..$ : chr "featureAlignedHeatmap"
+  .. ..$ : chr "featureAlignedSignal"
+  .. ..$ : chr "findEnhancers"
+  .. ..$ : chr "findMotifsInPromoterSeqs"
+  .. ..$ : chr "findOverlappingPeaks"
+  .. ..$ : chr "findOverlapsOfPeaks"
+  .. ..$ : chr "genomicElementDistribution"
+  .. ..$ : chr "genomicElementUpSetR"
+  .. ..$ : chr "getAllPeakSequence"
+  .. ..$ : chr "getAnnotation"
+  .. ..$ : chr "getEnrichedGO"
+  .. ..$ : chr "getEnrichedPATH"
+  .. ..$ : chr "getGO"
+  .. ..$ : chr "getUniqueGOidCount"
+  .. ..$ : chr "getVennCounts"
+  .. ..$ : chr "hyperGtest"
+  .. ..$ : chr "IDRfilter"
+  .. ..$ : chr "info"
+  .. ..$ : chr "makeVennDiagram"
+  .. ..$ : chr "mergePlusMinusPeaks"
+  .. ..$ : chr "metagenePlot"
+  .. ..$ : chr "oligoFrequency"
+  .. ..$ : chr "oligoSummary"
+  .. ..$ : chr "peakPermTest"
+  .. ..$ : chr "peaksNearBDP"
+  .. ..$ : chr "pie1"
+  .. ..$ : chr "plotBinOverRegions"
+  .. ..$ : chr "preparePool"
+  .. ..$ : chr "reCenterPeaks"
+  .. ..$ : chr "summarizeOverlapsByBins"
+  .. ..$ : chr "summarizePatternInPeaks"
+  .. ..$ : chr "tileCount"
+  .. ..$ : chr "tileGRanges"
+  .. ..$ : chr "toGRanges"
+  .. ..$ : chr "translatePattern"
+  .. ..$ : chr "write2FASTA"
+  .. ..$ : chr "xget"
+  ..$ _datasets          :List of 21
   .. ..$ :List of 7
-  .. .. ..$ name  : chr "grListExample"
-  .. .. ..$ title : chr "Example of a TxDb object converted to a GRangesList"
-  .. .. ..$ object: chr "grListExample"
+  .. .. ..$ name  : chr "ExonPlusUtr.human.GRCh37"
+  .. .. ..$ title : chr "Gene model with exon, 5' UTR and 3' UTR information for human sapiens (GRCh37) obtained from biomaRt"
+  .. .. ..$ object: chr "ExonPlusUtr.human.GRCh37"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "HOT.spots"
+  .. .. ..$ title : chr "High Occupancy of Transcription Related Factors regions"
+  .. .. ..$ object: chr "HOT.spots"
   .. .. ..$ class :List of 1
   .. .. .. ..$ : chr "CompressedGRangesList"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi FALSE
   .. ..$ :List of 7
-  .. .. ..$ name  : chr "grRepeatsExample"
-  .. .. ..$ title : chr "Example of a GRanges object containing repeat elements"
-  .. .. ..$ object: chr "grRepeatsExample"
+  .. .. ..$ name  : chr "Peaks.Ste12.Replicate1"
+  .. .. ..$ title : chr "Ste12-binding sites from biological replicate 1 in yeast (see reference)"
+  .. .. ..$ object: chr "Peaks.Ste12.Replicate1"
   .. .. ..$ class :List of 1
   .. .. .. ..$ : chr "GRanges"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi FALSE
   .. ..$ :List of 7
-  .. .. ..$ name  : chr "guideSetExample"
-  .. .. ..$ title : chr "Example of a GuideSet object storing gRNA sequences targeting the CDS of IQSEC3"
-  .. .. ..$ object: chr "guideSetExample"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "GuideSet"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 7
-  .. .. ..$ name  : chr "guideSetExampleFullAnnotation"
-  .. .. ..$ title : chr "Example of a fully-annotated GuideSet object storing gRNA sequences targeting the CDS of IQSEC3"
-  .. .. ..$ object: chr "guideSetExampleFullAnnotation"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "GuideSet"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 7
-  .. .. ..$ name  : chr "guideSetExampleWithAlignments"
-  .. .. ..$ title : chr "Example of a GuideSet object storing gRNA sequences targeting the CDS of IQSEC3 with off-target alignments."
-  .. .. ..$ object: chr "guideSetExampleWithAlignments"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "GuideSet"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 7
-  .. .. ..$ name  : chr "tssObjectExample"
-  .. .. ..$ title : chr "Example of a GRanges object containing TSS coordinates"
-  .. .. ..$ object: chr "tssObjectExample"
+  .. .. ..$ name  : chr "Peaks.Ste12.Replicate2"
+  .. .. ..$ title : chr "Ste12-binding sites from biological replicate 2 in yeast (see reference)"
+  .. .. ..$ object: chr "Peaks.Ste12.Replicate2"
   .. .. ..$ class :List of 1
   .. .. .. ..$ : chr "GRanges"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi FALSE
-  ..$ _help             :List of 56
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "Peaks.Ste12.Replicate3"
+  .. .. ..$ title : chr "Ste12-binding sites from biological replicate 3 in yeast (see reference)"
+  .. .. ..$ object: chr "Peaks.Ste12.Replicate3"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.human.GRCh37"
+  .. .. ..$ title : chr "TSS annotation for human sapiens (GRCh37) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.human.GRCh37"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.human.GRCh38"
+  .. .. ..$ title : chr "TSS annotation for human sapiens (GRCh38) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.human.GRCh38"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.human.NCBI36"
+  .. .. ..$ title : chr "TSS annotation for human sapiens (NCBI36) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.human.NCBI36"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.mouse.GRCm38"
+  .. .. ..$ title : chr "TSS annotation data for Mus musculus (GRCm38.p1) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.mouse.GRCm38"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.mouse.NCBIM37"
+  .. .. ..$ title : chr "TSS annotation data for mouse (NCBIM37) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.mouse.NCBIM37"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.rat.RGSC3.4"
+  .. .. ..$ title : chr "TSS annotation data for rat (RGSC3.4) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.rat.RGSC3.4"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.rat.Rnor_5.0"
+  .. .. ..$ title : chr "TSS annotation data for Rattus norvegicus (Rnor_5.0) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.rat.Rnor_5.0"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.zebrafish.Zv8"
+  .. .. ..$ title : chr "TSS annotation data for zebrafish (Zv8) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.zebrafish.Zv8"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "TSS.zebrafish.Zv9"
+  .. .. ..$ title : chr "TSS annotation for Danio rerio (Zv9) obtained from biomaRt"
+  .. .. ..$ object: chr "TSS.zebrafish.Zv9"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "annotatedPeak"
+  .. .. ..$ title : chr "Annotated Peaks"
+  .. .. ..$ object: chr "annotatedPeak"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "enrichedGO"
+  .. .. ..$ title : chr "Enriched Gene Ontology terms used as example"
+  .. .. ..$ object: chr "enrichedGO"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "list"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "myPeakList"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ object: chr "myPeakList"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "peaks1"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ object: chr "peaks1"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "peaks2"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ object: chr "peaks2"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "peaks3"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ object: chr "peaks3"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 7
+  .. .. ..$ name  : chr "wgEncodeTfbsV3"
+  .. .. ..$ title : chr "transcription factor binding site clusters (V3) from ENCODE"
+  .. .. ..$ object: chr "wgEncodeTfbsV3"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  ..$ _help              :List of 84
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addCompositeScores"
-  .. .. ..$ title : chr "Add on-target composite score to a GuideSet object."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addCompositeScores"
-  .. .. .. ..$ : chr "addCompositeScores,GuideSet-method"
-  .. .. .. ..$ : chr "addCompositeScores,NULL-method"
-  .. .. .. ..$ : chr "addCompositeScores,PairedGuideSet-method"
+  .. .. ..$ page  : chr "ChIPpeakAnno-package"
+  .. .. ..$ title : chr "Batch annotation of the peaks identified from either ChIP-seq or ChIP-chip experiments."
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "ChIPpeakAnno-package"
+  .. .. .. ..$ : chr "ChIPpeakAnno"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addConservationScores"
-  .. .. ..$ title : chr "Add on-target composite score to a GuideSet object."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addConservationScores"
-  .. .. .. ..$ : chr "addConservationScores,GuideSet-method"
-  .. .. .. ..$ : chr "addConservationScores,NULL-method"
-  .. .. .. ..$ : chr "addConservationScores,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addCrispraiScores"
-  .. .. ..$ title : chr "Add CRISPRa/CRISPRi on-target scores to a GuideSet object."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addCrispraiScores"
-  .. .. .. ..$ : chr "addCrispraiScores,GuideSet-method"
-  .. .. .. ..$ : chr "addCrispraiScores,NULL-method"
-  .. .. .. ..$ : chr "addCrispraiScores,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addDistanceToTss"
-  .. .. ..$ title : chr "Add distance to TSS for a specificed TSS id"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "addDistanceToTss"
-  .. .. .. ..$ : chr "addDistanceToTss,GuideSet-method"
-  .. .. .. ..$ : chr "addDistanceToTss,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addEditedAlleles"
-  .. .. ..$ title : chr "To add edited alleles for a CRISPR base editing GuideSet"
+  .. .. ..$ page  : chr "addAncestors"
+  .. .. ..$ title : chr "Add GO IDs of the ancestors for a given vector of GO ids"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addEditedAlleles"
+  .. .. .. ..$ : chr "addAncestors"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addEditingSites"
-  .. .. ..$ title : chr "Add optimal editing site for base editing gRNAs."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addEditingSites"
-  .. .. .. ..$ : chr "addEditingSites,GuideSet-method"
-  .. .. .. ..$ : chr "addEditingSites,NULL-method"
-  .. .. .. ..$ : chr "addEditingSites,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addExonTable"
-  .. .. ..$ title : chr "Add a gene-specific exon table to a GuideSet object."
+  .. .. ..$ page  : chr "addGeneIDs"
+  .. .. ..$ title : chr "Add common IDs to annotated peaks such as gene symbol, entrez ID, ensemble gene id and refseq id."
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addExonTable"
+  .. .. .. ..$ : chr "addGeneIDs"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addGeneAnnotation"
-  .. .. ..$ title : chr "Add gene context annotation to a GuideSet object"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "addGeneAnnotation"
-  .. .. .. ..$ : chr "addGeneAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "addGeneAnnotation,PairedGuideSet-method"
+  .. .. ..$ page  : chr "addMetadata"
+  .. .. ..$ title : chr "Add metadata of the GRanges objects used for findOverlapsOfPeaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "addMetadata"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addIsoformAnnotation"
-  .. .. ..$ title : chr "Add isoform-specific annotation to a GuideSet object"
+  .. .. ..$ page  : chr "annoGR"
+  .. .. ..$ title : chr "Class 'annoGR'"
+  .. .. ..$ topics:List of 10
+  .. .. .. ..$ : chr "annoGR"
+  .. .. .. ..$ : chr "annoGR,EnsDb-method"
+  .. .. .. ..$ : chr "annoGR,GRanges-method"
+  .. .. .. ..$ : chr "annoGR,TxDb-method"
+  .. .. .. ..$ : chr "annoGR-class"
+  .. .. .. ..$ : chr "coerce"
+  .. .. .. ..$ : chr "coerce,annoGR,GRanges-method"
+  .. .. .. ..$ : chr "coerce,GRanges,annoGR-method"
+  .. .. .. ..$ : chr "info"
+  .. .. .. ..$ : chr "info,annoGR-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "annoPeaks"
+  .. .. ..$ title : chr "Annotate peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "annoPeaks"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "annotatedPeak"
+  .. .. ..$ title : chr "Annotated Peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "annotatedPeak"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "annotatePeakInBatch"
+  .. .. ..$ title : chr "Obtain the distance to the nearest TSS, miRNA, and/or exon for a list of peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "annotatePeakInBatch"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "assignChromosomeRegion"
+  .. .. ..$ title : chr "Summarize peak distribution over exon, intron, enhancer, proximal promoter, 5 prime UTR and 3 prime UTR"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "assignChromosomeRegion"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "bdp"
+  .. .. ..$ title : chr "obtain the peaks near bi-directional promoters"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "bdp"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "bindist"
+  .. .. ..$ title : chr "Class '\"bindist\"'"
   .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "addDistanceToTss,NULL-method"
-  .. .. .. ..$ : chr "addIsoformAnnotation"
-  .. .. .. ..$ : chr "addIsoformAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "addIsoformAnnotation,NULL-method"
-  .. .. .. ..$ : chr "addIsoformAnnotation,PairedGuideSet-method"
+  .. .. .. ..$ : chr "$,bindist-method"
+  .. .. .. ..$ : chr "$&lt;-,bindist-method"
+  .. .. .. ..$ : chr "bindist"
+  .. .. .. ..$ : chr "bindist-class"
+  .. .. .. ..$ : chr "bindist-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addNtcs"
-  .. .. ..$ title : chr "Add non-targeting control (NTC) sequences to GuideSet"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addNtcs"
-  .. .. .. ..$ : chr "addNtcs,GuideSet-method"
-  .. .. .. ..$ : chr "addNtcs,NULL-method"
-  .. .. .. ..$ : chr "addNtcs,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addOffTargetScores"
-  .. .. ..$ title : chr "Add CFD and MIT scores to a GuideSet object."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addOffTargetScores"
-  .. .. .. ..$ : chr "addOffTargetScores,GuideSet-method"
-  .. .. .. ..$ : chr "addOffTargetScores,NULL-method"
-  .. .. .. ..$ : chr "addOffTargetScores,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addOnTargetScores"
-  .. .. ..$ title : chr "Add on-target scores to a GuideSet object."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addOnTargetScores"
-  .. .. .. ..$ : chr "addOnTargetScores,GuideSet-method"
-  .. .. .. ..$ : chr "addOnTargetScores,NULL-method"
-  .. .. .. ..$ : chr "addOnTargetScores,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addOpsBarcodes"
-  .. .. ..$ title : chr "Add optical pooled screening (OPS) barcodes"
+  .. .. ..$ page  : chr "binOverFeature"
+  .. .. ..$ title : chr "Aggregate peaks over bins from the TSS"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addOpsBarcodes"
+  .. .. .. ..$ : chr "binOverFeature"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addPamScores"
-  .. .. ..$ title : chr "Add PAM scores to a GuideSet object."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addPamScores"
-  .. .. .. ..$ : chr "addPamScores,GuideSet-method"
-  .. .. .. ..$ : chr "addPamScores,NULL-method"
-  .. .. .. ..$ : chr "addPamScores,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addPfamDomains"
-  .. .. ..$ title : chr "Add Pfam domains annotation to GuideSet object"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addPfamDomains"
-  .. .. .. ..$ : chr "addPfamDomains,GuideSet-method"
-  .. .. .. ..$ : chr "addPfamDomains,NULL-method"
-  .. .. .. ..$ : chr "addPfamDomains,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addReinitiationFlag"
-  .. .. ..$ title : chr "Add a logical flag for gRNAs leading to potential reinitiation"
+  .. .. ..$ page  : chr "binOverGene"
+  .. .. ..$ title : chr "coverage of gene body"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addReinitiationFlag"
+  .. .. .. ..$ : chr "binOverGene"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addRepeats"
-  .. .. ..$ title : chr "Annotate a GuideSet object with repeat elements"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addRepeats"
-  .. .. .. ..$ : chr "addRepeats,GuideSet-method"
-  .. .. .. ..$ : chr "addRepeats,NULL-method"
-  .. .. .. ..$ : chr "addRepeats,PairedGuideSet-method"
+  .. .. ..$ page  : chr "binOverRegions"
+  .. .. ..$ title : chr "coverage of chromosome regions"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "binOverRegions"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addRestrictionEnzymes"
-  .. .. ..$ title : chr "Restriction enzyme recognition sites in spacer sequences"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addRestrictionEnzymes"
-  .. .. .. ..$ : chr "addRestrictionEnzymes,GuideSet-method"
-  .. .. .. ..$ : chr "addRestrictionEnzymes,NULL-method"
-  .. .. .. ..$ : chr "addRestrictionEnzymes,PairedGuideSet-method"
+  .. .. ..$ page  : chr "ChIPpeakAnno-deprecated"
+  .. .. ..$ title : chr "Deprecated Functions in Package ChIPpeakAnno"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "ChIPpeakAnno-deprecated"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addSequenceFeatures"
-  .. .. ..$ title : chr "Add spacer sequence feature annotation columns to a GuideSet object"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addSequenceFeatures"
-  .. .. .. ..$ : chr "addSequenceFeatures,GuideSet-method"
-  .. .. .. ..$ : chr "addSequenceFeatures,NULL-method"
-  .. .. .. ..$ : chr "addSequenceFeatures,PairedGuideSet-method"
+  .. .. ..$ page  : chr "cntOverlaps"
+  .. .. ..$ title : chr "count overlaps"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cntOverlaps"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addSNPAnnotation"
-  .. .. ..$ title : chr "Add SNP annotation to a GuideSet object"
+  .. .. ..$ page  : chr "condenseMatrixByColnames"
+  .. .. ..$ title : chr "Condense matrix by colnames"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "condenseMatrixByColnames"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "convert2EntrezID"
+  .. .. ..$ title : chr "Convert other common IDs to entrez gene ID."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "convert2EntrezID"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "countPatternInSeqs"
+  .. .. ..$ title : chr "Output total number of patterns found in the input sequences"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "countPatternInSeqs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cumulativePercentage"
+  .. .. ..$ title : chr "Plot the cumulative percentage tag allocation in sample"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cumulativePercentage"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "downstreams"
+  .. .. ..$ title : chr "Get downstream coordinates"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "downstreams"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "egOrgMap"
+  .. .. ..$ title : chr "Convert between the name of the organism annotation package (\"OrgDb\") and the name of the organism."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "egOrgMap"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "enrichedGO"
+  .. .. ..$ title : chr "Enriched Gene Ontology terms used as example"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "enrichedGO"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "enrichmentPlot"
+  .. .. ..$ title : chr "plot enrichment results"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "enrichmentPlot"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "EnsDb2GR"
+  .. .. ..$ title : chr "EnsDb object to GRanges"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "EnsDb2GR"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "estFragmentLength"
+  .. .. ..$ title : chr "estimate the fragment length"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "estFragmentLength"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "estLibSize"
+  .. .. ..$ title : chr "estimate the library size"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "estLibSize"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ExonPlusUtr.human.GRCh37"
+  .. .. ..$ title : chr "Gene model with exon, 5' UTR and 3' UTR information for human sapiens (GRCh37) obtained from biomaRt"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "ExonPlusUtr.human.GRCh37"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "featureAlignedDistribution"
+  .. .. ..$ title : chr "plot distribution in given ranges"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "featureAlignedDistribution"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "featureAlignedExtendSignal"
+  .. .. ..$ title : chr "extract signals in given ranges from bam files"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "featureAlignedExtendSignal"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "featureAlignedHeatmap"
+  .. .. ..$ title : chr "Heatmap representing signals in given ranges"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "featureAlignedHeatmap"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "featureAlignedSignal"
+  .. .. ..$ title : chr "extract signals in given ranges"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "featureAlignedSignal"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "findEnhancers"
+  .. .. ..$ title : chr "Find possible enhancers depend on DNA interaction data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "findEnhancers"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "findMotifsInPromoterSeqs"
+  .. .. ..$ title : chr "Find occurence of input motifs in the promoter regions of the input gene list"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "findMotifsInPromoterSeqs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "findOverlappingPeaks"
+  .. .. ..$ title : chr "Find the overlapping peaks for two peak ranges."
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "findOverlappingPeaks"
+  .. .. .. ..$ : chr "findOverlappingPeaks-deprecated"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "findOverlapsOfPeaks"
+  .. .. ..$ title : chr "Find the overlapped peaks among two or more set of peaks."
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "findOverlapsOfPeaks"
+  .. .. .. ..$ : chr "overlappingPeaks"
+  .. .. .. ..$ : chr "overlappingPeaks-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "genomicElementDistribution"
+  .. .. ..$ title : chr "Genomic Element distribution"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "genomicElementDistribution"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "genomicElementUpSetR"
+  .. .. ..$ title : chr "Genomic Element data for upset plot"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "genomicElementUpSetR"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getAllPeakSequence"
+  .. .. ..$ title : chr "Obtain genomic sequences around the peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getAllPeakSequence"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getAnnotation"
+  .. .. ..$ title : chr "Obtain the TSS, exon or miRNA annotation for the specified species"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getAnnotation"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getEnrichedGO"
+  .. .. ..$ title : chr "Obtain enriched gene ontology (GO) terms that near the peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getEnrichedGO"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getEnrichedPATH"
+  .. .. ..$ title : chr "Obtain enriched PATH that near the peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getEnrichedPATH"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getGO"
+  .. .. ..$ title : chr "Obtain gene ontology (GO) terms for given genes"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getGO"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getVennCounts"
+  .. .. ..$ title : chr "Obtain Venn Counts for Venn Diagram, internal function for makeVennDigram"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getVennCounts"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "HOT.spots"
+  .. .. ..$ title : chr "High Occupancy of Transcription Related Factors regions"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "HOT.spots"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "IDRfilter"
+  .. .. ..$ title : chr "Filter peaks by IDR (irreproducible discovery rate)"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "IDRfilter"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "makeVennDiagram"
+  .. .. ..$ title : chr "Make Venn Diagram from a list of peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "makeVennDiagram"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "mergePlusMinusPeaks"
+  .. .. ..$ title : chr "Merge peaks from plus strand and minus strand"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "mergePlusMinusPeaks"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "metagenePlot"
+  .. .. ..$ title : chr "peak distance to features"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "metagenePlot"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "myPeakList"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "myPeakList"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "oligoFrequency"
+  .. .. ..$ title : chr "get the oligonucleotide frequency"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "oligoFrequency"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "oligoSummary"
+  .. .. ..$ title : chr "Output a summary of consensus in the peaks"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "oligoSummary"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "peakPermTest"
+  .. .. ..$ title : chr "Permutation Test for two given peak lists"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "peakPermTest"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Peaks.Ste12.Replicate1"
+  .. .. ..$ title : chr "Ste12-binding sites from biological replicate 1 in yeast (see reference)"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "Peaks.Ste12.Replicate1"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Peaks.Ste12.Replicate2"
+  .. .. ..$ title : chr "Ste12-binding sites from biological replicate 2 in yeast (see reference)"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "Peaks.Ste12.Replicate2"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Peaks.Ste12.Replicate3"
+  .. .. ..$ title : chr "Ste12-binding sites from biological replicate 3 in yeast (see reference)"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "Peaks.Ste12.Replicate3"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "peaks1"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "peaks1"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "peaks2"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "peaks2"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "peaks3"
+  .. .. ..$ title : chr "An example GRanges object representing a ChIP-seq peak dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "peaks3"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "peaksNearBDP"
+  .. .. ..$ title : chr "obtain the peaks near bi-directional promoters"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "peaksNearBDP"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "permPool"
+  .. .. ..$ title : chr "Class '\"permPool\"'"
   .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "addGeneAnnotation,NULL-method"
-  .. .. .. ..$ : chr "addSNPAnnotation"
-  .. .. .. ..$ : chr "addSNPAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "addSNPAnnotation,NULL-method"
-  .. .. .. ..$ : chr "addSNPAnnotation,PairedGuideSet-method"
+  .. .. .. ..$ : chr "$,permPool-method"
+  .. .. .. ..$ : chr "$&lt;-,permPool-method"
+  .. .. .. ..$ : chr "permPool"
+  .. .. .. ..$ : chr "permPool-class"
+  .. .. .. ..$ : chr "permPool-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addSpacerAlignments"
-  .. .. ..$ title : chr "Functions for finding and characterizing on- and off-targets of spacer sequences."
-  .. .. ..$ topics:List of 9
-  .. .. .. ..$ : chr "addSpacerAlignments"
-  .. .. .. ..$ : chr "addSpacerAlignments,GuideSet-method"
-  .. .. .. ..$ : chr "addSpacerAlignments,NULL-method"
-  .. .. .. ..$ : chr "addSpacerAlignments,PairedGuideSet-method"
-  .. .. .. ..$ : chr "addSpacerAlignmentsIterative"
-  .. .. .. ..$ : chr "addSpacerAlignmentsIterative,GuideSet-method"
-  .. .. .. ..$ : chr "addSpacerAlignmentsIterative,NULL-method"
-  .. .. .. ..$ : chr "addSpacerAlignmentsIterative,PairedGuideSet-method"
-  .. .. .. ..$ : chr "getSpacerAlignments"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addTssAnnotation"
-  .. .. ..$ title : chr "Add TSS context annotation to a GuideSet object"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "addTssAnnotation"
-  .. .. .. ..$ : chr "addTssAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "addTssAnnotation,NULL-method"
-  .. .. .. ..$ : chr "addTssAnnotation,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "addTxTable"
-  .. .. ..$ title : chr "Add a gene-specific transcript table to a GuideSet object."
+  .. .. ..$ page  : chr "pie1"
+  .. .. ..$ title : chr "Pie Charts"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addTxTable"
+  .. .. .. ..$ : chr "pie1"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "completeSpacers"
-  .. .. ..$ title : chr "Get complete spacer information"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "completeSpacers"
-  .. .. .. ..$ : chr "getPAMSequence"
-  .. .. .. ..$ : chr "getPAMSiteFromStartAndEnd"
-  .. .. .. ..$ : chr "getSpacerSequence"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "convertToMinMaxGRanges"
-  .. .. ..$ title : chr "Convert a GuideSet object into a GRanges containing the range of all targeting gRNAs."
+  .. .. ..$ page  : chr "plotBinOverRegions"
+  .. .. ..$ title : chr "plot the coverage of regions"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "convertToMinMaxGRanges"
+  .. .. .. ..$ : chr "plotBinOverRegions"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "convertToProtospacerGRanges"
-  .. .. ..$ title : chr "Convert PAM site coordinates to protospacer start and end coordinates"
+  .. .. ..$ page  : chr "preparePool"
+  .. .. ..$ title : chr "prepare data for permutation test"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "convertToProtospacerGRanges"
+  .. .. .. ..$ : chr "preparePool"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "GuideSet-class"
-  .. .. ..$ title : chr "An S4 class to store CRISPR gRNA sequences with modular annotations."
-  .. .. ..$ topics:List of 54
-  .. .. .. ..$ : chr "addCutSites"
-  .. .. .. ..$ : chr "addCutSites,GuideSet-method"
-  .. .. .. ..$ : chr "alignments"
-  .. .. .. ..$ : chr "alignments,GuideSet-method"
-  .. .. .. ..$ : chr "alignments&lt;-"
-  .. .. .. ..$ : chr "alignments&lt;-,GuideSet-method"
-  .. .. .. ..$ : chr "bsgenome"
-  .. .. .. ..$ : chr "bsgenome,GuideSet-method"
-  .. .. .. ..$ : chr "crisprNuclease"
-  .. .. .. ..$ : chr "crisprNuclease,GuideSet-method"
-  .. .. .. ..$ : chr "customSequences"
-  .. .. .. ..$ : chr "customSequences,GuideSet-method"
-  .. .. .. ..$ : chr "cutSites,GuideSet-method"
-  .. .. .. ..$ : chr "editedAlleles"
-  .. .. .. ..$ : chr "editedAlleles,GuideSet-method"
-  .. .. .. ..$ : chr "enzymeAnnotation"
-  .. .. .. ..$ : chr "enzymeAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "enzymeAnnotation&lt;-"
-  .. .. .. ..$ : chr "enzymeAnnotation&lt;-,GuideSet-method"
-  .. .. .. ..$ : chr "exonTable"
-  .. .. .. ..$ : chr "exonTable,GuideSet-method"
-  .. .. .. ..$ : chr "geneAnnotation"
-  .. .. .. ..$ : chr "geneAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "geneAnnotation&lt;-"
-  .. .. .. ..$ : chr "geneAnnotation&lt;-,GuideSet-method"
-  .. .. .. ..$ : chr "GuideSet"
-  .. .. .. ..$ : chr "GuideSet-class"
-  .. .. .. ..$ : chr "offTargets"
-  .. .. .. ..$ : chr "offTargets,GuideSet-method"
-  .. .. .. ..$ : chr "onTargets"
-  .. .. .. ..$ : chr "onTargets,GuideSet-method"
-  .. .. .. ..$ : chr "pamLength,GuideSet-method"
-  .. .. .. ..$ : chr "pams,GuideSet-method"
-  .. .. .. ..$ : chr "pamSide,GuideSet-method"
-  .. .. .. ..$ : chr "pamSites"
-  .. .. .. ..$ : chr "pamSites,GuideSet-method"
-  .. .. .. ..$ : chr "protospacers"
-  .. .. .. ..$ : chr "protospacers,GuideSet-method"
-  .. .. .. ..$ : chr "prototypeSequence,GuideSet-method"
-  .. .. .. ..$ : chr "snps"
-  .. .. .. ..$ : chr "snps,GuideSet-method"
-  .. .. .. ..$ : chr "snps&lt;-"
-  .. .. .. ..$ : chr "snps&lt;-,GuideSet-method"
-  .. .. .. ..$ : chr "spacerLength,GuideSet-method"
-  .. .. .. ..$ : chr "spacers"
-  .. .. .. ..$ : chr "spacers,GuideSet-method"
-  .. .. .. ..$ : chr "targetOrigin"
-  .. .. .. ..$ : chr "targetOrigin,GuideSet-method"
-  .. .. .. ..$ : chr "tssAnnotation"
-  .. .. .. ..$ : chr "tssAnnotation,GuideSet-method"
-  .. .. .. ..$ : chr "tssAnnotation&lt;-"
-  .. .. .. ..$ : chr "tssAnnotation&lt;-,GuideSet-method"
-  .. .. .. ..$ : chr "txTable"
-  .. .. .. ..$ : chr "txTable,GuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "designCompleteAnnotation"
-  .. .. ..$ title : chr "One-step gRNA design and annotation function"
+  .. .. ..$ page  : chr "reCenterPeaks"
+  .. .. ..$ title : chr "re-center the peaks"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "designCompleteAnnotation"
+  .. .. .. ..$ : chr "reCenterPeaks"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "designOpsLibrary"
-  .. .. ..$ title : chr "Design gRNA library for optical pooled screening"
+  .. .. ..$ page  : chr "summarizeOverlapsByBins"
+  .. .. ..$ title : chr "Perform overlap queries between reads and genomic features by bins"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "designOpsLibrary"
+  .. .. .. ..$ : chr "summarizeOverlapsByBins"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "findSpacerPairs"
-  .. .. ..$ title : chr "Find pairs of CRISPR gRNA spacers from a pair of genomic regions."
+  .. .. ..$ page  : chr "summarizePatternInPeaks"
+  .. .. ..$ title : chr "Output a summary of the occurrence and enrichment of each pattern in the sequences."
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "findSpacerPairs"
+  .. .. .. ..$ : chr "summarizePatternInPeaks"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "findSpacers"
-  .. .. ..$ title : chr "Find CRISPR gRNA spacer sequences from a set of DNA sequences."
+  .. .. ..$ page  : chr "tileCount"
+  .. .. ..$ title : chr "Perform overlap queries between reads and genome by windows"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "findSpacers"
+  .. .. .. ..$ : chr "tileCount"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "flattenGuideSet"
-  .. .. ..$ title : chr "Create a list of annotation tables from a GuideSet object"
+  .. .. ..$ page  : chr "tileGRanges"
+  .. .. ..$ title : chr "Slide windows on a given GRanges object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "flattenGuideSet"
+  .. .. .. ..$ : chr "tileGRanges"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getBarcodeDistanceMatrix"
-  .. .. ..$ title : chr "Get distance between query and target sets of barcodes"
+  .. .. ..$ page  : chr "toGRanges"
+  .. .. ..$ title : chr "Convert dataset to GRanges"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "toGRanges"
+  .. .. .. ..$ : chr "toGRanges,character-method"
+  .. .. .. ..$ : chr "toGRanges,connection-method"
+  .. .. .. ..$ : chr "toGRanges,data.frame-method"
+  .. .. .. ..$ : chr "toGRanges,EnsDb-method"
+  .. .. .. ..$ : chr "toGRanges,TxDb-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "translatePattern"
+  .. .. ..$ title : chr "translate pattern from IUPAC Extended Genetic Alphabet to regular expression"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getBarcodeDistanceMatrix"
+  .. .. .. ..$ : chr "translatePattern"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getConsensusIsoform"
-  .. .. ..$ title : chr "Get the genomic ranges of a consensus isoform"
+  .. .. ..$ page  : chr "TSS.human.GRCh37"
+  .. .. ..$ title : chr "TSS annotation for human sapiens (GRCh37) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getConsensusIsoform"
+  .. .. .. ..$ : chr "TSS.human.GRCh37"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getMrnaSequences"
-  .. .. ..$ title : chr "Retrieve mRNA sequences"
+  .. .. ..$ page  : chr "TSS.human.GRCh38"
+  .. .. ..$ title : chr "TSS annotation for human sapiens (GRCh38) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getMrnaSequences"
+  .. .. .. ..$ : chr "TSS.human.GRCh38"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getPreMrnaSequences"
-  .. .. ..$ title : chr "Retrieve pre-mRNA sequences"
+  .. .. ..$ page  : chr "TSS.human.NCBI36"
+  .. .. ..$ title : chr "TSS annotation for human sapiens (NCBI36) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getPreMrnaSequences"
+  .. .. .. ..$ : chr "TSS.human.NCBI36"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTssObjectFromTxObject"
-  .. .. ..$ title : chr "Extract TSS coordinates from a gene model object"
+  .. .. ..$ page  : chr "TSS.mouse.GRCm38"
+  .. .. ..$ title : chr "TSS annotation data for Mus musculus (GRCm38.p1) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getTssObjectFromTxObject"
+  .. .. .. ..$ : chr "TSS.mouse.GRCm38"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTxDb"
-  .. .. ..$ title : chr "getTxDb"
+  .. .. ..$ page  : chr "TSS.mouse.NCBIM37"
+  .. .. ..$ title : chr "TSS annotation data for mouse (NCBIM37) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getTxDb"
+  .. .. .. ..$ : chr "TSS.mouse.NCBIM37"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTxInfoDataFrame"
-  .. .. ..$ title : chr "To obtain a DataFrame of transcript-specific CDS and mRNA coordinates"
+  .. .. ..$ page  : chr "TSS.rat.RGSC3.4"
+  .. .. ..$ title : chr "TSS annotation data for rat (RGSC3.4) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getTxInfoDataFrame"
+  .. .. .. ..$ : chr "TSS.rat.RGSC3.4"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "grListExample"
-  .. .. ..$ title : chr "Example of a TxDb object converted to a GRangesList"
+  .. .. ..$ page  : chr "TSS.rat.Rnor_5.0"
+  .. .. ..$ title : chr "TSS annotation data for Rattus norvegicus (Rnor_5.0) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "grListExample"
+  .. .. .. ..$ : chr "TSS.rat.Rnor_5.0"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "grRepeatsExample"
-  .. .. ..$ title : chr "Example of a GRanges object containing repeat elements"
+  .. .. ..$ page  : chr "TSS.zebrafish.Zv8"
+  .. .. ..$ title : chr "TSS annotation data for zebrafish (Zv8) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "grRepeatsExample"
+  .. .. .. ..$ : chr "TSS.zebrafish.Zv8"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "GuideSet2DataFrames"
-  .. .. ..$ title : chr "Create a list of annotation tables from a GuideSet object"
+  .. .. ..$ page  : chr "TSS.zebrafish.Zv9"
+  .. .. ..$ title : chr "TSS annotation for Danio rerio (Zv9) obtained from biomaRt"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "GuideSet2DataFrames"
+  .. .. .. ..$ : chr "TSS.zebrafish.Zv9"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "guideSetExample"
-  .. .. ..$ title : chr "Example of a GuideSet object storing gRNA sequences targeting the CDS of IQSEC3"
+  .. .. ..$ page  : chr "TxDb2GR"
+  .. .. ..$ title : chr "TxDb object to GRanges"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "guideSetExample"
+  .. .. .. ..$ : chr "TxDb2GR"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "guideSetExampleFullAnnotation"
-  .. .. ..$ title : chr "Example of a fully-annotated GuideSet object storing gRNA sequences targeting the CDS of IQSEC3"
+  .. .. ..$ page  : chr "wgEncodeTfbsV3"
+  .. .. ..$ title : chr "transcription factor binding site clusters (V3) from ENCODE"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "guideSetExampleFullAnnotation"
+  .. .. .. ..$ : chr "wgEncodeTfbsV3"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "guideSetExampleWithAlignments"
-  .. .. ..$ title : chr "Example of a GuideSet object storing gRNA sequences targeting the CDS of IQSEC3 with off-target alignments."
+  .. .. ..$ page  : chr "write2FASTA"
+  .. .. ..$ title : chr "Write sequences to a file in fasta format"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "guideSetExampleWithAlignments"
+  .. .. .. ..$ : chr "write2FASTA"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "PairedGuideSet-class"
-  .. .. ..$ title : chr "An S4 class to store pairs of CRISPR gRNA sequences."
-  .. .. ..$ topics:List of 19
-  .. .. .. ..$ : chr "crisprNuclease,PairedGuideSet-method"
-  .. .. .. ..$ : chr "cutLength"
-  .. .. .. ..$ : chr "cutLength,PairedGuideSet-method"
-  .. .. .. ..$ : chr "cutSites,PairedGuideSet-method"
-  .. .. .. ..$ : chr "PairedGuideSet"
-  .. .. .. ..$ : chr "PairedGuideSet-class"
-  .. .. .. ..$ : chr "pamDistance"
-  .. .. .. ..$ : chr "pamDistance,PairedGuideSet-method"
-  .. .. .. ..$ : chr "pamLength,PairedGuideSet-method"
-  .. .. .. ..$ : chr "pamOrientation"
-  .. .. .. ..$ : chr "pamOrientation,PairedGuideSet-method"
-  .. .. .. ..$ : chr "pams,PairedGuideSet-method"
-  .. .. .. ..$ : chr "pamSide,PairedGuideSet-method"
-  .. .. .. ..$ : chr "pamSites,PairedGuideSet-method"
-  .. .. .. ..$ : chr "protospacers,PairedGuideSet-method"
-  .. .. .. ..$ : chr "spacerDistance"
-  .. .. .. ..$ : chr "spacerDistance,PairedGuideSet-method"
-  .. .. .. ..$ : chr "spacerLength,PairedGuideSet-method"
-  .. .. .. ..$ : chr "spacers,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "preparePfamTable"
-  .. .. ..$ title : chr "Obtain Pfam domains from biomaRt"
+  .. .. ..$ page  : chr "xget"
+  .. .. ..$ title : chr "Return the value from a Bimap objects"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "preparePfamTable"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "queryTss"
-  .. .. ..$ title : chr "Convenience function to search for TSS coordinates."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "queryTss"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "queryTxObject"
-  .. .. ..$ title : chr "Convenience function to search for gene coordinates."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "queryTxObject"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "rankSpacers"
-  .. .. ..$ title : chr "Recommended gRNA ranking"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "rankSpacers"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "removeRepeats"
-  .. .. ..$ title : chr "Remove GuideSet gRNAs that overlap repeat elements"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "removeRepeats"
-  .. .. .. ..$ : chr "removeRepeats,GuideSet-method"
-  .. .. .. ..$ : chr "removeRepeats,NULL-method"
-  .. .. .. ..$ : chr "removeRepeats,PairedGuideSet-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "removeSpacersWithSecondaryTargets"
-  .. .. ..$ title : chr "Remove gRNAs targeting secondary targets"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "removeSpacersWithSecondaryTargets"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "tssObjectExample"
-  .. .. ..$ title : chr "Example of a GRanges object containing TSS coordinates"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "tssObjectExample"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "TxDb2GRangesList"
-  .. .. ..$ title : chr "Convert a TxDb object into a GRangesList"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TxDb2GRangesList"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "updateOpsLibrary"
-  .. .. ..$ title : chr "Update OPS library with additional gRNAs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "updateOpsLibrary"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "validateOpsLibrary"
-  .. .. ..$ title : chr "Validate gRNA library for optical pooled screening"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "validateOpsLibrary"
-  ..$ _readme           : chr "https://github.com/bioc/crisprDesign/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 115
+  .. .. .. ..$ : chr "xget"
+  ..$ _readme            : chr "https://github.com/bioc/ChIPpeakAnno/raw/HEAD/README.md"
+  ..$ _rundeps           :List of 117
   .. ..$ : chr "abind"
   .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "AnnotationHub"
+  .. ..$ : chr "AnnotationFilter"
   .. ..$ : chr "askpass"
-  .. ..$ : chr "basilisk"
   .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocBaseUtils"
   .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
   .. ..$ : chr "BiocIO"
-  .. ..$ : chr "BiocManager"
   .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "BiocVersion"
   .. ..$ : chr "biomaRt"
   .. ..$ : chr "Biostrings"
   .. ..$ : chr "bit"
@@ -1538,21 +1740,17 @@ Total 2325 2361</code></pre>
   .. ..$ : chr "cachem"
   .. ..$ : chr "cigarillo"
   .. ..$ : chr "cli"
-  .. ..$ : chr "clipr"
   .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
-  .. ..$ : chr "crisprBase"
-  .. ..$ : chr "crisprBowtie"
-  .. ..$ : chr "crisprScore"
-  .. ..$ : chr "crisprScoreData"
   .. ..$ : chr "curl"
+  .. ..$ : chr "data.table"
   .. ..$ : chr "DBI"
   .. ..$ : chr "dbplyr"
   .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "dir.expiry"
   .. ..$ : chr "dplyr"
-  .. ..$ : chr "ExperimentHub"
+  .. ..$ : chr "ensembldb"
+  .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
   .. ..$ : chr "filelock"
   .. ..$ : chr "formatR"
@@ -1563,23 +1761,31 @@ Total 2325 2361</code></pre>
   .. ..$ : chr "GenomicAlignments"
   .. ..$ : chr "GenomicFeatures"
   .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "ggplot2"
   .. ..$ : chr "glue"
-  .. ..$ : chr "here"
+  .. ..$ : chr "graph"
+  .. ..$ : chr "gtable"
   .. ..$ : chr "hms"
   .. ..$ : chr "httr"
   .. ..$ : chr "httr2"
+  .. ..$ : chr "InteractionSet"
   .. ..$ : chr "IRanges"
+  .. ..$ : chr "isoband"
   .. ..$ : chr "jsonlite"
   .. ..$ : chr "KEGGREST"
+  .. ..$ : chr "labeling"
   .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
+  .. ..$ : chr "lazyeval"
   .. ..$ : chr "lifecycle"
   .. ..$ : chr "magrittr"
+  .. ..$ : chr "MASS"
   .. ..$ : chr "Matrix"
   .. ..$ : chr "MatrixGenerics"
   .. ..$ : chr "matrixStats"
   .. ..$ : chr "memoise"
   .. ..$ : chr "mime"
+  .. ..$ : chr "multtest"
   .. ..$ : chr "openssl"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
@@ -1587,179 +1793,216 @@ Total 2325 2361</code></pre>
   .. ..$ : chr "png"
   .. ..$ : chr "prettyunits"
   .. ..$ : chr "progress"
+  .. ..$ : chr "ProtGenerics"
   .. ..$ : chr "purrr"
+  .. ..$ : chr "pwalign"
   .. ..$ : chr "R6"
-  .. ..$ : chr "randomForest"
   .. ..$ : chr "rappdirs"
-  .. ..$ : chr "Rbowtie"
+  .. ..$ : chr "RBGL"
+  .. ..$ : chr "RColorBrewer"
   .. ..$ : chr "Rcpp"
-  .. ..$ : chr "RcppTOML"
+  .. ..$ : chr "RcppThread"
   .. ..$ : chr "RCurl"
-  .. ..$ : chr "readr"
+  .. ..$ : chr "regioneR"
   .. ..$ : chr "restfulr"
-  .. ..$ : chr "reticulate"
   .. ..$ : chr "Rhtslib"
   .. ..$ : chr "rjson"
   .. ..$ : chr "rlang"
-  .. ..$ : chr "rprojroot"
   .. ..$ : chr "Rsamtools"
   .. ..$ : chr "RSQLite"
   .. ..$ : chr "rtracklayer"
   .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "S7"
+  .. ..$ : chr "scales"
   .. ..$ : chr "Seqinfo"
   .. ..$ : chr "snow"
   .. ..$ : chr "SparseArray"
   .. ..$ : chr "stringi"
-  .. ..$ : chr "stringr"
-  .. ..$ : chr "SummarizedExperiment"
   .. .. [list output truncated]
-  ..$ _vignettes        :List of 2
+  ..$ _vignettes         :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "baseEditing.Rmd"
-  .. .. ..$ filename: chr "baseEditing.html"
-  .. .. ..$ title   : chr "Base editing design with crisprDesign"
-  .. .. ..$ author  : chr "Jean-Philippe Fortin"
+  .. .. ..$ source  : chr "ChIPpeakAnno.Rmd"
+  .. .. ..$ filename: chr "ChIPpeakAnno.html"
+  .. .. ..$ title   : chr "ChIPpeakAnno: annotate, visualize, and compare peak data"
+  .. .. ..$ author  : chr "Jianhong Ou, Kai Hu, Haibo Liu, Junhui Li, Jun Yu, Lihua Julie Zhu"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 7
+  .. .. ..$ headings:List of 84
   .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Defining the base editor object"
-  .. .. .. ..$ : chr "Designing spacer sequences"
-  .. .. .. ..$ : chr "Allele prediction"
-  .. .. .. ..$ : chr "gRNA-level aggregate variant scores"
-  .. .. .. ..$ : chr "Session Info"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2025-11-05 17:30:52"
-  .. .. ..$ modified: chr "2025-11-05 17:54:48"
-  .. .. ..$ commits : int 2
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "intro.Rmd"
-  .. .. ..$ filename: chr "intro.html"
-  .. .. ..$ title   : chr "Introduction to crisprDesign"
-  .. .. ..$ author  : chr "Jean-Philippe Fortin, Luke Hoberecht"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 29
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Terminology"
-  .. .. .. ..$ : chr "CRISPRko design"
-  .. .. .. ..$ : chr "Nuclease specification"
-  .. .. .. ..$ : chr "Target DNA specification"
-  .. .. .. ..$ : chr "Designing spacer sequences"
-  .. .. .. ..$ : chr "Sequence features characterization"
-  .. .. .. ..$ : chr "Off-target search"
-  .. .. .. ..$ : chr "Iterative spacer alignments"
-  .. .. .. ..$ : chr "Faster alignment by removing repeat elements"
-  .. .. .. ..$ : chr "Off-target scoring"
-  .. .. .. ..$ : chr "On-target scoring"
-  .. .. .. ..$ : chr "Restriction enzymes"
-  .. .. .. ..$ : chr "Gene annotation"
-  .. .. .. ..$ : chr "TSS annotation"
-  .. .. .. ..$ : chr "SNP information"
-  .. .. .. ..$ : chr "Filtering and ranking gRNAs"
-  .. .. .. ..$ : chr "CRISPRa/CRISPRi design"
-  .. .. .. ..$ : chr "CRISPR base editing with BE4max"
-  .. .. .. ..$ : chr "CRISPR knockdown with Cas13d"
-  .. .. .. ..$ : chr "Design for optical pooled screening (OPS)"
-  .. .. .. ..$ : chr "Design of gRNA pairs with the PairedGuideSet object"
-  .. .. .. ..$ : chr "Miscellaneous design use cases"
-  .. .. .. ..$ : chr "Design with custom sequences"
-  .. .. .. ..$ : chr "Off-target search in custom sequences"
-  .. .. .. ..$ : chr "Adding non-targeting controls (NTCs)"
-  .. .. .. ..$ : chr "Session Info"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2021-12-09 23:10:06"
-  .. .. ..$ modified: chr "2022-12-19 21:43:00"
-  .. .. ..$ commits : int 26
-  ..$ _score            : num 8.66
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "crisprdesign"
-  ..$ _universes        :List of 3
+  .. .. .. ..$ : chr "Quick demo"
+  .. .. .. ..$ : chr "Convert peaks to GRanges"
+  .. .. .. ..$ : chr "Prepare annotations"
+  .. .. .. ..$ : chr "Annotate peaks"
+  .. .. .. ..$ : chr "Add gene symbols"
+  .. .. .. ..$ : chr "Convert peaks to GRanges"
+  .. .. .. ..$ : chr "Handle replicates"
+  .. .. .. ..$ : chr "Obtain final peak set from replicates"
+  .. .. .. ..$ : chr "Assess the concordance of peak replicates"
+  .. .. .. ..$ : chr "Find overlapping peaks"
+  .. .. .. ..$ : chr "Visualize the overlaps using Venn diagram"
+  .. .. .. ..$ : chr "Use other tools to plot Venn diagram"
+  .. .. .. ..$ : chr "Visualize the distribution of relative positions for overlapping peaks"
+  .. .. .. ..$ : chr "Prepare annotation file"
+  .. .. .. ..$ : chr "Commonly used annotations"
+  .. .. .. ..$ : chr "Bioconductor supported TxDb and EnsDb"
+  .. .. .. ..$ : chr "Obtain EnsDb and TxDb from AnnotationHub"
+  .. .. .. ..$ : chr "Build custom EnsDb and TxDb"
+  .. .. .. ..$ : chr "Use biomaRt"
+  .. .. .. ..$ : chr "Convert annotations into GRanges"
+  .. .. .. ..$ : chr "Use toGRanges function"
+  .. .. .. ..$ : chr "Use accessor functions"
+  .. .. .. ..$ : chr "Use getAnnotation function"
+  .. .. .. ..$ : chr "Visualize peak distributions"
+  .. .. .. ..$ : chr "Plot peak distributions relative to genomic features"
+  .. .. .. ..$ : chr "Plot peak distributions over different feature levels"
+  .. .. .. ..$ : chr "Pie graph with one peak set"
+  .. .. .. ..$ : chr "Bar graph with a list of peak sets"
+  .. .. .. ..$ : chr "Plot peak overlaps for multiple features"
+  .. .. .. ..$ : chr "Annotate peaks"
+  .. .. .. ..$ : chr "Peak-centric method"
+  .. .. .. ..$ : chr "Feature-centric method"
+  .. .. .. ..$ : chr "Relative peak-to-feature location"
+  .. .. .. ..$ : chr "More customization with bindingRegion"
+  .. .. .. ..$ : chr "Example 1: find the nearest features"
+  .. .. .. ..$ : chr "Example 2: find the nearest and overlapping features"
+  .. .. .. ..$ : chr "Visualize peak-to-feature distances"
+  .. .. .. ..$ : chr "Use custom annotation data"
+  .. .. .. ..$ : chr "Add other feature IDs"
+  .. .. .. ..$ : chr "Example1: find gene symbols for a vector of entrez IDs"
+  .. .. .. ..$ : chr "Example2: add gene symbols to annotated peaks"
+  .. .. .. ..$ : chr "Enrichment analysis"
+  .. .. .. ..$ : chr "Motif analysis"
+  .. .. .. ..$ : chr "Obtain sequences surrounding the peaks"
+  .. .. .. ..$ : chr "Discover consensus sequences (motifs) in the peaks"
+  .. .. .. ..$ : chr "Scan pre-defined sequence patterns in the peaks"
+  .. .. .. ..$ : chr "Alternative tools"
+  .. .. .. ..$ : chr "Peak profile comparison"
+  .. .. .. ..$ : chr "Use hypergeometric test to determine overlap among peak sets"
+  .. .. .. ..$ : chr "Use permutation test to determine overlap among peak sets"
+  .. .. .. ..$ : chr "Use custom peak pool"
+  .. .. .. ..$ : chr "Visualize TSS enrichment signal of multiple experiments"
+  .. .. .. ..$ : chr "Heatmap"
+  .. .. .. ..$ : chr "Density plot"
+  .. .. .. ..$ : chr "Common workflow 1: single TF with replicates"
+  .. .. .. ..$ : chr "Step1: import data"
+  .. .. .. ..$ : chr "Step2: prepare annotation file"
+  .. .. .. ..$ : chr "Step3: visualize peak distribution"
+  .. .. .. ..$ : chr "Peak distribution relative to features"
+  .. .. .. ..$ : chr "Peak distribution over multiple feature levels"
+  .. .. .. ..$ : chr "Peak overlappings for multiple features"
+  .. .. .. ..$ : chr "Step4: annotate peaks"
+  .. .. .. ..$ : chr "Find peaks located in bi-directional promoters"
+  .. .. .. ..$ : chr "Find peaks located in enhancers"
+  .. .. .. ..$ : chr "Step5: perform enrichment analysis"
+  .. .. .. ..$ : chr "Step6: conduct motif analysis"
+  .. .. .. ..$ : chr "Common workflow 2: comparing binding profiles for multiple TFs"
+  .. .. .. ..$ : chr "Step2: determine if there is significant overlap among peak sets"
+  .. .. .. ..$ : chr "Step3: visualize and compare the binding patterns"
+  .. .. .. ..$ : chr "Have questions?"
+  .. .. .. ..$ : chr "Selected Q &amp; A"
+  .. .. .. ..$ : chr "How to import peaks?"
+  .. .. .. ..$ : chr "How to properly annotate peaks from ChIP-seq data?"
+  .. .. .. ..$ : chr "Should I use annotatePeakInBatch or annoPeaks?"
+  .. .. .. ..$ : chr "How to prepare annotation data for annotatePeakInBatch?"
+  .. .. .. ..$ : chr "Can I output either the nearest or overlapping features?"
+  .. .. .. ..$ : chr "Why is the sum of peak numbers in the Venn diagram NOT equal to the sum of the peaks in the original peak lists?"
+  .. .. .. ..$ : chr "How does findOverlapsOfPeaks count the number of overlapping peaks?"
+  .. .. .. ..$ : chr "Is there a way to show the number of peaks in original peak lists?"
+  .. .. .. ..$ : chr "How to extract the original peak IDs of the overlapping peaks?"
+  .. .. .. ..$ : chr "How to select the proper number for totalTest when using makeVennDiagram?"
+  .. .. .. ..$ : chr "How to cite ChIPpeakAnno"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2015-10-07 21:01:48"
+  .. .. ..$ modified: chr "2024-08-15 12:19:40"
+  .. .. ..$ commits : int 17
+  ..$ _score             : num 8.92
+  ..$ _indexed           : logi TRUE
+  ..$ _nocasepkg         : chr "chippeakanno"
+  ..$ _universes         :List of 1
   .. ..$ : chr "bioc"
-  .. ..$ : chr "jfortin1"
-  .. ..$ : chr "crisprverse"
-  ..$ _binaries         :List of 8
+  ..$ _previous          : chr "3.45.0"
+  ..$ _binaries          :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:29:11.000Z"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T04:13:35.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "21b67107d35a7e1a8ee64883db9208f03c5d6cfc00fb6a1ceecd1950b8fced8d"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "c4300cc5caeeb84b90e77edc2d1b5c61b96b8ee77f223710ac5962604701efe0"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:29:23.000Z"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T04:13:19.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "faa0ec49d28995f525ff21e2aaa39494b5fc824d537dc9b4016d9207a81b55d8"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "961308a27bd8b73f443baa284738de7921e582d8ac3f24ab329e3aed0fce17f5"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:29:23.000Z"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "b6b339d0cbb56c2b7a331dde2003f034034bc4f464f4392930756e9ee38e250a"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T07:04:57.000Z"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "6c0cf7ce5c98d0672176641101a055eeda02a78300912abe17f9a5fcf69cbc96"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:27:57.000Z"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "0fbf8f3a16f8746d21394baf01b4811ab3b02fe2a98962f7e0cc9fcf096e373a"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T07:08:57.000Z"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "64e0f5a836f55487a3cfa541ae227a193b71ea05ea1c2deac13766bb897a5526"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:29:41.000Z"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "71dea9f0f9523b61a3ddfcbc65a02a23d0c44603b29d47e4286bacebd69e2146"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T04:13:26.000Z"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "dc978ba5c532db98803275aff9753ddd67f50447ef1d6d6fc376177a76a69810"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:30:53.000Z"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "3f12de21ca5297296a37dc188bc944669d10bceef1d3d0267d31ebc019d6c8e3"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T04:11:19.000Z"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "c7cd21375d72552b9454fadbaf29284b1a39d294ffff468e78e8bcaa91c89aa6"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:28:11.000Z"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "42443f783aa08b62c9e4c1563dd60d38c10c307d16c65c6bfc1152a84a2f04a3"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T04:10:26.000Z"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "2fd8f605344376b0afae5c5c3f2f2c02c64fbb7f84358a0519e00089417239b4"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-11-11T03:27:58.000Z"
-  .. .. ..$ commit  : chr "b10fa102341adbd8fec90b086c713cfee25d40b1"
-  .. .. ..$ fileid  : chr "9dfd7dd3eafe4136919672a7144ef94fe9e39171c769b073765cbcda70058ae1"
+  .. .. ..$ version : chr "3.45.2"
+  .. .. ..$ date    : chr "2025-11-12T04:10:57.000Z"
+  .. .. ..$ commit  : chr "a293c4f1b41269208ce7e8d9ff5750ef5cf330e4"
+  .. .. ..$ fileid  : chr "86d4688b85aef0f58aeeb544730323de5e8ca65f8f62c8732f1b3dfbacfc457e"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19253753342"</code></pre>
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19285513998"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
