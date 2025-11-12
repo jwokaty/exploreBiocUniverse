@@ -7,13 +7,23 @@ editor: visual
 engine: knitr
 ---
 
-```{r setup, include=FALSE} 
+# Overview
+
+This document attempts to track Windows builds for Bioconductor packages for
+the devel and release branches:
+
+* http://bioc.r-universe.dev builds the Bioconductor devel branch
+* http://bioc-release.r-universe.dev builds the Bioconductor release branch
+
+Because R universe build for multiple versions of R whereas Bioconductor branches
+build for a specific version, the following tables display only the package
+builds corresponding the Bioconductor branch's specific R version.
+
+A URL may be generated to download a repository.
+
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 ```
-
-Let's get info about all windows builds.
-
-## Install dependencies and set larger max
 
 ```{r library, eval = "hide", message = FALSE}
 
@@ -182,7 +192,7 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
                                 Published = ru_info[[i]]$`_published`,
                                 BinariesBuildDate = binaries_builddate,
                                 BinariesStatus = binaries_status,
-                                File = ifelse(ru_commit != "", link, ""))
+                                File = ifelse(jobcheck == "FAIL", "", link))
     }
     
     # drop blank first row
@@ -193,7 +203,9 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
 }
 ```
 
-## Windows Results from bioc.r-universe.dev
+# Bioconductor Devel on bioc.r-universe.dev
+
+## Devel Windows
 
 ```{r devel-windows-results, message = FALSE}
 uni_devel_pkgs <- get_uni_pkgs("bioc", "devel", "4.6.0", "windows", "3.23")
@@ -206,11 +218,11 @@ devel_uni_pkgs <- dplyr::rename(uni_devel_pkgs, "Latest Check" = JobUrl,
 DT::datatable(devel_uni_pkgs, escape = FALSE)
 ```
 
-## Passing packages with the same commit hash as in BBS
+## Devel Windows: Passing with same commit hash as in BBS
 
-The following packages have the same commit hash in R-Universe and the BBS. They
-also pass the latest `R CMD check` and their binary also passes `R CMD check`
-with a value of `NOTE`, `WARNING`, or `OK`.
+The following packages have the same commit hash in R-Universe and the BBS. 
+They also pass the latest `R CMD check` and their binary also passes
+`R CMD check` with a value of `NOTE`, `WARNING`, or `OK`.
 
 ```{r devel-passing-with-same-commit, message = FALSE}
 
@@ -226,13 +238,15 @@ viable_devel_candidates <- uni_devel_pkgs |>
 DT::datatable(viable_devel_candidates, escape = FALSE)
 ```
 
-## Download a snapshot of passing packages with the same commit hash in the BBS
+## Bioconductor Devel: URL to download a snapshot of above packages
 
 ```{r devel-download-repo-for-passing-packages}
-make_snapshot_url("bioc", "4.6", "win", viable_devel_candidates$Package)
+devel_ss <- make_snapshot_url("bioc", "4.6", "win",
+                              viable_devel_candidates$Package)
+devel_ss
 ```
 
-## Packages failing on Windows
+## Bioconductor Devel: Windows Failures
 
 The following packages are failing on Windows.
 
@@ -250,24 +264,17 @@ DT::datatable(failing_windows, escape = FALSE)
 
 ### Understanding the error
 
-For more details about the error, click on the link. The `Latest Check` will go
-to the latest GitHub Action Workflow run's `R CMD check` on the package whereas
-the `Binary Check` will go to the GitHub Action Workflow associated with the
-`R CMD check` associated with the binary. It may not take you to the specific
-location of the error. You need to look at the `Build R-release for Windows`
-(on left), which builds the same package version as Bioconductor devel for the
-correct version of R. You can then either expand the `Annotations` or expand
-`R CMD check` to see more details about the error. You must be logged in to see
-more details.
+For more details about the error, click on the link. The `Latest Check` will go to the latest GitHub Action Workflow run's `R CMD check` on the package whereas the `Binary Check` will go to the GitHub Action Workflow associated with the `R CMD check` associated with the binary. It may not take you to the specific location of the error. You need to look at the `Build R-release for Windows` (on left), which builds the same package version as Bioconductor devel for the correct version of R. You can then either expand the `Annotations` or expand `R CMD check` to see more details about the error. You must be logged in to see more details.
 
 ![annotations](images/annotations.png)
 
 ![r_cmd_check](images/r_cmd_check.png)
 
+# Bioconductor Release on bioc-release.r-universe.dev
 
-```{r release-windows-results, message = FALSE, eval = FALSE}
-# Failing due to stale branch
-uni_release_pkgs <- get_uni_pkgs("bioconductor-source", "release", "4.5.2", "windows", "3.22")
+```{r release-windows-results, message = FALSE}
+
+uni_release_pkgs <- get_uni_pkgs("bioc-release", "release", "4.5.2", "windows", "3.22")
 
 release_uni_pkgs <- dplyr::rename(uni_release_pkgs, "Latest Check" = JobUrl,
                                   "Binary Check" = BinariesUrl) |>
@@ -277,8 +284,9 @@ release_uni_pkgs <- dplyr::rename(uni_release_pkgs, "Latest Check" = JobUrl,
 DT::datatable(release_uni_pkgs, escape = FALSE)
 ```
 
-```{r release-passing-with-same-commit, message = FALSE, eval = FALSE}
-# Failing due to stale branch
+## Bioconductor Release: Passing with same commit hash as in BBS
+
+```{r release-passing-with-same-commit, message = FALSE}
 viable_release_candidates <- uni_release_pkgs |>
     dplyr::filter(BBS_commit == RU_commit, 
                   BinariesCheck %in% c("NOTE", "WARNING", "OK"),
@@ -288,12 +296,15 @@ viable_release_candidates <- uni_release_pkgs |>
     dplyr::select(Package, Version, "Latest Check", "Binary Check",
                   BinariesBuildDate, RU_commit, BBS_commit, Published, File)
 
-DT::datatable(viable_release_candiates, escape = FALSE)
+DT::datatable(viable_release_candidates, escape = FALSE)
 ```
 
-```{r release-download-repo-for-passing-packages, eval = FALSE}
-# Failing due to stale branch
-make_snapshot_url("bioc", "4.5", "win", viable_release_candiates$Package)
+## Bioconductor Release: URL to download a snapshot of above packages
+
+```{r release-download-repo-for-passing-packages}
+release_ss <- make_snapshot_url("bioc", "4.5", "win",
+                                viable_release_candidates$Package)
+release_ss
 ```
 
 ## sessionInfo()
