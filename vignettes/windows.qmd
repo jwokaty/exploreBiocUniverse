@@ -9,17 +9,14 @@ engine: knitr
 
 # Overview
 
-This document attempts to track Windows builds for Bioconductor packages for
-the devel and release branches:
+This document attempts to track Windows builds for Bioconductor packages for the devel and release branches:
 
-* http://bioc.r-universe.dev builds the Bioconductor devel branch
-* http://bioc-release.r-universe.dev builds the Bioconductor release branch
+-   http://bioc.r-universe.dev builds the Bioconductor devel branch
+-   http://bioc-release.r-universe.dev builds the Bioconductor release branch
 
-Because R universe build for multiple versions of R whereas Bioconductor branches
-build for a specific version, the following tables display only the package
-builds corresponding the Bioconductor branch's specific R version.
+Because R universe build for multiple versions of R whereas Bioconductor branches build for a specific version, the following tables display only the package builds corresponding the Bioconductor branch's specific R version.
 
-A URL may be generated to download a repository.
+A URL may be generated to download a snapshot; however, for a large number of files, it may be better to download individual files.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
@@ -36,19 +33,32 @@ library(tibble)
 # set max.print to get all packages
 options(max.print = 3000L)
 
+#' Get x.y version of R
+#'
+#' @returns character x.y
+#' 
+#' @examples
+#' r_xy_ver("4.5.2")
 r_xy_ver <- function(x) {
     xyz <- strsplit(x[[1]], "\\.")
     paste(xyz[[1]][1], xyz[[1]][2], sep=".")
 }
 
 #' Generates the URL to retrieve the snapshot of a universe
+#' 
+#' NOTE: This will likely not work for a large number of packages
 #'
-#' uni character name of the universe
-#' r_versions character R versions
-#' oses character comma separated string of oses without spaces; any combination 
+#' @uni character name of the universe
+#' @r_versions character R versions
+#' @oses character comma separated string of oses without spaces; any combination 
 #'     of src,win,mac,linux,wasm,docs
-#' pkgs character a string of comma-separated package names without spaces or a
+#' @pkgs character a string of comma-separated package names without spaces or a
 #'     character vector of package names
+#'
+#' @return character url to download snapshot
+#' 
+#' @examples
+#' make_snapshot_url("bioc", "4.6", "win", "bedbaser")
 make_snapshot_url <- function(uni, r_versions = NULL, oses = NULL, pkgs = NULL) {
     suffix <- ""
 
@@ -119,7 +129,8 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
                          RemoteSha = "",
                          RemoteUrl = "",
                          Published = "",
-                         File = "")
+                         File = "",
+                         Url = "")
 
     uni_repo <- uni_repo_url(uni, os, r_version)
 
@@ -162,8 +173,8 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
         dplyr::pull(git_last_commit)
 
       pkg_file <- uni_pkg_file(ru_info[[i]]$Package, os, binaries_version)
-      link <- paste0("<a href='", paste0(uni_repo, pkg_file), "'>",
-                     pkg_file, "</a>")
+      url <- paste0(uni_repo, pkg_file)
+      link <- paste0("<a href='", url, "'>", pkg_file, "</a>")
       builds <- tibble::add_row(builds,
                                 Package = ru_info[[i]]$Package,
                                 Version = ru_info[[i]]$Version,
@@ -192,6 +203,7 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
                                 Published = ru_info[[i]]$`_published`,
                                 BinariesBuildDate = binaries_builddate,
                                 BinariesStatus = binaries_status,
+                                Url = ifelse(jobcheck == "FAIL", "", url),
                                 File = ifelse(jobcheck == "FAIL", "", link))
     }
     
@@ -220,9 +232,7 @@ DT::datatable(devel_uni_pkgs, escape = FALSE)
 
 ## Devel Windows: Passing with same commit hash as in BBS
 
-The following packages have the same commit hash in R-Universe and the BBS. 
-They also pass the latest `R CMD check` and their binary also passes
-`R CMD check` with a value of `NOTE`, `WARNING`, or `OK`.
+The following packages have the same commit hash in R-Universe and the BBS. They also pass the latest `R CMD check` and their binary also passes `R CMD check` with a value of `NOTE`, `WARNING`, or `OK`.
 
 ```{r devel-passing-with-same-commit, message = FALSE}
 
@@ -233,17 +243,10 @@ viable_devel_candidates <- uni_devel_pkgs |>
                   BinariesStatus == "success") |>
     dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
     dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File,
+                  Url)
 
 DT::datatable(viable_devel_candidates, escape = FALSE)
-```
-
-## Bioconductor Devel: URL to download a snapshot of above packages
-
-```{r devel-download-repo-for-passing-packages}
-devel_ss <- make_snapshot_url("bioc", "4.6", "win",
-                              viable_devel_candidates$Package)
-devel_ss
 ```
 
 ## Bioconductor Devel: Windows Failures
@@ -294,17 +297,30 @@ viable_release_candidates <- uni_release_pkgs |>
                   BinariesStatus == "success") |>
     dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
     dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, Published, File)
+                  BinariesBuildDate, RU_commit, BBS_commit, Published, File,
+                  Url)
 
 DT::datatable(viable_release_candidates, escape = FALSE)
 ```
 
-## Bioconductor Release: URL to download a snapshot of above packages
+## Downloading Packages
 
-```{r release-download-repo-for-passing-packages}
-release_ss <- make_snapshot_url("bioc", "4.5", "win",
-                                viable_release_candidates$Package)
-release_ss
+```{r devel-download-repo-for-passing-packages, eval = FALSE}
+
+# Download devel packages
+#devel_repo <- "/tmp/PACKAGES/3.23/bin/windows/contrib/4.6"
+#create.dir(devel_repo, recursive = TRUE)
+curl::multi_download(viable_devel_candidates$Url)
+# Write PACKAGES files
+#write_PACKAGES(dir = ".", fields = NULL,
+#               type = c("win.binary"),
+#               verbose = FALSE, unpacked = FALSE, subdirs = FALSE,
+#               latestOnly = TRUE, addFiles = FALSE, rds_compress = "xz")
+# Download release packages
+#release_repo <- "/tmp/PACKAGES/3.22/bin/windows/contrib/4.5"
+#create.dir(release_repo, recursive = TRUE)
+curl::multi_download(viable_release_candidates$Url)
+
 ```
 
 ## sessionInfo()
