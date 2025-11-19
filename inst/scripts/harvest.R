@@ -1,7 +1,6 @@
 library(universe)
 library(BiocPkgTools)
 library(dplyr)
-library(DT)
 library(tibble)
 library(readr)
 
