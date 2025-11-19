@@ -193,9 +193,9 @@ Total 2327 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">dominatR</td>
-<td style="text-align: left;">0.99.4</td>
-<td style="text-align: left;">2025-11-06T03:25:15.000Z</td>
-<td style="text-align: left;">2025-11-06T03:31:42.129Z</td>
+<td style="text-align: left;">0.99.5</td>
+<td style="text-align: left;">2025-11-19T08:56:08.000Z</td>
+<td style="text-align: left;">2025-11-19T09:02:29.790Z</td>
 <td style="text-align: left;">https://github.com/bioc/dominatR</td>
 </tr>
 <tr class="even">
@@ -406,6 +406,18 @@ Total 2327 2361</code></pre>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">debCAM</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.28.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.6 on Linux</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">GEOmetadb</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -417,7 +429,7 @@ Total 2327 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">HilbertVisGUI</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -429,7 +441,7 @@ Total 2327 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">motifbreakR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -441,7 +453,7 @@ Total 2327 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">MungeSumstats</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -453,7 +465,7 @@ Total 2327 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SamSPECTRAL</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -465,7 +477,7 @@ Total 2327 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SwathXtend</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -612,149 +624,159 @@ Total 2327 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 70
-  ..$ Package         : chr "MetaboCoreUtils"
-  ..$ Title           : chr "Core Utils for Metabolomics Data"
-  ..$ Version         : chr "1.19.1"
-  ..$ Description     : chr "MetaboCoreUtils defines metabolomics-related core\nfunctionality provided as low-level functions to allow a dat"| __truncated__
-  ..$ Authors@R       : chr "c(person(given = \"Johannes\", family = \"Rainer\",\nemail = \"Johannes.Rainer@eurac.edu\",\nrole = c(\"aut\", "| __truncated__
-  ..$ License         : chr "Artistic-2.0"
-  ..$ VignetteBuilder : chr "knitr"
-  ..$ BugReports      : chr "https://github.com/RforMassSpectrometry/MetaboCoreUtils/issues"
-  ..$ URL             : chr "https://github.com/RforMassSpectrometry/MetaboCoreUtils"
-  ..$ biocViews       : chr "Infrastructure, Metabolomics, MassSpectrometry"
-  ..$ Roxygen         : chr "list(markdown=TRUE)"
-  ..$ RoxygenNote     : chr "7.3.3"
-  ..$ Repository      : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication: chr "2025-11-18 09:28:10 UTC"
-  ..$ RemoteUrl       : chr "https://github.com/bioc/MetaboCoreUtils"
-  ..$ RemoteRef       : chr "HEAD"
-  ..$ RemoteSha       : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  ..$ NeedsCompilation: chr "no"
-  ..$ Packaged        :List of 2
-  .. ..$ Date: chr "2025-11-18 09:48:39 UTC"
+ $ :List of 73
+  ..$ Package                : chr "dominatR"
+  ..$ Title                  : chr "Feature Dominance-based R Package for Genomic Data"
+  ..$ Version                : chr "0.99.5"
+  ..$ Date                   : chr "2025-09-10"
+  ..$ Authors@R              : chr "c(\nperson(\ngiven = \"Simon\",\nfamily = \"Lizarazo\",\nrole = c(\"aut\", \"cre\"),\nemail = \"silizarazoch@gm"| __truncated__
+  ..$ Description            : chr "dominatR is an R package for quantifying and visualizing\nfeature dominance in datasets.  dominatR applies conc"| __truncated__
+  ..$ License                : chr "MIT + file LICENSE"
+  ..$ URL                    : chr "https://github.com/VanBortleLab/dominatR,\nhttps://vanbortlelab.github.io/dominatR/"
+  ..$ BugReports             : chr "https://github.com/VanBortleLab/dominatR/issues"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ biocViews              : chr "Visualization, Normalization, Classification, GeneExpression"
+  ..$ Config/testthat/edition: chr "3"
+  ..$ RoxygenNote            : chr "7.3.3"
+  ..$ Config/Needs/website   : chr "rmarkdown"
+  ..$ Config/pak/sysreqs     : chr "libfontconfig1-dev libfreetype6-dev libfribidi-dev\nlibharfbuzz-dev libicu-dev zlib1g-dev"
+  ..$ Repository             : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication       : chr "2025-11-19 03:16:55 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/dominatR"
+  ..$ RemoteRef              : chr "HEAD"
+  ..$ RemoteSha              : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  ..$ NeedsCompilation       : chr "no"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2025-11-19 08:56:08 UTC"
   .. ..$ User: chr "root"
-  ..$ Author          : chr "Johannes Rainer [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-6977-7147&gt;),\nMichael Witting [aut] (ORCID: &lt;h"| __truncated__
-  ..$ Maintainer      : chr "Johannes Rainer &lt;Johannes.Rainer@eurac.edu&gt;"
-  ..$ MD5sum          : chr "ed77537150c1906657b07d565be54fc0"
-  ..$ _user           : chr "bioc"
-  ..$ _type           : chr "src"
-  ..$ _file           : chr "MetaboCoreUtils_1.19.1.tar.gz"
-  ..$ _fileid         : chr "4631a1a566582b4a0b5946d6a17f1e25f91321f8646452e0719e57fbff890fff"
-  ..$ _filesize       : int 1160056
-  ..$ _sha256         : chr "4631a1a566582b4a0b5946d6a17f1e25f91321f8646452e0719e57fbff890fff"
-  ..$ _created        : chr "2025-11-18T09:48:39.000Z"
-  ..$ _published      : chr "2025-11-18T09:52:14.406Z"
-  ..$ _distro         : chr "noble"
-  ..$ _jobs           :List of 9
+  ..$ Author                 : chr "Simon Lizarazo [aut, cre] (ORCID:\n&lt;https://orcid.org/0009-0001-8974-6225&gt;),\nEthan Chen [aut],\nRajendra K C ["| __truncated__
+  ..$ Maintainer             : chr "Simon Lizarazo &lt;silizarazoch@gmail.com&gt;"
+  ..$ MD5sum                 : chr "773173c57c00d6012f42b02d58f09571"
+  ..$ _user                  : chr "bioc"
+  ..$ _type                  : chr "src"
+  ..$ _file                  : chr "dominatR_0.99.5.tar.gz"
+  ..$ _fileid                : chr "d18cdf03aea26175eb3f7e4a4f5ec0003ebb03ad2007592c6c5820183cc67dfe"
+  ..$ _filesize              : int 2709923
+  ..$ _sha256                : chr "d18cdf03aea26175eb3f7e4a4f5ec0003ebb03ad2007592c6c5820183cc67dfe"
+  ..$ _created               : chr "2025-11-19T08:56:08.000Z"
+  ..$ _published             : chr "2025-11-19T09:02:29.790Z"
+  ..$ _distro                : chr "noble"
+  ..$ _jobs                  :List of 9
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 158
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 329
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599693661"
+  .. .. ..$ artifact: chr "4611653656"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 148
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 286
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599691948"
+  .. .. ..$ artifact: chr "4611647117"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 108
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 270
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599684832"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4611644352"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 102
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 266
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599683498"
+  .. .. ..$ artifact: chr "4611643703"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 215
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 294
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599664039"
+  .. .. ..$ artifact: chr "4611599704"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 121
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 155
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599686792"
+  .. .. ..$ artifact: chr "4611625983"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 108
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 299
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599684649"
+  .. .. ..$ artifact: chr "4611649230"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 139
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 277
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599690066"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4611645779"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.57e+10
-  .. .. ..$ time    : int 170
+  .. .. ..$ job     : num 5.58e+10
+  .. .. ..$ time    : int 270
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4599694472"
-  ..$ _buildurl       : chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
-  ..$ _status         : chr "success"
-  ..$ _host           : chr "GitHub-Actions"
-  ..$ _upstream       : chr "https://github.com/bioc/MetaboCoreUtils"
-  ..$ _commit         :List of 5
-  .. ..$ id       : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. ..$ author   : chr "Johannes Rainer &lt;johannes.rainer@gmail.com&gt;"
-  .. ..$ committer: chr "Johannes Rainer &lt;johannes.rainer@gmail.com&gt;"
-  .. ..$ message  : chr "fix: update deprecated unit tests\n"
-  .. ..$ time     : int 1763458090
-  ..$ _maintainer     :List of 8
-  .. ..$ name    : chr "Johannes Rainer"
-  .. ..$ email   : chr "johannes.rainer@eurac.edu"
-  .. ..$ login   : chr "jorainer"
-  .. ..$ mastodon: chr "@jorainer@fediscience.org"
-  .. ..$ bluesky : chr "@jorainer.bsky.social"
-  .. ..$ linkedin: chr "in/jorainer"
-  .. ..$ orcid   : chr "0000-0002-6977-7147"
-  .. ..$ uuid    : int 5506112
-  ..$ _registered     : logi TRUE
-  ..$ _dependencies   :List of 11
+  .. .. ..$ artifact: chr "4611644771"
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  ..$ _status                : chr "success"
+  ..$ _host                  : chr "GitHub-Actions"
+  ..$ _upstream              : chr "https://github.com/bioc/dominatR"
+  ..$ _commit                :List of 5
+  .. ..$ id       : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. ..$ author   : chr "slizarazo21 &lt;simonl3@illinois.edu&gt;"
+  .. ..$ committer: chr "slizarazo21 &lt;simonl3@illinois.edu&gt;"
+  .. ..$ message  : chr "bump version to 0.99.5, fixed errors related to vignette present in bioconductor report\n"
+  .. ..$ time     : int 1763522215
+  ..$ _maintainer            :List of 2
+  .. ..$ name : chr "Simon Lizarazo"
+  .. ..$ email: chr "silizarazoch@gmail.com"
+  ..$ _registered            : logi TRUE
+  ..$ _dependencies          :List of 16
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.0"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "scales"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "MsCoreUtils"
+  .. .. ..$ package: chr "ggnewscale"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
+  .. .. ..$ package: chr "SummarizedExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "dplyr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
+  .. .. ..$ package: chr "rlang"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggforce"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "geomtextpath"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggplot2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "airway"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tidyverse"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
@@ -762,412 +784,376 @@ Total 2327 2361</code></pre>
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "robustbase"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner          : chr "bioc"
-  ..$ _selfowned      : logi TRUE
-  ..$ _usedby         : int 59
-  ..$ _updates        :List of 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-15"
+  .. .. ..$ package: chr "dominatRData"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                 : chr "bioc"
+  ..$ _selfowned             : logi TRUE
+  ..$ _usedby                : int 0
+  ..$ _updates               :List of 22
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-10"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-11"
+  .. .. ..$ n   : int 7
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-12"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-13"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-14"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-17"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ week: chr "2025-20"
   .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-23"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-24"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-25"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-26"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-28"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-31"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-32"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-36"
+  .. .. ..$ n   : int 26
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ n   : int 8
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-38"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-39"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-43"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 2
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-47"
-  .. .. ..$ n   : int 1
-  ..$ _tags           : list()
-  ..$ _bioc           :List of 2
+  .. .. ..$ n   : int 2
+  ..$ _tags                  : list()
+  ..$ _bioc                  :List of 1
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.19.0"
+  .. .. ..$ version: chr "0.99.4"
   .. .. ..$ bioc   : chr "3.23"
+  ..$ _topics                :List of 4
+  .. ..$ : chr "visualization"
+  .. ..$ : chr "normalization"
+  .. ..$ : chr "classification"
+  .. ..$ : chr "geneexpression"
+  ..$ _stars                 : int 1
+  ..$ _contributors          :List of 4
   .. ..$ :List of 3
-  .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.18.0"
-  .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics         :List of 4
-  .. ..$ : chr "infrastructure"
-  .. ..$ : chr "metabolomics"
-  .. ..$ : chr "massspectrometry"
-  .. ..$ : chr "mass-spectrometry"
-  ..$ _stars          : int 9
-  ..$ _contributors   :List of 11
+  .. .. ..$ user : chr "slizarazo21"
+  .. .. ..$ count: int 87
+  .. .. ..$ uuid : int 124115449
   .. ..$ :List of 3
-  .. .. ..$ user : chr "jorainer"
-  .. .. ..$ count: int 154
-  .. .. ..$ uuid : int 5506112
+  .. .. ..$ user : chr "kvbortle"
+  .. .. ..$ count: int 47
+  .. .. ..$ uuid : int 134555524
   .. ..$ :List of 3
-  .. .. ..$ user : chr "philouail"
-  .. .. ..$ count: int 38
-  .. .. ..$ uuid : int 127301965
+  .. .. ..$ user : chr "ethanchen6"
+  .. .. ..$ count: int 13
+  .. .. ..$ uuid : int 156864303
   .. ..$ :List of 3
-  .. .. ..$ user : chr "michaelwitting"
-  .. .. ..$ count: int 35
-  .. .. ..$ uuid : int 2734706
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "sgibb"
-  .. .. ..$ count: int 20
-  .. .. ..$ uuid : int 1828443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "andreavicini"
-  .. .. ..$ count: int 12
-  .. .. ..$ uuid : int 36991461
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 10
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "rogerginber"
-  .. .. ..$ count: int 7
-  .. .. ..$ uuid : int 45530914
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "liesasalzer"
-  .. .. ..$ count: int 6
-  .. .. ..$ uuid : int 61467853
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 6
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "meowcat"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 1563881
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lgatto"
+  .. .. ..$ user : chr "13rajendra"
   .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 384198
-  ..$ _userbio        :List of 4
+  .. .. ..$ uuid : int 130776338
+  ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads      :List of 2
-  .. ..$ count : int 4126
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/MetaboCoreUtils"
-  ..$ _devurl         : chr "https://github.com/rformassspectrometry/metabocoreutils"
-  ..$ _searchresults  : int 74
-  ..$ _rbuild         : chr "4.5.2"
-  ..$ _assets         :List of 11
+  ..$ _devurl                : chr "https://github.com/vanbortlelab/dominatr"
+  ..$ _pkgdown               : chr "https://vanbortlelab.github.io/dominatR/"
+  ..$ _searchresults         : int 6
+  ..$ _rbuild                : chr "4.5.2"
+  ..$ _assets                :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/MetaboCoreUtils.html"
+  .. ..$ : chr "extra/dominatR.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl        : chr "https://github.com/rformassspectrometry/metabocoreutils"
-  ..$ _realowner      : chr "bioc"
-  ..$ _cranurl        : logi FALSE
-  ..$ _exports        :List of 34
-  .. ..$ : chr "addElements"
-  .. ..$ : chr "adductFormula"
-  .. ..$ : chr "adductNames"
-  .. ..$ : chr "adducts"
-  .. ..$ : chr "adjust_lm"
-  .. ..$ : chr "calculateKm"
-  .. ..$ : chr "calculateKmd"
-  .. ..$ : chr "calculateMass"
-  .. ..$ : chr "calculateRkmd"
-  .. ..$ : chr "containsElements"
-  .. ..$ : chr "convertMtime"
-  .. ..$ : chr "correctRindex"
-  .. ..$ : chr "countElements"
-  .. ..$ : chr "fit_lm"
-  .. ..$ : chr "formula2mz"
-  .. ..$ : chr "indexRtime"
-  .. ..$ : chr "internalStandardMixNames"
-  .. ..$ : chr "internalStandards"
-  .. ..$ : chr "isotopicSubstitutionMatrix"
-  .. ..$ : chr "isotopologues"
-  .. ..$ : chr "isRkmd"
-  .. ..$ : chr "mass2mz"
-  .. ..$ : chr "mclosest"
-  .. ..$ : chr "multiplyElements"
-  .. ..$ : chr "mz2mass"
-  .. ..$ : chr "pasteElements"
-  .. ..$ : chr "percentMissing"
-  .. ..$ : chr "rowBlank"
-  .. ..$ : chr "rowDratio"
-  .. ..$ : chr "rowPercentMissing"
-  .. ..$ : chr "rowRsd"
-  .. ..$ : chr "rsd"
-  .. ..$ : chr "standardizeFormula"
-  .. ..$ : chr "subtractElements"
-  ..$ _help           :List of 24
+  ..$ _homeurl               : chr "https://github.com/vanbortlelab/dominatr"
+  ..$ _realowner             : chr "bioc"
+  ..$ _cranurl               : logi FALSE
+  ..$ _exports               :List of 12
+  .. ..$ : chr "centmass"
+  .. ..$ : chr "cpm_normalization"
+  .. ..$ : chr "entropy"
+  .. ..$ : chr "minmax_normalization"
+  .. ..$ : chr "plot_circle"
+  .. ..$ : chr "plot_circle_frequency"
+  .. ..$ : chr "plot_rope"
+  .. ..$ : chr "plot_triangle"
+  .. ..$ : chr "Qentropy"
+  .. ..$ : chr "quantile_normalization"
+  .. ..$ : chr "rpkm_normalization"
+  .. ..$ : chr "tpm_normalization"
+  ..$ _help                  :List of 12
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addElements"
-  .. .. ..$ title : chr "Combine chemical formulae"
+  .. .. ..$ page  : chr "centmass"
+  .. .. ..$ title : chr "Compute the \"center of mass\" for rows of a data frame or SummarizedExperiment"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addElements"
+  .. .. .. ..$ : chr "centmass"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "adductFormula"
-  .. .. ..$ title : chr "Calculate a table of adduct (ionic) formulas"
+  .. .. ..$ page  : chr "cpm_normalization"
+  .. .. ..$ title : chr "Counts Per Million normalization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "adductFormula"
+  .. .. .. ..$ : chr "cpm_normalization"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "adductNames"
-  .. .. ..$ title : chr "Retrieve names of supported adducts"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "adductNames"
-  .. .. .. ..$ : chr "adducts"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "calculateKendrickMass"
-  .. .. ..$ title : chr "Kendrick mass defects"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "calculateKendrickMass"
-  .. .. .. ..$ : chr "calculateKm"
-  .. .. .. ..$ : chr "calculateKmd"
-  .. .. .. ..$ : chr "calculateRkmd"
-  .. .. .. ..$ : chr "isRkmd"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "calculateMass"
-  .. .. ..$ title : chr "Calculate exact mass"
+  .. .. ..$ page  : chr "entropy"
+  .. .. ..$ title : chr "Compute Shannon Entropy on row-normalized data"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calculateMass"
+  .. .. .. ..$ : chr "entropy"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "containsElements"
-  .. .. ..$ title : chr "Check if one formula is contained in another"
+  .. .. ..$ page  : chr "minmax_normalization"
+  .. .. ..$ title : chr "Min-Max Normalization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "containsElements"
+  .. .. .. ..$ : chr "minmax_normalization"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "convertMtime"
-  .. .. ..$ title : chr "Convert migration times to effective mobility"
+  .. .. ..$ page  : chr "plot_circle"
+  .. .. ..$ title : chr "Circular Dominance Plot (More than 3 variables)"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "convertMtime"
+  .. .. .. ..$ : chr "plot_circle"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "correctRindex"
-  .. .. ..$ title : chr "2-point correction of RIs"
+  .. .. ..$ page  : chr "plot_circle_frequency"
+  .. .. ..$ title : chr "Dominance–Entropy Frequency Plot"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "correctRindex"
+  .. .. .. ..$ : chr "plot_circle_frequency"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "countElements"
-  .. .. ..$ title : chr "Count elements in a chemical formula"
+  .. .. ..$ page  : chr "plot_rope"
+  .. .. ..$ title : chr "Rope (binary) dominance plot"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "countElements"
+  .. .. .. ..$ : chr "plot_rope"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "fit_lm"
-  .. .. ..$ title : chr "Linear model-based normalization of abundance matrices"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "adjust_lm"
-  .. .. .. ..$ : chr "fit_lm"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "formula2mz"
-  .. .. ..$ title : chr "Calculate mass-to-charge ratio from a formula"
+  .. .. ..$ page  : chr "plot_Triangle"
+  .. .. ..$ title : chr "Triangle (ternary) dominance plot"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "formula2mz"
+  .. .. .. ..$ : chr "plot_triangle"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "indexRtime"
-  .. .. ..$ title : chr "Convert retention times to retention indices"
+  .. .. ..$ page  : chr "Qentropy"
+  .. .. ..$ title : chr "Compute Q-Entropy using existing row-normalized data + Entropy"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "indexRtime"
+  .. .. .. ..$ : chr "Qentropy"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "internalStandardMixNames"
-  .. .. ..$ title : chr "Get names of internal standard mixes provided by the package"
+  .. .. ..$ page  : chr "quantile_normalization"
+  .. .. ..$ title : chr "Quantile Normalization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "internalStandardMixNames"
+  .. .. .. ..$ : chr "quantile_normalization"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "internalStandards"
-  .. .. ..$ title : chr "Get definitions for internal standards"
+  .. .. ..$ page  : chr "rpkm_normalization"
+  .. .. ..$ title : chr "RPKM Normalization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "internalStandards"
+  .. .. .. ..$ : chr "rpkm_normalization"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "isotopicSubstitutionMatrix"
-  .. .. ..$ title : chr "Definitions of isotopic substitutions"
+  .. .. ..$ page  : chr "tpm_normalization"
+  .. .. ..$ title : chr "TPM Normalization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "isotopicSubstitutionMatrix"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "isotopologues"
-  .. .. ..$ title : chr "Identfying isotopologue peaks in MS data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "isotopologues"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mass2mz"
-  .. .. ..$ title : chr "Calculate mass-to-charge ratio"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mass2mz"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mclosest"
-  .. .. ..$ title : chr "Extract closest values in a pairwise manner between two matrices"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mclosest"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "multiplyElements"
-  .. .. ..$ title : chr "Multiply chemical formulas by a scalar"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "multiplyElements"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mz2mass"
-  .. .. ..$ title : chr "Calculate neutral mass"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mz2mass"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pasteElements"
-  .. .. ..$ title : chr "Create chemical formula from a named vector"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "pasteElements"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "quality_assessment"
-  .. .. ..$ title : chr "Basic quality assessment functions for metabolomics"
-  .. .. ..$ topics:List of 7
-  .. .. .. ..$ : chr "percentMissing"
-  .. .. .. ..$ : chr "quality_assessment"
-  .. .. .. ..$ : chr "rowBlank"
-  .. .. .. ..$ : chr "rowDratio"
-  .. .. .. ..$ : chr "rowPercentMissing"
-  .. .. .. ..$ : chr "rowRsd"
-  .. .. .. ..$ : chr "rsd"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "standardizeFormula"
-  .. .. ..$ title : chr "Standardize a chemical formula"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "standardizeFormula"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "subtractElements"
-  .. .. ..$ title : chr "subtract two chemical formula"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "subtractElements"
-  ..$ _pkglogo        : chr "https://github.com/bioc/MetaboCoreUtils/raw/HEAD/logo.png"
-  ..$ _readme         : chr "https://github.com/bioc/MetaboCoreUtils/raw/HEAD/README.md"
-  ..$ _rundeps        :List of 17
-  .. ..$ : chr "BH"
+  .. .. .. ..$ : chr "tpm_normalization"
+  ..$ _readme                : chr "https://github.com/bioc/dominatR/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 52
+  .. ..$ : chr "abind"
+  .. ..$ : chr "base64enc"
+  .. ..$ : chr "Biobase"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "clue"
-  .. ..$ : chr "cluster"
-  .. ..$ : chr "codetools"
+  .. ..$ : chr "cli"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
+  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "farver"
   .. ..$ : chr "generics"
-  .. ..$ : chr "lambda.r"
+  .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "geomtextpath"
+  .. ..$ : chr "ggforce"
+  .. ..$ : chr "ggnewscale"
+  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "gtable"
+  .. ..$ : chr "IRanges"
+  .. ..$ : chr "isoband"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "labeling"
+  .. ..$ : chr "lattice"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "magrittr"
   .. ..$ : chr "MASS"
-  .. ..$ : chr "MsCoreUtils"
-  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "Matrix"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "polyclip"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "RColorBrewer"
+  .. ..$ : chr "rlang"
+  .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "snow"
-  ..$ _vignettes      :List of 1
-  .. ..$ :List of 8
-  .. .. ..$ source  : chr "MetaboCoreUtils.Rmd"
-  .. .. ..$ filename: chr "MetaboCoreUtils.html"
-  .. .. ..$ title   : chr "Core Utils for Metabolomics Data"
+  .. ..$ : chr "S7"
+  .. ..$ : chr "scales"
+  .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "SummarizedExperiment"
+  .. ..$ : chr "systemfonts"
+  .. ..$ : chr "textshaping"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "tweenr"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "viridisLite"
+  .. ..$ : chr "withr"
+  .. ..$ : chr "XVector"
+  ..$ _vignettes             :List of 1
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "dominatR.Rmd"
+  .. .. ..$ filename: chr "dominatR.html"
+  .. .. ..$ title   : chr "Introduction to dominatR"
+  .. .. ..$ author  : chr "Simon Lizarazo, Ethan Chen, Rajendra K C, Kevin Van Bortle"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
   .. .. ..$ headings:List of 12
-  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Overview"
   .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Examples"
-  .. .. .. ..$ : chr "Conversion between ion m/z and compound masses"
-  .. .. .. ..$ : chr "Working with chemical formulas"
-  .. .. .. ..$ : chr "Kendrick mass defect calculation"
-  .. .. .. ..$ : chr "Retention time indexing"
-  .. .. .. ..$ : chr "Linear model-based adjustment of LC-MS feature abundances"
-  .. .. .. ..$ : chr "Basic quality assessment and pre-filtering of metabolomics data"
-  .. .. .. ..$ : chr "Contributions"
-  .. .. .. ..$ : chr "Session information"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2021-01-25 10:42:02"
-  .. .. ..$ modified: chr "2024-04-13 17:20:43"
-  .. .. ..$ commits : int 14
-  ..$ _score          : num 9.99
-  ..$ _indexed        : logi TRUE
-  ..$ _nocasepkg      : chr "metabocoreutils"
-  ..$ _universes      :List of 3
+  .. .. .. ..$ : chr "Data normalization; computing and plotting feature dominance"
+  .. .. .. ..$ : chr "Normalization functions (e.g. quantile normalization)"
+  .. .. .. ..$ : chr "Example 1: SummarizedExperiment object"
+  .. .. .. ..$ : chr "Example 2: dataframe object"
+  .. .. .. ..$ : chr "Calculation functions (e.g. entropy)"
+  .. .. .. ..$ : chr "Visualization functions (2-, 3-, and N-dimensions)"
+  .. .. .. ..$ : chr "Example 1: Two Dimensions with plot_rope()"
+  .. .. .. ..$ : chr "Example 2: Three Dimensions with plot_triangle()"
+  .. .. .. ..$ : chr "Example 3: N-Dimensions with plot_circle()"
+  .. .. .. ..$ : chr "Session Info"
+  .. .. ..$ created : chr "2025-09-04 03:32:54"
+  .. .. ..$ modified: chr "2025-11-19 03:15:17"
+  .. .. ..$ commits : int 5
+  ..$ _score                 : num 5.52
+  ..$ _indexed               : logi TRUE
+  ..$ _nocasepkg             : chr "dominatr"
+  ..$ _universes             :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "jorainer"
-  .. ..$ : chr "rformassspectrometry"
-  ..$ _previous       : chr "1.19.0"
-  ..$ _binaries       :List of 8
+  .. ..$ : chr "vanbortlelab"
+  ..$ _previous              : chr "0.99.4"
+  ..$ _binaries              :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:51:11.000Z"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:59:22.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "44992bbbe7a2df6009ff6319fcbca3ed863d55ec851b7088d88ac43c36572bcd"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "eaf8f4437746861087cd141d36ccc401ee357d13b8251de4ee7a62868e2553ba"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:51:04.000Z"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:59:01.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "a285dd712daa7e3cc28f35d4a5bfd6742b848e1defaebcf4dd29c6772acb31ec"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "d752a6c0461fab258ab38a0626f5bb7a0373f05760f5bf386cff11ee7d05bf26"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:50:34.000Z"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "eaa672e8f1f5692cc8b0b5dd3696e57c5878ffe0f6791ef8cc74c807a01cdbd3"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:58:47.000Z"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "c103f45bbceba0dd16edca0b203fe05240ec8de47d81b301ff383533bd15e088"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:50:25.000Z"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "00bd6dc339e4f7f04e4482f1e59d9b2f770dc8ad2348e767f43738b90f4c8e2e"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:58:47.000Z"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "7a0bd709119085d595c8b58be065d1c7cb04b165a827ed29bcfe8f6d8e8a3cfa"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:51:08.000Z"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "e75530205e7598c5b201553a77ded3c3244b6535606e100d7baa176febb02e8a"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:59:16.000Z"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "799bea2d880a7e2c26dbd01733ec9d6f1cef69434af249fa3f9457d972d58457"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:50:19.000Z"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "f77447c91e098f4e823de7e56231e830f4219c967bd3ca1e9c18769f694e1793"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:58:37.000Z"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "2ca86aad8dc8440de79856eadb55685aad2553fdbfc258eda85dcea6e4edf41a"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:50:42.000Z"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "f3561f6fad5b5f231f495a9cb5ff8d10246dca08d2004221388b499b16d7c229"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:58:25.000Z"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "62431a3ba3c173d4f1339ec7fa00a42e0ddbddc1248fb8752be1f2db9d6ea6b2"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2025-11-18T09:51:04.000Z"
-  .. .. ..$ commit  : chr "6ca986fc81978e06c2aa961df79dad5ec06c69ea"
-  .. .. ..$ fileid  : chr "a26c3d91ac53f4e7d2608ffae579d9d40266ce33f65d705c0d08343af6169906"
+  .. .. ..$ version : chr "0.99.5"
+  .. .. ..$ date    : chr "2025-11-19T08:58:13.000Z"
+  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
+  .. .. ..$ fileid  : chr "c8828467684944f10b3027b01ea08bed93a89cf1034c7b925de0bd02eda84287"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19461485551"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
