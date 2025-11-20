@@ -444,9 +444,9 @@ Total 2327 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">motifbreakR</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
+<td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: left;">WARNINGS</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">2.24.0</td>
 <td style="text-align: left;">2.23.0</td>
@@ -456,9 +456,9 @@ Total 2327 2361</code></pre>
 <tr class="odd">
 <td style="text-align: left;">MungeSumstats</td>
 <td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">ERROR</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">skipped</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.18.0</td>
 <td style="text-align: left;">1.19.1</td>
@@ -624,159 +624,190 @@ Total 2327 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package                : chr "dominatR"
-  ..$ Title                  : chr "Feature Dominance-based R Package for Genomic Data"
-  ..$ Version                : chr "0.99.5"
-  ..$ Date                   : chr "2025-09-10"
-  ..$ Authors@R              : chr "c(\nperson(\ngiven = \"Simon\",\nfamily = \"Lizarazo\",\nrole = c(\"aut\", \"cre\"),\nemail = \"silizarazoch@gm"| __truncated__
-  ..$ Description            : chr "dominatR is an R package for quantifying and visualizing\nfeature dominance in datasets.  dominatR applies conc"| __truncated__
-  ..$ License                : chr "MIT + file LICENSE"
-  ..$ URL                    : chr "https://github.com/VanBortleLab/dominatR,\nhttps://vanbortlelab.github.io/dominatR/"
-  ..$ BugReports             : chr "https://github.com/VanBortleLab/dominatR/issues"
-  ..$ Encoding               : chr "UTF-8"
-  ..$ VignetteBuilder        : chr "knitr"
-  ..$ biocViews              : chr "Visualization, Normalization, Classification, GeneExpression"
-  ..$ Config/testthat/edition: chr "3"
-  ..$ RoxygenNote            : chr "7.3.3"
-  ..$ Config/Needs/website   : chr "rmarkdown"
-  ..$ Config/pak/sysreqs     : chr "libfontconfig1-dev libfreetype6-dev libfribidi-dev\nlibharfbuzz-dev libicu-dev zlib1g-dev"
-  ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2025-11-19 03:16:55 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/dominatR"
-  ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  ..$ NeedsCompilation       : chr "no"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2025-11-19 08:56:08 UTC"
+ $ :List of 70
+  ..$ Package           : chr "igblastr"
+  ..$ Title             : chr "User-friendly R Wrapper to IgBLAST"
+  ..$ Description       : chr "The igblastr package provides functions to conveniently\ninstall and use a local IgBLAST installation from with"| __truncated__
+  ..$ biocViews         : chr "Immunology, Immunogenetics, ImmunoOncology, CellBiology"
+  ..$ URL               : chr "https://bioconductor.org/packages/igblastr"
+  ..$ BugReports        : chr "https://github.com/HyrienLab/igblastr/issues"
+  ..$ Version           : chr "1.1.2"
+  ..$ License           : chr "Artistic-2.0"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ Authors@R         : chr "c(\nperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\nemail=\"hpages.on.github@gmail.com\",\ncomment=c(OR"| __truncated__
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ Collate           : chr "utils.R long_to_wide_airr.R file-utils.R loci-utils.R\ndb-utils.R LATIN_NAMES.R IMGT-utils.R IMGT-c_region-util"| __truncated__
+  ..$ Config/pak/sysreqs: chr "libicu-dev libxml2-dev libssl-dev zlib1g-dev"
+  ..$ Repository        : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication  : chr "2025-11-19 22:08:13 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/igblastr"
+  ..$ RemoteRef         : chr "HEAD"
+  ..$ RemoteSha         : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  ..$ NeedsCompilation  : chr "no"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2025-11-20 03:43:52 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Simon Lizarazo [aut, cre] (ORCID:\n&lt;https://orcid.org/0009-0001-8974-6225&gt;),\nEthan Chen [aut],\nRajendra K C ["| __truncated__
-  ..$ Maintainer             : chr "Simon Lizarazo &lt;silizarazoch@gmail.com&gt;"
-  ..$ MD5sum                 : chr "773173c57c00d6012f42b02d58f09571"
-  ..$ _user                  : chr "bioc"
-  ..$ _type                  : chr "src"
-  ..$ _file                  : chr "dominatR_0.99.5.tar.gz"
-  ..$ _fileid                : chr "d18cdf03aea26175eb3f7e4a4f5ec0003ebb03ad2007592c6c5820183cc67dfe"
-  ..$ _filesize              : int 2709923
-  ..$ _sha256                : chr "d18cdf03aea26175eb3f7e4a4f5ec0003ebb03ad2007592c6c5820183cc67dfe"
-  ..$ _created               : chr "2025-11-19T08:56:08.000Z"
-  ..$ _published             : chr "2025-11-19T09:02:29.790Z"
-  ..$ _distro                : chr "noble"
-  ..$ _jobs                  :List of 9
+  ..$ Author            : chr "Hervé Pagès [aut, cre] (ORCID: &lt;https://orcid.org/0009-0002-8272-4522&gt;),\nOllivier Hyrien [aut, fnd] (ORCID:\n&lt;"| __truncated__
+  ..$ Maintainer        : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  ..$ MD5sum            : chr "2a92623bbac693ea2a6c2a6ea1c670a3"
+  ..$ _user             : chr "bioc"
+  ..$ _type             : chr "src"
+  ..$ _file             : chr "igblastr_1.1.2.tar.gz"
+  ..$ _fileid           : chr "6112e16971b550f3245e352ca25baf00a7c7537c64ea6f689b2e05690bfaea8f"
+  ..$ _filesize         : int 4493535
+  ..$ _sha256           : chr "6112e16971b550f3245e352ca25baf00a7c7537c64ea6f689b2e05690bfaea8f"
+  ..$ _created          : chr "2025-11-20T03:43:52.000Z"
+  ..$ _published        : chr "2025-11-20T03:51:04.120Z"
+  ..$ _distro           : chr "noble"
+  ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 329
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 167
+  .. .. ..$ config  : chr "bioc-checks"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: NULL
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 276
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611653656"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4623105066"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 286
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 281
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611647117"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4623105494"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 270
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 342
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4611644352"
+  .. .. ..$ artifact: chr "4623108497"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 266
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 317
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611643703"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4623106921"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 294
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 616
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611599704"
+  .. .. ..$ artifact: chr "4623077695"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 155
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 137
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611625983"
+  .. .. ..$ artifact: chr "4623091734"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 299
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 384
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611649230"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4623115020"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 277
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 371
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4611645779"
+  .. .. ..$ artifact: chr "4623113734"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.58e+10
-  .. .. ..$ time    : int 270
+  .. .. ..$ job     : num 5.59e+10
+  .. .. ..$ time    : int 358
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4611644771"
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
-  ..$ _status                : chr "success"
-  ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/dominatR"
-  ..$ _commit                :List of 5
-  .. ..$ id       : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. ..$ author   : chr "slizarazo21 &lt;simonl3@illinois.edu&gt;"
-  .. ..$ committer: chr "slizarazo21 &lt;simonl3@illinois.edu&gt;"
-  .. ..$ message  : chr "bump version to 0.99.5, fixed errors related to vignette present in bioconductor report\n"
-  .. ..$ time     : int 1763522215
-  ..$ _maintainer            :List of 2
-  .. ..$ name : chr "Simon Lizarazo"
-  .. ..$ email: chr "silizarazoch@gmail.com"
-  ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 16
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4623112579"
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
+  ..$ _status           : chr "success"
+  ..$ _host             : chr "GitHub-Actions"
+  ..$ _upstream         : chr "https://github.com/bioc/igblastr"
+  ..$ _commit           :List of 5
+  .. ..$ id       : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ message  : chr "igblastr 1.1.2: Add CITATION file\n"
+  .. ..$ time     : int 1763590093
+  ..$ _maintainer       :List of 5
+  .. ..$ name    : chr "Hervé Pagès"
+  .. ..$ email   : chr "hpages.on.github@gmail.com"
+  .. ..$ login   : chr "hpages"
+  .. ..$ linkedin: chr "in/hervé-pagès-5038527"
+  .. ..$ uuid    : int 8810451
+  ..$ _registered       : logi TRUE
+  ..$ _dependencies     :List of 27
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.4.0"
+  .. .. ..$ version: chr "&gt;= 4.2.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "scales"
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Biostrings"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggnewscale"
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ package: chr "tools"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rlang"
+  .. .. ..$ package: chr "R.utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggforce"
+  .. .. ..$ package: chr "curl"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "geomtextpath"
+  .. .. ..$ package: chr "httr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ package: chr "xml2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "rvest"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "xtable"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GenomeInfoDb"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GenomicAlignments"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "airway"
+  .. .. ..$ package: chr "parallel"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tidyverse"
+  .. .. ..$ package: chr "testthat"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
@@ -784,376 +815,523 @@ Total 2327 2361</code></pre>
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dominatRData"
+  .. .. ..$ package: chr "ggplot2"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner                 : chr "bioc"
-  ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 22
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-10"
-  .. .. ..$ n   : int 4
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-11"
+  .. .. ..$ package: chr "scales"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggseqlogo"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner            : chr "bioc"
+  ..$ _selfowned        : logi TRUE
+  ..$ _usedby           : int 0
+  ..$ _updates          :List of 31
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-48"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-51"
+  .. .. ..$ n   : int 5
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-52"
+  .. .. ..$ n   : int 16
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-01"
   .. .. ..$ n   : int 7
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-12"
+  .. .. ..$ week: chr "2025-02"
+  .. .. ..$ n   : int 7
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-05"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-13"
+  .. .. ..$ week: chr "2025-07"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-14"
-  .. .. ..$ n   : int 6
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-17"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-20"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-23"
+  .. .. ..$ week: chr "2025-09"
   .. .. ..$ n   : int 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-24"
-  .. .. ..$ n   : int 1
+  .. .. ..$ week: chr "2025-13"
+  .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-25"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-26"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-28"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-31"
+  .. .. ..$ week: chr "2025-14"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-32"
-  .. .. ..$ n   : int 3
+  .. .. ..$ week: chr "2025-15"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-35"
-  .. .. ..$ n   : int 3
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 21
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-36"
-  .. .. ..$ n   : int 26
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ week: chr "2025-17"
   .. .. ..$ n   : int 8
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-38"
-  .. .. ..$ n   : int 3
+  .. .. ..$ week: chr "2025-18"
+  .. .. ..$ n   : int 5
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-39"
-  .. .. ..$ n   : int 3
+  .. .. ..$ week: chr "2025-20"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-21"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-22"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-23"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-24"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-25"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-32"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-33"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-34"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-36"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-41"
+  .. .. ..$ n   : int 4
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-43"
-  .. .. ..$ n   : int 1
+  .. .. ..$ n   : int 4
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 1
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-46"
+  .. .. ..$ n   : int 4
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-47"
-  .. .. ..$ n   : int 2
-  ..$ _tags                  : list()
-  ..$ _bioc                  :List of 1
+  .. .. ..$ n   : int 3
+  ..$ _tags             : list()
+  ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "0.99.4"
+  .. .. ..$ version: chr "1.1.0"
   .. .. ..$ bioc   : chr "3.23"
-  ..$ _topics                :List of 4
-  .. ..$ : chr "visualization"
-  .. ..$ : chr "normalization"
-  .. ..$ : chr "classification"
-  .. ..$ : chr "geneexpression"
-  ..$ _stars                 : int 1
-  ..$ _contributors          :List of 4
   .. ..$ :List of 3
-  .. .. ..$ user : chr "slizarazo21"
-  .. .. ..$ count: int 87
-  .. .. ..$ uuid : int 124115449
+  .. .. ..$ branch : chr "release"
+  .. .. ..$ version: chr "1.0.0"
+  .. .. ..$ bioc   : chr "3.22"
+  ..$ _topics           :List of 5
+  .. ..$ : chr "immunology"
+  .. ..$ : chr "immunogenetics"
+  .. ..$ : chr "immunooncology"
+  .. ..$ : chr "cellbiology"
+  .. ..$ : chr "bioconductor-package"
+  ..$ _stars            : int 3
+  ..$ _contributors     :List of 3
   .. ..$ :List of 3
-  .. .. ..$ user : chr "kvbortle"
-  .. .. ..$ count: int 47
-  .. .. ..$ uuid : int 134555524
+  .. .. ..$ user : chr "hpages"
+  .. .. ..$ count: int 172
+  .. .. ..$ uuid : int 8810451
   .. ..$ :List of 3
-  .. .. ..$ user : chr "ethanchen6"
-  .. .. ..$ count: int 13
-  .. .. ..$ uuid : int 156864303
+  .. .. ..$ user : chr "ohyrien"
+  .. .. ..$ count: int 9
+  .. .. ..$ uuid : int 28492020
   .. ..$ :List of 3
-  .. .. ..$ user : chr "13rajendra"
+  .. .. ..$ user : chr "kelliemac"
   .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 130776338
-  ..$ _userbio               :List of 4
+  .. .. ..$ uuid : int 25042566
+  ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _devurl                : chr "https://github.com/vanbortlelab/dominatr"
-  ..$ _pkgdown               : chr "https://vanbortlelab.github.io/dominatR/"
-  ..$ _searchresults         : int 6
-  ..$ _rbuild                : chr "4.5.2"
-  ..$ _assets                :List of 11
+  ..$ _downloads        :List of 2
+  .. ..$ count : int 178
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/igblastr"
+  ..$ _devurl           : chr "https://github.com/hyrienlab/igblastr"
+  ..$ _searchresults    : int 10
+  ..$ _rbuild           : chr "4.5.2"
+  ..$ _assets           :List of 9
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/dominatR.html"
-  .. ..$ : chr "extra/NEWS.html"
-  .. ..$ : chr "extra/NEWS.txt"
+  .. ..$ : chr "extra/igblastr.html"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/vanbortlelab/dominatr"
-  ..$ _realowner             : chr "bioc"
-  ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 12
-  .. ..$ : chr "centmass"
-  .. ..$ : chr "cpm_normalization"
-  .. ..$ : chr "entropy"
-  .. ..$ : chr "minmax_normalization"
-  .. ..$ : chr "plot_circle"
-  .. ..$ : chr "plot_circle_frequency"
-  .. ..$ : chr "plot_rope"
-  .. ..$ : chr "plot_triangle"
-  .. ..$ : chr "Qentropy"
-  .. ..$ : chr "quantile_normalization"
-  .. ..$ : chr "rpkm_normalization"
-  .. ..$ : chr "tpm_normalization"
-  ..$ _help                  :List of 12
+  ..$ _homeurl          : chr "https://github.com/hyrienlab/igblastr"
+  ..$ _realowner        : chr "bioc"
+  ..$ _cranurl          : logi FALSE
+  ..$ _exports          :List of 59
+  .. ..$ : chr "augment_germline_db_D"
+  .. ..$ : chr "augment_germline_db_J"
+  .. ..$ : chr "augment_germline_db_V"
+  .. ..$ : chr "bcr_browser"
+  .. ..$ : chr "download_paired_OAS_units"
+  .. ..$ : chr "extract_metadata_from_OAS_units"
+  .. ..$ : chr "extract_sequences_from_paired_OAS_df"
+  .. ..$ : chr "extract_sequences_from_paired_OAS_units"
+  .. ..$ : chr "get_igblast_auxiliary_data"
+  .. ..$ : chr "get_igblast_root"
+  .. ..$ : chr "has_igblast"
+  .. ..$ : chr "igblast_build"
+  .. ..$ : chr "igblast_info"
+  .. ..$ : chr "igblastn"
+  .. ..$ : chr "igblastn_help"
+  .. ..$ : chr "igblastn_version"
+  .. ..$ : chr "igbrowser"
+  .. ..$ : chr "IMGT_is_up"
+  .. ..$ : chr "install_igblast"
+  .. ..$ : chr "install_IMGT_germline_db"
+  .. ..$ : chr "list_c_region_dbs"
+  .. ..$ : chr "list_germline_dbs"
+  .. ..$ : chr "list_igblast_organisms"
+  .. ..$ : chr "list_IMGT_organisms"
+  .. ..$ : chr "list_IMGT_releases"
+  .. ..$ : chr "list_outfmt7_specifiers"
+  .. ..$ : chr "list_paired_OAS_studies"
+  .. ..$ : chr "list_paired_OAS_units"
+  .. ..$ : chr "load_c_region_db"
+  .. ..$ : chr "load_germline_db"
+  .. ..$ : chr "load_igblast_auxiliary_data"
+  .. ..$ : chr "makeblastdb_version"
+  .. ..$ : chr "parse_outfmt7"
+  .. ..$ : chr "print.alignment_summary"
+  .. ..$ : chr "print.c_region_dbs_df"
+  .. ..$ : chr "print.fmt7footer"
+  .. ..$ : chr "print.fmt7record"
+  .. ..$ : chr "print.germline_dbs_df"
+  .. ..$ : chr "print.hit_table"
+  .. ..$ : chr "print.igblast_info"
+  .. ..$ : chr "print.igblastn_raw_output"
+  .. ..$ : chr "print.outfmt7_specifiers"
+  .. ..$ : chr "print.query_details"
+  .. ..$ : chr "print.subregion_sequence_details"
+  .. ..$ : chr "print.VDJ_junction_details"
+  .. ..$ : chr "print.VDJ_rearrangement_summary"
+  .. ..$ : chr "qseqid"
+  .. ..$ : chr "qseqid.fmt7record"
+  .. ..$ : chr "qseqid.query_details"
+  .. ..$ : chr "read_OAS_csv"
+  .. ..$ : chr "read_OAS_csv_metadata"
+  .. ..$ : chr "rm_germline_db"
+  .. ..$ : chr "set_igblast_root"
+  .. ..$ : chr "summary.query_details"
+  .. ..$ : chr "tabulate_deletions"
+  .. ..$ : chr "tabulate_insertions"
+  .. ..$ : chr "tabulate_mismatches"
+  .. ..$ : chr "use_c_region_db"
+  .. ..$ : chr "use_germline_db"
+  ..$ _help             :List of 15
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "centmass"
-  .. .. ..$ title : chr "Compute the \"center of mass\" for rows of a data frame or SummarizedExperiment"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "centmass"
+  .. .. ..$ page  : chr "augment_germline_db"
+  .. .. ..$ title : chr "Add novel gene alleles to a germline db"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "augment_germline_db"
+  .. .. .. ..$ : chr "augment_germline_db_D"
+  .. .. .. ..$ : chr "augment_germline_db_J"
+  .. .. .. ..$ : chr "augment_germline_db_V"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "cpm_normalization"
-  .. .. ..$ title : chr "Counts Per Million normalization"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "cpm_normalization"
+  .. .. ..$ page  : chr "auxiliary-data-utils"
+  .. .. ..$ title : chr "Manipulation of IgBLAST auxiliary data"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "auxiliary-data-utils"
+  .. .. .. ..$ : chr "auxiliary_data_utils"
+  .. .. .. ..$ : chr "get_igblast_auxiliary_data"
+  .. .. .. ..$ : chr "load_igblast_auxiliary_data"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "entropy"
-  .. .. ..$ title : chr "Compute Shannon Entropy on row-normalized data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "entropy"
+  .. .. ..$ page  : chr "get_igblast_root"
+  .. .. ..$ title : chr "Control IgBLAST installation to use"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "get_igblast_root"
+  .. .. .. ..$ : chr "set_igblast_root"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "minmax_normalization"
-  .. .. ..$ title : chr "Min-Max Normalization"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "minmax_normalization"
+  .. .. ..$ page  : chr "igblast_info"
+  .. .. ..$ title : chr "Check IgBLAST used by igblastr"
+  .. .. ..$ topics:List of 7
+  .. .. .. ..$ : chr "has_igblast"
+  .. .. .. ..$ : chr "igblastn_version"
+  .. .. .. ..$ : chr "igblast_build"
+  .. .. .. ..$ : chr "igblast_info"
+  .. .. .. ..$ : chr "list_igblast_organisms"
+  .. .. .. ..$ : chr "makeblastdb_version"
+  .. .. .. ..$ : chr "print.igblast_info"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plot_circle"
-  .. .. ..$ title : chr "Circular Dominance Plot (More than 3 variables)"
+  .. .. ..$ page  : chr "IGBLAST_ROOT"
+  .. .. ..$ title : chr "Use an external IgBLAST installation"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plot_circle"
+  .. .. .. ..$ : chr "IGBLAST_ROOT"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plot_circle_frequency"
-  .. .. ..$ title : chr "Dominance–Entropy Frequency Plot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plot_circle_frequency"
+  .. .. ..$ page  : chr "igblastn"
+  .. .. ..$ title : chr "BLAST for BCR/Ig and TCR sequences"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "igblastn"
+  .. .. .. ..$ : chr "igblastn_help"
+  .. .. .. ..$ : chr "print.igblastn_raw_output"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plot_rope"
-  .. .. ..$ title : chr "Rope (binary) dominance plot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plot_rope"
+  .. .. ..$ page  : chr "igblastr_usage_report"
+  .. .. ..$ title : chr "Turn \"Usage Reporting\" on or off"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "BLAST_USAGE_REPORT"
+  .. .. .. ..$ : chr "igblastr_usage_report"
+  .. .. .. ..$ : chr "Usage_report"
+  .. .. .. ..$ : chr "usage_report"
+  .. .. .. ..$ : chr "Usage_reporting"
+  .. .. .. ..$ : chr "usage_reporting"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plot_Triangle"
-  .. .. ..$ title : chr "Triangle (ternary) dominance plot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plot_triangle"
+  .. .. ..$ page  : chr "igbrowser"
+  .. .. ..$ title : chr "Display annotated BCR sequences in a browser"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "bcr_browser"
+  .. .. .. ..$ : chr "igbrowser"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Qentropy"
-  .. .. ..$ title : chr "Compute Q-Entropy using existing row-normalized data + Entropy"
+  .. .. ..$ page  : chr "install_igblast"
+  .. .. ..$ title : chr "Install IgBLAST"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Qentropy"
+  .. .. .. ..$ : chr "install_igblast"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "quantile_normalization"
-  .. .. ..$ title : chr "Quantile Normalization"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "quantile_normalization"
+  .. .. ..$ page  : chr "install_IMGT_germline_db"
+  .. .. ..$ title : chr "Install a germline db from IMGT"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "IMGT_is_up"
+  .. .. .. ..$ : chr "install_IMGT_germline_db"
+  .. .. .. ..$ : chr "list_IMGT_organisms"
+  .. .. .. ..$ : chr "list_IMGT_releases"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "rpkm_normalization"
-  .. .. ..$ title : chr "RPKM Normalization"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "rpkm_normalization"
+  .. .. ..$ page  : chr "list_c_region_dbs"
+  .. .. ..$ title : chr "List cached C-region dbs and select one to use with igblastn()"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "list_c_region_dbs"
+  .. .. .. ..$ : chr "load_c_region_db"
+  .. .. .. ..$ : chr "print.c_region_dbs_df"
+  .. .. .. ..$ : chr "use_c_region_db"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "tpm_normalization"
-  .. .. ..$ title : chr "TPM Normalization"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "tpm_normalization"
-  ..$ _readme                : chr "https://github.com/bioc/dominatR/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 52
-  .. ..$ : chr "abind"
-  .. ..$ : chr "base64enc"
-  .. ..$ : chr "Biobase"
+  .. .. ..$ page  : chr "list_germline_dbs"
+  .. .. ..$ title : chr "List cached germline dbs and select one to use with igblastn()"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "list_germline_dbs"
+  .. .. .. ..$ : chr "load_germline_db"
+  .. .. .. ..$ : chr "print.germline_dbs_df"
+  .. .. .. ..$ : chr "rm_germline_db"
+  .. .. .. ..$ : chr "use_germline_db"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "OAS-utils"
+  .. .. ..$ title : chr "Download and manipulate OAS data"
+  .. .. ..$ topics:List of 10
+  .. .. .. ..$ : chr "download_paired_OAS_units"
+  .. .. .. ..$ : chr "extract_metadata_from_OAS_units"
+  .. .. .. ..$ : chr "extract_sequences_from_paired_OAS_df"
+  .. .. .. ..$ : chr "extract_sequences_from_paired_OAS_units"
+  .. .. .. ..$ : chr "list_paired_OAS_studies"
+  .. .. .. ..$ : chr "list_paired_OAS_units"
+  .. .. .. ..$ : chr "OAS-utils"
+  .. .. .. ..$ : chr "OAS_utils"
+  .. .. .. ..$ : chr "read_OAS_csv"
+  .. .. .. ..$ : chr "read_OAS_csv_metadata"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "outfmt7-utils"
+  .. .. ..$ title : chr "Handle igblastn output format 7"
+  .. .. ..$ topics:List of 16
+  .. .. .. ..$ : chr "list_outfmt7_specifiers"
+  .. .. .. ..$ : chr "outfmt7-utils"
+  .. .. .. ..$ : chr "parse_outfmt7"
+  .. .. .. ..$ : chr "print.alignment_summary"
+  .. .. .. ..$ : chr "print.fmt7footer"
+  .. .. .. ..$ : chr "print.fmt7record"
+  .. .. .. ..$ : chr "print.hit_table"
+  .. .. .. ..$ : chr "print.outfmt7_specifiers"
+  .. .. .. ..$ : chr "print.query_details"
+  .. .. .. ..$ : chr "print.subregion_sequence_details"
+  .. .. .. ..$ : chr "print.VDJ_junction_details"
+  .. .. .. ..$ : chr "print.VDJ_rearrangement_summary"
+  .. .. .. ..$ : chr "qseqid"
+  .. .. .. ..$ : chr "qseqid.fmt7record"
+  .. .. .. ..$ : chr "qseqid.query_details"
+  .. .. .. ..$ : chr "summary.query_details"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "summarizeMismatches"
+  .. .. ..$ title : chr "Summarize mismatches and indels between query and germline sequences"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "summarizeMismatches"
+  .. .. .. ..$ : chr "tabulate_deletions"
+  .. .. .. ..$ : chr "tabulate_insertions"
+  .. .. .. ..$ : chr "tabulate_mismatches"
+  ..$ _readme           : chr "https://github.com/bioc/igblastr/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 37
+  .. ..$ : chr "askpass"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "Biostrings"
   .. ..$ : chr "cli"
-  .. ..$ : chr "cpp11"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "farver"
+  .. ..$ : chr "crayon"
+  .. ..$ : chr "curl"
   .. ..$ : chr "generics"
-  .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "geomtextpath"
-  .. ..$ : chr "ggforce"
-  .. ..$ : chr "ggnewscale"
-  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "GenomeInfoDb"
   .. ..$ : chr "glue"
-  .. ..$ : chr "gtable"
+  .. ..$ : chr "httr"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "isoband"
   .. ..$ : chr "jsonlite"
-  .. ..$ : chr "labeling"
-  .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "MASS"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "openssl"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "polyclip"
+  .. ..$ : chr "R.methodsS3"
+  .. ..$ : chr "R.oo"
+  .. ..$ : chr "R.utils"
   .. ..$ : chr "R6"
-  .. ..$ : chr "RColorBrewer"
   .. ..$ : chr "rlang"
-  .. ..$ : chr "S4Arrays"
+  .. ..$ : chr "rvest"
   .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "S7"
-  .. ..$ : chr "scales"
+  .. ..$ : chr "selectr"
   .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SparseArray"
   .. ..$ : chr "stringi"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "systemfonts"
-  .. ..$ : chr "textshaping"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "sys"
   .. ..$ : chr "tibble"
-  .. ..$ : chr "tidyselect"
-  .. ..$ : chr "tweenr"
+  .. ..$ : chr "UCSC.utils"
   .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
-  .. ..$ : chr "viridisLite"
-  .. ..$ : chr "withr"
+  .. ..$ : chr "xml2"
+  .. ..$ : chr "xtable"
   .. ..$ : chr "XVector"
-  ..$ _vignettes             :List of 1
+  ..$ _vignettes        :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "dominatR.Rmd"
-  .. .. ..$ filename: chr "dominatR.html"
-  .. .. ..$ title   : chr "Introduction to dominatR"
-  .. .. ..$ author  : chr "Simon Lizarazo, Ethan Chen, Rajendra K C, Kevin Van Bortle"
+  .. .. ..$ source  : chr "igblastr_overview.Rmd"
+  .. .. ..$ filename: chr "igblastr_overview.html"
+  .. .. ..$ title   : chr "igblastr overview"
+  .. .. ..$ author  : chr "Hervé Pagès, Kellie MacPhee, Ollivier Hyrien"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 12
-  .. .. .. ..$ : chr "Overview"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Data normalization; computing and plotting feature dominance"
-  .. .. .. ..$ : chr "Normalization functions (e.g. quantile normalization)"
-  .. .. .. ..$ : chr "Example 1: SummarizedExperiment object"
-  .. .. .. ..$ : chr "Example 2: dataframe object"
-  .. .. .. ..$ : chr "Calculation functions (e.g. entropy)"
-  .. .. .. ..$ : chr "Visualization functions (2-, 3-, and N-dimensions)"
-  .. .. .. ..$ : chr "Example 1: Two Dimensions with plot_rope()"
-  .. .. .. ..$ : chr "Example 2: Three Dimensions with plot_triangle()"
-  .. .. .. ..$ : chr "Example 3: N-Dimensions with plot_circle()"
-  .. .. .. ..$ : chr "Session Info"
-  .. .. ..$ created : chr "2025-09-04 03:32:54"
-  .. .. ..$ modified: chr "2025-11-19 03:15:17"
-  .. .. ..$ commits : int 5
-  ..$ _score                 : num 5.52
-  ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "dominatr"
-  ..$ _universes             :List of 2
+  .. .. ..$ headings:List of 17
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Install and load the package"
+  .. .. .. ..$ : chr "Install IgBLAST"
+  .. .. .. ..$ : chr "Install and select a germline database"
+  .. .. .. ..$ : chr "Built-in germline databases"
+  .. .. .. ..$ : chr "Install additional germline databases"
+  .. .. .. ..$ : chr "Display the full list of cached germline dbs"
+  .. .. .. ..$ : chr "Select a constant region database (optional)"
+  .. .. .. ..$ : chr "Use igblastn()"
+  .. .. .. ..$ : chr "Downstream analysis examples"
+  .. .. .. ..$ : chr "Advanced usage"
+  .. .. .. ..$ : chr "Passing additional arguments to igblastn()"
+  .. .. .. ..$ : chr "Restrict the search to a subset of user-supplied gene alleles"
+  .. .. .. ..$ : chr "Add novel gene alleles to the search"
+  .. .. .. ..$ : chr "A TCR analysis example"
+  .. .. .. ..$ : chr "Future developments"
+  .. .. .. ..$ : chr "Session information"
+  .. .. ..$ created : chr "2025-03-26 19:33:24"
+  .. .. ..$ modified: chr "2025-10-08 07:04:15"
+  .. .. ..$ commits : int 28
+  ..$ _score            : num 5.97
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "igblastr"
+  ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "vanbortlelab"
-  ..$ _previous              : chr "0.99.4"
-  ..$ _binaries              :List of 8
+  .. ..$ : chr "hpages"
+  .. ..$ : chr "hyrienlab"
+  ..$ _previous         : chr "1.1.1"
+  ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:59:22.000Z"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:45.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "eaf8f4437746861087cd141d36ccc401ee357d13b8251de4ee7a62868e2553ba"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "43ba98e7255ad4dd116b0685bfdaf02129c60fbf10e69b7edec4c831a6ae2b4b"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:59:01.000Z"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:45.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "d752a6c0461fab258ab38a0626f5bb7a0373f05760f5bf386cff11ee7d05bf26"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "f09f59a0e58fd15ebe5956149455b5bc413b68de77305ffdf6f7b1f6b809d2e4"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:58:47.000Z"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "c103f45bbceba0dd16edca0b203fe05240ec8de47d81b301ff383533bd15e088"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:45.000Z"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "2093c1650da560d00728ffaab8789a4ee1288e5ef1a7e1d0e49dff4dc33421b0"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:58:47.000Z"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "7a0bd709119085d595c8b58be065d1c7cb04b165a827ed29bcfe8f6d8e8a3cfa"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:49.000Z"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "273029e599619bd1c807b309111ffeece34b3d9a6d6a01387da0d0a1f850043e"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:59:16.000Z"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "799bea2d880a7e2c26dbd01733ec9d6f1cef69434af249fa3f9457d972d58457"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:39.000Z"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "90159ede387a18510648eb58e657f3e135dbb49da24dcdcdb35ec37479e536b5"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:58:37.000Z"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "2ca86aad8dc8440de79856eadb55685aad2553fdbfc258eda85dcea6e4edf41a"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:24.000Z"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "050917c6cc4b19e928419414a5d4aa13171aa4f2360a7c8e49a60f3ec2a1390c"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:58:25.000Z"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "62431a3ba3c173d4f1339ec7fa00a42e0ddbddc1248fb8752be1f2db9d6ea6b2"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:17.000Z"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "d94c98482f4672bb68632f4f5911c64ab5d6767b9d8cf686a96045325f95b3f2"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.5"
-  .. .. ..$ date    : chr "2025-11-19T08:58:13.000Z"
-  .. .. ..$ commit  : chr "2c155d018d42d85c63fc2644d1b82d8a5ee45a7d"
-  .. .. ..$ fileid  : chr "c8828467684944f10b3027b01ea08bed93a89cf1034c7b925de0bd02eda84287"
+  .. .. ..$ version : chr "1.1.2"
+  .. .. ..$ date    : chr "2025-11-20T03:46:22.000Z"
+  .. .. ..$ commit  : chr "734951bb2d26b6361a7382d28f1bee9422d80d63"
+  .. .. ..$ fileid  : chr "71c2662b30a097eb1867aca5506bb463278a7943dcd7572aaee9c46959aa2e0b"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19495374263"</code></pre>
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19524672045"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
