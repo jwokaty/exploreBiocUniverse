@@ -308,17 +308,10 @@ DT::datatable(viable_release_candidates, escape = FALSE)
 ```{r devel-download-repo-for-passing-packages, eval = FALSE}
 
 # Download devel packages
-#devel_repo <- "/tmp/PACKAGES/3.23/bin/windows/contrib/4.6"
-#create.dir(devel_repo, recursive = TRUE)
 curl::multi_download(viable_devel_candidates$Url)
-# Write PACKAGES files
-#write_PACKAGES(dir = ".", fields = NULL,
-#               type = c("win.binary"),
-#               verbose = FALSE, unpacked = FALSE, subdirs = FALSE,
-#               latestOnly = TRUE, addFiles = FALSE, rds_compress = "xz")
+
 # Download release packages
-#release_repo <- "/tmp/PACKAGES/3.22/bin/windows/contrib/4.5"
-#create.dir(release_repo, recursive = TRUE)
+
 curl::multi_download(viable_release_candidates$Url)
 
 ```

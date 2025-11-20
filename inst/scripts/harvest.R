@@ -149,6 +149,7 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
       dplyr::arrange(Package)
 }
 
+
 # Download devel packages
 #uni_devel_pkgs <- get_uni_pkgs("bioc", "devel", "4.6.0", "windows", "3.23")
 #
@@ -160,13 +161,28 @@ get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
 #curl::multi_download(viable_devel_candidates$Url[1:20])
 #readr::write_csv(result, "harvest_report.csv")
 
+# Remove old binaries if we have a new binary
+binaries_path <- "/home/biocpush/PACKAGES/3.22/bioc/bin/windows/contrib/4.5/"
+cur_binaries <- list.files(binaries_path)
+names(cur_binaries) <- sapply(cur_binaries,
+                              function(x) {stringr::str_split_1(x, "_")[1]}) |>
+    unname() 
+for (pkg in names(cur_binaries)) {
+    if (pkg %in% viable_release_candidates$Package[1:20]) {
+        full_binary_path <- paste0(binaries_path, cur_binaries[pkg],
+                                   colapse = "")
+        print(paste("Removing", full_binary_path))
+        file.remove(full_binary_path)       
+    }
+}
+
 # Download release packages
-#uni_release_pkgs <- get_uni_pkgs("bioc-release", "release", "4.5.2", "windows", "3.22")
-#
-#viable_release_candidates <- uni_release_pkgs |>
-#    dplyr::filter(BBS_commit == RU_commit, 
-#                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
-#                  JobCheck %in% c("NOTE", "WARNING", "OK"),
-#                  BinariesStatus == "success")
-#result <- curl::multi_download(viable_release_candidates$Url[1:20])
-#readr::write_csv(result, "harvest_report.csv")
+uni_release_pkgs <- get_uni_pkgs("bioc-release", "release", "4.5.2", "windows", "3.22")
+
+viable_release_candidates <- uni_release_pkgs |>
+    dplyr::filter(BBS_commit == RU_commit, 
+                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
+                  JobCheck %in% c("NOTE", "WARNING", "OK"),
+                  BinariesStatus == "success")
+result <- curl::multi_download(viable_release_candidates$Url[1:20])
+readr::write_csv(result, "/home/biocpush/harvest_report.csv")
