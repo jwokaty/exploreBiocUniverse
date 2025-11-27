@@ -222,8 +222,8 @@ Total 2330 2361</code></pre>
 <tr class="odd">
 <td style="text-align: left;">immReferent</td>
 <td style="text-align: left;">0.99.5</td>
-<td style="text-align: left;">2025-11-26T04:52:22.000Z</td>
-<td style="text-align: left;">2025-11-26T04:56:50.694Z</td>
+<td style="text-align: left;">2025-11-27T03:39:32.000Z</td>
+<td style="text-align: left;">2025-11-27T03:44:06.358Z</td>
 <td style="text-align: left;">https://github.com/bioc/immReferent</td>
 </tr>
 <tr class="even">
@@ -657,238 +657,172 @@ Total 2330 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 79
-  ..$ Package                : chr "MIRit"
-  ..$ Title                  : chr "Integrate microRNA and gene expression to decipher pathway\ncomplexity"
-  ..$ Version                : chr "1.7.2"
-  ..$ Date                   : chr "2023-11-23"
-  ..$ Authors@R              : chr "c(\nperson(\"Jacopo\", \"Ronchi\", email = \"jacopo.ronchi@unimib.it\",\nrole = c(\"aut\", \"cre\"), comment = "| __truncated__
-  ..$ Description            : chr "MIRit is an R package that provides several methods for\ninvestigating the relationships between miRNAs and gen"| __truncated__
-  ..$ License                : chr "GPL (&gt;= 3)"
-  ..$ URL                    : chr "https://github.com/jacopo-ronchi/MIRit"
-  ..$ BugReports             : chr "https://github.com/jacopo-ronchi/MIRit/issues"
-  ..$ biocViews              : chr "Software, GeneRegulation, NetworkEnrichment,\nNetworkInference, Epigenetics, FunctionalGenomics,\nSystemsBiolog"| __truncated__
-  ..$ Encoding               : chr "UTF-8"
-  ..$ Roxygen                : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote            : chr "7.3.2"
-  ..$ Collate                : chr "'AllGenerics.R' 'AllClasses.R' 'MIRit-package.R'\n'RcppExports.R' 'association.R' 'batch-correction.R' 'data.R'"| __truncated__
-  ..$ LazyData               : chr "false"
-  ..$ VignetteBuilder        : chr "knitr"
-  ..$ Config/testthat/edition: chr "3"
-  ..$ Config/pak/sysreqs     : chr "libcairo2-dev cmake libfontconfig1-dev\nlibfreetype6-dev libglpk-dev make libicu-dev libpng-dev\nlibxml2-dev li"| __truncated__
-  ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2025-11-26 09:54:37 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/MIRit"
-  ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  ..$ NeedsCompilation       : chr "yes"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2025-11-26 10:34:22 UTC"
+ $ :List of 73
+  ..$ Package           : chr "GSVA"
+  ..$ Version           : chr "2.5.10"
+  ..$ Title             : chr "Gene Set Variation Analysis for Microarray and RNA-Seq Data"
+  ..$ Authors@R         : chr "c(person(\"Robert\", \"Castelo\", role=c(\"aut\", \"cre\"), email=\"robert.castelo@upf.edu\"),\nperson(\"Justin"| __truncated__
+  ..$ Description       : chr "Gene Set Variation Analysis (GSVA) is a non-parametric,\nunsupervised method for estimating variation of gene s"| __truncated__
+  ..$ License           : chr "Artistic-2.0"
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ URL               : chr "https://github.com/rcastelo/GSVA"
+  ..$ BugReports        : chr "https://github.com/rcastelo/GSVA/issues"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ biocViews         : chr "FunctionalGenomics, Microarray, RNASeq, Pathways,\nGeneSetEnrichment"
+  ..$ Roxygen           : chr "list(markdown = TRUE)"
+  ..$ RoxygenNote       : chr "7.3.3"
+  ..$ Config/pak/sysreqs: chr "libmagick++-dev gsfonts libicu-dev libpng-dev\nlibxml2-dev libssl-dev zlib1g-dev"
+  ..$ Repository        : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication  : chr "2025-11-26 19:42:46 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/GSVA"
+  ..$ RemoteRef         : chr "HEAD"
+  ..$ RemoteSha         : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  ..$ NeedsCompilation  : chr "yes"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2025-11-27 08:58:06 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Jacopo Ronchi [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0001-5520-4631&gt;),\nMaria Foti [fnd] (ORCID: &lt;https://"| __truncated__
-  ..$ Maintainer             : chr "Jacopo Ronchi &lt;jacopo.ronchi@unimib.it&gt;"
-  ..$ MD5sum                 : chr "aca5d90c7a69e6a314cae738079b5efd"
-  ..$ _user                  : chr "bioc"
-  ..$ _type                  : chr "src"
-  ..$ _file                  : chr "MIRit_1.7.2.tar.gz"
-  ..$ _fileid                : chr "1487a60784adbbbeb16de05e5db7ee1260c44afa2b954285982c0764c91d810d"
-  ..$ _filesize              : int 2806481
-  ..$ _sha256                : chr "1487a60784adbbbeb16de05e5db7ee1260c44afa2b954285982c0764c91d810d"
-  ..$ _created               : chr "2025-11-26T10:34:22.000Z"
-  ..$ _published             : chr "2025-11-26T10:57:11.457Z"
-  ..$ _jobs                  :List of 14
+  ..$ Author            : chr "Robert Castelo [aut, cre],\nJustin Guinney [aut],\nAlexey Sergushichev [ctb],\nPablo Sebastian Rodriguez [ctb],"| __truncated__
+  ..$ Maintainer        : chr "Robert Castelo &lt;robert.castelo@upf.edu&gt;"
+  ..$ MD5sum            : chr "4d639784692f4bead42d5cb515286e68"
+  ..$ _user             : chr "bioc"
+  ..$ _type             : chr "src"
+  ..$ _file             : chr "GSVA_2.5.10.tar.gz"
+  ..$ _fileid           : chr "c7b9c0cf8a57d788d6b47bf4bb416c8c7a94f549f9513652da6ad9c645863fdf"
+  ..$ _filesize         : int 2949988
+  ..$ _sha256           : chr "c7b9c0cf8a57d788d6b47bf4bb416c8c7a94f549f9513652da6ad9c645863fdf"
+  ..$ _created          : chr "2025-11-27T08:58:06.000Z"
+  ..$ _published        : chr "2025-11-27T09:12:01.046Z"
+  ..$ _jobs             :List of 14
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 347
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 273
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "4684652382"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4695360299"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 562
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 394
   .. .. ..$ config  : chr "linux-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684688705"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695380079"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 599
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 475
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684693893"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695392235"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 615
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 446
   .. .. ..$ config  : chr "linux-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684697010"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695388034"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 631
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 467
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684699234"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695390963"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 591
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 502
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684692587"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4695396568"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 978
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 598
   .. .. ..$ config  : chr "macos-oldrel-x86_64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684757088"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4695412716"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 666
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 318
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684705043"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695367269"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 817
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 757
   .. .. ..$ config  : chr "macos-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4684729878"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695439369"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 542
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 483
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4684591066"
+  .. .. ..$ artifact: chr "4695317854"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 322
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 250
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4684648075"
+  .. .. ..$ artifact: chr "4695356982"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 1199
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 438
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4684794940"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695386310"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 1282
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 444
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4684806182"
+  .. .. ..$ artifact: chr "4695387150"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.64e+10
-  .. .. ..$ time    : int 1165
+  .. .. ..$ job     : num 5.65e+10
+  .. .. ..$ time    : int 455
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4684789001"
-  ..$ _bioccheck             :List of 3
-  .. ..$ error  : int 0
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4695388991"
+  ..$ _bioccheck        :List of 3
+  .. ..$ error  : int 1
   .. ..$ warning: int 1
-  .. ..$ note   : int 9
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
-  ..$ _status                : chr "success"
-  ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/MIRit"
-  ..$ _commit                :List of 5
-  .. ..$ id       : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. ..$ author   : chr "jacopo-ronchi &lt;jacopo.ronchi@unimib.it&gt;"
-  .. ..$ committer: chr "jacopo-ronchi &lt;jacopo.ronchi@unimib.it&gt;"
-  .. ..$ message  : chr "build: version bump in devel.\n"
-  .. ..$ time     : int 1764150877
-  ..$ _maintainer            :List of 6
-  .. ..$ name    : chr "Jacopo Ronchi"
-  .. ..$ email   : chr "jacopo.ronchi@unimib.it"
-  .. ..$ login   : chr "jacopo-ronchi"
-  .. ..$ linkedin: chr "in/jacopo-ronchi-069228271"
-  .. ..$ uuid    : int 108004745
-  .. ..$ orcid   : chr "0000-0001-5520-4631"
-  ..$ _distro                : chr "noble"
-  ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 38
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "MultiAssayExperiment"
-  .. .. ..$ role   : chr "Depends"
+  .. ..$ note   : int 18
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
+  ..$ _status           : chr "success"
+  ..$ _host             : chr "GitHub-Actions"
+  ..$ _upstream         : chr "https://github.com/bioc/GSVA"
+  ..$ _commit           :List of 5
+  .. ..$ id       : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. ..$ author   : chr "Robert Castelo &lt;robert.castelo@upf.edu&gt;"
+  .. ..$ committer: chr "Robert Castelo &lt;robert.castelo@upf.edu&gt;"
+  .. ..$ message  : chr "Bump version\n"
+  .. ..$ time     : int 1764186166
+  ..$ _maintainer       :List of 5
+  .. ..$ name   : chr "Robert Castelo"
+  .. ..$ email  : chr "robert.castelo@upf.edu"
+  .. ..$ login  : chr "rcastelo"
+  .. ..$ twitter: chr "@robertclab"
+  .. ..$ uuid   : int 1677433
+  ..$ _distro           : chr "noble"
+  ..$ _registered       : logi TRUE
+  ..$ _dependencies     :List of 52
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.4.0"
+  .. .. ..$ version: chr "&gt;= 3.5.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
+  .. .. ..$ package: chr "cli"
   .. .. ..$ role   : chr "LinkingTo"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationDbi"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocFileCache"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DESeq2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "edgeR"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "fgsea"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "genekitr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "geneset"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggpubr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graph"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graphite"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "httr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "limma"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "Rgraphviz"
-  .. .. ..$ version: chr "&gt;= 2.44.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rlang"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
@@ -897,812 +831,781 @@ Total 2330 2361</code></pre>
   .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
+  .. .. ..$ package: chr "graphics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "MatrixGenerics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Arrays"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "HDF5Array"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SparseArray"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DelayedArray"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Biobase"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GSEABase"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ version: chr "&gt;= 1.5-0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "parallel"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocParallel"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SingleCellExperiment"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SpatialExperiment"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "sparseMatrixStats"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DelayedMatrixStats"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocSingular"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "cli"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "memuse"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "RUnit"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "biomaRt"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg38"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicRanges"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggrepel"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggridges"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Gviz"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gwasrapidd"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "MonoPoly"
+  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "limma"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "RColorBrewer"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "org.Hs.eg.db"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ package: chr "genefilter"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "edgeR"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner                 : chr "bioc"
-  ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 8
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GSVAdata"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "sva"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TENxPBMCData"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scuttle"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scran"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "igraph"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "shiny"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "shinydashboard"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "data.table"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "plotly"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "future"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "promises"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "shinybusy"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "shinyjs"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner            : chr "bioc"
+  ..$ _selfowned        : logi TRUE
+  ..$ _usedby           : int 20
+  ..$ _updates          :List of 21
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-48"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-50"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-51"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-01"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-03"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-08"
+  .. .. ..$ n   : int 5
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-09"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-11"
-  .. .. ..$ n   : int 3
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-12"
-  .. .. ..$ n   : int 2
+  .. .. ..$ n   : int 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-16"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ week: chr "2025-14"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-38"
+  .. .. ..$ week: chr "2025-15"
+  .. .. ..$ n   : int 8
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-17"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-40"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-41"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-43"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 2
+  .. .. ..$ n   : int 5
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 5
+  .. .. ..$ n   : int 11
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-46"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-47"
+  .. .. ..$ n   : int 6
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-48"
   .. .. ..$ n   : int 2
-  ..$ _tags                  : list()
-  ..$ _bioc                  :List of 2
+  ..$ _tags             : list()
+  ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.7.1"
+  .. .. ..$ version: chr "2.5.9"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.6.0"
+  .. .. ..$ version: chr "2.4.1"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics                :List of 16
-  .. ..$ : chr "software"
-  .. ..$ : chr "generegulation"
-  .. ..$ : chr "networkenrichment"
-  .. ..$ : chr "networkinference"
-  .. ..$ : chr "epigenetics"
+  ..$ _topics           :List of 8
   .. ..$ : chr "functionalgenomics"
-  .. ..$ : chr "systemsbiology"
-  .. ..$ : chr "network"
+  .. ..$ : chr "microarray"
+  .. ..$ : chr "rnaseq"
   .. ..$ : chr "pathways"
-  .. ..$ : chr "geneexpression"
-  .. ..$ : chr "differentialexpression"
-  .. ..$ : chr "mirna"
-  .. ..$ : chr "mirna-mrna-interaction"
-  .. ..$ : chr "mirna-seq"
-  .. ..$ : chr "mirnaseq-analysis"
-  .. ..$ : chr "cpp"
-  ..$ _stars                 : int 1
-  ..$ _contributors          :List of 2
+  .. ..$ : chr "genesetenrichment"
+  .. ..$ : chr "gene-set-enrichment"
+  .. ..$ : chr "genomics"
+  .. ..$ : chr "pathway-enrichment-analysis"
+  ..$ _stars            : int 230
+  ..$ _contributors     :List of 15
   .. ..$ :List of 3
-  .. .. ..$ user : chr "jacopo-ronchi"
-  .. .. ..$ count: int 191
-  .. .. ..$ uuid : int 108004745
+  .. .. ..$ user : chr "rcastelo"
+  .. .. ..$ count: int 303
+  .. .. ..$ uuid : int 1677433
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "axelklenk"
+  .. .. ..$ count: int 169
+  .. .. ..$ uuid : int 72612834
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "pablo-rodr-bio2"
+  .. .. ..$ count: int 84
+  .. .. ..$ uuid : int 53177189
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "dtenenba"
+  .. .. ..$ count: int 27
+  .. .. ..$ uuid : int 2286826
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 14
+  .. .. ..$ uuid : int 2746443
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 4
+  .. .. ..$ count: int 10
   .. .. ..$ uuid : int 1744257
-  ..$ _userbio               :List of 4
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "aabaker99"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 3460359
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "assaron"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 1040217
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "hpages"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 8810451
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "peremoles"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 118828870
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vobencha"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 2466173
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "joanfernandez"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 22771090
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "pshannon-bioc"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 2285629
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "liubuntu"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 12683977
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "liripo"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 54770415
+  ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads             :List of 2
-  .. ..$ count : int 256
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/MIRit"
-  ..$ _devurl                : chr "https://github.com/jacopo-ronchi/mirit"
-  ..$ _searchresults         : int 5
-  ..$ _rbuild                : chr "4.5.2"
-  ..$ _assets                :List of 11
+  ..$ _downloads        :List of 2
+  .. ..$ count : int 14822
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/GSVA"
+  ..$ _mentions         : int 893
+  ..$ _devurl           : chr "https://github.com/rcastelo/gsva"
+  ..$ _searchresults    : int 2208
+  ..$ _rbuild           : chr "4.5.2"
+  ..$ _assets           :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/MIRit.html"
+  .. ..$ : chr "extra/GSVA.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/jacopo-ronchi/mirit"
-  ..$ _realowner             : chr "bioc"
-  ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 45
-  .. ..$ : chr "addDifferentialExpression"
-  .. ..$ : chr "augmentedPathways"
-  .. ..$ : chr "batchCorrection"
-  .. ..$ : chr "enrichedFeatures"
-  .. ..$ : chr "enrichGenes"
-  .. ..$ : chr "enrichmentBarplot"
-  .. ..$ : chr "enrichmentDatabase"
-  .. ..$ : chr "enrichmentDotplot"
-  .. ..$ : chr "enrichmentMethod"
-  .. ..$ : chr "enrichmentMetric"
-  .. ..$ : chr "enrichmentResults"
-  .. ..$ : chr "enrichTargets"
-  .. ..$ : chr "findMirnaSNPs"
-  .. ..$ : chr "geneDE"
-  .. ..$ : chr "geneSet"
-  .. ..$ : chr "getEvidence"
-  .. ..$ : chr "getTargets"
-  .. ..$ : chr "gseaPlot"
-  .. ..$ : chr "gseaRidgeplot"
-  .. ..$ : chr "integratedPathways"
-  .. ..$ : chr "integration"
-  .. ..$ : chr "integrationDatabase"
-  .. ..$ : chr "integrationDotplot"
-  .. ..$ : chr "listPathways"
-  .. ..$ : chr "loadExamples"
-  .. ..$ : chr "mirnaDE"
-  .. ..$ : chr "MirnaExperiment"
-  .. ..$ : chr "mirnaIntegration"
-  .. ..$ : chr "mirnaTargets"
-  .. ..$ : chr "mirVariantPlot"
-  .. ..$ : chr "pairedSamples"
-  .. ..$ : chr "performGeneDE"
-  .. ..$ : chr "performMirnaDE"
-  .. ..$ : chr "plotCorrelation"
-  .. ..$ : chr "plotDE"
-  .. ..$ : chr "plotDimensions"
-  .. ..$ : chr "plotVolcano"
-  .. ..$ : chr "preparePathways"
-  .. ..$ : chr "searchDisease"
-  .. ..$ : chr "show"
-  .. ..$ : chr "significantGenes"
-  .. ..$ : chr "significantMirnas"
-  .. ..$ : chr "supportedOrganisms"
-  .. ..$ : chr "topologicalAnalysis"
-  .. ..$ : chr "visualizeNetwork"
-  ..$ _datasets              :List of 2
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "geneCounts"
-  .. .. ..$ title : chr "Count matrix for gene expression in thyroid cancer"
-  .. .. ..$ object: chr "geneCounts"
-  .. .. ..$ file  : chr "geneCounts.rda"
-  .. .. ..$ class :List of 2
-  .. .. .. ..$ : chr "matrix"
-  .. .. .. ..$ : chr "array"
-  .. .. ..$ fields:List of 16
-  .. .. .. ..$ : chr "PTC 1"
-  .. .. .. ..$ : chr "PTC 2"
-  .. .. .. ..$ : chr "PTC 3"
-  .. .. .. ..$ : chr "PTC 4"
-  .. .. .. ..$ : chr "PTC 5"
-  .. .. .. ..$ : chr "PTC 6"
-  .. .. .. ..$ : chr "PTC 7"
-  .. .. .. ..$ : chr "PTC 8"
-  .. .. .. ..$ : chr "NTH 1"
-  .. .. .. ..$ : chr "NTH 2"
-  .. .. .. ..$ : chr "NTH 3"
-  .. .. .. ..$ : chr "NTH 4"
-  .. .. .. ..$ : chr "NTH 5"
-  .. .. .. ..$ : chr "NTH 6"
-  .. .. .. ..$ : chr "NTH 7"
-  .. .. .. ..$ : chr "NTH 8"
-  .. .. ..$ rows  : int 23710
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "mirnaCounts"
-  .. .. ..$ title : chr "Count matrix for microRNA expression in thyroid cancer"
-  .. .. ..$ object: chr "mirnaCounts"
-  .. .. ..$ file  : chr "mirnaCounts.rda"
-  .. .. ..$ class :List of 2
-  .. .. .. ..$ : chr "matrix"
-  .. .. .. ..$ : chr "array"
-  .. .. ..$ fields:List of 16
-  .. .. .. ..$ : chr "PTC 1"
-  .. .. .. ..$ : chr "PTC 2"
-  .. .. .. ..$ : chr "PTC 3"
-  .. .. .. ..$ : chr "PTC 4"
-  .. .. .. ..$ : chr "PTC 5"
-  .. .. .. ..$ : chr "PTC 6"
-  .. .. .. ..$ : chr "PTC 7"
-  .. .. .. ..$ : chr "PTC 8"
-  .. .. .. ..$ : chr "NTH 1"
-  .. .. .. ..$ : chr "NTH 2"
-  .. .. .. ..$ : chr "NTH 3"
-  .. .. .. ..$ : chr "NTH 4"
-  .. .. .. ..$ : chr "NTH 5"
-  .. .. .. ..$ : chr "NTH 6"
-  .. .. .. ..$ : chr "NTH 7"
-  .. .. .. ..$ : chr "NTH 8"
-  .. .. ..$ rows  : int 2576
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  ..$ _help                  :List of 46
+  ..$ _homeurl          : chr "https://github.com/rcastelo/gsva"
+  ..$ _realowner        : chr "bioc"
+  ..$ _cranurl          : logi FALSE
+  ..$ _exports          :List of 21
+  .. ..$ : chr "computeGeneSetsOverlap"
+  .. ..$ : chr "deduplicateGeneSets"
+  .. ..$ : chr "filterGeneSets"
+  .. ..$ : chr "geneIdsToGeneSetCollection"
+  .. ..$ : chr "geneSets"
+  .. ..$ : chr "geneSets&lt;-"
+  .. ..$ : chr "geneSetSizes"
+  .. ..$ : chr "gsva"
+  .. ..$ : chr "gsvaAnnotation"
+  .. ..$ : chr "gsvaAnnotation&lt;-"
+  .. ..$ : chr "gsvaEnrichment"
+  .. ..$ : chr "gsvaParam"
+  .. ..$ : chr "gsvaRanks"
+  .. ..$ : chr "gsvaScores"
+  .. ..$ : chr "guessGeneIdType"
+  .. ..$ : chr "igsva"
+  .. ..$ : chr "plageParam"
+  .. ..$ : chr "readGMT"
+  .. ..$ : chr "spatCor"
+  .. ..$ : chr "ssgseaParam"
+  .. ..$ : chr "zscoreParam"
+  ..$ _help             :List of 20
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "addDifferentialExpression"
-  .. .. ..$ title : chr "Manually add differential expression results to a MirnaExperiment object"
+  .. .. ..$ page  : chr "computeGeneSetsOverlap"
+  .. .. ..$ title : chr "Compute gene-sets overlap"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "computeGeneSetsOverlap"
+  .. .. .. ..$ : chr "computeGeneSetsOverlap,GeneSetCollection,character-method"
+  .. .. .. ..$ : chr "computeGeneSetsOverlap,GeneSetCollection,ExpressionSet-method"
+  .. .. .. ..$ : chr "computeGeneSetsOverlap,list,character-method"
+  .. .. .. ..$ : chr "computeGeneSetsOverlap,list,ExpressionSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "deduplicateGeneSets"
+  .. .. ..$ title : chr "Handling of Duplicated Gene Set Names"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "addDifferentialExpression"
+  .. .. .. ..$ : chr "deduplicateGeneSets"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "augmentedPathways"
-  .. .. ..$ title : chr "Access the miRNA-augmented pathways that were used during TAIPA"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "augmentedPathways"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "batchCorrection"
-  .. .. ..$ title : chr "Correct for batch effects in miRNA and gene expression measurements"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "batchCorrection"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "deAccessors"
-  .. .. ..$ title : chr "Extract differentially expressed miRNAs and genes from a 'MirnaExperiment' object"
+  .. .. ..$ page  : chr "filterGeneSets"
+  .. .. ..$ title : chr "Filter gene sets"
   .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "deAccessors"
-  .. .. .. ..$ : chr "geneDE"
-  .. .. .. ..$ : chr "mirnaDE"
+  .. .. .. ..$ : chr "filterGeneSets"
+  .. .. .. ..$ : chr "filterGeneSets,GeneSetCollection-method"
+  .. .. .. ..$ : chr "filterGeneSets,list-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "deAnalysis"
-  .. .. ..$ title : chr "Perform differential expression analysis"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "deAnalysis"
-  .. .. .. ..$ : chr "performGeneDE"
-  .. .. .. ..$ : chr "performMirnaDE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichedFeatures"
-  .. .. ..$ title : chr "Extract the names of the pre-ranked features in a GSEA experiment"
+  .. .. ..$ page  : chr "geneIdsToGeneSetCollection"
+  .. .. ..$ title : chr "Construct a GeneSetCollection object from a list of character vectors"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichedFeatures"
+  .. .. .. ..$ : chr "geneIdsToGeneSetCollection"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichGenes"
-  .. .. ..$ title : chr "Perform functional enrichment analysis of genes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichGenes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichmentBarplot"
-  .. .. ..$ title : chr "Create a barplot for functional enrichment analysis"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichmentBarplot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichmentDatabase"
-  .. .. ..$ title : chr "Access the database used for functional enrichment analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichmentDatabase"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichmentDotplot"
-  .. .. ..$ title : chr "Create a dotplot for functional enrichment analysis"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichmentDotplot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichmentMethod"
-  .. .. ..$ title : chr "Access the method used for functional enrichment analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichmentMethod"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichmentMetric"
-  .. .. ..$ title : chr "Extract the GSEA ranking metric used for functional enrichment analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichmentMetric"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichmentResults"
-  .. .. ..$ title : chr "Access the results of functional enrichment analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichmentResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichTargets"
-  .. .. ..$ title : chr "Perform an enrichment analysis of integrated microRNA targets"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichTargets"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "findMirnaSNPs"
-  .. .. ..$ title : chr "Find disease-associated SNPs occurring at DE-miRNA loci"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "findMirnaSNPs"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "FunctionalEnrichment-class"
-  .. .. ..$ title : chr "The 'FunctionalEnrichment' class"
+  .. .. ..$ page  : chr "geneSets"
+  .. .. ..$ title : chr "Retrieve or Determine Gene Sets"
   .. .. ..$ topics:List of 9
-  .. .. .. ..$ : chr "enrichedFeatures,FunctionalEnrichment-method"
-  .. .. .. ..$ : chr "enrichmentDatabase,FunctionalEnrichment-method"
-  .. .. .. ..$ : chr "enrichmentMethod,FunctionalEnrichment-method"
-  .. .. .. ..$ : chr "enrichmentMetric,FunctionalEnrichment-method"
-  .. .. .. ..$ : chr "enrichmentResults,FunctionalEnrichment-method"
-  .. .. .. ..$ : chr "FunctionalEnrichment"
-  .. .. .. ..$ : chr "FunctionalEnrichment-class"
-  .. .. .. ..$ : chr "geneSet,FunctionalEnrichment-method"
-  .. .. .. ..$ : chr "show,FunctionalEnrichment-method"
+  .. .. .. ..$ : chr "geneSets"
+  .. .. .. ..$ : chr "geneSets,GsvaExprData-method"
+  .. .. .. ..$ : chr "geneSets,GsvaMethodParam-method"
+  .. .. .. ..$ : chr "geneSets,SingleCellExperiment-method"
+  .. .. .. ..$ : chr "geneSets,SpatialExperiment-method"
+  .. .. .. ..$ : chr "geneSets,SummarizedExperiment-method"
+  .. .. .. ..$ : chr "geneSetSizes"
+  .. .. .. ..$ : chr "geneSetSizes,GsvaExprData-method"
+  .. .. .. ..$ : chr "geneSetSizes,GsvaMethodParam-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "geneCounts"
-  .. .. ..$ title : chr "Count matrix for gene expression in thyroid cancer"
+  .. .. ..$ page  : chr "gsva"
+  .. .. ..$ title : chr "Gene Set Variation Analysis"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "gsva"
+  .. .. .. ..$ : chr "gsva,gsvaParam-method"
+  .. .. .. ..$ : chr "gsva,plageParam-method"
+  .. .. .. ..$ : chr "gsva,ssgseaParam-method"
+  .. .. .. ..$ : chr "gsva,zscoreParam-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gsvaAnnotation"
+  .. .. ..$ title : chr "Store and Retrieve Annotation Metadata"
+  .. .. ..$ topics:List of 16
+  .. .. .. ..$ : chr "gsvaAnnotation"
+  .. .. .. ..$ : chr "gsvaAnnotation,ExpressionSet-method"
+  .. .. .. ..$ : chr "gsvaAnnotation,GeneSetCollection-method"
+  .. .. .. ..$ : chr "gsvaAnnotation,GsvaExprData-method"
+  .. .. .. ..$ : chr "gsvaAnnotation,list-method"
+  .. .. .. ..$ : chr "gsvaAnnotation,SingleCellExperiment-method"
+  .. .. .. ..$ : chr "gsvaAnnotation,SpatialExperiment-method"
+  .. .. .. ..$ : chr "gsvaAnnotation,SummarizedExperiment-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,ExpressionSet,character-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,ExpressionSet,GeneIdentifierType-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,GsvaExprData,GeneIdentifierType-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,list,GeneIdentifierType-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,SingleCellExperiment,GeneIdentifierType-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,SpatialExperiment,GeneIdentifierType-method"
+  .. .. .. ..$ : chr "gsvaAnnotation&lt;-,SummarizedExperiment,GeneIdentifierType-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gsvaEnrichment"
+  .. .. ..$ title : chr "GSVA enrichment data and visualization"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "gsvaEnrichment"
+  .. .. .. ..$ : chr "gsvaEnrichment,gsvaRanksParam-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GsvaExprData-class"
+  .. .. ..$ title : chr "'GsvaExprData' class"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "GsvaExprData"
+  .. .. .. ..$ : chr "GsvaExprData-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GsvaGeneSets-class"
+  .. .. ..$ title : chr "'GsvaGeneSets' class"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "geneCounts"
+  .. .. .. ..$ : chr "GsvaGeneSets-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "geneSet"
-  .. .. ..$ title : chr "Extract the gene-sets used for functional enrichment analyses"
+  .. .. ..$ page  : chr "GsvaMethodParam-class"
+  .. .. ..$ title : chr "'GsvaMethodParam' class"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "geneSet"
+  .. .. .. ..$ : chr "GsvaMethodParam-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getEvidence"
-  .. .. ..$ title : chr "Get the scientific evidence for a particular disease-SNP association"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getEvidence"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTargets"
-  .. .. ..$ title : chr "Get microRNA targets"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getTargets"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gseaPlot"
-  .. .. ..$ title : chr "Create a GSEA plot that displays the running enrichment score (ES) for a given pathway"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gseaPlot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gseaRidgeplot"
-  .. .. ..$ title : chr "Create a ridgeplot to display the results of GSEA analysis"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gseaRidgeplot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "integratedPathways"
-  .. .. ..$ title : chr "Access the results of integrative miRNA-mRNA pathway analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "integratedPathways"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "integration"
-  .. .. ..$ title : chr "Explore the results of the integration analysis between miRNAs and genes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "integration"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "integrationDatabase"
-  .. .. ..$ title : chr "Extract the database used for integrative miRNA-mRNA pathway analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "integrationDatabase"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "integrationDotplot"
-  .. .. ..$ title : chr "Display integrated miRNA-mRNA augmented pathways in a dotplot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "integrationDotplot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "IntegrativePathwayAnalysis-class"
-  .. .. ..$ title : chr "The 'IntegrativePathwayAnalysis' class"
+  .. .. ..$ page  : chr "gsvaParam-class"
+  .. .. ..$ title : chr "'gsvaParam' class"
   .. .. ..$ topics:List of 6
-  .. .. .. ..$ : chr "augmentedPathways,IntegrativePathwayAnalysis-method"
-  .. .. .. ..$ : chr "integratedPathways,IntegrativePathwayAnalysis-method"
-  .. .. .. ..$ : chr "integrationDatabase,IntegrativePathwayAnalysis-method"
-  .. .. .. ..$ : chr "IntegrativePathwayAnalysis"
-  .. .. .. ..$ : chr "IntegrativePathwayAnalysis-class"
-  .. .. .. ..$ : chr "show,IntegrativePathwayAnalysis-method"
+  .. .. .. ..$ : chr "anyNA,gsvaParam-method"
+  .. .. .. ..$ : chr "geneSets&lt;-"
+  .. .. .. ..$ : chr "geneSets&lt;-,gsvaRanksParam,GsvaGeneSets-method"
+  .. .. .. ..$ : chr "gsvaParam"
+  .. .. .. ..$ : chr "gsvaParam-class"
+  .. .. .. ..$ : chr "gsvaRanksParam-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "listPathways"
-  .. .. ..$ title : chr "List all the available biological pathways in KEGG, Reactome and WikiPathways"
+  .. .. ..$ page  : chr "gsvaRanks"
+  .. .. ..$ title : chr "GSVA ranks and scores"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "gsvaRanks"
+  .. .. .. ..$ : chr "gsvaRanks,gsvaParam-method"
+  .. .. .. ..$ : chr "gsvaScores"
+  .. .. .. ..$ : chr "gsvaScores,gsvaRanksParam-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "guessGeneIdType"
+  .. .. ..$ title : chr "Guess the gene identifier type from a list of character vectors"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "listPathways"
+  .. .. .. ..$ : chr "guessGeneIdType"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "loadExamples"
-  .. .. ..$ title : chr "Load example MIRit objects"
+  .. .. ..$ page  : chr "igsva"
+  .. .. ..$ title : chr "Gene Set Variation Analysis"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "loadExamples"
+  .. .. .. ..$ : chr "igsva"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "mirnaCounts"
-  .. .. ..$ title : chr "Count matrix for microRNA expression in thyroid cancer"
+  .. .. ..$ page  : chr "plageParam-class"
+  .. .. ..$ title : chr "'plageParam' class"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "plageParam"
+  .. .. .. ..$ : chr "plageParam-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "readGMT"
+  .. .. ..$ title : chr "Import Gene Sets from a GMT File"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mirnaCounts"
+  .. .. .. ..$ : chr "readGMT"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "MirnaExperiment"
-  .. .. ..$ title : chr "The constructor function for MirnaExperiment"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "MirnaExperiment"
+  .. .. ..$ page  : chr "spatCor"
+  .. .. ..$ title : chr "Compute Spatial Autocorrelation for SpatialExperiment objects"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "spatCor"
+  .. .. .. ..$ : chr "spatCor,SpatialExperiment-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "MirnaExperiment-class"
-  .. .. ..$ title : chr "The 'MirnaExperiment' class"
-  .. .. ..$ topics:List of 9
-  .. .. .. ..$ : chr "geneDE,MirnaExperiment-method"
-  .. .. .. ..$ : chr "integration,MirnaExperiment-method"
-  .. .. .. ..$ : chr "mirnaDE,MirnaExperiment-method"
-  .. .. .. ..$ : chr "MirnaExperiment-class"
-  .. .. .. ..$ : chr "mirnaTargets,MirnaExperiment-method"
-  .. .. .. ..$ : chr "pairedSamples,MirnaExperiment-method"
-  .. .. .. ..$ : chr "show,MirnaExperiment-method"
-  .. .. .. ..$ : chr "significantGenes,MirnaExperiment-method"
-  .. .. .. ..$ : chr "significantMirnas,MirnaExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mirnaIntegration"
-  .. .. ..$ title : chr "Integrate microRNA and gene expression"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mirnaIntegration"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mirnaTargets"
-  .. .. ..$ title : chr "Explore miRNA-target pairs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mirnaTargets"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mirVariantPlot"
-  .. .. ..$ title : chr "Create a trackplot to show the association between miRNAs and disease-SNPs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mirVariantPlot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pairedSamples"
-  .. .. ..$ title : chr "View the relationship between miRNA and gene samples"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "pairedSamples"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotCorrelation"
-  .. .. ..$ title : chr "Plot correlation between miRNAs and genes within biological groups"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotCorrelation"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDE"
-  .. .. ..$ title : chr "Represent differentially expressed miRNAs/genes as boxplots, barplots or violinplots"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDimensions"
-  .. .. ..$ title : chr "Generate multidimensional scaling (MDS) plots to explore miRNA/gene expression distances"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDimensions"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotVolcano"
-  .. .. ..$ title : chr "Produce volcano plots to display miRNA/gene differential expression"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotVolcano"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "preparePathways"
-  .. .. ..$ title : chr "Prepare miRNA-augmented pathways for integrative miRNA-mRNA pathway analyses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "preparePathways"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "searchDisease"
-  .. .. ..$ title : chr "Search for disease EFO identifiers"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "searchDisease"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "significantAccessors"
-  .. .. ..$ title : chr "Get the IDs of statistically differentially expressed miRNAs/genes"
+  .. .. ..$ page  : chr "ssgseaParam-class"
+  .. .. ..$ title : chr "'ssgseaParam' class"
   .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "significantAccessors"
-  .. .. .. ..$ : chr "significantGenes"
-  .. .. .. ..$ : chr "significantMirnas"
+  .. .. .. ..$ : chr "anyNA,ssgseaParam-method"
+  .. .. .. ..$ : chr "ssgseaParam"
+  .. .. .. ..$ : chr "ssgseaParam-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "supportedOrganisms"
-  .. .. ..$ title : chr "Get the list of supported organisms for a given database"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "supportedOrganisms"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "topologicalAnalysis"
-  .. .. ..$ title : chr "Perform a topologically-aware integrative pathway analysis (TAIPA)"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "topologicalAnalysis"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "visualizeNetwork"
-  .. .. ..$ title : chr "Visualize the relationships between miRNAs and genes in a biological pathway"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "visualizeNetwork"
-  ..$ _pkglogo               : chr "https://github.com/bioc/MIRit/raw/HEAD/man/figures/logo.png"
-  ..$ _readme                : chr "https://github.com/bioc/MIRit/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 205
+  .. .. ..$ page  : chr "zscoreParam-class"
+  .. .. ..$ title : chr "'zscoreParam' class"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "zscoreParam"
+  .. .. .. ..$ : chr "zscoreParam-class"
+  ..$ _readme           : chr "https://github.com/bioc/GSVA/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 94
   .. ..$ : chr "abind"
+  .. ..$ : chr "annotate"
   .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "ape"
-  .. ..$ : chr "aplot"
   .. ..$ : chr "askpass"
-  .. ..$ : chr "backports"
-  .. ..$ : chr "base64enc"
+  .. ..$ : chr "assorthead"
+  .. ..$ : chr "beachmat"
   .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocBaseUtils"
   .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
   .. ..$ : chr "BiocParallel"
+  .. ..$ : chr "BiocSingular"
   .. ..$ : chr "Biostrings"
   .. ..$ : chr "bit"
   .. ..$ : chr "bit64"
-  .. ..$ : chr "bitops"
   .. ..$ : chr "blob"
-  .. ..$ : chr "boot"
-  .. ..$ : chr "broom"
-  .. ..$ : chr "bslib"
   .. ..$ : chr "cachem"
-  .. ..$ : chr "car"
-  .. ..$ : chr "carData"
   .. ..$ : chr "cli"
-  .. ..$ : chr "cluster"
-  .. ..$ : chr "clusterProfiler"
   .. ..$ : chr "codetools"
-  .. ..$ : chr "corrplot"
-  .. ..$ : chr "cowplot"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
   .. ..$ : chr "curl"
-  .. ..$ : chr "data.table"
   .. ..$ : chr "DBI"
   .. ..$ : chr "dbplyr"
   .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "Deriv"
-  .. ..$ : chr "DESeq2"
-  .. ..$ : chr "digest"
-  .. ..$ : chr "dir.expiry"
-  .. ..$ : chr "doBy"
-  .. ..$ : chr "DOSE"
+  .. ..$ : chr "DelayedMatrixStats"
   .. ..$ : chr "dplyr"
-  .. ..$ : chr "edgeR"
-  .. ..$ : chr "enrichplot"
-  .. ..$ : chr "europepmc"
-  .. ..$ : chr "evaluate"
-  .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
-  .. ..$ : chr "fastmatch"
-  .. ..$ : chr "fgsea"
   .. ..$ : chr "filelock"
-  .. ..$ : chr "fontawesome"
-  .. ..$ : chr "fontBitstreamVera"
-  .. ..$ : chr "fontLiberation"
-  .. ..$ : chr "fontquiver"
   .. ..$ : chr "formatR"
-  .. ..$ : chr "Formula"
-  .. ..$ : chr "fs"
-  .. ..$ : chr "fst"
-  .. ..$ : chr "fstcore"
   .. ..$ : chr "futile.logger"
   .. ..$ : chr "futile.options"
-  .. ..$ : chr "gdtools"
-  .. ..$ : chr "genekitr"
   .. ..$ : chr "generics"
-  .. ..$ : chr "geneset"
   .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "ggforce"
-  .. ..$ : chr "ggfun"
-  .. ..$ : chr "ggiraph"
-  .. ..$ : chr "ggnewscale"
-  .. ..$ : chr "ggplot2"
-  .. ..$ : chr "ggplotify"
-  .. ..$ : chr "ggpubr"
-  .. ..$ : chr "ggraph"
-  .. ..$ : chr "ggrepel"
-  .. ..$ : chr "ggsci"
-  .. ..$ : chr "ggsignif"
-  .. ..$ : chr "ggtangle"
-  .. ..$ : chr "ggtree"
-  .. ..$ : chr "ggvenn"
   .. ..$ : chr "glue"
-  .. ..$ : chr "GO.db"
-  .. ..$ : chr "GOSemSim"
   .. ..$ : chr "graph"
-  .. ..$ : chr "graphite"
-  .. ..$ : chr "graphlayouts"
-  .. ..$ : chr "gridExtra"
-  .. ..$ : chr "gridGraphics"
-  .. ..$ : chr "gson"
-  .. ..$ : chr "gtable"
-  .. ..$ : chr "highr"
-  .. ..$ : chr "hms"
-  .. ..$ : chr "htmltools"
-  .. ..$ : chr "htmlwidgets"
+  .. ..$ : chr "GSEABase"
+  .. ..$ : chr "h5mread"
+  .. ..$ : chr "HDF5Array"
   .. ..$ : chr "httr"
   .. ..$ : chr "httr2"
-  .. .. [list output truncated]
-  ..$ _sysdeps               :List of 1
-  .. ..$ :List of 7
-  .. .. ..$ shlib      : chr "libstdc++"
-  .. .. ..$ package    : chr "libstdc++6"
-  .. .. ..$ source     : chr "gcc"
-  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04"
-  .. .. ..$ name       : chr "c++"
-  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
-  .. .. ..$ description: chr "GNU Standard C++ Library v3"
-  ..$ _vignettes             :List of 1
+  .. ..$ : chr "IRanges"
+  .. ..$ : chr "irlba"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "KEGGREST"
+  .. ..$ : chr "lambda.r"
+  .. ..$ : chr "lattice"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "magick"
+  .. ..$ : chr "magrittr"
+  .. ..$ : chr "Matrix"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "memoise"
+  .. ..$ : chr "memuse"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plogr"
+  .. ..$ : chr "png"
+  .. ..$ : chr "purrr"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "rappdirs"
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "rhdf5"
+  .. ..$ : chr "rhdf5filters"
+  .. ..$ : chr "Rhdf5lib"
+  .. ..$ : chr "rjson"
+  .. ..$ : chr "rlang"
+  .. ..$ : chr "RSQLite"
+  .. ..$ : chr "rsvd"
+  .. ..$ : chr "S4Arrays"
+  .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "ScaledMatrix"
+  .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "SingleCellExperiment"
+  .. ..$ : chr "snow"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "sparseMatrixStats"
+  .. ..$ : chr "SpatialExperiment"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "SummarizedExperiment"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "withr"
+  .. ..$ : chr "XML"
+  .. ..$ : chr "xtable"
+  .. ..$ : chr "XVector"
+  ..$ _vignettes        :List of 2
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "MIRit.Rmd"
-  .. .. ..$ filename: chr "MIRit.html"
-  .. .. ..$ title   : chr "Integrate miRNA and gene expression data with MIRit"
-  .. .. ..$ author  : chr "Jacopo Ronchi"
+  .. .. ..$ source  : chr "GSVA.Rmd"
+  .. .. ..$ filename: chr "GSVA.html"
+  .. .. ..$ title   : chr "GSVA: gene set variation analysis"
+  .. .. ..$ author  : chr "Robert Castelo, Axel Klenk, Justin Guinney"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 49
+  .. .. ..$ headings:List of 16
+  .. .. .. ..$ : chr "Quick start"
   .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "What is MIRit"
-  .. .. .. ..$ : chr "How to cite MIRit"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Data preparation"
-  .. .. .. ..$ : chr "Load example data"
-  .. .. .. ..$ : chr "Paired vs unpaired data"
-  .. .. .. ..$ : chr "Set up expression matrices"
-  .. .. .. ..$ : chr "Define sample metadata"
-  .. .. .. ..$ : chr "Create a MirnaExperiment object"
-  .. .. .. ..$ : chr "Differential expression analysis"
-  .. .. .. ..$ : chr "Visualize expression variability"
-  .. .. .. ..$ : chr "Perform miRNA and gene differential expression"
-  .. .. .. ..$ : chr "Available methods for RNA-Seq and microarrays"
-  .. .. .. ..$ : chr "Model design"
-  .. .. .. ..$ : chr "The performMirnaDE() and performGeneDE() functions"
-  .. .. .. ..$ : chr "Advanced parameters"
-  .. .. .. ..$ : chr "Add differential expression results from other technologies"
-  .. .. .. ..$ : chr "Visualize differentially expressed features"
-  .. .. .. ..$ : chr "Access differential expression tables"
-  .. .. .. ..$ : chr "Create a volcano plot for miRNAs and genes"
-  .. .. .. ..$ : chr "Produce differential expression bar plots"
-  .. .. .. ..$ : chr "Functional enrichment analysis"
-  .. .. .. ..$ : chr "Available approaches: ORA, GSEA and CAMERA"
-  .. .. .. ..$ : chr "Available databases and categories"
-  .. .. .. ..$ : chr "Supported species"
-  .. .. .. ..$ : chr "Perform functional enrichment with the enrichGenes() function"
-  .. .. .. ..$ : chr "Visualize enriched sets"
-  .. .. .. ..$ : chr "Access results table"
-  .. .. .. ..$ : chr "Enrichment dot plots and bar plots"
-  .. .. .. ..$ : chr "Other plots for GSEA"
-  .. .. .. ..$ : chr "Retrieve miRNA targets"
-  .. .. .. ..$ : chr "Databases with miRNA-mRNA interactions"
-  .. .. .. ..$ : chr "The mirDIP approach"
-  .. .. .. ..$ : chr "Download predicted and validated interactions with getTargets()"
-  .. .. .. ..$ : chr "Assess the effects of miRNAs on target genes"
-  .. .. .. ..$ : chr "Correlation analysis for paired data"
-  .. .. .. ..$ : chr "Statistical correlation coefficients"
-  .. .. .. ..$ : chr "Perform a correlation analysis in MIRit"
-  .. .. .. ..$ : chr "Account for batch effects prior to correlation analysis"
-  .. .. .. ..$ : chr "Explore the succesfully integrated miRNA-target pairs"
-  .. .. .. ..$ : chr "Visualize the correlation between miRNAs and genes"
-  .. .. .. ..$ : chr "Association tests for unpaired data"
-  .. .. .. ..$ : chr "Fisher's exact test"
-  .. .. .. ..$ : chr "Boschloo's exact test"
-  .. .. .. ..$ : chr "Perform one-sideded association tests in MIRit"
-  .. .. .. ..$ : chr "Rotation gene-set tests for unpaired data"
-  .. .. .. ..$ : chr "Session info"
+  .. .. .. ..$ : chr "Overview of the GSVA functionality"
+  .. .. .. ..$ : chr "Gene set definitions and containers"
+  .. .. .. ..$ : chr "Importing gene sets from GMT files"
+  .. .. .. ..$ : chr "Quantification of pathway activity in bulk microarray and RNA-seq data"
+  .. .. .. ..$ : chr "Example applications"
+  .. .. .. ..$ : chr "Molecular signature identification"
+  .. .. .. ..$ : chr "Differential expression at pathway level"
+  .. .. .. ..$ : chr "Data exploration at gene level"
+  .. .. .. ..$ : chr "Running GSVA"
+  .. .. .. ..$ : chr "Data exploration at pathway level"
+  .. .. .. ..$ : chr "Interactive web app"
+  .. .. .. ..$ : chr "Contributing"
+  .. .. .. ..$ : chr "Session information"
   .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2023-02-19 23:56:30"
-  .. .. ..$ modified: chr "2024-10-23 13:59:02"
-  .. .. ..$ commits : int 28
-  ..$ _score                 : num 4.6
-  ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "mirit"
-  ..$ _universes             :List of 2
+  .. .. ..$ created : chr "2021-02-05 18:07:16"
+  .. .. ..$ modified: chr "2025-11-04 20:15:17"
+  .. .. ..$ commits : int 17
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "GSVA_scRNAseq.Rmd"
+  .. .. ..$ filename: chr "GSVA_scRNAseq.html"
+  .. .. ..$ title   : chr "GSVA on single-cell RNA-seq data"
+  .. .. ..$ author  : chr "Robert Castelo, Axel Klenk, Justin Guinney"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 12
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Import data"
+  .. .. .. ..$ : chr "Quality assessment and pre-processing"
+  .. .. .. ..$ : chr "Annotate cell types using GSVA"
+  .. .. .. ..$ : chr "Read gene sets in GMT format"
+  .. .. .. ..$ : chr "Add gene identifier type metadata"
+  .. .. .. ..$ : chr "Build parameter object"
+  .. .. .. ..$ : chr "Calculate GSVA scores"
+  .. .. .. ..$ : chr "Using GSVA scores to assign cell types"
+  .. .. .. ..$ : chr "Forthcoming features"
+  .. .. .. ..$ : chr "Session information"
+  .. .. .. ..$ : chr "References"
+  .. .. ..$ created : chr "2025-10-27 18:49:02"
+  .. .. ..$ modified: chr "2025-11-22 19:18:05"
+  .. .. ..$ commits : int 2
+  ..$ _score            : num 15.1
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "gsva"
+  ..$ _universes        :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "jacopo-ronchi"
-  ..$ _previous              : chr "1.7.1"
-  ..$ _binaries              :List of 12
+  .. ..$ : chr "rcastelo"
+  ..$ _previous         : chr "2.5.9"
+  ..$ _binaries         :List of 12
   .. ..$ :List of 11
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:40:09.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:02:17.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "cf4b10388e8d392692736cf79980cac856240c844c2bb6452f1cd165299f382b"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "b67af84faed204a68f4e34af1bfe52c589f2602de2a2ea6da549f5df6aa67731"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 11
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:40:16.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:02:45.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "adca6ecbad354829a1e867b9f82d1e85b637ad388c1977525899cbeea6cc7dc1"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "30d65c19e8084a65a0725b357f08301295ac30436eb25c9efd4645421743d971"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 11
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:40:34.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:02:51.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "29a78059981b0700c7af9969244ff292fa0e65c38f4e7e755beec7dbd04c2a07"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "c934433563bd7968cda15ad004f387ba336b03a2d858e1c0456ca61c1c0fa1c8"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 11
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:40:45.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:02:38.000Z"
   .. .. ..$ distro  : chr "noble"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "811c6eaf85aa3fe6c6b5de416cbc366a1331f6b37de24fd29f677026be900db5"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "aff9bebebf3ef0f25658877984f1afc545808a322dd0b54ba3e0fe77faae2360"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:39:10.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:03:01.000Z"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "0cd111b7682e07cf9583ae4efba806a95d11c9473d1a6ad2500ee63adc4adcb9"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "2ffa1841e4499285494b5f3428102f6eac194c3440457b0f16b7a243ee6b775b"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:43:54.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:02:50.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "d741134b87905566f9f5b1ed2b57438a083af9a5ece371450cd1b9dbea2e222d"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "1fd7e66dbd20aa0871c19c31e41621a9e8b4aa285372eab9f7438bfa61c34d86"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:38:40.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:01:23.000Z"
   .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "4653eef837497db629d7ef0a2046e4076779f4b532d499ed7d7f01b412f93f32"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "58b70c385df83aad325acbabdb0c766c88788b75a4047115c768988f3f8be1bf"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:41:07.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:05:04.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "260c5c9d51133c369b63c98ac4d07198bae0c3c2d332e4b24b6d688da1739582"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "a691bc02fff107f3b9de76880a0a62489187774d857ac63dfd3ef249d7fc3997"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:40:38.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:03:03.000Z"
   .. .. ..$ arch    : chr "emscripten"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "71b170f3ac05f0824279c53df6a9cd20506879e6382a9ecf58bd442e1f249387"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "7445330b54e3556e7525c958d6fde66e28230f4c69e1504fb7f9ee0259f9813f"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:43:59.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:01:32.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "1c8a1d12a0123e80af300e1fd6f3e6aefdcd163c624db083aab5996e52935cb2"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "3e37db3f0bef01c6ad1c667936364bce530ec96b4f834582f382838366724b93"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:45:33.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:01:47.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "ae7eff113580ca642db7aba708aff78abf36bb76ed282aefb21fa8d65cc3315a"
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "4496fd4a97791130f576962f2dd15848403004c721dc232b1539dbe90563a558"
   .. .. ..$ status  : chr "failure"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2025-11-26T10:43:50.000Z"
+  .. .. ..$ version : chr "2.5.10"
+  .. .. ..$ date    : chr "2025-11-27T09:01:53.000Z"
   .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "c2813dc9ffc060ae7912753a6ce26a31565dc30b"
-  .. .. ..$ fileid  : chr "1a2f1ee49fda9d95ceee4f8f0ea78328d8ec0c29c7e2d4d2fdf1d659193412a3"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19700509459"</code></pre>
+  .. .. ..$ commit  : chr "56c76c8afac663f46e25c1c1ed37f42b858bd924"
+  .. .. ..$ fileid  : chr "e3e2820d61339543f372e8899873b75a8f81b88caf5b56e8fcc10ee7e3a47b8f"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19730485361"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
