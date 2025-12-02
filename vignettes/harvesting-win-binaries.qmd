@@ -1,0 +1,37 @@
+---
+title: "Harvesting R Universe Windows Binaries"
+format: revealjs
+editor: visual
+---
+
+## Windows Binaries in R Universe
+
+-   Latest Snapshot
+-   R Universe API + `universe` package
+-   bioc.r-universe.dev (devel) and **bioc-release.r-universe.dev** (RELEASE_3_22)
+
+![](images/clipboard-3729017279.png)
+
+## Steps
+
+1.  Find binaries of **passing** packages with matching **commits** in BBS for R corresponding to Bioconductor version.
+2.  Download windows binaries of packages to BBS staging repository (bbscentral\* in JS2).
+3.  Run BBS propagation to generate VIEWS and PACKAGES.\* files.
+4.  Update landing pages with binaries.
+
+Note: 3 and 4 use existing infrastructure and processes
+
+## Initial Harvest
+
+-   1751 Windows binaries added to Bioconductor devel repository
+-   2119 Windows binaries updated in Bioconductor release repository
+
+## Next Steps + Future Work
+
+-   Automate following cadence of BBS
+-   Incorporate new BiocCheck in R Universe as criteria!
+-   Listen for feedback from Windows users
+-   Harvest mac binaries, esp. release machines with additional costs
+-   Understand how it works for next release
+
+![](images/clipboard-1645528370.png)
