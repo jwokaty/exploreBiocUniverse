@@ -37,7 +37,8 @@ jobs:
     - name: Install Bioconductor dependencies
       run: |
         install.packages("universe", repos = "https://ropensci.r-universe.dev", dependencies = TRUE)
-        pkgs <- c("quarto", "purrr", "knitr", "kable", "kableExtra", "dplyr", "BiocPkgTools", "DT")
+        pkgs <- c("quarto", "purrr", "knitr", "kable", "kableExtra", "dplyr", "BiocPkgTools", "DT",
+                  "mongolite")
         BiocManager::install(pkgs, dependencies = TRUE)
       shell: Rscript {0}
 
