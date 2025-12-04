@@ -10,7 +10,7 @@ editor: visual
 -   R Universe API + `universe` package
 -   bioc.r-universe.dev (devel) and **bioc-release.r-universe.dev** (RELEASE_3_22)
 
-![R Universe builds binaries for 3 versions of R](images/clipboard-2390897257.png)
+![](images/clipboard-2390897257.png)
 
 ## Steps
 
@@ -26,7 +26,7 @@ Note: 3 and 4 use existing infrastructure and processes
 -   1751 Windows binaries added to Bioconductor devel repository
 -   2119 Windows binaries updated in Bioconductor release repository
 
-![S4Arrays landing page on devel](images/clipboard-2239745471.png){width="398"}
+![](images/clipboard-2239745471.png){width="398"}
 
 ## Next Steps + Future Work
 
@@ -36,5 +36,3 @@ Note: 3 and 4 use existing infrastructure and processes
 -   Better reporting
 -   Harvest mac binaries, esp. release machines with additional costs
 -   Understand how it works for next release
-
-![New BiocCheck column](images/clipboard-1645528370.png)
