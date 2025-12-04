@@ -140,12 +140,12 @@
 <li>bioc.r-universe.dev (devel) and <strong>bioc-release.r-universe.dev</strong> (RELEASE_3_22)</li>
 </ul>
 
-<img data-src="images/clipboard-3729017279.png" class="r-stretch"></section>
+<img data-src="images/clipboard-2390897257.png" class="r-stretch quarto-figure-center"><p class="caption">R Universe builds binaries for 3 versions of R</p></section>
 <section id="steps" class="slide level2">
 <h2>Steps</h2>
 <ol type="1">
-<li>Find binaries of <strong>passing</strong> packages with matching <strong>commits</strong> in BBS for R corresponding to Bioconductor version.</li>
-<li>Download windows binaries of packages to BBS staging repository (bbscentral* in JS2).</li>
+<li>Find binaries for packages passing <code>R CMD check</code> where commits in BBS and R universe match for the R corresponding to a Bioconductor version.</li>
+<li>Download binaries to BBS staging repository (bbscentral* in JS2). Remove older binaries.</li>
 <li>Run BBS propagation to generate VIEWS and PACKAGES.* files.</li>
 <li>Update landing pages with binaries.</li>
 </ol>
@@ -157,19 +157,21 @@
 <li>1751 Windows binaries added to Bioconductor devel repository</li>
 <li>2119 Windows binaries updated in Bioconductor release repository</li>
 </ul>
-</section>
+
+<img data-src="images/clipboard-2239745471.png" width="398" class="r-stretch quarto-figure-center"><p class="caption">S4Arrays landing page on devel</p></section>
 <section id="next-steps-future-work" class="slide level2">
 <h2>Next Steps + Future Work</h2>
 <ul>
 <li>Automate following cadence of BBS</li>
-<li>Incorporate new BiocCheck in R Universe as criteria!</li>
+<li>Incorporate new BiocCheck in R Universe as criteria!?</li>
 <li>Listen for feedback from Windows users</li>
+<li>Better reporting</li>
 <li>Harvest mac binaries, esp.&nbsp;release machines with additional costs</li>
 <li>Understand how it works for next release</li>
 </ul>
 
 
-<img data-src="images/clipboard-1645528370.png" class="r-stretch"></section>
+<img data-src="images/clipboard-1645528370.png" class="r-stretch quarto-figure-center"><p class="caption">New BiocCheck column</p></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
