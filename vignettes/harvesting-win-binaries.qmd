@@ -10,12 +10,12 @@ editor: visual
 -   R Universe API + `universe` package
 -   bioc.r-universe.dev (devel) and **bioc-release.r-universe.dev** (RELEASE_3_22)
 
-![](images/clipboard-3729017279.png)
+![R Universe builds binaries for 3 versions of R](images/clipboard-2390897257.png)
 
 ## Steps
 
-1.  Find binaries of **passing** packages with matching **commits** in BBS for R corresponding to Bioconductor version.
-2.  Download windows binaries of packages to BBS staging repository (bbscentral\* in JS2).
+1.  Find binaries for packages passing `R CMD check` where commits in BBS and R universe match for the R corresponding to a Bioconductor version.
+2.  Download binaries to BBS staging repository (bbscentral\* in JS2). Remove older binaries.
 3.  Run BBS propagation to generate VIEWS and PACKAGES.\* files.
 4.  Update landing pages with binaries.
 
@@ -26,12 +26,15 @@ Note: 3 and 4 use existing infrastructure and processes
 -   1751 Windows binaries added to Bioconductor devel repository
 -   2119 Windows binaries updated in Bioconductor release repository
 
+![S4Arrays landing page on devel](images/clipboard-2239745471.png){width="398"}
+
 ## Next Steps + Future Work
 
 -   Automate following cadence of BBS
--   Incorporate new BiocCheck in R Universe as criteria!
+-   Incorporate new BiocCheck in R Universe as criteria!?
 -   Listen for feedback from Windows users
+-   Better reporting
 -   Harvest mac binaries, esp. release machines with additional costs
 -   Understand how it works for next release
 
-![](images/clipboard-1645528370.png)
+![New BiocCheck column](images/clipboard-1645528370.png)
