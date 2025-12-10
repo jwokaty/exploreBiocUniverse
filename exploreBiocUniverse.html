@@ -670,223 +670,253 @@ Total 2333 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 71
-  ..$ Package           : chr "UCSC.utils"
-  ..$ Title             : chr "Low-level utilities to retrieve data from the UCSC Genome\nBrowser"
-  ..$ Description       : chr "A set of low-level utilities to retrieve data from the\nUCSC Genome Browser. Most functions in the package acce"| __truncated__
-  ..$ biocViews         : chr "Infrastructure, GenomeAssembly, Annotation,\nGenomeAnnotation, DataImport"
-  ..$ URL               : chr "https://bioconductor.org/packages/UCSC.utils"
-  ..$ BugReports        : chr "https://github.com/Bioconductor/UCSC.utils/issues"
-  ..$ Version           : chr "1.7.1"
-  ..$ License           : chr "Artistic-2.0"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ Authors@R         : chr "person(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\nemail=\"hpages.on.github@gmail.com\")"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ Collate           : chr "00utils.R UCSC.api.url.R REST_API.R list_UCSC_genomes.R\nget_UCSC_chrom_sizes.R list_UCSC_tracks.R\nfetch_UCSC_"| __truncated__
-  ..$ Config/pak/sysreqs: chr "libssl-dev"
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-12-09 01:19:59 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/UCSC.utils"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  ..$ NeedsCompilation  : chr "no"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-12-09 07:46:59 UTC"
+ $ :List of 75
+  ..$ Package                : chr "TSAR"
+  ..$ Type                   : chr "Package"
+  ..$ Title                  : chr "Thermal Shift Analysis in R"
+  ..$ Version                : chr "1.9.2"
+  ..$ Year                   : chr "2025"
+  ..$ Authors@R              : chr "c(person(\"Xinlin\", \n\"Gao\",\nemail = \"candygao2015@outlook.com\",\nrole = c(\"aut\", \"cre\"),\ncomment = "| __truncated__
+  ..$ Description            : chr "This package automates analysis workflow for Thermal Shift\nAnalysis (TSA) data. Processing, analyzing, and vis"| __truncated__
+  ..$ License                : chr "AGPL-3"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ LazyData               : chr "false"
+  ..$ Testthat               : chr "true"
+  ..$ RoxygenNote            : chr "7.2.3"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ biocViews              : chr "Software, ShinyApps, Visualization, qPCR"
+  ..$ DataRaw                : chr "data/qPCR_data1.rda"
+  ..$ DataRaw2               : chr "data/qPCR_data2.rda"
+  ..$ DataRaw3               : chr "data/Well_Information.rda"
+  ..$ DataRaw4               : chr "data/Well_Information_Template.rda"
+  ..$ DataRawr               : chr "data/example_tsar_data.rda"
+  ..$ Config/testthat/edition: chr "3"
+  ..$ Config/pak/sysreqs     : chr "cmake make libicu-dev libssl-dev zlib1g-dev"
+  ..$ Repository             : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication       : chr "2025-12-10 00:02:17 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/TSAR"
+  ..$ RemoteRef              : chr "HEAD"
+  ..$ RemoteSha              : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  ..$ NeedsCompilation       : chr "no"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2025-12-10 03:56:08 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Hervé Pagès [aut, cre]"
-  ..$ Maintainer        : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
-  ..$ MD5sum            : chr "c2c5d87669c3c519a2b12215ff22e1c4"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "UCSC.utils_1.7.1.tar.gz"
-  ..$ _fileid           : chr "d92bf9255adaafe1932c9b3bcd61a183fe6a1a327375e08bdbbec29eb31abde0"
-  ..$ _filesize         : int 141295
-  ..$ _sha256           : chr "d92bf9255adaafe1932c9b3bcd61a183fe6a1a327375e08bdbbec29eb31abde0"
-  ..$ _created          : chr "2025-12-09T07:46:59.000Z"
-  ..$ _published        : chr "2025-12-09T07:50:30.590Z"
-  ..$ _jobs             :List of 10
+  ..$ Author                 : chr "Xinlin Gao [aut, cre] (ORCID: &lt;https://orcid.org/0009-0002-2518-235X&gt;),\nWilliam M. McFadden [aut, fnd] (ORCID:"| __truncated__
+  ..$ Maintainer             : chr "Xinlin Gao &lt;candygao2015@outlook.com&gt;"
+  ..$ MD5sum                 : chr "cf4caea6fdb264ed837f17ded13547ac"
+  ..$ _user                  : chr "bioc"
+  ..$ _type                  : chr "src"
+  ..$ _file                  : chr "TSAR_1.9.2.tar.gz"
+  ..$ _fileid                : chr "f0ea683236ceb9a4ce278de39fdb70191afdf551938789254b444415dd27e413"
+  ..$ _filesize              : int 4219148
+  ..$ _sha256                : chr "f0ea683236ceb9a4ce278de39fdb70191afdf551938789254b444415dd27e413"
+  ..$ _created               : chr "2025-12-10T03:56:08.000Z"
+  ..$ _published             : chr "2025-12-10T04:03:27.439Z"
+  ..$ _jobs                  :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 149
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 388
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4807693922"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4819854687"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 157
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 196
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807695232"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819834835"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 162
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 396
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807695263"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819855654"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 166
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 162
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807696684"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819831819"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 117
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 159
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807691535"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819831437"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 181
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 461
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807675989"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819815064"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 115
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 382
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807690023"
+  .. .. ..$ artifact: chr "4819854040"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 110
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 204
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807689459"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819835692"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 119
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 267
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807690578"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819842563"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.75e+10
-  .. .. ..$ time    : int 98
+  .. .. ..$ job     : num 5.76e+10
+  .. .. ..$ time    : int 297
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4807688153"
-  ..$ _bioccheck        :List of 3
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4819845671"
+  ..$ _bioccheck             :List of 3
   .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 9
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/UCSC.utils"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
-  .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
-  .. ..$ message  : chr "fix and simplify R-CMD-check-bioc workflow\n"
-  .. ..$ time     : int 1765243199
-  ..$ _maintainer       :List of 5
-  .. ..$ name    : chr "Hervé Pagès"
-  .. ..$ email   : chr "hpages.on.github@gmail.com"
-  .. ..$ login   : chr "hpages"
-  .. ..$ linkedin: chr "in/hervé-pagès-5038527"
-  .. ..$ uuid    : int 8810451
-  ..$ _distro           : chr "noble"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 12
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "httr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "jsonlite"
+  .. ..$ warning: int 1
+  .. ..$ note   : int 11
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  ..$ _status                : chr "failure"
+  ..$ _host                  : chr "GitHub-Actions"
+  ..$ _upstream              : chr "https://github.com/bioc/TSAR"
+  ..$ _commit                :List of 5
+  .. ..$ id       : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. ..$ author   : chr "CGAO123 &lt;candygao2015@outlook.com&gt;"
+  .. ..$ committer: chr "CGAO123 &lt;candygao2015@outlook.com&gt;"
+  .. ..$ message  : chr "Remove large data files from vignettes\n"
+  .. ..$ time     : int 1765324937
+  ..$ _maintainer            :List of 5
+  .. ..$ name    : chr "Xinlin Gao"
+  .. ..$ email   : chr "candygao2015@outlook.com"
+  .. ..$ login   : chr "cgao123"
+  .. ..$ linkedin: chr "in/xinlingao"
+  .. ..$ uuid    : int 46572407
+  ..$ _distro                : chr "noble"
+  ..$ _registered            : logi TRUE
+  ..$ _dependencies          :List of 21
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "R"
+  .. .. ..$ version: chr "&gt;= 4.3.0"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ version: chr "&gt;= 1.0.7"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 3
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ version: chr "&gt;= 0.47.6"
+  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ version: chr "&gt;= 3.3.5"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DBI"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "RMariaDB"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDb"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "ggpubr"
+  .. .. ..$ version: chr "&gt;= 0.4.0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "magrittr"
+  .. .. ..$ version: chr "&gt;= 2.0.3"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "mgcv"
+  .. .. ..$ version: chr "&gt;= 1.8.38"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "readxl"
+  .. .. ..$ version: chr "&gt;= 1.4.0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "stringr"
+  .. .. ..$ version: chr "&gt;= 1.4.0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ version: chr "&gt;= 1.1.4"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "utils"
+  .. .. ..$ version: chr "&gt;= 4.3.1"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "shiny"
+  .. .. ..$ version: chr "&gt;= 1.7.4.1"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "plotly"
+  .. .. ..$ version: chr "&gt;= 4.10.2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "shinyjs"
+  .. .. ..$ version: chr "&gt;= 2.1.0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ version: chr "&gt;= 1.8.7"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "rhandsontable"
+  .. .. ..$ version: chr "&gt;= 0.3.8"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "openxlsx"
+  .. .. ..$ version: chr "&gt;= 4.2.5.2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "shinyWidgets"
+  .. .. ..$ version: chr "&gt;= 0.7.6"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "minpack.lm"
+  .. .. ..$ version: chr "&gt;= 1.2.3"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 319
-  ..$ _updates          :List of 5
+  ..$ _owner                 : chr "bioc"
+  ..$ _selfowned             : logi TRUE
+  ..$ _usedby                : int 0
+  ..$ _updates               :List of 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-03"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-45"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-16"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-43"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-47"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-50"
-  .. .. ..$ n   : int 2
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  .. .. ..$ n   : int 3
+  ..$ _tags                  : list()
+  ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.7.0"
+  .. .. ..$ version: chr "1.9.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.6.0"
+  .. .. ..$ version: chr "1.8.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 7
-  .. ..$ : chr "infrastructure"
-  .. ..$ : chr "genomeassembly"
-  .. ..$ : chr "annotation"
-  .. ..$ : chr "genomeannotation"
-  .. ..$ : chr "dataimport"
-  .. ..$ : chr "bioconductor-package"
-  .. ..$ : chr "core-package"
-  ..$ _stars            : int 1
-  ..$ _contributors     :List of 3
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 45
-  .. .. ..$ uuid : int 8810451
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 4
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "link-ny"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 4392950
-  ..$ _userbio          :List of 33
+  ..$ _topics                :List of 4
+  .. ..$ : chr "software"
+  .. ..$ : chr "shinyapps"
+  .. ..$ : chr "visualization"
+  .. ..$ : chr "qpcr"
+  ..$ _userbio               :List of 33
   .. ..$ login              : chr "Bioconductor"
   .. ..$ id                 : int 2286807
   .. ..$ node_id            : chr "MDEyOk9yZ2FuaXphdGlvbjIyODY4MDc="
@@ -920,13 +950,12 @@ Total 2333 2361</code></pre>
   .. ..$ following          : int 0
   .. ..$ created_at         : chr "2012-09-05T18:43:31Z"
   .. ..$ updated_at         : chr "2023-06-27T18:11:03Z"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 74454
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/UCSC.utils"
-  ..$ _devurl           : chr "https://github.com/bioconductor/ucsc.utils"
-  ..$ _searchresults    : int 9
-  ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 11
+  ..$ _downloads             :List of 2
+  .. ..$ count : int 210
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/TSAR"
+  ..$ _searchresults         : int 12
+  ..$ _rbuild                : chr "4.5.2"
+  ..$ _assets                :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -936,174 +965,563 @@ Total 2333 2361</code></pre>
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/UCSC.utils.html"
+  .. ..$ : chr "extra/TSAR.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/bioconductor/ucsc.utils"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 7
-  .. ..$ : chr "fetch_UCSC_track_data"
-  .. ..$ : chr "get_organism_for_UCSC_genome"
-  .. ..$ : chr "get_UCSC_chrom_sizes"
-  .. ..$ : chr "list_UCSC_genomes"
-  .. ..$ : chr "list_UCSC_tracks"
-  .. ..$ : chr "UCSC_dbselect"
-  .. ..$ : chr "UCSC.api.url"
-  ..$ _help             :List of 6
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "fetch_UCSC_track_data"
-  .. .. ..$ title : chr "Fetch UCSC track data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "fetch_UCSC_track_data"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "get_UCSC_chrom_sizes"
-  .. .. ..$ title : chr "List UCSC chromosome sizes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "get_UCSC_chrom_sizes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "list_UCSC_genomes"
-  .. .. ..$ title : chr "List UCSC genomes"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "get_organism_for_UCSC_genome"
-  .. .. .. ..$ : chr "list_UCSC_genomes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "list_UCSC_tracks"
-  .. .. ..$ title : chr "List UCSC tracks and associated primary tables"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "list_UCSC_tracks"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "UCSC_dbselect"
-  .. .. ..$ title : chr "Conveniently retrieve data from the UCSC MariaDB server"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "UCSC_dbselect"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "UCSC.api.url"
-  .. .. ..$ title : chr "Get or set the default UCSC API URL"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "UCSC.api.url"
-  ..$ _readme           : chr "https://github.com/bioc/UCSC.utils/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 11
-  .. ..$ : chr "askpass"
-  .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "curl"
-  .. ..$ : chr "generics"
-  .. ..$ : chr "httr"
-  .. ..$ : chr "jsonlite"
-  .. ..$ : chr "mime"
-  .. ..$ : chr "openssl"
-  .. ..$ : chr "R6"
-  .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "sys"
-  ..$ _vignettes        :List of 1
+  ..$ _realowner             : chr "bioc"
+  ..$ _cranurl               : logi FALSE
+  ..$ _exports               :List of 34
+  .. ..$ : chr "analyze_norm"
+  .. ..$ : chr "condition_IDs"
+  .. ..$ : chr "gam_analysis"
+  .. ..$ : chr "get_legend"
+  .. ..$ : chr "graph_tsar"
+  .. ..$ : chr "join_well_info"
+  .. ..$ : chr "merge_norm"
+  .. ..$ : chr "merge_TSA"
+  .. ..$ : chr "model_boltzmann"
+  .. ..$ : chr "model_fit"
+  .. ..$ : chr "model_gam"
+  .. ..$ : chr "normalize"
+  .. ..$ : chr "normalize_fluorescence"
+  .. ..$ : chr "read_analysis"
+  .. ..$ : chr "read_raw_data"
+  .. ..$ : chr "read_tsar"
+  .. ..$ : chr "remove_raw"
+  .. ..$ : chr "rescale"
+  .. ..$ : chr "run_boltzmann"
+  .. ..$ : chr "screen"
+  .. ..$ : chr "Tm_difference"
+  .. ..$ : chr "Tm_est"
+  .. ..$ : chr "TSA_average"
+  .. ..$ : chr "TSA_boxplot"
+  .. ..$ : chr "TSA_compare_plot"
+  .. ..$ : chr "TSA_ligands"
+  .. ..$ : chr "TSA_proteins"
+  .. ..$ : chr "TSA_Tms"
+  .. ..$ : chr "TSA_wells_plot"
+  .. ..$ : chr "view_deriv"
+  .. ..$ : chr "view_model"
+  .. ..$ : chr "weed_raw"
+  .. ..$ : chr "well_IDs"
+  .. ..$ : chr "write_tsar"
+  ..$ _datasets              :List of 5
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "UCSC.utils.Rmd"
-  .. .. ..$ filename: chr "UCSC.utils.html"
-  .. .. ..$ title   : chr "The UCSC.utils package"
-  .. .. ..$ author  : chr "Hervé Pagès"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 9
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Functions defined in the package"
-  .. .. .. ..$ : chr "list_UCSC_genomes()"
-  .. .. .. ..$ : chr "get_UCSC_chrom_sizes()"
-  .. .. .. ..$ : chr "list_UCSC_tracks()"
-  .. .. .. ..$ : chr "fetch_UCSC_track_data()"
-  .. .. .. ..$ : chr "UCSC_dbselect()"
-  .. .. .. ..$ : chr "Session information"
-  .. .. ..$ created : chr "2024-03-15 01:20:13"
-  .. .. ..$ modified: chr "2025-01-14 22:36:58"
-  .. .. ..$ commits : int 8
-  ..$ _score            : num 9.55
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "ucsc.utils"
-  ..$ _universes        :List of 3
+  .. .. ..$ name  : chr "example_tsar_data"
+  .. .. ..$ title : chr "Example tsar_data file"
+  .. .. ..$ object: chr "example_tsar_data"
+  .. .. ..$ file  : chr "example_tsar_data.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 11
+  .. .. .. ..$ : chr "Well"
+  .. .. .. ..$ : chr "Temperature"
+  .. .. .. ..$ : chr "Fluorescence"
+  .. .. .. ..$ : chr "Normalized"
+  .. .. .. ..$ : chr "norm_deriv"
+  .. .. .. ..$ : chr "Tm"
+  .. .. .. ..$ : chr "Protein"
+  .. .. .. ..$ : chr "Ligand"
+  .. .. .. ..$ : chr "ExperimentFileName"
+  .. .. .. ..$ : chr "well_ID"
+  .. .. .. ..$ : chr "condition_ID"
+  .. .. ..$ rows  : int 28290
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "qPCR_data1"
+  .. .. ..$ title : chr "qPCR_data1 Dataset"
+  .. .. ..$ object: chr "qPCR_data1"
+  .. .. ..$ file  : chr "qPCR_data1.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 5
+  .. .. .. ..$ : chr "Well"
+  .. .. .. ..$ : chr "Well.Position"
+  .. .. .. ..$ : chr "Reading"
+  .. .. .. ..$ : chr "Temperature"
+  .. .. .. ..$ : chr "Fluorescence"
+  .. .. ..$ rows  : int 29544
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "qPCR_data2"
+  .. .. ..$ title : chr "qPCR_data2 Dataset"
+  .. .. ..$ object: chr "qPCR_data2"
+  .. .. ..$ file  : chr "qPCR_data2.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 5
+  .. .. .. ..$ : chr "Well"
+  .. .. .. ..$ : chr "Well.Position"
+  .. .. .. ..$ : chr "Reading"
+  .. .. .. ..$ : chr "Temperature"
+  .. .. .. ..$ : chr "Fluorescence"
+  .. .. ..$ rows  : int 29544
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "well_information"
+  .. .. ..$ title : chr "example well information Data"
+  .. .. ..$ object: chr "well_information"
+  .. .. ..$ file  : chr "well_information.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "...1"
+  .. .. .. ..$ : chr "Protein...2"
+  .. .. .. ..$ : chr "Ligand...3"
+  .. .. .. ..$ : chr "Protein...4"
+  .. .. .. ..$ : chr "Ligand...5"
+  .. .. .. ..$ : chr "Protein...6"
+  .. .. .. ..$ : chr "Ligand...7"
+  .. .. .. ..$ : chr "Protein...8"
+  .. .. .. ..$ : chr "Ligand...9"
+  .. .. .. ..$ : chr "Protein...10"
+  .. .. .. ..$ : chr "Ligand...11"
+  .. .. .. ..$ : chr "Protein...12"
+  .. .. .. ..$ : chr "Ligand...13"
+  .. .. .. ..$ : chr "Protein...14"
+  .. .. .. ..$ : chr "Ligand...15"
+  .. .. .. ..$ : chr "Protein...16"
+  .. .. .. ..$ : chr "Ligand...17"
+  .. .. .. ..$ : chr "Protein...18"
+  .. .. .. ..$ : chr "Ligand...19"
+  .. .. .. ..$ : chr "Protein...20"
+  .. .. .. ..$ : chr "Ligand...21"
+  .. .. .. ..$ : chr "Protein...22"
+  .. .. .. ..$ : chr "Ligand...23"
+  .. .. .. ..$ : chr "Protein...24"
+  .. .. .. ..$ : chr "Ligand...25"
+  .. .. ..$ rows  : int 9
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "well_information_template"
+  .. .. ..$ title : chr "Well Information Template"
+  .. .. ..$ object: chr "well_information_template"
+  .. .. ..$ file  : chr "well_information_template.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "...1"
+  .. .. .. ..$ : chr "Protein...2"
+  .. .. .. ..$ : chr "Ligand...3"
+  .. .. .. ..$ : chr "Protein...4"
+  .. .. .. ..$ : chr "Ligand...5"
+  .. .. .. ..$ : chr "Protein...6"
+  .. .. .. ..$ : chr "Ligand...7"
+  .. .. .. ..$ : chr "Protein...8"
+  .. .. .. ..$ : chr "Ligand...9"
+  .. .. .. ..$ : chr "Protein...10"
+  .. .. .. ..$ : chr "Ligand...11"
+  .. .. .. ..$ : chr "Protein...12"
+  .. .. .. ..$ : chr "Ligand...13"
+  .. .. .. ..$ : chr "Protein...14"
+  .. .. .. ..$ : chr "Ligand...15"
+  .. .. .. ..$ : chr "Protein...16"
+  .. .. .. ..$ : chr "Ligand...17"
+  .. .. .. ..$ : chr "Protein...18"
+  .. .. .. ..$ : chr "Ligand...19"
+  .. .. .. ..$ : chr "Protein...20"
+  .. .. .. ..$ : chr "Ligand...21"
+  .. .. .. ..$ : chr "Protein...22"
+  .. .. .. ..$ : chr "Ligand...23"
+  .. .. .. ..$ : chr "Protein...24"
+  .. .. .. ..$ : chr "Ligand...25"
+  .. .. ..$ rows  : int 9
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  ..$ _help                  :List of 39
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "analyze_norm"
+  .. .. ..$ title : chr "Analyze to Normalize"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "analyze_norm"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "condition_IDs"
+  .. .. ..$ title : chr "TSAR Condition IDs"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "condition_IDs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "example_tsar_data"
+  .. .. ..$ title : chr "Example tsar_data file"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "example_tsar_data"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gam_analysis"
+  .. .. ..$ title : chr "Analysis of all 96 wells through gam modeling"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "gam_analysis"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_legend"
+  .. .. ..$ title : chr "Extract ggplot2 legend"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_legend"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "graph_tsar"
+  .. .. ..$ title : chr "Graph tsar_data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "graph_tsar"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "join_well_info"
+  .. .. ..$ title : chr "Well information input function"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "join_well_info"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "merge_norm"
+  .. .. ..$ title : chr "Merge and format norm_data into tsar_data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "merge_norm"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "merge_tsa"
+  .. .. ..$ title : chr "Merge TSA Raw Data and Analysis Files"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "merge_TSA"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "model_boltzmann"
+  .. .. ..$ title : chr "Boltzmann Modeling on TSA data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "model_boltzmann"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "model_fit"
+  .. .. ..$ title : chr "Refit and calculate derivative function"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "model_fit"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "model_gam"
+  .. .. ..$ title : chr "Generalized Addidtive Modeling on TSA data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "model_gam"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "normalize"
+  .. .. ..$ title : chr "Normalize Fluorescence"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "normalize"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "normalize_fluorescence"
+  .. .. ..$ title : chr "Normalize Fluorescence Curve"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "normalize_fluorescence"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "qPCR_data1"
+  .. .. ..$ title : chr "qPCR_data1 Dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "qPCR_data1"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "qPCR_data2"
+  .. .. ..$ title : chr "qPCR_data2 Dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "qPCR_data2"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "read_analysis"
+  .. .. ..$ title : chr "Read TSA Analysis Data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "read_analysis"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "read_raw_data"
+  .. .. ..$ title : chr "Read TSA Raw Data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "read_raw_data"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "read_tsar"
+  .. .. ..$ title : chr "Read analysis result"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "read_tsar"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "remove_raw"
+  .. .. ..$ title : chr "Remove selected raw curves"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "remove_raw"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "rescale"
+  .. .. ..$ title : chr "Rescale values between minimum and maximum."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "rescale"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "run_boltzmann"
+  .. .. ..$ title : chr "Run Boltzmann Modeling"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "run_boltzmann"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "screen"
+  .. .. ..$ title : chr "Screen raw curves"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "screen"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Tm_difference"
+  .. .. ..$ title : chr "Calculate Tm difference for all conditions"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "Tm_difference"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Tm_est"
+  .. .. ..$ title : chr "Find inflection point function"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "Tm_est"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "tsa_average"
+  .. .. ..$ title : chr "Average TSA Curves"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_average"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TSA_boxplot"
+  .. .. ..$ title : chr "TSA Box Plot"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_boxplot"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "tsa_compare_plot"
+  .. .. ..$ title : chr "Compare TSA curves to control"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_compare_plot"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TSA_ligands"
+  .. .. ..$ title : chr "TSA Ligands"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_ligands"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TSA_proteins"
+  .. .. ..$ title : chr "TSA Proteins"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_proteins"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TSA_Tms"
+  .. .. ..$ title : chr "Reformat TSA data into TSA Tms"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_Tms"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TSA_wells_plot"
+  .. .. ..$ title : chr "TSA Well Curves Plot"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "TSA_wells_plot"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "view_deriv"
+  .. .. ..$ title : chr "View Derivative Curves"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "view_deriv"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "view_model"
+  .. .. ..$ title : chr "View Model"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "view_model"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "weed_raw"
+  .. .. ..$ title : chr "Weed raw data for corrupt curves"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "weed_raw"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "well_IDs"
+  .. .. ..$ title : chr "TSAR Well IDs"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "well_IDs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "well_information"
+  .. .. ..$ title : chr "example well information Data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "well_information"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "well_information_template"
+  .. .. ..$ title : chr "Well Information Template"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "well_information_template"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "write_tsar"
+  .. .. ..$ title : chr "write output files"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "write_tsar"
+  ..$ _readme                : chr "https://github.com/bioc/TSAR/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 134
+  .. ..$ : chr "abind"
+  .. ..$ : chr "askpass"
+  .. ..$ : chr "backports"
+  .. ..$ : chr "base64enc"
+  .. ..$ : chr "boot"
+  .. ..$ : chr "broom"
+  .. ..$ : chr "bslib"
+  .. ..$ : chr "cachem"
+  .. ..$ : chr "car"
+  .. ..$ : chr "carData"
+  .. ..$ : chr "cellranger"
+  .. ..$ : chr "cli"
+  .. ..$ : chr "colorspace"
+  .. ..$ : chr "commonmark"
+  .. ..$ : chr "corrplot"
+  .. ..$ : chr "cowplot"
+  .. ..$ : chr "cpp11"
+  .. ..$ : chr "crayon"
+  .. ..$ : chr "crosstalk"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "data.table"
+  .. ..$ : chr "Deriv"
+  .. ..$ : chr "digest"
+  .. ..$ : chr "doBy"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "evaluate"
+  .. ..$ : chr "farver"
+  .. ..$ : chr "fastmap"
+  .. ..$ : chr "fontawesome"
+  .. ..$ : chr "forecast"
+  .. ..$ : chr "Formula"
+  .. ..$ : chr "fracdiff"
+  .. ..$ : chr "fs"
+  .. ..$ : chr "generics"
+  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "ggpubr"
+  .. ..$ : chr "ggrepel"
+  .. ..$ : chr "ggsci"
+  .. ..$ : chr "ggsignif"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "gridExtra"
+  .. ..$ : chr "gtable"
+  .. ..$ : chr "highr"
+  .. ..$ : chr "hms"
+  .. ..$ : chr "htmltools"
+  .. ..$ : chr "htmlwidgets"
+  .. ..$ : chr "httpuv"
+  .. ..$ : chr "httr"
+  .. ..$ : chr "isoband"
+  .. ..$ : chr "jquerylib"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "knitr"
+  .. ..$ : chr "labeling"
+  .. ..$ : chr "later"
+  .. ..$ : chr "lattice"
+  .. ..$ : chr "lazyeval"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "lme4"
+  .. ..$ : chr "lmtest"
+  .. ..$ : chr "magrittr"
+  .. ..$ : chr "MASS"
+  .. ..$ : chr "Matrix"
+  .. ..$ : chr "MatrixModels"
+  .. ..$ : chr "memoise"
+  .. ..$ : chr "mgcv"
+  .. ..$ : chr "microbenchmark"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "minpack.lm"
+  .. ..$ : chr "minqa"
+  .. ..$ : chr "modelr"
+  .. ..$ : chr "nlme"
+  .. ..$ : chr "nloptr"
+  .. ..$ : chr "nnet"
+  .. ..$ : chr "numDeriv"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "openxlsx"
+  .. ..$ : chr "otel"
+  .. ..$ : chr "pbkrtest"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plotly"
+  .. ..$ : chr "polynom"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
+  .. ..$ : chr "promises"
+  .. ..$ : chr "purrr"
+  .. ..$ : chr "quadprog"
+  .. ..$ : chr "quantmod"
+  .. ..$ : chr "quantreg"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "rappdirs"
+  .. ..$ : chr "rbibutils"
+  .. ..$ : chr "RColorBrewer"
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "RcppArmadillo"
+  .. ..$ : chr "RcppEigen"
+  .. ..$ : chr "Rdpack"
+  .. ..$ : chr "readxl"
+  .. ..$ : chr "reformulas"
+  .. .. [list output truncated]
+  ..$ _score                 : num 3.26
+  ..$ _indexed               : logi TRUE
+  ..$ _nocasepkg             : chr "tsar"
+  ..$ _universes             :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "hpages"
-  .. ..$ : chr "bioconductor"
-  ..$ _previous         : chr "1.7.0"
-  ..$ _binaries         :List of 8
+  .. ..$ : chr "cgao123"
+  ..$ _previous              : chr "1.9.0"
+  ..$ _binaries              :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:49:16.000Z"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T03:58:52.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "54f2d9f23ffcafa6408a9ed27f1031303f12765112d0627466b8f609f0d4c7c7"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "ae0421c8277353a635af56af2fc970215b150dbe4039213a4e55fa9fa89b362a"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:49:24.000Z"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T04:02:13.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "ff18fb1684081f0ce1d05d77a7dd3592dab310d55857511fec4a84283578007f"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "0406b49c69f49c157e96a335c0f94f04de34be4438ec134741b8b24577c8c431"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:49:38.000Z"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "effb2a81419528cac9f7dba23912089df199336a6ff9a1a2c1b929ebabcdb003"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T03:58:38.000Z"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "f54bd199d2173ebe42f732f600786cb1cc2d0efca741b3d9f3d732d4262d8824"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:49:02.000Z"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "66d21fa19237d450cec91e91364a13e546d2f9700799806ec2982c4b14087d4a"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T03:58:21.000Z"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "101b4e20eb1c689448382ab49630bbe44e0b68b7e5d667c360b3071ae536eaed"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:49:17.000Z"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "492f1eb0fe5cd8d7f046fc8597cd44516a13f41d704a391e81f4aa25d9a30df6"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T04:02:57.000Z"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "3cf0611a36312d5d7538581fe2355900606f3879b81d5eb6246d76428e9f5d71"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:48:11.000Z"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "e92de297eda8fc9124cca87e1bba500d11cc0ead391b83e0618cb46fab380494"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T03:58:39.000Z"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "1104b26e5c73ad82707b262932eef84c625f16d0041fb1305506a6f567d684a1"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:48:35.000Z"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "e5404be20e062833de47288edfde1f7b191aea9f53e5f9f20f5a3e673297d5fc"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T03:59:42.000Z"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "08003fa7760ffa421045514c087a9f02b3c3cd3fe89b06a33fe4c62452c54621"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.1"
-  .. .. ..$ date    : chr "2025-12-09T07:48:15.000Z"
-  .. .. ..$ commit  : chr "54b281b5e78d937794bf243155587a8e2596d065"
-  .. .. ..$ fileid  : chr "3a556e486d38d79394c07abeb63a0b173dd6d05d88f7cd179bb31786d7d3eedf"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20055812728"</code></pre>
+  .. .. ..$ version : chr "1.9.2"
+  .. .. ..$ date    : chr "2025-12-10T04:00:14.000Z"
+  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
+  .. .. ..$ fileid  : chr "9b5b870c9d109bc617cda201429e9d62805488f1043af0279233972e492495f2"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
