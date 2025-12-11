@@ -670,253 +670,361 @@ Total 2333 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 75
-  ..$ Package                : chr "TSAR"
-  ..$ Type                   : chr "Package"
-  ..$ Title                  : chr "Thermal Shift Analysis in R"
-  ..$ Version                : chr "1.9.2"
-  ..$ Year                   : chr "2025"
-  ..$ Authors@R              : chr "c(person(\"Xinlin\", \n\"Gao\",\nemail = \"candygao2015@outlook.com\",\nrole = c(\"aut\", \"cre\"),\ncomment = "| __truncated__
-  ..$ Description            : chr "This package automates analysis workflow for Thermal Shift\nAnalysis (TSA) data. Processing, analyzing, and vis"| __truncated__
-  ..$ License                : chr "AGPL-3"
-  ..$ Encoding               : chr "UTF-8"
-  ..$ LazyData               : chr "false"
-  ..$ Testthat               : chr "true"
-  ..$ RoxygenNote            : chr "7.2.3"
-  ..$ VignetteBuilder        : chr "knitr"
-  ..$ biocViews              : chr "Software, ShinyApps, Visualization, qPCR"
-  ..$ DataRaw                : chr "data/qPCR_data1.rda"
-  ..$ DataRaw2               : chr "data/qPCR_data2.rda"
-  ..$ DataRaw3               : chr "data/Well_Information.rda"
-  ..$ DataRaw4               : chr "data/Well_Information_Template.rda"
-  ..$ DataRawr               : chr "data/example_tsar_data.rda"
-  ..$ Config/testthat/edition: chr "3"
-  ..$ Config/pak/sysreqs     : chr "cmake make libicu-dev libssl-dev zlib1g-dev"
-  ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2025-12-10 00:02:17 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/TSAR"
-  ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  ..$ NeedsCompilation       : chr "no"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2025-12-10 03:56:08 UTC"
+ $ :List of 73
+  ..$ Package           : chr "BiocCheck"
+  ..$ Title             : chr "Bioconductor-specific package checks"
+  ..$ Version           : chr "1.47.7"
+  ..$ Date              : chr "2025-12-10"
+  ..$ Authors@R         : chr "c(\nperson(\"Bioconductor\", \"Package Maintainer\", ,\n\"maintainer@bioconductor.org\", \"aut\"),\nperson(\"Lo"| __truncated__
+  ..$ Description       : chr "BiocCheck guides maintainers through Bioconductor best\npracticies. It runs Bioconductor-specific package check"| __truncated__
+  ..$ License           : chr "Artistic-2.0"
+  ..$ URL               : chr "https://github.com/Bioconductor/BiocCheck"
+  ..$ BugReports        : chr "https://github.com/Bioconductor/BiocCheck/issues"
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ biocViews         : chr "Infrastructure"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ Roxygen           : chr "list(markdown = TRUE)"
+  ..$ RoxygenNote       : chr "7.3.3"
+  ..$ Config/pak/sysreqs: chr "make libicu-dev libxml2-dev libssl-dev"
+  ..$ Repository        : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication  : chr "2025-12-10 22:25:28 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/BiocCheck"
+  ..$ RemoteRef         : chr "HEAD"
+  ..$ RemoteSha         : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  ..$ NeedsCompilation  : chr "no"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2025-12-11 03:53:00 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Xinlin Gao [aut, cre] (ORCID: &lt;https://orcid.org/0009-0002-2518-235X&gt;),\nWilliam M. McFadden [aut, fnd] (ORCID:"| __truncated__
-  ..$ Maintainer             : chr "Xinlin Gao &lt;candygao2015@outlook.com&gt;"
-  ..$ MD5sum                 : chr "cf4caea6fdb264ed837f17ded13547ac"
-  ..$ _user                  : chr "bioc"
-  ..$ _type                  : chr "src"
-  ..$ _file                  : chr "TSAR_1.9.2.tar.gz"
-  ..$ _fileid                : chr "f0ea683236ceb9a4ce278de39fdb70191afdf551938789254b444415dd27e413"
-  ..$ _filesize              : int 4219148
-  ..$ _sha256                : chr "f0ea683236ceb9a4ce278de39fdb70191afdf551938789254b444415dd27e413"
-  ..$ _created               : chr "2025-12-10T03:56:08.000Z"
-  ..$ _published             : chr "2025-12-10T04:03:27.439Z"
-  ..$ _jobs                  :List of 10
+  ..$ Author            : chr "Bioconductor Package Maintainer [aut],\nLori Shepherd [aut],\nDaniel von Twisk [ctb],\nKevin Rue [ctb],\nMarcel"| __truncated__
+  ..$ Maintainer        : chr "Marcel Ramos &lt;marcel.ramos@sph.cuny.edu&gt;"
+  ..$ MD5sum            : chr "312d99719bdeaeb4316a9607a1504b0d"
+  ..$ _user             : chr "bioc"
+  ..$ _type             : chr "src"
+  ..$ _file             : chr "BiocCheck_1.47.7.tar.gz"
+  ..$ _fileid           : chr "0f291593d046d656e6110a31ce3ddb3be64713282dda9c64c0bdcf50a8002ec4"
+  ..$ _filesize         : int 219919
+  ..$ _sha256           : chr "0f291593d046d656e6110a31ce3ddb3be64713282dda9c64c0bdcf50a8002ec4"
+  ..$ _created          : chr "2025-12-11T03:53:00.000Z"
+  ..$ _published        : chr "2025-12-11T03:59:34.313Z"
+  ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 388
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 235
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "4819854687"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833167586"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 196
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 276
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819834835"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833171229"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 396
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 353
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819855654"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833178320"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 162
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 234
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819831819"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833167308"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 159
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 218
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819831437"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833165822"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 461
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 284
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819815064"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4833143470"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 382
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 229
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4819854040"
+  .. .. ..$ artifact: chr "4833166842"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 204
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 239
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819835692"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833167890"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 267
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 234
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819842563"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833167786"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.76e+10
-  .. .. ..$ time    : int 297
+  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ time    : int 248
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4819845671"
-  ..$ _bioccheck             :List of 3
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4833168746"
+  ..$ _bioccheck        :List of 3
   .. ..$ error  : int 0
-  .. ..$ warning: int 1
-  .. ..$ note   : int 11
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
-  ..$ _status                : chr "failure"
-  ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/TSAR"
-  ..$ _commit                :List of 5
-  .. ..$ id       : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. ..$ author   : chr "CGAO123 &lt;candygao2015@outlook.com&gt;"
-  .. ..$ committer: chr "CGAO123 &lt;candygao2015@outlook.com&gt;"
-  .. ..$ message  : chr "Remove large data files from vignettes\n"
-  .. ..$ time     : int 1765324937
-  ..$ _maintainer            :List of 5
-  .. ..$ name    : chr "Xinlin Gao"
-  .. ..$ email   : chr "candygao2015@outlook.com"
-  .. ..$ login   : chr "cgao123"
-  .. ..$ linkedin: chr "in/xinlingao"
-  .. ..$ uuid    : int 46572407
-  ..$ _distro                : chr "noble"
-  ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 21
+  .. ..$ warning: int 0
+  .. ..$ note   : int 7
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  ..$ _status           : chr "success"
+  ..$ _host             : chr "GitHub-Actions"
+  ..$ _upstream         : chr "https://github.com/bioc/BiocCheck"
+  ..$ _commit           :List of 5
+  .. ..$ id       : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. ..$ author   : chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. ..$ committer: chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. ..$ message  : chr "version bump 1.47.7\n"
+  .. ..$ time     : int 1765405528
+  ..$ _maintainer       :List of 8
+  .. ..$ name    : chr "Marcel Ramos"
+  .. ..$ email   : chr "marcel.ramos@sph.cuny.edu"
+  .. ..$ login   : chr "link-ny"
+  .. ..$ bluesky : chr "@mramos148.bsky.social"
+  .. ..$ linkedin: chr "in/mramos148"
+  .. ..$ orcid   : chr "0000-0002-3242-0582"
+  .. ..$ twitter : chr "@M2RuseR"
+  .. ..$ uuid    : int 4392950
+  ..$ _distro           : chr "noble"
+  ..$ _registered       : logi TRUE
+  ..$ _dependencies     :List of 23
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.3.0"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "dplyr"
-  .. .. ..$ version: chr "&gt;= 1.0.7"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocBaseUtils"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ version: chr "&gt;= 3.3.5"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocFileCache"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "ggpubr"
-  .. .. ..$ version: chr "&gt;= 0.4.0"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocManager"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "magrittr"
-  .. .. ..$ version: chr "&gt;= 2.0.3"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "biocViews"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "mgcv"
-  .. .. ..$ version: chr "&gt;= 1.8.38"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "callr"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "readxl"
-  .. .. ..$ version: chr "&gt;= 1.4.0"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "cli"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "stringr"
-  .. .. ..$ version: chr "&gt;= 1.4.0"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "codetools"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "tidyr"
-  .. .. ..$ version: chr "&gt;= 1.1.4"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "graph"
   .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "utils"
-  .. .. ..$ version: chr "&gt;= 4.3.1"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "shiny"
-  .. .. ..$ version: chr "&gt;= 1.7.4.1"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "plotly"
-  .. .. ..$ version: chr "&gt;= 4.10.2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "shinyjs"
-  .. .. ..$ version: chr "&gt;= 2.1.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "jsonlite"
-  .. .. ..$ version: chr "&gt;= 1.8.7"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "rhandsontable"
-  .. .. ..$ version: chr "&gt;= 0.3.8"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "openxlsx"
-  .. .. ..$ version: chr "&gt;= 4.2.5.2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "shinyWidgets"
-  .. .. ..$ version: chr "&gt;= 0.7.6"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "minpack.lm"
-  .. .. ..$ version: chr "&gt;= 1.2.3"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "httr2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rvest"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "stringdist"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tools"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "utils"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "devtools"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "gert"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "jsonlite"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tinytest"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner                 : chr "bioc"
-  ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 3
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "usethis"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner            : chr "bioc"
+  ..$ _selfowned        : logi TRUE
+  ..$ _usedby           : int 6
+  ..$ _updates          :List of 17
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2024-52"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-06"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-08"
+  .. .. ..$ n   : int 25
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-14"
+  .. .. ..$ n   : int 8
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-17"
+  .. .. ..$ n   : int 21
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-18"
+  .. .. ..$ n   : int 12
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-20"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-28"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-30"
+  .. .. ..$ n   : int 11
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-32"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ n   : int 17
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-42"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-44"
+  .. .. ..$ n   : int 3
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 1
+  .. .. ..$ n   : int 6
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-47"
-  .. .. ..$ n   : int 1
+  .. .. ..$ n   : int 17
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-50"
-  .. .. ..$ n   : int 3
-  ..$ _tags                  : list()
-  ..$ _bioc                  :List of 2
+  .. .. ..$ n   : int 4
+  ..$ _tags             : list()
+  ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.9.0"
+  .. .. ..$ version: chr "1.47.1"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.8.0"
+  .. .. ..$ version: chr "1.46.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics                :List of 4
-  .. ..$ : chr "software"
-  .. ..$ : chr "shinyapps"
-  .. ..$ : chr "visualization"
-  .. ..$ : chr "qpcr"
-  ..$ _userbio               :List of 33
+  ..$ _topics           :List of 3
+  .. ..$ : chr "infrastructure"
+  .. ..$ : chr "bioconductor-package"
+  .. ..$ : chr "core-services"
+  ..$ _stars            : int 9
+  ..$ _contributors     :List of 20
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "link-ny"
+  .. .. ..$ count: int 259
+  .. .. ..$ uuid : int 4392950
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "dtenenba"
+  .. .. ..$ count: int 183
+  .. .. ..$ uuid : int 2286826
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "lshep"
+  .. .. ..$ count: int 127
+  .. .. ..$ uuid : int 18724380
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "mtmorgan"
+  .. .. ..$ count: int 22
+  .. .. ..$ uuid : int 118552
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 16
+  .. .. ..$ uuid : int 2746443
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "federicomarini"
+  .. .. ..$ count: int 11
+  .. .. ..$ uuid : int 7447478
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "grimbough"
+  .. .. ..$ count: int 11
+  .. .. ..$ uuid : int 971237
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 10
+  .. .. ..$ uuid : int 1744257
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "dvantwisk"
+  .. .. ..$ count: int 8
+  .. .. ..$ uuid : int 10927671
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "lcolladotor"
+  .. .. ..$ count: int 6
+  .. .. ..$ uuid : int 2288213
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "zeehio"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 75441
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "pkrog"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 15377906
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "llrs"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 6818218
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "c-mertes"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 22544249
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "freekmanders"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 37289973
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "hpages"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 8810451
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vobencha"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 2466173
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "bisaloo"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 10783929
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jimhester"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 205275
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "shians"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 6036662
+  ..$ _userbio          :List of 33
   .. ..$ login              : chr "Bioconductor"
   .. ..$ id                 : int 2286807
   .. ..$ node_id            : chr "MDEyOk9yZ2FuaXphdGlvbjIyODY4MDc="
@@ -944,18 +1052,20 @@ Total 2333 2361</code></pre>
   .. ..$ hireable           : Named list()
   .. ..$ bio                : chr "Software for the analysis and comprehension of high-throughput genomic data"
   .. ..$ twitter_username   : Named list()
-  .. ..$ public_repos       : int 336
+  .. ..$ public_repos       : int 337
   .. ..$ public_gists       : int 0
   .. ..$ followers          : int 392
   .. ..$ following          : int 0
   .. ..$ created_at         : chr "2012-09-05T18:43:31Z"
   .. ..$ updated_at         : chr "2023-06-27T18:11:03Z"
-  ..$ _downloads             :List of 2
-  .. ..$ count : int 210
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/TSAR"
-  ..$ _searchresults         : int 12
-  ..$ _rbuild                : chr "4.5.2"
-  ..$ _assets                :List of 11
+  ..$ _downloads        :List of 2
+  .. ..$ count : int 2907
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/BiocCheck"
+  ..$ _devurl           : chr "https://github.com/bioconductor/bioccheck"
+  ..$ _searchresults    : int 121
+  ..$ _rbuild           : chr "4.5.2"
+  ..$ _assets           :List of 11
+  .. ..$ : chr "extra/BiocCheck.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -965,563 +1075,237 @@ Total 2333 2361</code></pre>
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/TSAR.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _realowner             : chr "bioc"
-  ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 34
-  .. ..$ : chr "analyze_norm"
-  .. ..$ : chr "condition_IDs"
-  .. ..$ : chr "gam_analysis"
-  .. ..$ : chr "get_legend"
-  .. ..$ : chr "graph_tsar"
-  .. ..$ : chr "join_well_info"
-  .. ..$ : chr "merge_norm"
-  .. ..$ : chr "merge_TSA"
-  .. ..$ : chr "model_boltzmann"
-  .. ..$ : chr "model_fit"
-  .. ..$ : chr "model_gam"
-  .. ..$ : chr "normalize"
-  .. ..$ : chr "normalize_fluorescence"
-  .. ..$ : chr "read_analysis"
-  .. ..$ : chr "read_raw_data"
-  .. ..$ : chr "read_tsar"
-  .. ..$ : chr "remove_raw"
-  .. ..$ : chr "rescale"
-  .. ..$ : chr "run_boltzmann"
-  .. ..$ : chr "screen"
-  .. ..$ : chr "Tm_difference"
-  .. ..$ : chr "Tm_est"
-  .. ..$ : chr "TSA_average"
-  .. ..$ : chr "TSA_boxplot"
-  .. ..$ : chr "TSA_compare_plot"
-  .. ..$ : chr "TSA_ligands"
-  .. ..$ : chr "TSA_proteins"
-  .. ..$ : chr "TSA_Tms"
-  .. ..$ : chr "TSA_wells_plot"
-  .. ..$ : chr "view_deriv"
-  .. ..$ : chr "view_model"
-  .. ..$ : chr "weed_raw"
-  .. ..$ : chr "well_IDs"
-  .. ..$ : chr "write_tsar"
-  ..$ _datasets              :List of 5
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "example_tsar_data"
-  .. .. ..$ title : chr "Example tsar_data file"
-  .. .. ..$ object: chr "example_tsar_data"
-  .. .. ..$ file  : chr "example_tsar_data.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 11
-  .. .. .. ..$ : chr "Well"
-  .. .. .. ..$ : chr "Temperature"
-  .. .. .. ..$ : chr "Fluorescence"
-  .. .. .. ..$ : chr "Normalized"
-  .. .. .. ..$ : chr "norm_deriv"
-  .. .. .. ..$ : chr "Tm"
-  .. .. .. ..$ : chr "Protein"
-  .. .. .. ..$ : chr "Ligand"
-  .. .. .. ..$ : chr "ExperimentFileName"
-  .. .. .. ..$ : chr "well_ID"
-  .. .. .. ..$ : chr "condition_ID"
-  .. .. ..$ rows  : int 28290
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "qPCR_data1"
-  .. .. ..$ title : chr "qPCR_data1 Dataset"
-  .. .. ..$ object: chr "qPCR_data1"
-  .. .. ..$ file  : chr "qPCR_data1.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 5
-  .. .. .. ..$ : chr "Well"
-  .. .. .. ..$ : chr "Well.Position"
-  .. .. .. ..$ : chr "Reading"
-  .. .. .. ..$ : chr "Temperature"
-  .. .. .. ..$ : chr "Fluorescence"
-  .. .. ..$ rows  : int 29544
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "qPCR_data2"
-  .. .. ..$ title : chr "qPCR_data2 Dataset"
-  .. .. ..$ object: chr "qPCR_data2"
-  .. .. ..$ file  : chr "qPCR_data2.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 5
-  .. .. .. ..$ : chr "Well"
-  .. .. .. ..$ : chr "Well.Position"
-  .. .. .. ..$ : chr "Reading"
-  .. .. .. ..$ : chr "Temperature"
-  .. .. .. ..$ : chr "Fluorescence"
-  .. .. ..$ rows  : int 29544
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "well_information"
-  .. .. ..$ title : chr "example well information Data"
-  .. .. ..$ object: chr "well_information"
-  .. .. ..$ file  : chr "well_information.rda"
-  .. .. ..$ class :List of 3
-  .. .. .. ..$ : chr "tbl_df"
-  .. .. .. ..$ : chr "tbl"
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 25
-  .. .. .. ..$ : chr "...1"
-  .. .. .. ..$ : chr "Protein...2"
-  .. .. .. ..$ : chr "Ligand...3"
-  .. .. .. ..$ : chr "Protein...4"
-  .. .. .. ..$ : chr "Ligand...5"
-  .. .. .. ..$ : chr "Protein...6"
-  .. .. .. ..$ : chr "Ligand...7"
-  .. .. .. ..$ : chr "Protein...8"
-  .. .. .. ..$ : chr "Ligand...9"
-  .. .. .. ..$ : chr "Protein...10"
-  .. .. .. ..$ : chr "Ligand...11"
-  .. .. .. ..$ : chr "Protein...12"
-  .. .. .. ..$ : chr "Ligand...13"
-  .. .. .. ..$ : chr "Protein...14"
-  .. .. .. ..$ : chr "Ligand...15"
-  .. .. .. ..$ : chr "Protein...16"
-  .. .. .. ..$ : chr "Ligand...17"
-  .. .. .. ..$ : chr "Protein...18"
-  .. .. .. ..$ : chr "Ligand...19"
-  .. .. .. ..$ : chr "Protein...20"
-  .. .. .. ..$ : chr "Ligand...21"
-  .. .. .. ..$ : chr "Protein...22"
-  .. .. .. ..$ : chr "Ligand...23"
-  .. .. .. ..$ : chr "Protein...24"
-  .. .. .. ..$ : chr "Ligand...25"
-  .. .. ..$ rows  : int 9
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "well_information_template"
-  .. .. ..$ title : chr "Well Information Template"
-  .. .. ..$ object: chr "well_information_template"
-  .. .. ..$ file  : chr "well_information_template.rda"
-  .. .. ..$ class :List of 3
-  .. .. .. ..$ : chr "tbl_df"
-  .. .. .. ..$ : chr "tbl"
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 25
-  .. .. .. ..$ : chr "...1"
-  .. .. .. ..$ : chr "Protein...2"
-  .. .. .. ..$ : chr "Ligand...3"
-  .. .. .. ..$ : chr "Protein...4"
-  .. .. .. ..$ : chr "Ligand...5"
-  .. .. .. ..$ : chr "Protein...6"
-  .. .. .. ..$ : chr "Ligand...7"
-  .. .. .. ..$ : chr "Protein...8"
-  .. .. .. ..$ : chr "Ligand...9"
-  .. .. .. ..$ : chr "Protein...10"
-  .. .. .. ..$ : chr "Ligand...11"
-  .. .. .. ..$ : chr "Protein...12"
-  .. .. .. ..$ : chr "Ligand...13"
-  .. .. .. ..$ : chr "Protein...14"
-  .. .. .. ..$ : chr "Ligand...15"
-  .. .. .. ..$ : chr "Protein...16"
-  .. .. .. ..$ : chr "Ligand...17"
-  .. .. .. ..$ : chr "Protein...18"
-  .. .. .. ..$ : chr "Ligand...19"
-  .. .. .. ..$ : chr "Protein...20"
-  .. .. .. ..$ : chr "Ligand...21"
-  .. .. .. ..$ : chr "Protein...22"
-  .. .. .. ..$ : chr "Ligand...23"
-  .. .. .. ..$ : chr "Protein...24"
-  .. .. .. ..$ : chr "Ligand...25"
-  .. .. ..$ rows  : int 9
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  ..$ _help                  :List of 39
+  ..$ _homeurl          : chr "https://github.com/bioconductor/bioccheck"
+  ..$ _realowner        : chr "bioc"
+  ..$ _cranurl          : logi FALSE
+  ..$ _exports          :List of 4
+  .. ..$ : chr ".BiocCheck"
+  .. ..$ : chr ".BiocPackage"
+  .. ..$ : chr "BiocCheck"
+  .. ..$ : chr "BiocCheckGitClone"
+  ..$ _help             :List of 3
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "analyze_norm"
-  .. .. ..$ title : chr "Analyze to Normalize"
+  .. .. ..$ page  : chr "BiocCheck"
+  .. .. ..$ title : chr "Check a package's adherence with the Bioconductor Package Guidelines"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "analyze_norm"
+  .. .. .. ..$ : chr "BiocCheck"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "condition_IDs"
-  .. .. ..$ title : chr "TSAR Condition IDs"
+  .. .. ..$ page  : chr "BiocCheck-class"
+  .. .. ..$ title : chr "An internal class for composing BiocCheck reports"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "condition_IDs"
+  .. .. .. ..$ : chr "BiocCheck-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "example_tsar_data"
-  .. .. ..$ title : chr "Example tsar_data file"
+  .. .. ..$ page  : chr "BiocCheckGitClone"
+  .. .. ..$ title : chr "Checks specific to a Git clone of a package repository"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "example_tsar_data"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gam_analysis"
-  .. .. ..$ title : chr "Analysis of all 96 wells through gam modeling"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gam_analysis"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "get_legend"
-  .. .. ..$ title : chr "Extract ggplot2 legend"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "get_legend"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "graph_tsar"
-  .. .. ..$ title : chr "Graph tsar_data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "graph_tsar"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "join_well_info"
-  .. .. ..$ title : chr "Well information input function"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "join_well_info"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "merge_norm"
-  .. .. ..$ title : chr "Merge and format norm_data into tsar_data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "merge_norm"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "merge_tsa"
-  .. .. ..$ title : chr "Merge TSA Raw Data and Analysis Files"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "merge_TSA"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "model_boltzmann"
-  .. .. ..$ title : chr "Boltzmann Modeling on TSA data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "model_boltzmann"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "model_fit"
-  .. .. ..$ title : chr "Refit and calculate derivative function"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "model_fit"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "model_gam"
-  .. .. ..$ title : chr "Generalized Addidtive Modeling on TSA data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "model_gam"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "normalize"
-  .. .. ..$ title : chr "Normalize Fluorescence"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "normalize"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "normalize_fluorescence"
-  .. .. ..$ title : chr "Normalize Fluorescence Curve"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "normalize_fluorescence"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "qPCR_data1"
-  .. .. ..$ title : chr "qPCR_data1 Dataset"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "qPCR_data1"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "qPCR_data2"
-  .. .. ..$ title : chr "qPCR_data2 Dataset"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "qPCR_data2"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "read_analysis"
-  .. .. ..$ title : chr "Read TSA Analysis Data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "read_analysis"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "read_raw_data"
-  .. .. ..$ title : chr "Read TSA Raw Data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "read_raw_data"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "read_tsar"
-  .. .. ..$ title : chr "Read analysis result"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "read_tsar"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "remove_raw"
-  .. .. ..$ title : chr "Remove selected raw curves"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "remove_raw"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "rescale"
-  .. .. ..$ title : chr "Rescale values between minimum and maximum."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "rescale"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "run_boltzmann"
-  .. .. ..$ title : chr "Run Boltzmann Modeling"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "run_boltzmann"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "screen"
-  .. .. ..$ title : chr "Screen raw curves"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "screen"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "Tm_difference"
-  .. .. ..$ title : chr "Calculate Tm difference for all conditions"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Tm_difference"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "Tm_est"
-  .. .. ..$ title : chr "Find inflection point function"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Tm_est"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "tsa_average"
-  .. .. ..$ title : chr "Average TSA Curves"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_average"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "TSA_boxplot"
-  .. .. ..$ title : chr "TSA Box Plot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_boxplot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "tsa_compare_plot"
-  .. .. ..$ title : chr "Compare TSA curves to control"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_compare_plot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "TSA_ligands"
-  .. .. ..$ title : chr "TSA Ligands"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_ligands"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "TSA_proteins"
-  .. .. ..$ title : chr "TSA Proteins"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_proteins"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "TSA_Tms"
-  .. .. ..$ title : chr "Reformat TSA data into TSA Tms"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_Tms"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "TSA_wells_plot"
-  .. .. ..$ title : chr "TSA Well Curves Plot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "TSA_wells_plot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "view_deriv"
-  .. .. ..$ title : chr "View Derivative Curves"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "view_deriv"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "view_model"
-  .. .. ..$ title : chr "View Model"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "view_model"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "weed_raw"
-  .. .. ..$ title : chr "Weed raw data for corrupt curves"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "weed_raw"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "well_IDs"
-  .. .. ..$ title : chr "TSAR Well IDs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "well_IDs"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "well_information"
-  .. .. ..$ title : chr "example well information Data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "well_information"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "well_information_template"
-  .. .. ..$ title : chr "Well Information Template"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "well_information_template"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "write_tsar"
-  .. .. ..$ title : chr "write output files"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "write_tsar"
-  ..$ _readme                : chr "https://github.com/bioc/TSAR/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 134
-  .. ..$ : chr "abind"
+  .. .. .. ..$ : chr "BiocCheckGitClone"
+  ..$ _readme           : chr "https://github.com/bioc/BiocCheck/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 66
   .. ..$ : chr "askpass"
-  .. ..$ : chr "backports"
-  .. ..$ : chr "base64enc"
-  .. ..$ : chr "boot"
-  .. ..$ : chr "broom"
-  .. ..$ : chr "bslib"
+  .. ..$ : chr "BH"
+  .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocBaseUtils"
+  .. ..$ : chr "BiocFileCache"
+  .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocManager"
+  .. ..$ : chr "biocViews"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "bitops"
+  .. ..$ : chr "blob"
   .. ..$ : chr "cachem"
-  .. ..$ : chr "car"
-  .. ..$ : chr "carData"
-  .. ..$ : chr "cellranger"
+  .. ..$ : chr "callr"
   .. ..$ : chr "cli"
-  .. ..$ : chr "colorspace"
-  .. ..$ : chr "commonmark"
-  .. ..$ : chr "corrplot"
-  .. ..$ : chr "cowplot"
+  .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "crayon"
-  .. ..$ : chr "crosstalk"
   .. ..$ : chr "curl"
-  .. ..$ : chr "data.table"
-  .. ..$ : chr "Deriv"
-  .. ..$ : chr "digest"
-  .. ..$ : chr "doBy"
+  .. ..$ : chr "DBI"
+  .. ..$ : chr "dbplyr"
   .. ..$ : chr "dplyr"
   .. ..$ : chr "evaluate"
-  .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
-  .. ..$ : chr "fontawesome"
-  .. ..$ : chr "forecast"
-  .. ..$ : chr "Formula"
-  .. ..$ : chr "fracdiff"
-  .. ..$ : chr "fs"
+  .. ..$ : chr "filelock"
   .. ..$ : chr "generics"
-  .. ..$ : chr "ggplot2"
-  .. ..$ : chr "ggpubr"
-  .. ..$ : chr "ggrepel"
-  .. ..$ : chr "ggsci"
-  .. ..$ : chr "ggsignif"
   .. ..$ : chr "glue"
-  .. ..$ : chr "gridExtra"
-  .. ..$ : chr "gtable"
+  .. ..$ : chr "graph"
   .. ..$ : chr "highr"
-  .. ..$ : chr "hms"
-  .. ..$ : chr "htmltools"
-  .. ..$ : chr "htmlwidgets"
-  .. ..$ : chr "httpuv"
   .. ..$ : chr "httr"
-  .. ..$ : chr "isoband"
-  .. ..$ : chr "jquerylib"
+  .. ..$ : chr "httr2"
   .. ..$ : chr "jsonlite"
   .. ..$ : chr "knitr"
-  .. ..$ : chr "labeling"
-  .. ..$ : chr "later"
-  .. ..$ : chr "lattice"
-  .. ..$ : chr "lazyeval"
   .. ..$ : chr "lifecycle"
-  .. ..$ : chr "lme4"
-  .. ..$ : chr "lmtest"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "MASS"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixModels"
   .. ..$ : chr "memoise"
-  .. ..$ : chr "mgcv"
-  .. ..$ : chr "microbenchmark"
   .. ..$ : chr "mime"
-  .. ..$ : chr "minpack.lm"
-  .. ..$ : chr "minqa"
-  .. ..$ : chr "modelr"
-  .. ..$ : chr "nlme"
-  .. ..$ : chr "nloptr"
-  .. ..$ : chr "nnet"
-  .. ..$ : chr "numDeriv"
   .. ..$ : chr "openssl"
-  .. ..$ : chr "openxlsx"
-  .. ..$ : chr "otel"
-  .. ..$ : chr "pbkrtest"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plotly"
-  .. ..$ : chr "polynom"
-  .. ..$ : chr "prettyunits"
-  .. ..$ : chr "progress"
-  .. ..$ : chr "promises"
+  .. ..$ : chr "plogr"
+  .. ..$ : chr "processx"
+  .. ..$ : chr "ps"
   .. ..$ : chr "purrr"
-  .. ..$ : chr "quadprog"
-  .. ..$ : chr "quantmod"
-  .. ..$ : chr "quantreg"
   .. ..$ : chr "R6"
   .. ..$ : chr "rappdirs"
-  .. ..$ : chr "rbibutils"
-  .. ..$ : chr "RColorBrewer"
-  .. ..$ : chr "Rcpp"
-  .. ..$ : chr "RcppArmadillo"
-  .. ..$ : chr "RcppEigen"
-  .. ..$ : chr "Rdpack"
-  .. ..$ : chr "readxl"
-  .. ..$ : chr "reformulas"
-  .. .. [list output truncated]
-  ..$ _score                 : num 3.26
-  ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "tsar"
-  ..$ _universes             :List of 2
+  .. ..$ : chr "RBGL"
+  .. ..$ : chr "RCurl"
+  .. ..$ : chr "rlang"
+  .. ..$ : chr "RSQLite"
+  .. ..$ : chr "RUnit"
+  .. ..$ : chr "rvest"
+  .. ..$ : chr "selectr"
+  .. ..$ : chr "stringdist"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "withr"
+  .. ..$ : chr "xfun"
+  .. ..$ : chr "XML"
+  .. ..$ : chr "xml2"
+  .. ..$ : chr "yaml"
+  ..$ _vignettes        :List of 1
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "BiocCheck.Rmd"
+  .. .. ..$ filename: chr "BiocCheck.html"
+  .. .. ..$ title   : chr "BiocCheck: Ensuring Bioconductor package guidelines"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 38
+  .. .. .. ..$ : chr "BiocCheck Summary"
+  .. .. .. ..$ : chr "Using BiocCheck"
+  .. .. .. ..$ : chr "When should BiocCheck be run"
+  .. .. .. ..$ : chr "Installing BiocCheck"
+  .. .. .. ..$ : chr "Interpreting BiocCheck output"
+  .. .. .. ..$ : chr "Installation"
+  .. .. .. ..$ : chr "Deprecated Package Checks"
+  .. .. .. ..$ : chr "Remotes Usage Check"
+  .. .. .. ..$ : chr "LazyData Usage Check"
+  .. .. .. ..$ : chr "Version Checks"
+  .. .. .. ..$ : chr "Package and File Size Check"
+  .. .. .. ..$ : chr "biocViews Checks"
+  .. .. .. ..$ : chr "Build System Compatibility Checks"
+  .. .. .. ..$ : chr "DESCRIPTION checks"
+  .. .. .. ..$ : chr "NAMESPACE checks"
+  .. .. .. ..$ : chr ".Rbuildignore checks"
+  .. .. .. ..$ : chr "BiocCheck output folder check"
+  .. .. .. ..$ : chr "Check for inst/doc folder"
+  .. .. .. ..$ : chr "Vignette Checks"
+  .. .. .. ..$ : chr "Checking Install or Update Package Calls in R code"
+  .. .. .. ..$ : chr "Coding Practices Checks"
+  .. .. .. ..$ : chr "Function length checking"
+  .. .. .. ..$ : chr "man page checking"
+  .. .. .. ..$ : chr "NEWS checks"
+  .. .. .. ..$ : chr "Unit Test Checks"
+  .. .. .. ..$ : chr "Formatting checks"
+  .. .. .. ..$ : chr "Duplication checks"
+  .. .. .. ..$ : chr "bioc-devel Subscription Check"
+  .. .. .. ..$ : chr "Support Site Registration Check"
+  .. .. .. ..$ : chr "BiocCheckGitClone"
+  .. .. .. ..$ : chr "Using BiocCheckGitClone"
+  .. .. .. ..$ : chr "Installing BiocCheckGitClone"
+  .. .. .. ..$ : chr "Interpreting BiocCheckGitClone output"
+  .. .. .. ..$ : chr "Bad File Check"
+  .. .. .. ..$ : chr "Description Check"
+  .. .. .. ..$ : chr "CITATION checks"
+  .. .. .. ..$ : chr "Expanding BiocCheck"
+  .. .. .. ..$ : chr "SessionInfo"
+  .. .. ..$ created : chr "2014-01-21 21:57:08"
+  .. .. ..$ modified: chr "2025-11-20 19:25:29"
+  .. .. ..$ commits : int 117
+  ..$ _score            : num 9.96
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "bioccheck"
+  ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "cgao123"
-  ..$ _previous              : chr "1.9.0"
-  ..$ _binaries              :List of 8
+  .. ..$ : chr "link-ny"
+  .. ..$ : chr "bioconductor"
+  ..$ _previous         : chr "1.47.6"
+  ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T03:58:52.000Z"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:55:50.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "ae0421c8277353a635af56af2fc970215b150dbe4039213a4e55fa9fa89b362a"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "ca388e62de1053854f61f2586b8dc603b5a4b2d764fc98f9c73e3c5a2b99e47a"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T04:02:13.000Z"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:57:07.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "0406b49c69f49c157e96a335c0f94f04de34be4438ec134741b8b24577c8c431"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "78c19c2477bee735fb2133c67a6c7c66ce02e1da7372f9dc51e8a1acdf556f68"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T03:58:38.000Z"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "f54bd199d2173ebe42f732f600786cb1cc2d0efca741b3d9f3d732d4262d8824"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:55:10.000Z"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "a44bd99bddcdab08fa7825f0d4cfa2df964b0ccac7c80618c61430f923fc9152"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T03:58:21.000Z"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "101b4e20eb1c689448382ab49630bbe44e0b68b7e5d667c360b3071ae536eaed"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:55:04.000Z"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "6448d8b31a8a086bcca189b074bb7b483f606d9d236ca8e570c044fa2d13ab53"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T04:02:57.000Z"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "3cf0611a36312d5d7538581fe2355900606f3879b81d5eb6246d76428e9f5d71"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:57:13.000Z"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "caa9a89407cdf65b6ec3f360032fa9a7cf3e6cfd25d42504738444146fb1a540"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T03:58:39.000Z"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "1104b26e5c73ad82707b262932eef84c625f16d0041fb1305506a6f567d684a1"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:54:55.000Z"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "4dea424714ad1988f6ec43ddc6b4345480014f4d5f0a97d59247193fff411a25"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T03:59:42.000Z"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "08003fa7760ffa421045514c087a9f02b3c3cd3fe89b06a33fe4c62452c54621"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:54:55.000Z"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "d6ecdf17f7116ba8dd50e33fac414c5a558d5132f6f17f62f09bcb5a73244ae7"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.9.2"
-  .. .. ..$ date    : chr "2025-12-10T04:00:14.000Z"
-  .. .. ..$ commit  : chr "9797cfe7e71e391911a1c46e88f16a442f34d5d9"
-  .. .. ..$ fileid  : chr "9b5b870c9d109bc617cda201429e9d62805488f1043af0279233972e492495f2"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20086633084"</code></pre>
+  .. .. ..$ version : chr "1.47.7"
+  .. .. ..$ date    : chr "2025-12-11T03:55:09.000Z"
+  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  .. .. ..$ fileid  : chr "7340a1e3e3e870e6a8dda93c53336369e8e9dc0285ff8d042475acb127593fa3"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
