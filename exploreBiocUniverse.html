@@ -670,127 +670,128 @@ Total 2333 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package           : chr "BiocCheck"
-  ..$ Title             : chr "Bioconductor-specific package checks"
-  ..$ Version           : chr "1.47.7"
-  ..$ Date              : chr "2025-12-10"
-  ..$ Authors@R         : chr "c(\nperson(\"Bioconductor\", \"Package Maintainer\", ,\n\"maintainer@bioconductor.org\", \"aut\"),\nperson(\"Lo"| __truncated__
-  ..$ Description       : chr "BiocCheck guides maintainers through Bioconductor best\npracticies. It runs Bioconductor-specific package check"| __truncated__
+ $ :List of 74
+  ..$ Package           : chr "XeniumIO"
+  ..$ Type              : chr "Package"
+  ..$ Title             : chr "Import and represent Xenium data from the 10X Xenium Analyzer"
+  ..$ Version           : chr "1.3.0"
+  ..$ Authors@R         : chr "c(\nperson(\"Marcel\", \"Ramos\", , \"marcel.ramos@sph.cuny.edu\", c(\"aut\", \"cre\"),\nc(ORCID = \"0000-0002-"| __truncated__
+  ..$ Description       : chr "The package allows users to readily import spatial data\nobtained from the 10X Xenium Analyzer pipeline. Suppor"| __truncated__
   ..$ License           : chr "Artistic-2.0"
-  ..$ URL               : chr "https://github.com/Bioconductor/BiocCheck"
-  ..$ BugReports        : chr "https://github.com/Bioconductor/BiocCheck/issues"
+  ..$ biocViews         : chr "Software, Infrastructure, DataImport, SingleCell, Spatial"
   ..$ VignetteBuilder   : chr "knitr"
-  ..$ biocViews         : chr "Infrastructure"
   ..$ Encoding          : chr "UTF-8"
   ..$ Roxygen           : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ Config/pak/sysreqs: chr "make libicu-dev libxml2-dev libssl-dev"
+  ..$ RoxygenNote       : chr "7.3.2"
+  ..$ BugReports        : chr "https://github.com/waldronlab/XeniumIO/issues"
+  ..$ URL               : chr "https://github.com/waldronlab/XeniumIO"
+  ..$ Collate           : chr "'XeniumFile.R' 'TENxXenium-class.R' 'XeniumIO-package.R'\n'utilities.R'"
+  ..$ Date              : chr "2025-04-04"
+  ..$ Config/pak/sysreqs: chr "make libmagick++-dev gsfonts libicu-dev libssl-dev\nlibx11-dev zlib1g-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-12-10 22:25:28 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/BiocCheck"
+  ..$ Date/Publication  : chr "2025-10-29 15:34:29 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/XeniumIO"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
+  ..$ RemoteSha         : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
   ..$ NeedsCompilation  : chr "no"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-12-11 03:53:00 UTC"
+  .. ..$ Date: chr "2025-11-23 15:00:18 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Bioconductor Package Maintainer [aut],\nLori Shepherd [aut],\nDaniel von Twisk [ctb],\nKevin Rue [ctb],\nMarcel"| __truncated__
+  ..$ Author            : chr "Marcel Ramos [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-3242-0582&gt;),\nDario Righelli [ctb],\nEstella Dong [ctb]"
   ..$ Maintainer        : chr "Marcel Ramos &lt;marcel.ramos@sph.cuny.edu&gt;"
-  ..$ MD5sum            : chr "312d99719bdeaeb4316a9607a1504b0d"
+  ..$ MD5sum            : chr "af6c81e7a58965a91cb6d948a01a3e7a"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "BiocCheck_1.47.7.tar.gz"
-  ..$ _fileid           : chr "0f291593d046d656e6110a31ce3ddb3be64713282dda9c64c0bdcf50a8002ec4"
-  ..$ _filesize         : int 219919
-  ..$ _sha256           : chr "0f291593d046d656e6110a31ce3ddb3be64713282dda9c64c0bdcf50a8002ec4"
-  ..$ _created          : chr "2025-12-11T03:53:00.000Z"
-  ..$ _published        : chr "2025-12-11T03:59:34.313Z"
+  ..$ _file             : chr "XeniumIO_1.3.0.tar.gz"
+  ..$ _fileid           : chr "49782a271caaa22eff52d7c9bd3583c50573b0b033b593ddb4994b9fcf84eff1"
+  ..$ _filesize         : int 122007
+  ..$ _sha256           : chr "49782a271caaa22eff52d7c9bd3583c50573b0b033b593ddb4994b9fcf84eff1"
+  ..$ _created          : chr "2025-11-23T15:00:18.000Z"
   ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 235
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 174
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833167586"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4653506282"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
+  .. .. ..$ job     : num 5.62e+10
   .. .. ..$ time    : int 276
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833171229"
+  .. .. ..$ artifact: chr "4653512038"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 353
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 265
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833178320"
+  .. .. ..$ artifact: chr "4653511367"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 234
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 208
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833167308"
+  .. .. ..$ artifact: chr "4653561092"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 218
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 225
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833165822"
+  .. .. ..$ artifact: chr "4653562618"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 284
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 280
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4833143470"
+  .. .. ..$ artifact: chr "4653496603"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 229
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 151
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4833166842"
+  .. .. ..$ artifact: chr "4653504960"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 239
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 200
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833167890"
+  .. .. ..$ artifact: chr "4653507648"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 234
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 227
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833167786"
+  .. .. ..$ artifact: chr "4653509218"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.77e+10
-  .. .. ..$ time    : int 248
+  .. .. ..$ job     : num 5.62e+10
+  .. .. ..$ time    : int 247
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4833168746"
+  .. .. ..$ artifact: chr "4653510316"
   ..$ _bioccheck        :List of 3
   .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 7
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. ..$ warning: int 1
+  .. ..$ note   : int 5
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/BiocCheck"
+  ..$ _upstream         : chr "https://github.com/bioc/XeniumIO"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. ..$ author   : chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
-  .. ..$ committer: chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
-  .. ..$ message  : chr "version bump 1.47.7\n"
-  .. ..$ time     : int 1765405528
+  .. ..$ id       : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. ..$ author   : chr "A Wokaty &lt;andres.wokaty@sph.cuny.edu&gt;"
+  .. ..$ committer: chr "A Wokaty &lt;andres.wokaty@sph.cuny.edu&gt;"
+  .. ..$ message  : chr "bump x.y.z version to odd y following creation of RELEASE_3_22 branch\n"
+  .. ..$ time     : int 1761752069
   ..$ _maintainer       :List of 8
   .. ..$ name    : chr "Marcel Ramos"
   .. ..$ email   : chr "marcel.ramos@sph.cuny.edu"
@@ -802,7 +803,10 @@ Total 2333 2361</code></pre>
   .. ..$ uuid    : int 4392950
   ..$ _distro           : chr "noble"
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 23
+  ..$ _dependencies     :List of 18
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TENxIO"
+  .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
   .. .. ..$ version: chr "&gt;= 4.4.0"
@@ -811,58 +815,43 @@ Total 2333 2361</code></pre>
   .. .. ..$ package: chr "BiocBaseUtils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocFileCache"
+  .. .. ..$ package: chr "BiocGenerics"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocManager"
+  .. .. ..$ package: chr "BiocIO"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "biocViews"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "callr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "cli"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "codetools"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graph"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "httr2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "knitr"
+  .. .. ..$ package: chr "jsonlite"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rvest"
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stringdist"
+  .. .. ..$ package: chr "SingleCellExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tools"
+  .. .. ..$ package: chr "SpatialExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "SummarizedExperiment"
   .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "VisiumIO"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "arrow"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocFileCache"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "devtools"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gert"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
@@ -870,202 +859,69 @@ Total 2333 2361</code></pre>
   .. ..$ :List of 2
   .. .. ..$ package: chr "tinytest"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "usethis"
-  .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 6
-  ..$ _updates          :List of 17
+  ..$ _usedby           : int 0
+  ..$ _updates          :List of 8
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-52"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2024-49"
+  .. .. ..$ n   : int 17
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-06"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-08"
-  .. .. ..$ n   : int 25
+  .. .. ..$ week: chr "2025-07"
+  .. .. ..$ n   : int 6
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-14"
-  .. .. ..$ n   : int 8
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-17"
-  .. .. ..$ n   : int 21
-  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-18"
-  .. .. ..$ n   : int 12
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-20"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-28"
-  .. .. ..$ n   : int 3
+  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ n   : int 5
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-30"
-  .. .. ..$ n   : int 11
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-32"
+  .. .. ..$ week: chr "2025-27"
   .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-35"
-  .. .. ..$ n   : int 17
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-42"
-  .. .. ..$ n   : int 4
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 6
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-47"
-  .. .. ..$ n   : int 17
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-50"
-  .. .. ..$ n   : int 4
+  .. .. ..$ n   : int 2
   ..$ _tags             : list()
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.47.1"
+  .. .. ..$ version: chr "1.3.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.46.0"
+  .. .. ..$ version: chr "1.2.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 3
+  ..$ _topics           :List of 6
+  .. ..$ : chr "software"
   .. ..$ : chr "infrastructure"
-  .. ..$ : chr "bioconductor-package"
-  .. ..$ : chr "core-services"
-  ..$ _stars            : int 9
-  ..$ _contributors     :List of 20
+  .. ..$ : chr "dataimport"
+  .. ..$ : chr "singlecell"
+  .. ..$ : chr "spatial"
+  .. ..$ : chr "u24ca289073"
+  ..$ _stars            : int 0
+  ..$ _contributors     :List of 1
   .. ..$ :List of 3
   .. .. ..$ user : chr "link-ny"
-  .. .. ..$ count: int 259
+  .. .. ..$ count: int 39
   .. .. ..$ uuid : int 4392950
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dtenenba"
-  .. .. ..$ count: int 183
-  .. .. ..$ uuid : int 2286826
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lshep"
-  .. .. ..$ count: int 127
-  .. .. ..$ uuid : int 18724380
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "mtmorgan"
-  .. .. ..$ count: int 22
-  .. .. ..$ uuid : int 118552
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 16
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "federicomarini"
-  .. .. ..$ count: int 11
-  .. .. ..$ uuid : int 7447478
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "grimbough"
-  .. .. ..$ count: int 11
-  .. .. ..$ uuid : int 971237
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 10
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dvantwisk"
-  .. .. ..$ count: int 8
-  .. .. ..$ uuid : int 10927671
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lcolladotor"
-  .. .. ..$ count: int 6
-  .. .. ..$ uuid : int 2288213
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "zeehio"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 75441
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "pkrog"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 15377906
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "llrs"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 6818218
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "c-mertes"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 22544249
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "freekmanders"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 37289973
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 8810451
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vobencha"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2466173
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "bisaloo"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 10783929
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jimhester"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 205275
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "shians"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 6036662
-  ..$ _userbio          :List of 33
-  .. ..$ login              : chr "Bioconductor"
-  .. ..$ id                 : int 2286807
-  .. ..$ node_id            : chr "MDEyOk9yZ2FuaXphdGlvbjIyODY4MDc="
-  .. ..$ avatar_url         : chr "https://avatars.githubusercontent.com/u/2286807?v=4"
-  .. ..$ gravatar_id        : chr ""
-  .. ..$ url                : chr "https://api.github.com/users/Bioconductor"
-  .. ..$ html_url           : chr "https://github.com/Bioconductor"
-  .. ..$ followers_url      : chr "https://api.github.com/users/Bioconductor/followers"
-  .. ..$ following_url      : chr "https://api.github.com/users/Bioconductor/following{/other_user}"
-  .. ..$ gists_url          : chr "https://api.github.com/users/Bioconductor/gists{/gist_id}"
-  .. ..$ starred_url        : chr "https://api.github.com/users/Bioconductor/starred{/owner}{/repo}"
-  .. ..$ subscriptions_url  : chr "https://api.github.com/users/Bioconductor/subscriptions"
-  .. ..$ organizations_url  : chr "https://api.github.com/users/Bioconductor/orgs"
-  .. ..$ repos_url          : chr "https://api.github.com/users/Bioconductor/repos"
-  .. ..$ events_url         : chr "https://api.github.com/users/Bioconductor/events{/privacy}"
-  .. ..$ received_events_url: chr "https://api.github.com/users/Bioconductor/received_events"
-  .. ..$ type               : chr "Organization"
-  .. ..$ user_view_type     : chr "public"
-  .. ..$ site_admin         : logi FALSE
-  .. ..$ name               : chr "Bioconductor"
-  .. ..$ company            : Named list()
-  .. ..$ blog               : chr "https://bioconductor.org"
-  .. ..$ location           : Named list()
-  .. ..$ email              : Named list()
-  .. ..$ hireable           : Named list()
-  .. ..$ bio                : chr "Software for the analysis and comprehension of high-throughput genomic data"
-  .. ..$ twitter_username   : Named list()
-  .. ..$ public_repos       : int 337
-  .. ..$ public_gists       : int 0
-  .. ..$ followers          : int 392
-  .. ..$ following          : int 0
-  .. ..$ created_at         : chr "2012-09-05T18:43:31Z"
-  .. ..$ updated_at         : chr "2023-06-27T18:11:03Z"
+  ..$ _userbio          :List of 4
+  .. ..$ uuid       : int 2286807
+  .. ..$ type       : chr "organization"
+  .. ..$ name       : chr "Bioconductor"
+  .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 2907
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/BiocCheck"
-  ..$ _devurl           : chr "https://github.com/bioconductor/bioccheck"
-  ..$ _searchresults    : int 121
+  .. ..$ count : int 226
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/XeniumIO"
+  ..$ _devurl           : chr "https://github.com/waldronlab/xeniumio"
+  ..$ _searchresults    : int 3
   ..$ _rbuild           : chr "4.5.2"
   ..$ _assets           :List of 11
-  .. ..$ : chr "extra/BiocCheck.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -1075,237 +931,244 @@ Total 2333 2361</code></pre>
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
+  .. ..$ : chr "extra/XeniumIO.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/bioconductor/bioccheck"
+  ..$ _homeurl          : chr "https://github.com/waldronlab/xeniumio"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 4
-  .. ..$ : chr ".BiocCheck"
-  .. ..$ : chr ".BiocPackage"
-  .. ..$ : chr "BiocCheck"
-  .. ..$ : chr "BiocCheckGitClone"
+  ..$ _exports          :List of 3
+  .. ..$ : chr "import"
+  .. ..$ : chr "TENxXenium"
+  .. ..$ : chr "XeniumFile"
   ..$ _help             :List of 3
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "BiocCheck"
-  .. .. ..$ title : chr "Check a package's adherence with the Bioconductor Package Guidelines"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "BiocCheck"
+  .. .. ..$ page  : chr "XeniumIO-package"
+  .. .. ..$ title : chr "XeniumIO: Import and represent Xenium data from the 10X Xenium Analyzer"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "XeniumIO-package"
+  .. .. .. ..$ : chr "XeniumIO"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "BiocCheck-class"
-  .. .. ..$ title : chr "An internal class for composing BiocCheck reports"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "BiocCheck-class"
+  .. .. ..$ page  : chr "TENxXenium-class"
+  .. .. ..$ title : chr "A class to represent Xenium output data"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxXenium"
+  .. .. .. ..$ : chr "import,TENxXenium,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxXenium"
+  .. .. .. ..$ : chr "TENxXenium-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "BiocCheckGitClone"
-  .. .. ..$ title : chr "Checks specific to a Git clone of a package repository"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "BiocCheckGitClone"
-  ..$ _readme           : chr "https://github.com/bioc/BiocCheck/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 66
+  .. .. ..$ page  : chr "XeniumFile-class"
+  .. .. ..$ title : chr "A minimal class to represent Xenium metadata"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".XeniumFile"
+  .. .. .. ..$ : chr "import,XeniumFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "XeniumFile"
+  .. .. .. ..$ : chr "XeniumFile-class"
+  ..$ _readme           : chr "https://github.com/bioc/XeniumIO/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 82
+  .. ..$ : chr "abind"
   .. ..$ : chr "askpass"
-  .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
   .. ..$ : chr "BiocBaseUtils"
   .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocManager"
-  .. ..$ : chr "biocViews"
+  .. ..$ : chr "BiocIO"
   .. ..$ : chr "bit"
   .. ..$ : chr "bit64"
   .. ..$ : chr "bitops"
   .. ..$ : chr "blob"
   .. ..$ : chr "cachem"
-  .. ..$ : chr "callr"
   .. ..$ : chr "cli"
-  .. ..$ : chr "codetools"
+  .. ..$ : chr "clipr"
   .. ..$ : chr "cpp11"
+  .. ..$ : chr "crayon"
   .. ..$ : chr "curl"
   .. ..$ : chr "DBI"
   .. ..$ : chr "dbplyr"
+  .. ..$ : chr "DelayedArray"
   .. ..$ : chr "dplyr"
-  .. ..$ : chr "evaluate"
   .. ..$ : chr "fastmap"
   .. ..$ : chr "filelock"
   .. ..$ : chr "generics"
+  .. ..$ : chr "GenomicRanges"
   .. ..$ : chr "glue"
-  .. ..$ : chr "graph"
-  .. ..$ : chr "highr"
-  .. ..$ : chr "httr"
+  .. ..$ : chr "h5mread"
+  .. ..$ : chr "HDF5Array"
+  .. ..$ : chr "hms"
   .. ..$ : chr "httr2"
+  .. ..$ : chr "IRanges"
   .. ..$ : chr "jsonlite"
-  .. ..$ : chr "knitr"
+  .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
+  .. ..$ : chr "magick"
   .. ..$ : chr "magrittr"
+  .. ..$ : chr "Matrix"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
   .. ..$ : chr "memoise"
-  .. ..$ : chr "mime"
   .. ..$ : chr "openssl"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
   .. ..$ : chr "plogr"
-  .. ..$ : chr "processx"
-  .. ..$ : chr "ps"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
   .. ..$ : chr "purrr"
+  .. ..$ : chr "R.methodsS3"
+  .. ..$ : chr "R.oo"
+  .. ..$ : chr "R.utils"
   .. ..$ : chr "R6"
   .. ..$ : chr "rappdirs"
-  .. ..$ : chr "RBGL"
+  .. ..$ : chr "Rcpp"
   .. ..$ : chr "RCurl"
+  .. ..$ : chr "readr"
+  .. ..$ : chr "rhdf5"
+  .. ..$ : chr "rhdf5filters"
+  .. ..$ : chr "Rhdf5lib"
+  .. ..$ : chr "rjson"
   .. ..$ : chr "rlang"
   .. ..$ : chr "RSQLite"
-  .. ..$ : chr "RUnit"
-  .. ..$ : chr "rvest"
-  .. ..$ : chr "selectr"
-  .. ..$ : chr "stringdist"
+  .. ..$ : chr "S4Arrays"
+  .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "SingleCellExperiment"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "SpatialExperiment"
   .. ..$ : chr "stringi"
   .. ..$ : chr "stringr"
+  .. ..$ : chr "SummarizedExperiment"
   .. ..$ : chr "sys"
+  .. ..$ : chr "TENxIO"
   .. ..$ : chr "tibble"
   .. ..$ : chr "tidyr"
   .. ..$ : chr "tidyselect"
+  .. ..$ : chr "tzdb"
   .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
+  .. ..$ : chr "VisiumIO"
+  .. ..$ : chr "vroom"
   .. ..$ : chr "withr"
-  .. ..$ : chr "xfun"
-  .. ..$ : chr "XML"
-  .. ..$ : chr "xml2"
-  .. ..$ : chr "yaml"
+  .. ..$ : chr "XVector"
   ..$ _vignettes        :List of 1
-  .. ..$ :List of 8
-  .. .. ..$ source  : chr "BiocCheck.Rmd"
-  .. .. ..$ filename: chr "BiocCheck.html"
-  .. .. ..$ title   : chr "BiocCheck: Ensuring Bioconductor package guidelines"
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "XeniumIO.Rmd"
+  .. .. ..$ filename: chr "XeniumIO.html"
+  .. .. ..$ title   : chr "XeniumIO: Import 10X Genomics Xenium Analyzer Data"
+  .. .. ..$ author  : chr "Marcel Ramos"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 38
-  .. .. .. ..$ : chr "BiocCheck Summary"
-  .. .. .. ..$ : chr "Using BiocCheck"
-  .. .. .. ..$ : chr "When should BiocCheck be run"
-  .. .. .. ..$ : chr "Installing BiocCheck"
-  .. .. .. ..$ : chr "Interpreting BiocCheck output"
+  .. .. ..$ headings:List of 12
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Supported Formats"
+  .. .. .. ..$ : chr "TENxIO"
+  .. .. .. ..$ : chr "VisiumIO"
+  .. .. .. ..$ : chr "XeniumIO"
   .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Deprecated Package Checks"
-  .. .. .. ..$ : chr "Remotes Usage Check"
-  .. .. .. ..$ : chr "LazyData Usage Check"
-  .. .. .. ..$ : chr "Version Checks"
-  .. .. .. ..$ : chr "Package and File Size Check"
-  .. .. .. ..$ : chr "biocViews Checks"
-  .. .. .. ..$ : chr "Build System Compatibility Checks"
-  .. .. .. ..$ : chr "DESCRIPTION checks"
-  .. .. .. ..$ : chr "NAMESPACE checks"
-  .. .. .. ..$ : chr ".Rbuildignore checks"
-  .. .. .. ..$ : chr "BiocCheck output folder check"
-  .. .. .. ..$ : chr "Check for inst/doc folder"
-  .. .. .. ..$ : chr "Vignette Checks"
-  .. .. .. ..$ : chr "Checking Install or Update Package Calls in R code"
-  .. .. .. ..$ : chr "Coding Practices Checks"
-  .. .. .. ..$ : chr "Function length checking"
-  .. .. .. ..$ : chr "man page checking"
-  .. .. .. ..$ : chr "NEWS checks"
-  .. .. .. ..$ : chr "Unit Test Checks"
-  .. .. .. ..$ : chr "Formatting checks"
-  .. .. .. ..$ : chr "Duplication checks"
-  .. .. .. ..$ : chr "bioc-devel Subscription Check"
-  .. .. .. ..$ : chr "Support Site Registration Check"
-  .. .. .. ..$ : chr "BiocCheckGitClone"
-  .. .. .. ..$ : chr "Using BiocCheckGitClone"
-  .. .. .. ..$ : chr "Installing BiocCheckGitClone"
-  .. .. .. ..$ : chr "Interpreting BiocCheckGitClone output"
-  .. .. .. ..$ : chr "Bad File Check"
-  .. .. .. ..$ : chr "Description Check"
-  .. .. .. ..$ : chr "CITATION checks"
-  .. .. .. ..$ : chr "Expanding BiocCheck"
-  .. .. .. ..$ : chr "SessionInfo"
-  .. .. ..$ created : chr "2014-01-21 21:57:08"
-  .. .. ..$ modified: chr "2025-11-20 19:25:29"
-  .. .. ..$ commits : int 117
-  ..$ _score            : num 9.96
+  .. .. .. ..$ : chr "Loading package"
+  .. .. .. ..$ : chr "Example Folder Structure"
+  .. .. .. ..$ : chr "Xenium class"
+  .. .. .. ..$ : chr "import method"
+  .. .. .. ..$ : chr "Importing an Example Xenium Dataset"
+  .. .. .. ..$ : chr "Session Info"
+  .. .. ..$ created : chr "2024-10-01 21:09:50"
+  .. .. ..$ modified: chr "2025-05-06 22:22:50"
+  .. .. ..$ commits : int 11
+  ..$ _score            : num 4.6
   ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "bioccheck"
+  ..$ _nocasepkg        : chr "xeniumio"
   ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
   .. ..$ : chr "link-ny"
-  .. ..$ : chr "bioconductor"
-  ..$ _previous         : chr "1.47.6"
+  .. ..$ : chr "waldronlab"
+  ..$ _failure          :List of 4
+  .. ..$ version : chr "1.3.2"
+  .. ..$ commit  :List of 5
+  .. .. ..$ id       : chr "13130af830be4224118639041e4394d271531203"
+  .. .. ..$ author   : chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. .. ..$ committer: chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. .. ..$ message  : chr "version bump 1.3.2\n"
+  .. .. ..$ time     : int 1765493512
+  .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20155598028"
+  .. ..$ date    : chr "2025-12-12T03:51:35.434Z"
   ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:55:50.000Z"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:03:21.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "ca388e62de1053854f61f2586b8dc603b5a4b2d764fc98f9c73e3c5a2b99e47a"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "ed8ec2d9b3e5d1d527691a9255d9ab06cd5159b04737addde41129fcc9dd73b3"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:57:07.000Z"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:03:09.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "78c19c2477bee735fb2133c67a6c7c66ce02e1da7372f9dc51e8a1acdf556f68"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "ed50e2fefad14a0edc00ba07f35e38a536bac9756170583546e1a5c6667ffbed"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:55:10.000Z"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "a44bd99bddcdab08fa7825f0d4cfa2df964b0ccac7c80618c61430f923fc9152"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:19:19.000Z"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "641b6b52ac6da09b6dec0303d84e6bcb402b5b42f27336803261584c456319af"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:55:04.000Z"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "6448d8b31a8a086bcca189b074bb7b483f606d9d236ca8e570c044fa2d13ab53"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:19:28.000Z"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "2df8b8a9ee1cd24bdb151b2733e312e250e9ee3ebf46259d65cccda27198def5"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:57:13.000Z"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "caa9a89407cdf65b6ec3f360032fa9a7cf3e6cfd25d42504738444146fb1a540"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:03:28.000Z"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "666a40e12be012a293681292a221fea913ae81d6e7afe192e6c0ef1e34401e08"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:54:55.000Z"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "4dea424714ad1988f6ec43ddc6b4345480014f4d5f0a97d59247193fff411a25"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:02:02.000Z"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "b3ac6e6b63a28435461edf2d82e4ef21b11e84fdc4e62999c5dcfa26c1f8b5b0"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:54:55.000Z"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "d6ecdf17f7116ba8dd50e33fac414c5a558d5132f6f17f62f09bcb5a73244ae7"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:02:17.000Z"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "8fc1717e80dcbde96a7a6791469f82fea179558dbd5a63a24099017ed9defa54"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.47.7"
-  .. .. ..$ date    : chr "2025-12-11T03:55:09.000Z"
-  .. .. ..$ commit  : chr "0d5022b9139e4f46b31173ce65cc1f469d913278"
-  .. .. ..$ fileid  : chr "7340a1e3e3e870e6a8dda93c53336369e8e9dc0285ff8d042475acb127593fa3"
+  .. .. ..$ version : chr "1.3.0"
+  .. .. ..$ date    : chr "2025-11-23T15:02:41.000Z"
+  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
+  .. .. ..$ fileid  : chr "2ba06ece2269f001e089939e8ced3652998b6b1a8fe4ad9d9a1bbcb6edc21999"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20121290983"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
