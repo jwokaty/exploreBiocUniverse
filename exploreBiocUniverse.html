@@ -138,7 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"Total"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        RU  BBS
-Total 2333 2361</code></pre>
+Total 2334 2361</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>not_in_ru <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(bbs_pkgs, ru_pkgs)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>not_in_bbs <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(ru_pkgs, bbs_pkgs)</span>
@@ -187,8 +187,8 @@ Total 2333 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">ClusterGVis</td>
 <td style="text-align: left;">0.99.9</td>
-<td style="text-align: left;">2025-11-22T11:24:07.000Z</td>
-<td style="text-align: left;">2025-11-22T11:35:58.914Z</td>
+<td style="text-align: left;">2025-12-13T07:33:49.000Z</td>
+<td style="text-align: left;">2025-12-13T07:52:31.473Z</td>
 <td style="text-align: left;">https://github.com/bioc/ClusterGVis</td>
 </tr>
 <tr class="odd">
@@ -220,34 +220,41 @@ Total 2333 2361</code></pre>
 <td style="text-align: left;">https://github.com/bioc/asuri</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">damidBind</td>
+<td style="text-align: left;">0.99.10</td>
+<td style="text-align: left;">2025-12-14T03:42:19.000Z</td>
+<td style="text-align: left;">2025-12-14T03:56:30.719Z</td>
+<td style="text-align: left;">https://github.com/bioc/damidBind</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">dominatR</td>
 <td style="text-align: left;">0.99.5</td>
 <td style="text-align: left;">2025-11-23T16:03:20.000Z</td>
 <td style="text-align: left;">2025-11-23T16:32:56.920Z</td>
 <td style="text-align: left;">https://github.com/bioc/dominatR</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">ggpattern</td>
 <td style="text-align: left;">1.1.4</td>
 <td style="text-align: left;">2025-11-23T11:47:27.000Z</td>
 <td style="text-align: left;">2025-11-23T22:44:22.310Z</td>
 <td style="text-align: left;">https://github.com/coolbutuseless/ggpattern</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">immReferent</td>
 <td style="text-align: left;">0.99.5</td>
 <td style="text-align: left;">2025-11-27T03:39:32.000Z</td>
 <td style="text-align: left;">2025-11-27T03:44:06.358Z</td>
 <td style="text-align: left;">https://github.com/bioc/immReferent</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">leapR</td>
 <td style="text-align: left;">0.99.5</td>
 <td style="text-align: left;">2025-11-23T22:06:17.000Z</td>
 <td style="text-align: left;">2025-11-23T22:56:15.456Z</td>
 <td style="text-align: left;">https://github.com/bioc/leapR</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">lmms</td>
 <td style="text-align: left;">1.3.3</td>
 <td style="text-align: left;">2025-12-01T08:04:32.000Z</td>
@@ -507,7 +514,7 @@ Total 2333 2361</code></pre>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">1.18.0</td>
-<td style="text-align: left;">1.19.3</td>
+<td style="text-align: left;">1.19.4</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
@@ -670,258 +677,363 @@ Total 2333 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 74
-  ..$ Package           : chr "XeniumIO"
-  ..$ Type              : chr "Package"
-  ..$ Title             : chr "Import and represent Xenium data from the 10X Xenium Analyzer"
-  ..$ Version           : chr "1.3.0"
-  ..$ Authors@R         : chr "c(\nperson(\"Marcel\", \"Ramos\", , \"marcel.ramos@sph.cuny.edu\", c(\"aut\", \"cre\"),\nc(ORCID = \"0000-0002-"| __truncated__
-  ..$ Description       : chr "The package allows users to readily import spatial data\nobtained from the 10X Xenium Analyzer pipeline. Suppor"| __truncated__
-  ..$ License           : chr "Artistic-2.0"
-  ..$ biocViews         : chr "Software, Infrastructure, DataImport, SingleCell, Spatial"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ Roxygen           : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote       : chr "7.3.2"
-  ..$ BugReports        : chr "https://github.com/waldronlab/XeniumIO/issues"
-  ..$ URL               : chr "https://github.com/waldronlab/XeniumIO"
-  ..$ Collate           : chr "'XeniumFile.R' 'TENxXenium-class.R' 'XeniumIO-package.R'\n'utilities.R'"
-  ..$ Date              : chr "2025-04-04"
-  ..$ Config/pak/sysreqs: chr "make libmagick++-dev gsfonts libicu-dev libssl-dev\nlibx11-dev zlib1g-dev"
+ $ :List of 64
+  ..$ Package           : chr "rtracklayer"
+  ..$ Title             : chr "R interface to genome annotation files and the UCSC genome\nbrowser"
+  ..$ Version           : chr "1.71.3"
+  ..$ Author            : chr "Michael Lawrence, Vince Carey, Robert Gentleman"
+  ..$ Description       : chr "Extensible framework for interacting with multiple genome\nbrowsers (currently UCSC built-in) and manipulating "| __truncated__
+  ..$ Maintainer        : chr "Michael Lawrence &lt;lawremi@gmail.com&gt;"
+  ..$ License           : chr "Artistic-2.0 + file LICENSE"
+  ..$ Collate           : chr "io.R web.R ranges.R trackDb.R browser.R ucsc.R readGFF.R gff.R\nbed.R wig.R utils.R bigWig.R bigBed.R chain.R q"| __truncated__
+  ..$ biocViews         : chr "Annotation,Visualization,DataImport"
+  ..$ Config/pak/sysreqs: chr "make libbz2-dev liblzma-dev libxml2-dev libssl-dev\nxz-utils zlib1g-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-10-29 15:34:29 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/XeniumIO"
+  ..$ Date/Publication  : chr "2025-12-13 22:01:49 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/rtracklayer"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  ..$ NeedsCompilation  : chr "no"
+  ..$ RemoteSha         : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  ..$ NeedsCompilation  : chr "yes"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-11-23 15:00:18 UTC"
+  .. ..$ Date: chr "2025-12-14 05:04:25 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Marcel Ramos [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-3242-0582&gt;),\nDario Righelli [ctb],\nEstella Dong [ctb]"
-  ..$ Maintainer        : chr "Marcel Ramos &lt;marcel.ramos@sph.cuny.edu&gt;"
-  ..$ MD5sum            : chr "af6c81e7a58965a91cb6d948a01a3e7a"
+  ..$ MD5sum            : chr "f59bdc3e13e7c6a3bb650c92ab068b16"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "XeniumIO_1.3.0.tar.gz"
-  ..$ _fileid           : chr "49782a271caaa22eff52d7c9bd3583c50573b0b033b593ddb4994b9fcf84eff1"
-  ..$ _filesize         : int 122007
-  ..$ _sha256           : chr "49782a271caaa22eff52d7c9bd3583c50573b0b033b593ddb4994b9fcf84eff1"
-  ..$ _created          : chr "2025-11-23T15:00:18.000Z"
-  ..$ _jobs             :List of 10
+  ..$ _file             : chr "rtracklayer_1.71.3.tar.gz"
+  ..$ _fileid           : chr "1e22a1b0f44fff8549058f10b80d20d82e2ae5b913ce65f5ee1e718b2b638cd1"
+  ..$ _filesize         : int 4286230
+  ..$ _sha256           : chr "1e22a1b0f44fff8549058f10b80d20d82e2ae5b913ce65f5ee1e718b2b638cd1"
+  ..$ _created          : chr "2025-12-14T05:04:25.000Z"
+  ..$ _published        : chr "2025-12-14T05:16:47.459Z"
+  ..$ _distro           : chr "noble"
+  ..$ _jobs             :List of 14
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 174
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 258
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "4653506282"
+  .. .. ..$ check   : chr "FAILURE"
+  .. .. ..$ artifact: chr ""
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 276
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 434
+  .. .. ..$ config  : chr "linux-devel-arm64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862396770"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 501
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653512038"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862400849"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 265
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 481
+  .. .. ..$ config  : chr "linux-release-arm64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862399671"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 500
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653511367"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862400693"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 208
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 443
   .. .. ..$ config  : chr "macos-oldrel-arm64"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653561092"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862396992"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 225
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 592
+  .. .. ..$ config  : chr "macos-oldrel-x86_64"
+  .. .. ..$ r       : chr "4.4.3"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862406179"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 283
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653562618"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862387354"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 280
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 649
+  .. .. ..$ config  : chr "macos-release-x86_64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862409407"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 437
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4653496603"
+  .. .. ..$ artifact: chr "4862368630"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 151
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 257
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4653504960"
+  .. .. ..$ check   : chr "FAIL"
+  .. .. ..$ artifact: chr ""
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 200
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 483
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653507648"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862399595"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 227
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 496
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653509218"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862400388"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 247
+  .. .. ..$ job     : num 5.8e+10
+  .. .. ..$ time    : int 512
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4653510316"
-  ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 1
-  .. ..$ note   : int 5
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4862401891"
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/XeniumIO"
+  ..$ _upstream         : chr "https://github.com/bioc/rtracklayer"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. ..$ author   : chr "A Wokaty &lt;andres.wokaty@sph.cuny.edu&gt;"
-  .. ..$ committer: chr "A Wokaty &lt;andres.wokaty@sph.cuny.edu&gt;"
-  .. ..$ message  : chr "bump x.y.z version to odd y following creation of RELEASE_3_22 branch\n"
-  .. ..$ time     : int 1761752069
-  ..$ _maintainer       :List of 8
-  .. ..$ name    : chr "Marcel Ramos"
-  .. ..$ email   : chr "marcel.ramos@sph.cuny.edu"
-  .. ..$ login   : chr "link-ny"
-  .. ..$ bluesky : chr "@mramos148.bsky.social"
-  .. ..$ linkedin: chr "in/mramos148"
-  .. ..$ orcid   : chr "0000-0002-3242-0582"
-  .. ..$ twitter : chr "@M2RuseR"
-  .. ..$ uuid    : int 4392950
-  ..$ _distro           : chr "noble"
+  .. ..$ id       : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. ..$ author   : chr "Michael Lawrence &lt;lawremi@gmail.com&gt;"
+  .. ..$ committer: chr "Michael Lawrence &lt;lawremi@gmail.com&gt;"
+  .. ..$ message  : chr "version bump\n"
+  .. ..$ time     : int 1765663309
+  ..$ _maintainer       :List of 5
+  .. ..$ name    : chr "Michael Lawrence"
+  .. ..$ email   : chr "lawremi@gmail.com"
+  .. ..$ login   : chr "lawremi"
+  .. ..$ linkedin: chr "in/michael-lawrence-74a9b482"
+  .. ..$ uuid    : int 158190
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 18
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TENxIO"
-  .. .. ..$ role   : chr "Depends"
+  ..$ _dependencies     :List of 32
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.4.0"
+  .. .. ..$ version: chr "&gt;= 3.5"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocBaseUtils"
+  .. .. ..$ package: chr "methods"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "GenomicRanges"
+  .. .. ..$ version: chr "&gt;= 1.37.2"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "XVector"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "XML"
+  .. .. ..$ version: chr "&gt;= 1.98-0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ version: chr "&gt;= 0.35.3"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ version: chr "&gt;= 0.23.18"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ version: chr "&gt;= 2.13.13"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "XVector"
+  .. .. ..$ version: chr "&gt;= 0.19.7"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ package: chr "Seqinfo"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "Biostrings"
+  .. .. ..$ version: chr "&gt;= 2.77.2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "curl"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "httr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "Rsamtools"
+  .. .. ..$ version: chr "&gt;= 1.31.2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "GenomicAlignments"
+  .. .. ..$ version: chr "&gt;= 1.15.6"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocIO"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ package: chr "tools"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "restfulr"
+  .. .. ..$ version: chr "&gt;= 0.0.13"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SingleCellExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SpatialExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "VisiumIO"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "arrow"
+  .. .. ..$ package: chr "GenomeInfoDb"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BSgenome"
+  .. .. ..$ version: chr "&gt;= 1.33.4"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocFileCache"
+  .. .. ..$ package: chr "humanStemCell"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "microRNA"
+  .. .. ..$ version: chr "&gt;= 1.1.1"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "genefilter"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "knitr"
+  .. .. ..$ package: chr "limma"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ package: chr "org.Hs.eg.db"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tinytest"
+  .. .. ..$ package: chr "hgu133plus2.db"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GenomicFeatures"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg19"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg19.knownGene"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "RUnit"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 8
+  ..$ _usedby           : int 499
+  ..$ _updates          :List of 13
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2024-49"
-  .. .. ..$ n   : int 17
+  .. .. ..$ week: chr "2025-03"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-07"
-  .. .. ..$ n   : int 6
+  .. .. ..$ week: chr "2025-08"
+  .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-14"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-10"
+  .. .. ..$ n   : int 15
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-13"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-18"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-25"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-19"
-  .. .. ..$ n   : int 5
+  .. .. ..$ week: chr "2025-29"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-27"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-38"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-40"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-43"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-48"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-50"
+  .. .. ..$ n   : int 13
   ..$ _tags             : list()
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.3.0"
+  .. .. ..$ version: chr "1.71.1"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.2.0"
+  .. .. ..$ version: chr "1.70.0"
   .. .. ..$ bioc   : chr "3.22"
   ..$ _topics           :List of 6
-  .. ..$ : chr "software"
-  .. ..$ : chr "infrastructure"
+  .. ..$ : chr "annotation"
+  .. ..$ : chr "visualization"
   .. ..$ : chr "dataimport"
-  .. ..$ : chr "singlecell"
-  .. ..$ : chr "spatial"
-  .. ..$ : chr "u24ca289073"
-  ..$ _stars            : int 0
-  ..$ _contributors     :List of 1
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "link-ny"
-  .. .. ..$ count: int 39
-  .. .. ..$ uuid : int 4392950
-  ..$ _userbio          :List of 4
-  .. ..$ uuid       : int 2286807
-  .. ..$ type       : chr "organization"
-  .. ..$ name       : chr "Bioconductor"
-  .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
+  .. ..$ : chr "zlib"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "curl"
+  ..$ _userbio          :List of 33
+  .. ..$ login              : chr "Bioconductor"
+  .. ..$ id                 : int 2286807
+  .. ..$ node_id            : chr "MDEyOk9yZ2FuaXphdGlvbjIyODY4MDc="
+  .. ..$ avatar_url         : chr "https://avatars.githubusercontent.com/u/2286807?v=4"
+  .. ..$ gravatar_id        : chr ""
+  .. ..$ url                : chr "https://api.github.com/users/Bioconductor"
+  .. ..$ html_url           : chr "https://github.com/Bioconductor"
+  .. ..$ followers_url      : chr "https://api.github.com/users/Bioconductor/followers"
+  .. ..$ following_url      : chr "https://api.github.com/users/Bioconductor/following{/other_user}"
+  .. ..$ gists_url          : chr "https://api.github.com/users/Bioconductor/gists{/gist_id}"
+  .. ..$ starred_url        : chr "https://api.github.com/users/Bioconductor/starred{/owner}{/repo}"
+  .. ..$ subscriptions_url  : chr "https://api.github.com/users/Bioconductor/subscriptions"
+  .. ..$ organizations_url  : chr "https://api.github.com/users/Bioconductor/orgs"
+  .. ..$ repos_url          : chr "https://api.github.com/users/Bioconductor/repos"
+  .. ..$ events_url         : chr "https://api.github.com/users/Bioconductor/events{/privacy}"
+  .. ..$ received_events_url: chr "https://api.github.com/users/Bioconductor/received_events"
+  .. ..$ type               : chr "Organization"
+  .. ..$ user_view_type     : chr "public"
+  .. ..$ site_admin         : logi FALSE
+  .. ..$ name               : chr "Bioconductor"
+  .. ..$ company            : Named list()
+  .. ..$ blog               : chr "https://bioconductor.org"
+  .. ..$ location           : Named list()
+  .. ..$ email              : Named list()
+  .. ..$ hireable           : Named list()
+  .. ..$ bio                : chr "Software for the analysis and comprehension of high-throughput genomic data"
+  .. ..$ twitter_username   : Named list()
+  .. ..$ public_repos       : int 337
+  .. ..$ public_gists       : int 0
+  .. ..$ followers          : int 392
+  .. ..$ following          : int 0
+  .. ..$ created_at         : chr "2012-09-05T18:43:31Z"
+  .. ..$ updated_at         : chr "2023-06-27T18:11:03Z"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 226
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/XeniumIO"
-  ..$ _devurl           : chr "https://github.com/waldronlab/xeniumio"
-  ..$ _searchresults    : int 3
+  .. ..$ count : int 44343
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/rtracklayer"
+  ..$ _mentions         : int 107
+  ..$ _searchresults    : int 8896
   ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 11
+  ..$ _assets           :List of 9
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -929,246 +1041,1067 @@ Total 2333 2361</code></pre>
   .. ..$ : chr "extra/contents.json"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
-  .. ..$ : chr "extra/readme.html"
-  .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/XeniumIO.html"
+  .. ..$ : chr "extra/rtracklayer.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/waldronlab/xeniumio"
+  ..$ _homeurl          : chr "https://github.com/lawremi/rtracklayer"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 3
+  ..$ _exports          :List of 161
+  .. ..$ : chr "activeView"
+  .. ..$ : chr "activeView&lt;-"
+  .. ..$ : chr "as.data.frame"
+  .. ..$ : chr "asBED"
+  .. ..$ : chr "asGFF"
+  .. ..$ : chr "BED15File"
+  .. ..$ : chr "BEDFile"
+  .. ..$ : chr "BEDGraphFile"
+  .. ..$ : chr "BEDPEFile"
+  .. ..$ : chr "BigBedFile"
+  .. ..$ : chr "BigBedSelection"
+  .. ..$ : chr "BigWigFile"
+  .. ..$ : chr "BigWigFileList"
+  .. ..$ : chr "BigWigSelection"
+  .. ..$ : chr "blocks"
+  .. ..$ : chr "browseGenome"
+  .. ..$ : chr "browserSession"
+  .. ..$ : chr "browserSession&lt;-"
+  .. ..$ : chr "browserView"
+  .. ..$ : chr "browserViews"
+  .. ..$ : chr "ChainFile"
+  .. ..$ : chr "chrom"
+  .. ..$ : chr "chrom&lt;-"
+  .. ..$ : chr "cleanupBigBedCache"
+  .. ..$ : chr "cleanupBigWigCache"
+  .. ..$ : chr "close"
+  .. ..$ : chr "coerce"
+  .. ..$ : chr "descriptionUrl"
+  .. ..$ : chr "descriptionUrl&lt;-"
+  .. ..$ : chr "email"
+  .. ..$ : chr "email&lt;-"
+  .. ..$ : chr "end"
+  .. ..$ : chr "end&lt;-"
+  .. ..$ : chr "export"
+  .. ..$ : chr "export.2bit"
+  .. ..$ : chr "export.bb"
+  .. ..$ : chr "export.bed"
+  .. ..$ : chr "export.bed15"
+  .. ..$ : chr "export.bedGraph"
+  .. ..$ : chr "export.bw"
+  .. ..$ : chr "export.gff"
+  .. ..$ : chr "export.gff1"
+  .. ..$ : chr "export.gff2"
+  .. ..$ : chr "export.gff3"
+  .. ..$ : chr "export.ucsc"
+  .. ..$ : chr "export.wig"
+  .. ..$ : chr "exportToTabix"
+  .. ..$ : chr "FastaFile"
+  .. ..$ : chr "fileFormat"
+  .. ..$ : chr "genome"
+  .. ..$ : chr "Genome"
+  .. ..$ : chr "genome&lt;-"
+  .. ..$ : chr "genomeBrowsers"
+  .. ..$ : chr "genomeField"
+  .. ..$ : chr "genomeField&lt;-"
+  .. ..$ : chr "genomeInfo"
+  .. ..$ : chr "genomeInfo&lt;-"
+  .. ..$ : chr "genomesFile"
+  .. ..$ : chr "genomesFile&lt;-"
+  .. ..$ : chr "GenomicData"
+  .. ..$ : chr "GenomicSelection"
+  .. ..$ : chr "getSeq"
+  .. ..$ : chr "getTable"
+  .. ..$ : chr "getTracks"
+  .. ..$ : chr "GFF1File"
+  .. ..$ : chr "GFF2File"
+  .. ..$ : chr "GFF3File"
+  .. ..$ : chr "GFFcolnames"
+  .. ..$ : chr "GFFFile"
+  .. ..$ : chr "GRangesForBSGenome"
+  .. ..$ : chr "GRangesForUCSCGenome"
+  .. ..$ : chr "GTFFile"
+  .. ..$ : chr "GVFFile"
+  .. ..$ : chr "hub"
+  .. ..$ : chr "hub&lt;-"
+  .. ..$ : chr "hubUrl"
+  .. ..$ : chr "hubUrl&lt;-"
   .. ..$ : chr "import"
-  .. ..$ : chr "TENxXenium"
-  .. ..$ : chr "XeniumFile"
-  ..$ _help             :List of 3
+  .. ..$ : chr "import.2bit"
+  .. ..$ : chr "import.bb"
+  .. ..$ : chr "import.bed"
+  .. ..$ : chr "import.bed15"
+  .. ..$ : chr "import.bedGraph"
+  .. ..$ : chr "import.bw"
+  .. ..$ : chr "import.chain"
+  .. ..$ : chr "import.gff"
+  .. ..$ : chr "import.gff1"
+  .. ..$ : chr "import.gff2"
+  .. ..$ : chr "import.gff3"
+  .. ..$ : chr "import.ucsc"
+  .. ..$ : chr "import.wig"
+  .. ..$ : chr "initialize"
+  .. ..$ : chr "liftOver"
+  .. ..$ : chr "longLabel"
+  .. ..$ : chr "longLabel&lt;-"
+  .. ..$ : chr "mcols"
+  .. ..$ : chr "nrow"
+  .. ..$ : chr "offset"
+  .. ..$ : chr "organism"
+  .. .. [list output truncated]
+  ..$ _datasets         :List of 2
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "cpneTrack"
+  .. .. ..$ title : chr "CPNE1 SNP track"
+  .. .. ..$ object: chr "cpneTrack"
+  .. .. ..$ file  : chr "cpneTrack.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "GRanges"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "targets"
+  .. .. ..$ title : chr "microRNA target sites"
+  .. .. ..$ object: chr "targets"
+  .. .. ..$ file  : chr "targets.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 6
+  .. .. .. ..$ : chr "name"
+  .. .. .. ..$ : chr "target"
+  .. .. .. ..$ : chr "chrom"
+  .. .. .. ..$ : chr "start"
+  .. .. .. ..$ : chr "end"
+  .. .. .. ..$ : chr "strand"
+  .. .. ..$ rows  : int 2981
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  ..$ _help             :List of 54
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "XeniumIO-package"
-  .. .. ..$ title : chr "XeniumIO: Import and represent Xenium data from the 10X Xenium Analyzer"
+  .. .. ..$ page  : chr "activeView-methods"
+  .. .. ..$ title : chr "Accessing the active view"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "activeView"
+  .. .. .. ..$ : chr "activeView,BrowserSession-method"
+  .. .. .. ..$ : chr "activeView,UCSCView-method"
+  .. .. .. ..$ : chr "activeView-methods"
+  .. .. .. ..$ : chr "activeView&lt;-"
+  .. .. .. ..$ : chr "activeView&lt;--methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "asBED"
+  .. .. ..$ title : chr "Coerce to BED structure"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "asBED"
+  .. .. .. ..$ : chr "asBED,GAlignments-method"
+  .. .. .. ..$ : chr "asBED,GRangesList-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "asGFF"
+  .. .. ..$ title : chr "Coerce to GFF structure"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "XeniumIO-package"
-  .. .. .. ..$ : chr "XeniumIO"
+  .. .. .. ..$ : chr "asGFF"
+  .. .. .. ..$ : chr "asGFF,GRangesList-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "TENxXenium-class"
-  .. .. ..$ title : chr "A class to represent Xenium output data"
+  .. .. ..$ page  : chr "BamFile-methods"
+  .. .. ..$ title : chr "Export to BAM Files"
   .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr ".TENxXenium"
-  .. .. .. ..$ : chr "import,TENxXenium,ANY,ANY-method"
-  .. .. .. ..$ : chr "TENxXenium"
-  .. .. .. ..$ : chr "TENxXenium-class"
+  .. .. .. ..$ : chr "export,ANY,BamFile,ANY-method"
+  .. .. .. ..$ : chr "export,GAlignmentPairs,BamFile,ANY-method"
+  .. .. .. ..$ : chr "export,GAlignments,BamFile,ANY-method"
+  .. .. .. ..$ : chr "import,BamFile,ANY,ANY-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "XeniumFile-class"
-  .. .. ..$ title : chr "A minimal class to represent Xenium metadata"
+  .. .. ..$ page  : chr "basicTrackLine-class"
+  .. .. ..$ title : chr "Class \"BasicTrackLine\""
   .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr ".XeniumFile"
-  .. .. .. ..$ : chr "import,XeniumFile,ANY,ANY-method"
-  .. .. .. ..$ : chr "XeniumFile"
-  .. .. .. ..$ : chr "XeniumFile-class"
-  ..$ _readme           : chr "https://github.com/bioc/XeniumIO/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 82
+  .. .. .. ..$ : chr "BasicTrackLine-class"
+  .. .. .. ..$ : chr "coerce,BasicTrackLine,character-method"
+  .. .. .. ..$ : chr "coerce,character,BasicTrackLine-method"
+  .. .. .. ..$ : chr "fileFormat,TrackLine-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Bed15TrackLine-class"
+  .. .. ..$ title : chr "Class \"Bed15TrackLine\""
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "Bed15TrackLine-class"
+  .. .. .. ..$ : chr "coerce,Bed15TrackLine,character-method"
+  .. .. .. ..$ : chr "coerce,character,Bed15TrackLine-method"
+  .. .. .. ..$ : chr "fileFormat,Bed15TrackLine-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BEDFile-class"
+  .. .. ..$ title : chr "BEDFile objects"
+  .. .. ..$ topics:List of 51
+  .. .. .. ..$ : chr "BED15File"
+  .. .. .. ..$ : chr "BED15File-class"
+  .. .. .. ..$ : chr "BEDFile"
+  .. .. .. ..$ : chr "BEDFile-class"
+  .. .. .. ..$ : chr "BEDGraphFile"
+  .. .. .. ..$ : chr "BEDGraphFile-class"
+  .. .. .. ..$ : chr "BEDPEFile"
+  .. .. .. ..$ : chr "BEDPEFile-class"
+  .. .. .. ..$ : chr "BroadPeakFile"
+  .. .. .. ..$ : chr "BroadPeakFile-class"
+  .. .. .. ..$ : chr "class:BED15File"
+  .. .. .. ..$ : chr "class:BEDFile"
+  .. .. .. ..$ : chr "class:BEDGraphFile"
+  .. .. .. ..$ : chr "class:BroadPeakFile"
+  .. .. .. ..$ : chr "class:NarrowPeakFile"
+  .. .. .. ..$ : chr "export,ANY,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export,ANY,BEDPEFile,ANY-method"
+  .. .. .. ..$ : chr "export,CompressedGRangesList,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,BED15File,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRangesList,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export,GRangesList,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export,Pairs,BEDPEFile,ANY-method"
+  .. .. .. ..$ : chr "export,SimpleGRangesList,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export,UCSCData,BED15File,ANY-method"
+  .. .. .. ..$ : chr "export,UCSCData,BEDFile,ANY-method"
+  .. .. .. ..$ : chr "export.bed"
+  .. .. .. ..$ : chr "export.bed,ANY-method"
+  .. .. .. ..$ : chr "export.bed15"
+  .. .. .. ..$ : chr "export.bed15,ANY-method"
+  .. .. .. ..$ : chr "export.bedGraph"
+  .. .. .. ..$ : chr "export.bedGraph,ANY-method"
+  .. .. .. ..$ : chr "import,BED15File,ANY,ANY-method"
+  .. .. .. ..$ : chr "import,BEDFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import,BEDPEFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import,BroadPeakFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import,BroadPeakFile,ANY-method"
+  .. .. .. ..$ : chr "import,NarrowPeakFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import,NarrowPeakFile,ANY-method"
+  .. .. .. ..$ : chr "import.bed"
+  .. .. .. ..$ : chr "import.bed,ANY-method"
+  .. .. .. ..$ : chr "import.bed15"
+  .. .. .. ..$ : chr "import.bed15,ANY-method"
+  .. .. .. ..$ : chr "import.bedGraph"
+  .. .. .. ..$ : chr "import.bedGraph,ANY-method"
+  .. .. .. ..$ : chr "import.BroadPeak"
+  .. .. .. ..$ : chr "import.BroadPeak,ANY-method"
+  .. .. .. ..$ : chr "import.NarrowPeak"
+  .. .. .. ..$ : chr "import.NarrowPeak,ANY-method"
+  .. .. .. ..$ : chr "NarrowPeakFile"
+  .. .. .. ..$ : chr "NarrowPeakFile-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BigBedFile"
+  .. .. ..$ title : chr "BigBed Import and Export"
+  .. .. ..$ topics:List of 14
+  .. .. .. ..$ : chr "BBFile"
+  .. .. .. ..$ : chr "BBFile-class"
+  .. .. .. ..$ : chr "BigBedFile"
+  .. .. .. ..$ : chr "BigBedFile-class"
+  .. .. .. ..$ : chr "class:BBFile"
+  .. .. .. ..$ : chr "class:BigBedFile"
+  .. .. .. ..$ : chr "export,ANY,BigBedFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,BigBedFile,ANY-method"
+  .. .. .. ..$ : chr "export.bb"
+  .. .. .. ..$ : chr "export.bb,ANY-method"
+  .. .. .. ..$ : chr "import,BigBedFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.bb"
+  .. .. .. ..$ : chr "import.bb,ANY-method"
+  .. .. .. ..$ : chr "seqinfo,BigBedFile-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BigBedSelection"
+  .. .. ..$ title : chr "Selection of ranges and columns"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "BigBedSelection"
+  .. .. .. ..$ : chr "BigBedSelection-class"
+  .. .. .. ..$ : chr "coerce,GenomicRanges,BigBedSelection-method"
+  .. .. .. ..$ : chr "coerce,IntegerRangesList,BigBedSelection-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BigWigFile"
+  .. .. ..$ title : chr "BigWig Import and Export"
+  .. .. ..$ topics:List of 21
+  .. .. .. ..$ : chr "BigWigFile"
+  .. .. .. ..$ : chr "BigWigFile-class"
+  .. .. .. ..$ : chr "BigWigFileList"
+  .. .. .. ..$ : chr "BigWigFileList-class"
+  .. .. .. ..$ : chr "BWFile"
+  .. .. .. ..$ : chr "BWFile-class"
+  .. .. .. ..$ : chr "class:BigWigFile"
+  .. .. .. ..$ : chr "class:BigWigFileList"
+  .. .. .. ..$ : chr "class:BWFile"
+  .. .. .. ..$ : chr "cleanupBigWigCache"
+  .. .. .. ..$ : chr "export,ANY,BigWigFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,BigWigFile,ANY-method"
+  .. .. .. ..$ : chr "export,List,BigWigFile,ANY-method"
+  .. .. .. ..$ : chr "export.bw"
+  .. .. .. ..$ : chr "export.bw,ANY-method"
+  .. .. .. ..$ : chr "import,BigWigFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.bw"
+  .. .. .. ..$ : chr "import.bw,ANY-method"
+  .. .. .. ..$ : chr "path,BigWigFileList-method"
+  .. .. .. ..$ : chr "seqinfo,BigWigFile-method"
+  .. .. .. ..$ : chr "summary,BigWigFile-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BigWigSelection-class"
+  .. .. ..$ title : chr "Selection of ranges and columns"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "BigWigSelection"
+  .. .. .. ..$ : chr "BigWigSelection-class"
+  .. .. .. ..$ : chr "coerce,GenomicRanges,BigWigSelection-method"
+  .. .. .. ..$ : chr "coerce,IntegerRangesList,BigWigSelection-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "blocks-methods"
+  .. .. ..$ title : chr "Get blocks/exons"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "blocks"
+  .. .. .. ..$ : chr "blocks,GenomicRanges-method"
+  .. .. .. ..$ : chr "blocks-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "browseGenome"
+  .. .. ..$ title : chr "Browse a genome"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "browseGenome"
+  .. .. .. ..$ : chr "browseGenome,GenomicRanges_OR_GenomicRangesList-method"
+  .. .. .. ..$ : chr "browseGenome,missing-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "browserSession-class"
+  .. .. ..$ title : chr "Class \"BrowserSession\""
+  .. .. ..$ topics:List of 7
+  .. .. .. ..$ : chr "BrowserSession-class"
+  .. .. .. ..$ : chr "genome,BrowserSession-method"
+  .. .. .. ..$ : chr "genome&lt;-,BrowserSession-method"
+  .. .. .. ..$ : chr "names,BrowserSession-method"
+  .. .. .. ..$ : chr "range,BrowserSession-method"
+  .. .. .. ..$ : chr "show,BrowserSession-method"
+  .. .. .. ..$ : chr "trackNames,BrowserSession-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "browserSession-methods"
+  .. .. ..$ title : chr "Get a genome browser session"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "browserSession"
+  .. .. .. ..$ : chr "browserSession,BrowserView-method"
+  .. .. .. ..$ : chr "browserSession,character-method"
+  .. .. .. ..$ : chr "browserSession,missing-method"
+  .. .. .. ..$ : chr "browserSession-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "browserView-class"
+  .. .. ..$ title : chr "Class \"BrowserView\""
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "BrowserView-class"
+  .. .. .. ..$ : chr "show,BrowserView-method"
+  .. .. .. ..$ : chr "visible"
+  .. .. .. ..$ : chr "visible,BrowserView-method"
+  .. .. .. ..$ : chr "visible&lt;-"
+  .. .. .. ..$ : chr "visible&lt;-,BrowserView-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "browserView-methods"
+  .. .. ..$ title : chr "Getting browser views"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "browserView"
+  .. .. .. ..$ : chr "browserView,UCSCSession-method"
+  .. .. .. ..$ : chr "browserView-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BrowserViewList-class"
+  .. .. ..$ title : chr "Lists of BrowserView"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "BrowserViewList"
+  .. .. .. ..$ : chr "BrowserViewList-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "browserViews-methods"
+  .. .. ..$ title : chr "Getting the browser views"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "browserViews"
+  .. .. .. ..$ : chr "browserViews,UCSCSession-method"
+  .. .. .. ..$ : chr "browserViews-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Chain-class"
+  .. .. ..$ title : chr "Chain objects"
+  .. .. ..$ topics:List of 16
+  .. .. .. ..$ : chr "Chain-class"
+  .. .. .. ..$ : chr "ChainBlock-class"
+  .. .. .. ..$ : chr "ChainFile"
+  .. .. .. ..$ : chr "ChainFile-class"
+  .. .. .. ..$ : chr "class:Chain"
+  .. .. .. ..$ : chr "class:ChainBlock"
+  .. .. .. ..$ : chr "class:ChainFile"
+  .. .. .. ..$ : chr "import,ChainFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.chain"
+  .. .. .. ..$ : chr "import.chain,ANY-method"
+  .. .. .. ..$ : chr "offset,ChainBlock-method"
+  .. .. .. ..$ : chr "ranges,ChainBlock-method"
+  .. .. .. ..$ : chr "reversed"
+  .. .. .. ..$ : chr "reversed,ChainBlock-method"
+  .. .. .. ..$ : chr "score,ChainBlock-method"
+  .. .. .. ..$ : chr "space,ChainBlock-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "cpneTrack"
+  .. .. ..$ title : chr "CPNE1 SNP track"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "cpneTrack"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "FastaFile-class"
+  .. .. ..$ title : chr "FastaFile objects"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "class:FastaFile"
+  .. .. .. ..$ : chr "export,ANY,FastaFile,ANY-method"
+  .. .. .. ..$ : chr "export,XStringSet,FastaFile,ANY-method"
+  .. .. .. ..$ : chr "FastaFile"
+  .. .. .. ..$ : chr "FastaFile-class"
+  .. .. .. ..$ : chr "import,FastaFile,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "genomeBrowsers"
+  .. .. ..$ title : chr "Get available genome browsers"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "genomeBrowsers"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GenomicData"
+  .. .. ..$ title : chr "Data on a Genome"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "chrom"
+  .. .. .. ..$ : chr "chrom,GRanges-method"
+  .. .. .. ..$ : chr "chrom&lt;-"
+  .. .. .. ..$ : chr "chrom&lt;-,GRanges-method"
+  .. .. .. ..$ : chr "GenomicData"
+  .. .. .. ..$ : chr "score,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GenomicSelection"
+  .. .. ..$ title : chr "Genomic data selection"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "GenomicSelection"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GFFFile-class"
+  .. .. ..$ title : chr "GFFFile objects"
+  .. .. ..$ topics:List of 42
+  .. .. .. ..$ : chr "class:GFF1File"
+  .. .. .. ..$ : chr "class:GFF2File"
+  .. .. .. ..$ : chr "class:GFF3File"
+  .. .. .. ..$ : chr "class:GFFFile"
+  .. .. .. ..$ : chr "class:GTFFile"
+  .. .. .. ..$ : chr "class:GVFFile"
+  .. .. .. ..$ : chr "export,ANY,GFFFile,ANY-method"
+  .. .. .. ..$ : chr "export,CompressedGRangesList,GFFFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,GFFFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRangesList,GFFFile,ANY-method"
+  .. .. .. ..$ : chr "export,GRangesList,GTFFile,ANY-method"
+  .. .. .. ..$ : chr "export,SimpleGRangesList,GFFFile,ANY-method"
+  .. .. .. ..$ : chr "export.gff"
+  .. .. .. ..$ : chr "export.gff,ANY-method"
+  .. .. .. ..$ : chr "export.gff1"
+  .. .. .. ..$ : chr "export.gff1,ANY-method"
+  .. .. .. ..$ : chr "export.gff2"
+  .. .. .. ..$ : chr "export.gff2,ANY-method"
+  .. .. .. ..$ : chr "export.gff3"
+  .. .. .. ..$ : chr "export.gff3,ANY-method"
+  .. .. .. ..$ : chr "genome,GFFFile-method"
+  .. .. .. ..$ : chr "GFF1File"
+  .. .. .. ..$ : chr "GFF1File-class"
+  .. .. .. ..$ : chr "GFF2File"
+  .. .. .. ..$ : chr "GFF2File-class"
+  .. .. .. ..$ : chr "GFF3File"
+  .. .. .. ..$ : chr "GFF3File-class"
+  .. .. .. ..$ : chr "GFFFile"
+  .. .. .. ..$ : chr "GFFFile-class"
+  .. .. .. ..$ : chr "GTFFile"
+  .. .. .. ..$ : chr "GTFFile-class"
+  .. .. .. ..$ : chr "GVFFile"
+  .. .. .. ..$ : chr "GVFFile-class"
+  .. .. .. ..$ : chr "import,GFFFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.gff"
+  .. .. .. ..$ : chr "import.gff,ANY-method"
+  .. .. .. ..$ : chr "import.gff1"
+  .. .. .. ..$ : chr "import.gff1,ANY-method"
+  .. .. .. ..$ : chr "import.gff2"
+  .. .. .. ..$ : chr "import.gff2,ANY-method"
+  .. .. .. ..$ : chr "import.gff3"
+  .. .. .. ..$ : chr "import.gff3,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GRangesForUCSCGenome"
+  .. .. ..$ title : chr "GRanges for a Genome"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "GRangesForBSGenome"
+  .. .. .. ..$ : chr "GRangesForUCSCGenome"
+  .. .. .. ..$ : chr "SeqinfoForBSGenome"
+  .. .. .. ..$ : chr "SeqinfoForUCSCGenome"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "wigTrackLine-class"
+  .. .. ..$ title : chr "Class \"GraphTrackLine\""
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "coerce,BasicTrackLine,GraphTrackLine-method"
+  .. .. .. ..$ : chr "coerce,character,GraphTrackLine-method"
+  .. .. .. ..$ : chr "coerce,GraphTrackLine,BasicTrackLine-method"
+  .. .. .. ..$ : chr "coerce,GraphTrackLine,character-method"
+  .. .. .. ..$ : chr "fileFormat,GraphTrackLine-method"
+  .. .. .. ..$ : chr "GraphTrackLine-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "IntegerRangesList-methods"
+  .. .. ..$ title : chr "Ranges on a Genome"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "chrom,IntegerRangesList-method"
+  .. .. .. ..$ : chr "chrom&lt;-,IntegerRangesList-method"
+  .. .. .. ..$ : chr "IntegerRangesList-methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "liftOver"
+  .. .. ..$ title : chr "Lift intervals between genome builds"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "liftOver"
+  .. .. .. ..$ : chr "liftOver,ANY,ANY-method"
+  .. .. .. ..$ : chr "liftOver,GenomicRanges,Chain-method"
+  .. .. .. ..$ : chr "liftOver,GRangesList,Chain-method"
+  .. .. .. ..$ : chr "liftOver,Pairs,Chain-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "Quickload-class"
+  .. .. ..$ title : chr "Quickload Access"
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "$,Quickload-method"
+  .. .. .. ..$ : chr "class:Quickload"
+  .. .. .. ..$ : chr "coerce,character,Quickload-method"
+  .. .. .. ..$ : chr "genome,Quickload-method"
+  .. .. .. ..$ : chr "length,Quickload-method"
+  .. .. .. ..$ : chr "names,Quickload-method"
+  .. .. .. ..$ : chr "Quickload"
+  .. .. .. ..$ : chr "Quickload-class"
+  .. .. .. ..$ : chr "show,Quickload-method"
+  .. .. .. ..$ : chr "uri,Quickload-method"
+  .. .. .. ..$ : chr "[[,Quickload,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "QuickloadGenome-class"
+  .. .. ..$ title : chr "Quickload Genome Access"
+  .. .. ..$ topics:List of 25
+  .. .. .. ..$ : chr "class:QuickloadGenome"
+  .. .. .. ..$ : chr "genome,QuickloadGenome-method"
+  .. .. .. ..$ : chr "length,QuickloadGenome-method"
+  .. .. .. ..$ : chr "mcols,QuickloadGenome-method"
+  .. .. .. ..$ : chr "names,QuickloadGenome-method"
+  .. .. .. ..$ : chr "organism,QuickloadGenome-method"
+  .. .. .. ..$ : chr "quickload"
+  .. .. .. ..$ : chr "QuickloadGenome"
+  .. .. .. ..$ : chr "QuickloadGenome-class"
+  .. .. .. ..$ : chr "referenceSequence"
+  .. .. .. ..$ : chr "referenceSequence,QuickloadGenome-method"
+  .. .. .. ..$ : chr "referenceSequence&lt;-"
+  .. .. .. ..$ : chr "referenceSequence&lt;-,QuickloadGenome-method"
+  .. .. .. ..$ : chr "releaseDate,QuickloadGenome-method"
+  .. .. .. ..$ : chr "seqinfo,DNAStringSet-method"
+  .. .. .. ..$ : chr "seqinfo,QuickloadGenome-method"
+  .. .. .. ..$ : chr "seqinfo&lt;-,QuickloadGenome-method"
+  .. .. .. ..$ : chr "show,QuickloadGenome-method"
+  .. .. .. ..$ : chr "track,QuickloadGenome-method"
+  .. .. .. ..$ : chr "track&lt;-,QuickloadGenome,ANY-method"
+  .. .. .. ..$ : chr "track&lt;-,QuickloadGenome,BiocFile-method"
+  .. .. .. ..$ : chr "track&lt;-,QuickloadGenome,character-method"
+  .. .. .. ..$ : chr "track&lt;-,QuickloadGenome,RsamtoolsFile-method"
+  .. .. .. ..$ : chr "trackNames,QuickloadGenome-method"
+  .. .. .. ..$ : chr "uri,QuickloadGenome-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "readGFF"
+  .. .. ..$ title : chr "Reads a file in GFF format"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "GFFcolnames"
+  .. .. .. ..$ : chr "readGFF"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "laySequence-methods"
+  .. .. ..$ title : chr "Load a sequence"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "sequence&lt;-"
+  .. .. .. ..$ : chr "sequence&lt;--methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TabixFile-methods"
+  .. .. ..$ title : chr "TabixFile Import/Export"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "export,ANY,TabSeparatedFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,TabSeparatedFile,ANY-method"
+  .. .. .. ..$ : chr "exportToTabix"
+  .. .. .. ..$ : chr "exportToTabix,ANY,character-method"
+  .. .. .. ..$ : chr "import,TabixFile,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "targets"
+  .. .. ..$ title : chr "microRNA target sites"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "targets"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "layTrack-methods"
+  .. .. ..$ title : chr "Laying tracks"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "track&lt;-"
+  .. .. .. ..$ : chr "track&lt;-,BrowserSession,ANY-method"
+  .. .. .. ..$ : chr "track&lt;--methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TrackDb-class"
+  .. .. ..$ title : chr "Track Databases"
+  .. .. ..$ topics:List of 7
+  .. .. .. ..$ : chr "$,TrackDb-method"
+  .. .. .. ..$ : chr "$&lt;-,TrackDb-method"
+  .. .. .. ..$ : chr "class:TrackDb"
+  .. .. .. ..$ : chr "track&lt;-,TrackDb,ANY-method"
+  .. .. .. ..$ : chr "TrackDb-class"
+  .. .. .. ..$ : chr "[[,TrackDb,ANY,ANY-method"
+  .. .. .. ..$ : chr "[[&lt;-,TrackDb,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TrackHub-class"
+  .. .. ..$ title : chr "TrackHub Access"
+  .. .. ..$ topics:List of 27
+  .. .. .. ..$ : chr "$,TrackHub-method"
+  .. .. .. ..$ : chr "class:TrackHub"
+  .. .. .. ..$ : chr "coerce,character,TrackHub-method"
+  .. .. .. ..$ : chr "descriptionUrl,TrackHub-method"
+  .. .. .. ..$ : chr "descriptionUrl&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "email,TrackHub-method"
+  .. .. .. ..$ : chr "email&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "genome,TrackHub-method"
+  .. .. .. ..$ : chr "genomeField,TrackHub-method"
+  .. .. .. ..$ : chr "genomeField&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "genomeFile,TrackHub-method"
+  .. .. .. ..$ : chr "genomeFile&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "genomeInfo,TrackHub-method"
+  .. .. .. ..$ : chr "genomeInfo&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "hub,TrackHub-method"
+  .. .. .. ..$ : chr "hub&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "length,TrackHub-method"
+  .. .. .. ..$ : chr "longLabel,TrackHub-method"
+  .. .. .. ..$ : chr "longLabel&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "shortLabel,TrackHub-method"
+  .. .. .. ..$ : chr "shortLabel&lt;-,TrackHub-method"
+  .. .. .. ..$ : chr "show,TrackHub-method"
+  .. .. .. ..$ : chr "TrackHub"
+  .. .. .. ..$ : chr "TrackHub-class"
+  .. .. .. ..$ : chr "uri"
+  .. .. .. ..$ : chr "writeTrackHub"
+  .. .. .. ..$ : chr "[[,TrackHub,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TrackHubGenome-class"
+  .. .. ..$ title : chr "TrackHub Genome Access"
+  .. .. ..$ topics:List of 20
+  .. .. .. ..$ : chr "class:TrackHubGenome"
+  .. .. .. ..$ : chr "genome,TrackHubGenome-method"
+  .. .. .. ..$ : chr "getTracks,TrackHubGenome-method"
+  .. .. .. ..$ : chr "length,TrackHubGenome-method"
+  .. .. .. ..$ : chr "names,TrackHubGenome-method"
+  .. .. .. ..$ : chr "organism,TrackHubGenome-method"
+  .. .. .. ..$ : chr "referenceSequence,TrackHubGenome-method"
+  .. .. .. ..$ : chr "referenceSequence&lt;-,TrackHubGenome-method"
+  .. .. .. ..$ : chr "show,TrackHubGenome-method"
+  .. .. .. ..$ : chr "track,TrackHubGenome-method"
+  .. .. .. ..$ : chr "track&lt;-,TrackHubGenome,ANY-method"
+  .. .. .. ..$ : chr "track&lt;-,TrackHubGenome,character-method"
+  .. .. .. ..$ : chr "track&lt;-,TrackHubGenome,RsamtoolsFile-method"
+  .. .. .. ..$ : chr "trackField,TrackHubGenome-method"
+  .. .. .. ..$ : chr "trackField&lt;-,TrackHubGenome-method"
+  .. .. .. ..$ : chr "trackhub"
+  .. .. .. ..$ : chr "TrackHubGenome"
+  .. .. .. ..$ : chr "TrackHubGenome-class"
+  .. .. .. ..$ : chr "uri,TrackHubGenome-method"
+  .. .. .. ..$ : chr "writeTrackHub,TrackHubGenome-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ucscTrackLine-class"
+  .. .. ..$ title : chr "Class \"TrackLine\""
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "coerce,character,TrackLine-method"
+  .. .. .. ..$ : chr "coerce,TrackLine,character-method"
+  .. .. .. ..$ : chr "show,TrackLine-method"
+  .. .. .. ..$ : chr "TrackLine-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "tracks-methods"
+  .. .. ..$ title : chr "Accessing track names"
+  .. .. ..$ topics:List of 9
+  .. .. .. ..$ : chr "trackNames"
+  .. .. .. ..$ : chr "trackNames,UCSCSession-method"
+  .. .. .. ..$ : chr "trackNames,UCSCTrackModes-method"
+  .. .. .. ..$ : chr "trackNames,UCSCView-method"
+  .. .. .. ..$ : chr "trackNames-methods"
+  .. .. .. ..$ : chr "trackNames&lt;-"
+  .. .. .. ..$ : chr "trackNames&lt;-,UCSCTrackModes-method"
+  .. .. .. ..$ : chr "trackNames&lt;-,UCSCView-method"
+  .. .. .. ..$ : chr "trackNames&lt;--methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TwoBitFile-class"
+  .. .. ..$ title : chr "2bit Files"
+  .. .. ..$ topics:List of 16
+  .. .. .. ..$ : chr "2BitFile"
+  .. .. .. ..$ : chr "2BitFile-class"
+  .. .. .. ..$ : chr "class:2BitFile"
+  .. .. .. ..$ : chr "class:TwoBitFile"
+  .. .. .. ..$ : chr "export,ANY,TwoBitFile,ANY-method"
+  .. .. .. ..$ : chr "export,DNAStringSet,character,ANY-method"
+  .. .. .. ..$ : chr "export,DNAStringSet,TwoBitFile,ANY-method"
+  .. .. .. ..$ : chr "export.2bit"
+  .. .. .. ..$ : chr "export.2bit,ANY-method"
+  .. .. .. ..$ : chr "getSeq,TwoBitFile-method"
+  .. .. .. ..$ : chr "import,TwoBitFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.2bit"
+  .. .. .. ..$ : chr "import.2bit,ANY-method"
+  .. .. .. ..$ : chr "seqinfo,TwoBitFile-method"
+  .. .. .. ..$ : chr "TwoBitFile"
+  .. .. .. ..$ : chr "TwoBitFile-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "UCSCData-class"
+  .. .. ..$ title : chr "Class \"UCSCData\""
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "coerce,GRanges,UCSCData-method"
+  .. .. .. ..$ : chr "coerce,UCSCData,GRanges-method"
+  .. .. .. ..$ : chr "export.bed,UCSCData,character_OR_connection-method"
+  .. .. .. ..$ : chr "export.bed15,UCSCData-method"
+  .. .. .. ..$ : chr "export.gff,UCSCData,character_OR_connection-method"
+  .. .. .. ..$ : chr "export.ucsc,UCSCData,character_OR_connection-method"
+  .. .. .. ..$ : chr "initialize,UCSCData-method"
+  .. .. .. ..$ : chr "show,UCSCData-method"
+  .. .. .. ..$ : chr "split,UCSCData,ANY-method"
+  .. .. .. ..$ : chr "split,UCSCData,Vector-method"
+  .. .. .. ..$ : chr "UCSCData-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "UCSCFile-class"
+  .. .. ..$ title : chr "UCSCFile objects"
+  .. .. ..$ topics:List of 15
+  .. .. .. ..$ : chr "class:UCSCFile"
+  .. .. .. ..$ : chr "export,ANY,UCSCFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,UCSCFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRangesList,UCSCFile,ANY-method"
+  .. .. .. ..$ : chr "export,GRangesList,UCSCFile,ANY-method"
+  .. .. .. ..$ : chr "export,UCSCData,UCSCFile,ANY-method"
+  .. .. .. ..$ : chr "export.ucsc"
+  .. .. .. ..$ : chr "export.ucsc,ANY,ANY-method"
+  .. .. .. ..$ : chr "export.ucsc,ANY,BiocFile-method"
+  .. .. .. ..$ : chr "import,UCSCFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.ucsc"
+  .. .. .. ..$ : chr "import.ucsc,ANY-method"
+  .. .. .. ..$ : chr "import.ucsc,BiocFile-method"
+  .. .. .. ..$ : chr "UCSCFile"
+  .. .. .. ..$ : chr "UCSCFile-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ucscGenomes"
+  .. .. ..$ title : chr "Get available genomes on UCSC"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "ucscGenomes"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "UCSCSchema-class"
+  .. .. ..$ title : chr "UCSC Schema"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "genome,UCSCSchema-method"
+  .. .. .. ..$ : chr "nrow,UCSCSchema-method"
+  .. .. .. ..$ : chr "show,UCSCSchema-method"
+  .. .. .. ..$ : chr "tableName,UCSCSchema-method"
+  .. .. .. ..$ : chr "ucscSchema,UCSCSchemaDescription-method"
+  .. .. .. ..$ : chr "UCSCSchema-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ucscSession-class"
+  .. .. ..$ title : chr "Class \"UCSCSession\""
+  .. .. ..$ topics:List of 14
+  .. .. .. ..$ : chr "genome,ucscCart-method"
+  .. .. .. ..$ : chr "genome,UCSCSession-method"
+  .. .. .. ..$ : chr "genome&lt;-,UCSCSession-method"
+  .. .. .. ..$ : chr "getTable,UCSCSession-method"
+  .. .. .. ..$ : chr "initialize,UCSCSession-method"
+  .. .. .. ..$ : chr "range,ucscCart-method"
+  .. .. .. ..$ : chr "range,UCSCSession-method"
+  .. .. .. ..$ : chr "range&lt;-"
+  .. .. .. ..$ : chr "range&lt;-,UCSCSession-method"
+  .. .. .. ..$ : chr "seqinfo,UCSCSession-method"
+  .. .. .. ..$ : chr "track,UCSCSession-method"
+  .. .. .. ..$ : chr "track&lt;-,UCSCSession,BiocFile-method"
+  .. .. .. ..$ : chr "track&lt;-,UCSCSession,SimpleGRangesList-method"
+  .. .. .. ..$ : chr "UCSCSession-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "UCSCTableQuery-class"
+  .. .. ..$ title : chr "Querying UCSC Tables"
+  .. .. ..$ topics:List of 30
+  .. .. .. ..$ : chr "browserSession,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "browserSession&lt;-"
+  .. .. .. ..$ : chr "browserSession&lt;-,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "genome,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "genome&lt;-,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "getTable"
+  .. .. .. ..$ : chr "getTable,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "hubUrl"
+  .. .. .. ..$ : chr "hubUrl,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "hubUrl&lt;-,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "names,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "names&lt;-,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "range,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "range&lt;-,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "show,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "tableName"
+  .. .. .. ..$ : chr "tableName,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "tableName&lt;-"
+  .. .. .. ..$ : chr "tableName&lt;-,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "tableNames"
+  .. .. .. ..$ : chr "tableNames,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "track"
+  .. .. .. ..$ : chr "track,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "ucscSchema"
+  .. .. .. ..$ : chr "ucscSchema,UCSCTableQuery-method"
+  .. .. .. ..$ : chr "ucscTableQuery"
+  .. .. .. ..$ : chr "ucscTableQuery,character-method"
+  .. .. .. ..$ : chr "ucscTableQuery,UCSCSession-method"
+  .. .. .. ..$ : chr "UCSCTableQuery-class"
+  .. .. .. ..$ : chr "ucscTables"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ucscTrackModes-class"
+  .. .. ..$ title : chr "Class \"UCSCTrackModes\""
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "UCSCTrackModes-class"
+  .. .. .. ..$ : chr "[,UCSCTrackModes,ANY,ANY,ANY-method"
+  .. .. .. ..$ : chr "[&lt;-,UCSCTrackModes,ANY,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ucscTrackModes-methods"
+  .. .. ..$ title : chr "Accessing UCSC track modes"
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "ucscTrackModes"
+  .. .. .. ..$ : chr "ucscTrackModes,character-method"
+  .. .. .. ..$ : chr "ucscTrackModes,missing-method"
+  .. .. .. ..$ : chr "ucscTrackModes,UCSCSession-method"
+  .. .. .. ..$ : chr "ucscTrackModes,ucscTracks-method"
+  .. .. .. ..$ : chr "ucscTrackModes,UCSCView-method"
+  .. .. .. ..$ : chr "ucscTrackModes-methods"
+  .. .. .. ..$ : chr "ucscTrackModes&lt;-"
+  .. .. .. ..$ : chr "ucscTrackModes&lt;-,UCSCView,character-method"
+  .. .. .. ..$ : chr "ucscTrackModes&lt;-,UCSCView,UCSCTrackModes-method"
+  .. .. .. ..$ : chr "ucscTrackModes&lt;--methods"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ucscView-class"
+  .. .. ..$ title : chr "Class \"UCSCView\""
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "range,UCSCView-method"
+  .. .. .. ..$ : chr "range&lt;-,UCSCView-method"
+  .. .. .. ..$ : chr "UCSCView-class"
+  .. .. .. ..$ : chr "viewURL"
+  .. .. .. ..$ : chr "visible,UCSCView-method"
+  .. .. .. ..$ : chr "visible&lt;-,UCSCView-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "WIGFile-class"
+  .. .. ..$ title : chr "WIG Import and Export"
+  .. .. ..$ topics:List of 12
+  .. .. .. ..$ : chr "class:WIGFile"
+  .. .. .. ..$ : chr "export,ANY,WIGFile,ANY-method"
+  .. .. .. ..$ : chr "export,GenomicRanges,WIGFile,ANY-method"
+  .. .. .. ..$ : chr "export,SimpleGRangesList,WIGFile,ANY-method"
+  .. .. .. ..$ : chr "export,UCSCData,WIGFile,ANY-method"
+  .. .. .. ..$ : chr "export.wig"
+  .. .. .. ..$ : chr "export.wig,ANY-method"
+  .. .. .. ..$ : chr "import,WIGFile,ANY,ANY-method"
+  .. .. .. ..$ : chr "import.wig"
+  .. .. .. ..$ : chr "import.wig,ANY-method"
+  .. .. .. ..$ : chr "WIGFile"
+  .. .. .. ..$ : chr "WIGFile-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "wigToBigWig"
+  .. .. ..$ title : chr "Convert WIG to BigWig"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "wigToBigWig"
+  ..$ _rundeps          :List of 47
   .. ..$ : chr "abind"
   .. ..$ : chr "askpass"
+  .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocBaseUtils"
-  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
   .. ..$ : chr "BiocIO"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
+  .. ..$ : chr "BiocParallel"
+  .. ..$ : chr "Biostrings"
   .. ..$ : chr "bitops"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "cachem"
-  .. ..$ : chr "cli"
-  .. ..$ : chr "clipr"
+  .. ..$ : chr "cigarillo"
+  .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
   .. ..$ : chr "curl"
-  .. ..$ : chr "DBI"
-  .. ..$ : chr "dbplyr"
   .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "fastmap"
-  .. ..$ : chr "filelock"
+  .. ..$ : chr "formatR"
+  .. ..$ : chr "futile.logger"
+  .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
+  .. ..$ : chr "GenomicAlignments"
   .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "glue"
-  .. ..$ : chr "h5mread"
-  .. ..$ : chr "HDF5Array"
-  .. ..$ : chr "hms"
-  .. ..$ : chr "httr2"
+  .. ..$ : chr "httr"
   .. ..$ : chr "IRanges"
   .. ..$ : chr "jsonlite"
+  .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
-  .. ..$ : chr "lifecycle"
-  .. ..$ : chr "magick"
-  .. ..$ : chr "magrittr"
   .. ..$ : chr "Matrix"
   .. ..$ : chr "MatrixGenerics"
   .. ..$ : chr "matrixStats"
-  .. ..$ : chr "memoise"
+  .. ..$ : chr "mime"
   .. ..$ : chr "openssl"
-  .. ..$ : chr "pillar"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plogr"
-  .. ..$ : chr "prettyunits"
-  .. ..$ : chr "progress"
-  .. ..$ : chr "purrr"
-  .. ..$ : chr "R.methodsS3"
-  .. ..$ : chr "R.oo"
-  .. ..$ : chr "R.utils"
   .. ..$ : chr "R6"
-  .. ..$ : chr "rappdirs"
-  .. ..$ : chr "Rcpp"
   .. ..$ : chr "RCurl"
-  .. ..$ : chr "readr"
-  .. ..$ : chr "rhdf5"
-  .. ..$ : chr "rhdf5filters"
-  .. ..$ : chr "Rhdf5lib"
+  .. ..$ : chr "restfulr"
+  .. ..$ : chr "Rhtslib"
   .. ..$ : chr "rjson"
-  .. ..$ : chr "rlang"
-  .. ..$ : chr "RSQLite"
+  .. ..$ : chr "Rsamtools"
   .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
   .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SingleCellExperiment"
+  .. ..$ : chr "snow"
   .. ..$ : chr "SparseArray"
-  .. ..$ : chr "SpatialExperiment"
-  .. ..$ : chr "stringi"
-  .. ..$ : chr "stringr"
   .. ..$ : chr "SummarizedExperiment"
   .. ..$ : chr "sys"
-  .. ..$ : chr "TENxIO"
-  .. ..$ : chr "tibble"
-  .. ..$ : chr "tidyr"
-  .. ..$ : chr "tidyselect"
-  .. ..$ : chr "tzdb"
-  .. ..$ : chr "utf8"
-  .. ..$ : chr "vctrs"
-  .. ..$ : chr "VisiumIO"
-  .. ..$ : chr "vroom"
-  .. ..$ : chr "withr"
+  .. ..$ : chr "XML"
   .. ..$ : chr "XVector"
-  ..$ _vignettes        :List of 1
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "XeniumIO.Rmd"
-  .. .. ..$ filename: chr "XeniumIO.html"
-  .. .. ..$ title   : chr "XeniumIO: Import 10X Genomics Xenium Analyzer Data"
-  .. .. ..$ author  : chr "Marcel Ramos"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 12
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Supported Formats"
-  .. .. .. ..$ : chr "TENxIO"
-  .. .. .. ..$ : chr "VisiumIO"
-  .. .. .. ..$ : chr "XeniumIO"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Loading package"
-  .. .. .. ..$ : chr "Example Folder Structure"
-  .. .. .. ..$ : chr "Xenium class"
-  .. .. .. ..$ : chr "import method"
-  .. .. .. ..$ : chr "Importing an Example Xenium Dataset"
-  .. .. .. ..$ : chr "Session Info"
-  .. .. ..$ created : chr "2024-10-01 21:09:50"
-  .. .. ..$ modified: chr "2025-05-06 22:22:50"
-  .. .. ..$ commits : int 11
-  ..$ _score            : num 4.6
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "xeniumio"
-  ..$ _universes        :List of 3
-  .. ..$ : chr "bioc"
-  .. ..$ : chr "link-ny"
-  .. ..$ : chr "waldronlab"
-  ..$ _failure          :List of 4
-  .. ..$ version : chr "1.3.2"
-  .. ..$ commit  :List of 5
-  .. .. ..$ id       : chr "13130af830be4224118639041e4394d271531203"
-  .. .. ..$ author   : chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
-  .. .. ..$ committer: chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
-  .. .. ..$ message  : chr "version bump 1.3.2\n"
-  .. .. ..$ time     : int 1765493512
-  .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20155598028"
-  .. ..$ date    : chr "2025-12-12T03:51:35.434Z"
-  ..$ _binaries         :List of 8
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:03:21.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "ed8ec2d9b3e5d1d527691a9255d9ab06cd5159b04737addde41129fcc9dd73b3"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:03:09.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "ed50e2fefad14a0edc00ba07f35e38a536bac9756170583546e1a5c6667ffbed"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
-  .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:19:19.000Z"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "641b6b52ac6da09b6dec0303d84e6bcb402b5b42f27336803261584c456319af"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
-  .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:19:28.000Z"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "2df8b8a9ee1cd24bdb151b2733e312e250e9ee3ebf46259d65cccda27198def5"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
+  .. ..$ : chr "yaml"
+  ..$ _sysdeps          :List of 4
   .. ..$ :List of 8
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:03:28.000Z"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "666a40e12be012a293681292a221fea913ae81d6e7afe192e6c0ef1e34401e08"
+  .. .. ..$ shlib      : chr "libz"
+  .. .. ..$ package    : chr "zlib1g"
+  .. .. ..$ headers    : chr "zlib1g-dev"
+  .. .. ..$ source     : chr "zlib"
+  .. .. ..$ version    : chr "1:1.3.dfsg-3.1ubuntu2.1"
+  .. .. ..$ name       : chr "zlib"
+  .. .. ..$ homepage   : chr "http://zlib.net/"
+  .. .. ..$ description: chr "compression library - runtime"
+  .. ..$ :List of 8
+  .. .. ..$ shlib      : chr "libssl"
+  .. .. ..$ package    : chr "libssl3t64"
+  .. .. ..$ headers    : chr "libssl-dev"
+  .. .. ..$ source     : chr "openssl"
+  .. .. ..$ version    : chr "3.0.13-0ubuntu3.6"
+  .. .. ..$ name       : chr "openssl"
+  .. .. ..$ homepage   : chr "https://www.openssl.org/"
+  .. .. ..$ description: chr "Secure Sockets Layer toolkit - shared libraries"
+  .. ..$ :List of 8
+  .. .. ..$ shlib      : chr "libcrypto"
+  .. .. ..$ package    : chr "libssl3t64"
+  .. .. ..$ headers    : chr "libssl-dev"
+  .. .. ..$ source     : chr "openssl"
+  .. .. ..$ version    : chr "3.0.13-0ubuntu3.6"
+  .. .. ..$ name       : chr "openssl"
+  .. .. ..$ homepage   : chr "https://www.openssl.org/"
+  .. .. ..$ description: chr "Secure Sockets Layer toolkit - shared libraries"
+  .. ..$ :List of 8
+  .. .. ..$ shlib      : chr "libcurl"
+  .. .. ..$ package    : chr "libcurl4t64"
+  .. .. ..$ headers    : chr "libcurl4-openssl-dev"
+  .. .. ..$ source     : chr "curl"
+  .. .. ..$ version    : chr "8.5.0-2ubuntu10.6"
+  .. .. ..$ name       : chr "curl"
+  .. .. ..$ homepage   : chr "https://curl.se/"
+  .. .. ..$ description: chr "easy-to-use client-side URL transfer library (OpenSSL flavour)"
+  ..$ _vignettes        :List of 1
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "rtracklayer.Rnw"
+  .. .. ..$ filename: chr "rtracklayer.pdf"
+  .. .. ..$ title   : chr "rtracklayer"
+  .. .. ..$ engine  : chr "utils::Sweave"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2013-10-18 22:10:45"
+  .. .. ..$ modified: chr "2023-10-20 17:22:49"
+  .. .. ..$ commits : int 5
+  ..$ _score            : num 12.9
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "rtracklayer"
+  ..$ _universes        :List of 2
+  .. ..$ : chr "bioc"
+  .. ..$ : chr "lawremi"
+  ..$ _previous         : chr "1.71.2"
+  ..$ _binaries         :List of 11
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:09:22.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "7067fa2878c5bb5d717f70ba270b852094a642ebea377855852a01fbada7e7f1"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:09:59.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "dca7473633c358cf90d8938a3b031ec6832e60a2baefb213d2c26968ed72d2e9"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:10:13.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "3653fa89bea7c81334c156b12c4f6e60e8887765e93dac0b79ab6ea3edf4b88b"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:10:02.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "258c4870024c9a7884358e4e2a899d925de3a83b68419260efcc419e7798f73d"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.4.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:08:49.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "a7ccf5dadb45a3c45efb69b2aeeec90364f30aa9e332df62b7caa44b20b80c6d"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.4.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:10:48.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "1362e02f96ebcd22f1474c43d89f2d6ad39df5b6a2a955e4b4b7c751de2ec7e6"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:07:44.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "e332226c67dfc9f4b12ce92ddc80ec45f7e187c5fb362e5c22290b8c69d77189"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:10:42.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "0edcde787aa9f054865b041af034557881cd10ac8c9aa5dc9d4c09b45166d0ff"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:02:02.000Z"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "b3ac6e6b63a28435461edf2d82e4ef21b11e84fdc4e62999c5dcfa26c1f8b5b0"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:08:16.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "c31ba97a315c1775ec029e5a61be38c1ecaeaa2214e797567680aa48af8bb76a"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:02:17.000Z"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "8fc1717e80dcbde96a7a6791469f82fea179558dbd5a63a24099017ed9defa54"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:08:15.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "f9e65827727b46fcb53cb504ec0c4d3ba5e510bc72aeccc1a56aa9d16b1da55e"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.3.0"
-  .. .. ..$ date    : chr "2025-11-23T15:02:41.000Z"
-  .. .. ..$ commit  : chr "dfaaa90139c61b3f5feb1100c2fe65bd4c411bf7"
-  .. .. ..$ fileid  : chr "2ba06ece2269f001e089939e8ced3652998b6b1a8fe4ad9d9a1bbcb6edc21999"
+  .. .. ..$ version : chr "1.71.3"
+  .. .. ..$ date    : chr "2025-12-14T05:08:38.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "326e334b62e415d9a6020b73df52e72ed94b7df6"
+  .. .. ..$ fileid  : chr "b9f80553bcbc7e7cd487f22474c74b05ee34142830e8595f1afb834df432b58d"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19612943581"</code></pre>
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20202963079"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
