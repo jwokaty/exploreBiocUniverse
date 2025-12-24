@@ -531,6 +531,18 @@ Total 2334 2361</code></pre>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">SpatialOmicsOverlay</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.10.0</td>
+<td style="text-align: left;">1.11.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.6 on Linux</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">SwathXtend</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -677,280 +689,201 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package           : chr "ReactomePA"
-  ..$ Type              : chr "Package"
-  ..$ Title             : chr "Reactome Pathway Analysis"
-  ..$ Version           : chr "1.55.0"
-  ..$ Authors@R         : chr "c(person(given = \"Guangchuang\", family = \"Yu\",\nemail = \"guangchuangyu@gmail.com\",\nrole  = c(\"aut\", \""| __truncated__
-  ..$ Maintainer        : chr "Guangchuang Yu &lt;guangchuangyu@gmail.com&gt;"
-  ..$ Description       : chr "This package provides functions for pathway analysis based\non REACTOME pathway database. It implements enrichm"| __truncated__
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ ByteCompile       : chr "true"
-  ..$ License           : chr "GPL-2"
-  ..$ URL               : chr "https://yulab-smu.top/contribution-knowledge-mining/"
-  ..$ BugReports        : chr "https://github.com/GuangchuangYu/ReactomePA/issues"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-11-24 07:54:28 UTC"
-  .. ..$ User: chr "root"
-  ..$ biocViews         : chr "Pathways, Visualization, Annotation, MultipleComparison,\nGeneSetEnrichment, Reactome"
-  ..$ RoxygenNote       : chr "7.3.2"
+ $ :List of 69
+  ..$ Package           : chr "RedisParam"
+  ..$ Title             : chr "Provide a 'redis' back-end for BiocParallel"
+  ..$ Version           : chr "1.13.1"
+  ..$ Authors@R         : chr "c(\nperson(\n\"Martin\", \"Morgan\",\nemail = \"mtmorgan.bioc@gmail.com\",\nrole = c(\"aut\", \"cre\"),\ncommen"| __truncated__
+  ..$ Description       : chr "This package provides a Redis-based back-end for\nBiocParallel, enabling an alternative mechanism for distribut"| __truncated__
+  ..$ SystemRequirements: chr "hiredis"
+  ..$ License           : chr "Artistic-2.0"
   ..$ Encoding          : chr "UTF-8"
-  ..$ Config/pak/sysreqs: chr "libcairo2-dev libfontconfig1-dev libfreetype6-dev\nlibglpk-dev make libicu-dev libpng-dev libxml2-dev libssl-dev\nzlib1g-dev"
+  ..$ Roxygen           : chr "list(markdown = TRUE)"
+  ..$ RoxygenNote       : chr "7.3.3"
+  ..$ Collate           : chr "'Redis.R' 'RedisBackend-class.R' 'RedisParam-class.R'\n'RedisParam-accessors.R' 'RedisParam-logger.R'\n'RedisPa"| __truncated__
+  ..$ biocViews         : chr "Infrastructure"
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ Config/pak/sysreqs: chr "libhiredis-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-10-29 14:10:37 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/ReactomePA"
+  ..$ Date/Publication  : chr "2025-12-23 23:56:36 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/RedisParam"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
+  ..$ RemoteSha         : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
   ..$ NeedsCompilation  : chr "no"
-  ..$ Author            : chr "Guangchuang Yu [aut, cre],\nVladislav Petyuk [ctb]"
-  ..$ MD5sum            : chr "8d53a1a5ec9055a64d5723c86ba8eb38"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2025-12-24 03:28:35 UTC"
+  .. ..$ User: chr "root"
+  ..$ Author            : chr "Martin Morgan [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-5874-8148&gt;),\nJiefei Wang [aut]"
+  ..$ Maintainer        : chr "Martin Morgan &lt;mtmorgan.bioc@gmail.com&gt;"
+  ..$ MD5sum            : chr "3d92516e78565ca8d963207cb1d62d8f"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "ReactomePA_1.55.0.tar.gz"
-  ..$ _fileid           : chr "0dcf3edbd74135e77f08b52b7b86b298358ea259dc02a46c7af0b5589fff8cd7"
-  ..$ _filesize         : int 117286
-  ..$ _sha256           : chr "0dcf3edbd74135e77f08b52b7b86b298358ea259dc02a46c7af0b5589fff8cd7"
-  ..$ _created          : chr "2025-11-24T07:54:28.000Z"
+  ..$ _file             : chr "RedisParam_1.13.1.tar.gz"
+  ..$ _fileid           : chr "09aed0d6971ffb8d218c7a18ab2c06275098911d5fb5d5627b3fc47c5f84c711"
+  ..$ _filesize         : int 635702
+  ..$ _sha256           : chr "09aed0d6971ffb8d218c7a18ab2c06275098911d5fb5d5627b3fc47c5f84c711"
+  ..$ _created          : chr "2025-12-24T03:28:35.000Z"
+  ..$ _published        : chr "2025-12-24T03:31:48.647Z"
   ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 244
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 154
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4657576623"
+  .. .. ..$ artifact: chr "4958682879"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 416
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 143
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4657595800"
+  .. .. ..$ artifact: chr "4958681941"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 391
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 143
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4657592854"
+  .. .. ..$ artifact: chr "4958681990"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 365
-  .. .. ..$ config  : chr "macos-oldrel-arm64"
-  .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4657712441"
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 97
+  .. .. ..$ config  : chr "macos-devel-arm64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4958678057"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 370
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 119
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4657712246"
+  .. .. ..$ artifact: chr "4958680052"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 361
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 179
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4657551128"
+  .. .. ..$ artifact: chr "4958670641"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 272
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 124
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4657579575"
+  .. .. ..$ artifact: chr "4958680298"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 302
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 136
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4657582846"
+  .. .. ..$ artifact: chr "4958681477"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 315
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 144
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4657584312"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "4958682108"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.62e+10
-  .. .. ..$ time    : int 323
+  .. .. ..$ job     : num 5.88e+10
+  .. .. ..$ time    : int 161
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4657585217"
+  .. .. ..$ artifact: chr "4958683327"
   ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 2
-  .. ..$ warning: int 2
-  .. ..$ note   : int 13
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. ..$ error  : int 1
+  .. ..$ warning: int 3
+  .. ..$ note   : int 6
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/ReactomePA"
+  ..$ _upstream         : chr "https://github.com/bioc/RedisParam"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. ..$ author   : chr "A Wokaty &lt;andres.wokaty@sph.cuny.edu&gt;"
-  .. ..$ committer: chr "A Wokaty &lt;andres.wokaty@sph.cuny.edu&gt;"
-  .. ..$ message  : chr "bump x.y.z version to odd y following creation of RELEASE_3_22 branch\n"
-  .. ..$ time     : int 1761747037
+  .. ..$ id       : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. ..$ author   : chr "Martin Morgan &lt;mtmorgan.xyz@gmail.com&gt;"
+  .. ..$ committer: chr "Martin Morgan &lt;mtmorgan.xyz@gmail.com&gt;"
+  .. ..$ message  : chr "version bump and NEWS update\n"
+  .. ..$ time     : int 1766534196
   ..$ _maintainer       :List of 5
-  .. ..$ name   : chr "Guangchuang Yu"
-  .. ..$ email  : chr "guangchuangyu@gmail.com"
-  .. ..$ login  : chr "guangchuangyu"
-  .. ..$ twitter: chr "@guangchuangyu"
-  .. ..$ uuid   : int 626539
+  .. ..$ name : chr "Martin Morgan"
+  .. ..$ email: chr "mtmorgan.bioc@gmail.com"
+  .. ..$ login: chr "mtmorgan"
+  .. ..$ orcid: chr "0000-0002-5874-8148"
+  .. ..$ uuid : int 118552
   ..$ _distro           : chr "noble"
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 18
+  ..$ _dependencies     :List of 10
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 3.4.0"
+  .. .. ..$ version: chr "&gt;= 4.2.0"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BiocParallel"
+  .. .. ..$ version: chr "&gt;= 1.29.12"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationDbi"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "DOSE"
-  .. .. ..$ version: chr "&gt;= 3.5.1"
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "enrichplot"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ version: chr "&gt;= 3.3.5"
+  .. .. ..$ package: chr "redux"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggraph"
+  .. .. ..$ package: chr "withr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "reactome.db"
+  .. .. ..$ package: chr "logger"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "igraph"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graphite"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gson"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "yulab.utils"
-  .. .. ..$ version: chr "&gt;= 0.1.5"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "clusterProfiler"
+  .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "prettydoc"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
   .. .. ..$ package: chr "testthat"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 9
-  ..$ _updates          :List of 2
+  ..$ _usedby           : int 0
+  ..$ _updates          :List of 3
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-52"
+  .. .. ..$ n   : int 2
   ..$ _tags             : list()
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.55.0"
+  .. .. ..$ version: chr "1.13.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.54.0"
+  .. .. ..$ version: chr "1.12.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 9
-  .. ..$ : chr "pathways"
-  .. ..$ : chr "visualization"
-  .. ..$ : chr "annotation"
-  .. ..$ : chr "multiplecomparison"
-  .. ..$ : chr "genesetenrichment"
-  .. ..$ : chr "reactome"
-  .. ..$ : chr "enrichment-analysis"
-  .. ..$ : chr "reactome-pathway-analysis"
-  .. ..$ : chr "reactomepa"
-  ..$ _stars            : int 43
-  ..$ _contributors     :List of 11
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "guangchuangyu"
-  .. .. ..$ count: int 213
-  .. .. ..$ uuid : int 626539
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dtenenba"
-  .. .. ..$ count: int 24
-  .. .. ..$ uuid : int 2286826
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 10
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vladpetyuk"
-  .. .. ..$ count: int 8
-  .. .. ..$ uuid : int 4207635
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nelson-gon"
-  .. .. ..$ count: int 5
-  .. .. ..$ uuid : int 42792514
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "huerqiang"
-  .. .. ..$ count: int 5
-  .. .. ..$ uuid : int 48857018
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "clearmind777"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 139222736
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 8810451
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "sonali-bioc"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 6373953
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vobencha"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2466173
+  ..$ _topics           :List of 1
+  .. ..$ : chr "infrastructure"
   ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 5616
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/ReactomePA"
-  ..$ _mentions         : int 171
-  ..$ _devurl           : chr "https://github.com/guangchuangyu/reactomepa"
-  ..$ _searchresults    : int 2096
+  .. ..$ count : int 236
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/RedisParam"
+  ..$ _searchresults    : int 17
   ..$ _rbuild           : chr "4.5.2"
   ..$ _assets           :List of 11
   .. ..$ : chr "extra/citation.cff"
@@ -960,266 +893,196 @@ Total 2334 2361</code></pre>
   .. ..$ : chr "extra/contents.json"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
-  .. ..$ : chr "extra/ReactomePA.html"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
+  .. ..$ : chr "extra/RedisParam.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/yulab-smu/reactomepa"
+  ..$ _homeurl          : chr "https://github.com/mtmorgan/redisparam"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 12
-  .. ..$ : chr "cnetplot"
-  .. ..$ : chr "dotplot"
-  .. ..$ : chr "emapplot"
-  .. ..$ : chr "enrichPathway"
-  .. ..$ : chr "geneID"
-  .. ..$ : chr "geneInCategory"
-  .. ..$ : chr "gseaplot"
-  .. ..$ : chr "gsePathway"
-  .. ..$ : chr "gson_Reactome"
-  .. ..$ : chr "heatplot"
-  .. ..$ : chr "ridgeplot"
-  .. ..$ : chr "viewPathway"
-  ..$ _help             :List of 7
+  ..$ _exports          :List of 15
+  .. ..$ : chr "bpbackend"
+  .. ..$ : chr "bpisup"
+  .. ..$ : chr "bplog&lt;-"
+  .. ..$ : chr "bpstart"
+  .. ..$ : chr "bpstop"
+  .. ..$ : chr "bpstopall"
+  .. ..$ : chr "bpworkers"
+  .. ..$ : chr "RedisParam"
+  .. ..$ : chr "rpalive"
+  .. ..$ : chr "rphost"
+  .. ..$ : chr "rpisworker"
+  .. ..$ : chr "rppassword"
+  .. ..$ : chr "rpport"
+  .. ..$ : chr "rpstopall"
+  .. ..$ : chr "rpworkers"
+  ..$ _help             :List of 2
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "DataSet"
-  .. .. ..$ title : chr "Datasets sample contains a sample of gene IDs."
+  .. .. ..$ page  : chr "RedisParam-deprecated"
+  .. .. ..$ title : chr "Deprecated functions in the RedisParam package"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "DataSet"
+  .. .. .. ..$ : chr "bpstopall"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "enrichPathway"
-  .. .. ..$ title : chr "Pathway Enrichment Analysis of a gene set. Given a vector of genes, this function will return the enriched path"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "enrichPathway"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getALLEG"
-  .. .. ..$ title : chr "getALLEG"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getALLEG"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getDb"
-  .. .. ..$ title : chr "getDb"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getDb"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gsePathway"
-  .. .. ..$ title : chr "gsePathway"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gsePathway"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gson_Reactome"
-  .. .. ..$ title : chr "gson_Reactome"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gson_Reactome"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "viewPathway"
-  .. .. ..$ title : chr "viewPathway"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "viewPathway"
-  ..$ _readme           : chr "https://github.com/bioc/ReactomePA/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 139
-  .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "ape"
-  .. ..$ : chr "aplot"
-  .. ..$ : chr "askpass"
-  .. ..$ : chr "base64enc"
+  .. .. ..$ page  : chr "RedisParam-class"
+  .. .. ..$ title : chr "Enable redis-based parallel evaluation in BiocParallel"
+  .. .. ..$ topics:List of 14
+  .. .. .. ..$ : chr "bpbackend,RedisParam-method"
+  .. .. .. ..$ : chr "bpisup,RedisParam-method"
+  .. .. .. ..$ : chr "bplog&lt;-,RedisParam,logical-method"
+  .. .. .. ..$ : chr "bpstart,RedisParam-method"
+  .. .. .. ..$ : chr "bpstop,RedisParam-method"
+  .. .. .. ..$ : chr "bpworkers,RedisParam-method"
+  .. .. .. ..$ : chr "RedisParam"
+  .. .. .. ..$ : chr "rpalive"
+  .. .. .. ..$ : chr "rphost"
+  .. .. .. ..$ : chr "rpisworker"
+  .. .. .. ..$ : chr "rppassword"
+  .. .. .. ..$ : chr "rpport"
+  .. .. .. ..$ : chr "rpstopall"
+  .. .. .. ..$ : chr "rpworkers"
+  ..$ _readme           : chr "https://github.com/bioc/RedisParam/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 15
   .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocGenerics"
   .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "bslib"
-  .. ..$ : chr "cachem"
-  .. ..$ : chr "cli"
-  .. ..$ : chr "cluster"
   .. ..$ : chr "codetools"
-  .. ..$ : chr "cowplot"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "crayon"
-  .. ..$ : chr "curl"
-  .. ..$ : chr "data.table"
-  .. ..$ : chr "DBI"
   .. ..$ : chr "digest"
-  .. ..$ : chr "dir.expiry"
-  .. ..$ : chr "DOSE"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "enrichplot"
-  .. ..$ : chr "evaluate"
-  .. ..$ : chr "farver"
-  .. ..$ : chr "fastmap"
-  .. ..$ : chr "fastmatch"
-  .. ..$ : chr "fgsea"
-  .. ..$ : chr "filelock"
-  .. ..$ : chr "fontawesome"
-  .. ..$ : chr "fontBitstreamVera"
-  .. ..$ : chr "fontLiberation"
-  .. ..$ : chr "fontquiver"
   .. ..$ : chr "formatR"
-  .. ..$ : chr "fs"
   .. ..$ : chr "futile.logger"
   .. ..$ : chr "futile.options"
-  .. ..$ : chr "gdtools"
-  .. ..$ : chr "generics"
-  .. ..$ : chr "ggforce"
-  .. ..$ : chr "ggfun"
-  .. ..$ : chr "ggiraph"
-  .. ..$ : chr "ggnewscale"
-  .. ..$ : chr "ggplot2"
-  .. ..$ : chr "ggplotify"
-  .. ..$ : chr "ggraph"
-  .. ..$ : chr "ggrepel"
-  .. ..$ : chr "ggtangle"
-  .. ..$ : chr "ggtree"
-  .. ..$ : chr "glue"
-  .. ..$ : chr "GO.db"
-  .. ..$ : chr "GOSemSim"
-  .. ..$ : chr "graph"
-  .. ..$ : chr "graphite"
-  .. ..$ : chr "graphlayouts"
-  .. ..$ : chr "gridExtra"
-  .. ..$ : chr "gridGraphics"
-  .. ..$ : chr "gson"
-  .. ..$ : chr "gtable"
-  .. ..$ : chr "highr"
-  .. ..$ : chr "htmltools"
-  .. ..$ : chr "htmlwidgets"
-  .. ..$ : chr "httr"
-  .. ..$ : chr "igraph"
-  .. ..$ : chr "IRanges"
-  .. ..$ : chr "isoband"
-  .. ..$ : chr "jquerylib"
-  .. ..$ : chr "jsonlite"
-  .. ..$ : chr "KEGGREST"
-  .. ..$ : chr "knitr"
-  .. ..$ : chr "labeling"
   .. ..$ : chr "lambda.r"
-  .. ..$ : chr "lattice"
-  .. ..$ : chr "lazyeval"
-  .. ..$ : chr "lifecycle"
-  .. ..$ : chr "magrittr"
-  .. ..$ : chr "MASS"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "memoise"
-  .. ..$ : chr "mime"
-  .. ..$ : chr "nlme"
-  .. ..$ : chr "openssl"
-  .. ..$ : chr "patchwork"
-  .. ..$ : chr "pillar"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plogr"
-  .. ..$ : chr "plyr"
-  .. ..$ : chr "png"
-  .. ..$ : chr "polyclip"
-  .. ..$ : chr "purrr"
-  .. ..$ : chr "qvalue"
-  .. ..$ : chr "R.methodsS3"
-  .. ..$ : chr "R.oo"
-  .. .. [list output truncated]
-  ..$ _vignettes        :List of 1
+  .. ..$ : chr "logger"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "redux"
+  .. ..$ : chr "snow"
+  .. ..$ : chr "storr"
+  .. ..$ : chr "withr"
+  ..$ _vignettes        :List of 2
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "ReactomePA.Rmd"
-  .. .. ..$ filename: chr "ReactomePA.html"
-  .. .. ..$ title   : chr "An R package for Reactome Pathway Analysis"
-  .. .. ..$ author  : chr "Guangchuang Yu"
+  .. .. ..$ source  : chr "RedisParamDeveloperGuide.Rmd"
+  .. .. ..$ filename: chr "RedisParamDeveloperGuide.html"
+  .. .. ..$ title   : chr "RedisParam for Developers"
+  .. .. ..$ author  : chr "Jiefei Wang"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 3
-  .. .. .. ..$ : chr "Vignette"
-  .. .. .. ..$ : chr "Citation"
-  .. .. .. ..$ : chr "Need help?"
-  .. .. ..$ created : chr "2015-06-29 08:08:51"
-  .. .. ..$ modified: chr "2021-12-02 03:31:14"
-  .. .. ..$ commits : int 25
-  ..$ _score            : num 12.1
+  .. .. ..$ headings:List of 11
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "General design principles"
+  .. .. .. ..$ : chr "Data structure in Redis"
+  .. .. .. ..$ : chr "Workflow"
+  .. .. .. ..$ : chr "Manager"
+  .. .. .. ..$ : chr "Submit a task to Redis"
+  .. .. .. ..$ : chr "Receive a result from Redis"
+  .. .. .. ..$ : chr "Worker"
+  .. .. .. ..$ : chr "Receive a task from Redis"
+  .. .. .. ..$ : chr "Send a result to Redis"
+  .. .. .. ..$ : chr "Session information"
+  .. .. ..$ created : chr "2022-06-08 17:53:35"
+  .. .. ..$ modified: chr "2022-06-08 17:53:35"
+  .. .. ..$ commits : int 1
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "RedisParamUserGuide.Rmd"
+  .. .. ..$ filename: chr "RedisParamUserGuide.html"
+  .. .. ..$ title   : chr "Using RedisParam"
+  .. .. ..$ author  : chr "Martin Morgan"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 5
+  .. .. .. ..$ : chr "Getting started"
+  .. .. .. ..$ : chr "Use"
+  .. .. .. ..$ : chr "Manager and workers from a single R session"
+  .. .. .. ..$ : chr "Independently-managed workers"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2022-06-08 17:53:35"
+  .. .. ..$ modified: chr "2022-06-08 17:53:35"
+  .. .. ..$ commits : int 1
+  ..$ _score            : num 4.71
   ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "reactomepa"
+  ..$ _nocasepkg        : chr "redisparam"
   ..$ _universes        :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "guangchuangyu"
-  ..$ _failure          :List of 4
-  .. ..$ version : chr "1.55.1"
-  .. ..$ commit  :List of 5
-  .. .. ..$ id       : chr "cbad461708c72c9042e77ded76ac936a11d7300a"
-  .. .. ..$ author   : chr "Guangchuang Yu &lt;guangchuangyu@gmail.com&gt;"
-  .. .. ..$ committer: chr "Guangchuang Yu &lt;guangchuangyu@gmail.com&gt;"
-  .. .. ..$ message  : chr "bump version\n"
-  .. .. ..$ time     : int 1766452004
-  .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20451791633"
-  .. ..$ date    : chr "2025-12-23T05:01:02.914Z"
-  ..$ _binaries         :List of 7
+  .. ..$ : chr "mtmorgan"
+  ..$ _previous         : chr "1.13.0"
+  ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T07:59:13.000Z"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:56.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "4659a3dae3defbad676d93866ebca6caedd3c969659fc4455c58f2fadfb6194a"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "697a6a745be05983a0b720dd4f35e99eb103fdfea7a8a3a1257e258555776360"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T07:59:07.000Z"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:56.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "0ae98f44d16bf7c169fc3cf560410d439f460a973999471ab420a6d410c91656"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "f9759477e52660f72bcd4171367ca3b7e2cf5bbc74c4efdc5d95fec28fce2358"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:12.000Z"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "b9b06b97b8c448b8a194036418a74e4ccdb5999a54293069aa6ea8e9c43905c8"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T08:13:58.000Z"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "ee036fb22488ef0460e8534f3233de630c319bfae65a3cfedfb7362e5389d015"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:35.000Z"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "19f1c6e307f5fe6ecd9d4caa8a1c69b235799963016b5f5e43da7675891e4923"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T07:59:42.000Z"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "76a4074c5f4332cbdfc01de099be1d07d1cddfdaf307a2fa732a357449b5457a"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:55.000Z"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "27e1b31f2f24b0d0d477256e1b9da197bf0104389a4c8033c0096d26f71f66a4"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T07:57:28.000Z"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "1fd5286cb929e50836739da1a18090895fdc970882ffd16def049b0a07b419e6"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:29:53.000Z"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "24b0923c279f324417e5f1baa5da00789ebc61371f0ebc3689ffd00ae46cefdf"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T07:58:01.000Z"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "a17abcf8e4fc5bd41770b6a395d26242b8f6895497437ddb633e5b52881f4779"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:00.000Z"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "cbbc14f254b18169358f0d3cdaf1127baf264b1b2c710c09fd7468f1c41f1b09"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.55.0"
-  .. .. ..$ date    : chr "2025-11-24T07:57:42.000Z"
-  .. .. ..$ commit  : chr "37ccc0db11061b553825b519b0d858b9e8b466b7"
-  .. .. ..$ fileid  : chr "c8ec3b5964710e9f5489cc950cc8939e2df7ef18d677376574ffd23975d837b8"
+  .. .. ..$ version : chr "1.13.1"
+  .. .. ..$ date    : chr "2025-12-24T03:30:11.000Z"
+  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  .. .. ..$ fileid  : chr "5ef2b07e69f4ed1354b18e046bb374ab43348b6d72d07591554b8bee3057cefa"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/19627048258"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
