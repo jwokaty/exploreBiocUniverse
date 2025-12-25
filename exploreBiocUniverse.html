@@ -207,9 +207,9 @@ Total 2334 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">StatescopeR</td>
-<td style="text-align: left;">0.99.32</td>
-<td style="text-align: left;">2025-12-18T04:33:48.000Z</td>
-<td style="text-align: left;">2025-12-18T04:56:03.542Z</td>
+<td style="text-align: left;">0.99.33</td>
+<td style="text-align: left;">2025-12-25T05:30:37.000Z</td>
+<td style="text-align: left;">2025-12-25T06:02:12.332Z</td>
 <td style="text-align: left;">https://github.com/bioc/StatescopeR</td>
 </tr>
 <tr class="even">
@@ -689,177 +689,254 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 69
-  ..$ Package           : chr "RedisParam"
-  ..$ Title             : chr "Provide a 'redis' back-end for BiocParallel"
-  ..$ Version           : chr "1.13.1"
-  ..$ Authors@R         : chr "c(\nperson(\n\"Martin\", \"Morgan\",\nemail = \"mtmorgan.bioc@gmail.com\",\nrole = c(\"aut\", \"cre\"),\ncommen"| __truncated__
-  ..$ Description       : chr "This package provides a Redis-based back-end for\nBiocParallel, enabling an alternative mechanism for distribut"| __truncated__
-  ..$ SystemRequirements: chr "hiredis"
+ $ :List of 74
+  ..$ Package           : chr "VisiumIO"
+  ..$ Title             : chr "Import Visium data from the 10X Space Ranger pipeline"
+  ..$ Version           : chr "1.7.6"
+  ..$ Authors@R         : chr "c(\nperson(\"Marcel\", \"Ramos\", , \"marcel.ramos@sph.cuny.edu\",\nc(\"aut\", \"cre\"), c(ORCID = \"0000-0002-"| __truncated__
+  ..$ Description       : chr "The package allows users to readily import spatial data\nobtained from either the 10X website or from the Space"| __truncated__
   ..$ License           : chr "Artistic-2.0"
+  ..$ biocViews         : chr "Software, Infrastructure, DataImport, SingleCell, Spatial"
+  ..$ VignetteBuilder   : chr "knitr"
   ..$ Encoding          : chr "UTF-8"
   ..$ Roxygen           : chr "list(markdown = TRUE)"
   ..$ RoxygenNote       : chr "7.3.3"
-  ..$ Collate           : chr "'Redis.R' 'RedisBackend-class.R' 'RedisParam-class.R'\n'RedisParam-accessors.R' 'RedisParam-logger.R'\n'RedisPa"| __truncated__
-  ..$ biocViews         : chr "Infrastructure"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ Config/pak/sysreqs: chr "libhiredis-dev"
+  ..$ BugReports        : chr "https://github.com/waldronlab/VisiumIO/issues"
+  ..$ URL               : chr "https://github.com/waldronlab/VisiumIO"
+  ..$ Collate           : chr "'TENxGeoJSON.R' 'TENxParquet-class.R' 'TENxSpatialCSV.R'\n'TENxSpatialList-class.R' 'TENxSpatialParquet.R'\n'TE"| __truncated__
+  ..$ Date              : chr "2025-12-24"
+  ..$ Config/pak/sysreqs: chr "make libmagick++-dev gsfonts libicu-dev libssl-dev\nlibx11-dev zlib1g-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-12-23 23:56:36 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/RedisParam"
+  ..$ Date/Publication  : chr "2025-12-24 16:10:25 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/VisiumIO"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
+  ..$ RemoteSha         : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
   ..$ NeedsCompilation  : chr "no"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-12-24 03:28:35 UTC"
+  .. ..$ Date: chr "2025-12-25 04:40:06 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Martin Morgan [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-5874-8148&gt;),\nJiefei Wang [aut]"
-  ..$ Maintainer        : chr "Martin Morgan &lt;mtmorgan.bioc@gmail.com&gt;"
-  ..$ MD5sum            : chr "3d92516e78565ca8d963207cb1d62d8f"
+  ..$ Author            : chr "Marcel Ramos [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-3242-0582&gt;),\nEstella YiXing Dong [aut, ctb],\nDa"| __truncated__
+  ..$ Maintainer        : chr "Marcel Ramos &lt;marcel.ramos@sph.cuny.edu&gt;"
+  ..$ MD5sum            : chr "b4f1b05bcea9555f5c773b579932c405"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "RedisParam_1.13.1.tar.gz"
-  ..$ _fileid           : chr "09aed0d6971ffb8d218c7a18ab2c06275098911d5fb5d5627b3fc47c5f84c711"
-  ..$ _filesize         : int 635702
-  ..$ _sha256           : chr "09aed0d6971ffb8d218c7a18ab2c06275098911d5fb5d5627b3fc47c5f84c711"
-  ..$ _created          : chr "2025-12-24T03:28:35.000Z"
-  ..$ _published        : chr "2025-12-24T03:31:48.647Z"
+  ..$ _file             : chr "VisiumIO_1.7.6.tar.gz"
+  ..$ _fileid           : chr "bb97dfe27543cea9e5117883fe6fc5daf589f09890d4591661796508125d723c"
+  ..$ _filesize         : int 1852980
+  ..$ _sha256           : chr "bb97dfe27543cea9e5117883fe6fc5daf589f09890d4591661796508125d723c"
+  ..$ _created          : chr "2025-12-25T04:40:06.000Z"
+  ..$ _published        : chr "2025-12-25T04:49:05.662Z"
   ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 154
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 194
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4958682879"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "4965035391"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 143
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 244
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958681941"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4965038070"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 143
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 255
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958681990"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4965038670"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 97
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 290
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958678057"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4965040390"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 119
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 201
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958680052"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4965035794"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 179
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 271
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4958670641"
+  .. .. ..$ artifact: chr "4965025541"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 124
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 146
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4958680298"
+  .. .. ..$ artifact: chr "4965032957"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 136
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 260
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958681477"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4965038882"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 144
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 302
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958682108"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "4965041114"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.88e+10
-  .. .. ..$ time    : int 161
+  .. .. ..$ job     : num 5.89e+10
+  .. .. ..$ time    : int 487
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4958683327"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "4965050547"
   ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 1
-  .. ..$ warning: int 3
+  .. ..$ error  : int 0
+  .. ..$ warning: int 2
   .. ..$ note   : int 6
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/RedisParam"
+  ..$ _upstream         : chr "https://github.com/bioc/VisiumIO"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. ..$ author   : chr "Martin Morgan &lt;mtmorgan.xyz@gmail.com&gt;"
-  .. ..$ committer: chr "Martin Morgan &lt;mtmorgan.xyz@gmail.com&gt;"
-  .. ..$ message  : chr "version bump and NEWS update\n"
-  .. ..$ time     : int 1766534196
-  ..$ _maintainer       :List of 5
-  .. ..$ name : chr "Martin Morgan"
-  .. ..$ email: chr "mtmorgan.bioc@gmail.com"
-  .. ..$ login: chr "mtmorgan"
-  .. ..$ orcid: chr "0000-0002-5874-8148"
-  .. ..$ uuid : int 118552
+  .. ..$ id       : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. ..$ author   : chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. ..$ committer: chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. ..$ message  : chr "version bump 1.7.6\n"
+  .. ..$ time     : int 1766592625
+  ..$ _maintainer       :List of 8
+  .. ..$ name    : chr "Marcel Ramos"
+  .. ..$ email   : chr "marcel.ramos@sph.cuny.edu"
+  .. ..$ login   : chr "link-ny"
+  .. ..$ bluesky : chr "@mramos148.bsky.social"
+  .. ..$ linkedin: chr "in/mramos148"
+  .. ..$ orcid   : chr "0000-0002-3242-0582"
+  .. ..$ twitter : chr "@M2RuseR"
+  .. ..$ uuid    : int 4392950
   ..$ _distro           : chr "noble"
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 10
+  ..$ _dependencies     :List of 19
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.2.0"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "TENxIO"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocBaseUtils"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 3
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ version: chr "&gt;= 1.29.12"
-  .. .. ..$ role   : chr "Depends"
+  .. .. ..$ package: chr "BiocIO"
+  .. .. ..$ version: chr "&gt;= 1.15.1"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "redux"
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "withr"
+  .. .. ..$ package: chr "SingleCellExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "logger"
+  .. .. ..$ package: chr "SpatialExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "arrow"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "data.table"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "readr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "sf"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tinytest"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 3
+  ..$ _usedby           : int 1
+  ..$ _updates          :List of 18
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-01"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-05"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-07"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-14"
+  .. .. ..$ n   : int 10
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-18"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ n   : int 14
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-41"
+  .. .. ..$ n   : int 32
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-42"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-43"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-46"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-47"
+  .. .. ..$ n   : int 13
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-48"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-49"
+  .. .. ..$ n   : int 10
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-50"
+  .. .. ..$ n   : int 13
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-52"
   .. .. ..$ n   : int 2
@@ -867,23 +944,41 @@ Total 2334 2361</code></pre>
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.13.0"
+  .. .. ..$ version: chr "1.7.5"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.12.0"
+  .. .. ..$ version: chr "1.6.3"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 1
+  ..$ _topics           :List of 8
+  .. ..$ : chr "software"
   .. ..$ : chr "infrastructure"
+  .. ..$ : chr "dataimport"
+  .. ..$ : chr "singlecell"
+  .. ..$ : chr "spatial"
+  .. ..$ : chr "bioconductor-package"
+  .. ..$ : chr "genomics"
+  .. ..$ : chr "u24ca289073"
+  ..$ _stars            : int 1
+  ..$ _contributors     :List of 2
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "link-ny"
+  .. .. ..$ count: int 137
+  .. .. ..$ uuid : int 4392950
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 8
+  .. .. ..$ uuid : int 1744257
   ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 236
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/RedisParam"
-  ..$ _searchresults    : int 17
+  .. ..$ count : int 328
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/VisiumIO"
+  ..$ _devurl           : chr "https://github.com/waldronlab/visiumio"
+  ..$ _searchresults    : int 75
   ..$ _rbuild           : chr "4.5.2"
   ..$ _assets           :List of 11
   .. ..$ : chr "extra/citation.cff"
@@ -895,194 +990,301 @@ Total 2334 2361</code></pre>
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/RedisParam.html"
+  .. ..$ : chr "extra/VisiumIO.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/mtmorgan/redisparam"
+  ..$ _homeurl          : chr "https://github.com/waldronlab/visiumio"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 15
-  .. ..$ : chr "bpbackend"
-  .. ..$ : chr "bpisup"
-  .. ..$ : chr "bplog&lt;-"
-  .. ..$ : chr "bpstart"
-  .. ..$ : chr "bpstop"
-  .. ..$ : chr "bpstopall"
-  .. ..$ : chr "bpworkers"
-  .. ..$ : chr "RedisParam"
-  .. ..$ : chr "rpalive"
-  .. ..$ : chr "rphost"
-  .. ..$ : chr "rpisworker"
-  .. ..$ : chr "rppassword"
-  .. ..$ : chr "rpport"
-  .. ..$ : chr "rpstopall"
-  .. ..$ : chr "rpworkers"
-  ..$ _help             :List of 2
+  ..$ _exports          :List of 12
+  .. ..$ : chr "compareBarcodes"
+  .. ..$ : chr "import"
+  .. ..$ : chr "st_invert_y"
+  .. ..$ : chr "TENxGeoJSON"
+  .. ..$ : chr "TENxMappingParquet"
+  .. ..$ : chr "TENxParquet"
+  .. ..$ : chr "TENxSpatialCSV"
+  .. ..$ : chr "TENxSpatialList"
+  .. ..$ : chr "TENxSpatialParquet"
+  .. ..$ : chr "TENxVisium"
+  .. ..$ : chr "TENxVisiumHD"
+  .. ..$ : chr "TENxVisiumList"
+  ..$ _help             :List of 10
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "RedisParam-deprecated"
-  .. .. ..$ title : chr "Deprecated functions in the RedisParam package"
+  .. .. ..$ page  : chr "compareBarcodes"
+  .. .. ..$ title : chr "Compare barcodes between raw and filtered data"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "bpstopall"
+  .. .. .. ..$ : chr "compareBarcodes"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "RedisParam-class"
-  .. .. ..$ title : chr "Enable redis-based parallel evaluation in BiocParallel"
-  .. .. ..$ topics:List of 14
-  .. .. .. ..$ : chr "bpbackend,RedisParam-method"
-  .. .. .. ..$ : chr "bpisup,RedisParam-method"
-  .. .. .. ..$ : chr "bplog&lt;-,RedisParam,logical-method"
-  .. .. .. ..$ : chr "bpstart,RedisParam-method"
-  .. .. .. ..$ : chr "bpstop,RedisParam-method"
-  .. .. .. ..$ : chr "bpworkers,RedisParam-method"
-  .. .. .. ..$ : chr "RedisParam"
-  .. .. .. ..$ : chr "rpalive"
-  .. .. .. ..$ : chr "rphost"
-  .. .. .. ..$ : chr "rpisworker"
-  .. .. .. ..$ : chr "rppassword"
-  .. .. .. ..$ : chr "rpport"
-  .. .. .. ..$ : chr "rpstopall"
-  .. .. .. ..$ : chr "rpworkers"
-  ..$ _readme           : chr "https://github.com/bioc/RedisParam/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 15
-  .. ..$ : chr "BH"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "codetools"
+  .. .. ..$ page  : chr "st_invert_y"
+  .. .. ..$ title : chr "Flip the Y-axis of cell or nucleus segmentations to align with H&amp;E image"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "st_invert_y"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxGeoJSON-class"
+  .. .. ..$ title : chr "Import 10X Genomics GeoJSON files"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxGeoJSON"
+  .. .. .. ..$ : chr "import,TENxGeoJSON,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxGeoJSON"
+  .. .. .. ..$ : chr "TENxGeoJSON-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxParquet-class"
+  .. .. ..$ title : chr "Represent and import Parquet data from 10X Genomics"
+  .. .. ..$ topics:List of 7
+  .. .. .. ..$ : chr ".TENxMappingParquet"
+  .. .. .. ..$ : chr ".TENxParquet"
+  .. .. .. ..$ : chr "import,TENxMappingParquet,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxMappingParquet"
+  .. .. .. ..$ : chr "TENxMappingParquet-class"
+  .. .. .. ..$ : chr "TENxParquet"
+  .. .. .. ..$ : chr "TENxParquet-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxSpatialCSV-class"
+  .. .. ..$ title : chr "Represent and import spatial CSV data from 10X Genomics"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxSpatialCSV"
+  .. .. .. ..$ : chr "import,TENxSpatialCSV,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxSpatialCSV"
+  .. .. .. ..$ : chr "TENxSpatialCSV-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxSpatialList-class"
+  .. .. ..$ title : chr "A class to represent and import spatial Visium data"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxSpatialList"
+  .. .. .. ..$ : chr "import,TENxSpatialList,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxSpatialList"
+  .. .. .. ..$ : chr "TENxSpatialList-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxSpatialParquet-class"
+  .. .. ..$ title : chr "Represent and import spatial Parquet data from 10X Genomics"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxSpatialParquet"
+  .. .. .. ..$ : chr "import,TENxSpatialParquet,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxSpatialParquet"
+  .. .. .. ..$ : chr "TENxSpatialParquet-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxVisium-class"
+  .. .. ..$ title : chr "A class to represent and import a single Visium Sample"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxVisium"
+  .. .. .. ..$ : chr "import,TENxVisium,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxVisium"
+  .. .. .. ..$ : chr "TENxVisium-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxVisiumHD-class"
+  .. .. ..$ title : chr "A class to represent and import multiple Visium HD samples"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxVisiumHD"
+  .. .. .. ..$ : chr "import,TENxVisiumHD,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxVisiumHD"
+  .. .. .. ..$ : chr "TENxVisiumHD-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "TENxVisiumList-class"
+  .. .. ..$ title : chr "A class to represent and import multiple Visium samples"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".TENxVisiumList"
+  .. .. .. ..$ : chr "import,TENxVisiumList,ANY,ANY-method"
+  .. .. .. ..$ : chr "TENxVisiumList"
+  .. .. .. ..$ : chr "TENxVisiumList-class"
+  ..$ _readme           : chr "https://github.com/bioc/VisiumIO/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 81
+  .. ..$ : chr "abind"
+  .. ..$ : chr "askpass"
+  .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocBaseUtils"
+  .. ..$ : chr "BiocFileCache"
+  .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocIO"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "bitops"
+  .. ..$ : chr "blob"
+  .. ..$ : chr "cachem"
+  .. ..$ : chr "cli"
+  .. ..$ : chr "clipr"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "digest"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
-  .. ..$ : chr "lambda.r"
-  .. ..$ : chr "logger"
+  .. ..$ : chr "crayon"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "DBI"
+  .. ..$ : chr "dbplyr"
+  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "fastmap"
+  .. ..$ : chr "filelock"
+  .. ..$ : chr "generics"
+  .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "h5mread"
+  .. ..$ : chr "HDF5Array"
+  .. ..$ : chr "hms"
+  .. ..$ : chr "httr2"
+  .. ..$ : chr "IRanges"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "lattice"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "magick"
+  .. ..$ : chr "magrittr"
+  .. ..$ : chr "Matrix"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "memoise"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plogr"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
+  .. ..$ : chr "purrr"
+  .. ..$ : chr "R.methodsS3"
+  .. ..$ : chr "R.oo"
+  .. ..$ : chr "R.utils"
   .. ..$ : chr "R6"
-  .. ..$ : chr "redux"
-  .. ..$ : chr "snow"
-  .. ..$ : chr "storr"
+  .. ..$ : chr "rappdirs"
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "RCurl"
+  .. ..$ : chr "readr"
+  .. ..$ : chr "rhdf5"
+  .. ..$ : chr "rhdf5filters"
+  .. ..$ : chr "Rhdf5lib"
+  .. ..$ : chr "rjson"
+  .. ..$ : chr "rlang"
+  .. ..$ : chr "RSQLite"
+  .. ..$ : chr "S4Arrays"
+  .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "SingleCellExperiment"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "SpatialExperiment"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "SummarizedExperiment"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "TENxIO"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "tzdb"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "vroom"
   .. ..$ : chr "withr"
-  ..$ _vignettes        :List of 2
+  .. ..$ : chr "XVector"
+  ..$ _vignettes        :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "RedisParamDeveloperGuide.Rmd"
-  .. .. ..$ filename: chr "RedisParamDeveloperGuide.html"
-  .. .. ..$ title   : chr "RedisParam for Developers"
-  .. .. ..$ author  : chr "Jiefei Wang"
+  .. .. ..$ source  : chr "VisiumIO.Rmd"
+  .. .. ..$ filename: chr "VisiumIO.html"
+  .. .. ..$ title   : chr "VisiumIO: Import 10X Genomics Visium Experiment Data"
+  .. .. ..$ author  : chr "Marcel Ramos"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 11
+  .. .. ..$ headings:List of 15
   .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "General design principles"
-  .. .. .. ..$ : chr "Data structure in Redis"
-  .. .. .. ..$ : chr "Workflow"
-  .. .. .. ..$ : chr "Manager"
-  .. .. .. ..$ : chr "Submit a task to Redis"
-  .. .. .. ..$ : chr "Receive a result from Redis"
-  .. .. .. ..$ : chr "Worker"
-  .. .. .. ..$ : chr "Receive a task from Redis"
-  .. .. .. ..$ : chr "Send a result to Redis"
-  .. .. .. ..$ : chr "Session information"
-  .. .. ..$ created : chr "2022-06-08 17:53:35"
-  .. .. ..$ modified: chr "2022-06-08 17:53:35"
-  .. .. ..$ commits : int 1
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "RedisParamUserGuide.Rmd"
-  .. .. ..$ filename: chr "RedisParamUserGuide.html"
-  .. .. ..$ title   : chr "Using RedisParam"
-  .. .. ..$ author  : chr "Martin Morgan"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 5
-  .. .. .. ..$ : chr "Getting started"
-  .. .. .. ..$ : chr "Use"
-  .. .. .. ..$ : chr "Manager and workers from a single R session"
-  .. .. .. ..$ : chr "Independently-managed workers"
-  .. .. .. ..$ : chr "Session info"
-  .. .. ..$ created : chr "2022-06-08 17:53:35"
-  .. .. ..$ modified: chr "2022-06-08 17:53:35"
-  .. .. ..$ commits : int 1
-  ..$ _score            : num 4.71
+  .. .. .. ..$ : chr "TENxIO Supported Formats"
+  .. .. .. ..$ : chr "VisiumIO Supported Formats"
+  .. .. .. ..$ : chr "Installation"
+  .. .. .. ..$ : chr "Loading package"
+  .. .. .. ..$ : chr "TENxVisium"
+  .. .. .. ..$ : chr "Example from SpatialExperiment"
+  .. .. .. ..$ : chr "Creating a TENxVisium instance"
+  .. .. .. ..$ : chr "Importing into SpatialExperiment"
+  .. .. .. ..$ : chr "TENxVisiumList"
+  .. .. .. ..$ : chr "Creating a TENxVisiumList"
+  .. .. .. ..$ : chr "Visium HD folder structure"
+  .. .. .. ..$ : chr "Import Visium HD into SpatialExperiment"
+  .. .. .. ..$ : chr "In-package example"
+  .. .. .. ..$ : chr "Session Info"
+  .. .. ..$ created : chr "2023-11-20 21:41:27"
+  .. .. ..$ modified: chr "2025-10-14 17:18:17"
+  .. .. ..$ commits : int 10
+  ..$ _score            : num 6.31
   ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "redisparam"
-  ..$ _universes        :List of 2
+  ..$ _nocasepkg        : chr "visiumio"
+  ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "mtmorgan"
-  ..$ _previous         : chr "1.13.0"
+  .. ..$ : chr "link-ny"
+  .. ..$ : chr "waldronlab"
+  ..$ _previous         : chr "1.7.5"
   ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:56.000Z"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:42:42.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "697a6a745be05983a0b720dd4f35e99eb103fdfea7a8a3a1257e258555776360"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "1120b92c19db63a73852d84010faf1b5940968e7e932b375416ef54ca748861d"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:56.000Z"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:42:48.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "f9759477e52660f72bcd4171367ca3b7e2cf5bbc74c4efdc5d95fec28fce2358"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "a8d1cd12d986235e598defec7f356eb2ea38b255baba72a030417c1d5e169f56"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:12.000Z"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "b9b06b97b8c448b8a194036418a74e4ccdb5999a54293069aa6ea8e9c43905c8"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:43:53.000Z"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "51321e0a8e7754cbfb55c278512c1d55ae3d443ceb2910028ec42397d1df9d77"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:35.000Z"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "19f1c6e307f5fe6ecd9d4caa8a1c69b235799963016b5f5e43da7675891e4923"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:42:22.000Z"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "e770da90cbfb34b44ff919e25f06a56a3fd7ae5c1d97f330631aa937aec8b003"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:55.000Z"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "27e1b31f2f24b0d0d477256e1b9da197bf0104389a4c8033c0096d26f71f66a4"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:43:09.000Z"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "d6c116b71112bc0750bde8dc95b04f9c3977e91b7fcbd9db458377570ec86c55"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:29:53.000Z"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "24b0923c279f324417e5f1baa5da00789ebc61371f0ebc3689ffd00ae46cefdf"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:42:41.000Z"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "20764e26d43bff71653359dca2db3ee098d331621400a0ffe6b628e9c0f834ec"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:00.000Z"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "cbbc14f254b18169358f0d3cdaf1127baf264b1b2c710c09fd7468f1c41f1b09"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:42:51.000Z"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "18115dd4599925d72d1fcb519582e14825a387cac95fc7b728dc6aae89a4f28b"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.13.1"
-  .. .. ..$ date    : chr "2025-12-24T03:30:11.000Z"
-  .. .. ..$ commit  : chr "45027f99ec3291eddb70c789d90c1b198ce558b0"
-  .. .. ..$ fileid  : chr "5ef2b07e69f4ed1354b18e046bb374ab43348b6d72d07591554b8bee3057cefa"
+  .. .. ..$ version : chr "1.7.6"
+  .. .. ..$ date    : chr "2025-12-25T04:46:17.000Z"
+  .. .. ..$ commit  : chr "f81ae8ecdd3fd0a31d6e8e1c0229fbb85bc06c07"
+  .. .. ..$ fileid  : chr "5e4c9eef47e0550bc2096216c71b60dc9c7a2c0a752c2c92de31b19b47e48096"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20477352266"</code></pre>
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20499052836"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
