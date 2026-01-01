@@ -689,1152 +689,460 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 66
-  ..$ Package           : chr "gwascat"
-  ..$ Title             : chr "representing and modeling data in the EMBL-EBI GWAS catalog"
-  ..$ Version           : chr "2.43.1"
-  ..$ Author            : chr "VJ Carey &lt;stvjc@channing.harvard.edu&gt;"
-  ..$ Description       : chr "Represent and model data in the EMBL-EBI GWAS catalog."
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ Maintainer        : chr "VJ Carey &lt;stvjc@channing.harvard.edu&gt;"
-  ..$ License           : chr "Artistic-2.0"
-  ..$ LazyData          : chr "no"
-  ..$ biocViews         : chr "Genetics"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ Config/pak/sysreqs: chr "make libbz2-dev libicu-dev liblzma-dev libpng-dev\nlibxml2-dev libssl-dev libx11-dev xz-utils zlib1g-dev"
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2025-12-29 19:40:18 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/gwascat"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  ..$ NeedsCompilation  : chr "no"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2025-12-30 03:55:47 UTC"
+ $ :List of 73
+  ..$ Package         : chr "CNVMetrics"
+  ..$ Type            : chr "Package"
+  ..$ Version         : chr "1.15.2"
+  ..$ Date            : chr "2021-11-23"
+  ..$ Title           : chr "Copy Number Variant Metrics"
+  ..$ Description     : chr "The CNVMetrics package calculates similarity metrics to\nfacilitate copy number variant comparison among sample"| __truncated__
+  ..$ Authors@R       : chr "c(person(\"Astrid\", \"Deschênes\", email = \"adeschen@hotmail.com\",\nrole = c(\"aut\", \"cre\"),\ncomment = c"| __truncated__
+  ..$ Encoding        : chr "UTF-8"
+  ..$ License         : chr "Artistic-2.0"
+  ..$ biocViews       : chr "BiologicalQuestion, Software, CopyNumberVariation"
+  ..$ VignetteBuilder : chr "knitr"
+  ..$ URL             : chr "https://github.com/krasnitzlab/CNVMetrics,\nhttps://krasnitzlab.github.io/CNVMetrics/"
+  ..$ BugReports      : chr "https://github.com/krasnitzlab/CNVMetrics/issues"
+  ..$ RoxygenNote     : chr "7.3.3"
+  ..$ Repository      : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication: chr "2026-01-01 00:50:22 UTC"
+  ..$ RemoteUrl       : chr "https://github.com/bioc/CNVMetrics"
+  ..$ RemoteRef       : chr "HEAD"
+  ..$ RemoteSha       : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  ..$ NeedsCompilation: chr "no"
+  ..$ Packaged        :List of 2
+  .. ..$ Date: chr "2026-01-01 04:13:10 UTC"
   .. ..$ User: chr "root"
-  ..$ MD5sum            : chr "24b1b9d3f880ca5e054023b96b9df2d3"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "gwascat_2.43.1.tar.gz"
-  ..$ _fileid           : chr "0f5b9eb2ca9228d8a8dec4223ecc1f3f23d2095ec14d7ec81b4803d23284754d"
-  ..$ _filesize         : int 36647042
-  ..$ _sha256           : chr "0f5b9eb2ca9228d8a8dec4223ecc1f3f23d2095ec14d7ec81b4803d23284754d"
-  ..$ _created          : chr "2025-12-30T03:55:47.000Z"
-  ..$ _published        : chr "2025-12-30T04:07:53.339Z"
-  ..$ _jobs             :List of 10
+  ..$ Author          : chr "Astrid Deschênes [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0001-7846-6749&gt;),\nPascal Belleau [aut] (ORCID: &lt;h"| __truncated__
+  ..$ Maintainer      : chr "Astrid Deschênes &lt;adeschen@hotmail.com&gt;"
+  ..$ MD5sum          : chr "f533e2b12f3d0d378884877291a2e65b"
+  ..$ _user           : chr "bioc"
+  ..$ _type           : chr "src"
+  ..$ _file           : chr "CNVMetrics_1.15.2.tar.gz"
+  ..$ _fileid         : chr "a1c92adf6526e80000a26ffeb274363cc02c6f0f64e29eaec7ce8185c5e0d94e"
+  ..$ _filesize       : int 4905227
+  ..$ _sha256         : chr "a1c92adf6526e80000a26ffeb274363cc02c6f0f64e29eaec7ce8185c5e0d94e"
+  ..$ _created        : chr "2026-01-01T04:13:10.000Z"
+  ..$ _published      : chr "2026-01-01T04:17:47.035Z"
+  ..$ _jobs           :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 331
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 151
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "4988549518"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5001469988"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 539
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 214
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988561192"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001472887"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 579
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 168
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988563497"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001470775"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 622
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 235
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988565792"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001473797"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 350
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 114
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988550478"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001468429"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 475
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 224
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4988528823"
+  .. .. ..$ artifact: chr "5001462837"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 301
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 119
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "4988547457"
+  .. .. ..$ artifact: chr "5001468601"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 616
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 186
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988565495"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001471628"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 564
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 154
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988562599"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001470173"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.91e+10
-  .. .. ..$ time    : int 581
+  .. .. ..$ job     : num 5.93e+10
+  .. .. ..$ time    : int 162
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "4988563597"
-  ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 2
-  .. ..$ warning: int 2
-  .. ..$ note   : int 14
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/gwascat"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. ..$ author   : chr "vjcitn &lt;stvjc@channing.harvard.edu&gt;"
-  .. ..$ committer: chr "vjcitn &lt;stvjc@channing.harvard.edu&gt;"
-  .. ..$ message  : chr "introduce new URL for updated gwas catalog from EBI\n"
-  .. ..$ time     : int 1767037218
-  ..$ _maintainer       :List of 4
-  .. ..$ name : chr "VJ Carey"
-  .. ..$ email: chr "stvjc@channing.harvard.edu"
-  .. ..$ login: chr "vjcitn"
-  .. ..$ uuid : int 4624066
-  ..$ _distro           : chr "noble"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 34
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5001470598"
+  ..$ _bioccheck      :List of 3
+  .. ..$ error  : int 0
+  .. ..$ warning: int 0
+  .. ..$ note   : int 5
+  ..$ _buildurl       : chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
+  ..$ _status         : chr "success"
+  ..$ _host           : chr "GitHub-Actions"
+  ..$ _upstream       : chr "https://github.com/bioc/CNVMetrics"
+  ..$ _commit         :List of 5
+  .. ..$ id       : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. ..$ author   : chr "adeschen &lt;adeschen@hotmail.com&gt;"
+  .. ..$ committer: chr "adeschen &lt;adeschen@hotmail.com&gt;"
+  .. ..$ message  : chr "Version bump in devel\n"
+  .. ..$ time     : int 1767228622
+  ..$ _maintainer     :List of 5
+  .. ..$ name : chr "Astrid Deschênes"
+  .. ..$ email: chr "adeschen@hotmail.com"
+  .. ..$ login: chr "adeschen"
+  .. ..$ orcid: chr "0000-0001-7846-6749"
+  .. ..$ uuid : int 7254636
+  ..$ _distro         : chr "noble"
+  ..$ _registered     : logi TRUE
+  ..$ _dependencies   :List of 17
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.1.0"
+  .. .. ..$ version: chr "&gt;= 4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ version: chr "&gt;= 0.9.25"
+  .. .. ..$ package: chr "GenomicRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "IRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Seqinfo"
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDb"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "GenomicRanges"
-  .. .. ..$ version: chr "&gt;= 1.29.6"
+  .. .. ..$ package: chr "BiocParallel"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicFeatures"
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "readr"
+  .. .. ..$ package: chr "magrittr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Biostrings"
+  .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationDbi"
+  .. .. ..$ package: chr "pheatmap"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocFileCache"
+  .. .. ..$ package: chr "gridExtra"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "snpStats"
+  .. .. ..$ package: chr "grDevices"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "VariantAnnotation"
+  .. .. ..$ package: chr "rBeta2009"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationHub"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "data.table"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "tibble"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DO.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DT"
+  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "RBGL"
+  .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "testthat"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ package: chr "XVector"
   .. .. ..$ role   : chr "Suggests"
+  ..$ _owner          : chr "bioc"
+  ..$ _selfowned      : logi TRUE
+  ..$ _usedby         : int 0
+  ..$ _updates        :List of 2
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Gviz"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Rsamtools"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rtracklayer"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graph"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggbio"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedArray"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg19.knownGene"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SNPlocs.Hsapiens.dbSNP144.GRCh37"
-  .. .. ..$ role   : chr "Enhances"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 2
-  ..$ _updates          :List of 6
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-12"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-13"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-16"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-25"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-45"
+  .. .. ..$ n   : int 8
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-01"
-  .. .. ..$ n   : int 1
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  .. .. ..$ n   : int 6
+  ..$ _tags           : list()
+  ..$ _bioc           :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.43.0"
+  .. .. ..$ version: chr "1.15.1"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.42.0"
+  .. .. ..$ version: chr "1.13.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 1
-  .. ..$ : chr "genetics"
-  ..$ _userbio          :List of 4
+  ..$ _topics         :List of 7
+  .. ..$ : chr "biologicalquestion"
+  .. ..$ : chr "software"
+  .. ..$ : chr "copynumbervariation"
+  .. ..$ : chr "cnv"
+  .. ..$ : chr "copy-number-variation"
+  .. ..$ : chr "metrics"
+  .. ..$ : chr "r-language"
+  ..$ _stars          : int 4
+  ..$ _contributors   :List of 4
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "adeschen"
+  .. .. ..$ count: int 460
+  .. .. ..$ uuid : int 7254636
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 14
+  .. .. ..$ uuid : int 1744257
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "belleau"
+  .. .. ..$ count: int 4
+  .. .. ..$ uuid : int 8398253
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 2746443
+  ..$ _userbio        :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 1106
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/gwascat"
-  ..$ _mentions         : int 4
-  ..$ _searchresults    : int 128
-  ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 9
+  ..$ _downloads      :List of 2
+  .. ..$ count : int 284
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/CNVMetrics"
+  ..$ _devurl         : chr "https://github.com/krasnitzlab/cnvmetrics"
+  ..$ _pkgdown        : chr "https://krasnitzlab.github.io/CNVMetrics/"
+  ..$ _searchresults  : int 8
+  ..$ _rbuild         : chr "4.5.2"
+  ..$ _assets         :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
+  .. ..$ : chr "extra/CNVMetrics.html"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/gwascat.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
+  .. ..$ : chr "extra/readme.html"
+  .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 19
-  .. ..$ : chr "as_GRanges"
-  .. ..$ : chr "bindcadd_snv"
-  .. ..$ : chr "fixsnps"
-  .. ..$ : chr "get_cached_gwascat"
-  .. ..$ : chr "getRsids"
-  .. ..$ : chr "getTraits"
-  .. ..$ : chr "gwascat_from_AHub"
-  .. ..$ : chr "gwcat_snapshot"
-  .. ..$ : chr "gwcex2gviz"
-  .. ..$ : chr "ldtagr"
-  .. ..$ : chr "locs4trait"
-  .. ..$ : chr "makeCurrentGwascat"
-  .. ..$ : chr "obo2graphNEL"
-  .. ..$ : chr "process_gwas_dataframe"
-  .. ..$ : chr "riskyAlleleCount"
-  .. ..$ : chr "subsetByChromosome"
-  .. ..$ : chr "subsetByTraits"
-  .. ..$ : chr "topTraits"
-  .. ..$ : chr "traitsManh"
-  ..$ _datasets         :List of 11
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "ebicat_2020_04_30"
-  .. .. ..$ title : chr "serialized gwaswloc instance from april 30 2020, sample of 50000 records"
-  .. .. ..$ object: chr "ebicat_2020_04_30"
-  .. .. ..$ file  : chr "ebicat_2020_04_30.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "gwaswloc"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "efo.obo.g"
-  .. .. ..$ title : chr "convert a typical OBO text file to a graphNEL instance (using Term elements)"
-  .. .. ..$ object: chr "efo.obo.g"
-  .. .. ..$ file  : chr "efo.obo.g.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "graphNEL"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "g17SM"
-  .. .. ..$ title : chr "SnpMatrix instance from chr17"
-  .. .. ..$ object: chr "g17SM"
-  .. .. ..$ file  : chr "g17SM.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SnpMatrix"
-  .. .. ..$ fields:List of 89701
-  .. .. .. ..$ : chr "rs6565733"
-  .. .. .. ..$ : chr "rs1106175"
-  .. .. .. ..$ : chr "rs17054921"
-  .. .. .. ..$ : chr "rs8064924"
-  .. .. .. ..$ : chr "rs8070440"
-  .. .. .. ..$ : chr "rs3794811"
-  .. .. .. ..$ : chr "rs8066551"
-  .. .. .. ..$ : chr "rs7215271"
-  .. .. .. ..$ : chr "rs7224313"
-  .. .. .. ..$ : chr "rs7217319"
-  .. .. .. ..$ : chr "rs17055015"
-  .. .. .. ..$ : chr "rs4890199"
-  .. .. .. ..$ : chr "rs10459967"
-  .. .. .. ..$ : chr "rs4890183"
-  .. .. .. ..$ : chr "rs11654491"
-  .. .. .. ..$ : chr "rs1882990"
-  .. .. .. ..$ : chr "rs4424950"
-  .. .. .. ..$ : chr "rs7503116"
-  .. .. .. ..$ : chr "rs1136388"
-  .. .. .. ..$ : chr "rs1609550"
-  .. .. .. ..$ : chr "rs12937885"
-  .. .. .. ..$ : chr "rs7213008"
-  .. .. .. ..$ : chr "rs7212865"
-  .. .. .. ..$ : chr "rs10153238"
-  .. .. .. ..$ : chr "rs11654695"
-  .. .. .. ..$ : chr "rs8072649"
-  .. .. .. ..$ : chr "rs8072804"
-  .. .. .. ..$ : chr "rs11649979"
-  .. .. .. ..$ : chr "rs12938802"
-  .. .. .. ..$ : chr "rs11650641"
-  .. .. .. ..$ : chr "rs1138504"
-  .. .. .. ..$ : chr "rs11150884"
-  .. .. .. ..$ : chr "rs9907477"
-  .. .. .. ..$ : chr "rs7226358"
-  .. .. .. ..$ : chr "rs8066107"
-  .. .. .. ..$ : chr "rs9915268"
-  .. .. .. ..$ : chr "rs8078223"
-  .. .. .. ..$ : chr "rs9896436"
-  .. .. .. ..$ : chr "rs4890192"
-  .. .. .. ..$ : chr "rs8078929"
-  .. .. .. ..$ : chr "rs4890194"
-  .. .. .. ..$ : chr "rs9674467"
-  .. .. .. ..$ : chr "rs8075084"
-  .. .. .. ..$ : chr "rs4890171"
-  .. .. .. ..$ : chr "rs4890197"
-  .. .. .. ..$ : chr "rs4890198"
-  .. .. .. ..$ : chr "rs12941826"
-  .. .. .. ..$ : chr "rs8073847"
-  .. .. .. ..$ : chr "rs3923018"
-  .. .. .. ..$ : chr "rs11651800"
-  .. .. .. ..$ : chr "rs3923017"
-  .. .. .. ..$ : chr "rs11654890"
-  .. .. .. ..$ : chr "rs11652984"
-  .. .. .. ..$ : chr "rs11150893"
-  .. .. .. ..$ : chr "rs11653255"
-  .. .. .. ..$ : chr "rs12603796"
-  .. .. .. ..$ : chr "rs12103587"
-  .. .. .. ..$ : chr "rs4890172"
-  .. .. .. ..$ : chr "rs8074031"
-  .. .. .. ..$ : chr "rs7213702"
-  .. .. .. ..$ : chr "rs12449638"
-  .. .. .. ..$ : chr "rs7217872"
-  .. .. .. ..$ : chr "rs12937656"
-  .. .. .. ..$ : chr "rs9908467"
-  .. .. .. ..$ : chr "rs9896350"
-  .. .. .. ..$ : chr "rs7207284"
-  .. .. .. ..$ : chr "rs7222853"
-  .. .. .. ..$ : chr "rs12602957"
-  .. .. .. ..$ : chr "rs7223759"
-  .. .. .. ..$ : chr "rs7221298"
-  .. .. .. ..$ : chr "rs12452527"
-  .. .. .. ..$ : chr "rs11150870"
-  .. .. .. ..$ : chr "rs9906110"
-  .. .. .. ..$ : chr "rs9907635"
-  .. .. .. ..$ : chr "rs7406768"
-  .. .. .. ..$ : chr "rs7224163"
-  .. .. .. ..$ : chr "rs7215219"
-  .. .. .. ..$ : chr "rs7219680"
-  .. .. .. ..$ : chr "rs7212156"
-  .. .. .. ..$ : chr "rs9903116"
-  .. .. .. ..$ : chr "rs8073479"
-  .. .. .. ..$ : chr "rs8073513"
-  .. .. .. ..$ : chr "rs10454094"
-  .. .. .. ..$ : chr "rs11656900"
-  .. .. .. ..$ : chr "rs4130822"
-  .. .. .. ..$ : chr "rs7208188"
-  .. .. .. ..$ : chr "rs7220744"
-  .. .. .. ..$ : chr "rs4985594"
-  .. .. .. ..$ : chr "rs12947571"
-  .. .. .. ..$ : chr "rs12449625"
-  .. .. .. ..$ : chr "rs4617924"
-  .. .. .. ..$ : chr "rs4247500"
-  .. .. .. ..$ : chr "rs7224674"
-  .. .. .. ..$ : chr "rs7501898"
-  .. .. .. ..$ : chr "rs4985588"
-  .. .. .. ..$ : chr "rs10871511"
-  .. .. .. ..$ : chr "rs7223270"
-  .. .. .. ..$ : chr "rs9789059"
-  .. .. .. ..$ : chr "rs9788983"
-  .. .. .. .. [list output truncated]
-  .. .. ..$ rows  : int 90
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "gg17N"
-  .. .. ..$ title : chr "genotype matrix from chr17 1000 genomes"
-  .. .. ..$ object: chr "gg17N"
-  .. .. ..$ file  : chr "gg17N.rda"
-  .. .. ..$ class :List of 2
-  .. .. .. ..$ : chr "matrix"
-  .. .. .. ..$ : chr "array"
-  .. .. ..$ fields:List of 87957
-  .. .. .. ..$ : chr "rs6565733"
-  .. .. .. ..$ : chr "rs1106175"
-  .. .. .. ..$ : chr "rs17054921"
-  .. .. .. ..$ : chr "rs8064924"
-  .. .. .. ..$ : chr "rs8070440"
-  .. .. .. ..$ : chr "rs3794811"
-  .. .. .. ..$ : chr "rs8066551"
-  .. .. .. ..$ : chr "rs7215271"
-  .. .. .. ..$ : chr "rs7224313"
-  .. .. .. ..$ : chr "rs7217319"
-  .. .. .. ..$ : chr "rs17055015"
-  .. .. .. ..$ : chr "rs4890199"
-  .. .. .. ..$ : chr "rs10459967"
-  .. .. .. ..$ : chr "rs11654491"
-  .. .. .. ..$ : chr "rs1882990"
-  .. .. .. ..$ : chr "rs4424950"
-  .. .. .. ..$ : chr "rs7503116"
-  .. .. .. ..$ : chr "rs1136388"
-  .. .. .. ..$ : chr "rs1609550"
-  .. .. .. ..$ : chr "rs12937885"
-  .. .. .. ..$ : chr "rs7213008"
-  .. .. .. ..$ : chr "rs7212865"
-  .. .. .. ..$ : chr "rs10153238"
-  .. .. .. ..$ : chr "rs11654695"
-  .. .. .. ..$ : chr "rs8072649"
-  .. .. .. ..$ : chr "rs8072804"
-  .. .. .. ..$ : chr "rs11649979"
-  .. .. .. ..$ : chr "rs12938802"
-  .. .. .. ..$ : chr "rs11650641"
-  .. .. .. ..$ : chr "rs1138504"
-  .. .. .. ..$ : chr "rs11150884"
-  .. .. .. ..$ : chr "rs9907477"
-  .. .. .. ..$ : chr "rs7226358"
-  .. .. .. ..$ : chr "rs8066107"
-  .. .. .. ..$ : chr "rs9915268"
-  .. .. .. ..$ : chr "rs8078223"
-  .. .. .. ..$ : chr "rs9896436"
-  .. .. .. ..$ : chr "rs4890192"
-  .. .. .. ..$ : chr "rs8078929"
-  .. .. .. ..$ : chr "rs4890194"
-  .. .. .. ..$ : chr "rs9674467"
-  .. .. .. ..$ : chr "rs8075084"
-  .. .. .. ..$ : chr "rs4890171"
-  .. .. .. ..$ : chr "rs4890197"
-  .. .. .. ..$ : chr "rs4890198"
-  .. .. .. ..$ : chr "rs12941826"
-  .. .. .. ..$ : chr "rs8073847"
-  .. .. .. ..$ : chr "rs3923018"
-  .. .. .. ..$ : chr "rs11651800"
-  .. .. .. ..$ : chr "rs3923017"
-  .. .. .. ..$ : chr "rs11654890"
-  .. .. .. ..$ : chr "rs11652984"
-  .. .. .. ..$ : chr "rs11150893"
-  .. .. .. ..$ : chr "rs11653255"
-  .. .. .. ..$ : chr "rs12603796"
-  .. .. .. ..$ : chr "rs12103587"
-  .. .. .. ..$ : chr "rs4890172"
-  .. .. .. ..$ : chr "rs8074031"
-  .. .. .. ..$ : chr "rs7213702"
-  .. .. .. ..$ : chr "rs12449638"
-  .. .. .. ..$ : chr "rs7217872"
-  .. .. .. ..$ : chr "rs12937656"
-  .. .. .. ..$ : chr "rs9908467"
-  .. .. .. ..$ : chr "rs9896350"
-  .. .. .. ..$ : chr "rs7207284"
-  .. .. .. ..$ : chr "rs7222853"
-  .. .. .. ..$ : chr "rs12602957"
-  .. .. .. ..$ : chr "rs7223759"
-  .. .. .. ..$ : chr "rs7221298"
-  .. .. .. ..$ : chr "rs12452527"
-  .. .. .. ..$ : chr "rs11150870"
-  .. .. .. ..$ : chr "rs9906110"
-  .. .. .. ..$ : chr "rs9907635"
-  .. .. .. ..$ : chr "rs7406768"
-  .. .. .. ..$ : chr "rs7224163"
-  .. .. .. ..$ : chr "rs7215219"
-  .. .. .. ..$ : chr "rs7219680"
-  .. .. .. ..$ : chr "rs7212156"
-  .. .. .. ..$ : chr "rs9903116"
-  .. .. .. ..$ : chr "rs8073479"
-  .. .. .. ..$ : chr "rs8073513"
-  .. .. .. ..$ : chr "rs10454094"
-  .. .. .. ..$ : chr "rs11656900"
-  .. .. .. ..$ : chr "rs4130822"
-  .. .. .. ..$ : chr "rs7208188"
-  .. .. .. ..$ : chr "rs7220744"
-  .. .. .. ..$ : chr "rs4985594"
-  .. .. .. ..$ : chr "rs12947571"
-  .. .. .. ..$ : chr "rs12449625"
-  .. .. .. ..$ : chr "rs4617924"
-  .. .. .. ..$ : chr "rs4247500"
-  .. .. .. ..$ : chr "rs7224674"
-  .. .. .. ..$ : chr "rs7501898"
-  .. .. .. ..$ : chr "rs4985588"
-  .. .. .. ..$ : chr "rs10871511"
-  .. .. .. ..$ : chr "rs7223270"
-  .. .. .. ..$ : chr "rs9789059"
-  .. .. .. ..$ : chr "rs9788983"
-  .. .. .. ..$ : chr "rs4985587"
-  .. .. .. .. [list output truncated]
-  .. .. ..$ rows  : int 90
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "gr6.0_hg38"
-  .. .. ..$ title : chr "image of locon6 in GRanges, lifted over to hg38"
-  .. .. ..$ object: chr "gr6.0_hg38"
-  .. .. ..$ file  : chr "gr6.0_hg38.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "GRanges"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "gw6.rs_17"
-  .. .. ..$ title : chr "character vector of rs numbers for SNP on chr17"
-  .. .. ..$ object: chr "gw6.rs_17"
-  .. .. ..$ file  : chr "gw6.rs_17.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "character"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "gwastagger"
-  .. .. ..$ title : chr "GRanges with LD information on 9998 SNP"
-  .. .. ..$ object: chr "gwastagger"
-  .. .. ..$ file  : chr "gwastagger.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "GRanges"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "locon6"
-  .. .. ..$ title : chr "location data for 10000 SNP"
-  .. .. ..$ object: chr "locon6"
-  .. .. ..$ file  : chr "locon6.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 3
-  .. .. .. ..$ : chr "dbsnp_rs_id"
-  .. .. .. ..$ : chr "chrom"
-  .. .. .. ..$ : chr "physical_pos"
-  .. .. ..$ rows  : int 10000
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "low17"
-  .. .. ..$ title : chr "SnpMatrix instance from chr17"
-  .. .. ..$ object: chr "low17"
-  .. .. ..$ file  : chr "low17.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SnpMatrix"
-  .. .. ..$ fields:List of 196327
-  .. .. .. ..$ : chr "chr17:1869"
-  .. .. .. ..$ : chr "chr17:2220"
-  .. .. .. ..$ : chr "chr17:6689"
-  .. .. .. ..$ : chr "rs34663111"
-  .. .. .. ..$ : chr "rs62054999"
-  .. .. .. ..$ : chr "chr17:13074"
-  .. .. .. ..$ : chr "chr17:14008"
-  .. .. .. ..$ : chr "chr17:19979"
-  .. .. .. ..$ : chr "chr17:27268"
-  .. .. .. ..$ : chr "chr17:31906"
-  .. .. .. ..$ : chr "chr17:32249"
-  .. .. .. ..$ : chr "chr17:32309"
-  .. .. .. ..$ : chr "chr17:32311"
-  .. .. .. ..$ : chr "chr17:32579"
-  .. .. .. ..$ : chr "chr17:32869"
-  .. .. .. ..$ : chr "chr17:33766"
-  .. .. .. ..$ : chr "chr17:33817"
-  .. .. .. ..$ : chr "chr17:33865"
-  .. .. .. ..$ : chr "chr17:34206"
-  .. .. .. ..$ : chr "chr17:34276"
-  .. .. .. ..$ : chr "chr17:34401"
-  .. .. .. ..$ : chr "chr17:36164"
-  .. .. .. ..$ : chr "chr17:36169"
-  .. .. .. ..$ : chr "chr17:36642"
-  .. .. .. ..$ : chr "rs62054056"
-  .. .. .. ..$ : chr "chr17:38761"
-  .. .. .. ..$ : chr "chr17:44399"
-  .. .. .. ..$ : chr "rs62057000"
-  .. .. .. ..$ : chr "chr17:46107"
-  .. .. .. ..$ : chr "rs34794059"
-  .. .. .. ..$ : chr "rs35498575"
-  .. .. .. ..$ : chr "rs11656530"
-  .. .. .. ..$ : chr "rs12941744"
-  .. .. .. ..$ : chr "chr17:48400"
-  .. .. .. ..$ : chr "rs12945606"
-  .. .. .. ..$ : chr "rs59865068"
-  .. .. .. ..$ : chr "chr17:48474"
-  .. .. .. ..$ : chr "rs7501441"
-  .. .. .. ..$ : chr "chr17:48878"
-  .. .. .. ..$ : chr "rs4890179"
-  .. .. .. ..$ : chr "rs4890180"
-  .. .. .. ..$ : chr "rs4890181"
-  .. .. .. ..$ : chr "rs62057022"
-  .. .. .. ..$ : chr "rs62057023"
-  .. .. .. ..$ : chr "rs4890182"
-  .. .. .. ..$ : chr "rs55715614"
-  .. .. .. ..$ : chr "chr17:49783"
-  .. .. .. ..$ : chr "rs56209223"
-  .. .. .. ..$ : chr "chr17:49868"
-  .. .. .. ..$ : chr "rs8070685"
-  .. .. .. ..$ : chr "rs62057026"
-  .. .. .. ..$ : chr "chr17:50776"
-  .. .. .. ..$ : chr "rs11658619"
-  .. .. .. ..$ : chr "rs11656429"
-  .. .. .. ..$ : chr "rs9900783"
-  .. .. .. ..$ : chr "chr17:51088"
-  .. .. .. ..$ : chr "rs11657419"
-  .. .. .. ..$ : chr "rs9911285"
-  .. .. .. ..$ : chr "rs4890184"
-  .. .. .. ..$ : chr "chr17:51196"
-  .. .. .. ..$ : chr "rs4890185"
-  .. .. .. ..$ : chr "rs1882990"
-  .. .. .. ..$ : chr "rs1109902"
-  .. .. .. ..$ : chr "rs4424950"
-  .. .. .. ..$ : chr "rs56200345"
-  .. .. .. ..$ : chr "rs7503116"
-  .. .. .. ..$ : chr "rs4890188"
-  .. .. .. ..$ : chr "rs1136388"
-  .. .. .. ..$ : chr "chr17:53181"
-  .. .. .. ..$ : chr "rs1609550"
-  .. .. .. ..$ : chr "chr17:53324"
-  .. .. .. ..$ : chr "rs34979521"
-  .. .. .. ..$ : chr "rs9913041"
-  .. .. .. ..$ : chr "chr17:54373"
-  .. .. .. ..$ : chr "rs1109995"
-  .. .. .. ..$ : chr "chr17:55518"
-  .. .. .. ..$ : chr "chr17:55533"
-  .. .. .. ..$ : chr "rs9903623"
-  .. .. .. ..$ : chr "rs4305131"
-  .. .. .. ..$ : chr "rs7213008"
-  .. .. .. ..$ : chr "chr17:57029"
-  .. .. .. ..$ : chr "chr17:57897"
-  .. .. .. ..$ : chr "rs55639116"
-  .. .. .. ..$ : chr "rs62057047"
-  .. .. .. ..$ : chr "rs11654695"
-  .. .. .. ..$ : chr "chr17:59056"
-  .. .. .. ..$ : chr "chr17:59096"
-  .. .. .. ..$ : chr "chr17:59137"
-  .. .. .. ..$ : chr "chr17:59340"
-  .. .. .. ..$ : chr "rs4353523"
-  .. .. .. ..$ : chr "chr17:59389"
-  .. .. .. ..$ : chr "rs11649979"
-  .. .. .. ..$ : chr "chr17:60469"
-  .. .. .. ..$ : chr "rs12938802"
-  .. .. .. ..$ : chr "chr17:60733"
-  .. .. .. ..$ : chr "chr17:61665"
-  .. .. .. ..$ : chr "chr17:61849"
-  .. .. .. ..$ : chr "rs1138504"
-  .. .. .. ..$ : chr "rs11150884"
-  .. .. .. .. [list output truncated]
-  .. .. ..$ rows  : int 60
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "si.hs.37"
-  .. .. ..$ title : chr "Seqinfo for GRCh37"
-  .. .. ..$ object: chr "si.hs.37"
-  .. .. ..$ file  : chr "si.hs.37.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "Seqinfo"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "si.hs.38"
-  .. .. ..$ title : chr "Seqinfo for GRCh38"
-  .. .. ..$ object: chr "si.hs.38"
-  .. .. ..$ file  : chr "si.hs.38.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "Seqinfo"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  ..$ _help             :List of 36
+  ..$ _homeurl        : chr "https://github.com/krasnitzlab/cnvmetrics"
+  ..$ _realowner      : chr "bioc"
+  ..$ _cranurl        : logi FALSE
+  ..$ _exports        :List of 4
+  .. ..$ : chr "calculateLog2ratioMetric"
+  .. ..$ : chr "calculateOverlapMetric"
+  .. ..$ : chr "plotMetric"
+  .. ..$ : chr "processSim"
+  ..$ _help           :List of 7
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "sub-gwaswloc-ANY-ANY-ANY-method"
-  .. .. ..$ title : chr "extractor for gwaswloc"
+  .. .. ..$ page  : chr "CNVMetrics-package"
+  .. .. ..$ title : chr "CNVMetrics: Copy number variant metrics"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "CNVMetrics-package"
+  .. .. .. ..$ : chr "CNVMetrics"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "calculateLog2ratioMetric"
+  .. .. ..$ title : chr "Calculate metric using overlapping amplified/deleted regions"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "[,gwaswloc,ANY,ANY,ANY-method"
+  .. .. .. ..$ : chr "calculateLog2ratioMetric"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "as_GRanges"
-  .. .. ..$ title : chr "produce a GRanges from gwascat tibble"
+  .. .. ..$ page  : chr "calculateOverlapMetric"
+  .. .. ..$ title : chr "Calculate metric using overlapping amplified/deleted regions"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "as_GRanges"
+  .. .. .. ..$ : chr "calculateOverlapMetric"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "bindcadd_snv"
-  .. .. ..$ title : chr "bind CADD scores of Kircher et al. 2014 to a GRanges instance"
+  .. .. ..$ page  : chr "is.CNVMetric"
+  .. .. ..$ title : chr "Is an object of class 'CNVMetric'"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "bindcadd_snv"
+  .. .. .. ..$ : chr "is.CNVMetric"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "chklocs"
-  .. .. ..$ title : chr "return TRUE if all named SNPs with locations in both the SNPlocs package and the gwascat agree"
+  .. .. ..$ page  : chr "plotMetric"
+  .. .. ..$ title : chr "Plot metrics present in a 'CNVMetric' object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "chklocs"
+  .. .. .. ..$ : chr "plotMetric"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ebicat_2020_04_30"
-  .. .. ..$ title : chr "serialized gwaswloc instance from april 30 2020, sample of 50000 records"
+  .. .. ..$ page  : chr "print.CNVMetric"
+  .. .. ..$ title : chr "Print CNVMetric object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ebicat_2020_04_30"
+  .. .. .. ..$ : chr "print.CNVMetric"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "fixsnps"
-  .. .. ..$ title : chr "this function looks for clues to resolve records that have missing CHR_ID or CHR_POS, for which address info ca"| __truncated__
+  .. .. ..$ page  : chr "processSim"
+  .. .. ..$ title : chr "Generate simulated samples with copy number profiles derived from a specific sample"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "fixsnps"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "g17SM"
-  .. .. ..$ title : chr "SnpMatrix instance from chr17"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "g17SM"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "get_cached_gwascat"
-  .. .. ..$ title : chr "use BiocFileCache to retrieve and keep an image of the tsv file distributed by EBI"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "get_cached_gwascat"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getRsids"
-  .. .. ..$ title : chr "generic snp name retrieval"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getRsids"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getRsids-gwaswloc-method"
-  .. .. ..$ title : chr "specific snp name retrieval"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getRsids,gwaswloc-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTraits"
-  .. .. ..$ title : chr "generic trait retrieval"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getTraits"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTraits-gwaswloc-method"
-  .. .. ..$ title : chr "specific trait retrieval"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getTraits,gwaswloc-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gg17N"
-  .. .. ..$ title : chr "genotype matrix from chr17 1000 genomes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gg17N"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gr6.0_hg38"
-  .. .. ..$ title : chr "image of locon6 in GRanges, lifted over to hg38"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gr6.0_hg38"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gw6.rs_17"
-  .. .. ..$ title : chr "character vector of rs numbers for SNP on chr17"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gw6.rs_17"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gwascat_from_AHub"
-  .. .. ..$ title : chr "grab an image of EBI GWAS catalog from AnnotationHub"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gwascat_from_AHub"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gwastagger"
-  .. .. ..$ title : chr "GRanges with LD information on 9998 SNP"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gwastagger"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gwaswloc-class"
-  .. .. ..$ title : chr "container for gwas hit data and GRanges for addresses"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gwaswloc-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gwcat_snapshot"
-  .. .. ..$ title : chr "use AnnotationHub snapshot as basis for gwaswloc structure creation"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gwcat_snapshot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gwcex2gviz"
-  .. .. ..$ title : chr "Prepare salient components of GWAS catalog for rendering with Gviz"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gwcex2gviz"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "ldtagr"
-  .. .. ..$ title : chr "expand a list of variants by including those in a VCF with LD exceeding some threshold; uses snpStats ld()"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ldtagr"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "locon6"
-  .. .. ..$ title : chr "location data for 10000 SNP"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "locon6"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "locs4trait"
-  .. .. ..$ title : chr "get locations for SNP affecting a selected trait"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "locs4trait"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "low17"
-  .. .. ..$ title : chr "SnpMatrix instance from chr17"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "low17"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "makeCurrentGwascat"
-  .. .. ..$ title : chr "read NHGRI GWAS catalog table and construct associated GRanges instance records for which clear genomic positio"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "makeCurrentGwascat"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "obo2graphNEL"
-  .. .. ..$ title : chr "convert a typical OBO text file to a graphNEL instance (using Term elements)"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "efo.obo.g"
-  .. .. .. ..$ : chr "node2uri"
-  .. .. .. ..$ : chr "obo2graphNEL"
-  .. .. .. ..$ : chr "uri2node"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "process_gwas_dataframe"
-  .. .. ..$ title : chr "convert GWAS catalog data.frame to gwaswloc, a GRanges extension with simple show method"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "process_gwas_dataframe"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "riskyAlleleCount"
-  .. .. ..$ title : chr "given a matrix of subjects x SNP calls, count number of risky alleles"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "riskyAlleleCount"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "si.hs.37"
-  .. .. ..$ title : chr "Seqinfo for GRCh37"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "si.hs.37"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "si.hs.38"
-  .. .. ..$ title : chr "Seqinfo for GRCh38"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "si.hs.38"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "subsetByChromosome"
-  .. .. ..$ title : chr "generic trait subsetting"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "subsetByChromosome"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "subsetByChromosome-gwaswloc-method"
-  .. .. ..$ title : chr "specific trait subsetting"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "subsetByChromosome,gwaswloc-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "subsetByTraits"
-  .. .. ..$ title : chr "generic trait subsetting"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "subsetByTraits"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "subsetByTraits-gwaswloc-method"
-  .. .. ..$ title : chr "specific trait subsetting"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "subsetByTraits,gwaswloc-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "topTraits"
-  .. .. ..$ title : chr "operations on GWAS catalog"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "topTraits"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "traitsManh"
-  .. .. ..$ title : chr "use ggbio facilities to display GWAS results for selected traits in genomic coordinates"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "traitsManh"
-  ..$ _rundeps          :List of 101
-  .. ..$ : chr "abind"
-  .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "AnnotationHub"
-  .. ..$ : chr "askpass"
+  .. .. .. ..$ : chr "processSim"
+  ..$ _readme         : chr "https://github.com/bioc/CNVMetrics/raw/HEAD/README.md"
+  ..$ _rundeps        :List of 30
   .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocBaseUtils"
-  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocIO"
-  .. ..$ : chr "BiocManager"
   .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "BiocVersion"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
-  .. ..$ : chr "bitops"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "BSgenome"
-  .. ..$ : chr "cachem"
-  .. ..$ : chr "cigarillo"
   .. ..$ : chr "cli"
-  .. ..$ : chr "clipr"
   .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "crayon"
-  .. ..$ : chr "curl"
-  .. ..$ : chr "data.table"
-  .. ..$ : chr "DBI"
-  .. ..$ : chr "dbplyr"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "fastmap"
-  .. ..$ : chr "filelock"
+  .. ..$ : chr "farver"
   .. ..$ : chr "formatR"
   .. ..$ : chr "futile.logger"
   .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
-  .. ..$ : chr "GenomeInfoDb"
-  .. ..$ : chr "GenomicAlignments"
-  .. ..$ : chr "GenomicFeatures"
   .. ..$ : chr "GenomicRanges"
   .. ..$ : chr "glue"
-  .. ..$ : chr "hms"
-  .. ..$ : chr "httr"
-  .. ..$ : chr "httr2"
+  .. ..$ : chr "gridExtra"
+  .. ..$ : chr "gtable"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "jsonlite"
-  .. ..$ : chr "KEGGREST"
+  .. ..$ : chr "labeling"
   .. ..$ : chr "lambda.r"
-  .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
-  .. ..$ : chr "memoise"
-  .. ..$ : chr "mime"
-  .. ..$ : chr "openssl"
-  .. ..$ : chr "pillar"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plogr"
-  .. ..$ : chr "png"
-  .. ..$ : chr "prettyunits"
-  .. ..$ : chr "progress"
-  .. ..$ : chr "purrr"
+  .. ..$ : chr "pheatmap"
   .. ..$ : chr "R6"
-  .. ..$ : chr "rappdirs"
-  .. ..$ : chr "RCurl"
-  .. ..$ : chr "readr"
-  .. ..$ : chr "restfulr"
-  .. ..$ : chr "Rhtslib"
-  .. ..$ : chr "rjson"
+  .. ..$ : chr "rBeta2009"
+  .. ..$ : chr "RColorBrewer"
   .. ..$ : chr "rlang"
-  .. ..$ : chr "Rsamtools"
-  .. ..$ : chr "RSQLite"
-  .. ..$ : chr "rtracklayer"
-  .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "scales"
   .. ..$ : chr "Seqinfo"
   .. ..$ : chr "snow"
-  .. ..$ : chr "snpStats"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "stringi"
-  .. ..$ : chr "stringr"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "survival"
-  .. ..$ : chr "sys"
-  .. ..$ : chr "tibble"
-  .. ..$ : chr "tidyr"
-  .. ..$ : chr "tidyselect"
-  .. ..$ : chr "tzdb"
-  .. ..$ : chr "UCSC.utils"
-  .. ..$ : chr "utf8"
-  .. ..$ : chr "VariantAnnotation"
-  .. ..$ : chr "vctrs"
-  .. ..$ : chr "vroom"
-  .. ..$ : chr "withr"
-  .. ..$ : chr "XML"
-  .. .. [list output truncated]
-  ..$ _vignettes        :List of 2
+  .. ..$ : chr "viridisLite"
+  ..$ _vignettes      :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "gwascatOnt.Rmd"
-  .. .. ..$ filename: chr "gwascatOnt.html"
-  .. .. ..$ title   : chr "GWAS catalog: Phenotypes systematized by the experimental factor ontology"
-  .. .. ..$ author  : chr "Vincent J. Carey, stvjc at channing.harvard.edu"
+  .. .. ..$ source  : chr "CNVMetrics.Rmd"
+  .. .. ..$ filename: chr "CNVMetrics.html"
+  .. .. ..$ title   : chr "Quantifying similarity between copy number profiles"
+  .. .. ..$ author  : chr "Astrid Deschênes, Pascal Belleau and Alexander Krasnitz"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 4
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Views of the EFO"
-  .. .. .. ..$ : chr "Graph operations"
-  .. .. .. ..$ : chr "Connections to the GWAS catalog"
-  .. .. ..$ created : chr "2015-08-03 21:44:53"
-  .. .. ..$ modified: chr "2020-05-02 13:40:42"
-  .. .. ..$ commits : int 7
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "gwascat.Rmd"
-  .. .. ..$ filename: chr "gwascat.html"
-  .. .. ..$ title   : chr "gwascat: structuring and querying the NHGRI GWAS catalog"
-  .. .. ..$ author  : chr "Vincent J. Carey, stvjc at channing.harvard.edu"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 21
+  .. .. ..$ headings:List of 25
+  .. .. .. ..$ : chr "Licensing"
+  .. .. .. ..$ : chr "Citing"
   .. .. .. ..$ : chr "Introduction"
   .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Attachment and access to documentation"
-  .. .. .. ..$ : chr "Using tidy methods -- added August 2022"
-  .. .. .. ..$ : chr "Getting a recent version of the GWAS catalog"
-  .. .. .. ..$ : chr "Illustrations: computing"
-  .. .. .. ..$ : chr "Some visualizations"
-  .. .. .. ..$ : chr "Basic Manhattan plot"
-  .. .. .. ..$ : chr "Annotated Manhattan plot"
-  .. .. .. ..$ : chr "Integrative view of potential genetic determinants"
-  .. .. .. ..$ : chr "SNP sets and trait sets"
-  .. .. .. ..$ : chr "SNPs by name"
-  .. .. .. ..$ : chr "Traits by genomic location"
-  .. .. .. ..$ : chr "Counting alleles associated with traits"
-  .. .. .. ..$ : chr "Formal management of trait vocabularies"
-  .. .. .. ..$ : chr "Diseases: Disease Ontology"
-  .. .. .. ..$ : chr "Other phenotypic traits: Human Phenotype Ontology"
-  .. .. .. ..$ : chr "CADD scores"
-  .. .. .. ..$ : chr "Appendix: Adequacy of location annotation"
-  .. .. .. ..$ : chr "Acknowledgment"
+  .. .. .. ..$ : chr "Workflow for metrics calculated using CNV status calls"
+  .. .. .. ..$ : chr "Data Input - Copy number file containing the CNV status calls"
+  .. .. .. ..$ : chr "Data Importation - GRangesList"
+  .. .. .. ..$ : chr "Metric Calculation"
+  .. .. .. ..$ : chr "Metric Visualization"
+  .. .. .. ..$ : chr "Metrics using the CNV status calls"
+  .. .. .. ..$ : chr "Sørensen"
+  .. .. .. ..$ : chr "Szymkiewicz–Simpson"
+  .. .. .. ..$ : chr "Jaccard"
+  .. .. .. ..$ : chr "Workflow for metrics calculated using the level of amplification/deletion"
+  .. .. .. ..$ : chr "Data Input - Copy number file containing the level of amplification/deletion"
+  .. .. .. ..$ : chr "Metrics using the level of amplification/deletion"
+  .. .. .. ..$ : chr "Weighted Euclidean Distance-Based"
+  .. .. .. ..$ : chr "Copy number profile simulating method"
+  .. .. .. ..$ : chr "Supplementary information"
+  .. .. .. ..$ : chr "Using parallelization"
+  .. .. .. ..$ : chr "Creating your own GRangesList"
+  .. .. .. ..$ : chr "Reproducible research"
+  .. .. .. ..$ : chr "Acknowledgments"
+  .. .. .. ..$ : chr "Session info"
   .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2020-05-02 13:40:42"
-  .. .. ..$ modified: chr "2025-12-29 19:40:18"
-  .. .. ..$ commits : int 6
-  ..$ _score            : num 6.61
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "gwascat"
-  ..$ _universes        :List of 2
+  .. .. ..$ created : chr "2018-08-24 03:08:31"
+  .. .. ..$ modified: chr "2022-10-20 22:53:41"
+  .. .. ..$ commits : int 41
+  ..$ _score          : num 5.08
+  ..$ _indexed        : logi TRUE
+  ..$ _nocasepkg      : chr "cnvmetrics"
+  ..$ _universes      :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "vjcitn"
-  ..$ _previous         : chr "2.41.1"
-  ..$ _binaries         :List of 8
+  .. ..$ : chr "adeschen"
+  .. ..$ : chr "krasnitzlab"
+  ..$ _previous       : chr "1.15.1"
+  ..$ _binaries       :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:01:21.000Z"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:15:51.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "4d3f7d9ec8754a3987564a6ff279c0453ebc008a749f9963b454c512dff5e32a"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "198cf2c41fbbddaf871c5063ee2ed8b669a72892099edfa8b0702d4d192c63b4"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:01:40.000Z"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:15:18.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "30b3d0b4f42ec31a242d857c5e48267c2da455d605504544b53af0df27307a85"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "5f321ee1b809372c783e8ab2e8f43a4839f9314e12c8a9eb875933874be9d5f6"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:03:05.000Z"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "80ca5c9ec3b385ff513885b6404a15ce511d9e7af14a64ef2d165dc3f40436e5"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:16:06.000Z"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "25af4d5d1c96b990d599d35704ea2f1e9caea2b2fc9b9b056ff18a5cdb9d0af3"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T03:59:40.000Z"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "db9d96f4dfee62c0c3c49132db854469458bbcca91b6c27c028bab7f71af551d"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:14:50.000Z"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "f76faa6569c3fba6354398ede9e44d0da366af8e22bbf5688737123107783098"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:02:00.000Z"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "23a56c70fb2a7bced73201dd7e51f223fe32753891f3c57b8f8e0d51139415a6"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:15:36.000Z"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "72107510c2fd82ff888b90eaa0df55a7d36aa7b06ed7e51d2178d8673159e843"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:01:26.000Z"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "966ac63b991086d5fca58fb93e9d8078ad6d2808a22e3aa28e296614fed83305"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:15:22.000Z"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "5e839d8dfae6817105932266f66d21484670272058c3bec1f7af12e108070e3d"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:00:28.000Z"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "fe88016a30eeedc49752d6d60508a20a5135a8a7ac84306748e668e3760f869c"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:14:50.000Z"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "6247bf247a085b0aad72d01ec63cc015b4da93ddfd942eed5e55cdc5c764931b"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.43.1"
-  .. .. ..$ date    : chr "2025-12-30T04:00:44.000Z"
-  .. .. ..$ commit  : chr "47c8928af65175ec78bd8a9d31b81bf9a7a4d006"
-  .. .. ..$ fileid  : chr "d5acb6a3fb7efe9073069c4edcec186346e09fc95480b5f0619bf46ac63037c8"
+  .. .. ..$ version : chr "1.15.2"
+  .. .. ..$ date    : chr "2026-01-01T04:14:59.000Z"
+  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
+  .. .. ..$ fileid  : chr "70a50c5bd338bf7249e32bf3e62870c0a9799c39b8d523c19a0db03786dcf891"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20588372238"</code></pre>
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
