@@ -180,8 +180,8 @@ Total 2334 2361</code></pre>
 <tr class="odd">
 <td style="text-align: left;">Aerith</td>
 <td style="text-align: left;">0.99.11</td>
-<td style="text-align: left;">2025-12-04T05:48:34.000Z</td>
-<td style="text-align: left;">2025-12-06T02:55:20.444Z</td>
+<td style="text-align: left;">2026-01-03T08:33:59.000Z</td>
+<td style="text-align: left;">2026-01-03T08:44:21.116Z</td>
 <td style="text-align: left;">https://github.com/bioc/Aerith</td>
 </tr>
 <tr class="even">
@@ -689,139 +689,175 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package         : chr "CNVMetrics"
-  ..$ Type            : chr "Package"
-  ..$ Version         : chr "1.15.2"
-  ..$ Date            : chr "2021-11-23"
-  ..$ Title           : chr "Copy Number Variant Metrics"
-  ..$ Description     : chr "The CNVMetrics package calculates similarity metrics to\nfacilitate copy number variant comparison among sample"| __truncated__
-  ..$ Authors@R       : chr "c(person(\"Astrid\", \"Deschênes\", email = \"adeschen@hotmail.com\",\nrole = c(\"aut\", \"cre\"),\ncomment = c"| __truncated__
-  ..$ Encoding        : chr "UTF-8"
-  ..$ License         : chr "Artistic-2.0"
-  ..$ biocViews       : chr "BiologicalQuestion, Software, CopyNumberVariation"
-  ..$ VignetteBuilder : chr "knitr"
-  ..$ URL             : chr "https://github.com/krasnitzlab/CNVMetrics,\nhttps://krasnitzlab.github.io/CNVMetrics/"
-  ..$ BugReports      : chr "https://github.com/krasnitzlab/CNVMetrics/issues"
-  ..$ RoxygenNote     : chr "7.3.3"
-  ..$ Repository      : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication: chr "2026-01-01 00:50:22 UTC"
-  ..$ RemoteUrl       : chr "https://github.com/bioc/CNVMetrics"
-  ..$ RemoteRef       : chr "HEAD"
-  ..$ RemoteSha       : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  ..$ NeedsCompilation: chr "no"
-  ..$ Packaged        :List of 2
-  .. ..$ Date: chr "2026-01-01 04:13:10 UTC"
+ $ :List of 72
+  ..$ Package                : chr "knowYourCG"
+  ..$ Type                   : chr "Package"
+  ..$ Title                  : chr "Functional analysis of DNA methylome datasets"
+  ..$ Version                : chr "1.7.4"
+  ..$ Authors@R              : chr "c(person(\"Zhou\", \"Wanding\", role=c(\"aut\", \"fnd\"), email = \"zhouwanding@gmail.com\", comment = c(ORCID "| __truncated__
+  ..$ Description            : chr "KnowYourCG (KYCG) is a supervised learning framework\ndesigned for the functional analysis of DNA methylation d"| __truncated__
+  ..$ URL                    : chr "https://github.com/zhou-lab/knowYourCG"
+  ..$ BugReports             : chr "https://github.com/zhou-lab/knowYourCG/issues"
+  ..$ License                : chr "MIT + file LICENSE"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ RoxygenNote            : chr "7.3.3"
+  ..$ biocViews              : chr "Epigenetics, DNAMethylation, Sequencing, SingleCell,\nSpatial, Transcription, MethylationArray"
+  ..$ Config/testthat/edition: chr "3"
+  ..$ Config/pak/sysreqs     : chr "libicu-dev libpng-dev libssl-dev libx11-dev\nzlib1g-dev"
+  ..$ Repository             : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication       : chr "2026-01-03 03:01:21 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/knowYourCG"
+  ..$ RemoteRef              : chr "HEAD"
+  ..$ RemoteSha              : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  ..$ NeedsCompilation       : chr "yes"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2026-01-03 04:27:03 UTC"
   .. ..$ User: chr "root"
-  ..$ Author          : chr "Astrid Deschênes [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0001-7846-6749&gt;),\nPascal Belleau [aut] (ORCID: &lt;h"| __truncated__
-  ..$ Maintainer      : chr "Astrid Deschênes &lt;adeschen@hotmail.com&gt;"
-  ..$ MD5sum          : chr "f533e2b12f3d0d378884877291a2e65b"
-  ..$ _user           : chr "bioc"
-  ..$ _type           : chr "src"
-  ..$ _file           : chr "CNVMetrics_1.15.2.tar.gz"
-  ..$ _fileid         : chr "a1c92adf6526e80000a26ffeb274363cc02c6f0f64e29eaec7ce8185c5e0d94e"
-  ..$ _filesize       : int 4905227
-  ..$ _sha256         : chr "a1c92adf6526e80000a26ffeb274363cc02c6f0f64e29eaec7ce8185c5e0d94e"
-  ..$ _created        : chr "2026-01-01T04:13:10.000Z"
-  ..$ _published      : chr "2026-01-01T04:17:47.035Z"
-  ..$ _jobs           :List of 10
+  ..$ Author                 : chr "Zhou Wanding [aut, fnd] (ORCID:\n&lt;https://orcid.org/0000-0001-9126-1932&gt;),\nGoldberg David [aut, cre] (ORCID:\n"| __truncated__
+  ..$ Maintainer             : chr "Goldberg David &lt;golddc72@pennmedicine.upenn.edu&gt;"
+  ..$ MD5sum                 : chr "e9ad5696b9896e11a436bca24b5472d1"
+  ..$ _user                  : chr "bioc"
+  ..$ _type                  : chr "src"
+  ..$ _file                  : chr "knowYourCG_1.7.4.tar.gz"
+  ..$ _fileid                : chr "0a8174bd0289b2c903c900242a6a3e890e5ee7b0cda6672b86ad4090137a6375"
+  ..$ _filesize              : int 3791872
+  ..$ _sha256                : chr "0a8174bd0289b2c903c900242a6a3e890e5ee7b0cda6672b86ad4090137a6375"
+  ..$ _created               : chr "2026-01-03T04:27:03.000Z"
+  ..$ _published             : chr "2026-01-03T04:33:38.114Z"
+  ..$ _distro                : chr "noble"
+  ..$ _jobs                  :List of 13
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 151
-  .. .. ..$ config  : chr "bioc-checks"
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5001469988"
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 243
+  .. .. ..$ config  : chr "linux-devel-arm64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012430297"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 214
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 272
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001472887"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012431485"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 168
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 253
+  .. .. ..$ config  : chr "linux-release-arm64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012430759"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 270
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001470775"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012431434"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 235
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 187
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001473797"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012427536"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 114
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 312
+  .. .. ..$ config  : chr "macos-devel-x86_64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012433362"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 265
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001468429"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012431205"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 224
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 344
+  .. .. ..$ config  : chr "macos-release-x86_64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012434828"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 352
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001462837"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012418539"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 119
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 167
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001468601"
+  .. .. ..$ check   : chr "FAIL"
+  .. .. ..$ artifact: chr ""
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 186
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 203
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001471628"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012428314"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 154
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 253
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001470173"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012430687"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.93e+10
-  .. .. ..$ time    : int 162
+  .. .. ..$ job     : num 5.94e+10
+  .. .. ..$ time    : int 216
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5001470598"
-  ..$ _bioccheck      :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 5
-  ..$ _buildurl       : chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  ..$ _status         : chr "success"
-  ..$ _host           : chr "GitHub-Actions"
-  ..$ _upstream       : chr "https://github.com/bioc/CNVMetrics"
-  ..$ _commit         :List of 5
-  .. ..$ id       : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. ..$ author   : chr "adeschen &lt;adeschen@hotmail.com&gt;"
-  .. ..$ committer: chr "adeschen &lt;adeschen@hotmail.com&gt;"
-  .. ..$ message  : chr "Version bump in devel\n"
-  .. ..$ time     : int 1767228622
-  ..$ _maintainer     :List of 5
-  .. ..$ name : chr "Astrid Deschênes"
-  .. ..$ email: chr "adeschen@hotmail.com"
-  .. ..$ login: chr "adeschen"
-  .. ..$ orcid: chr "0000-0001-7846-6749"
-  .. ..$ uuid : int 7254636
-  ..$ _distro         : chr "noble"
-  ..$ _registered     : logi TRUE
-  ..$ _dependencies   :List of 17
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5012428874"
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  ..$ _status                : chr "failure"
+  ..$ _host                  : chr "GitHub-Actions"
+  ..$ _upstream              : chr "https://github.com/bioc/knowYourCG"
+  ..$ _commit                :List of 5
+  .. ..$ id       : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. ..$ author   : chr "Wanding Zhou &lt;zhouwanding@gmail.com&gt;"
+  .. ..$ committer: chr "Wanding Zhou &lt;zhouwanding@gmail.com&gt;"
+  .. ..$ message  : chr "bump to 1.7.4\n"
+  .. ..$ time     : int 1767409281
+  ..$ _maintainer            :List of 5
+  .. ..$ name : chr "Goldberg David"
+  .. ..$ email: chr "golddc72@pennmedicine.upenn.edu"
+  .. ..$ login: chr "golddc"
+  .. ..$ uuid : int 90043071
+  .. ..$ orcid: chr "0000-0002-9622-4708"
+  ..$ _registered            : logi TRUE
+  ..$ _dependencies          :List of 26
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.0"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "sesameData"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ExperimentHub"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "AnnotationHub"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rlang"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "GenomicRanges"
   .. .. ..$ role   : chr "Imports"
@@ -829,320 +865,546 @@ Total 2334 2361</code></pre>
   .. .. ..$ package: chr "IRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
+  .. .. ..$ package: chr "reshape2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "magrittr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "pheatmap"
+  .. .. ..$ package: chr "stringr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "gridExtra"
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ package: chr "ggplot2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rBeta2009"
+  .. .. ..$ package: chr "ggrepel"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "wheatmap"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "magrittr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "knitr"
+  .. .. ..$ package: chr "SummarizedExperiment"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "XVector"
+  .. .. ..$ package: chr "sesame"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner          : chr "bioc"
-  ..$ _selfowned      : logi TRUE
-  ..$ _usedby         : int 0
-  ..$ _updates        :List of 2
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "gprofiler2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggrastr"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                 : chr "bioc"
+  ..$ _selfowned             : logi TRUE
+  ..$ _usedby                : int 0
+  ..$ _updates               :List of 7
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-01"
+  .. .. ..$ n   : int 26
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-11"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-24"
+  .. .. ..$ n   : int 4
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 8
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-47"
+  .. .. ..$ n   : int 5
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-49"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-01"
-  .. .. ..$ n   : int 6
-  ..$ _tags           : list()
-  ..$ _bioc           :List of 2
+  .. .. ..$ n   : int 2
+  ..$ _tags                  : list()
+  ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.15.1"
+  .. .. ..$ version: chr "1.7.3"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.13.0"
+  .. .. ..$ version: chr "1.6.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics         :List of 7
-  .. ..$ : chr "biologicalquestion"
-  .. ..$ : chr "software"
-  .. ..$ : chr "copynumbervariation"
-  .. ..$ : chr "cnv"
-  .. ..$ : chr "copy-number-variation"
-  .. ..$ : chr "metrics"
-  .. ..$ : chr "r-language"
-  ..$ _stars          : int 4
-  ..$ _contributors   :List of 4
+  ..$ _topics                :List of 8
+  .. ..$ : chr "epigenetics"
+  .. ..$ : chr "dnamethylation"
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "singlecell"
+  .. ..$ : chr "spatial"
+  .. ..$ : chr "transcription"
+  .. ..$ : chr "methylationarray"
+  .. ..$ : chr "zlib"
+  ..$ _stars                 : int 6
+  ..$ _contributors          :List of 7
   .. ..$ :List of 3
-  .. .. ..$ user : chr "adeschen"
-  .. .. ..$ count: int 460
-  .. .. ..$ uuid : int 7254636
+  .. .. ..$ user : chr "zwdzwd"
+  .. .. ..$ count: int 76
+  .. .. ..$ uuid : int 7670339
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "golddc"
+  .. .. ..$ count: int 52
+  .. .. ..$ uuid : int 90043071
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "ethanmoyer"
+  .. .. ..$ count: int 35
+  .. .. ..$ uuid : int 57536747
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "fdong2"
+  .. .. ..$ count: int 21
+  .. .. ..$ uuid : int 8629981
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 14
+  .. .. ..$ count: int 8
   .. .. ..$ uuid : int 1744257
   .. ..$ :List of 3
-  .. .. ..$ user : chr "belleau"
-  .. .. ..$ count: int 4
-  .. .. ..$ uuid : int 8398253
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ user : chr "hongxiang2023"
   .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2746443
-  ..$ _userbio        :List of 4
+  .. .. ..$ uuid : int 50134879
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "kevinmastascusa"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 83515571
+  ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads      :List of 2
-  .. ..$ count : int 284
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/CNVMetrics"
-  ..$ _devurl         : chr "https://github.com/krasnitzlab/cnvmetrics"
-  ..$ _pkgdown        : chr "https://krasnitzlab.github.io/CNVMetrics/"
-  ..$ _searchresults  : int 8
-  ..$ _rbuild         : chr "4.5.2"
-  ..$ _assets         :List of 11
+  ..$ _downloads             :List of 2
+  .. ..$ count : int 260
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/knowYourCG"
+  ..$ _devurl                : chr "https://github.com/zhou-lab/knowyourcg"
+  ..$ _searchresults         : int 15
+  ..$ _rbuild                : chr "4.5.2"
+  ..$ _assets                :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
-  .. ..$ : chr "extra/CNVMetrics.html"
   .. ..$ : chr "extra/contents.json"
+  .. ..$ : chr "extra/knowYourCG.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl        : chr "https://github.com/krasnitzlab/cnvmetrics"
-  ..$ _realowner      : chr "bioc"
-  ..$ _cranurl        : logi FALSE
-  ..$ _exports        :List of 4
-  .. ..$ : chr "calculateLog2ratioMetric"
-  .. ..$ : chr "calculateOverlapMetric"
-  .. ..$ : chr "plotMetric"
-  .. ..$ : chr "processSim"
-  ..$ _help           :List of 7
+  ..$ _homeurl               : chr "https://github.com/zhou-lab/knowyourcg"
+  ..$ _realowner             : chr "bioc"
+  ..$ _cranurl               : logi FALSE
+  ..$ _exports               :List of 24
+  .. ..$ : chr "aggregateTestEnrichments"
+  .. ..$ : chr "annoProbes"
+  .. ..$ : chr "buildGeneDBs"
+  .. ..$ : chr "dbStats"
+  .. ..$ : chr "getDBs"
+  .. ..$ : chr "KYCG_plotBar"
+  .. ..$ : chr "KYCG_plotDot"
+  .. ..$ : chr "KYCG_plotEnrichAll"
+  .. ..$ : chr "KYCG_plotLollipop"
+  .. ..$ : chr "KYCG_plotManhattan"
+  .. ..$ : chr "KYCG_plotMeta"
+  .. ..$ : chr "KYCG_plotMetaEnrichment"
+  .. ..$ : chr "KYCG_plotPointRange"
+  .. ..$ : chr "KYCG_plotSetEnrichment"
+  .. ..$ : chr "KYCG_plotVolcano"
+  .. ..$ : chr "KYCG_plotWaterfall"
+  .. ..$ : chr "kycgDataCache"
+  .. ..$ : chr "kycgDataGet"
+  .. ..$ : chr "linkProbesToProximalGenes"
+  .. ..$ : chr "listDBGroups"
+  .. ..$ : chr "testEnrichment"
+  .. ..$ : chr "testEnrichment2"
+  .. ..$ : chr "testEnrichmentSEA"
+  .. ..$ : chr "testProbeProximity"
+  ..$ _help                  :List of 27
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "CNVMetrics-package"
-  .. .. ..$ title : chr "CNVMetrics: Copy number variant metrics"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "CNVMetrics-package"
-  .. .. .. ..$ : chr "CNVMetrics"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "calculateLog2ratioMetric"
-  .. .. ..$ title : chr "Calculate metric using overlapping amplified/deleted regions"
+  .. .. ..$ page  : chr "aggregateTestEnrichments"
+  .. .. ..$ title : chr "Aggregate test enrichment results"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calculateLog2ratioMetric"
+  .. .. .. ..$ : chr "aggregateTestEnrichments"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "calculateOverlapMetric"
-  .. .. ..$ title : chr "Calculate metric using overlapping amplified/deleted regions"
+  .. .. ..$ page  : chr "annoProbes"
+  .. .. ..$ title : chr "Annotate Probe IDs using KYCG databases"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calculateOverlapMetric"
+  .. .. .. ..$ : chr "annoProbes"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "is.CNVMetric"
-  .. .. ..$ title : chr "Is an object of class 'CNVMetric'"
+  .. .. ..$ page  : chr "buildGeneDBs"
+  .. .. ..$ title : chr "build gene-probe association database"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "is.CNVMetric"
+  .. .. .. ..$ : chr "buildGeneDBs"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotMetric"
-  .. .. ..$ title : chr "Plot metrics present in a 'CNVMetric' object"
+  .. .. ..$ page  : chr "dbStats"
+  .. .. ..$ title : chr "dbStats aggregates methylation of a given betas matrix over specified database set features"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotMetric"
+  .. .. .. ..$ : chr "dbStats"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "print.CNVMetric"
-  .. .. ..$ title : chr "Print CNVMetric object"
+  .. .. ..$ page  : chr "df_master"
+  .. .. ..$ title : chr "Master data frame for all object to cache"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "print.CNVMetric"
+  .. .. .. ..$ : chr "df_master"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "processSim"
-  .. .. ..$ title : chr "Generate simulated samples with copy number profiles derived from a specific sample"
+  .. .. ..$ page  : chr "getDBs"
+  .. .. ..$ title : chr "Get databases by full or partial names of the database group(s)"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "processSim"
-  ..$ _readme         : chr "https://github.com/bioc/CNVMetrics/raw/HEAD/README.md"
-  ..$ _rundeps        :List of 30
-  .. ..$ : chr "BH"
+  .. .. .. ..$ : chr "getDBs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotBar"
+  .. .. ..$ title : chr "Bar plot to show most enriched CG groups from testEnrichment"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotBar"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotDot"
+  .. .. ..$ title : chr "Dot plot to show most enriched CG groups from testEnrichment"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotDot"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotEnrichAll"
+  .. .. ..$ title : chr "plot enrichment test result"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotEnrichAll"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotLollipop"
+  .. .. ..$ title : chr "creates a lollipop plot of log(estimate) given data with fields estimate."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotLollipop"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotManhattan"
+  .. .. ..$ title : chr "KYCG_plotManhattan makes a manhattan plot to summarize EWAS results"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotManhattan"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotMeta"
+  .. .. ..$ title : chr "Plot meta gene or other meta genomic features"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotMeta"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotMetaEnrichment"
+  .. .. ..$ title : chr "Plot meta gene or other meta genomic features"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotMetaEnrichment"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotPointRange"
+  .. .. ..$ title : chr "Plot point range for a list of enrichment testing results against the same set of databases"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotPointRange"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotSetEnrichment"
+  .. .. ..$ title : chr "Plot Set Enrichment"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotSetEnrichment"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotVolcano"
+  .. .. ..$ title : chr "creates a volcano plot of -log2(p.value) and log(estimate) given data with fields estimate and p.value."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotVolcano"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "KYCG_plotWaterfall"
+  .. .. ..$ title : chr "create a waterfall plot of log(estimate) given test enrichment"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "KYCG_plotWaterfall"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "kycgDataCache"
+  .. .. ..$ title : chr "Cache KnowYourCG data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "kycgDataCache"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "kycgDataGet"
+  .. .. ..$ title : chr "Get KnowYourCG data"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "kycgDataGet"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "linkProbesToProximalGenes"
+  .. .. ..$ title : chr "find genes in genomic proximity to given Infinium probes"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "linkProbesToProximalGenes"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "listDBGroups"
+  .. .. ..$ title : chr "List database group names"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "listDBGroups"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "testEnrichment"
+  .. .. ..$ title : chr "testEnrichment tests for the enrichment of query in knowledgebase sets"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "testEnrichment"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "testEnrichment2"
+  .. .. ..$ title : chr "Test enrichment from YAME-compressed CG sets"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "testEnrichment2"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "testEnrichmentFisher"
+  .. .. ..$ title : chr "testEnrichmentFisher uses Fisher's exact test to estimate the association between two categorical variables."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "testEnrichmentFisher"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "testEnrichmentSEA"
+  .. .. ..$ title : chr "uses the GSEA-like test to estimate the association of a categorical variable against a continuous variable."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "testEnrichmentSEA"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "testEnrichmentSpearman"
+  .. .. ..$ title : chr "testEnrichmentSpearman uses the Spearman statistical test to estimate the association between two continuous variables."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "testEnrichmentSpearman"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "testProbeProximity"
+  .. .. ..$ title : chr "testProbeProximity tests if a query set of probes share closer genomic proximity than if randomly distributed"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "testProbeProximity"
+  ..$ _readme                : chr "https://github.com/bioc/knowYourCG/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 82
+  .. ..$ : chr "AnnotationDbi"
+  .. ..$ : chr "AnnotationHub"
+  .. ..$ : chr "askpass"
+  .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocBaseUtils"
+  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocParallel"
+  .. ..$ : chr "BiocManager"
+  .. ..$ : chr "BiocVersion"
+  .. ..$ : chr "Biostrings"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "blob"
+  .. ..$ : chr "cachem"
   .. ..$ : chr "cli"
-  .. ..$ : chr "codetools"
+  .. ..$ : chr "clipr"
+  .. ..$ : chr "colorspace"
   .. ..$ : chr "cpp11"
+  .. ..$ : chr "crayon"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "DBI"
+  .. ..$ : chr "dbplyr"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "ExperimentHub"
   .. ..$ : chr "farver"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
+  .. ..$ : chr "fastmap"
+  .. ..$ : chr "filelock"
   .. ..$ : chr "generics"
   .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "ggrepel"
   .. ..$ : chr "glue"
-  .. ..$ : chr "gridExtra"
   .. ..$ : chr "gtable"
+  .. ..$ : chr "hms"
+  .. ..$ : chr "httr"
+  .. ..$ : chr "httr2"
   .. ..$ : chr "IRanges"
+  .. ..$ : chr "isoband"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "KEGGREST"
   .. ..$ : chr "labeling"
-  .. ..$ : chr "lambda.r"
   .. ..$ : chr "lifecycle"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "pheatmap"
+  .. ..$ : chr "memoise"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plogr"
+  .. ..$ : chr "plyr"
+  .. ..$ : chr "png"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
+  .. ..$ : chr "purrr"
   .. ..$ : chr "R6"
-  .. ..$ : chr "rBeta2009"
+  .. ..$ : chr "rappdirs"
   .. ..$ : chr "RColorBrewer"
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "readr"
+  .. ..$ : chr "reshape2"
   .. ..$ : chr "rlang"
+  .. ..$ : chr "RSQLite"
   .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "S7"
   .. ..$ : chr "scales"
   .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "snow"
+  .. ..$ : chr "sesameData"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "tzdb"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
   .. ..$ : chr "viridisLite"
-  ..$ _vignettes      :List of 1
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "CNVMetrics.Rmd"
-  .. .. ..$ filename: chr "CNVMetrics.html"
-  .. .. ..$ title   : chr "Quantifying similarity between copy number profiles"
-  .. .. ..$ author  : chr "Astrid Deschênes, Pascal Belleau and Alexander Krasnitz"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 25
-  .. .. .. ..$ : chr "Licensing"
-  .. .. .. ..$ : chr "Citing"
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Workflow for metrics calculated using CNV status calls"
-  .. .. .. ..$ : chr "Data Input - Copy number file containing the CNV status calls"
-  .. .. .. ..$ : chr "Data Importation - GRangesList"
-  .. .. .. ..$ : chr "Metric Calculation"
-  .. .. .. ..$ : chr "Metric Visualization"
-  .. .. .. ..$ : chr "Metrics using the CNV status calls"
-  .. .. .. ..$ : chr "Sørensen"
-  .. .. .. ..$ : chr "Szymkiewicz–Simpson"
-  .. .. .. ..$ : chr "Jaccard"
-  .. .. .. ..$ : chr "Workflow for metrics calculated using the level of amplification/deletion"
-  .. .. .. ..$ : chr "Data Input - Copy number file containing the level of amplification/deletion"
-  .. .. .. ..$ : chr "Metrics using the level of amplification/deletion"
-  .. .. .. ..$ : chr "Weighted Euclidean Distance-Based"
-  .. .. .. ..$ : chr "Copy number profile simulating method"
-  .. .. .. ..$ : chr "Supplementary information"
-  .. .. .. ..$ : chr "Using parallelization"
-  .. .. .. ..$ : chr "Creating your own GRangesList"
-  .. .. .. ..$ : chr "Reproducible research"
-  .. .. .. ..$ : chr "Acknowledgments"
-  .. .. .. ..$ : chr "Session info"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2018-08-24 03:08:31"
-  .. .. ..$ modified: chr "2022-10-20 22:53:41"
-  .. .. ..$ commits : int 41
-  ..$ _score          : num 5.08
-  ..$ _indexed        : logi TRUE
-  ..$ _nocasepkg      : chr "cnvmetrics"
-  ..$ _universes      :List of 3
-  .. ..$ : chr "bioc"
-  .. ..$ : chr "adeschen"
-  .. ..$ : chr "krasnitzlab"
-  ..$ _previous       : chr "1.15.1"
-  ..$ _binaries       :List of 8
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:15:51.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "198cf2c41fbbddaf871c5063ee2ed8b669a72892099edfa8b0702d4d192c63b4"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:15:18.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "5f321ee1b809372c783e8ab2e8f43a4839f9314e12c8a9eb875933874be9d5f6"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:16:06.000Z"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "25af4d5d1c96b990d599d35704ea2f1e9caea2b2fc9b9b056ff18a5cdb9d0af3"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:14:50.000Z"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "f76faa6569c3fba6354398ede9e44d0da366af8e22bbf5688737123107783098"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
+  .. ..$ : chr "vroom"
+  .. ..$ : chr "wheatmap"
+  .. ..$ : chr "withr"
+  .. ..$ : chr "XVector"
+  .. ..$ : chr "yaml"
+  ..$ _sysdeps               :List of 1
   .. ..$ :List of 8
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:15:36.000Z"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "72107510c2fd82ff888b90eaa0df55a7d36aa7b06ed7e51d2178d8673159e843"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  .. ..$ :List of 9
+  .. .. ..$ shlib      : chr "libz"
+  .. .. ..$ package    : chr "zlib1g"
+  .. .. ..$ headers    : chr "zlib1g-dev"
+  .. .. ..$ source     : chr "zlib"
+  .. .. ..$ version    : chr "1:1.3.dfsg-3.1ubuntu2.1"
+  .. .. ..$ name       : chr "zlib"
+  .. .. ..$ homepage   : chr "http://zlib.net/"
+  .. .. ..$ description: chr "compression library - runtime"
+  ..$ _score                 : num 5.28
+  ..$ _indexed               : logi TRUE
+  ..$ _nocasepkg             : chr "knowyourcg"
+  ..$ _universes             :List of 3
+  .. ..$ : chr "bioc"
+  .. ..$ : chr "golddc"
+  .. ..$ : chr "zhou-lab"
+  ..$ _previous              : chr "1.7.3"
+  ..$ _binaries              :List of 11
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:30:12.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "3ae25c48c993666091ee6847265942ec6de20c25433122d607aab7ad172595a9"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:30:22.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "c7989e20b2db5c1bb68c7297e817fcc6d9230d23982949b1a8645980809850de"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:30:24.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "5c1290023b8f6a3bcd386e6cc42a6b6d140c680344696defbb68002f82796cf2"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:30:24.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "15bdf0a38dc2c368a14a5a6694070b33c2731d4293cc86ab0ed0596517970b54"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:29:31.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "4d9c65ce02d2c156c7a14a8cbe6b6ce8d2f595af14319741f2b7cff127acdd35"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:30:47.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "1b368962767952ca04582aee101dd84e9b131e44b195262d16b36364781deeb0"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:30:14.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "65aa6fbcf1f31063bc6e7ec5320a99974873503b60573b7460e19d14b44adbd2"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:31:00.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "1f23845673c109ca2559d91147d54f9727303912c5ae2360158ebaeffa8b4905"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:15:22.000Z"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "5e839d8dfae6817105932266f66d21484670272058c3bec1f7af12e108070e3d"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  .. ..$ :List of 9
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:29:02.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "81e5c1d2bf7afea25e67d8882fcaea88aae634b08ae7660c9a5415aca6325c36"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:14:50.000Z"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "6247bf247a085b0aad72d01ec63cc015b4da93ddfd942eed5e55cdc5c764931b"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"
-  .. ..$ :List of 9
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:29:39.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "5f3aa95ba18001adbc7c01b468c3add3e50d6d26da9b511e48f9891f69de422c"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.15.2"
-  .. .. ..$ date    : chr "2026-01-01T04:14:59.000Z"
-  .. .. ..$ commit  : chr "f9a36a2d54a159d87a107e1a81b3f9c7973fa2fd"
-  .. .. ..$ fileid  : chr "70a50c5bd338bf7249e32bf3e62870c0a9799c39b8d523c19a0db03786dcf891"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20632331242"</code></pre>
+  .. .. ..$ version : chr "1.7.4"
+  .. .. ..$ date    : chr "2026-01-03T04:29:02.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "15d6d050d377950638516e74019c8e76b5edd81d"
+  .. .. ..$ fileid  : chr "a557a2959a2b7cc45704b313d937acf6adc4989d2970f5ef90d76c068537984a"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20672189845"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
