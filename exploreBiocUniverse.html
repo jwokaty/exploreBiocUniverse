@@ -689,200 +689,166 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package           : chr "SingleR"
-  ..$ Title             : chr "Reference-Based Single-Cell RNA-Seq Annotation"
-  ..$ Version           : chr "2.13.0"
-  ..$ Date              : chr "2025-10-16"
-  ..$ Authors@R         : chr "c(person(\"Dvir\", \"Aran\", email=\"dvir.aran@ucsf.edu\", role=c(\"aut\", \"cph\")),\nperson(\"Aaron\", \"Lun\"| __truncated__
-  ..$ Description       : chr "Performs unbiased cell type recognition from single-cell\nRNA sequencing data, by leveraging reference transcri"| __truncated__
-  ..$ License           : chr "GPL-3"
-  ..$ biocViews         : chr "Software, SingleCell, GeneExpression, Transcriptomics,\nClassification, Clustering, Annotation"
-  ..$ SystemRequirements: chr "C++17"
+ $ :List of 65
+  ..$ Package           : chr "IWTomics"
+  ..$ Type              : chr "Package"
+  ..$ Version           : chr "1.35.1"
+  ..$ Date              : chr "2026-01-05"
+  ..$ Title             : chr "Interval-Wise Testing for Omics Data"
+  ..$ Author            : chr "Marzia A Cremona, Alessia Pini, Francesca Chiaromonte, Simone\nVantini"
+  ..$ Maintainer        : chr "Marzia A Cremona &lt;mac78@psu.edu&gt;"
+  ..$ Description       : chr "Implementation of the Interval-Wise Testing (IWT) for\nomics data. This inferential procedure tests for differe"| __truncated__
   ..$ VignetteBuilder   : chr "knitr"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ URL               : chr "https://github.com/SingleR-inc/SingleR"
-  ..$ BugReports        : chr "https://github.com/SingleR-inc/SingleR/issues"
-  ..$ Config/pak/sysreqs: chr "zlib1g-dev"
+  ..$ biocViews         : chr "StatisticalMethod, MultipleComparison,\nDifferentialExpression, DifferentialMethylation,\nDifferentialPeakCalli"| __truncated__
+  ..$ License           : chr "GPL (&gt;=2)"
+  ..$ Config/pak/sysreqs: chr "make"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-01-05 03:08:45 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/SingleR"
+  ..$ Date/Publication  : chr "2026-01-06 03:04:01 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/IWTomics"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  ..$ NeedsCompilation  : chr "yes"
+  ..$ RemoteSha         : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  ..$ NeedsCompilation  : chr "no"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-01-05 04:20:03 UTC"
+  .. ..$ Date: chr "2026-01-06 03:54:15 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Dvir Aran [aut, cph],\nAaron Lun [ctb, cre],\nDaniel Bunis [ctb],\nJared Andrews [ctb],\nFriederike Dündar [ctb]"
-  ..$ Maintainer        : chr "Aaron Lun &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  ..$ MD5sum            : chr "db13d4a15bbb7eb3ad8ee2a329d1ae63"
+  ..$ MD5sum            : chr "d4bd7d41ed060791c25572352b90c531"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "SingleR_2.13.0.tar.gz"
-  ..$ _fileid           : chr "59946be145e71381e8d67a311447a7a784081e4aee25d9c67f1725415264b5da"
-  ..$ _filesize         : int 299059
-  ..$ _sha256           : chr "59946be145e71381e8d67a311447a7a784081e4aee25d9c67f1725415264b5da"
-  ..$ _created          : chr "2026-01-05T04:20:03.000Z"
-  ..$ _published        : chr "2026-01-05T04:32:07.602Z"
-  ..$ _jobs             :List of 14
+  ..$ _file             : chr "IWTomics_1.35.1.tar.gz"
+  ..$ _fileid           : chr "089815de4799a1001ee4c037ac887ab0c025bcea18b11c8285e9516fcf3fc5de"
+  ..$ _filesize         : int 1471350
+  ..$ _sha256           : chr "089815de4799a1001ee4c037ac887ab0c025bcea18b11c8285e9516fcf3fc5de"
+  ..$ _created          : chr "2026-01-06T03:54:15.000Z"
+  ..$ _published        : chr "2026-01-06T03:59:03.416Z"
+  ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 281
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 155
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5020740889"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 342
-  .. .. ..$ config  : chr "linux-devel-arm64"
-  .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020745044"
+  .. .. ..$ artifact: chr "5032567871"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 382
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 244
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020747927"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032576438"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 363
-  .. .. ..$ config  : chr "linux-release-arm64"
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020746861"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 408
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 240
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020750202"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032576101"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 346
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 150
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020754982"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032567646"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 514
-  .. .. ..$ config  : chr "macos-devel-x86_64"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020772038"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 320
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 191
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020755944"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032571391"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 398
-  .. .. ..$ config  : chr "macos-release-x86_64"
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020761851"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 409
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 264
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020719477"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5032552771"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 213
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 118
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5020735047"
+  .. .. ..$ artifact: chr "5032564285"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 385
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 224
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020748127"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032574364"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 420
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 216
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020751429"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032573647"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.94e+10
-  .. .. ..$ time    : int 392
+  .. .. ..$ job     : num 5.95e+10
+  .. .. ..$ time    : int 220
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5020748776"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5032574155"
   ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 1
-  .. ..$ note   : int 7
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  ..$ _status           : chr "failure"
+  .. ..$ error  : int 2
+  .. ..$ warning: int 2
+  .. ..$ note   : int 15
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/SingleR"
+  ..$ _upstream         : chr "https://github.com/bioc/IWTomics"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. ..$ author   : chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  .. ..$ committer: chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  .. ..$ message  : chr "Merge remote-tracking branch 'upstream/devel'\n"
-  .. ..$ time     : int 1767582525
-  ..$ _maintainer       :List of 5
-  .. ..$ name   : chr "Aaron Lun"
-  .. ..$ email  : chr "infinite.monkeys.with.keyboards@gmail.com"
-  .. ..$ login  : chr "ltla"
-  .. ..$ twitter: chr "@realAaronLun"
-  .. ..$ uuid   : int 8166669
+  .. ..$ id       : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ message  : chr "IWTomics 1.35.1: Add XVector to Suggests\n\nThe XVector package is needed by the IWTomicsData#GRangesList#list "| __truncated__
+  .. ..$ time     : int 1767668641
+  ..$ _maintainer       :List of 4
+  .. ..$ name : chr "Marzia A Cremona"
+  .. ..$ email: chr "mac78@psu.edu"
+  .. ..$ login: chr "marziacremona"
+  .. ..$ uuid : int 21043800
   ..$ _distro           : chr "noble"
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 30
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
+  ..$ _dependencies     :List of 17
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "R"
+  .. .. ..$ version: chr "&gt;= 3.5.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
-  .. .. ..$ role   : chr "LinkingTo"
+  .. .. ..$ package: chr "GenomicRanges"
+  .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "beachmat"
-  .. .. ..$ role   : chr "LinkingTo"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "assorthead"
-  .. .. ..$ version: chr "&gt;= 1.3.5"
-  .. .. ..$ role   : chr "LinkingTo"
+  .. .. ..$ package: chr "parallel"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocNeighbors"
-  .. .. ..$ role   : chr "LinkingTo"
+  .. .. ..$ package: chr "gtable"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "grid"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "graphics"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "KernSmooth"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "fda"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedArray"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedMatrixStats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocNeighbors"
+  .. .. ..$ package: chr "grDevices"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
@@ -891,472 +857,388 @@ Total 2334 2361</code></pre>
   .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "beachmat"
-  .. .. ..$ version: chr "&gt;= 2.25.1"
+  .. .. ..$ package: chr "tools"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "XVector"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SingleCellExperiment"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "scrapper"
-  .. .. ..$ version: chr "&gt;= 1.3.14"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scRNAseq"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "pheatmap"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gridExtra"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "viridis"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "celldex"
-  .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 2
-  ..$ _updates          :List of 8
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-02"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-07"
-  .. .. ..$ n   : int 1
+  ..$ _usedby           : int 0
+  ..$ _updates          :List of 3
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-21"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-23"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-29"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-42"
+  .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-02"
-  .. .. ..$ n   : int 3
+  .. .. ..$ n   : int 1
   ..$ _tags             : list()
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.13.0"
+  .. .. ..$ version: chr "1.35.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.12.0"
+  .. .. ..$ version: chr "1.33.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 10
-  .. ..$ : chr "software"
-  .. ..$ : chr "singlecell"
-  .. ..$ : chr "geneexpression"
-  .. ..$ : chr "transcriptomics"
-  .. ..$ : chr "classification"
-  .. ..$ : chr "clustering"
-  .. ..$ : chr "annotation"
-  .. ..$ : chr "bioconductor"
-  .. ..$ : chr "singler"
-  .. ..$ : chr "cpp"
-  ..$ _stars            : int 199
-  ..$ _contributors     :List of 9
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "ltla"
-  .. .. ..$ count: int 451
-  .. .. ..$ uuid : int 8166669
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dtm2451"
-  .. .. ..$ count: int 121
-  .. .. ..$ uuid : int 38870347
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "j-andrews7"
-  .. .. ..$ count: int 44
-  .. .. ..$ uuid : int 10225716
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "friedue"
-  .. .. ..$ count: int 35
-  .. .. ..$ uuid : int 4973546
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 12
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "alexvpickering"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 15719520
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "petehaitch"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 1049741
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "zhihua-chen"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 13683070
+  ..$ _topics           :List of 7
+  .. ..$ : chr "statisticalmethod"
+  .. ..$ : chr "multiplecomparison"
+  .. ..$ : chr "differentialexpression"
+  .. ..$ : chr "differentialmethylation"
+  .. ..$ : chr "differentialpeakcalling"
+  .. ..$ : chr "genomeannotation"
+  .. ..$ : chr "dataimport"
   ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 7220
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/SingleR"
-  ..$ _mentions         : int 97
-  ..$ _devurl           : chr "https://github.com/singler-inc/singler"
-  ..$ _searchresults    : int 3176
+  .. ..$ count : int 355
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/IWTomics"
+  ..$ _mentions         : int 1
+  ..$ _searchresults    : int 5
   ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 11
+  ..$ _assets           :List of 9
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
+  .. ..$ : chr "extra/IWTomics.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
-  .. ..$ : chr "extra/readme.html"
-  .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/SingleR.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/singler-inc/singler"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 25
-  .. ..$ : chr ".mockRefData"
-  .. ..$ : chr ".mockTestData"
-  .. ..$ : chr "aggregateReference"
-  .. ..$ : chr "BlueprintEncodeData"
-  .. ..$ : chr "classifySingleR"
-  .. ..$ : chr "combineCommonResults"
-  .. ..$ : chr "combineRecomputedResults"
-  .. ..$ : chr "configureMarkerHeatmap"
-  .. ..$ : chr "DatabaseImmuneCellExpressionData"
-  .. ..$ : chr "getClassicMarkers"
-  .. ..$ : chr "getDeltaFromMedian"
-  .. ..$ : chr "HumanPrimaryCellAtlasData"
-  .. ..$ : chr "ImmGenData"
-  .. ..$ : chr "matchReferences"
-  .. ..$ : chr "MonacoImmuneData"
-  .. ..$ : chr "MouseRNAseqData"
-  .. ..$ : chr "NovershternHematopoieticData"
-  .. ..$ : chr "plotDeltaDistribution"
-  .. ..$ : chr "plotMarkerHeatmap"
-  .. ..$ : chr "plotScoreDistribution"
-  .. ..$ : chr "plotScoreHeatmap"
-  .. ..$ : chr "pruneScores"
-  .. ..$ : chr "rebuildIndex"
-  .. ..$ : chr "SingleR"
-  .. ..$ : chr "trainSingleR"
-  ..$ _help             :List of 16
+  ..$ _exports          :List of 26
+  .. ..$ : chr "adjusted_pval"
+  .. ..$ : chr "alignment"
+  .. ..$ : chr "features"
+  .. ..$ : chr "idFeatures"
+  .. ..$ : chr "idFeaturesTest"
+  .. ..$ : chr "idRegions"
+  .. ..$ : chr "idRegionsTest"
+  .. ..$ : chr "IWTomicsData"
+  .. ..$ : chr "IWTomicsTest"
+  .. ..$ : chr "lengthFeatures"
+  .. ..$ : chr "lengthRegions"
+  .. ..$ : chr "merge"
+  .. ..$ : chr "metadata"
+  .. ..$ : chr "nameFeatures"
+  .. ..$ : chr "nameRegions"
+  .. ..$ : chr "nFeatures"
+  .. ..$ : chr "nRegions"
+  .. ..$ : chr "nTests"
+  .. ..$ : chr "plot.IWTomicsData"
+  .. ..$ : chr "plotSummary"
+  .. ..$ : chr "plotTest"
+  .. ..$ : chr "regions"
+  .. ..$ : chr "resolution"
+  .. ..$ : chr "show"
+  .. ..$ : chr "smooth"
+  .. ..$ : chr "testInput"
+  ..$ _datasets         :List of 5
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "ETn_example"
+  .. .. ..$ title : chr "ETn Recombination hotspots data"
+  .. .. ..$ object: chr "ETn_example"
+  .. .. ..$ file  : chr "ETn_example.RData"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "IWTomicsData"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "features_example"
+  .. .. ..$ title : chr "Example of features"
+  .. .. ..$ object: chr "features_example"
+  .. .. ..$ file  : chr "features_example.RData"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "list"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "regionsFeatures_center"
+  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with center alignment"
+  .. .. ..$ object: chr "regionsFeatures_center"
+  .. .. ..$ file  : chr "regionsFeatures_center.RData"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "IWTomicsData"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "regionsFeatures_scale"
+  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with scale alignment"
+  .. .. ..$ object: chr "regionsFeatures_scale"
+  .. .. ..$ file  : chr "regionsFeatures_scale.RData"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "IWTomicsData"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "regions_example"
+  .. .. ..$ title : chr "Example of regions"
+  .. .. ..$ object: chr "regions_example"
+  .. .. ..$ file  : chr "regions_example.RData"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "CompressedGRangesList"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  ..$ _help             :List of 12
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "mockData"
-  .. .. ..$ title : chr "Mock data for examples"
+  .. .. ..$ page  : chr "IWTomics-package"
+  .. .. ..$ title : chr "Interval-Wise Testing for Omics Data"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr ".mockRefData"
-  .. .. .. ..$ : chr ".mockTestData"
+  .. .. .. ..$ : chr "IWTomics-package"
+  .. .. .. ..$ : chr "IWTomics"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "aggregateReference"
-  .. .. ..$ title : chr "Aggregate reference samples"
+  .. .. ..$ page  : chr "ETn_example"
+  .. .. ..$ title : chr "ETn Recombination hotspots data"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "aggregateReference"
+  .. .. .. ..$ : chr "ETn_example"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "classifySingleR"
-  .. .. ..$ title : chr "Classify cells with SingleR"
+  .. .. ..$ page  : chr "features_example"
+  .. .. ..$ title : chr "Example of features"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "classifySingleR"
+  .. .. .. ..$ : chr "features_example"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "combineRecomputedResults"
-  .. .. ..$ title : chr "Combine SingleR results with recomputation"
+  .. .. ..$ page  : chr "IWTomicsData-class"
+  .. .. ..$ title : chr "Class '\"IWTomicsData\"'"
+  .. .. ..$ topics:List of 30
+  .. .. .. ..$ : chr "adjusted_pval"
+  .. .. .. ..$ : chr "alignment"
+  .. .. .. ..$ : chr "c,IWTomicsData-method"
+  .. .. .. ..$ : chr "cbind,IWTomicsData-method"
+  .. .. .. ..$ : chr "features"
+  .. .. .. ..$ : chr "idFeatures"
+  .. .. .. ..$ : chr "idFeaturesTest"
+  .. .. .. ..$ : chr "idRegions"
+  .. .. .. ..$ : chr "idRegionsTest"
+  .. .. .. ..$ : chr "IWTomicsData"
+  .. .. .. ..$ : chr "IWTomicsData,character,character-method"
+  .. .. .. ..$ : chr "IWTomicsData,character,data.frame-method"
+  .. .. .. ..$ : chr "IWTomicsData,character,matrix-method"
+  .. .. .. ..$ : chr "IWTomicsData,GRangesList,list-method"
+  .. .. .. ..$ : chr "IWTomicsData-class"
+  .. .. .. ..$ : chr "lengthFeatures"
+  .. .. .. ..$ : chr "lengthRegions"
+  .. .. .. ..$ : chr "merge,IWTomicsData,IWTomicsData-method"
+  .. .. .. ..$ : chr "metadata"
+  .. .. .. ..$ : chr "nameFeatures"
+  .. .. .. ..$ : chr "nameRegions"
+  .. .. .. ..$ : chr "nFeatures"
+  .. .. .. ..$ : chr "nRegions"
+  .. .. .. ..$ : chr "nTests"
+  .. .. .. ..$ : chr "rbind,IWTomicsData-method"
+  .. .. .. ..$ : chr "regions"
+  .. .. .. ..$ : chr "resolution"
+  .. .. .. ..$ : chr "show,IWTomicsData-method"
+  .. .. .. ..$ : chr "testInput"
+  .. .. .. ..$ : chr "[,IWTomicsData,ANY,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "IWTomicsTest"
+  .. .. ..$ title : chr "Interval-Wise Testing"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "IWTomicsTest"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "plot-IWTomicsData"
+  .. .. ..$ title : chr "Plot '\"IWTomicsData\"' object"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "combineCommonResults"
-  .. .. .. ..$ : chr "combineRecomputedResults"
+  .. .. .. ..$ : chr "plot"
+  .. .. .. ..$ : chr "plot,IWTomicsData-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "datasets"
-  .. .. ..$ title : chr "Reference dataset extractors"
-  .. .. ..$ topics:List of 8
-  .. .. .. ..$ : chr "BlueprintEncodeData"
-  .. .. .. ..$ : chr "DatabaseImmuneCellExpressionData"
-  .. .. .. ..$ : chr "datasets"
-  .. .. .. ..$ : chr "HumanPrimaryCellAtlasData"
-  .. .. .. ..$ : chr "ImmGenData"
-  .. .. .. ..$ : chr "MonacoImmuneData"
-  .. .. .. ..$ : chr "MouseRNAseqData"
-  .. .. .. ..$ : chr "NovershternHematopoieticData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getClassicMarkers"
-  .. .. ..$ title : chr "Get classic markers"
+  .. .. ..$ page  : chr "plotSummary"
+  .. .. ..$ title : chr "Summary plots of Interval-Wise Testing result"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getClassicMarkers"
+  .. .. .. ..$ : chr "plotSummary"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "getDeltaFromMedian"
-  .. .. ..$ title : chr "Compute the difference from median"
+  .. .. ..$ page  : chr "plotTest"
+  .. .. ..$ title : chr "Detailed plots of Interval-Wise Testing result"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getDeltaFromMedian"
+  .. .. .. ..$ : chr "plotTest"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "matchReferences"
-  .. .. ..$ title : chr "Match labels from two references"
+  .. .. ..$ page  : chr "regions_example"
+  .. .. ..$ title : chr "Example of regions"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "matchReferences"
+  .. .. .. ..$ : chr "regions_example"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDeltaDistribution"
-  .. .. ..$ title : chr "Plot delta distributions"
+  .. .. ..$ page  : chr "regionsFeatures_center"
+  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with center alignment"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDeltaDistribution"
+  .. .. .. ..$ : chr "regionsFeatures_center"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotMarkerHeatmap"
-  .. .. ..$ title : chr "Plot a heatmap of the markers for a label"
+  .. .. ..$ page  : chr "regionsFeatures_scale"
+  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with scale alignment"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "regionsFeatures_scale"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "smooth-IWTomicsData"
+  .. .. ..$ title : chr "Smooth curves of a '\"IWTomicsData\"' object"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "configureMarkerHeatmap"
-  .. .. .. ..$ : chr "plotMarkerHeatmap"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScoreDistribution"
-  .. .. ..$ title : chr "Plot score distributions"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScoreDistribution"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScoreHeatmap"
-  .. .. ..$ title : chr "Plot a score heatmap"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScoreHeatmap"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pruneScores"
-  .. .. ..$ title : chr "Prune out low-quality assignments"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "pruneScores"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "rebuildIndex"
-  .. .. ..$ title : chr "Rebuild the index"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "rebuildIndex"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "SingleR"
-  .. .. ..$ title : chr "Annotate scRNA-seq data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "SingleR"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "trainSingleR"
-  .. .. ..$ title : chr "Train the SingleR classifier"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "trainSingleR"
-  ..$ _readme           : chr "https://github.com/bioc/SingleR/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 32
-  .. ..$ : chr "abind"
-  .. ..$ : chr "assorthead"
-  .. ..$ : chr "beachmat"
-  .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
+  .. .. .. ..$ : chr "smooth"
+  .. .. .. ..$ : chr "smooth,IWTomicsData-method"
+  ..$ _rundeps          :List of 49
+  .. ..$ : chr "ash"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocNeighbors"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "codetools"
+  .. ..$ : chr "bitops"
+  .. ..$ : chr "cli"
+  .. ..$ : chr "cluster"
+  .. ..$ : chr "colorspace"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "DelayedMatrixStats"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
+  .. ..$ : chr "deSolve"
+  .. ..$ : chr "farver"
+  .. ..$ : chr "fda"
+  .. ..$ : chr "fds"
+  .. ..$ : chr "FNN"
   .. ..$ : chr "generics"
   .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "gtable"
+  .. ..$ : chr "hdrcde"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "lambda.r"
+  .. ..$ : chr "isoband"
+  .. ..$ : chr "kernlab"
+  .. ..$ : chr "KernSmooth"
+  .. ..$ : chr "ks"
+  .. ..$ : chr "labeling"
   .. ..$ : chr "lattice"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "locfit"
+  .. ..$ : chr "MASS"
   .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "mclust"
+  .. ..$ : chr "mgcv"
+  .. ..$ : chr "multicool"
+  .. ..$ : chr "mvtnorm"
+  .. ..$ : chr "nlme"
+  .. ..$ : chr "pcaPP"
+  .. ..$ : chr "pracma"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "rainbow"
+  .. ..$ : chr "RColorBrewer"
   .. ..$ : chr "Rcpp"
-  .. ..$ : chr "S4Arrays"
+  .. ..$ : chr "RCurl"
+  .. ..$ : chr "rlang"
   .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "S7"
+  .. ..$ : chr "scales"
   .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "snow"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "sparseMatrixStats"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "XVector"
-  ..$ _sysdeps          :List of 1
-  .. ..$ :List of 7
-  .. .. ..$ shlib      : chr "libstdc++"
-  .. .. ..$ package    : chr "libstdc++6"
-  .. .. ..$ source     : chr "gcc"
-  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04"
-  .. .. ..$ name       : chr "c++"
-  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
-  .. .. ..$ description: chr "GNU Standard C++ Library v3"
-  ..$ _score            : num 11.9
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "viridisLite"
+  .. ..$ : chr "withr"
+  ..$ _vignettes        :List of 1
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "IWTomics.Rnw"
+  .. .. ..$ filename: chr "IWTomics.pdf"
+  .. .. ..$ title   : chr "Introduction to IWTomics"
+  .. .. ..$ engine  : chr "knitr::knitr"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2016-11-28 21:25:04"
+  .. .. ..$ modified: chr "2018-09-07 12:02:24"
+  .. .. ..$ commits : int 4
+  ..$ _score            : num 3.48
   ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "singler"
-  ..$ _universes        :List of 3
+  ..$ _nocasepkg        : chr "iwtomics"
+  ..$ _universes        :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "ltla"
-  .. ..$ : chr "singler-inc"
-  ..$ _binaries         :List of 12
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:26.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "cb15120a14d2bc1e9bcc17f2b9353bf82d07e502972cecf1d57c5697832b9312"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:44.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "6138f6838495c4e4d57a05ce5fb10b70634e86c9faceb9f1d2e8aa44dc6b00f8"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:54.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "996fb8553a7a06e8cf7add3011501f13b3ca6960e6818129f2e2851708ec3e9d"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:58.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "09b723eccf5eff63f5f0ac87e7bf0de04f09756b2d5990642bfdeb9d64a9ac6e"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
+  .. ..$ : chr "marziacremona"
+  ..$ _previous         : chr "1.33.0"
+  ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:26:31.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "4561b45a5c0b6008bd053810560d806eed2ca80d5a7cf098a08c95f468c7b56a"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:28:09.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "e8247946494fa8a8e7ce70b40a2d5bdec0796bbce3f8cf2d757bf5540d4ebe12"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:56:36.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "31338f79bad83fc95525e819b9acf78eb2061393b7905d50c674cf2e40d913df"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:26:10.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "d8b21c6f848b4adeab7f7fdb25e5af5a4dedb5f245a6acc1a33304704448fd27"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:26:33.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "facf92e6b4fd818c67cda7354050af9c9a67d80ecf66a452933b291d1a306ca7"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:56:29.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "3e256d5b5133e15491fa8f20f3ed531ea394797852689dd8e27372a8d2a1dc54"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
   .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:55:58.000Z"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "9c2cd510fd49443f5059cc32033100f073dd47619755488c7c99eacf2779d4aa"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:56:19.000Z"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "321f0f2cbf9f45be81093e94d763efa80c69bd842bbf74fcf1cf24b3be2eeba7"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:14.000Z"
-  .. .. ..$ arch    : chr "emscripten"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "5fc7416f0a953bc4b8d9d3b967fbd7154528944e460b32033d875b7fe534b132"
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:56:38.000Z"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "f6a0f9b356c0217463d48910ec69b6fe312d43449fb46dd848980d340c6f67ff"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 10
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:23:51.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "d14556a77e77f09d66f3573158890fea6eeeb20c492f9bcba758092f3f57271f"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 10
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:55:47.000Z"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "99bf40e8a30b7ad7d2a8df58c02b47bbd5e6481a18145015a7eb89499d06b45f"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:17.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "f361894997264b5371fa0ebbcfea0949293f537c532bb7afdf8715cf91539bfd"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"
-  .. ..$ :List of 10
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:55:55.000Z"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "305fed905295c9918f7c93309debe1de1339d6ed345fe686431b66a5ff76b9c6"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.13.0"
-  .. .. ..$ date    : chr "2026-01-05T04:24:09.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "13cfc313ad9f2917a50e3281b31f5259f59ced9b"
-  .. .. ..$ fileid  : chr "4cd88a69e5389f8a10a5d20efcff81724148a7279c94d966a7c75c3c50b2148b"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20704869390"</code></pre>
+  .. .. ..$ version : chr "1.35.1"
+  .. .. ..$ date    : chr "2026-01-06T03:55:51.000Z"
+  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
+  .. .. ..$ fileid  : chr "f30eeb58cf285597777119741866ca7d4ef37aea9fc067de1266092b0c7f258f"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
