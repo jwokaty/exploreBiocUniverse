@@ -221,9 +221,9 @@ Total 2334 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">damidBind</td>
-<td style="text-align: left;">0.99.10</td>
-<td style="text-align: left;">2026-01-04T15:39:08.000Z</td>
-<td style="text-align: left;">2026-01-04T15:53:22.281Z</td>
+<td style="text-align: left;">0.99.12</td>
+<td style="text-align: left;">2026-01-07T03:56:38.000Z</td>
+<td style="text-align: left;">2026-01-07T04:09:22.932Z</td>
 <td style="text-align: left;">https://github.com/bioc/damidBind</td>
 </tr>
 <tr class="even">
@@ -507,18 +507,6 @@ Total 2334 2361</code></pre>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">MungeSumstats</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">ERROR</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">1.18.0</td>
-<td style="text-align: left;">1.19.4</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Missing R4.6 on Linux</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">SamSPECTRAL</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -530,7 +518,7 @@ Total 2334 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SpatialOmicsOverlay</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -542,7 +530,7 @@ Total 2334 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SwathXtend</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -689,186 +677,245 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 65
-  ..$ Package           : chr "IWTomics"
-  ..$ Type              : chr "Package"
-  ..$ Version           : chr "1.35.1"
-  ..$ Date              : chr "2026-01-05"
-  ..$ Title             : chr "Interval-Wise Testing for Omics Data"
-  ..$ Author            : chr "Marzia A Cremona, Alessia Pini, Francesca Chiaromonte, Simone\nVantini"
-  ..$ Maintainer        : chr "Marzia A Cremona &lt;mac78@psu.edu&gt;"
-  ..$ Description       : chr "Implementation of the Interval-Wise Testing (IWT) for\nomics data. This inferential procedure tests for differe"| __truncated__
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ biocViews         : chr "StatisticalMethod, MultipleComparison,\nDifferentialExpression, DifferentialMethylation,\nDifferentialPeakCalli"| __truncated__
-  ..$ License           : chr "GPL (&gt;=2)"
-  ..$ Config/pak/sysreqs: chr "make"
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-01-06 03:04:01 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/IWTomics"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  ..$ NeedsCompilation  : chr "no"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-01-06 03:54:15 UTC"
+ $ :List of 76
+  ..$ Package                : chr "tidyCoverage"
+  ..$ Title                  : chr "Extract and aggregate genomic coverage over features of interest"
+  ..$ Version                : chr "1.7.1"
+  ..$ Date                   : chr "2023-11-09"
+  ..$ Authors@R              : chr "person(\"Jacques\", \"Serizay\", , \"jacquesserizay@gmail.com\",\nrole = c(\"aut\", \"cre\"))"
+  ..$ Description            : chr "`tidyCoverage` framework enables tidy manipulation of\ncollections of genomic tracks and features using\n`tidyS"| __truncated__
+  ..$ License                : chr "MIT + file LICENSE"
+  ..$ URL                    : chr "https://github.com/js2264/tidyCoverage"
+  ..$ BugReports             : chr "https://github.com/js2264/tidyCoverage/issues"
+  ..$ biocViews              : chr "Software, Sequencing, Coverage,"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ Roxygen                : chr "list(markdown = TRUE)"
+  ..$ RoxygenNote            : chr "7.3.3"
+  ..$ Config/testthat/edition: chr "3"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ LazyData               : chr "false"
+  ..$ Config/pak/sysreqs     : chr "libcairo2-dev libfontconfig1-dev libfreetype6-dev\nlibfribidi-dev make libharfbuzz-dev libbz2-dev libicu-dev\nl"| __truncated__
+  ..$ Repository             : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication       : chr "2026-01-07 00:57:18 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/tidyCoverage"
+  ..$ RemoteRef              : chr "HEAD"
+  ..$ RemoteSha              : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  ..$ NeedsCompilation       : chr "no"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2026-01-07 03:57:31 UTC"
   .. ..$ User: chr "root"
-  ..$ MD5sum            : chr "d4bd7d41ed060791c25572352b90c531"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "IWTomics_1.35.1.tar.gz"
-  ..$ _fileid           : chr "089815de4799a1001ee4c037ac887ab0c025bcea18b11c8285e9516fcf3fc5de"
-  ..$ _filesize         : int 1471350
-  ..$ _sha256           : chr "089815de4799a1001ee4c037ac887ab0c025bcea18b11c8285e9516fcf3fc5de"
-  ..$ _created          : chr "2026-01-06T03:54:15.000Z"
-  ..$ _published        : chr "2026-01-06T03:59:03.416Z"
-  ..$ _jobs             :List of 10
+  ..$ Author                 : chr "Jacques Serizay [aut, cre]"
+  ..$ Maintainer             : chr "Jacques Serizay &lt;jacquesserizay@gmail.com&gt;"
+  ..$ MD5sum                 : chr "cefd41848b924e8a006b978d8d5684dc"
+  ..$ _user                  : chr "bioc"
+  ..$ _type                  : chr "src"
+  ..$ _file                  : chr "tidyCoverage_1.7.1.tar.gz"
+  ..$ _fileid                : chr "14c0362743ee887bb31968670c56d17f08dcb5d66ab64da17e8d0282c63867c2"
+  ..$ _filesize              : int 3747655
+  ..$ _sha256                : chr "14c0362743ee887bb31968670c56d17f08dcb5d66ab64da17e8d0282c63867c2"
+  ..$ _created               : chr "2026-01-07T03:57:31.000Z"
+  ..$ _published             : chr "2026-01-07T04:05:38.347Z"
+  ..$ _jobs                  :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 155
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 226
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5032567871"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5045077765"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 244
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 424
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032576438"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5045096069"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 240
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 424
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032576101"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5045096153"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 150
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 324
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032567646"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5045093971"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 191
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 289
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032571391"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5045090447"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 264
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 464
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5032552771"
+  .. .. ..$ artifact: chr "5045056633"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 118
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 192
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5032564285"
+  .. .. ..$ artifact: chr "5045074632"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 224
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 330
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032574364"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5045087392"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 216
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 327
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032573647"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5045087107"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 5.95e+10
-  .. .. ..$ time    : int 220
+  .. .. ..$ job     : num 5.96e+10
+  .. .. ..$ time    : int 342
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5032574155"
-  ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 2
-  .. ..$ warning: int 2
-  .. ..$ note   : int 15
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/IWTomics"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
-  .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
-  .. ..$ message  : chr "IWTomics 1.35.1: Add XVector to Suggests\n\nThe XVector package is needed by the IWTomicsData#GRangesList#list "| __truncated__
-  .. ..$ time     : int 1767668641
-  ..$ _maintainer       :List of 4
-  .. ..$ name : chr "Marzia A Cremona"
-  .. ..$ email: chr "mac78@psu.edu"
-  .. ..$ login: chr "marziacremona"
-  .. ..$ uuid : int 21043800
-  ..$ _distro           : chr "noble"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 17
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5045088493"
+  ..$ _bioccheck             :List of 3
+  .. ..$ error  : int 0
+  .. ..$ warning: int 1
+  .. ..$ note   : int 9
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
+  ..$ _status                : chr "success"
+  ..$ _host                  : chr "GitHub-Actions"
+  ..$ _upstream              : chr "https://github.com/bioc/tidyCoverage"
+  ..$ _commit                :List of 5
+  .. ..$ id       : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. ..$ author   : chr "js2264 &lt;jacquesserizay@gmail.com&gt;"
+  .. ..$ committer: chr "js2264 &lt;jacquesserizay@gmail.com&gt;"
+  .. ..$ message  : chr "bump to v1.7.1\n"
+  .. ..$ time     : int 1767747438
+  ..$ _maintainer            :List of 4
+  .. ..$ name : chr "Jacques Serizay"
+  .. ..$ email: chr "jacquesserizay@gmail.com"
+  .. ..$ login: chr "js2264"
+  .. ..$ uuid : int 19528818
+  ..$ _distro                : chr "noble"
+  ..$ _registered            : logi TRUE
+  ..$ _dependencies          :List of 34
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 3.5.0"
+  .. .. ..$ version: chr "&gt;= 4.3.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicRanges"
+  .. .. ..$ package: chr "SummarizedExperiment"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "parallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gtable"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "grid"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "IRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "KernSmooth"
+  .. .. ..$ package: chr "GenomicRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "fda"
+  .. .. ..$ package: chr "GenomeInfoDb"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ package: chr "BiocParallel"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ package: chr "BiocIO"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rtracklayer"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggrastr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "fansi"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "pillar"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rlang"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scales"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "cli"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "purrr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "vctrs"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
-  .. .. ..$ role   : chr "Imports"
+  .. .. ..$ package: chr "tidySummarizedExperiment"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tools"
-  .. .. ..$ role   : chr "Imports"
+  .. .. ..$ package: chr "plyranges"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "XVector"
+  .. .. ..$ package: chr "TxDb.Mmusculus.UCSC.mm10.knownGene"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "AnnotationHub"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GenomicFeatures"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "hues"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 3
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "sessioninfo"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                 : chr "bioc"
+  ..$ _selfowned             : logi TRUE
+  ..$ _usedby                : int 0
+  ..$ _updates               :List of 5
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
@@ -876,369 +923,363 @@ Total 2334 2361</code></pre>
   .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-51"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-52"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
   .. .. ..$ week: chr "2026-02"
   .. .. ..$ n   : int 1
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  ..$ _tags                  : list()
+  ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.35.0"
+  .. .. ..$ version: chr "1.7.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.33.0"
+  .. .. ..$ version: chr "1.6.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 7
-  .. ..$ : chr "statisticalmethod"
-  .. ..$ : chr "multiplecomparison"
-  .. ..$ : chr "differentialexpression"
-  .. ..$ : chr "differentialmethylation"
-  .. ..$ : chr "differentialpeakcalling"
-  .. ..$ : chr "genomeannotation"
-  .. ..$ : chr "dataimport"
-  ..$ _userbio          :List of 4
+  ..$ _topics                :List of 3
+  .. ..$ : chr "software"
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "coverage"
+  ..$ _stars                 : int 23
+  ..$ _contributors          :List of 2
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "js2264"
+  .. .. ..$ count: int 68
+  .. .. ..$ uuid : int 19528818
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 8
+  .. .. ..$ uuid : int 1744257
+  ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 355
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/IWTomics"
-  ..$ _mentions         : int 1
-  ..$ _searchresults    : int 5
-  ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 9
+  ..$ _downloads             :List of 2
+  .. ..$ count : int 220
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/tidyCoverage"
+  ..$ _devurl                : chr "https://github.com/js2264/tidycoverage"
+  ..$ _searchresults         : int 8
+  ..$ _rbuild                : chr "4.5.2"
+  ..$ _assets                :List of 9
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/IWTomics.html"
-  .. ..$ : chr "extra/NEWS.html"
-  .. ..$ : chr "extra/NEWS.txt"
+  .. ..$ : chr "extra/readme.html"
+  .. ..$ : chr "extra/readme.md"
+  .. ..$ : chr "extra/tidyCoverage.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 26
-  .. ..$ : chr "adjusted_pval"
-  .. ..$ : chr "alignment"
-  .. ..$ : chr "features"
-  .. ..$ : chr "idFeatures"
-  .. ..$ : chr "idFeaturesTest"
-  .. ..$ : chr "idRegions"
-  .. ..$ : chr "idRegionsTest"
-  .. ..$ : chr "IWTomicsData"
-  .. ..$ : chr "IWTomicsTest"
-  .. ..$ : chr "lengthFeatures"
-  .. ..$ : chr "lengthRegions"
-  .. ..$ : chr "merge"
-  .. ..$ : chr "metadata"
-  .. ..$ : chr "nameFeatures"
-  .. ..$ : chr "nameRegions"
-  .. ..$ : chr "nFeatures"
-  .. ..$ : chr "nRegions"
-  .. ..$ : chr "nTests"
-  .. ..$ : chr "plot.IWTomicsData"
-  .. ..$ : chr "plotSummary"
-  .. ..$ : chr "plotTest"
-  .. ..$ : chr "regions"
-  .. ..$ : chr "resolution"
+  ..$ _homeurl               : chr "https://github.com/js2264/tidycoverage"
+  ..$ _realowner             : chr "bioc"
+  ..$ _cranurl               : logi FALSE
+  ..$ _exports               :List of 8
+  .. ..$ : chr "aggregate"
+  .. ..$ : chr "coarsen"
+  .. ..$ : chr "CoverageExperiment"
+  .. ..$ : chr "geom_aggrcoverage"
+  .. ..$ : chr "geom_coverage"
+  .. ..$ : chr "scale_x_genome"
+  .. ..$ : chr "scale_y_coverage"
   .. ..$ : chr "show"
-  .. ..$ : chr "smooth"
-  .. ..$ : chr "testInput"
-  ..$ _datasets         :List of 5
+  ..$ _datasets              :List of 2
   .. ..$ :List of 8
-  .. .. ..$ name  : chr "ETn_example"
-  .. .. ..$ title : chr "ETn Recombination hotspots data"
-  .. .. ..$ object: chr "ETn_example"
-  .. .. ..$ file  : chr "ETn_example.RData"
+  .. .. ..$ name  : chr "ac"
+  .. .. ..$ title : chr "Example 'CoverageExperiment' and 'AggregatedCoverage' objects"
+  .. .. ..$ object: chr "ac"
+  .. .. ..$ file  : chr "ac.rda"
   .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "IWTomicsData"
+  .. .. .. ..$ : chr "AggregatedCoverage"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi FALSE
   .. ..$ :List of 8
-  .. .. ..$ name  : chr "features_example"
-  .. .. ..$ title : chr "Example of features"
-  .. .. ..$ object: chr "features_example"
-  .. .. ..$ file  : chr "features_example.RData"
+  .. .. ..$ name  : chr "ce"
+  .. .. ..$ title : chr "Example 'CoverageExperiment' and 'AggregatedCoverage' objects"
+  .. .. ..$ object: chr "ce"
+  .. .. ..$ file  : chr "ce.rda"
   .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "list"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "regionsFeatures_center"
-  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with center alignment"
-  .. .. ..$ object: chr "regionsFeatures_center"
-  .. .. ..$ file  : chr "regionsFeatures_center.RData"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "IWTomicsData"
+  .. .. .. ..$ : chr "CoverageExperiment"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "regionsFeatures_scale"
-  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with scale alignment"
-  .. .. ..$ object: chr "regionsFeatures_scale"
-  .. .. ..$ file  : chr "regionsFeatures_scale.RData"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "IWTomicsData"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "regions_example"
-  .. .. ..$ title : chr "Example of regions"
-  .. .. ..$ object: chr "regions_example"
-  .. .. ..$ file  : chr "regions_example.RData"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "CompressedGRangesList"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  ..$ _help             :List of 12
+  ..$ _help                  :List of 7
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "IWTomics-package"
-  .. .. ..$ title : chr "Interval-Wise Testing for Omics Data"
+  .. .. ..$ page  : chr "AggregatedCoverage"
+  .. .. ..$ title : chr "aggregate"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "IWTomics-package"
-  .. .. .. ..$ : chr "IWTomics"
+  .. .. .. ..$ : chr "aggregate,CoverageExperiment-method"
+  .. .. .. ..$ : chr "AggregatedCoverage"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ETn_example"
-  .. .. ..$ title : chr "ETn Recombination hotspots data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ETn_example"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "features_example"
-  .. .. ..$ title : chr "Example of features"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "features_example"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "IWTomicsData-class"
-  .. .. ..$ title : chr "Class '\"IWTomicsData\"'"
-  .. .. ..$ topics:List of 30
-  .. .. .. ..$ : chr "adjusted_pval"
-  .. .. .. ..$ : chr "alignment"
-  .. .. .. ..$ : chr "c,IWTomicsData-method"
-  .. .. .. ..$ : chr "cbind,IWTomicsData-method"
-  .. .. .. ..$ : chr "features"
-  .. .. .. ..$ : chr "idFeatures"
-  .. .. .. ..$ : chr "idFeaturesTest"
-  .. .. .. ..$ : chr "idRegions"
-  .. .. .. ..$ : chr "idRegionsTest"
-  .. .. .. ..$ : chr "IWTomicsData"
-  .. .. .. ..$ : chr "IWTomicsData,character,character-method"
-  .. .. .. ..$ : chr "IWTomicsData,character,data.frame-method"
-  .. .. .. ..$ : chr "IWTomicsData,character,matrix-method"
-  .. .. .. ..$ : chr "IWTomicsData,GRangesList,list-method"
-  .. .. .. ..$ : chr "IWTomicsData-class"
-  .. .. .. ..$ : chr "lengthFeatures"
-  .. .. .. ..$ : chr "lengthRegions"
-  .. .. .. ..$ : chr "merge,IWTomicsData,IWTomicsData-method"
-  .. .. .. ..$ : chr "metadata"
-  .. .. .. ..$ : chr "nameFeatures"
-  .. .. .. ..$ : chr "nameRegions"
-  .. .. .. ..$ : chr "nFeatures"
-  .. .. .. ..$ : chr "nRegions"
-  .. .. .. ..$ : chr "nTests"
-  .. .. .. ..$ : chr "rbind,IWTomicsData-method"
-  .. .. .. ..$ : chr "regions"
-  .. .. .. ..$ : chr "resolution"
-  .. .. .. ..$ : chr "show,IWTomicsData-method"
-  .. .. .. ..$ : chr "testInput"
-  .. .. .. ..$ : chr "[,IWTomicsData,ANY,ANY,ANY-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "IWTomicsTest"
-  .. .. ..$ title : chr "Interval-Wise Testing"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "IWTomicsTest"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plot-IWTomicsData"
-  .. .. ..$ title : chr "Plot '\"IWTomicsData\"' object"
+  .. .. ..$ page  : chr "as_tibble-AggregatedCoverage"
+  .. .. ..$ title : chr "as_tibble"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "plot"
-  .. .. .. ..$ : chr "plot,IWTomicsData-method"
+  .. .. .. ..$ : chr "as_tibble-AggregatedCoverage"
+  .. .. .. ..$ : chr "as_tibble.AggregatedCoverage"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotSummary"
-  .. .. ..$ title : chr "Summary plots of Interval-Wise Testing result"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotSummary"
+  .. .. ..$ page  : chr "CoverageExperiment"
+  .. .. ..$ title : chr "CoverageExperiment"
+  .. .. ..$ topics:List of 15
+  .. .. .. ..$ : chr "coarsen"
+  .. .. .. ..$ : chr "coarsen,CoverageExperiment-method"
+  .. .. .. ..$ : chr "CoverageExperiment"
+  .. .. .. ..$ : chr "CoverageExperiment,BigWigFile,GRanges-method"
+  .. .. .. ..$ : chr "CoverageExperiment,BigWigFile,GRangesList-method"
+  .. .. .. ..$ : chr "CoverageExperiment,BigWigFile,list-method"
+  .. .. .. ..$ : chr "CoverageExperiment,BigWigFileList,GRanges-method"
+  .. .. .. ..$ : chr "CoverageExperiment,BigWigFileList,GRangesList-method"
+  .. .. .. ..$ : chr "CoverageExperiment,BigWigFileList,list-method"
+  .. .. .. ..$ : chr "CoverageExperiment,list,GRanges-method"
+  .. .. .. ..$ : chr "CoverageExperiment,list,GRangesList-method"
+  .. .. .. ..$ : chr "CoverageExperiment,list,list-method"
+  .. .. .. ..$ : chr "CoverageExperiment,RleList,GRanges-method"
+  .. .. .. ..$ : chr "CoverageExperiment,RleList,GRangesList-method"
+  .. .. .. ..$ : chr "CoverageExperiment,RleList,list-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotTest"
-  .. .. ..$ title : chr "Detailed plots of Interval-Wise Testing result"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotTest"
+  .. .. ..$ page  : chr "data"
+  .. .. ..$ title : chr "Example 'CoverageExperiment' and 'AggregatedCoverage' objects"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "ac"
+  .. .. .. ..$ : chr "ce"
+  .. .. .. ..$ : chr "data"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "regions_example"
-  .. .. ..$ title : chr "Example of regions"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "regions_example"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "regionsFeatures_center"
-  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with center alignment"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "regionsFeatures_center"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "regionsFeatures_scale"
-  .. .. ..$ title : chr "Example of '\"IWTomicsData\"' object with scale alignment"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "regionsFeatures_scale"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "smooth-IWTomicsData"
-  .. .. ..$ title : chr "Smooth curves of a '\"IWTomicsData\"' object"
+  .. .. ..$ page  : chr "expand-CoverageExperiment"
+  .. .. ..$ title : chr "Expand a CoverageExperiment object"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "smooth"
-  .. .. .. ..$ : chr "smooth,IWTomicsData-method"
-  ..$ _rundeps          :List of 49
-  .. ..$ : chr "ash"
+  .. .. .. ..$ : chr "expand-CoverageExperiment"
+  .. .. .. ..$ : chr "expand.CoverageExperiment"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "ggplot-tidyCoverage"
+  .. .. ..$ title : chr "Plotting functions"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "geom_aggrcoverage"
+  .. .. .. ..$ : chr "geom_coverage"
+  .. .. .. ..$ : chr "ggplot-tidyCoverage"
+  .. .. .. ..$ : chr "scale_x_genome"
+  .. .. .. ..$ : chr "scale_y_coverage"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "show-tidyCoverage"
+  .. .. ..$ title : chr "show method for 'CoverageExperiment' and 'AggregatedCoverage' objects"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "show,AggregatedCoverage-method"
+  .. .. .. ..$ : chr "show,CoverageExperiment-method"
+  .. .. .. ..$ : chr "show-tidyCoverage"
+  ..$ _readme                : chr "https://github.com/bioc/tidyCoverage/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 87
+  .. ..$ : chr "abind"
+  .. ..$ : chr "askpass"
+  .. ..$ : chr "base64enc"
+  .. ..$ : chr "beeswarm"
+  .. ..$ : chr "BH"
+  .. ..$ : chr "Biobase"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocIO"
+  .. ..$ : chr "BiocParallel"
+  .. ..$ : chr "Biostrings"
   .. ..$ : chr "bitops"
+  .. ..$ : chr "Cairo"
+  .. ..$ : chr "cigarillo"
   .. ..$ : chr "cli"
-  .. ..$ : chr "cluster"
-  .. ..$ : chr "colorspace"
+  .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "deSolve"
+  .. ..$ : chr "crayon"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "fansi"
   .. ..$ : chr "farver"
-  .. ..$ : chr "fda"
-  .. ..$ : chr "fds"
-  .. ..$ : chr "FNN"
+  .. ..$ : chr "formatR"
+  .. ..$ : chr "futile.logger"
+  .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
+  .. ..$ : chr "GenomeInfoDb"
+  .. ..$ : chr "GenomicAlignments"
   .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "ggbeeswarm"
   .. ..$ : chr "ggplot2"
+  .. ..$ : chr "ggrastr"
   .. ..$ : chr "glue"
   .. ..$ : chr "gtable"
-  .. ..$ : chr "hdrcde"
+  .. ..$ : chr "httr"
   .. ..$ : chr "IRanges"
   .. ..$ : chr "isoband"
-  .. ..$ : chr "kernlab"
-  .. ..$ : chr "KernSmooth"
-  .. ..$ : chr "ks"
+  .. ..$ : chr "jsonlite"
   .. ..$ : chr "labeling"
+  .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
-  .. ..$ : chr "locfit"
-  .. ..$ : chr "MASS"
+  .. ..$ : chr "magrittr"
   .. ..$ : chr "Matrix"
-  .. ..$ : chr "mclust"
-  .. ..$ : chr "mgcv"
-  .. ..$ : chr "multicool"
-  .. ..$ : chr "mvtnorm"
-  .. ..$ : chr "nlme"
-  .. ..$ : chr "pcaPP"
-  .. ..$ : chr "pracma"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "png"
+  .. ..$ : chr "purrr"
   .. ..$ : chr "R6"
-  .. ..$ : chr "rainbow"
+  .. ..$ : chr "ragg"
   .. ..$ : chr "RColorBrewer"
-  .. ..$ : chr "Rcpp"
   .. ..$ : chr "RCurl"
+  .. ..$ : chr "restfulr"
+  .. ..$ : chr "Rhtslib"
+  .. ..$ : chr "rjson"
   .. ..$ : chr "rlang"
+  .. ..$ : chr "Rsamtools"
+  .. ..$ : chr "rtracklayer"
+  .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
   .. ..$ : chr "S7"
   .. ..$ : chr "scales"
   .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "snow"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "SummarizedExperiment"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "systemfonts"
+  .. ..$ : chr "textshaping"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "UCSC.utils"
+  .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
+  .. ..$ : chr "vipor"
   .. ..$ : chr "viridisLite"
   .. ..$ : chr "withr"
-  ..$ _vignettes        :List of 1
+  .. ..$ : chr "XML"
+  .. ..$ : chr "XVector"
+  .. ..$ : chr "yaml"
+  ..$ _vignettes             :List of 1
   .. ..$ :List of 8
-  .. .. ..$ source  : chr "IWTomics.Rnw"
-  .. .. ..$ filename: chr "IWTomics.pdf"
-  .. .. ..$ title   : chr "Introduction to IWTomics"
-  .. .. ..$ engine  : chr "knitr::knitr"
-  .. .. ..$ headings: list()
-  .. .. ..$ created : chr "2016-11-28 21:25:04"
-  .. .. ..$ modified: chr "2018-09-07 12:02:24"
-  .. .. ..$ commits : int 4
-  ..$ _score            : num 3.48
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "iwtomics"
-  ..$ _universes        :List of 2
+  .. .. ..$ source  : chr "tidyCoverage.Rmd"
+  .. .. ..$ filename: chr "tidyCoverage.html"
+  .. .. ..$ title   : chr "Introduction to tidyCoverage"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 22
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Installation"
+  .. .. .. ..$ : chr "CoverageExperiment and AggregatedCoverage classes"
+  .. .. .. ..$ : chr "CoverageExperiment"
+  .. .. .. ..$ : chr "AggregatedCoverage"
+  .. .. .. ..$ : chr "Manipulate CoverageExperiment objects"
+  .. .. .. ..$ : chr "Create a CoverageExperiment object"
+  .. .. .. ..$ : chr "Bin a CoverageExperiment object"
+  .. .. .. ..$ : chr "Expand a CoverageExperiment object"
+  .. .. .. ..$ : chr "Plot coverage of a set of tracks over a single genomic locus"
+  .. .. .. ..$ : chr "Manipulate AggregatedCoverage objects"
+  .. .. .. ..$ : chr "Aggregate a CoverageExperiment into an AggregatedCoverage object"
+  .. .. .. ..$ : chr "AggregatedCoverage over multiple tracks / feature sets"
+  .. .. .. ..$ : chr "Plot aggregated coverages with ggplot2"
+  .. .. .. ..$ : chr "Use a tidy grammar"
+  .. .. .. ..$ : chr "Example workflow using tidy grammar"
+  .. .. .. ..$ : chr "Example use case: AnnotationHub and TxDb resources"
+  .. .. .. ..$ : chr "Recover TSSs of forward mouse genes"
+  .. .. .. ..$ : chr "Recover H3K4me3 coverage track from AnnotationHub"
+  .. .. .. ..$ : chr "Compute the aggregated coverage of H3K4me3 ± 3kb around the TSSs of forward mouse genes"
+  .. .. .. ..$ : chr "With more genomic tracks"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2023-11-27 13:23:34"
+  .. .. ..$ modified: chr "2025-12-20 15:50:43"
+  .. .. ..$ commits : int 15
+  ..$ _score                 : num 5.76
+  ..$ _indexed               : logi TRUE
+  ..$ _nocasepkg             : chr "tidycoverage"
+  ..$ _universes             :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "marziacremona"
-  ..$ _previous         : chr "1.33.0"
-  ..$ _binaries         :List of 8
+  .. ..$ : chr "js2264"
+  ..$ _previous              : chr "1.7.0"
+  ..$ _binaries              :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:56:36.000Z"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:01:20.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "31338f79bad83fc95525e819b9acf78eb2061393b7905d50c674cf2e40d913df"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "31a5cfe927e89f7e193041e97cb8bf41a69565df0b569dafc91b4f1232f397eb"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:56:29.000Z"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:01:23.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "3e256d5b5133e15491fa8f20f3ed531ea394797852689dd8e27372a8d2a1dc54"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "c8f16971fd69805a6a884ba825b5b3895f90af0e1c8d314a8a01efc46f90d71a"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:55:58.000Z"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "9c2cd510fd49443f5059cc32033100f073dd47619755488c7c99eacf2779d4aa"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:01:22.000Z"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "2d01708e4850c565261dd1fa0fa5b7cefa6e1a767fc33e52445b2877c663f5e7"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:56:19.000Z"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "321f0f2cbf9f45be81093e94d763efa80c69bd842bbf74fcf1cf24b3be2eeba7"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:01:43.000Z"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "5d00ec8064668396bc4c9241a3a006b0300730c04af729b913921bbdbfa69f93"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:56:38.000Z"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "f6a0f9b356c0217463d48910ec69b6fe312d43449fb46dd848980d340c6f67ff"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:01:22.000Z"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "bfef2ed216c78eaddc411160e0aa34d53dc912dc2e8f76f499380bbd58e1a425"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:55:47.000Z"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "99bf40e8a30b7ad7d2a8df58c02b47bbd5e6481a18145015a7eb89499d06b45f"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:00:08.000Z"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "ac5720280ac2d9181e5fd20f2a39105b257faf9267774a210cbeee59b2318f94"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:55:55.000Z"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "305fed905295c9918f7c93309debe1de1339d6ed345fe686431b66a5ff76b9c6"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:00:34.000Z"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "e897dfacb8990abe60cff52051fb0fec29064e5908f4617c1a82fe26bbd66622"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.35.1"
-  .. .. ..$ date    : chr "2026-01-06T03:55:51.000Z"
-  .. .. ..$ commit  : chr "22ec111e1c82cfb15d99734c4daa57dfd5461608"
-  .. .. ..$ fileid  : chr "f30eeb58cf285597777119741866ca7d4ef37aea9fc067de1266092b0c7f258f"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20737355814"</code></pre>
+  .. .. ..$ version : chr "1.7.1"
+  .. .. ..$ date    : chr "2026-01-07T04:00:24.000Z"
+  .. .. ..$ commit  : chr "8a0985f61f089bc666f1fcd6195df655f1d9fc70"
+  .. .. ..$ fileid  : chr "01165441739bc0c51cc91e1d576100b6ebf6d1c1d01b38fb95df457510a1c075"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20769980911"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
