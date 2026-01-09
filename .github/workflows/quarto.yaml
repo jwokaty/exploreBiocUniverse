@@ -34,13 +34,8 @@ jobs:
       run: |
         apt update && apt install -y rsync
 
-    - name: Install Bioconductor dependencies
-      run: |
-        install.packages("universe", repos = "https://ropensci.r-universe.dev", dependencies = TRUE)
-        pkgs <- c("quarto", "purrr", "knitr", "kable", "kableExtra", "dplyr", "BiocPkgTools", "DT",
-                  "mongolite")
-        BiocManager::install(pkgs, dependencies = TRUE)
-      shell: Rscript {0}
+    - name: Install dependencies
+      uses: r-lib/actions/setup-r-dependencies@v2
 
     - name: Build site
       run: |
