@@ -72,7 +72,6 @@ bbs_builds <- bbs_pkgs_i |>
     dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
     dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
                   Check = result)
-uni <- "bioc"
 ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version, "linux")
 
 builds <- merge(bbs_builds, ru_builds, by = c("Package", "Version"))
