@@ -17,7 +17,6 @@ Suggests:
     httr2,
     jsonlite,
     knitr,
-    kable,
     kableExtra,
     mongolite,
     purrr,
