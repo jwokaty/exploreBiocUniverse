@@ -665,1557 +665,368 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 76
-  ..$ Package           : chr "singleCellTK"
-  ..$ Type              : chr "Package"
-  ..$ Title             : chr "Comprehensive and Interactive Analysis of Single Cell RNA-Seq\nData"
-  ..$ Version           : chr "2.21.1"
-  ..$ Authors@R         : chr "c(person(given=\"Yichen\", family=\"Wang\", email=\"wangych@bu.edu\", role=c(\"aut\"),\ncomment = c(ORCID = \"0"| __truncated__
-  ..$ Description       : chr "The Single Cell Toolkit (SCTK) in the singleCellTK package\nprovides an interface to popular tools for importin"| __truncated__
-  ..$ License           : chr "MIT + file LICENSE"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ biocViews         : chr "SingleCell, GeneExpression, DifferentialExpression,\nAlignment, Clustering, ImmunoOncology, BatchEffect,\nNorma"| __truncated__
-  ..$ LazyData          : chr "FALSE"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ URL               : chr "https://www.camplab.net/sctk/"
-  ..$ BugReports        : chr "https://github.com/compbiomed/singleCellTK/issues"
-  ..$ Language          : chr "en-US"
-  ..$ Config/pak/sysreqs: chr "libcairo2-dev libfftw3-dev libfontconfig1-dev\nlibfreetype6-dev libfribidi-dev libglpk-dev make\nlibharfbuzz-de"| __truncated__
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-01-11 13:42:53 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/singleCellTK"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  ..$ NeedsCompilation  : chr "no"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-01-12 04:00:16 UTC"
+ $ :List of 68
+  ..$ Package         : chr "assorthead"
+  ..$ Version         : chr "1.5.5"
+  ..$ Date            : chr "2026-01-13"
+  ..$ Title           : chr "Assorted Header-Only C++ Libraries"
+  ..$ Authors@R       : chr "person(\"Aaron\", \"Lun\", role=c(\"cre\", \"aut\"), email=\"infinite.monkeys.with.keyboards@gmail.com\")"
+  ..$ Description     : chr "Vendors an assortment of useful header-only C++ libraries.\nBioconductor packages can use these libraries in th"| __truncated__
+  ..$ License         : chr "MIT + file LICENSE"
+  ..$ VignetteBuilder : chr "knitr"
+  ..$ URL             : chr "https://github.com/LTLA/assorthead"
+  ..$ BugReports      : chr "https://github.com/LTLA/assorthead/issues"
+  ..$ Encoding        : chr "UTF-8"
+  ..$ biocViews       : chr "SingleCell, QualityControl, Normalization,\nDataRepresentation, DataImport, DifferentialExpression,\nAlignment"
+  ..$ Repository      : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication: chr "2026-01-13 01:25:44 UTC"
+  ..$ RemoteUrl       : chr "https://github.com/bioc/assorthead"
+  ..$ RemoteRef       : chr "HEAD"
+  ..$ RemoteSha       : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  ..$ NeedsCompilation: chr "no"
+  ..$ Packaged        :List of 2
+  .. ..$ Date: chr "2026-01-13 03:33:19 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Yichen Wang [aut] (ORCID: &lt;https://orcid.org/0000-0003-4347-5199&gt;),\nIrzam Sarfraz [aut] (ORCID: &lt;https://orcid"| __truncated__
-  ..$ Maintainer        : chr "Joshua David Campbell &lt;camp@bu.edu&gt;"
-  ..$ MD5sum            : chr "f8653ee0c13dcd56b5733c3c74dc27f1"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "singleCellTK_2.21.1.tar.gz"
-  ..$ _fileid           : chr "c4233a8ba5c3f710f91d7a79a731790cdc57bea31b44035c898b83e8f9acd48c"
-  ..$ _filesize         : int 4033834
-  ..$ _sha256           : chr "c4233a8ba5c3f710f91d7a79a731790cdc57bea31b44035c898b83e8f9acd48c"
-  ..$ _created          : chr "2026-01-12T04:00:16.000Z"
-  ..$ _published        : chr "2026-01-12T04:22:16.643Z"
-  ..$ _jobs             :List of 10
+  ..$ Author          : chr "Aaron Lun [cre, aut]"
+  ..$ Maintainer      : chr "Aaron Lun &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
+  ..$ MD5sum          : chr "42a484414cdaad37b5207269555230a7"
+  ..$ _user           : chr "bioc"
+  ..$ _type           : chr "src"
+  ..$ _file           : chr "assorthead_1.5.5.tar.gz"
+  ..$ _fileid         : chr "d7c745b870966bdd056646ea404a626ae05f5b0cb66a4ed24bae19fa5a500e78"
+  ..$ _filesize       : int 1958894
+  ..$ _sha256         : chr "d7c745b870966bdd056646ea404a626ae05f5b0cb66a4ed24bae19fa5a500e78"
+  ..$ _created        : chr "2026-01-13T03:33:19.000Z"
+  ..$ _published      : chr "2026-01-13T15:20:10.432Z"
+  ..$ _distro         : chr "noble"
+  ..$ _jobs           :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 445
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 138
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5093465548"
+  .. .. ..$ check   : chr "FAILURE"
+  .. .. ..$ artifact: chr ""
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 1086
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 162
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5093516973"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107023211"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 1034
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 135
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5093512982"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107017785"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 883
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 90
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5093501637"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107017948"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 1074
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 111
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5093515750"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107025248"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 692
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 158
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5093429657"
+  .. .. ..$ artifact: chr "5106996899"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 412
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 95
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5093462978"
+  .. .. ..$ artifact: chr "5107010348"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 1129
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 88
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5093520807"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107008826"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 951
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 83
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "5093506656"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107008507"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.01e+10
-  .. .. ..$ time    : int 1214
+  .. .. ..$ job     : num 6.02e+10
+  .. .. ..$ time    : int 88
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5093527311"
-  ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 2
-  .. ..$ note   : int 15
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/singleCellTK"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. ..$ author   : chr "Joshua D. Campbell &lt;joshua.d.campbell@gmail.com&gt;"
-  .. ..$ committer: chr "Joshua D. Campbell &lt;joshua.d.campbell@gmail.com&gt;"
-  .. ..$ message  : chr "version bump and news\n"
-  .. ..$ time     : int 1768138973
-  ..$ _maintainer       :List of 5
-  .. ..$ name : chr "Joshua David Campbell"
-  .. ..$ email: chr "camp@bu.edu"
-  .. ..$ login: chr "camplab"
-  .. ..$ uuid : int 43044384
-  .. ..$ orcid: chr "0000-0003-0780-8662"
-  ..$ _distro           : chr "noble"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 109
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.0"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SingleCellExperiment"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedArray"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Biobase"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ape"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "anndata"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationHub"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "batchelor"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "celldex"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "colourpicker"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "colorspace"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "cowplot"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "cluster"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ComplexHeatmap"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "data.table"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedMatrixStats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DESeq2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DT"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ExperimentHub"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ensembldb"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "fields"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplotify"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggrepel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggtree"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gridExtra"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "grid"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "GSVA"
-  .. .. ..$ version: chr "&gt;= 1.50.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GSVAdata"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "igraph"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "KernSmooth"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "limma"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "MAST"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "Matrix"
-  .. .. ..$ version: chr "&gt;= 1.6-1"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "matrixStats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "msigdbr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "multtest"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "plotly"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "plyr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ROCR"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Rtsne"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scater"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "scMerge"
-  .. .. ..$ version: chr "&gt;= 1.2.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scran"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "Seurat"
-  .. .. ..$ version: chr "&gt;= 3.1.3"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shiny"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinyjs"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SingleR"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "stringr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SoupX"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "sva"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "reshape2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinyalert"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "circlize"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "enrichR"
-  .. .. ..$ version: chr "&gt;= 3.2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "celda"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinycssloaders"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DropletUtils"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "scds"
-  .. .. ..$ version: chr "&gt;= 1.2.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "reticulate"
-  .. .. ..$ version: chr "&gt;= 1.14"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "tools"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "tximport"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "tidyr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "eds"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "withr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GSEABase"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "R.utils"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "zinbwave"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "scRNAseq"
-  .. .. ..$ version: chr "&gt;= 2.0.2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TENxPBMCData"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "yaml"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "magrittr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scDblFinder"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "metap"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "VAM"
-  .. .. ..$ version: chr "&gt;= 0.5.3"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "tibble"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rlang"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TSCAN"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TrajectoryUtils"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scuttle"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "zellkonverter"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "lifecycle"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Rsubread"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5107010137"
+  ..$ _buildurl       : chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  ..$ _status         : chr "success"
+  ..$ _host           : chr "GitHub-Actions"
+  ..$ _upstream       : chr "https://github.com/bioc/assorthead"
+  ..$ _commit         :List of 5
+  .. ..$ id       : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. ..$ author   : chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
+  .. ..$ committer: chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
+  .. ..$ message  : chr "Bumped version and date.\n"
+  .. ..$ time     : int 1768267544
+  ..$ _maintainer     :List of 5
+  .. ..$ name   : chr "Aaron Lun"
+  .. ..$ email  : chr "infinite.monkeys.with.keyboards@gmail.com"
+  .. ..$ login  : chr "ltla"
+  .. ..$ twitter: chr "@realAaronLun"
+  .. ..$ uuid   : int 8166669
+  ..$ _registered     : logi TRUE
+  ..$ _dependencies   :List of 3
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "lintr"
+  .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "spelling"
+  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
+  ..$ _owner          : chr "bioc"
+  ..$ _selfowned      : logi TRUE
+  ..$ _usedby         : int 191
+  ..$ _updates        :List of 22
   .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Mm.eg.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "kableExtra"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "shinythemes"
-  .. .. ..$ role   : chr "Suggests"
-  .. .. [list output truncated]
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 10
+  .. .. ..$ week: chr "2025-03"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-07"
-  .. .. ..$ n   : int 7
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-08"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-13"
+  .. .. ..$ week: chr "2025-10"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-14"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-17"
+  .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-19"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-26"
+  .. .. ..$ week: chr "2025-21"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-27"
+  .. .. ..$ week: chr "2025-22"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-23"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-24"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-29"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-31"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-34"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-36"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-41"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-42"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-43"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-39"
-  .. .. ..$ n   : int 4
+  .. .. ..$ week: chr "2025-46"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-50"
+  .. .. ..$ n   : int 3
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-02"
-  .. .. ..$ n   : int 3
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-03"
+  .. .. ..$ n   : int 1
+  ..$ _tags           : list()
+  ..$ _bioc           :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.21.0"
+  .. .. ..$ version: chr "1.5.4"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.20.0"
+  .. .. ..$ version: chr "1.4.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 11
+  ..$ _topics         :List of 7
   .. ..$ : chr "singlecell"
-  .. ..$ : chr "geneexpression"
+  .. ..$ : chr "qualitycontrol"
+  .. ..$ : chr "normalization"
+  .. ..$ : chr "datarepresentation"
+  .. ..$ : chr "dataimport"
   .. ..$ : chr "differentialexpression"
   .. ..$ : chr "alignment"
-  .. ..$ : chr "clustering"
-  .. ..$ : chr "immunooncology"
-  .. ..$ : chr "batcheffect"
-  .. ..$ : chr "normalization"
-  .. ..$ : chr "qualitycontrol"
-  .. ..$ : chr "dataimport"
-  .. ..$ : chr "gui"
-  ..$ _stars            : int 185
-  ..$ _contributors     :List of 33
+  ..$ _stars          : int 1
+  ..$ _contributors   :List of 2
   .. ..$ :List of 3
-  .. .. ..$ user : chr "irzamsarfraz"
-  .. .. ..$ count: int 795
-  .. .. ..$ uuid : int 33160268
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "joshua-d-campbell"
-  .. .. ..$ count: int 664
-  .. .. ..$ uuid : int 14353256
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "mvfki"
-  .. .. ..$ count: int 547
-  .. .. ..$ uuid : int 28736557
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dfjenkins3"
-  .. .. ..$ count: int 521
-  .. .. ..$ uuid : int 1692620
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "salamhha"
-  .. .. ..$ count: int 365
-  .. .. ..$ uuid : int 50881225
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "rz2333"
-  .. .. ..$ count: int 295
-  .. .. ..$ uuid : int 16445398
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "ykoga07"
-  .. .. ..$ count: int 292
-  .. .. ..$ uuid : int 26311595
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "liuming1997"
+  .. .. ..$ user : chr "ltla"
   .. .. ..$ count: int 102
-  .. .. ..$ uuid : int 87452797
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "npervaiz"
-  .. .. ..$ count: int 97
-  .. .. ..$ uuid : int 36128281
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "zhewa"
-  .. .. ..$ count: int 96
-  .. .. ..$ uuid : int 16454489
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lateoclock"
-  .. .. ..$ count: int 66
-  .. .. ..$ uuid : int 22383641
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "mmkhan19"
-  .. .. ..$ count: int 61
-  .. .. ..$ uuid : int 39277690
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vidyaap"
-  .. .. ..$ count: int 58
-  .. .. ..$ uuid : int 26637261
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "akshayarav"
-  .. .. ..$ count: int 55
-  .. .. ..$ uuid : int 51174148
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "mingl1997"
-  .. .. ..$ count: int 50
-  .. .. ..$ uuid : int 129070787
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "xin-cao"
-  .. .. ..$ count: int 40
-  .. .. ..$ uuid : int 26312918
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "ashastry2"
-  .. .. ..$ count: int 32
-  .. .. ..$ uuid : int 23105488
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "shruthibandyadka"
-  .. .. ..$ count: int 28
-  .. .. ..$ uuid : int 20522149
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "stc1"
-  .. .. ..$ count: int 21
-  .. .. ..$ uuid : int 25351396
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lloydliu717"
-  .. .. ..$ count: int 18
-  .. .. ..$ uuid : int 21338683
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "ebriars"
-  .. .. ..$ count: int 17
-  .. .. ..$ uuid : int 24554622
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "crelicthecleric"
-  .. .. ..$ count: int 15
-  .. .. ..$ uuid : int 52921332
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "tfaits"
-  .. .. ..$ count: int 12
-  .. .. ..$ uuid : int 12431337
+  .. .. ..$ uuid : int 8166669
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 11
+  .. .. ..$ count: int 6
   .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "aleshchyk"
-  .. .. ..$ count: int 9
-  .. .. ..$ uuid : int 26057821
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "frederickjansen"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 864507
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "irisapo"
-  .. .. ..$ count: int 3
-  .. .. ..$ uuid : int 16067676
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lshep"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 18724380
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vobencha"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2466173
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 8810451
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "link-ny"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 4392950
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "igordot"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 6363505
-  ..$ _userbio          :List of 4
+  ..$ _userbio        :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 604
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/singleCellTK"
-  ..$ _mentions         : int 2
-  ..$ _devurl           : chr "https://github.com/compbiomed/singlecelltk"
-  ..$ _searchresults    : int 248
-  ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 11
+  ..$ _downloads      :List of 2
+  .. ..$ count : int 18906
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/assorthead"
+  ..$ _devurl         : chr "https://github.com/ltla/assorthead"
+  ..$ _searchresults  : int 0
+  ..$ _rbuild         : chr "4.5.2"
+  ..$ _assets         :List of 9
+  .. ..$ : chr "extra/assorthead.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/NEWS.html"
-  .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/singleCellTK.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/compbiomed/singlecelltk"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 252
-  .. ..$ : chr "calcEffectSizes"
-  .. ..$ : chr "combineSCE"
-  .. ..$ : chr "computeHeatmap"
-  .. ..$ : chr "computeZScore"
-  .. ..$ : chr "constructSCE"
-  .. ..$ : chr "convertSCEToSeurat"
-  .. ..$ : chr "convertSeuratToSCE"
-  .. ..$ : chr "dedupRowNames"
-  .. ..$ : chr "detectCellOutlier"
-  .. ..$ : chr "diffAbundanceFET"
-  .. ..$ : chr "discreteColorPalette"
-  .. ..$ : chr "distinctColors"
-  .. ..$ : chr "downSampleCells"
-  .. ..$ : chr "downSampleDepth"
-  .. ..$ : chr "expData"
-  .. ..$ : chr "expData&lt;-"
-  .. ..$ : chr "expDataNames"
-  .. ..$ : chr "expDeleteDataTag"
-  .. ..$ : chr "exportSCE"
-  .. ..$ : chr "exportSCEtoAnnData"
-  .. ..$ : chr "exportSCEtoFlatFile"
-  .. ..$ : chr "exportSCEToSeurat"
-  .. ..$ : chr "expSetDataTag"
-  .. ..$ : chr "expTaggedData"
-  .. ..$ : chr "featureIndex"
-  .. ..$ : chr "findMarkerDiffExp"
-  .. ..$ : chr "findMarkerTopTable"
-  .. ..$ : chr "generateHTANMeta"
-  .. ..$ : chr "generateMeta"
-  .. ..$ : chr "generateSimulatedData"
-  .. ..$ : chr "getBiomarker"
-  .. ..$ : chr "getDEGTopTable"
-  .. ..$ : chr "getDiffAbundanceResults"
-  .. ..$ : chr "getDiffAbundanceResults&lt;-"
-  .. ..$ : chr "getEnrichRResult"
-  .. ..$ : chr "getEnrichRResult&lt;-"
-  .. ..$ : chr "getFindMarkerTopTable"
-  .. ..$ : chr "getGenesetNamesFromCollection"
-  .. ..$ : chr "getMSigDBTable"
-  .. ..$ : chr "getPathwayResultNames"
-  .. ..$ : chr "getSampleSummaryStatsTable"
-  .. ..$ : chr "getSceParams"
-  .. ..$ : chr "getSeuratVariableFeatures"
-  .. ..$ : chr "getSoupX"
-  .. ..$ : chr "getSoupX&lt;-"
-  .. ..$ : chr "getTopHVG"
-  .. ..$ : chr "getTSCANResults"
-  .. ..$ : chr "getTSCANResults&lt;-"
-  .. ..$ : chr "getTSNE"
-  .. ..$ : chr "getUMAP"
-  .. ..$ : chr "importAlevin"
-  .. ..$ : chr "importAnnData"
-  .. ..$ : chr "importBUStools"
-  .. ..$ : chr "importCellRanger"
-  .. ..$ : chr "importCellRangerV2"
-  .. ..$ : chr "importCellRangerV2Sample"
-  .. ..$ : chr "importCellRangerV3"
-  .. ..$ : chr "importCellRangerV3Sample"
-  .. ..$ : chr "importDropEst"
-  .. ..$ : chr "importExampleData"
-  .. ..$ : chr "importFromFiles"
-  .. ..$ : chr "importGeneSetsFromCollection"
-  .. ..$ : chr "importGeneSetsFromGMT"
-  .. ..$ : chr "importGeneSetsFromList"
-  .. ..$ : chr "importGeneSetsFromMSigDB"
-  .. ..$ : chr "importMitoGeneSet"
-  .. ..$ : chr "importMultipleSources"
-  .. ..$ : chr "importOptimus"
-  .. ..$ : chr "importSEQC"
-  .. ..$ : chr "importSTARsolo"
-  .. ..$ : chr "iterateSimulations"
-  .. ..$ : chr "listSampleSummaryStatsTables"
-  .. ..$ : chr "listTSCANResults"
-  .. ..$ : chr "listTSCANTerminalNodes"
-  .. ..$ : chr "mergeSCEColData"
-  .. ..$ : chr "plotBarcodeRankDropsResults"
-  .. ..$ : chr "plotBarcodeRankScatter"
-  .. ..$ : chr "plotBatchCorrCompare"
-  .. ..$ : chr "plotBatchVariance"
-  .. ..$ : chr "plotBcdsResults"
-  .. ..$ : chr "plotBubble"
-  .. ..$ : chr "plotClusterAbundance"
-  .. ..$ : chr "plotCxdsResults"
-  .. ..$ : chr "plotDecontXResults"
-  .. ..$ : chr "plotDEGHeatmap"
-  .. ..$ : chr "plotDEGRegression"
-  .. ..$ : chr "plotDEGViolin"
-  .. ..$ : chr "plotDEGVolcano"
-  .. ..$ : chr "plotDimRed"
-  .. ..$ : chr "plotDoubletFinderResults"
-  .. ..$ : chr "plotEmptyDropsResults"
-  .. ..$ : chr "plotEmptyDropsScatter"
-  .. ..$ : chr "plotEnrichR"
-  .. ..$ : chr "plotFindMarkerHeatmap"
-  .. ..$ : chr "plotMarkerDiffExp"
-  .. ..$ : chr "plotMASTThresholdGenes"
-  .. ..$ : chr "plotPathway"
-  .. ..$ : chr "plotPCA"
-  .. ..$ : chr "plotRunPerCellQCResults"
-  .. .. [list output truncated]
-  ..$ _datasets         :List of 6
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "MitoGenes"
-  .. .. ..$ title : chr "List of mitochondrial genes of multiple reference"
-  .. .. ..$ object: chr "MitoGenes"
-  .. .. ..$ file  : chr "MitoGenes.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "list"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "SEG"
-  .. .. ..$ title : chr "Stably Expressed Gene (SEG) list obect, with SEG sets for human and mouse."
-  .. .. ..$ object: chr "SEG"
-  .. .. ..$ file  : chr "SEG.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "list"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "mouseBrainSubsetSCE"
-  .. .. ..$ title : chr "Example Single Cell RNA-Seq data in SingleCellExperiment Object, GSE60361 subset"
-  .. .. ..$ object: chr "mouseBrainSubsetSCE"
-  .. .. ..$ file  : chr "mouseBrainSubsetSCE.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SingleCellExperiment"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
+  ..$ _homeurl        : chr "https://github.com/ltla/assorthead"
+  ..$ _realowner      : chr "bioc"
+  ..$ _cranurl        : logi FALSE
+  ..$ _exports        : list()
+  ..$ _help           : list()
+  ..$ _readme         : chr "https://github.com/bioc/assorthead/raw/HEAD/README.md"
+  ..$ _rundeps        : list()
+  ..$ _vignettes      :List of 1
   .. ..$ :List of 9
-  .. .. ..$ name  : chr "msigdb_table"
-  .. .. ..$ title : chr "MSigDB gene get Category table"
-  .. .. ..$ object: chr "msigdb_table"
-  .. .. ..$ file  : chr "msigdb_table.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 5
-  .. .. .. ..$ : chr "ID"
-  .. .. .. ..$ : chr "Category"
-  .. .. .. ..$ : chr "Subcategory"
-  .. .. .. ..$ : chr "Category_Description"
-  .. .. .. ..$ : chr "Subcategory_Description"
-  .. .. ..$ rows  : int 17
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "sce"
-  .. .. ..$ title : chr "Example Single Cell RNA-Seq data in SingleCellExperiment Object, subset of 10x public dataset"
-  .. .. ..$ object: chr "scExample"
-  .. .. ..$ file  : chr "scExample.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SingleCellExperiment"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "sceBatches"
-  .. .. ..$ title : chr "Example Single Cell RNA-Seq data in SingleCellExperiment object, with different batches annotated"
-  .. .. ..$ object: chr "sceBatches"
-  .. .. ..$ file  : chr "sceBatches.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SingleCellExperiment"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  ..$ _help             :List of 238
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "calcEffectSizes"
-  .. .. ..$ title : chr "Finds the effect sizes for all genes in the original dataset, regardless of significance."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calcEffectSizes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "combineSCE"
-  .. .. ..$ title : chr "Combine a list of SingleCellExperiment objects as one SingleCellExperiment object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "combineSCE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "computeHeatmap"
-  .. .. ..$ title : chr "Computes heatmap for a set of features against dimensionality reduction components"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "computeHeatmap"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "computeZScore"
-  .. .. ..$ title : chr "Compute Z-Score"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "computeZScore"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "constructSCE"
-  .. .. ..$ title : chr "Create SingleCellExperiment object from csv or txt input"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "constructSCE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "convertSCEToSeurat"
-  .. .. ..$ title : chr "convertSCEToSeurat Converts sce object to seurat while retaining all assays and metadata"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "convertSCEToSeurat"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "convertSeuratToSCE"
-  .. .. ..$ title : chr "convertSeuratToSCE Converts the input seurat object to a sce object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "convertSeuratToSCE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "dedupRowNames"
-  .. .. ..$ title : chr "Deduplicate the rownames of a matrix or SingleCellExperiment object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "dedupRowNames"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "detectCellOutlier"
-  .. .. ..$ title : chr "Detecting outliers within the SingleCellExperiment object."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "detectCellOutlier"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "diffAbundanceFET"
-  .. .. ..$ title : chr "Calculate Differential Abundance with FET"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "diffAbundanceFET"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "discreteColorPalette"
-  .. .. ..$ title : chr "Generate given number of color codes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "discreteColorPalette"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "distinctColors"
-  .. .. ..$ title : chr "Generate a distinct palette for coloring different clusters"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "distinctColors"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "downSampleCells"
-  .. .. ..$ title : chr "Estimate numbers of detected genes, significantly differentially expressed genes, and median significant effect size"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "downSampleCells"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "downSampleDepth"
-  .. .. ..$ title : chr "Estimate numbers of detected genes, significantly differentially expressed genes, and median significant effect size"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "downSampleDepth"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expData"
-  .. .. ..$ title : chr "expData Get data item from an input 'SingleCellExperiment' object. The data item can be an 'assay', 'altExp' (s"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expData-ANY-character-method"
-  .. .. ..$ title : chr "expData Get data item from an input 'SingleCellExperiment' object. The data item can be an 'assay', 'altExp' (s"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expData,ANY,character-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expData-set"
-  .. .. ..$ title : chr "expData Store data items using tags to identify the type of data item stored. To be used as a replacement for a"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expData&lt;-"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expData-set-ANY-character-CharacterOrNullOrMissing-logical-method"
-  .. .. ..$ title : chr "expData Store data items using tags to identify the type of data item stored. To be used as a replacement for a"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expData&lt;-,ANY,character,CharacterOrNullOrMissing,logical-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expDataNames"
-  .. .. ..$ title : chr "expDataNames Get names of all the data items in the input 'SingleCellExperiment' object including assays, altEx"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expDataNames"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expDataNames-ANY-method"
-  .. .. ..$ title : chr "expDataNames Get names of all the data items in the input 'SingleCellExperiment' object including assays, altEx"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expDataNames,ANY-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expDeleteDataTag"
-  .. .. ..$ title : chr "expDeleteDataTag Remove tag against an input data from the stored tag information in the metadata of the input object."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expDeleteDataTag"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "exportSCE"
-  .. .. ..$ title : chr "Export data in SingleCellExperiment object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "exportSCE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "exportSCEtoAnnData"
-  .. .. ..$ title : chr "Export a SingleCellExperiment R object as Python annData object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "exportSCEtoAnnData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "exportSCEtoFlatFile"
-  .. .. ..$ title : chr "Export a SingleCellExperiment object to flat text files"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "exportSCEtoFlatFile"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "exportSCEToSeurat"
-  .. .. ..$ title : chr "Export data in Seurat object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "exportSCEToSeurat"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expSetDataTag"
-  .. .. ..$ title : chr "expSetDataTag Set tag to an assay or a data item in the input SCE object."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expSetDataTag"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "expTaggedData"
-  .. .. ..$ title : chr "expTaggedData Returns a list of names of data items from the input 'SingleCellExperiment' object based upon the"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "expTaggedData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "featureIndex"
-  .. .. ..$ title : chr "Retrieve row index for a set of features"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "featureIndex"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "generateHTANMeta"
-  .. .. ..$ title : chr "Generate HTAN manifest file for droplet and cell count data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "generateHTANMeta"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "generateMeta"
-  .. .. ..$ title : chr "Generate HTAN manifest file for droplet and cell count data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "generateMeta"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "generateSimulatedData"
-  .. .. ..$ title : chr "Generates a single simulated dataset, bootstrapping from the input counts matrix."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "generateSimulatedData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getBiomarker"
-  .. .. ..$ title : chr "Given a list of genes and a SingleCellExperiment object, return the binary or continuous expression of the genes."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getBiomarker"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getDEGTopTable"
-  .. .. ..$ title : chr "Get Top Table of a DEG analysis"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getDEGTopTable"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getDiffAbundanceResults"
-  .. .. ..$ title : chr "Get/Set diffAbundanceFET result table"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "getDiffAbundanceResults"
-  .. .. .. ..$ : chr "getDiffAbundanceResults,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "getDiffAbundanceResults&lt;-"
-  .. .. .. ..$ : chr "getDiffAbundanceResults&lt;-,SingleCellExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getEnrichRResult"
-  .. .. ..$ title : chr "Get or Set EnrichR Result"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "getEnrichRResult"
-  .. .. .. ..$ : chr "getEnrichRResult,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "getEnrichRResult&lt;-"
-  .. .. .. ..$ : chr "getEnrichRResult&lt;-,SingleCellExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getFindMarkerTopTable"
-  .. .. ..$ title : chr "Fetch the table of top markers that pass the filtering"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "findMarkerTopTable"
-  .. .. .. ..$ : chr "getFindMarkerTopTable"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getGenesetNamesFromCollection"
-  .. .. ..$ title : chr "List geneset names from geneSetCollection"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getGenesetNamesFromCollection"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getMSigDBTable"
-  .. .. ..$ title : chr "Shows MSigDB categories"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getMSigDBTable"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getPathwayResultNames"
-  .. .. ..$ title : chr "List pathway analysis result names"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getPathwayResultNames"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getSampleSummaryStatsTable"
-  .. .. ..$ title : chr "Stores and returns table of SCTK QC outputs to metadata."
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "getSampleSummaryStatsTable"
-  .. .. .. ..$ : chr "getSampleSummaryStatsTable,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "setSampleSummaryStatsTable&lt;-"
-  .. .. .. ..$ : chr "setSampleSummaryStatsTable&lt;-,SingleCellExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getSceParams"
-  .. .. ..$ title : chr "Extract QC parameters from the SingleCellExperiment object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getSceParams"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getSeuratVariableFeatures"
-  .. .. ..$ title : chr "Get variable feature names after running runSeuratFindHVG function"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getSeuratVariableFeatures"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getSoupX"
-  .. .. ..$ title : chr "Get or Set SoupX Result"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "getSoupX"
-  .. .. .. ..$ : chr "getSoupX,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "getSoupX&lt;-"
-  .. .. .. ..$ : chr "getSoupX&lt;-,SingleCellExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTopHVG"
-  .. .. ..$ title : chr "Get or set top HVG after calculation"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "getTopHVG"
-  .. .. .. ..$ : chr "setTopHVG"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getTSCANResults"
-  .. .. ..$ title : chr "getTSCANResults accessor function"
-  .. .. ..$ topics:List of 8
-  .. .. .. ..$ : chr "getTSCANResults"
-  .. .. .. ..$ : chr "getTSCANResults,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "getTSCANResults&lt;-"
-  .. .. .. ..$ : chr "getTSCANResults&lt;-,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "listTSCANResults"
-  .. .. .. ..$ : chr "listTSCANResults,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "listTSCANTerminalNodes"
-  .. .. .. ..$ : chr "listTSCANTerminalNodes,SingleCellExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importAlevin"
-  .. .. ..$ title : chr "Construct SCE object from Salmon-Alevin output"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importAlevin"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importAnnData"
-  .. .. ..$ title : chr "Create a SingleCellExperiment Object from Python AnnData .h5ad files"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importAnnData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importBUStools"
-  .. .. ..$ title : chr "Construct SCE object from BUStools output"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importBUStools"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importCellRanger"
-  .. .. ..$ title : chr "Construct SCE object from Cell Ranger output"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "importCellRanger"
-  .. .. .. ..$ : chr "importCellRangerV2"
-  .. .. .. ..$ : chr "importCellRangerV3"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importCellRangerV2Sample"
-  .. .. ..$ title : chr "Construct SCE object from Cell Ranger V2 output for a single sample"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importCellRangerV2Sample"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importCellRangerV3Sample"
-  .. .. ..$ title : chr "Construct SCE object from Cell Ranger V3 output for a single sample"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importCellRangerV3Sample"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importDropEst"
-  .. .. ..$ title : chr "Create a SingleCellExperiment Object from DropEst output"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importDropEst"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importExampleData"
-  .. .. ..$ title : chr "Retrieve example datasets"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importExampleData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importFromFiles"
-  .. .. ..$ title : chr "Create a SingleCellExperiment object from files"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importFromFiles"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importGeneSetsFromCollection"
-  .. .. ..$ title : chr "Imports gene sets from a GeneSetCollection object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importGeneSetsFromCollection"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importGeneSetsFromGMT"
-  .. .. ..$ title : chr "Imports gene sets from a GMT file"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importGeneSetsFromGMT"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importGeneSetsFromList"
-  .. .. ..$ title : chr "Imports gene sets from a list"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importGeneSetsFromList"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importGeneSetsFromMSigDB"
-  .. .. ..$ title : chr "Imports gene sets from MSigDB"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importGeneSetsFromMSigDB"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importMitoGeneSet"
-  .. .. ..$ title : chr "Import mitochondrial gene sets"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importMitoGeneSet"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importMultipleSources"
-  .. .. ..$ title : chr "Imports samples from different sources and compiles them into a list of SCE objects"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importMultipleSources"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importOptimus"
-  .. .. ..$ title : chr "Construct SCE object from Optimus output"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importOptimus"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importSEQC"
-  .. .. ..$ title : chr "Construct SCE object from seqc output"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importSEQC"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "importSTARsolo"
-  .. .. ..$ title : chr "Construct SCE object from STARsolo outputs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "importSTARsolo"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "iterateSimulations"
-  .. .. ..$ title : chr "Returns significance data from a snapshot."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iterateSimulations"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "listSampleSummaryStatsTables"
-  .. .. ..$ title : chr "Lists the table of SCTK QC outputs stored within the metadata."
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "listSampleSummaryStatsTables"
-  .. .. .. ..$ : chr "listSampleSummaryStatsTables,SingleCellExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mergeSCEColData"
-  .. .. ..$ title : chr "Merging colData from two singleCellExperiment objects"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mergeSCEColData"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "MitoGenes"
-  .. .. ..$ title : chr "List of mitochondrial genes of multiple reference"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "MitoGenes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mouseBrainSubsetSCE"
-  .. .. ..$ title : chr "Example Single Cell RNA-Seq data in SingleCellExperiment Object, GSE60361 subset"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mouseBrainSubsetSCE"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "msigdb_table"
-  .. .. ..$ title : chr "MSigDB gene get Category table"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "msigdb_table"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotBarcodeRankDropsResults"
-  .. .. ..$ title : chr "Plots for runBarcodeRankDrops outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotBarcodeRankDropsResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotBarcodeRankScatter"
-  .. .. ..$ title : chr "Plots for runBarcodeRankDrops outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotBarcodeRankScatter"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotBatchCorrCompare"
-  .. .. ..$ title : chr "Plot comparison of batch corrected result against original assay"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotBatchCorrCompare"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotBatchVariance"
-  .. .. ..$ title : chr "Plot the percent of the variation that is explained by batch and condition in the data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotBatchVariance"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotBcdsResults"
-  .. .. ..$ title : chr "Plots for runBcds outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotBcdsResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotBubble"
-  .. .. ..$ title : chr "Plot Bubble plot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotBubble"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotClusterAbundance"
-  .. .. ..$ title : chr "Plot the differential Abundance"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotClusterAbundance"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotCxdsResults"
-  .. .. ..$ title : chr "Plots for runCxds outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotCxdsResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDecontXResults"
-  .. .. ..$ title : chr "Plots for runDecontX outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDecontXResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDEGHeatmap"
-  .. .. ..$ title : chr "Heatmap visualization of DEG result"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDEGHeatmap"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDEGRegression"
-  .. .. ..$ title : chr "Create linear regression plot to show the expression the of top DEGs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDEGRegression"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDEGViolin"
-  .. .. ..$ title : chr "Generate violin plot to show the expression of top DEGs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDEGViolin"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDEGVolcano"
-  .. .. ..$ title : chr "Generate volcano plot for DEGs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDEGVolcano"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDimRed"
-  .. .. ..$ title : chr "Plot dimensionality reduction from computed metrics including PCA, ICA, tSNE and UMAP"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDimRed"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDoubletFinderResults"
-  .. .. ..$ title : chr "Plots for runDoubletFinder outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDoubletFinderResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotEmptyDropsResults"
-  .. .. ..$ title : chr "Plots for runEmptyDrops outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotEmptyDropsResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotEmptyDropsScatter"
-  .. .. ..$ title : chr "Plots for runEmptyDrops outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotEmptyDropsScatter"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotEnrichR"
-  .. .. ..$ title : chr "Plot EnrichR results"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotEnrichR"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotFindMarkerHeatmap"
-  .. .. ..$ title : chr "Plot a heatmap to visualize the result of 'runFindMarker'"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "plotFindMarkerHeatmap"
-  .. .. .. ..$ : chr "plotMarkerDiffExp"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotMASTThresholdGenes"
-  .. .. ..$ title : chr "MAST Identify adaptive thresholds"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotMASTThresholdGenes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotPathway"
-  .. .. ..$ title : chr "Generate violin plots for pathway analysis results"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotPathway"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotPCA"
-  .. .. ..$ title : chr "Plot PCA run data from its components."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotPCA"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotRunPerCellQCResults"
-  .. .. ..$ title : chr "Plots for runPerCellQC outputs."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotRunPerCellQCResults"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyDotPlot"
-  .. .. ..$ title : chr "plotScanpyDotPlot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyDotPlot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyEmbedding"
-  .. .. ..$ title : chr "plotScanpyEmbedding"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyEmbedding"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyHeatmap"
-  .. .. ..$ title : chr "plotScanpyHeatmap"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyHeatmap"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyHVG"
-  .. .. ..$ title : chr "plotScanpyHVG"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyHVG"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyMarkerGenes"
-  .. .. ..$ title : chr "plotScanpyMarkerGenes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyMarkerGenes"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyMarkerGenesDotPlot"
-  .. .. ..$ title : chr "plotScanpyMarkerGenesDotPlot"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyMarkerGenesDotPlot"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotScanpyMarkerGenesHeatmap"
-  .. .. ..$ title : chr "plotScanpyMarkerGenesHeatmap"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotScanpyMarkerGenesHeatmap"
-  .. .. [list output truncated]
-  ..$ _readme           : chr "https://github.com/bioc/singleCellTK/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 382
-  .. ..$ : chr "abind"
-  .. ..$ : chr "alabaster.base"
-  .. ..$ : chr "alabaster.matrix"
-  .. ..$ : chr "alabaster.ranges"
-  .. ..$ : chr "alabaster.sce"
-  .. ..$ : chr "alabaster.schemas"
-  .. ..$ : chr "alabaster.se"
-  .. ..$ : chr "anndata"
-  .. ..$ : chr "annotate"
-  .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "AnnotationFilter"
-  .. ..$ : chr "AnnotationHub"
-  .. ..$ : chr "ape"
-  .. ..$ : chr "aplot"
-  .. ..$ : chr "askpass"
-  .. ..$ : chr "assertthat"
-  .. ..$ : chr "assorthead"
-  .. ..$ : chr "babelgene"
-  .. ..$ : chr "backports"
-  .. ..$ : chr "base64enc"
-  .. ..$ : chr "basilisk"
-  .. ..$ : chr "batchelor"
-  .. ..$ : chr "bbmle"
-  .. ..$ : chr "bdsmatrix"
-  .. ..$ : chr "beachmat"
-  .. ..$ : chr "beeswarm"
-  .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocBaseUtils"
-  .. ..$ : chr "BiocFileCache"
-  .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocIO"
-  .. ..$ : chr "BiocManager"
-  .. ..$ : chr "BiocNeighbors"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "BiocSingular"
-  .. ..$ : chr "BiocVersion"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
-  .. ..$ : chr "bitops"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "bluster"
-  .. ..$ : chr "bslib"
-  .. ..$ : chr "cachem"
-  .. ..$ : chr "Cairo"
-  .. ..$ : chr "callr"
-  .. ..$ : chr "caTools"
-  .. ..$ : chr "celda"
-  .. ..$ : chr "celldex"
-  .. ..$ : chr "checkmate"
-  .. ..$ : chr "cigarillo"
-  .. ..$ : chr "circlize"
-  .. ..$ : chr "cli"
-  .. ..$ : chr "clue"
-  .. ..$ : chr "cluster"
-  .. ..$ : chr "codetools"
-  .. ..$ : chr "colorspace"
-  .. ..$ : chr "colourpicker"
-  .. ..$ : chr "combinat"
-  .. ..$ : chr "commonmark"
-  .. ..$ : chr "ComplexHeatmap"
-  .. ..$ : chr "cowplot"
-  .. ..$ : chr "cpp11"
-  .. ..$ : chr "crayon"
-  .. ..$ : chr "crosstalk"
-  .. ..$ : chr "curl"
-  .. ..$ : chr "cvTools"
-  .. ..$ : chr "data.table"
-  .. ..$ : chr "DBI"
-  .. ..$ : chr "dbplyr"
-  .. ..$ : chr "dbscan"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "DelayedMatrixStats"
-  .. ..$ : chr "deldir"
-  .. ..$ : chr "dendextend"
-  .. ..$ : chr "densEstBayes"
-  .. ..$ : chr "DEoptimR"
-  .. ..$ : chr "desc"
-  .. ..$ : chr "DESeq2"
-  .. ..$ : chr "digest"
-  .. ..$ : chr "dir.expiry"
-  .. ..$ : chr "distr"
-  .. ..$ : chr "distributional"
-  .. ..$ : chr "doParallel"
-  .. ..$ : chr "dotCall64"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "dqrng"
-  .. ..$ : chr "DropletUtils"
-  .. ..$ : chr "DT"
-  .. ..$ : chr "edgeR"
-  .. ..$ : chr "eds"
-  .. ..$ : chr "enrichR"
-  .. ..$ : chr "ensembldb"
-  .. ..$ : chr "evaluate"
-  .. ..$ : chr "ExperimentHub"
-  .. ..$ : chr "farver"
-  .. ..$ : chr "fastDummies"
-  .. ..$ : chr "fastICA"
-  .. .. [list output truncated]
-  ..$ _vignettes        :List of 1
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "singleCellTK.Rmd"
-  .. .. ..$ filename: chr "singleCellTK.html"
-  .. .. ..$ title   : chr "Introduction to singleCellTK"
-  .. .. ..$ author  : chr "Yichen Wang, Irzam Sarfraz, Rui Hong, Yusuke Koga, Salam Abdullatif, Nida Pervaiz, David Jenkins, Vidya Akavoor"| __truncated__
+  .. .. ..$ source  : chr "userguide.Rmd"
+  .. .. ..$ filename: chr "userguide.html"
+  .. .. ..$ title   : chr "Assortment of header-only libraries"
+  .. .. ..$ author  : chr "Aaron Lun"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 2
-  .. .. .. ..$ : chr "Vignettes"
-  .. .. .. ..$ : chr "Session info"
-  .. .. ..$ created : chr "2020-10-12 13:15:30"
-  .. .. ..$ modified: chr "2023-07-26 18:31:43"
+  .. .. ..$ headings:List of 5
+  .. .. .. ..$ : chr "Overview"
+  .. .. .. ..$ : chr "Quick start"
+  .. .. .. ..$ : chr "Available libraries"
+  .. .. .. ..$ : chr "Using interfaces"
+  .. .. .. ..$ : chr "Contributing"
+  .. .. ..$ created : chr "2024-07-18 18:29:28"
+  .. .. ..$ modified: chr "2024-08-09 17:42:27"
   .. .. ..$ commits : int 4
-  ..$ _score            : num 10.2
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "singlecelltk"
-  ..$ _universes        :List of 3
+  ..$ _score          : num 9.08
+  ..$ _indexed        : logi TRUE
+  ..$ _nocasepkg      : chr "assorthead"
+  ..$ _universes      :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "camplab"
-  .. ..$ : chr "compbiomed"
-  ..$ _previous         : chr "2.21.0"
-  ..$ _binaries         :List of 8
+  .. ..$ : chr "ltla"
+  ..$ _binaries       :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:07:36.000Z"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:36:10.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "848bc88ee2ffb2903368223ce2a64d5a2884f96dbd893d7636e0e928a6da2b72"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "ac6095d13caf5ef62d96cd2461c069794e053976dc92b591ceef5b1100568762"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:07:16.000Z"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:35:42.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "bdd55c3cc1fe27b2c2c81c8f80c5b21df908fce160e4617e01c25c1fb73ce7e8"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "eb9588006876d50ef5c71f3c9c1e07dcbcb47fca13b1aec43b62a7f770ca2a41"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:04:34.000Z"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "558fa24201af3165fdcf6789049cda6ebd749c16316c53bf3b8bf6f12754918f"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:35:44.000Z"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "dde6262ef47cf8e8e040bded3d3d37d6ab5469b79e84808f7ec3bb81bb95a7c5"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:04:54.000Z"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "18d0595a8b1aa839a348d8afe4e8a95e463de5e01d74bd72ccea0024ec5bb0d3"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:36:22.000Z"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "e3ca3c223d29c715d2b58154c599fde8ba5e951f49287c33a74b1c80e7653aeb"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:08:23.000Z"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "773585d59b68a20b0088ba636c16c61bf4641b31c7f706f824efe857a2a9d868"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:35:10.000Z"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "6e96cce2dac676a808581d7f02927565ce4da4bb89f7da1082afeecf1cd45f32"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:05:49.000Z"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "934af5ec34ef3826eae6bee043e5e939f258b038eb360291b0424a7fe0a72015"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:34:36.000Z"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "043f131044c9fa89f4098cd810dafdf821dfa9146a82515cb29fc1d4b4675e29"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:07:55.000Z"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "2124e861ae3d5f53eb8be51b503467aec9cc03fefe047b1c9c8674a6f17cae18"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:34:35.000Z"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "fc9302edc3469b9295487dcd74ef2b173c2ac1449173c67908f16370c8ef6bef"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.21.1"
-  .. .. ..$ date    : chr "2026-01-12T04:06:39.000Z"
-  .. .. ..$ commit  : chr "15d4a132fee6e116f5b5ac3ce78ca266d010faaa"
-  .. .. ..$ fileid  : chr "b747ca2d50c96a8503606293beaaae940b644a323ea9931bb22523cf66a089a1"
+  .. .. ..$ version : chr "1.5.5"
+  .. .. ..$ date    : chr "2026-01-13T03:34:50.000Z"
+  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
+  .. .. ..$ fileid  : chr "c20b95f97d1341ef3bfb4495b2507fc40c56492ff1fbf0e3b1f6b967c3f4c3c6"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20907471105"</code></pre>
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
