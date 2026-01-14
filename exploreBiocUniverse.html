@@ -236,8 +236,8 @@ Total 2334 2361</code></pre>
 <tr class="odd">
 <td style="text-align: left;">ggpattern</td>
 <td style="text-align: left;">1.2.1-0</td>
-<td style="text-align: left;">2026-01-09T21:40:27.000Z</td>
-<td style="text-align: left;">2026-01-09T22:50:38.395Z</td>
+<td style="text-align: left;">2026-01-14T06:34:13.000Z</td>
+<td style="text-align: left;">2026-01-14T06:39:32.375Z</td>
 <td style="text-align: left;">https://github.com/coolbutuseless/ggpattern</td>
 </tr>
 <tr class="even">
@@ -257,8 +257,8 @@ Total 2334 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">lmms</td>
 <td style="text-align: left;">1.3.3</td>
-<td style="text-align: left;">2025-12-31T08:01:58.000Z</td>
-<td style="text-align: left;">2025-12-31T08:04:58.120Z</td>
+<td style="text-align: left;">2026-01-14T06:33:37.000Z</td>
+<td style="text-align: left;">2026-01-14T06:38:39.432Z</td>
 <td style="text-align: left;">https://github.com/cran/lmms</td>
 </tr>
 </tbody>
@@ -665,368 +665,842 @@ Total 2334 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 68
-  ..$ Package         : chr "assorthead"
-  ..$ Version         : chr "1.5.5"
-  ..$ Date            : chr "2026-01-13"
-  ..$ Title           : chr "Assorted Header-Only C++ Libraries"
-  ..$ Authors@R       : chr "person(\"Aaron\", \"Lun\", role=c(\"cre\", \"aut\"), email=\"infinite.monkeys.with.keyboards@gmail.com\")"
-  ..$ Description     : chr "Vendors an assortment of useful header-only C++ libraries.\nBioconductor packages can use these libraries in th"| __truncated__
-  ..$ License         : chr "MIT + file LICENSE"
-  ..$ VignetteBuilder : chr "knitr"
-  ..$ URL             : chr "https://github.com/LTLA/assorthead"
-  ..$ BugReports      : chr "https://github.com/LTLA/assorthead/issues"
-  ..$ Encoding        : chr "UTF-8"
-  ..$ biocViews       : chr "SingleCell, QualityControl, Normalization,\nDataRepresentation, DataImport, DifferentialExpression,\nAlignment"
-  ..$ Repository      : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication: chr "2026-01-13 01:25:44 UTC"
-  ..$ RemoteUrl       : chr "https://github.com/bioc/assorthead"
-  ..$ RemoteRef       : chr "HEAD"
-  ..$ RemoteSha       : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  ..$ NeedsCompilation: chr "no"
-  ..$ Packaged        :List of 2
-  .. ..$ Date: chr "2026-01-13 03:33:19 UTC"
+ $ :List of 75
+  ..$ Package                : chr "gemma.R"
+  ..$ Title                  : chr "A wrapper for Gemma's Restful API to access curated gene\nexpression data and differential expression analyses"
+  ..$ Version                : chr "3.7.1"
+  ..$ Authors@R              : chr "c(person(given = \"Javier\", family = \"Castillo-Arnemann\",\nrole = c(\"aut\"), email = \"javiercastilloar@gma"| __truncated__
+  ..$ Description            : chr "Low- and high-level wrappers for Gemma's RESTful API. They\nenable access to curated expression and differentia"| __truncated__
+  ..$ URL                    : chr "https://pavlidislab.github.io/gemma.R/,\nhttps://github.com/PavlidisLab/gemma.R"
+  ..$ License                : chr "Apache License (&gt;= 2)"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ Roxygen                : chr "list(markdown = TRUE)"
+  ..$ RoxygenNote            : chr "7.3.2"
+  ..$ BugReports             : chr "https://github.com/PavlidisLab/gemma.R/issues"
+  ..$ Config/testthat/edition: chr "2"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ biocViews              : chr "Software, DataImport, Microarray, SingleCell,\nThirdPartyClient, DifferentialExpression, GeneExpression,\nBayes"| __truncated__
+  ..$ Config/pak/sysreqs     : chr "libfontconfig1-dev libfreetype6-dev libfribidi-dev\nmake libharfbuzz-dev libicu-dev libpng-dev libxml2-dev\nlib"| __truncated__
+  ..$ Repository             : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication       : chr "2026-01-13 23:44:50 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/gemma.R"
+  ..$ RemoteRef              : chr "HEAD"
+  ..$ RemoteSha              : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  ..$ NeedsCompilation       : chr "no"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2026-01-14 03:59:55 UTC"
   .. ..$ User: chr "root"
-  ..$ Author          : chr "Aaron Lun [cre, aut]"
-  ..$ Maintainer      : chr "Aaron Lun &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  ..$ MD5sum          : chr "42a484414cdaad37b5207269555230a7"
-  ..$ _user           : chr "bioc"
-  ..$ _type           : chr "src"
-  ..$ _file           : chr "assorthead_1.5.5.tar.gz"
-  ..$ _fileid         : chr "d7c745b870966bdd056646ea404a626ae05f5b0cb66a4ed24bae19fa5a500e78"
-  ..$ _filesize       : int 1958894
-  ..$ _sha256         : chr "d7c745b870966bdd056646ea404a626ae05f5b0cb66a4ed24bae19fa5a500e78"
-  ..$ _created        : chr "2026-01-13T03:33:19.000Z"
-  ..$ _published      : chr "2026-01-13T15:20:10.432Z"
-  ..$ _distro         : chr "noble"
-  ..$ _jobs           :List of 10
+  ..$ Author                 : chr "Javier Castillo-Arnemann [aut] (ORCID:\n&lt;https://orcid.org/0000-0002-5626-9004&gt;),\nJordan Sicherman [aut] (ORCI"| __truncated__
+  ..$ Maintainer             : chr "Paul Pavlidis &lt;paul@msl.ubc.ca&gt;"
+  ..$ MD5sum                 : chr "eea3d4c50114a338a55c2dd8d2f1e78b"
+  ..$ _user                  : chr "bioc"
+  ..$ _type                  : chr "src"
+  ..$ _file                  : chr "gemma.R_3.7.1.tar.gz"
+  ..$ _fileid                : chr "9833a01bd0280e5cfa65c22e182b6b413b8c6f9ef4d8674c0e68bb0ea2779151"
+  ..$ _filesize              : int 1514306
+  ..$ _sha256                : chr "9833a01bd0280e5cfa65c22e182b6b413b8c6f9ef4d8674c0e68bb0ea2779151"
+  ..$ _created               : chr "2026-01-14T03:59:55.000Z"
+  ..$ _published             : chr "2026-01-14T04:26:32.575Z"
+  ..$ _jobs                  :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 138
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 187
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "FAILURE"
-  .. .. ..$ artifact: chr ""
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5121718988"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 162
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 569
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107023211"
+  .. .. ..$ artifact: chr "5121757983"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 135
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 531
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107017785"
+  .. .. ..$ artifact: chr "5121754184"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 90
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 480
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107017948"
+  .. .. ..$ artifact: chr "5121857154"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 111
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 415
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107025248"
+  .. .. ..$ artifact: chr "5121849235"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 158
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 450
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5106996899"
+  .. .. ..$ artifact: chr "5121699126"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 95
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 155
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107010348"
+  .. .. ..$ artifact: chr "5121715440"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 88
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 443
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107008826"
+  .. .. ..$ artifact: chr "5121745282"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 83
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 477
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107008507"
+  .. .. ..$ artifact: chr "5121748701"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.02e+10
-  .. .. ..$ time    : int 88
+  .. .. ..$ job     : num 6.03e+10
+  .. .. ..$ time    : int 453
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5107010137"
-  ..$ _buildurl       : chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
-  ..$ _status         : chr "success"
-  ..$ _host           : chr "GitHub-Actions"
-  ..$ _upstream       : chr "https://github.com/bioc/assorthead"
-  ..$ _commit         :List of 5
-  .. ..$ id       : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. ..$ author   : chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  .. ..$ committer: chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  .. ..$ message  : chr "Bumped version and date.\n"
-  .. ..$ time     : int 1768267544
-  ..$ _maintainer     :List of 5
-  .. ..$ name   : chr "Aaron Lun"
-  .. ..$ email  : chr "infinite.monkeys.with.keyboards@gmail.com"
-  .. ..$ login  : chr "ltla"
-  .. ..$ twitter: chr "@realAaronLun"
-  .. ..$ uuid   : int 8166669
-  ..$ _registered     : logi TRUE
-  ..$ _dependencies   :List of 3
+  .. .. ..$ artifact: chr "5121746275"
+  ..$ _bioccheck             :List of 3
+  .. ..$ error  : int 0
+  .. ..$ warning: int 2
+  .. ..$ note   : int 11
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
+  ..$ _status                : chr "success"
+  ..$ _host                  : chr "GitHub-Actions"
+  ..$ _upstream              : chr "https://github.com/bioc/gemma.R"
+  ..$ _commit                :List of 5
+  .. ..$ id       : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. ..$ author   : chr "OganM &lt;ogan.mancarcii@gmail.com&gt;"
+  .. ..$ committer: chr "OganM &lt;ogan.mancarcii@gmail.com&gt;"
+  .. ..$ message  : chr "version bump\n"
+  .. ..$ time     : int 1768347890
+  ..$ _maintainer            :List of 5
+  .. ..$ name : chr "Paul Pavlidis"
+  .. ..$ email: chr "paul@msl.ubc.ca"
+  .. ..$ login: chr "ppavlidis"
+  .. ..$ uuid : int 206415
+  .. ..$ orcid: chr "0000-0002-0426-5028"
+  ..$ _distro                : chr "noble"
+  ..$ _registered            : logi TRUE
+  ..$ _dependencies          :List of 38
   .. ..$ :List of 2
-  .. .. ..$ package: chr "knitr"
+  .. .. ..$ package: chr "magrittr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "glue"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "memoise"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "data.table"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rlang"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "lubridate"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "utils"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "stringr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Biobase"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "httr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rappdirs"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "bit64"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "assertthat"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "digest"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "R.utils"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "kableExtra"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "base64enc"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 2.0.0"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
+  .. .. ..$ package: chr "knitr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "covr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ggrepel"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner          : chr "bioc"
-  ..$ _selfowned      : logi TRUE
-  ..$ _usedby         : int 191
-  ..$ _updates        :List of 22
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-03"
-  .. .. ..$ n   : int 1
+  .. .. ..$ package: chr "microbenchmark"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-07"
+  .. .. ..$ package: chr "magick"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "purrr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "pheatmap"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "viridis"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "poolr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "listviewer"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "shiny"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                 : chr "bioc"
+  ..$ _selfowned             : logi TRUE
+  ..$ _usedby                : int 0
+  ..$ _updates               :List of 11
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-14"
+  .. .. ..$ n   : int 19
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-15"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-10"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-16"
-  .. .. ..$ n   : int 2
+  .. .. ..$ week: chr "2025-18"
+  .. .. ..$ n   : int 5
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-21"
-  .. .. ..$ n   : int 2
+  .. .. ..$ n   : int 6
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-22"
-  .. .. ..$ n   : int 1
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-23"
-  .. .. ..$ n   : int 1
+  .. .. ..$ week: chr "2025-25"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-24"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-29"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-31"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-34"
-  .. .. ..$ n   : int 3
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ week: chr "2025-26"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-36"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-37"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-41"
-  .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-42"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-43"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-46"
-  .. .. ..$ n   : int 1
+  .. .. ..$ week: chr "2025-40"
+  .. .. ..$ n   : int 11
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-50"
+  .. .. ..$ week: chr "2025-41"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-02"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
   .. .. ..$ week: chr "2026-03"
-  .. .. ..$ n   : int 1
-  ..$ _tags           : list()
-  ..$ _bioc           :List of 2
+  .. .. ..$ n   : int 3
+  ..$ _tags                  : list()
+  ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.5.4"
+  .. .. ..$ version: chr "3.7.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.4.0"
+  .. .. ..$ version: chr "3.6.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics         :List of 7
-  .. ..$ : chr "singlecell"
-  .. ..$ : chr "qualitycontrol"
-  .. ..$ : chr "normalization"
-  .. ..$ : chr "datarepresentation"
+  ..$ _topics                :List of 17
+  .. ..$ : chr "software"
   .. ..$ : chr "dataimport"
+  .. ..$ : chr "microarray"
+  .. ..$ : chr "singlecell"
+  .. ..$ : chr "thirdpartyclient"
   .. ..$ : chr "differentialexpression"
-  .. ..$ : chr "alignment"
-  ..$ _stars          : int 1
-  ..$ _contributors   :List of 2
+  .. ..$ : chr "geneexpression"
+  .. ..$ : chr "bayesian"
+  .. ..$ : chr "annotation"
+  .. ..$ : chr "experimentaldesign"
+  .. ..$ : chr "normalization"
+  .. ..$ : chr "batcheffect"
+  .. ..$ : chr "preprocessing"
+  .. ..$ : chr "bioinformatics"
+  .. ..$ : chr "gemma"
+  .. ..$ : chr "genomics"
+  .. ..$ : chr "transcriptomics"
+  ..$ _stars                 : int 10
+  ..$ _contributors          :List of 6
   .. ..$ :List of 3
-  .. .. ..$ user : chr "ltla"
-  .. .. ..$ count: int 102
-  .. .. ..$ uuid : int 8166669
+  .. .. ..$ user : chr "oganm"
+  .. .. ..$ count: int 779
+  .. .. ..$ uuid : int 6352379
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "yavyx"
+  .. .. ..$ count: int 276
+  .. .. ..$ uuid : int 30913679
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jsicherman"
+  .. .. ..$ count: int 112
+  .. .. ..$ uuid : int 59576076
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 6
+  .. .. ..$ count: int 16
   .. .. ..$ uuid : int 1744257
-  ..$ _userbio        :List of 4
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "ppavlidis"
+  .. .. ..$ count: int 10
+  .. .. ..$ uuid : int 206415
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "arteymix"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 1318477
+  ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads      :List of 2
-  .. ..$ count : int 18906
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/assorthead"
-  ..$ _devurl         : chr "https://github.com/ltla/assorthead"
-  ..$ _searchresults  : int 0
-  ..$ _rbuild         : chr "4.5.2"
-  ..$ _assets         :List of 9
-  .. ..$ : chr "extra/assorthead.html"
+  ..$ _downloads             :List of 2
+  .. ..$ count : int 318
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/gemma.R"
+  ..$ _devurl                : chr "https://github.com/pavlidislab/gemma.r"
+  ..$ _pkgdown               : chr "https://pavlidislab.github.io/gemma.R/"
+  ..$ _searchresults         : int 31
+  ..$ _rbuild                : chr "4.5.2"
+  ..$ _assets                :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
+  .. ..$ : chr "extra/gemma.R.html"
+  .. ..$ : chr "extra/NEWS.html"
+  .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl        : chr "https://github.com/ltla/assorthead"
-  ..$ _realowner      : chr "bioc"
-  ..$ _cranurl        : logi FALSE
-  ..$ _exports        : list()
-  ..$ _help           : list()
-  ..$ _readme         : chr "https://github.com/bioc/assorthead/raw/HEAD/README.md"
-  ..$ _rundeps        : list()
-  ..$ _vignettes      :List of 1
+  ..$ _homeurl               : chr "https://github.com/pavlidislab/gemma.r"
+  ..$ _realowner             : chr "bioc"
+  ..$ _cranurl               : logi FALSE
+  ..$ _exports               :List of 41
+  .. ..$ : chr "filter_properties"
+  .. ..$ : chr "forget_gemma_memoised"
+  .. ..$ : chr "gemma_call"
+  .. ..$ : chr "gemma_kable"
+  .. ..$ : chr "gemma_memoise"
+  .. ..$ : chr "get_all_pages"
+  .. ..$ : chr "get_annotation_children"
+  .. ..$ : chr "get_annotation_parents"
+  .. ..$ : chr "get_child_terms"
+  .. ..$ : chr "get_dataset_annotations"
+  .. ..$ : chr "get_dataset_differential_expression_analyses"
+  .. ..$ : chr "get_dataset_expression"
+  .. ..$ : chr "get_dataset_expression_for_genes"
+  .. ..$ : chr "get_dataset_object"
+  .. ..$ : chr "get_dataset_platforms"
+  .. ..$ : chr "get_dataset_processed_expression"
+  .. ..$ : chr "get_dataset_publications"
+  .. ..$ : chr "get_dataset_quantitation_types"
+  .. ..$ : chr "get_dataset_raw_expression"
+  .. ..$ : chr "get_dataset_samples"
+  .. ..$ : chr "get_datasets"
+  .. ..$ : chr "get_datasets_by_ids"
+  .. ..$ : chr "get_differential_expression_values"
+  .. ..$ : chr "get_gene_differential_expression_values"
+  .. ..$ : chr "get_gene_go_terms"
+  .. ..$ : chr "get_gene_locations"
+  .. ..$ : chr "get_gene_probes"
+  .. ..$ : chr "get_genes"
+  .. ..$ : chr "get_platform_annotations"
+  .. ..$ : chr "get_platform_datasets"
+  .. ..$ : chr "get_platform_element_genes"
+  .. ..$ : chr "get_platforms_by_ids"
+  .. ..$ : chr "get_result_sets"
+  .. ..$ : chr "get_taxa"
+  .. ..$ : chr "get_taxon_datasets"
+  .. ..$ : chr "make_design"
+  .. ..$ : chr "search_annotations"
+  .. ..$ : chr "search_datasets"
+  .. ..$ : chr "search_gemma"
+  .. ..$ : chr "set_gemma_user"
+  .. ..$ : chr "update_result"
+  ..$ _help                  :List of 39
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "filter_properties"
+  .. .. ..$ title : chr "Return all supported filter properties"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "filter_properties"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "forget_gemma_memoised"
+  .. .. ..$ title : chr "Clear gemma.R cache"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "forget_gemma_memoised"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gemma_call"
+  .. .. ..$ title : chr "Custom gemma call"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "gemma_call"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gemma_kable"
+  .. .. ..$ title : chr "Create printable tables out of gemma.R outputs"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "gemma_kable"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gemma_memoise"
+  .. .. ..$ title : chr "Enable and disable memoisation of gemma.R functions"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "gemma_memoise"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gemma.R"
+  .. .. ..$ title : chr "gemma.R package: Access curated gene expression data and differential expression analyses"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "gemma.R-package"
+  .. .. .. ..$ : chr "gemma.R"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_all_pages"
+  .. .. ..$ title : chr "Get all pages of a paginated call"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_all_pages"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_annotation_children"
+  .. .. ..$ title : chr "Retrieve children of a given annotation"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_annotation_children"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_annotation_parents"
+  .. .. ..$ title : chr "Retrieve parents of a given annotation"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_annotation_parents"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_child_terms"
+  .. .. ..$ title : chr "Return child terms of a term"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_child_terms"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_annotations"
+  .. .. ..$ title : chr "Retrieve the annotations of a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_annotations"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_differential_expression_analyses"
+  .. .. ..$ title : chr "Retrieve annotations and surface level stats for a dataset's differential analyses"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_differential_expression_analyses"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_expression_for_genes"
+  .. .. ..$ title : chr "Retrieve the expression data matrix of a set of datasets and genes"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_expression_for_genes"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_object"
+  .. .. ..$ title : chr "Compile gene expression data and metadata"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_object"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_platforms"
+  .. .. ..$ title : chr "Retrieve the platforms of a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_platforms"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_processed_expression"
+  .. .. ..$ title : chr "Retrieve processed expression data of a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_processed_expression"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_publications"
+  .. .. ..$ title : chr "Retrieve all publications associated with a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_publications"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_quantitation_types"
+  .. .. ..$ title : chr "Retrieve quantitation types of a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_quantitation_types"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_raw_expression"
+  .. .. ..$ title : chr "Retrieve raw expression data of a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_raw_expression"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_dataset_samples"
+  .. .. ..$ title : chr "Retrieve the samples of a dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_dataset_samples"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_datasets"
+  .. .. ..$ title : chr "Retrieve all datasets"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_datasets"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_datasets_by_ids"
+  .. .. ..$ title : chr "Retrieve datasets by their identifiers"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_datasets_by_ids"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_differential_expression_values"
+  .. .. ..$ title : chr "Retrieve differential expression results"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_differential_expression_values"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_gene_differential_expression_values"
+  .. .. ..$ title : chr "Retrieve the differential expression results for a given gene among datasets matching the provided query and filter"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_gene_differential_expression_values"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_gene_go_terms"
+  .. .. ..$ title : chr "Retrieve the GO terms associated to a gene"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_gene_go_terms"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_gene_locations"
+  .. .. ..$ title : chr "Retrieve the physical locations of a given gene"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_gene_locations"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_gene_probes"
+  .. .. ..$ title : chr "Retrieve the probes associated to a genes across all platforms"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_gene_probes"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_genes"
+  .. .. ..$ title : chr "Retrieve all genes"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_genes"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_platform_annotations"
+  .. .. ..$ title : chr "Retrieve Platform Annotations by Gemma"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_platform_annotations"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_platform_datasets"
+  .. .. ..$ title : chr "Retrieve all experiments using a given platform"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_platform_datasets"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_platform_element_genes"
+  .. .. ..$ title : chr "Retrieve the genes associated to a probe in a given platform"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_platform_element_genes"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_platforms_by_ids"
+  .. .. ..$ title : chr "Retrieve all platforms matching a set of platform identifiers"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_platforms_by_ids"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_result_sets"
+  .. .. ..$ title : chr "Retrieve all result sets matching the provided criteria"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_result_sets"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "get_taxa"
+  .. .. ..$ title : chr "Get taxa"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "get_taxa"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "make_design"
+  .. .. ..$ title : chr "Make simplified design frames"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "make_design"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "search_annotations"
+  .. .. ..$ title : chr "Search for annotation tags"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "search_annotations"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "search_gemma"
+  .. .. ..$ title : chr "Search everything in Gemma"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "search_gemma"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "set_gemma_user"
+  .. .. ..$ title : chr "Authentication by user name"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "set_gemma_user"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "update_result"
+  .. .. ..$ title : chr "Update result"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "update_result"
+  ..$ _pkglogo               : chr "https://github.com/bioc/gemma.R/raw/HEAD/man/figures/logo.png"
+  ..$ _readme                : chr "https://github.com/bioc/gemma.R/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 82
+  .. ..$ : chr "abind"
+  .. ..$ : chr "askpass"
+  .. ..$ : chr "assertthat"
+  .. ..$ : chr "base64enc"
+  .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "bslib"
+  .. ..$ : chr "cachem"
+  .. ..$ : chr "cli"
+  .. ..$ : chr "cpp11"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "data.table"
+  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "digest"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "evaluate"
+  .. ..$ : chr "farver"
+  .. ..$ : chr "fastmap"
+  .. ..$ : chr "fontawesome"
+  .. ..$ : chr "fs"
+  .. ..$ : chr "generics"
+  .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "highr"
+  .. ..$ : chr "htmltools"
+  .. ..$ : chr "httr"
+  .. ..$ : chr "IRanges"
+  .. ..$ : chr "jquerylib"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "kableExtra"
+  .. ..$ : chr "knitr"
+  .. ..$ : chr "labeling"
+  .. ..$ : chr "lattice"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "lubridate"
+  .. ..$ : chr "magrittr"
+  .. ..$ : chr "Matrix"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "memoise"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "purrr"
+  .. ..$ : chr "R.methodsS3"
+  .. ..$ : chr "R.oo"
+  .. ..$ : chr "R.utils"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "rappdirs"
+  .. ..$ : chr "RColorBrewer"
+  .. ..$ : chr "rlang"
+  .. ..$ : chr "rmarkdown"
+  .. ..$ : chr "rstudioapi"
+  .. ..$ : chr "S4Arrays"
+  .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "sass"
+  .. ..$ : chr "scales"
+  .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "SummarizedExperiment"
+  .. ..$ : chr "svglite"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "systemfonts"
+  .. ..$ : chr "textshaping"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "timechange"
+  .. ..$ : chr "tinytex"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "viridisLite"
+  .. ..$ : chr "withr"
+  .. ..$ : chr "xfun"
+  .. ..$ : chr "xml2"
+  .. ..$ : chr "XVector"
+  .. ..$ : chr "yaml"
+  ..$ _vignettes             :List of 3
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "userguide.Rmd"
-  .. .. ..$ filename: chr "userguide.html"
-  .. .. ..$ title   : chr "Assortment of header-only libraries"
-  .. .. ..$ author  : chr "Aaron Lun"
+  .. .. ..$ source  : chr "metadata.Rmd"
+  .. .. ..$ filename: chr "metadata.html"
+  .. .. ..$ title   : chr "A guide to metadata for samples and differential expression analyses"
+  .. .. ..$ author  : chr "B. Ogan Mancarci"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 5
-  .. .. .. ..$ : chr "Overview"
-  .. .. .. ..$ : chr "Quick start"
-  .. .. .. ..$ : chr "Available libraries"
-  .. .. .. ..$ : chr "Using interfaces"
-  .. .. .. ..$ : chr "Contributing"
-  .. .. ..$ created : chr "2024-07-18 18:29:28"
-  .. .. ..$ modified: chr "2024-08-09 17:42:27"
-  .. .. ..$ commits : int 4
-  ..$ _score          : num 9.08
-  ..$ _indexed        : logi TRUE
-  ..$ _nocasepkg      : chr "assorthead"
-  ..$ _universes      :List of 2
+  .. .. ..$ headings:List of 6
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Dataset tags"
+  .. .. .. ..$ : chr "Factor values"
+  .. .. .. ..$ : chr "Sample factor values"
+  .. .. .. ..$ : chr "Differential expression analysis factor values"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2023-12-07 10:10:05"
+  .. .. ..$ modified: chr "2025-09-02 22:52:14"
+  .. .. ..$ commits : int 12
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "metanalysis.Rmd"
+  .. .. ..$ filename: chr "metanalysis.html"
+  .. .. ..$ title   : chr "A meta analysis on effects of Parkinson's Disease using Gemma.R"
+  .. .. ..$ author  : chr "B. Ogan Mancarci"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 7
+  .. .. .. ..$ : chr "Identifying what to search for"
+  .. .. .. ..$ : chr "Querying datasets of interest"
+  .. .. .. ..$ : chr "Filtering the datasets for suitability"
+  .. .. .. ..$ : chr "Getting the p-values for the condition comparison"
+  .. .. .. ..$ : chr "Combining the acquired p values"
+  .. .. .. ..$ : chr "Acquiring the expression data for a top gene"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2023-01-30 21:26:16"
+  .. .. ..$ modified: chr "2024-04-29 05:20:09"
+  .. .. ..$ commits : int 35
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "gemma.R.Rmd"
+  .. .. ..$ filename: chr "gemma.R.html"
+  .. .. ..$ title   : chr "Accessing curated gene expression data with gemma.R"
+  .. .. ..$ author  : chr "Javier Castillo-Arnemann, Jordan Sicherman, B. Ogan Mancarci"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 15
+  .. .. .. ..$ : chr "About Gemma"
+  .. .. .. ..$ : chr "Package cheat sheet"
+  .. .. .. ..$ : chr "Installation instructions"
+  .. .. .. ..$ : chr "Bioconductor"
+  .. .. .. ..$ : chr "Searching for datasets of interest in Gemma"
+  .. .. .. ..$ : chr "Downloading expression data"
+  .. .. .. ..$ : chr "Platform Annotations"
+  .. .. .. ..$ : chr "Differential expression analyses"
+  .. .. .. ..$ : chr "Larger queries"
+  .. .. .. ..$ : chr "Output options"
+  .. .. .. ..$ : chr "Raw data"
+  .. .. .. ..$ : chr "File outputs"
+  .. .. .. ..$ : chr "Memoise data"
+  .. .. .. ..$ : chr "Changing defaults"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2021-11-03 23:03:43"
+  .. .. ..$ modified: chr "2025-04-01 02:50:21"
+  .. .. ..$ commits : int 71
+  ..$ _score                 : num 7.41
+  ..$ _indexed               : logi TRUE
+  ..$ _nocasepkg             : chr "gemma.r"
+  ..$ _universes             :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "ltla"
-  ..$ _binaries       :List of 8
+  .. ..$ : chr "ppavlidis"
+  .. ..$ : chr "pavlidislab"
+  ..$ _previous              : chr "3.7.0"
+  ..$ _binaries              :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:36:10.000Z"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:04:28.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "ac6095d13caf5ef62d96cd2461c069794e053976dc92b591ceef5b1100568762"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "a65e0d6fcbc177570573f9b70e0ad5cd18b0a9d6888a2c8d5b89ca731f900b15"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:35:42.000Z"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:03:40.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "eb9588006876d50ef5c71f3c9c1e07dcbcb47fca13b1aec43b62a7f770ca2a41"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "09f79b67ce41628c065ab48eefd72aeb08fbdfb6e41674c70f0597ff0ad5e744"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:35:44.000Z"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "dde6262ef47cf8e8e040bded3d3d37d6ab5469b79e84808f7ec3bb81bb95a7c5"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:20:04.000Z"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "c9bb84cd29e073daf9f1a07ebfe72d60cd110befe972fe0e096c0a163acb935f"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:36:22.000Z"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "e3ca3c223d29c715d2b58154c599fde8ba5e951f49287c33a74b1c80e7653aeb"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:19:59.000Z"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "510a849a7640f6bca7e0502e2ad33a6ee0c00bed3d9257af03610429e7eaa299"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:35:10.000Z"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "6e96cce2dac676a808581d7f02927565ce4da4bb89f7da1082afeecf1cd45f32"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:02:55.000Z"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "79d0425f41bb6a698d92c1e0e8f449209ce6fe91e0860ad022fa047cb88372d3"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:34:36.000Z"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "043f131044c9fa89f4098cd810dafdf821dfa9146a82515cb29fc1d4b4675e29"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:01:31.000Z"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "11d24c3f6a74b29c9916622d64b3ebe8e9c68fb0e83407450a3079902fa49c87"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:34:35.000Z"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "fc9302edc3469b9295487dcd74ef2b173c2ac1449173c67908f16370c8ef6bef"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:01:28.000Z"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "e24bc809197b01073bb3ae60357ad38e31dc64e1a23a074ac15c1932ba7082b0"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.5.5"
-  .. .. ..$ date    : chr "2026-01-13T03:34:50.000Z"
-  .. .. ..$ commit  : chr "00a57d12f41d28aeec19fb027ef3b4bf4c4bfda0"
-  .. .. ..$ fileid  : chr "c20b95f97d1341ef3bfb4495b2507fc40c56492ff1fbf0e3b1f6b967c3f4c3c6"
+  .. .. ..$ version : chr "3.7.1"
+  .. .. ..$ date    : chr "2026-01-14T04:01:25.000Z"
+  .. .. ..$ commit  : chr "ee7b6e953db187751b1c05c72ccd8c583d20ab22"
+  .. .. ..$ fileid  : chr "007b039f772fa7144afefef274ae04f35f8e4c1cf6a660f9ef4728f69d668ad1"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20943609672"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/20981700270"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
