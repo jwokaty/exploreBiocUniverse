@@ -38,12 +38,12 @@ r_x_y_ver <- "4.5"
 ## Accessing mongodb
 
 ```{r connecting-as-biocReader}
-db <- "RELEASE_3_21"
-collection <- "software"
+db <- "runiverse"
+collection <- "RELEASE_3_23"
 user <- "biocReader"
 pass <- "5202Coib"
 URI <- paste0("mongodb://", user, ":", pass,
-              "@149.165.171.200:32222/",db)
+              "@149.165.150.62:27017/",db)
 conn <- mongo(collection = collection, db = db, url = URI)
 results <- conn$find()
 conn$disconnect() 
