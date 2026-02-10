@@ -5,6 +5,10 @@ editor: visual
 engine: knitr
 ---
 
+# Note
+
+This was an initial exploration, which is now old. Please see [comparison](comparison.qmd).
+
 # Comparing Bioconductor packages in R-Universe and the BBS
 
 Skip to [Packages not in agreements](#packages-not-in-agreement) or go to [windows](windows.qmd).
