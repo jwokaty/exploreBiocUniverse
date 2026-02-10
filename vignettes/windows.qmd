@@ -16,8 +16,6 @@ This document attempts to track Windows builds for Bioconductor packages for the
 
 Because R universe build for multiple versions of R whereas Bioconductor branches build for a specific version, the following tables display only the package builds corresponding the Bioconductor branch's specific R version.
 
-A URL may be generated to download a snapshot; however, for a large number of files, it may be better to download individual files.
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 ```
@@ -26,244 +24,112 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 
 library(universe)
 library(BiocPkgTools)
+library(biocUniTools)
 library(dplyr)
-library(DT)
+library(reactable)
 library(tibble)
 
 # set max.print to get all packages
 options(max.print = 3000L)
 
-#' Get x.y version of R
-#'
-#' @returns character x.y
-#' 
-#' @examples
-#' r_xy_ver("4.5.2")
-r_xy_ver <- function(x) {
-    xyz <- strsplit(x[[1]], "\\.")
-    paste(xyz[[1]][1], xyz[[1]][2], sep=".")
-}
-
-#' Generates the URL to retrieve the snapshot of a universe
-#' 
-#' NOTE: This will likely not work for a large number of packages
-#'
-#' @uni character name of the universe
-#' @r_versions character R versions
-#' @oses character comma separated string of oses without spaces; any combination 
-#'     of src,win,mac,linux,wasm,docs
-#' @pkgs character a string of comma-separated package names without spaces or a
-#'     character vector of package names
-#'
-#' @return character url to download snapshot
-#' 
-#' @examples
-#' make_snapshot_url("bioc", "4.6", "win", "bedbaser")
-make_snapshot_url <- function(uni, r_versions = NULL, oses = NULL, pkgs = NULL) {
-    suffix <- ""
-
-    if (!is.null(oses)) {
-        suffix <- ifelse(suffix == "", paste0("zip?types=", oses),
-                         paste0(suffix, "&types=", oses))
-    }
-
-    if (!is.null(r_versions)) {
-        versions <- sapply(strsplit(r_versions, ",[ ]*")[[1]], r_xy_ver) |>
-            unname() |>
-            paste(collapse = ",")
-        suffix <- ifelse(suffix == "",
-                         paste0("zip?binaries=", versions),
-                         paste0(suffix, "&binaries=", versions))
-    }
-    if (!is.null(pkgs)) {
-        if (length(pkgs) > 1)
-            pkgs <- paste0(pkgs, collapse = ",")
-        suffix <- paste0(suffix, "&packages=", pkgs, collapse="")
-    }
-    paste0("https://", uni, ".r-universe.dev/api/snapshot/", suffix)
-}
-
-uni_pkg_file <- function(pkg, os, bin_ver) {
-    if (os == "windows")
-        ext <- "zip"
-    else if (os == "macosx")
-        ext <- "tgz"
-    else
-        ext <- "tar.gz"
-    paste0(pkg, "_", bin_ver, ".", ext)
-}
-
-uni_repo_url <- function(uni, os, r_version) {
-    if (os == "macosx")
-        repo_path <- paste(c("bin", os, "big-sur-x86_64"), collapse = "/")
-    else if (os == "windows")
-        repo_path <- paste(c("bin", os), collapse = "/")
-    else
-        repo_path <- "src"
-    root <- paste0("https://", uni, ".r-universe.dev")
-    paste(c(root, repo_path, "contrib", r_xy_ver(r_version), ""), collapse = "/")
-}
-
-get_binary_os <- function(os) {
-    if (os %in% c("windows", "macos"))
-        os <- substr(os, 1, 3)
-    os
-}
-
-get_uni_pkgs <- function(uni, uni_branch, r_version, os, bioc_version) {
-    ru_info <- universe::universe_all_packages(uni, limit = 3000L)
-    bbs_info <- BiocPkgTools::biocPkgList(version = bioc_version,
-                                          repo="BioCsoft")
-
-    builds <- data.frame(Package = "",
-                         Version = "",
-                         JobUrl = "",
-                         JobCheck = "",
-                         BinariesCheck = "",
-                         BinariesUrl = "",
-                         BinariesBuildDate = "",
-                         BinariesStatus = "",
-                         RU_commit = "",
-                         BBS_commit = "",
-                         MD5sum = "",
-                         RemoteSha = "",
-                         RemoteUrl = "",
-                         Published = "",
-                         File = "",
-                         Url = "")
-
-    uni_repo <- uni_repo_url(uni, os, r_version)
-
-    for (i in seq_along(ru_info)) {
-      jobid <- ""
-      jobcheck <- ""
-      binaries_buildurl <- ""
-      binaries_status <- ""
-      binaries_check <- ""
-      binaries_builddate <- ""
-      binaries_version <- ""
-      
-      for (j in seq_along(ru_info[[i]]$`_jobs`)) {
-        job <- ru_info[[i]]$`_jobs`[[j]]
-        if (job$config == paste(os, uni_branch, sep = "-") && job$r == r_version) {
-          jobid <- as.character(job$job)
-          jobcheck <- job$check
-          break
-        }
-      }
-      
-      for (k in seq_along(ru_info[[i]]$`_binaries`)) {
-        binary <- ru_info[[i]]$`_binaries`[[k]]
-        if (binary$os == get_binary_os(os) && binary$r == r_version) {
-          ru_commit <- as.character(binary$commit)
-          binaries_buildurl <- binary$buildurl
-          binaries_status <- binary$status
-          binaries_check <- binary$check
-          binaries_builddate <- binary$date
-          binaries_version <- binary$version
-          break
-        }
-      }
-      
-      if (is.null(ru_commit))
-          ru_commit <- ""
-      
-      bbs_commit <- bbs_info |>
-        dplyr::filter(Package == ru_info[[i]]$Package) |>
-        dplyr::pull(git_last_commit)
-
-      pkg_file <- uni_pkg_file(ru_info[[i]]$Package, os, binaries_version)
-      url <- paste0(uni_repo, pkg_file)
-      link <- paste0("<a href='", url, "'>", pkg_file, "</a>")
-      builds <- tibble::add_row(builds,
-                                Package = ru_info[[i]]$Package,
-                                Version = ru_info[[i]]$Version,
-                                JobUrl = ifelse(!is.null(ru_info[[i]]$`_buildurl`),
-                                                paste0("<a href='",
-                                                       ru_info[[i]]$`_buildurl`, "/job/",
-                                                       jobid, "'>", jobcheck,
-                                                       "</a>"),
-                                                ""),
-                                JobCheck = jobcheck,
-                                BinariesCheck = binaries_check,
-                                BinariesUrl = ifelse(binaries_status == "success",
-                                                     paste0("<a href='",
-                                                            binaries_buildurl,
-                                                            "'>", binaries_check,
-                                                            "</a>"),
-                                                     paste0("<a href='",
-                                                            binaries_buildurl,
-                                                            "'>", binaries_status,
-                                                            "</a>")),
-                                RU_commit = substr(ru_commit, 1, 7),
-                                BBS_commit = bbs_commit,
-                                MD5sum = substr(ru_info[[i]]$MD5sum, 1, 7),
-                                RemoteSha = substr(ru_info[[i]]$RemoteSha, 1, 7),
-                                RemoteUrl = ru_info[[i]]$RemoteUrl,
-                                Published = ru_info[[i]]$`_published`,
-                                BinariesBuildDate = binaries_builddate,
-                                BinariesStatus = binaries_status,
-                                Url = ifelse(jobcheck == "FAIL", "", url),
-                                File = ifelse(jobcheck == "FAIL", "", link))
-    }
-    
-    # drop blank first row
-    builds <- builds[c(-1), ]
-    
-    builds |>
-      dplyr::arrange(Package)
-}
+r_version <- "4.6.0"
+bioc_version <- "3.23"
+uni <- "bioc"
+uni_os_branch <- "devel"
+ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
+                                        "windows", verbose = FALSE)
+bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
+                                            pkgType = "software")
 ```
 
-# Bioconductor Devel on bioc.r-universe.dev
+## Bioconductor Devel Windows on bioc.r-universe.dev
 
-## Devel Windows
+Note: The following packages may not have the same version or commit hash in
+R Universe and the BBS. Only packages with the same version and commit hash
+are currently propagated.
 
 ```{r devel-windows-results, message = FALSE}
-uni_devel_pkgs <- get_uni_pkgs("bioc", "devel", "4.6.0", "windows", "3.23")
+bbs_builds <- bbs_pkgs_i |>
+    dplyr::filter(node == "nebbiolo1", stage == "checksrc") |>
+    dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
+    dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
+                  Check = result)
 
-devel_uni_pkgs <- dplyr::rename(uni_devel_pkgs, "Latest Check" = JobUrl,
-                                "Binary Check" = BinariesUrl) |>
-      dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                    BinariesBuildDate, RU_commit, BBS_commit, File)
+devel_builds <- merge(bbs_builds, ru_builds, by = "Package")
+devel_builds <- devel_builds |>
+  dplyr::rename(`RU Version` = `Version.x`, `BBS Version` = `Version.y`,
+                `BBS Commit` = `BBS_commit`, `RU Commit` = `RU_commit`,
+                `BBS Check` = Check, `RU Job Check` = JobCheck,
+                `RU Binaries Check` = `BinariesCheck`,
+                `RU Binary Status` = BinariesStatus, `Job Url` = JobUrl) |>
+dplyr::select(Package, `RU Version`, `BBS Version`, `BBS Commit`, `RU Commit`,
+              `BBS Check`, `RU Job Check`, `RU Binaries Check`,
+              `RU Binary Status`, `Job Url`, Deprecated)
 
-DT::datatable(devel_uni_pkgs, escape = FALSE)
+reactable::reactable(subset(devel_builds, select = -`Job Url`),
+                     defaultPageSize = 50,
+                     compact = TRUE,
+                     columns = list(
+                        `RU Job Check` = reactable::colDef(cell = function(value, index) {
+                            if (is.na(value)) {
+                                "No url"
+                            } else {
+                                htmltools::tags$a(href = devel_builds[index, "Job Url"],
+                                                  target = "_blank",
+                                                  as.character(value))
+                            }}))
+)
+
 ```
 
-## Devel Windows: Passing with same commit hash as in BBS
+## Bioconductor Release Windows on bioc-release.r-universe.dev
 
-The following packages have the same commit hash in R-Universe and the BBS. They also pass the latest `R CMD check` and their binary also passes `R CMD check` with a value of `NOTE`, `WARNING`, or `OK`.
+Note: The following packages may not have the same version or commit hash in
+R Universe and the BBS. Only packages with the same version and commit hash
+are currently propagated.
 
-```{r devel-passing-with-same-commit, message = FALSE}
+```{r release-windows-results, message = FALSE}
+r_version <- "4.5.0"
+bioc_version <- "3.22"
+uni <- "bioc-release"
+uni_os_branch <- "release"
+ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
+                                        "windows", verbose = FALSE)
+bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
+                                            pkgType = "software")
 
-viable_devel_candidates <- uni_devel_pkgs |>
-    dplyr::filter(BBS_commit == RU_commit, 
-                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
-                  JobCheck %in% c("NOTE", "WARNING", "OK"),
-                  BinariesStatus == "success") |>
-    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
-    dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, Published, File,
-                  Url)
+bbs_builds <- bbs_pkgs_i |>
+    dplyr::filter(node == "nebbiolo2", stage == "checksrc") |>
+    dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
+    dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
+                  Check = result)
 
-DT::datatable(viable_devel_candidates, escape = FALSE)
+release_builds <- merge(bbs_builds, ru_builds, by = "Package")
+release_builds <- release_builds |>
+  dplyr::rename(`RU Version` = `Version.x`, `BBS Version` = `Version.y`,
+                `BBS Commit` = `BBS_commit`, `RU Commit` = `RU_commit`,
+                `BBS Check` = Check, `RU Job Check` = JobCheck,
+                `RU Binaries Check` = `BinariesCheck`,
+                `RU Binary Status` = BinariesStatus, `Job Url` = JobUrl) |>
+dplyr::select(Package, `RU Version`, `BBS Version`, `BBS Commit`, `RU Commit`,
+              `BBS Check`, `RU Job Check`, `RU Binaries Check`,
+              `RU Binary Status`, `Job Url`, Deprecated)
+
+reactable::reactable(subset(release_builds, select = -`Job Url`),
+                     defaultPageSize = 50,
+                     compact = TRUE,
+                     columns = list(
+                        `RU Job Check` = reactable::colDef(cell = function(value, index) {
+                            if (is.na(value)) {
+                                "No url"
+                            } else {
+                                htmltools::tags$a(href = release_builds[index, "Job Url"],
+                                                  target = "_blank",
+                                                  as.character(value))
+                            }}))
+)
 ```
 
-## Bioconductor Devel: Windows Failures
-
-The following packages are failing on Windows.
-
-```{r devel-win-errors, message = FALSE}
-
-failing_windows <- uni_devel_pkgs |>
-    dplyr::filter(JobCheck == "ERROR" | BinariesCheck == "ERROR",
-                  BinariesStatus != "success") |>
-    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
-    dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, File)
-
-DT::datatable(failing_windows, escape = FALSE)
-```
 
 ### Understanding the error
 
@@ -272,49 +138,6 @@ For more details about the error, click on the link. The `Latest Check` will go 
 ![annotations](images/annotations.png)
 
 ![r_cmd_check](images/r_cmd_check.png)
-
-# Bioconductor Release on bioc-release.r-universe.dev
-
-```{r release-windows-results, message = FALSE}
-
-uni_release_pkgs <- get_uni_pkgs("bioc-release", "release", "4.5.2", "windows", "3.22")
-
-release_uni_pkgs <- dplyr::rename(uni_release_pkgs, "Latest Check" = JobUrl,
-                                  "Binary Check" = BinariesUrl) |>
-      dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                    BinariesBuildDate, RU_commit, BBS_commit, File)
-
-DT::datatable(release_uni_pkgs, escape = FALSE)
-```
-
-## Bioconductor Release: Passing with same commit hash as in BBS
-
-```{r release-passing-with-same-commit, message = FALSE}
-viable_release_candidates <- uni_release_pkgs |>
-    dplyr::filter(BBS_commit == RU_commit, 
-                  BinariesCheck %in% c("NOTE", "WARNING", "OK"),
-                  JobCheck %in% c("NOTE", "WARNING", "OK"),
-                  BinariesStatus == "success") |>
-    dplyr::rename("Latest Check" = JobUrl, "Binary Check" = BinariesUrl) |>
-    dplyr::select(Package, Version, "Latest Check", "Binary Check",
-                  BinariesBuildDate, RU_commit, BBS_commit, Published, File,
-                  Url)
-
-DT::datatable(viable_release_candidates, escape = FALSE)
-```
-
-## Downloading Packages
-
-```{r devel-download-repo-for-passing-packages, eval = FALSE}
-
-# Download devel packages
-curl::multi_download(viable_devel_candidates$Url)
-
-# Download release packages
-
-curl::multi_download(viable_release_candidates$Url)
-
-```
 
 ## sessionInfo()
 
