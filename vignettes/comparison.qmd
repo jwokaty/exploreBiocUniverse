@@ -9,22 +9,10 @@ engine: knitr
 
 Go to [windows](windows.qmd).
 
-Using the R Universe API, this document looks at differences in packages between
-R Universe and Bioconductor to identify potential issues that require a fix and
-a processes. In particular, we compare
+Using the R Universe API, this document looks at differences in packages between R Universe and Bioconductor to identify potential issues that require a fix and a processes. In particular, we compare
 
-- Bioconductor 3.23 and https://bioc.r-universe.dev
-- Bioconductor 3.22 and https://bioc-release.r-universe.dev
-
-In https://bioc.r-universe.dev, there are versions that differ by 2 `y` versions.
-How did this happen, how can we fix it, and make sure it always follows the
-versions that should be associated with the devel branch of Bioconductor?
-
-There are packages not in R Universe due to early errors. Who is responsible for
-addressing these (maintainer or core) and what's the process?
-
-There are also some packages named as remotes that seem accessible via the API,
-which probably just needs a fix.
+-   Bioconductor 3.23 and https://bioc.r-universe.dev
+-   Bioconductor 3.22 and https://bioc-release.r-universe.dev
 
 ```{r install_universe, echo = FALSE, message = FALSE}
 library(BiocPkgTools)
@@ -40,14 +28,6 @@ options(max.print = .LIMIT)
 
 ## R Universe and Bioconductor 3.23
 
-### Bioc 3.23: Not in Bioconductor
-
-These packages seem available via the API, e.g.,
-https://bioc.r-universe.dev/api/packages/ggpattern, but it doesn't appear on
-https://bioc.r-universe.dev/apis. Their repositories have been set as remotes
-https://github.com/r-universe/bioc/blob/master/.remotes.json, like for ALDEx_bioc: https://github.com/ggloor/ALDEx_bioc/blob/master/DESCRIPTION. Maybe they should
-not be accessible via the API.
-
 ```{r not-in-bbs-devel, echo = FALSE}
 r_version <- "4.6.0"
 bioc_version <- "3.23"
@@ -57,14 +37,7 @@ ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
                                         "linux", verbose = FALSE)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
-bbs_pkgs <- unlist(unique(bbs_pkgs_i$pkg))
-
-not_in_bbs <- setdiff(ru_builds$Package, bbs_pkgs) 
-if (length(not_in_bbs) > 0) {
-    not_in_bbs
-}
 ```
-
 
 ```{r not-in-ru-details-devel, echo = FALSE}
 bbs_builds <- bbs_pkgs_i |>
@@ -89,34 +62,47 @@ not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
 not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
                              Buildurl = "")
 for (pkg in not_in_ru_pkgs$Package) {
-    u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
-    pkglist <- httr2::request(u) |>
-        httr2::req_perform() |>
-        httr2::resp_body_json()
-    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Buildurl <- pkglist$`_buildurl`
+    buildurl <- tryCatch({
+        u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
+        pkglist <- httr2::request(u) |>
+            httr2::req_perform() |>
+            httr2::resp_body_json()
+        pkglist$`_buildurl`
+        
+    }, error = function(e) {
+            body <- httr2::resp_body_string(e$resp)
+            buildurl <- stringr::str_extract(body, 
+                                             paste0("https://github.com/r-universe/",
+                                                    uni, "/actions/runs/[0-9]+"))
+            buildurl
+    })
+    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Buildurl <- buildurl
 }
 ```
 
 ### Bioc 3.23: Early failures and missing dependencies
 
-These packages fail early, sometimes due to missing dependencies or possibly
-DESCRIPTION file errors.
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.
 
 ```{r missing-deps-or-early-failures-devel, echo = FALSE}
-reactable::reactable(not_in_ru_pkgs, defaultPageSize = 50, compact = TRUE,
+reactable::reactable(not_in_ru_pkgs,
+                     defaultPageSize = 50,
+                     compact = TRUE,
                      columns = list(
                         Buildurl = reactable::colDef(cell = function(value, index) {
-                            htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
-                                              target = "_blank",
-                                              as.character(value))
-                            }))
+                            if (is.na(value)) {
+                                "No build url"
+                            } else {
+                                htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
+                                                  target = "_blank",
+                                                  as.character(value))
+                            }}))
 )
 ```
 
 ### Bioc 3.23: Different versions
 
-We should update the packages where y differs. With https://bioc.r-universe.dev,
-y sometimes differs by 2. How does this happen and how do we fix it?
+We should update the packages where y differs. With https://bioc.r-universe.dev, y sometimes differs by 2. How does this happen and how do we fix it?
 
 ```{r different-versions-devel, echo = FALSE}
 unmatched <- unmatched |>
@@ -126,10 +112,11 @@ unmatched <- unmatched |>
 reactable::reactable(unmatched, searchable = TRUE, showPageSizeOptions = TRUE,
                      compact = TRUE)
 ```
+
 ## Bioc 3.23: Same versions
 
-These are probably ok. Only showing result of linux builds. `Check` is the BBS
-result.
+These packages have the same versions and commits for Linux. `Check` shows the
+result in the BBS.
 
 ```{r same-versions-devel, echo = FALSE}
 
@@ -158,7 +145,6 @@ reactable::reactable(condensed_builds, searchable = TRUE,
 
 ## R Universe and Bioconductor 3.22
 
-### Bioc 3.22: Not in BBS
 
 ```{r not-in-bbs-release, echo = FALSE}
 r_version <- "4.5.0"
@@ -169,11 +155,6 @@ ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
                                         "linux", verbose = FALSE)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
-bbs_pkgs <- unlist(unique(bbs_pkgs_i$pkg))
-not_in_bbs <- setdiff(ru_builds$Package, bbs_pkgs) 
-if (length(not_in_bbs) > 0) {
-    not_in_bbs
-}
 ```
 
 ```{r not-in-ru-details-release, echo = FALSE}
@@ -197,30 +178,45 @@ not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
 not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
                              Buildurl = "")
 for (pkg in not_in_ru_pkgs$Package) {
-    u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
-    pkglist <- httr2::request(u) |>
-        httr2::req_perform() |>
-        httr2::resp_body_json()
-    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Buildurl <- pkglist$`_buildurl`
+    buildurl <- tryCatch({
+        u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
+        pkglist <- httr2::request(u) |>
+            httr2::req_perform() |>
+            httr2::resp_body_json()
+        pkglist$`_buildurl`
+        
+    }, error = function(e) {
+            body <- httr2::resp_body_string(e$resp)
+            buildurl <- stringr::str_extract(body, 
+                                             paste0("https://github.com/r-universe/",
+                                                    uni, "/actions/runs/[0-9]+"))
+            buildurl
+    })
+    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Buildurl <- buildurl
 }
 ```
 
 ### Bioc 3.22: Early failures and missing dependencies
 
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.
+
 ```{r missing-deps-or-early-failures-release, echo = FALSE}
-reactable::reactable(not_in_ru_pkgs, defaultPageSize = 50, compact = TRUE,
+reactable::reactable(not_in_ru_pkgs,
+                     defaultPageSize = 50,
+                     compact = TRUE,
                      columns = list(
                         Buildurl = reactable::colDef(cell = function(value, index) {
-                            htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
-                                              target = "_blank",
-                                              as.character(value))
-                            }))
+                            if (is.na(value)) {
+                                "No build url"
+                            } else {
+                                htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
+                                                  target = "_blank",
+                                                  as.character(value))
+                            }}))
 )
 ```
 
 ### Bioc 3.22: Different versions
-
-Better: version differences in only z.
 
 ```{r different-versions-release, echo = FALSE}
 unmatched <- unmatched |>
