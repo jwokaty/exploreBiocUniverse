@@ -1,0 +1,260 @@
+---
+title: "Bioconductor in R Universe"
+format:
+  html:
+    code-fold: true
+editor: visual
+engine: knitr
+---
+
+Go to [windows](windows.qmd).
+
+Using the R Universe API, this document looks at differences in packages between R Universe and Bioconductor to identify potential issues that require a fix and a processes. In particular, we compare
+
+-   Bioconductor 3.23 and https://bioc.r-universe.dev
+-   Bioconductor 3.22 and https://bioc-release.r-universe.dev
+
+```{r install_universe, echo = FALSE, message = FALSE}
+library(BiocPkgTools)
+library(dplyr)
+library(universe)
+library(biocUniTools)
+library(httr2)
+library(reactable)
+
+.LIMIT <- 3000L
+options(max.print = .LIMIT)
+```
+
+## R Universe and Bioconductor 3.23
+
+```{r not-in-bbs-devel, echo = FALSE}
+r_version <- "4.6.0"
+bioc_version <- "3.23"
+uni <- "bioc"
+uni_os_branch <- "devel"
+ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
+                                        "linux", verbose = FALSE)
+bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
+                                            pkgType = "software")
+```
+
+```{r not-in-ru-details-devel, echo = FALSE}
+bbs_builds <- bbs_pkgs_i |>
+    dplyr::filter(node == "nebbiolo1", stage == "checksrc") |>
+    dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
+    dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
+                  Check = result)
+ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version, "linux")
+
+builds <- merge(bbs_builds, ru_builds, by = c("Package", "Version"))
+unmatched_ru_builds <- ru_builds |>
+    dplyr::filter(!Package %in% builds$Package) |>
+    dplyr::select(Package, Version, RU_commit) |>
+    dplyr::rename(RU_Version = Version)
+unmatched_bbs_builds <- bbs_builds |>
+    dplyr::filter(!Package %in% builds$Package) |>
+    dplyr::select(Package, Version, BBS_commit, Deprecated) |>
+    dplyr::rename(BBS_Version = Version)
+unmatched <- dplyr::full_join(unmatched_bbs_builds, unmatched_ru_builds,
+                              by = "Package")
+not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
+not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
+                             Buildurl = "")
+for (pkg in not_in_ru_pkgs$Package) {
+    buildurl <- tryCatch({
+        u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
+        pkglist <- httr2::request(u) |>
+            httr2::req_perform() |>
+            httr2::resp_body_json()
+        pkglist$`_buildurl`
+        
+    }, error = function(e) {
+            body <- httr2::resp_body_string(e$resp)
+            buildurl <- stringr::str_extract(body, 
+                                             paste0("https://github.com/r-universe/",
+                                                    uni, "/actions/runs/[0-9]+"))
+            buildurl
+    })
+    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Buildurl <- buildurl
+}
+```
+
+### Bioc 3.23: Early failures and missing dependencies
+
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.
+
+```{r missing-deps-or-early-failures-devel, echo = FALSE}
+reactable::reactable(not_in_ru_pkgs,
+                     defaultPageSize = 50,
+                     compact = TRUE,
+                     columns = list(
+                        Buildurl = reactable::colDef(cell = function(value, index) {
+                            if (is.na(value)) {
+                                "No build url"
+                            } else {
+                                htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
+                                                  target = "_blank",
+                                                  as.character(value))
+                            }}))
+)
+```
+
+### Bioc 3.23: Different versions
+
+We should update the packages where y differs. With https://bioc.r-universe.dev, y sometimes differs by 2. How does this happen and how do we fix it?
+
+```{r different-versions-devel, echo = FALSE}
+unmatched <- unmatched |>
+    dplyr::filter(!Package %in% c(not_in_ru_pkgs$Package, not_in_bbs_pkgs)) |>
+    dplyr::select(Package, BBS_Version, RU_Version, BBS_commit, RU_commit,
+                  Deprecated)
+reactable::reactable(unmatched, searchable = TRUE, showPageSizeOptions = TRUE,
+                     compact = TRUE)
+```
+
+## Bioc 3.23: Same versions
+
+These packages have the same versions and commits for Linux. `Check` shows the
+result in the BBS.
+
+```{r same-versions-devel, echo = FALSE}
+
+condensed_builds <- builds |>
+    dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
+    dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck,
+                  BinariesCheck, JobUrl, BinariesUrl)
+reactable::reactable(condensed_builds, searchable = TRUE,
+                     showPageSizeOptions = TRUE, compact = TRUE,
+                     columns = list(
+                        JobCheck = reactable::colDef(cell = function(value, index) {
+                            htmltools::tags$a(href = condensed_builds[index, "JobUrl"],
+                                              target = "_blank",
+                                              as.character(value))
+                            }),
+                        BinariesCheck = reactable::colDef(cell = function(value, index) {
+                            htmltools::tags$a(href = condensed_builds[index, "BinariesUrl"],
+                                              target = "_blank",
+                                              as.character(value))
+                            }),
+                        JobUrl = reactable::colDef(show = FALSE),
+                        BinariesUrl = reactable::colDef(show = FALSE)
+                         )
+)
+```
+
+## R Universe and Bioconductor 3.22
+
+
+```{r not-in-bbs-release, echo = FALSE}
+r_version <- "4.5.0"
+bioc_version <- "3.22"
+uni_os_branch <- "release"
+uni <- "bioc-release"
+ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
+                                        "linux", verbose = FALSE)
+bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
+                                            pkgType = "software")
+```
+
+```{r not-in-ru-details-release, echo = FALSE}
+bbs_builds <- bbs_pkgs_i |>
+    dplyr::filter(node == "nebbiolo2", stage == "checksrc") |>
+    dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
+    dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
+                  Check = result)
+
+builds <- merge(bbs_builds, ru_builds, by = c("Package", "Version"))
+unmatched_ru_builds <- ru_builds |>
+    dplyr::filter(!Package %in% builds$Package) |>
+    dplyr::select(Package, Version, RU_commit) |>
+    dplyr::rename(RU_Version = Version)
+unmatched_bbs_builds <- bbs_builds |>
+    dplyr::filter(!Package %in% builds$Package) |>
+    dplyr::select(Package, Version, BBS_commit, Deprecated) |>
+    dplyr::rename(BBS_Version = Version)
+unmatched <- dplyr::full_join(unmatched_bbs_builds, unmatched_ru_builds, by = "Package")
+not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
+not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
+                             Buildurl = "")
+for (pkg in not_in_ru_pkgs$Package) {
+    buildurl <- tryCatch({
+        u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
+        pkglist <- httr2::request(u) |>
+            httr2::req_perform() |>
+            httr2::resp_body_json()
+        pkglist$`_buildurl`
+        
+    }, error = function(e) {
+            body <- httr2::resp_body_string(e$resp)
+            buildurl <- stringr::str_extract(body, 
+                                             paste0("https://github.com/r-universe/",
+                                                    uni, "/actions/runs/[0-9]+"))
+            buildurl
+    })
+    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Buildurl <- buildurl
+}
+```
+
+### Bioc 3.22: Early failures and missing dependencies
+
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.
+
+```{r missing-deps-or-early-failures-release, echo = FALSE}
+reactable::reactable(not_in_ru_pkgs,
+                     defaultPageSize = 50,
+                     compact = TRUE,
+                     columns = list(
+                        Buildurl = reactable::colDef(cell = function(value, index) {
+                            if (is.na(value)) {
+                                "No build url"
+                            } else {
+                                htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
+                                                  target = "_blank",
+                                                  as.character(value))
+                            }}))
+)
+```
+
+### Bioc 3.22: Different versions
+
+```{r different-versions-release, echo = FALSE}
+unmatched <- unmatched |>
+    dplyr::filter(!Package %in% c(not_in_ru_pkgs$Package, not_in_bbs_pkgs)) |>
+    dplyr::select(Package, BBS_Version, RU_Version, BBS_commit, RU_commit,
+                  Deprecated)
+reactable::reactable(unmatched, searchable = TRUE, showPageSizeOptions = TRUE,
+                     compact = TRUE)
+```
+
+### Bioc 3.22: Same versions
+
+Only showing result of linux builds and `Check` is the BBS result.
+
+```{r same-versions-release, echo = FALSE}
+condensed_builds <- builds |>
+    dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
+    dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck, BinariesCheck,
+                  JobUrl, BinariesUrl)
+reactable::reactable(condensed_builds, searchable = TRUE,
+                     showPageSizeOptions = TRUE, compact = TRUE,
+                     columns = list(
+                        JobCheck = reactable::colDef(cell = function(value, index) {
+                            htmltools::tags$a(href = condensed_builds[index, "JobUrl"],
+                                              target = "_blank",
+                                              as.character(value))
+                            }),
+                        BinariesCheck = reactable::colDef(cell = function(value, index) {
+                            htmltools::tags$a(href = condensed_builds[index, "BinariesUrl"],
+                                              target = "_blank",
+                                              as.character(value))
+                            }),
+                        JobUrl = reactable::colDef(show = FALSE),
+                        BinariesUrl = reactable::colDef(show = FALSE)
+                         )
+)
+```
+
+```{r sessionInfo}
+sessionInfo()
+```
