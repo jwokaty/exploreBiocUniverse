@@ -297,7 +297,7 @@ Total 2345 2361</code></pre>
 <td style="text-align: left;">decemedip</td>
 <td style="text-align: left;">0.99.8</td>
 <td style="text-align: left;">2026-02-14T08:38:34.000Z</td>
-<td style="text-align: left;">2026-02-14T08:53:47.274Z</td>
+<td style="text-align: left;">2026-02-15T04:10:22.761Z</td>
 <td style="text-align: left;">https://github.com/bioc/decemedip</td>
 </tr>
 <tr class="even">
@@ -309,9 +309,9 @@ Total 2345 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">drugfindR</td>
-<td style="text-align: left;">0.99.1371</td>
-<td style="text-align: left;">2026-02-14T07:37:36.000Z</td>
-<td style="text-align: left;">2026-02-14T07:42:54.739Z</td>
+<td style="text-align: left;">0.99.2516</td>
+<td style="text-align: left;">2026-02-15T06:00:42.000Z</td>
+<td style="text-align: left;">2026-02-15T06:05:57.004Z</td>
 <td style="text-align: left;">https://github.com/bioc/drugfindR</td>
 </tr>
 <tr class="even">
@@ -901,602 +901,541 @@ Total 2345 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 72
-  ..$ Package           : chr "cfDNAPro"
-  ..$ Type              : chr "Package"
-  ..$ Title             : chr "cfDNAPro extracts and Visualises biological features from whole\ngenome sequencing data of cell-free DNA"
-  ..$ Version           : chr "1.17.1"
-  ..$ biocViews         : chr "Visualization, Sequencing, WholeGenome"
-  ..$ Authors@R         : chr "c(\nperson(\"Haichao\",\"Wang\", email=\"hw538@cam.ac.uk\", role =c(\"aut\",\"cre\")),\nperson(\"Hui\",\"Zhao\""| __truncated__
-  ..$ Description       : chr "cfDNA fragments carry important features for building\ncancer sample classification ML models, such as fragment"| __truncated__
-  ..$ License           : chr "GPL-3"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ RoxygenNote       : chr "7.2.2"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ URL               : chr "https://github.com/hw538/cfDNAPro"
-  ..$ BugRePORTS        : chr "https://github.com/hw538/cfDNAPro/issues"
-  ..$ BiocType          : chr "Software"
-  ..$ Config/pak/sysreqs: chr "make libbz2-dev libicu-dev liblzma-dev libxml2-dev\nlibssl-dev xz-utils zlib1g-dev"
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-02-14 05:32:47 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/cfDNAPro"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  ..$ NeedsCompilation  : chr "no"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-02-14 07:39:51 UTC"
+ $ :List of 76
+  ..$ Package                 : chr "drugfindR"
+  ..$ Title                   : chr "Investigate iLINCS for candidate repurposable drugs"
+  ..$ Version                 : chr "0.99.2516"
+  ..$ Authors@R               : chr "c(\nperson(given = c(\"Ali\", \"Sajid\"),\nfamily = \"Imami\",\nrole = c(\"aut\", \"cre\"),\nemail = \"Ali.Saji"| __truncated__
+  ..$ Description             : chr "This package provides a convenient way to access the LINCS\nSignatures available in the iLINCS database. These "| __truncated__
+  ..$ License                 : chr "GPL-3 + file LICENSE"
+  ..$ Encoding                : chr "UTF-8"
+  ..$ URL                     : chr "https://github.com/CogDisResLab/drugfindR,\nhttps://cogdisreslab.github.io/drugfindR/"
+  ..$ BugReports              : chr "https://github.com/CogDisResLab/drugfindR/issues"
+  ..$ Roxygen                 : chr "list(markdown = TRUE)"
+  ..$ RoxygenNote             : chr "7.3.3"
+  ..$ biocViews               : chr "FunctionalPrediction, DifferentialExpression,\nGeneSetEnrichment, SingleCell, Network"
+  ..$ Config/testthat/edition : chr "3"
+  ..$ Config/testthat/parallel: chr "true"
+  ..$ VignetteBuilder         : chr "knitr"
+  ..$ Collate                 : chr "'utilities.R' 'consensusConcordants.R' 'drugfindR-package.R'\n'filterSignature.R' 'getConcordants.R' 'getSignat"| __truncated__
+  ..$ Config/pak/sysreqs      : chr "libicu-dev libssl-dev libx11-dev"
+  ..$ Repository              : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication        : chr "2026-02-15 02:39:21 UTC"
+  ..$ RemoteUrl               : chr "https://github.com/bioc/drugfindR"
+  ..$ RemoteRef               : chr "HEAD"
+  ..$ RemoteSha               : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  ..$ NeedsCompilation        : chr "no"
+  ..$ Packaged                :List of 2
+  .. ..$ Date: chr "2026-02-15 06:00:42 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Haichao Wang [aut, cre],\nHui Zhao [ctb],\nElkie Chan [ctb],\nChristopher Smith [ctb],\nTomer Kaplan [ctb],\nFl"| __truncated__
-  ..$ Maintainer        : chr "Haichao Wang &lt;hw538@cam.ac.uk&gt;"
-  ..$ MD5sum            : chr "95efaea358168e5e669df3b986452976"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "cfDNAPro_1.17.1.tar.gz"
-  ..$ _fileid           : chr "833aea62eebd30e4103ece31dead22acbde28144168c9b6fe09d0fce66de064a"
-  ..$ _filesize         : int 1297476
-  ..$ _sha256           : chr "833aea62eebd30e4103ece31dead22acbde28144168c9b6fe09d0fce66de064a"
-  ..$ _created          : chr "2026-02-14T07:39:51.000Z"
-  ..$ _published        : chr "2026-02-14T07:48:21.526Z"
-  ..$ _jobs             :List of 10
+  ..$ Author                  : chr "Ali Sajid Imami [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0003-3684-3539&gt;),\nSmita Sahay [aut] (ORCID: &lt;https"| __truncated__
+  ..$ Maintainer              : chr "Ali Sajid Imami &lt;Ali.Sajid.Imami@gmail.com&gt;"
+  ..$ MD5sum                  : chr "24c588cc6f4979c9e0e339c69e3467cb"
+  ..$ _user                   : chr "bioc"
+  ..$ _type                   : chr "src"
+  ..$ _file                   : chr "drugfindR_0.99.2516.tar.gz"
+  ..$ _fileid                 : chr "894c0aae569a67a6031cd5db081719c8b7834d08b0fd0cc59b32688c79d75314"
+  ..$ _filesize               : int 2087884
+  ..$ _sha256                 : chr "894c0aae569a67a6031cd5db081719c8b7834d08b0fd0cc59b32688c79d75314"
+  ..$ _created                : chr "2026-02-15T06:00:42.000Z"
+  ..$ _published              : chr "2026-02-15T06:05:57.004Z"
+  ..$ _jobs                   :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 357
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 159
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5509862009"
+  .. .. ..$ artifact: chr "5514823066"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 470
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 280
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509868453"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514829650"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 428
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 276
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509866026"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514829486"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 277
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 153
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509860903"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514822772"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 299
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 156
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509862204"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514822859"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 399
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 270
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5509840889"
+  .. .. ..$ artifact: chr "5514813818"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 293
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 137
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5509857826"
+  .. .. ..$ artifact: chr "5514821914"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 304
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 168
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509858545"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514823567"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 304
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 213
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509858533"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514826075"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.36e+10
-  .. .. ..$ time    : int 328
+  .. .. ..$ job     : num 6.37e+10
+  .. .. ..$ time    : int 168
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5509860191"
-  ..$ _bioccheck        :List of 3
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5514823598"
+  ..$ _bioccheck              :List of 3
   .. ..$ error  : int 0
   .. ..$ warning: int 0
-  .. ..$ note   : int 13
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/cfDNAPro"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. ..$ author   : chr "hw538 &lt;wanghaichao2014@gmail.com&gt;"
-  .. ..$ committer: chr "hw538 &lt;wanghaichao2014@gmail.com&gt;"
-  .. ..$ message  : chr "Fix plyranges-related check failures; bump version\n\nCo-authored-by: Cursor &lt;cursoragent@cursor.com&gt;\n"
-  .. ..$ time     : int 1771047167
-  ..$ _maintainer       :List of 5
-  .. ..$ name   : chr "Haichao Wang"
-  .. ..$ email  : chr "hw538@cam.ac.uk"
-  .. ..$ login  : chr "hw538"
-  .. ..$ twitter: chr "@haichao_wang20"
-  .. ..$ uuid   : int 15274940
-  ..$ _distro           : chr "noble"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 27
+  .. ..$ note   : int 5
+  ..$ _buildurl               : chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
+  ..$ _status                 : chr "success"
+  ..$ _host                   : chr "GitHub-Actions"
+  ..$ _upstream               : chr "https://github.com/bioc/drugfindR"
+  ..$ _commit                 :List of 5
+  .. ..$ id       : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. ..$ author   : chr "Ali Sajid Imami &lt;395482+AliSajid@users.noreply.github.com&gt;"
+  .. ..$ committer: chr "Ali Sajid Imami &lt;395482+AliSajid@users.noreply.github.com&gt;"
+  .. ..$ message  : chr "build: update the version script to add a 2000 base offset"
+  .. ..$ time     : int 1771123161
+  ..$ _maintainer             :List of 6
+  .. ..$ name   : chr "Ali Sajid Imami"
+  .. ..$ email  : chr "ali.sajid.imami@gmail.com"
+  .. ..$ login  : chr "alisajid"
+  .. ..$ orcid  : chr "0000-0003-3684-3539"
+  .. ..$ twitter: chr "@doctor_no"
+  .. ..$ uuid   : int 395482
+  ..$ _distro                 : chr "noble"
+  ..$ _registered             : logi TRUE
+  ..$ _dependencies           :List of 26
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.1.0"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "magrittr"
-  .. .. ..$ version: chr "&gt;= 1.5.0"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
   .. .. ..$ package: chr "tibble"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicAlignments"
+  .. .. ..$ package: chr "rlang"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ package: chr "dplyr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "plyranges"
+  .. .. ..$ package: chr "purrr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDb"
+  .. .. ..$ package: chr "readr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicRanges"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ package: chr "stringr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "dplyr"
-  .. .. ..$ version: chr "&gt;= 0.8.3"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "stringr"
-  .. .. ..$ version: chr "&gt;= 1.4.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "quantmod"
-  .. .. ..$ version: chr "&gt;= 0.4"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ version: chr "&gt;= 3.2.1"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "Rsamtools"
-  .. .. ..$ version: chr "&gt;= 2.4.0"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "rlang"
-  .. .. ..$ version: chr "&gt;= 0.4.0"
+  .. .. ..$ package: chr "lifecycle"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg38"
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg19"
+  .. .. ..$ package: chr "httr2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome.Hsapiens.NCBI.GRCh38"
+  .. .. ..$ package: chr "curl"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "scales"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "DFplyr"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggpubr"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "knitr"
-  .. .. ..$ version: chr "&gt;= 1.23"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "rmarkdown"
-  .. .. ..$ version: chr "&gt;= 1.14"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "devtools"
-  .. .. ..$ version: chr "&gt;= 2.3.0"
+  .. .. ..$ package: chr "AnnotationDbi"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "biocthis"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 3
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "codemetar"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "devtools"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "here"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "httptest2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "knitr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tidyverse"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "usethis"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                  : chr "bioc"
+  ..$ _selfowned              : logi TRUE
+  ..$ _usedby                 : int 0
+  ..$ _updates                :List of 23
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-08"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-09"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-12"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-13"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 13
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-18"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-22"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-30"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-33"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-41"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-42"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 2
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-47"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-48"
+  .. .. ..$ n   : int 33
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-49"
+  .. .. ..$ n   : int 12
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-50"
+  .. .. ..$ n   : int 8
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-51"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-03"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-04"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-05"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-06"
+  .. .. ..$ n   : int 7
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-07"
   .. .. ..$ n   : int 1
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 2
+  ..$ _tags                   : list()
+  ..$ _bioc                   :List of 1
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.17.0"
+  .. .. ..$ version: chr "0.99.1371"
   .. .. ..$ bioc   : chr "3.23"
-  .. ..$ :List of 3
-  .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.16.0"
-  .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 12
-  .. ..$ : chr "visualization"
-  .. ..$ : chr "sequencing"
-  .. ..$ : chr "wholegenome"
+  ..$ _topics                 :List of 12
+  .. ..$ : chr "lincs"
+  .. ..$ : chr "ilincs"
+  .. ..$ : chr "drug repurposing"
+  .. ..$ : chr "drug discovery"
+  .. ..$ : chr "transcriptomics"
+  .. ..$ : chr "gene expression"
+  .. ..$ : chr "gene knockdown"
+  .. ..$ : chr "gene\noverexpression"
+  .. ..$ : chr "chemical perturbagen"
+  .. ..$ : chr "drugfindr"
   .. ..$ : chr "bioinformatics"
-  .. ..$ : chr "cancer-genomics"
-  .. ..$ : chr "cancer-research"
-  .. ..$ : chr "cell-free-dna"
-  .. ..$ : chr "early-detection"
-  .. ..$ : chr "genomics-visualization"
-  .. ..$ : chr "liquid-biopsy"
-  .. ..$ : chr "swgs"
-  .. ..$ : chr "whole-genome-sequencing"
-  ..$ _stars            : int 40
-  ..$ _contributors     :List of 5
+  .. ..$ : chr "bioinformatics-pipeline"
+  ..$ _stars                  : int 10
+  ..$ _contributors           :List of 1
   .. ..$ :List of 3
-  .. .. ..$ user : chr "hw538"
-  .. .. ..$ count: int 257
-  .. .. ..$ uuid : int 15274940
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "pauliusmennea"
-  .. .. ..$ count: int 17
-  .. .. ..$ uuid : int 56031150
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 4
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nrlab-cruk"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 95291676
-  ..$ _userbio          :List of 4
+  .. .. ..$ user : chr "alisajid"
+  .. .. ..$ count: int 1073
+  .. .. ..$ uuid : int 395482
+  ..$ _userbio                :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 308
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/cfDNAPro"
-  ..$ _devurl           : chr "https://github.com/hw538/cfdnapro"
-  ..$ _searchresults    : int 19
-  ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 11
-  .. ..$ : chr "extra/cfDNAPro.html"
+  ..$ _downloads              :List of 2
+  .. ..$ count : int 74
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/drugfindR"
+  ..$ _devurl                 : chr "https://github.com/cogdisreslab/drugfindr"
+  ..$ _pkgdown                : chr "https://cogdisreslab.github.io/drugfindR/"
+  ..$ _searchresults          : int 151
+  ..$ _rbuild                 : chr "4.5.2"
+  ..$ _assets                 :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
+  .. ..$ : chr "extra/drugfindR.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/hw538/cfdnapro"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 15
-  .. ..$ : chr "callMetrics"
-  .. ..$ : chr "callMode"
-  .. ..$ : chr "callPeakDistance"
-  .. ..$ : chr "callSize"
-  .. ..$ : chr "callValleyDistance"
-  .. ..$ : chr "examplePath"
-  .. ..$ : chr "plotAllToOne"
-  .. ..$ : chr "plotMetrics"
-  .. ..$ : chr "plotMode"
-  .. ..$ : chr "plotModeSummary"
-  .. ..$ : chr "plotPeakDistance"
-  .. ..$ : chr "plotSingleGroup"
-  .. ..$ : chr "plotValleyDistance"
-  .. ..$ : chr "read_bam_insert_metrics"
-  .. ..$ : chr "readBam"
-  ..$ _help             :List of 15
+  ..$ _homeurl                : chr "https://github.com/cogdisreslab/drugfindr"
+  ..$ _realowner              : chr "bioc"
+  ..$ _cranurl                : logi FALSE
+  ..$ _exports                :List of 7
+  .. ..$ : chr "consensusConcordants"
+  .. ..$ : chr "filterSignature"
+  .. ..$ : chr "getConcordants"
+  .. ..$ : chr "getSignature"
+  .. ..$ : chr "investigateSignature"
+  .. ..$ : chr "investigateTarget"
+  .. ..$ : chr "prepareSignature"
+  ..$ _help                   :List of 7
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "callMetrics"
-  .. .. ..$ title : chr "Calculate the metrics of insert size"
+  .. .. ..$ page  : chr "consensusConcordants"
+  .. .. ..$ title : chr "Generate a Consensus list of Targets *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "callMetrics"
+  .. .. .. ..$ : chr "consensusConcordants"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "callMode"
-  .. .. ..$ title : chr "Calculate the mode fragment size of each sample"
+  .. .. ..$ page  : chr "filterSignature"
+  .. .. ..$ title : chr "Filter the L1000 Signature *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "callMode"
+  .. .. .. ..$ : chr "filterSignature"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "callPeakDistance"
-  .. .. ..$ title : chr "Calculate the inter-peak distance of insert size"
+  .. .. ..$ page  : chr "getConcordants"
+  .. .. ..$ title : chr "Get concordant signatures from iLINCS database *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "callPeakDistance"
+  .. .. .. ..$ : chr "getConcordants"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "callSize"
-  .. .. ..$ title : chr "Calculate the insert size metrics (i.e. prop, cdf, 1-cdf) or each group"
+  .. .. ..$ page  : chr "getSignature"
+  .. .. ..$ title : chr "Get the L1000 Signature from iLINCS *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "callSize"
+  .. .. .. ..$ : chr "getSignature"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "callValleyDistance"
-  .. .. ..$ title : chr "Calculate the inter-valley distance of insert size"
+  .. .. ..$ page  : chr "investigateSignature"
+  .. .. ..$ title : chr "Investigate a given DGE dataset *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "callValleyDistance"
+  .. .. .. ..$ : chr "investigateSignature"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "examplePath"
-  .. .. ..$ title : chr "Get path to cfDNAPro example folder."
+  .. .. ..$ page  : chr "investigateTarget"
+  .. .. ..$ title : chr "Investigate concordant signatures for a gene or drug *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "examplePath"
+  .. .. .. ..$ : chr "investigateTarget"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotAllToOne"
-  .. .. ..$ title : chr "Plot the raw fragment size metrics (e.g. proportion, cdf and 1-cdf) of all groups with different colors in a single plot"
+  .. .. ..$ page  : chr "prepareSignature"
+  .. .. ..$ title : chr "Prepare an L1000 Signature from a given differential gene expression output *[Stable]*"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotAllToOne"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotMetrics"
-  .. .. ..$ title : chr "Plot the fragment size metrics (i.e. proportion, cdf and 1-cdf)"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotMetrics"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotMode"
-  .. .. ..$ title : chr "Plot mode fragment size"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotMode"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotModeSummary"
-  .. .. ..$ title : chr "Summarize and plot mode fragment size in a stacked bar chart"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotModeSummary"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotPeakDistance"
-  .. .. ..$ title : chr "Plot the inter-peak distance of fragment size distance distribution"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotPeakDistance"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotSingleGroup"
-  .. .. ..$ title : chr "Plot the raw fragment size metrics of single group in a single plot, colored by samples."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotSingleGroup"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotValleyDistance"
-  .. .. ..$ title : chr "Plot the inter-valley distance of fragment size distance distribution"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotValleyDistance"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "read_bam_insert_metrics"
-  .. .. ..$ title : chr "Calculate insert sizes from a curated GRanges object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "read_bam_insert_metrics"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "readBam"
-  .. .. ..$ title : chr "Read bam file into a curated GRanges object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "readBam"
-  ..$ _readme           : chr "https://github.com/bioc/cfDNAPro/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 83
-  .. ..$ : chr "abind"
+  .. .. .. ..$ : chr "prepareSignature"
+  ..$ _readme                 : chr "https://github.com/bioc/drugfindR/raw/HEAD/README.md"
+  ..$ _rundeps                :List of 38
   .. ..$ : chr "askpass"
-  .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocIO"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bitops"
-  .. ..$ : chr "BSgenome"
-  .. ..$ : chr "BSgenome.Hsapiens.NCBI.GRCh38"
-  .. ..$ : chr "BSgenome.Hsapiens.UCSC.hg19"
-  .. ..$ : chr "BSgenome.Hsapiens.UCSC.hg38"
-  .. ..$ : chr "cigarillo"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
   .. ..$ : chr "cli"
-  .. ..$ : chr "codetools"
+  .. ..$ : chr "clipr"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
   .. ..$ : chr "curl"
-  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "DFplyr"
   .. ..$ : chr "dplyr"
-  .. ..$ : chr "farver"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
-  .. ..$ : chr "GenomeInfoDb"
-  .. ..$ : chr "GenomicAlignments"
-  .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "ggplot2"
   .. ..$ : chr "glue"
-  .. ..$ : chr "gtable"
-  .. ..$ : chr "httr"
-  .. ..$ : chr "IRanges"
-  .. ..$ : chr "isoband"
-  .. ..$ : chr "jsonlite"
-  .. ..$ : chr "labeling"
-  .. ..$ : chr "lambda.r"
-  .. ..$ : chr "lattice"
+  .. ..$ : chr "hms"
+  .. ..$ : chr "httr2"
   .. ..$ : chr "lifecycle"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
-  .. ..$ : chr "mime"
   .. ..$ : chr "openssl"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plyranges"
-  .. ..$ : chr "quantmod"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
+  .. ..$ : chr "purrr"
   .. ..$ : chr "R6"
-  .. ..$ : chr "RColorBrewer"
-  .. ..$ : chr "RCurl"
-  .. ..$ : chr "restfulr"
-  .. ..$ : chr "Rhtslib"
-  .. ..$ : chr "rjson"
+  .. ..$ : chr "rappdirs"
+  .. ..$ : chr "readr"
   .. ..$ : chr "rlang"
-  .. ..$ : chr "Rsamtools"
-  .. ..$ : chr "rtracklayer"
-  .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "S7"
-  .. ..$ : chr "scales"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "snow"
-  .. ..$ : chr "SparseArray"
   .. ..$ : chr "stringi"
   .. ..$ : chr "stringr"
-  .. ..$ : chr "SummarizedExperiment"
   .. ..$ : chr "sys"
   .. ..$ : chr "tibble"
   .. ..$ : chr "tidyselect"
-  .. ..$ : chr "TTR"
-  .. ..$ : chr "UCSC.utils"
+  .. ..$ : chr "tzdb"
   .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
-  .. ..$ : chr "viridisLite"
+  .. ..$ : chr "vroom"
   .. ..$ : chr "withr"
-  .. ..$ : chr "XML"
-  .. ..$ : chr "xts"
-  .. ..$ : chr "XVector"
-  .. ..$ : chr "yaml"
-  .. ..$ : chr "zoo"
-  ..$ _vignettes        :List of 1
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "cfDNAPro.Rmd"
-  .. .. ..$ filename: chr "cfDNAPro.html"
-  .. .. ..$ title   : chr "cfDNAPro"
-  .. .. ..$ author  : chr "Haichao Wang"
+  ..$ _vignettes              :List of 1
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "drugfindR.Rmd"
+  .. .. ..$ filename: chr "drugfindR.html"
+  .. .. ..$ title   : chr "drugfindR"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 14
+  .. .. ..$ headings:List of 13
   .. .. .. ..$ : chr "Introduction"
   .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Fragment Size Distribution of Each Group"
-  .. .. .. ..$ : chr "Generate a plot for a single group/cohort"
-  .. .. .. ..$ : chr "Matipulate your plots"
-  .. .. .. ..$ : chr "Median Size Metrics"
-  .. .. .. ..$ : chr "Modal Fragment Size"
-  .. .. .. ..$ : chr "Bar chart"
-  .. .. .. ..$ : chr "Stacked bar chart"
-  .. .. .. ..$ : chr "Inter-peak/valley Distance"
-  .. .. .. ..$ : chr "Inter-peak distance"
-  .. .. .. ..$ : chr "Inter-valley distance"
-  .. .. .. ..$ : chr "Others"
-  .. .. .. ..$ : chr "Session Information"
-  .. .. ..$ created : chr "2021-05-26 18:14:23"
-  .. .. ..$ modified: chr "2021-07-19 19:02:58"
-  .. .. ..$ commits : int 8
-  ..$ _score            : num 6.66
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "cfdnapro"
-  ..$ _universes        :List of 2
+  .. .. .. ..$ : chr "Use Cases"
+  .. .. .. ..$ : chr "Package Design"
+  .. .. .. ..$ : chr "Pipeline Components"
+  .. .. .. ..$ : chr "Use Case 1: Identifying Candidate Drugs from an Input Signature"
+  .. .. .. ..$ : chr "Step 1: Get the Signature"
+  .. .. .. ..$ : chr "Step 2: Prepare the Signature"
+  .. .. .. ..$ : chr "Step 3: Filter the Signature"
+  .. .. .. ..$ : chr "Step 4: Get the Concordant Signatures"
+  .. .. .. ..$ : chr "Step 5: Get the list of Consensus Concordant Signatures"
+  .. .. .. ..$ : chr "Alternate One-Step Method"
+  .. .. .. ..$ : chr "Environment Setup"
+  .. .. ..$ created : chr "2023-01-29 05:18:26"
+  .. .. ..$ modified: chr "2025-12-14 22:00:30"
+  .. .. ..$ commits : int 21
+  ..$ _score                  : num 7.24
+  ..$ _indexed                : logi TRUE
+  ..$ _nocasepkg              : chr "drugfindr"
+  ..$ _universes              :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "hw538"
-  ..$ _binaries         :List of 8
+  .. ..$ : chr "alisajid"
+  .. ..$ : chr "cogdisreslab"
+  ..$ _previous               : chr "0.99.1371"
+  ..$ _binaries               :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:46:37.000Z"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:04:15.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "5b06243684b63ff35fabc02bd17e365ccf0cf7a213b839de0be82b679e23ea7d"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "9306b321bdb58d3d117be968009623182b7b1aabc2ce244d42d354143eb35d66"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:45:56.000Z"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:04:08.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "1c0afc57a57a5413ec9d365db5f7e6d621e940884210d4b8ce13463263fd00e0"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "095f5de912788a4cf9549db8b910498b53944986d636dbb181815dadaf85ff08"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:44:33.000Z"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "61f45a5ca2d38ede983708829808fa8eabec757178d4105299e8465382a34d7d"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:02:20.000Z"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "0c35f06a250c21bbf44545c514fa7dc41d5354a07541543e27dcbdd3d6730041"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:44:58.000Z"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "d11ab804b2bb67ab64b89c257dcbb52fb6b611a157ba8f6a92b0f5e2d39ae069"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:02:22.000Z"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "8fce85ae941172f7d8d5b9a1f40bf5d1a10af98e1ff70238190be1496f912621"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:45:08.000Z"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "c07564cf0d598ffe4ae97fa2d6b98942fc6d7c33b258429e005b9c45dda50bba"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:03:19.000Z"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "7c3e124268c5445b471abd7fc1c063949df67cda99739480ce48ea753e3981b7"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:43:45.000Z"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "aa563e12b0b2e43556957c830c7877e6f9aacf4a223d7e6754033e3c0e3c4fbe"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:02:12.000Z"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "d349520742d580fd9fc7c92405a82b9d7f5a26d6ce850866cd6edbc145c75d3c"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:43:42.000Z"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "2677279a2091cc4218244112131bef736c88b8e0729bb88df36acefd01cf47c0"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:03:00.000Z"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "c3d2cd1317a17a5a2b2f44a9adcc1d9eff64dcd56ca765cf178c33bde250c550"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.17.1"
-  .. .. ..$ date    : chr "2026-02-14T07:43:59.000Z"
-  .. .. ..$ commit  : chr "de9427a24de1bc34185adc313661cec04f73c55d"
-  .. .. ..$ fileid  : chr "189c1cdbf639bca4fe3b5c192e520119d28a7e10aa3663b69b481c429fc2dfcc"
+  .. .. ..$ version : chr "0.99.2516"
+  .. .. ..$ date    : chr "2026-02-15T06:02:13.000Z"
+  .. .. ..$ commit  : chr "ef680cf3a80343ec1c4a602a71d0d4eb6f0639bb"
+  .. .. ..$ fileid  : chr "9ba53cdb5dacb5dbbeb45fc8d7e2e1db6f8352b8915eb660529519dbb0ae8d04"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22013554597"</code></pre>
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22030674634"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
