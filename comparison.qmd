@@ -60,8 +60,10 @@ unmatched <- dplyr::full_join(unmatched_bbs_builds, unmatched_ru_builds,
                               by = "Package")
 not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
 not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
+                             Deprecated = FALSE,
                              Buildurl = "")
 for (pkg in not_in_ru_pkgs$Package) {
+    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Deprecated <- bbs_builds[bbs_builds$Package == pkg, ]$Deprecated
     buildurl <- tryCatch({
         u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
         pkglist <- httr2::request(u) |>
@@ -82,17 +84,18 @@ for (pkg in not_in_ru_pkgs$Package) {
 
 ### Bioc 3.23: Early failures and missing dependencies
 
-These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.  Note: in devel (bioc.r-universe.dev), deprecated packages are removed whereas in the BBS they continue to build. They also don't have a landing page in R Universe.
 
 ```{r missing-deps-or-early-failures-devel, echo = FALSE}
 reactable::reactable(not_in_ru_pkgs,
                      defaultPageSize = 50,
                      compact = TRUE,
                      columns = list(
+                        Deprecated = reactable::colDef(cell = function(value, index) {
+                            ifelse(isTRUE(value), "Deprecated", "")
+                            }),
                         Buildurl = reactable::colDef(cell = function(value, index) {
-                            if (is.na(value)) {
-                                "No build url"
-                            } else {
+                            if (!is.na(value)) {
                                 htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
                                                   target = "_blank",
                                                   as.character(value))
@@ -100,9 +103,8 @@ reactable::reactable(not_in_ru_pkgs,
 )
 ```
 
-### Bioc 3.23: Different versions
+### Bioc 3.23: Different version
 
-We should update the packages where y differs. With https://bioc.r-universe.dev, y sometimes differs by 2. How does this happen and how do we fix it?
 
 ```{r different-versions-devel, echo = FALSE}
 unmatched <- unmatched |>
@@ -115,8 +117,7 @@ reactable::reactable(unmatched, searchable = TRUE, showPageSizeOptions = TRUE,
 
 ## Bioc 3.23: Same versions
 
-These packages have the same versions and commits for Linux. `Check` shows the
-result in the BBS.
+These packages have the same versions and commits for Linux. `Check` shows the result in the BBS.
 
 ```{r same-versions-devel, echo = FALSE}
 
@@ -144,7 +145,6 @@ reactable::reactable(condensed_builds, searchable = TRUE,
 ```
 
 ## R Universe and Bioconductor 3.22
-
 
 ```{r not-in-bbs-release, echo = FALSE}
 r_version <- "4.5.0"
@@ -176,8 +176,10 @@ unmatched_bbs_builds <- bbs_builds |>
 unmatched <- dplyr::full_join(unmatched_bbs_builds, unmatched_ru_builds, by = "Package")
 not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
 not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
+                             Deprecated = FALSE,
                              Buildurl = "")
 for (pkg in not_in_ru_pkgs$Package) {
+    not_in_ru_pkgs[not_in_ru_pkgs$Package == pkg, ]$Deprecated <- bbs_builds[bbs_builds$Package == pkg, ]$Deprecated
     buildurl <- tryCatch({
         u <-paste0("https://", uni, ".r-universe.dev/api/packages/", pkg)
         pkglist <- httr2::request(u) |>
@@ -198,17 +200,18 @@ for (pkg in not_in_ru_pkgs$Package) {
 
 ### Bioc 3.22: Early failures and missing dependencies
 
-These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors. Note: in release (bioc-release.r-universe.dev), deprecated packages continue to build, matching the BBS.
 
 ```{r missing-deps-or-early-failures-release, echo = FALSE}
 reactable::reactable(not_in_ru_pkgs,
                      defaultPageSize = 50,
                      compact = TRUE,
                      columns = list(
+                        Deprecated = reactable::colDef(cell = function(value, index) {
+                            ifelse(isTRUE(value), "Deprecated", "")
+                            }),
                         Buildurl = reactable::colDef(cell = function(value, index) {
-                            if (is.na(value)) {
-                                "No build url"
-                            } else {
+                            if (!is.na(value)) {
                                 htmltools::tags$a(href = not_in_ru_pkgs[index, "Buildurl"],
                                                   target = "_blank",
                                                   as.character(value))
