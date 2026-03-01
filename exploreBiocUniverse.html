@@ -253,9 +253,9 @@ Total 2349 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">OAtools</td>
-<td style="text-align: left;">0.99.9</td>
-<td style="text-align: left;">2026-02-27T06:06:24.000Z</td>
-<td style="text-align: left;">2026-02-28T03:31:44.505Z</td>
+<td style="text-align: left;">0.99.10</td>
+<td style="text-align: left;">2026-03-01T06:07:35.000Z</td>
+<td style="text-align: left;">2026-03-01T06:27:57.708Z</td>
 <td style="text-align: left;">https://github.com/bioc/OAtools</td>
 </tr>
 <tr class="even">
@@ -925,238 +925,286 @@ Total 2349 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 71
-  ..$ Package                : chr "scoup"
-  ..$ Version                : chr "1.5.1"
-  ..$ Date                   : chr "2026-02-03"
-  ..$ License                : chr "GPL (&gt;= 2)"
-  ..$ Authors@R              : chr "c(person(\"Hassan\", \"Sadiq\", role=c(\"aut\",\"cre\",\"cph\"),\nemail=\"hassan.t.sadiq@gmail.com\",\ncomment="| __truncated__
-  ..$ Title                  : chr "Simulate Codons with Darwinian Selection Modelled as an OU\nProcess"
-  ..$ Description            : chr "An elaborate molecular evolutionary framework that\nfacilitates straightforward simulation of codon genetic\nse"| __truncated__
+ $ :List of 74
+  ..$ Package                : chr "MSstatsBioNet"
+  ..$ Type                   : chr "Package"
+  ..$ Title                  : chr "Network Analysis for MS-based Proteomics Experiments"
+  ..$ Version                : chr "1.3.3"
+  ..$ Authors@R              : chr "c(\nperson(\"Anthony\", \"Wu\", email = \"wu.anthon@northeastern.edu\",\nrole = c(\"aut\", \"cre\"), comment = "| __truncated__
+  ..$ Description            : chr "A set of tools for network analysis using mass\nspectrometry-based proteomics data and network databases. The\n"| __truncated__
+  ..$ License                : chr "file LICENSE"
   ..$ VignetteBuilder        : chr "knitr"
+  ..$ biocViews              : chr "ImmunoOncology, MassSpectrometry, Proteomics, Software,\nQualityControl, NetworkEnrichment, Network"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ URL                    : chr "http://msstats.org, https://vitek-lab.github.io/MSstatsBioNet/"
+  ..$ BugReports             : chr "https://groups.google.com/forum/#!forum/msstats"
   ..$ Config/testthat/edition: chr "3"
-  ..$ biocViews              : chr "Alignment, Classification, ComparativeGenomics, DataImport,\nGenetics, MathematicalBiology, ResearchField, Sequ"| __truncated__
-  ..$ Contact                : chr "&lt;hassan.t.sadiq@gmail.com&gt;"
-  ..$ URL                    : chr "https://github.com/thsadiq/scoup"
-  ..$ BugReports             : chr "https://github.com/thsadiq/scoup/issues"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2026-02-28 03:57:53 UTC"
-  .. ..$ User: chr "root"
-  ..$ Config/pak/sysreqs     : chr "zlib1g-dev"
+  ..$ RoxygenNote            : chr "7.3.3"
+  ..$ Config/pak/sysreqs     : chr "cmake make libicu-dev libssl-dev"
   ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2026-02-28 00:12:01 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/scoup"
+  ..$ Date/Publication       : chr "2026-03-01 04:15:25 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/MSstatsBioNet"
   ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
+  ..$ RemoteSha              : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
   ..$ NeedsCompilation       : chr "no"
-  ..$ Author                 : chr "Hassan Sadiq [aut, cre, cph] (ORCID:\n&lt;https://orcid.org/0000-0003-0192-7134&gt;)"
-  ..$ Maintainer             : chr "Hassan Sadiq &lt;hassan.t.sadiq@gmail.com&gt;"
-  ..$ MD5sum                 : chr "9686c66edadcdd8c9df32e5449359547"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2026-03-01 05:54:52 UTC"
+  .. ..$ User: chr "root"
+  ..$ Author                 : chr "Anthony Wu [aut, cre] (ORCID: &lt;https://orcid.org/0009-0001-7391-9902&gt;),\nOlga Vitek [aut] (ORCID: &lt;https://orci"| __truncated__
+  ..$ Maintainer             : chr "Anthony Wu &lt;wu.anthon@northeastern.edu&gt;"
+  ..$ MD5sum                 : chr "74b1bab221e4935dbcd72c243f09ee35"
   ..$ _user                  : chr "bioc"
   ..$ _type                  : chr "src"
-  ..$ _file                  : chr "scoup_1.5.1.tar.gz"
-  ..$ _fileid                : chr "9d849d75f8924c601cc6198132ad7da03726d785d5e3daaef541a92ffa7fe9f9"
-  ..$ _filesize              : int 1304619
-  ..$ _sha256                : chr "9d849d75f8924c601cc6198132ad7da03726d785d5e3daaef541a92ffa7fe9f9"
-  ..$ _created               : chr "2026-02-28T03:57:53.000Z"
-  ..$ _published             : chr "2026-02-28T04:03:42.036Z"
+  ..$ _file                  : chr "MSstatsBioNet_1.3.3.tar.gz"
+  ..$ _fileid                : chr "4c058baa26fec8f7eb428783ed24180a89943e36f6dfafe76247d2ad8f56b513"
+  ..$ _filesize              : int 211085
+  ..$ _sha256                : chr "4c058baa26fec8f7eb428783ed24180a89943e36f6dfafe76247d2ad8f56b513"
+  ..$ _created               : chr "2026-03-01T05:54:52.000Z"
+  ..$ _published             : chr "2026-03-01T05:59:25.705Z"
   ..$ _jobs                  :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 145
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 175
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700889099"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5708081845"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 297
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 230
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700903840"
+  .. .. ..$ artifact: chr "5708085708"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 278
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 205
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700902125"
+  .. .. ..$ artifact: chr "5708083941"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 209
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 142
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700898252"
+  .. .. ..$ artifact: chr "5708079498"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 138
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 105
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700891292"
+  .. .. ..$ artifact: chr "5708076721"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 220
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 245
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5700874722"
+  .. .. ..$ artifact: chr "5708068915"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 114
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 144
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5700886327"
+  .. .. ..$ artifact: chr "5708079630"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 169
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 110
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700891358"
+  .. .. ..$ artifact: chr "5708077076"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 173
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 118
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700892114"
+  .. .. ..$ artifact: chr "5708077758"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.52e+10
-  .. .. ..$ time    : int 163
+  .. .. ..$ job     : num 6.53e+10
+  .. .. ..$ time    : int 116
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5700891086"
+  .. .. ..$ artifact: chr "5708077524"
   ..$ _bioccheck             :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 2
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. ..$ error  : int 1
+  .. ..$ warning: int 1
+  .. ..$ note   : int 15
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   ..$ _status                : chr "success"
   ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/scoup"
+  ..$ _upstream              : chr "https://github.com/bioc/MSstatsBioNet"
   ..$ _commit                :List of 5
-  .. ..$ id       : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. ..$ author   : chr "thsadiq &lt;hassan.t.sadiq@gmail.com&gt;"
-  .. ..$ committer: chr "thsadiq &lt;hassan.t.sadiq@gmail.com&gt;"
-  .. ..$ message  : chr "Finalised JOSS review comments\n"
-  .. ..$ time     : int 1772237521
-  ..$ _maintainer            :List of 5
-  .. ..$ name : chr "Hassan Sadiq"
-  .. ..$ email: chr "hassan.t.sadiq@gmail.com"
-  .. ..$ login: chr "thsadiq"
-  .. ..$ uuid : int 177087441
-  .. ..$ orcid: chr "0000-0003-0192-7134"
+  .. ..$ id       : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. ..$ author   : chr "tonywu1999 &lt;wu.anthon@northeastern.edu&gt;"
+  .. ..$ committer: chr "GitHub &lt;noreply@github.com&gt;"
+  .. ..$ message  : chr "Bump package version from 1.3.2 to 1.3.3"
+  .. ..$ time     : int 1772338525
+  ..$ _maintainer            :List of 4
+  .. ..$ name : chr "Anthony Wu"
+  .. ..$ email: chr "wu.anthon@northeastern.edu"
+  .. ..$ login: chr "tonywu1999"
+  .. ..$ uuid : int 16887528
   ..$ _distro                : chr "noble"
   ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 11
+  ..$ _dependencies          :List of 17
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.4"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ package: chr "MSstats"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Biostrings"
+  .. .. ..$ package: chr "httr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "jsonlite"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocManager"
+  .. .. ..$ package: chr "r2r"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "htmlwidgets"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "stats"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "data.table"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "bookdown"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "htmltools"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 3
   .. .. ..$ package: chr "testthat"
   .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "yaml"
+  .. .. ..$ package: chr "mockery"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "MSstatsConvert"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "shiny"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner                 : chr "bioc"
   ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 7
+  ..$ _usedby                : int 1
+  ..$ _updates               :List of 17
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-24"
-  .. .. ..$ n   : int 27
+  .. .. ..$ week: chr "2025-14"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-21"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-25"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-26"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-27"
-  .. .. ..$ n   : int 4
+  .. .. ..$ week: chr "2025-30"
+  .. .. ..$ n   : int 5
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-31"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-32"
-  .. .. ..$ n   : int 11
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-06"
-  .. .. ..$ n   : int 13
+  .. .. ..$ week: chr "2025-34"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-08"
-  .. .. ..$ n   : int 16
+  .. .. ..$ week: chr "2025-36"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-40"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-44"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-45"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-03"
+  .. .. ..$ n   : int 1
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-09"
-  .. .. ..$ n   : int 2
+  .. .. ..$ n   : int 9
   ..$ _tags                  : list()
   ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.5.1"
+  .. .. ..$ version: chr "1.3.2"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.4.0"
+  .. .. ..$ version: chr "1.2.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics                :List of 12
-  .. ..$ : chr "alignment"
-  .. ..$ : chr "classification"
-  .. ..$ : chr "comparativegenomics"
-  .. ..$ : chr "dataimport"
-  .. ..$ : chr "genetics"
-  .. ..$ : chr "mathematicalbiology"
-  .. ..$ : chr "researchfield"
-  .. ..$ : chr "sequencing"
-  .. ..$ : chr "sequencematching"
+  ..$ _topics                :List of 7
+  .. ..$ : chr "immunooncology"
+  .. ..$ : chr "massspectrometry"
+  .. ..$ : chr "proteomics"
   .. ..$ : chr "software"
-  .. ..$ : chr "statisticalmethod"
-  .. ..$ : chr "workflowstep"
-  ..$ _stars                 : int 0
-  ..$ _contributors          :List of 2
+  .. ..$ : chr "qualitycontrol"
+  .. ..$ : chr "networkenrichment"
+  .. ..$ : chr "network"
+  ..$ _stars                 : int 2
+  ..$ _contributors          :List of 3
   .. ..$ :List of 3
-  .. .. ..$ user : chr "thsadiq"
-  .. .. ..$ count: int 207
-  .. .. ..$ uuid : int 177087441
+  .. .. ..$ user : chr "tonywu1999"
+  .. .. ..$ count: int 86
+  .. .. ..$ uuid : int 16887528
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 6
+  .. .. ..$ count: int 4
   .. .. ..$ uuid : int 1744257
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "pnavada"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 32356257
   ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads             :List of 2
-  .. ..$ count : int 214
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/scoup"
-  ..$ _devurl                : chr "https://github.com/thsadiq/scoup"
-  ..$ _searchresults         : int 11
+  .. ..$ count : int 228
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/MSstatsBioNet"
+  ..$ _devurl                : chr "https://github.com/vitek-lab/msstatsbionet"
+  ..$ _pkgdown               : chr "https://vitek-lab.github.io/MSstatsBioNet/"
+  ..$ _searchresults         : int 9
   ..$ _rbuild                : chr "4.5.2"
   ..$ _assets                :List of 11
   .. ..$ : chr "extra/citation.cff"
@@ -1164,387 +1212,327 @@ Total 2349 2361</code></pre>
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
+  .. ..$ : chr "extra/MSstatsBioNet.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/scoup.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/thsadiq/scoup"
+  ..$ _homeurl               : chr "https://github.com/vitek-lab/msstatsbionet"
   ..$ _realowner             : chr "bioc"
   ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 41
-  .. ..$ : chr "aaGamma"
-  .. ..$ : chr "aaGauss"
-  .. ..$ : chr "aaSCupdate"
-  .. ..$ : chr "aInfo"
-  .. ..$ : chr "alignsim"
-  .. ..$ : chr "asymMean"
-  .. ..$ : chr "asymVar"
-  .. ..$ : chr "biTree"
-  .. ..$ : chr "branchL"
-  .. ..$ : chr "codonCoeffs"
-  .. ..$ : chr "codonFreq"
-  .. ..$ : chr "coeffs"
-  .. ..$ : chr "cseq"
-  .. ..$ : chr "details"
-  .. ..$ : chr "discreteInput"
-  .. ..$ : chr "dNdS"
-  .. ..$ : chr "dndsCalculator"
-  .. ..$ : chr "effpop"
-  .. ..$ : chr "fixMatrix"
-  .. ..$ : chr "freqs"
-  .. ..$ : chr "hbInput"
-  .. ..$ : chr "lscape"
-  .. ..$ : chr "nodes"
-  .. ..$ : chr "nsynVar"
-  .. ..$ : chr "ouEvolve"
-  .. ..$ : chr "ouInput"
-  .. ..$ : chr "phylogeny"
-  .. ..$ : chr "reversion"
-  .. ..$ : chr "sampler"
-  .. ..$ : chr "seqCOL"
-  .. ..$ : chr "seqDetails"
-  .. ..$ : chr "seqs"
-  .. ..$ : chr "seqWriter"
-  .. ..$ : chr "show"
-  .. ..$ : chr "sites"
-  .. ..$ : chr "sitesim"
-  .. ..$ : chr "subsMatrix"
-  .. ..$ : chr "synVar"
-  .. ..$ : chr "taxa"
-  .. ..$ : chr "vNvS"
-  .. ..$ : chr "wInput"
-  ..$ _help                  :List of 25
+  ..$ _exports               :List of 7
+  .. ..$ : chr "annotateProteinInfoFromIndra"
+  .. ..$ : chr "cytoscapeNetwork"
+  .. ..$ : chr "cytoscapeNetworkOutput"
+  .. ..$ : chr "exportNetworkToHTML"
+  .. ..$ : chr "getSubnetworkFromIndra"
+  .. ..$ : chr "previewNetworkInBrowser"
+  .. ..$ : chr "renderCytoscapeNetwork"
+  ..$ _help                  :List of 14
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "aaGamma"
-  .. .. ..$ title : chr "Obtain Gamma Distributed Amino Acid Selection Coefficients"
+  .. .. ..$ page  : chr "dot-populateHgncIdsInDataFrame"
+  .. .. ..$ title : chr "Populate HGNC IDs in Data Frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "aaGamma"
+  .. .. .. ..$ : chr ".populateHgncIdsInDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "aaGauss"
-  .. .. ..$ title : chr "Obtain Gaussian Distributed Amino Acid Selection Coefficients"
+  .. .. ..$ page  : chr "dot-populateHgncNamesInDataFrame"
+  .. .. ..$ title : chr "Populate HGNC Names in Data Frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "aaGauss"
+  .. .. .. ..$ : chr ".populateHgncNamesInDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "alignsim"
-  .. .. ..$ title : chr "Simulate Codon Sequence Alignment"
-  .. .. ..$ topics:List of 16
-  .. .. .. ..$ : chr "aaSCupdate"
-  .. .. .. ..$ : chr "aaSCupdate.discrete"
-  .. .. .. ..$ : chr "aaSCupdate.ou"
-  .. .. .. ..$ : chr "alignsim"
-  .. .. .. ..$ : chr "alignsim.discrete"
-  .. .. .. ..$ : chr "alignsim.omega"
-  .. .. .. ..$ : chr "alignsim.ou"
-  .. .. .. ..$ : chr "effpop"
-  .. .. .. ..$ : chr "lscape"
-  .. .. .. ..$ : chr "nsynVar"
-  .. .. .. ..$ : chr "sampler"
-  .. .. .. ..$ : chr "sitesim"
-  .. .. .. ..$ : chr "sitesim.discrete"
-  .. .. .. ..$ : chr "sitesim.omega"
-  .. .. .. ..$ : chr "sitesim.ou"
-  .. .. .. ..$ : chr "vNvS"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "aminoSC-class"
-  .. .. ..$ title : chr "Amino Acid Selection Coefficients"
-  .. .. ..$ topics:List of 7
-  .. .. .. ..$ : chr "aminoSC-class"
-  .. .. .. ..$ : chr "coeffs"
-  .. .. .. ..$ : chr "coeffs,aminoSC-method"
-  .. .. .. ..$ : chr "nsynVar,aminoSC-method"
-  .. .. .. ..$ : chr "show,aminoSC-method"
-  .. .. .. ..$ : chr "synVar"
-  .. .. .. ..$ : chr "synVar,aminoSC-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "biTree"
-  .. .. ..$ title : chr "Generate a Balanced Bifurcating Evolutionary Tree"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "biTree"
-  .. .. .. ..$ : chr "tree"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "codonCoeffs"
-  .. .. ..$ title : chr "Transform Amino Acid to Codon Selection Coefficients"
+  .. .. ..$ page  : chr "dot-populateKinaseInfoInDataFrame"
+  .. .. ..$ title : chr "Populate Kinase Info in Data Frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "codonCoeffs"
+  .. .. .. ..$ : chr ".populateKinaseInfoInDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "codonFreq"
-  .. .. ..$ title : chr "Generate Codon Frequencies From Selection Coefficients"
+  .. .. ..$ page  : chr "dot-populatePhophataseInfoInDataFrame"
+  .. .. ..$ title : chr "Populate Phosphatase Info in Data Frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "codonFreq"
+  .. .. .. ..$ : chr ".populatePhophataseInfoInDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "codonvalues-class"
-  .. .. ..$ title : chr "Codon Frequencies and Selection Coefficients"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "codonvalues-class"
-  .. .. .. ..$ : chr "coeffs,codonvalues-method"
-  .. .. .. ..$ : chr "freqs"
-  .. .. .. ..$ : chr "freqs,codonvalues-method"
-  .. .. .. ..$ : chr "show,codonvalues-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "discrete-class"
-  .. .. ..$ title : chr "(Deterministic) Episodic Simulation Model Input"
-  .. .. ..$ topics:List of 8
-  .. .. .. ..$ : chr "aaSCupdate,discrete-method"
-  .. .. .. ..$ : chr "alignsim,discrete,seqParameters-method"
-  .. .. .. ..$ : chr "discrete-class"
-  .. .. .. ..$ : chr "effpop,discrete-method"
-  .. .. .. ..$ : chr "lscape,discrete-method"
-  .. .. .. ..$ : chr "sampler,discrete-method"
-  .. .. .. ..$ : chr "show,discrete-method"
-  .. .. .. ..$ : chr "sitesim,discrete,numeric-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "discreteInput"
-  .. .. ..$ title : chr "Populate (Deterministic) Episodic Seascape Model Parameters"
+  .. .. ..$ page  : chr "dot-populateTranscriptionFactorInfoInDataFrame"
+  .. .. ..$ title : chr "Populate Transcription Factor Info in Data Frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "discreteInput"
+  .. .. .. ..$ : chr ".populateTranscriptionFactorInfoInDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "dndsCalculator"
-  .. .. ..$ title : chr "Estimate dN/dS Value Analytically"
+  .. .. ..$ page  : chr "dot-populateUniprotIdsInDataFrame"
+  .. .. ..$ title : chr "Populate Uniprot IDs in Data Frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "dndsCalculator"
+  .. .. .. ..$ : chr ".populateUniprotIdsInDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "fixMatrix"
-  .. .. ..$ title : chr "Construct Fixation Rate Matrix"
+  .. .. ..$ page  : chr "dot-validateAnnotateProteinInfoFromIndraInput"
+  .. .. ..$ title : chr "Validate Annotate Protein Info Input"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "fixMatrix"
+  .. .. .. ..$ : chr ".validateAnnotateProteinInfoFromIndraInput"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "hbInput"
-  .. .. ..$ title : chr "Generate Halpern-Bruno Substitution Model Parameters"
+  .. .. ..$ page  : chr "annotateProteinInfoFromIndra"
+  .. .. ..$ title : chr "Annotate Protein Information from Indra"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "hbInput"
+  .. .. .. ..$ : chr "annotateProteinInfoFromIndra"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "hbParameters-class"
-  .. .. ..$ title : chr "Halpern-Bruno Mutation-Selection Evolutionary Model Input"
-  .. .. ..$ topics:List of 6
-  .. .. .. ..$ : chr "effpop,hbParameters-method"
-  .. .. .. ..$ : chr "hbParameters-class"
-  .. .. .. ..$ : chr "nsynVar,hbParameters-method"
-  .. .. .. ..$ : chr "sampler,hbParameters-method"
-  .. .. .. ..$ : chr "show,hbParameters-method"
-  .. .. .. ..$ : chr "vNvS,hbParameters-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "omega-class"
-  .. .. ..$ title : chr "Frequency-Dependent Evolutionary Model Object"
-  .. .. ..$ topics:List of 9
-  .. .. .. ..$ : chr "alignsim,omega,seqParameters-method"
-  .. .. .. ..$ : chr "effpop,omega-method"
-  .. .. .. ..$ : chr "lscape,omega-method"
-  .. .. .. ..$ : chr "nsynVar,omega-method"
-  .. .. .. ..$ : chr "omega-class"
-  .. .. .. ..$ : chr "sampler,omega-method"
-  .. .. .. ..$ : chr "show,omega-method"
-  .. .. .. ..$ : chr "sitesim,omega,numeric-method"
-  .. .. .. ..$ : chr "vNvS,omega-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "ou-class"
-  .. .. ..$ title : chr "Ornstein-Uhlenbeck Stochastic Simulation Model Object"
-  .. .. ..$ topics:List of 11
-  .. .. .. ..$ : chr "aaSCupdate,ou-method"
-  .. .. .. ..$ : chr "alignsim,ou,seqParameters-method"
-  .. .. .. ..$ : chr "asymMean"
-  .. .. .. ..$ : chr "asymMean,ou-method"
-  .. .. .. ..$ : chr "asymVar"
-  .. .. .. ..$ : chr "asymVar,ou-method"
-  .. .. .. ..$ : chr "ou-class"
-  .. .. .. ..$ : chr "reversion"
-  .. .. .. ..$ : chr "reversion,ou-method"
-  .. .. .. ..$ : chr "show,ou-method"
-  .. .. .. ..$ : chr "sitesim,ou,numeric-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "ouEvolve"
-  .. .. ..$ title : chr "Simulate the Trend of an Ornstein-Uhlenbeck Process"
+  .. .. ..$ page  : chr "cytoscapeNetwork"
+  .. .. ..$ title : chr "Render a Cytoscape network visualisation"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ouEvolve"
+  .. .. .. ..$ : chr "cytoscapeNetwork"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ouInput"
-  .. .. ..$ title : chr "Populate Parameters of the Ornstein-Uhlenbeck Algorithm"
+  .. .. ..$ page  : chr "cytoscapeNetworkOutput"
+  .. .. ..$ title : chr "Shiny output binding for cytoscapeNetwork"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ouInput"
+  .. .. .. ..$ : chr "cytoscapeNetworkOutput"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "scoup"
-  .. .. ..$ title : chr "Simulate Codons with Darwinian Selection Imposed as an OU Process"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "scoup-package"
-  .. .. .. ..$ : chr "scoup"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "scoup-class"
-  .. .. ..$ title : chr "Output from the 'scoup::alignsim' Genetic Sequence Simulator"
-  .. .. ..$ topics:List of 12
-  .. .. .. ..$ : chr "aInfo"
-  .. .. .. ..$ : chr "aInfo,scoup-method"
-  .. .. .. ..$ : chr "cseq"
-  .. .. .. ..$ : chr "cseq,scoup-method"
-  .. .. .. ..$ : chr "dNdS"
-  .. .. .. ..$ : chr "dNdS,scoup-method"
-  .. .. .. ..$ : chr "scoup-class"
-  .. .. .. ..$ : chr "seqCOL"
-  .. .. .. ..$ : chr "seqCOL,scoup-method"
-  .. .. .. ..$ : chr "seqs"
-  .. .. .. ..$ : chr "seqs,scoup-method"
-  .. .. .. ..$ : chr "show,scoup-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "seqDetails"
-  .. .. ..$ title : chr "Populate Sequence Alignment Information"
+  .. .. ..$ page  : chr "exportNetworkToHTML"
+  .. .. ..$ title : chr "Export network data with Cytoscape visualization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "seqDetails"
+  .. .. .. ..$ : chr "exportNetworkToHTML"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "seqParameters-class"
-  .. .. ..$ title : chr "Codon Sequence Structure"
-  .. .. ..$ topics:List of 14
-  .. .. .. ..$ : chr "branchL"
-  .. .. .. ..$ : chr "branchL,seqParameters-method"
-  .. .. .. ..$ : chr "details"
-  .. .. .. ..$ : chr "details,seqParameters-method"
-  .. .. .. ..$ : chr "nodes"
-  .. .. .. ..$ : chr "nodes,seqParameters-method"
-  .. .. .. ..$ : chr "phylogeny"
-  .. .. .. ..$ : chr "phylogeny,seqParameters-method"
-  .. .. .. ..$ : chr "seqParameters-class"
-  .. .. .. ..$ : chr "show,seqParameters-method"
-  .. .. .. ..$ : chr "sites"
-  .. .. .. ..$ : chr "sites,seqParameters-method"
-  .. .. .. ..$ : chr "taxa"
-  .. .. .. ..$ : chr "taxa,seqParameters-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "seqWriter"
-  .. .. ..$ title : chr "Write Numeric Codon Alignment to a NEXUS File"
+  .. .. ..$ page  : chr "getSubnetworkFromIndra"
+  .. .. ..$ title : chr "Get subnetwork from INDRA database"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "seqWriter"
+  .. .. .. ..$ : chr "getSubnetworkFromIndra"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "subsMatrix"
-  .. .. ..$ title : chr "Build Mutation-Selection Codon Substitution Matrix"
+  .. .. ..$ page  : chr "previewNetworkInBrowser"
+  .. .. ..$ title : chr "Preview network in browser"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "subsMatrix"
+  .. .. .. ..$ : chr "previewNetworkInBrowser"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "wInput"
-  .. .. ..$ title : chr "Populate Frequency-Dependent Simulation Model Parameters"
+  .. .. ..$ page  : chr "renderCytoscapeNetwork"
+  .. .. ..$ title : chr "Shiny render binding for cytoscapeNetwork"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "wInput"
-  ..$ _readme                : chr "https://github.com/bioc/scoup/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 10
-  .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "crayon"
+  .. .. .. ..$ : chr "renderCytoscapeNetwork"
+  ..$ _readme                : chr "https://github.com/bioc/MSstatsBioNet/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 94
+  .. ..$ : chr "askpass"
+  .. ..$ : chr "backports"
+  .. ..$ : chr "base64enc"
+  .. ..$ : chr "bitops"
+  .. ..$ : chr "boot"
+  .. ..$ : chr "bslib"
+  .. ..$ : chr "cachem"
+  .. ..$ : chr "caTools"
+  .. ..$ : chr "checkmate"
+  .. ..$ : chr "cli"
+  .. ..$ : chr "cpp11"
+  .. ..$ : chr "crosstalk"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "data.table"
+  .. ..$ : chr "digest"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "evaluate"
+  .. ..$ : chr "farver"
+  .. ..$ : chr "fastmap"
+  .. ..$ : chr "fontawesome"
+  .. ..$ : chr "fs"
   .. ..$ : chr "generics"
-  .. ..$ : chr "IRanges"
+  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "ggrepel"
+  .. ..$ : chr "glue"
+  .. ..$ : chr "gplots"
+  .. ..$ : chr "gtable"
+  .. ..$ : chr "gtools"
+  .. ..$ : chr "highr"
+  .. ..$ : chr "htmltools"
+  .. ..$ : chr "htmlwidgets"
+  .. ..$ : chr "httr"
+  .. ..$ : chr "isoband"
+  .. ..$ : chr "jquerylib"
+  .. ..$ : chr "jsonlite"
+  .. ..$ : chr "KernSmooth"
+  .. ..$ : chr "knitr"
+  .. ..$ : chr "labeling"
+  .. ..$ : chr "later"
   .. ..$ : chr "lattice"
+  .. ..$ : chr "lazyeval"
+  .. ..$ : chr "lifecycle"
+  .. ..$ : chr "limma"
+  .. ..$ : chr "lme4"
+  .. ..$ : chr "log4r"
+  .. ..$ : chr "magrittr"
+  .. ..$ : chr "marray"
+  .. ..$ : chr "MASS"
   .. ..$ : chr "Matrix"
-  .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "XVector"
-  ..$ _vignettes             :List of 1
+  .. ..$ : chr "memoise"
+  .. ..$ : chr "mime"
+  .. ..$ : chr "minqa"
+  .. ..$ : chr "MSstats"
+  .. ..$ : chr "MSstatsConvert"
+  .. ..$ : chr "nlme"
+  .. ..$ : chr "nloptr"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "otel"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plotly"
+  .. ..$ : chr "preprocessCore"
+  .. ..$ : chr "promises"
+  .. ..$ : chr "purrr"
+  .. ..$ : chr "r2r"
+  .. ..$ : chr "R6"
+  .. ..$ : chr "rappdirs"
+  .. ..$ : chr "rbibutils"
+  .. ..$ : chr "RColorBrewer"
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "RcppArmadillo"
+  .. ..$ : chr "RcppEigen"
+  .. ..$ : chr "Rdpack"
+  .. ..$ : chr "reformulas"
+  .. ..$ : chr "rlang"
+  .. ..$ : chr "rmarkdown"
+  .. ..$ : chr "S7"
+  .. ..$ : chr "sass"
+  .. ..$ : chr "scales"
+  .. ..$ : chr "statmod"
+  .. ..$ : chr "stringi"
+  .. ..$ : chr "stringr"
+  .. ..$ : chr "survival"
+  .. ..$ : chr "sys"
+  .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
+  .. ..$ : chr "tidyselect"
+  .. ..$ : chr "tinytex"
+  .. ..$ : chr "utf8"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "viridisLite"
+  .. ..$ : chr "withr"
+  .. ..$ : chr "xfun"
+  .. ..$ : chr "yaml"
+  ..$ _vignettes             :List of 3
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "scoup.Rmd"
-  .. .. ..$ filename: chr "scoup.html"
-  .. .. ..$ title   : chr "scoup: Simulate Codons with Darwinian Selection Incorporated as an Ornstein-Uhlenbeck Process"
-  .. .. ..$ author  : chr "Hassan Sadiq"
+  .. .. ..$ source  : chr "MSstatsBioNet.Rmd"
+  .. .. ..$ filename: chr "MSstatsBioNet.html"
+  .. .. ..$ title   : chr "MSstatsBioNet Introduction"
+  .. .. ..$ author  : chr "Anthony Wu"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 12
-  .. .. .. ..$ : chr "Introduction"
+  .. .. ..$ headings:List of 10
   .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Sample Code"
-  .. .. .. ..$ : chr "Ornstein-Uhlenbeck Sensitivity"
-  .. .. .. ..$ : chr "vN/vS Sensitivity"
-  .. .. .. ..$ : chr "Site-wise Application"
-  .. .. .. ..$ : chr "Branch-wise (Episodic) Test"
-  .. .. .. ..$ : chr "Conclusion"
-  .. .. .. ..$ : chr "Citation"
-  .. .. .. ..$ : chr "References"
-  .. .. .. ..$ : chr "Appendix: Sample Data Analyses (Non-R) Code"
+  .. .. .. ..$ : chr "Purpose of MSstatsBioNet"
+  .. .. .. ..$ : chr "Dataset"
+  .. .. .. ..$ : chr "MSstats Convert from Upstream Dataset"
+  .. .. .. ..$ : chr "MSstats Process and GroupComparison"
+  .. .. .. ..$ : chr "MSstatsBioNet Analysis"
+  .. .. .. ..$ : chr "ID Conversion"
+  .. .. .. ..$ : chr "Subnetwork Query"
+  .. .. .. ..$ : chr "Visualize Networks"
   .. .. .. ..$ : chr "Session info"
-  .. .. ..$ created : chr "2024-08-01 09:55:03"
-  .. .. ..$ modified: chr "2025-01-08 13:46:39"
+  .. .. ..$ created : chr "2024-07-25 14:39:54"
+  .. .. ..$ modified: chr "2025-09-11 19:55:59"
   .. .. ..$ commits : int 9
-  ..$ _score                 : num 4.59
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "PTM-Analysis.Rmd"
+  .. .. ..$ filename: chr "PTM-Analysis.html"
+  .. .. ..$ title   : chr "PTM Analysis"
+  .. .. ..$ author  : chr "Anthony Wu"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 6
+  .. .. .. ..$ : chr "Installation"
+  .. .. .. ..$ : chr "Dataset"
+  .. .. .. ..$ : chr "ID Conversion"
+  .. .. .. ..$ : chr "Subnetwork Query"
+  .. .. .. ..$ : chr "Network Visualization"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2025-09-11 19:55:59"
+  .. .. ..$ modified: chr "2026-03-01 04:14:41"
+  .. .. ..$ commits : int 3
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "Cytoscape-Visualization.Rmd"
+  .. .. ..$ filename: chr "Cytoscape-Visualization.html"
+  .. .. ..$ title   : chr "Visualization Engine with CytoscapeJS"
+  .. .. ..$ author  : chr "Anthony Wu"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2026-02-27 01:52:58"
+  .. .. ..$ modified: chr "2026-03-01 04:14:41"
+  .. .. ..$ commits : int 2
+  ..$ _score                 : num 6.49
   ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "scoup"
-  ..$ _universes             :List of 2
+  ..$ _nocasepkg             : chr "msstatsbionet"
+  ..$ _universes             :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "thsadiq"
+  .. ..$ : chr "tonywu1999"
+  .. ..$ : chr "vitek-lab"
+  ..$ _previous              : chr "1.3.2"
   ..$ _binaries              :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T04:01:35.000Z"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:58:18.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "3474d2552021199cbe21f7f6028ee83ab0f848949d7d61055dbf3b7efebf0cc5"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "5802cdea35e88177f74d133195aacc9a8a114385a47e6e462c8b9e52da992dfb"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T04:01:15.000Z"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:57:55.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "e4759b917ad9342bde3844fb02b289b938acef42b60254f244fc652c96a061d5"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "1ded9e89f82a90ddaa037e694a4bea159d917820d5c501dc744e90c0d6a862bf"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T04:00:41.000Z"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "bba5bb1ad9f1a8bb2c19cd6e637ef80cdc9d8ed153b7c8edf643f54f39ff3727"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:56:56.000Z"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "2b6f12ebd5ccec28d921592aa14eaa121c52b52a4a92e428214e1dc2423e4a3c"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T04:00:04.000Z"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "437a0a85a17c016718c7d5bfc20d376a108ba880a0f35ce6dc89fd96c4db4a85"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:56:31.000Z"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "f85daf99a07798b2dfbbf3b996b1d299bbe509ba9d74f861ffe5db655d4fcd71"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T04:00:17.000Z"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "34c683909bac0b7ccc0642818cc98cad12c9adcc5e69762d920952db3912e553"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:57:37.000Z"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "2d680ed9f5c98fdc04e92c764667bc887aec66ed848a60b6a346052f23ae0d05"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T03:59:15.000Z"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "a313288d3a00ef59a69b002fbaa2552f814d5f9a79c9bb06b92d4b5a60432903"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:56:16.000Z"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "148f5ba646e2ab76d0b4d5b8b87f80c1d6b582cbd78743095b155cc124c6320a"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T03:59:25.000Z"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "2f84aa539be1ea9e79aa9970119047dcc83ff9eac17c6a047083d3b3d1c716d8"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:56:23.000Z"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "e500ade8d8987d985446d8baecff4c493fa3556f5b56e917a4a8191db3eed4c8"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.5.1"
-  .. .. ..$ date    : chr "2026-02-28T03:59:19.000Z"
-  .. .. ..$ commit  : chr "6936cb9a8750d6f75e03d150da5df6700b29eab6"
-  .. .. ..$ fileid  : chr "ed3835b21ff6c82242006d748685d646ec033958d8b4f8014bd0145dd6d72fbb"
+  .. .. ..$ version : chr "1.3.3"
+  .. .. ..$ date    : chr "2026-03-01T05:56:21.000Z"
+  .. .. ..$ commit  : chr "094c3f7d7a308de352c7de7accd4015d09610f7b"
+  .. .. ..$ fileid  : chr "3fa0e4280a0363f51cbcdbbf167c906689faaf15e863aaa6bd6f69a5d04e84a9"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22512800454"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22537115057"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
