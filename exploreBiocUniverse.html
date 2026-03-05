@@ -142,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"Total"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        RU  BBS
-Total 2349 2361</code></pre>
+Total 2348 2361</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>not_in_ru <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(bbs_pkgs, ru_pkgs)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>not_in_bbs <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(ru_pkgs, bbs_pkgs)</span>
@@ -205,8 +205,8 @@ Total 2349 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">ClusterGVis</td>
 <td style="text-align: left;">0.99.9</td>
-<td style="text-align: left;">2026-02-03T09:54:11.000Z</td>
-<td style="text-align: left;">2026-02-03T10:39:51.964Z</td>
+<td style="text-align: left;">2026-03-05T09:05:14.000Z</td>
+<td style="text-align: left;">2026-03-05T09:35:26.555Z</td>
 <td style="text-align: left;">https://github.com/bioc/ClusterGVis</td>
 </tr>
 <tr class="odd">
@@ -253,9 +253,9 @@ Total 2349 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">OAtools</td>
-<td style="text-align: left;">0.99.11</td>
-<td style="text-align: left;">2026-03-03T06:06:59.000Z</td>
-<td style="text-align: left;">2026-03-04T03:44:20.082Z</td>
+<td style="text-align: left;">0.99.12</td>
+<td style="text-align: left;">2026-03-05T04:29:13.000Z</td>
+<td style="text-align: left;">2026-03-05T05:25:58.754Z</td>
 <td style="text-align: left;">https://github.com/bioc/OAtools</td>
 </tr>
 <tr class="even">
@@ -302,9 +302,9 @@ Total 2349 2361</code></pre>
 </tr>
 <tr class="even">
 <td style="text-align: left;">damidBind</td>
-<td style="text-align: left;">0.99.12</td>
-<td style="text-align: left;">2026-02-06T04:46:15.000Z</td>
-<td style="text-align: left;">2026-02-07T03:51:31.988Z</td>
+<td style="text-align: left;">0.99.14</td>
+<td style="text-align: left;">2026-03-05T04:17:45.000Z</td>
+<td style="text-align: left;">2026-03-05T05:16:17.275Z</td>
 <td style="text-align: left;">https://github.com/bioc/damidBind</td>
 </tr>
 <tr class="odd">
@@ -351,9 +351,9 @@ Total 2349 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">lcmsPlot</td>
-<td style="text-align: left;">0.99.16</td>
-<td style="text-align: left;">2026-02-19T06:04:56.000Z</td>
-<td style="text-align: left;">2026-02-19T06:14:25.304Z</td>
+<td style="text-align: left;">0.99.17</td>
+<td style="text-align: left;">2026-03-05T04:17:53.000Z</td>
+<td style="text-align: left;">2026-03-05T05:11:13.057Z</td>
 <td style="text-align: left;">https://github.com/bioc/lcmsPlot</td>
 </tr>
 <tr class="even">
@@ -373,8 +373,8 @@ Total 2349 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">posDemux</td>
 <td style="text-align: left;">0.99.11</td>
-<td style="text-align: left;">2026-02-03T04:18:17.000Z</td>
-<td style="text-align: left;">2026-02-03T04:26:22.659Z</td>
+<td style="text-align: left;">2026-03-05T04:05:46.000Z</td>
+<td style="text-align: left;">2026-03-05T04:57:37.868Z</td>
 <td style="text-align: left;">https://github.com/bioc/posDemux</td>
 </tr>
 <tr class="odd">
@@ -443,9 +443,9 @@ Total 2349 2361</code></pre>
 [31] "Repitools"              "rGADEM"                 "RgnTX"                 
 [34] "rRDP"                   "SARC"                   "scviR"                 
 [37] "seqArchR"               "seqArchRplus"           "seqTools"              
-[40] "spatzie"                "Streamer"               "tidytof"               
-[43] "TitanCNA"               "TransView"              "traviz"                
-[46] "XNAString"             </code></pre>
+[40] "SGCP"                   "spatzie"                "Streamer"              
+[43] "tidytof"                "TitanCNA"               "TransView"             
+[46] "traviz"                 "XNAString"             </code></pre>
 </div>
 </div>
 <p>The following packages are not deprecated but are not in RU.</p>
@@ -458,7 +458,8 @@ Total 2349 2361</code></pre>
  [4] "biodbUniprot"       "cisPath"            "CuratedAtlasQueryR"
  [7] "GEOexplorer"        "hiAnnotator"        "hmdbQuery"         
 [10] "IMAS"               "RgnTX"              "scviR"             
-[13] "spatzie"            "tidytof"            "traviz"            </code></pre>
+[13] "SGCP"               "spatzie"            "tidytof"           
+[16] "traviz"            </code></pre>
 </div>
 </div>
 </section>
@@ -599,18 +600,6 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">casper</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">OK</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">WARNINGS</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">2.44.0</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Missing R4.6 on Linux</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">ChIPQC</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -622,7 +611,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">chromVAR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -634,7 +623,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">CONFESS</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -646,7 +635,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">consensusDE</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -658,7 +647,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">ddPCRclust</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -670,7 +659,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">debCAM</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -682,7 +671,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">esATAC</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -694,7 +683,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">GEOmetadb</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
@@ -706,7 +695,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">HilbertVisGUI</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -718,7 +707,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">nearBynding</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -730,7 +719,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">profileplyr</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -742,7 +731,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SamSPECTRAL</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -754,7 +743,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SwathXtend</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -766,7 +755,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">wavClusteR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -778,7 +767,7 @@ Total 2349 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">zellkonverter</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -925,202 +914,147 @@ Total 2349 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 72
-  ..$ Package           : chr "GENESIS"
+ $ :List of 69
+  ..$ Package           : chr "mumosa"
   ..$ Type              : chr "Package"
-  ..$ Title             : chr "GENetic EStimation and Inference in Structured samples\n(GENESIS): Statistical methods for analyzing genetic da"| __truncated__
-  ..$ Version           : chr "2.41.0"
-  ..$ Date              : chr "2025-01-31"
-  ..$ Authors@R         : chr "c(\nperson(c(\"Matthew\", \"P.\"), \"Conomos\", role = c(\"aut\")),\nperson(c(\"Stephanie\", \"M.\"), \"Gogarte"| __truncated__
-  ..$ Description       : chr "The GENESIS package provides methodology for estimating,\ninferring, and accounting for population and pedigree"| __truncated__
+  ..$ Authors@R         : chr "person(\"Aaron\", \"Lun\", role = c(\"aut\", \"cre\"), email=\"infinite.monkeys.with.keyboards@gmail.com\")"
+  ..$ Version           : chr "1.19.1"
+  ..$ Date              : chr "2026-03-05"
   ..$ License           : chr "GPL-3"
-  ..$ URL               : chr "https://github.com/UW-GAC/GENESIS"
+  ..$ Title             : chr "Multi-Modal Single-Cell Analysis Methods"
+  ..$ Description       : chr "Assorted utilities for multi-modal analyses of single-cell\ndatasets. Includes functions to combine multiple mo"| __truncated__
   ..$ VignetteBuilder   : chr "knitr"
-  ..$ biocViews         : chr "SNP, GeneticVariability, Genetics, StatisticalMethod,\nDimensionReduction, PrincipalComponent, GenomeWideAssoci"| __truncated__
-  ..$ NeedsCompilation  : chr "yes"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ Config/pak/sysreqs: chr "cmake libglpk-dev make libicu-dev libxml2-dev\nlibx11-dev zlib1g-dev"
+  ..$ biocViews         : chr "ImmunoOncology, SingleCell, RNASeq"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ RoxygenNote       : chr "7.3.2"
+  ..$ URL               : chr "http://bioconductor.org/packages/mumosa"
+  ..$ BugReports        : chr "https://support.bioconductor.org/"
+  ..$ Config/pak/sysreqs: chr "libglpk-dev libxml2-dev zlib1g-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-03-04 01:15:07 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/GENESIS"
+  ..$ Date/Publication  : chr "2026-03-05 02:56:55 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/mumosa"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
+  ..$ RemoteSha         : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  ..$ NeedsCompilation  : chr "no"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-03-04 04:14:34 UTC"
+  .. ..$ Date: chr "2026-03-05 04:17:33 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Matthew P. Conomos [aut],\nStephanie M. Gogarten [aut, cre],\nLisa Brown [aut],\nHan Chen [aut],\nThomas Lumley"| __truncated__
-  ..$ Maintainer        : chr "Stephanie M. Gogarten &lt;sdmorris@uw.edu&gt;"
-  ..$ MD5sum            : chr "f3e4e2dc5e20762ddf9549ce9454a007"
+  ..$ Author            : chr "Aaron Lun [aut, cre]"
+  ..$ Maintainer        : chr "Aaron Lun &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
+  ..$ MD5sum            : chr "4b005189298b4ad9654cf6fcdb779924"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "GENESIS_2.41.0.tar.gz"
-  ..$ _fileid           : chr "a0c1ef8d96e20b39bad0f0c3e1c2a5debabcf17f5e7ab52a71bd31f01dc340e1"
-  ..$ _filesize         : int 3674287
-  ..$ _sha256           : chr "a0c1ef8d96e20b39bad0f0c3e1c2a5debabcf17f5e7ab52a71bd31f01dc340e1"
-  ..$ _created          : chr "2026-03-04T04:14:34.000Z"
-  ..$ _published        : chr "2026-03-04T04:48:00.332Z"
-  ..$ _jobs             :List of 14
+  ..$ _file             : chr "mumosa_1.19.1.tar.gz"
+  ..$ _fileid           : chr "2b4887ed58b10aa50b48fefd6d34f529a4b37af351e0cc488062b796af8bc8e2"
+  ..$ _filesize         : int 470838
+  ..$ _sha256           : chr "2b4887ed58b10aa50b48fefd6d34f529a4b37af351e0cc488062b796af8bc8e2"
+  ..$ _created          : chr "2026-03-05T04:17:33.000Z"
+  ..$ _published        : chr "2026-03-05T05:12:43.669Z"
+  ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 254
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 223
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5753502404"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 423
-  .. .. ..$ config  : chr "linux-devel-arm64"
-  .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753526563"
+  .. .. ..$ artifact: chr "5772946966"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 474
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 479
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753533519"
+  .. .. ..$ artifact: chr "5772984738"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 388
-  .. .. ..$ config  : chr "linux-release-arm64"
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753521744"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 464
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 512
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753531952"
+  .. .. ..$ artifact: chr "5772989704"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 226
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 280
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753736483"
+  .. .. ..$ artifact: chr "5773386993"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 502
-  .. .. ..$ config  : chr "macos-devel-x86_64"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753599278"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 282
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 332
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753746644"
+  .. .. ..$ artifact: chr "5773403251"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 508
-  .. .. ..$ config  : chr "macos-release-x86_64"
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753614178"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 385
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 397
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5753464833"
+  .. .. ..$ artifact: chr "5772909893"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 231
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 228
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5753498825"
+  .. .. ..$ artifact: chr "5772947552"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 425
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 401
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753526974"
+  .. .. ..$ artifact: chr "5772973669"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 440
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 415
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753528782"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "5772975479"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.57e+10
-  .. .. ..$ time    : int 424
+  .. .. ..$ job     : num 6.58e+10
+  .. .. ..$ time    : int 392
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5753526243"
+  .. .. ..$ artifact: chr "5772972290"
   ..$ _bioccheck        :List of 3
   .. ..$ error  : int 0
-  .. ..$ warning: int 3
-  .. ..$ note   : int 17
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
+  .. ..$ warning: int 0
+  .. ..$ note   : int 7
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/GENESIS"
+  ..$ _upstream         : chr "https://github.com/bioc/mumosa"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. ..$ author   : chr "Stephanie M. Gogarten &lt;sdmorris@uw.edu&gt;"
-  .. ..$ committer: chr "Stephanie M. Gogarten &lt;sdmorris@uw.edu&gt;"
-  .. ..$ message  : chr "use Authors@R in DESCRIPTION\n"
-  .. ..$ time     : int 1772586907
-  ..$ _maintainer       :List of 4
-  .. ..$ name : chr "Stephanie M. Gogarten"
-  .. ..$ email: chr "sdmorris@uw.edu"
-  .. ..$ login: chr "smgogarten"
-  .. ..$ uuid : int 2028958
+  .. ..$ id       : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. ..$ author   : chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
+  .. ..$ committer: chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
+  .. ..$ message  : chr "Updates to BiocNeighbors function calls.\n"
+  .. ..$ time     : int 1772679415
+  ..$ _maintainer       :List of 5
+  .. ..$ name   : chr "Aaron Lun"
+  .. ..$ email  : chr "infinite.monkeys.with.keyboards@gmail.com"
+  .. ..$ login  : chr "ltla"
+  .. ..$ twitter: chr "@realAaronLun"
+  .. ..$ uuid   : int 8166669
   ..$ _distro           : chr "noble"
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 36
+  ..$ _dependencies     :List of 30
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Biobase"
+  .. .. ..$ package: chr "SingleCellExperiment"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GWASTools"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "gdsfmt"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicRanges"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "IRanges"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SeqArray"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SeqVarTools"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SNPRelate"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "data.table"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "igraph"
@@ -1129,78 +1063,84 @@ Total 2349 2361</code></pre>
   .. .. ..$ package: chr "Matrix"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "BiocGenerics"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "reshape2"
+  .. .. ..$ package: chr "BiocParallel"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
+  .. .. ..$ package: chr "IRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "CompQuadForm"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "DelayedArray"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "COMPoissonReg"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "DelayedMatrixStats"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "poibin"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SPAtest"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "BiocNeighbors"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "survey"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "BiocSingular"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "ScaledMatrix"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "beachmat"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scuttle"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "metapod"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scran"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "batchelor"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "uwot"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "testthat"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocStyle"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GWASdata"
+  .. .. ..$ package: chr "scater"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ package: chr "bluster"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ package: chr "DropletUtils"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "GGally"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "RColorBrewer"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg19.knownGene"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDb"
+  .. .. ..$ package: chr "scRNAseq"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 1
-  ..$ _updates          :List of 5
+  ..$ _usedby           : int 0
+  ..$ _updates          :List of 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-26"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-32"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-39"
-  .. .. ..$ n   : int 4
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
@@ -1211,752 +1151,268 @@ Total 2349 2361</code></pre>
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.41.0"
+  .. .. ..$ version: chr "1.19.0"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.40.0"
+  .. .. ..$ version: chr "1.18.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 9
-  .. ..$ : chr "snp"
-  .. ..$ : chr "geneticvariability"
-  .. ..$ : chr "genetics"
-  .. ..$ : chr "statisticalmethod"
-  .. ..$ : chr "dimensionreduction"
-  .. ..$ : chr "principalcomponent"
-  .. ..$ : chr "genomewideassociation"
-  .. ..$ : chr "qualitycontrol"
-  .. ..$ : chr "biocviews"
-  ..$ _stars            : int 44
-  ..$ _contributors     :List of 11
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "smgogarten"
-  .. .. ..$ count: int 440
-  .. .. ..$ uuid : int 2028958
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "mconomos"
-  .. .. ..$ count: int 153
-  .. .. ..$ uuid : int 18062725
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "amstilp"
-  .. .. ..$ count: int 141
-  .. .. ..$ uuid : int 3944584
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "nturaga"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 2746443
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 14
-  .. .. ..$ uuid : int 1744257
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "dtenenba"
-  .. .. ..$ count: int 8
-  .. .. ..$ uuid : int 2286826
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "hpages"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 8810451
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "sstadick"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 6712477
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "tamartsi"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 7735689
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "vobencha"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 2466173
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "sonali-bioc"
-  .. .. ..$ count: int 1
-  .. .. ..$ uuid : int 6373953
+  ..$ _topics           :List of 3
+  .. ..$ : chr "immunooncology"
+  .. ..$ : chr "singlecell"
+  .. ..$ : chr "rnaseq"
   ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 780
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/GENESIS"
-  ..$ _mentions         : int 243
-  ..$ _devurl           : chr "https://github.com/uw-gac/genesis"
-  ..$ _searchresults    : int 374
+  .. ..$ count : int 318
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/mumosa"
+  ..$ _searchresults    : int 14
   ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 11
+  ..$ _assets           :List of 9
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/GENESIS.html"
-  .. ..$ : chr "extra/NEWS.html"
-  .. ..$ : chr "extra/NEWS.txt"
+  .. ..$ : chr "extra/mumosa.html"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/uw-gac/genesis"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 30
-  .. ..$ : chr "admixMap"
-  .. ..$ : chr "assocTestAggregate"
-  .. ..$ : chr "assocTestSingle"
-  .. ..$ : chr "calcISAFBeta"
-  .. ..$ : chr "calcScore"
-  .. ..$ : chr "computeVSIF"
-  .. ..$ : chr "computeVSIFNullModel"
-  .. ..$ : chr "correctK0"
-  .. ..$ : chr "correctK2"
-  .. ..$ : chr "correctKin"
-  .. ..$ : chr "effectAllele"
-  .. ..$ : chr "fitNullModel"
-  .. ..$ : chr "fitNullModelFastScore"
-  .. ..$ : chr "isNullModelFastScore"
-  .. ..$ : chr "isNullModelSmall"
-  .. ..$ : chr "jointScoreTest"
-  .. ..$ : chr "kin2gds"
-  .. ..$ : chr "kingToMatrix"
-  .. ..$ : chr "makeSparseMatrix"
-  .. ..$ : chr "mat2gds"
-  .. ..$ : chr "nullModelFastScore"
-  .. ..$ : chr "nullModelInvNorm"
-  .. ..$ : chr "nullModelSmall"
-  .. ..$ : chr "pcair"
-  .. ..$ : chr "pcairPartition"
-  .. ..$ : chr "pcrelate"
-  .. ..$ : chr "pcrelateSampBlock"
-  .. ..$ : chr "pcrelateToMatrix"
-  .. ..$ : chr "samplesGdsOrder"
-  .. ..$ : chr "varCompCI"
-  ..$ _datasets         :List of 2
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "HapMap_ASW_MXL_KINGmat"
-  .. .. ..$ title : chr "Matrix of Pairwise Kinship Coefficient Estimates for the combined HapMap ASW and MXL Sample found with the KING"| __truncated__
-  .. .. ..$ object: chr "HapMap_ASW_MXL_KINGmat"
-  .. .. ..$ file  : chr "HapMap_ASW_MXL_KINGmat.rda"
-  .. .. ..$ class :List of 2
-  .. .. .. ..$ : chr "matrix"
-  .. .. .. ..$ : chr "array"
-  .. .. ..$ fields:List of 173
-  .. .. .. ..$ : chr "NA19919"
-  .. .. .. ..$ : chr "NA19916"
-  .. .. .. ..$ : chr "NA19835"
-  .. .. .. ..$ : chr "NA20282"
-  .. .. .. ..$ : chr "NA19703"
-  .. .. .. ..$ : chr "NA19902"
-  .. .. .. ..$ : chr "NA19901"
-  .. .. .. ..$ : chr "NA19908"
-  .. .. .. ..$ : chr "NA19914"
-  .. .. .. ..$ : chr "NA20287"
-  .. .. .. ..$ : chr "NA20335"
-  .. .. .. ..$ : chr "NA19713"
-  .. .. .. ..$ : chr "NA19904"
-  .. .. .. ..$ : chr "NA19917"
-  .. .. .. ..$ : chr "NA19982"
-  .. .. .. ..$ : chr "NA20340"
-  .. .. .. ..$ : chr "NA20297"
-  .. .. .. ..$ : chr "NA19909"
-  .. .. .. ..$ : chr "NA19834"
-  .. .. .. ..$ : chr "NA20317"
-  .. .. .. ..$ : chr "NA19818"
-  .. .. .. ..$ : chr "NA20290"
-  .. .. .. ..$ : chr "NA20295"
-  .. .. .. ..$ : chr "NA20346"
-  .. .. .. ..$ : chr "NA19921"
-  .. .. .. ..$ : chr "NA20281"
-  .. .. .. ..$ : chr "NA20359"
-  .. .. .. ..$ : chr "NA20301"
-  .. .. .. ..$ : chr "NA20349"
-  .. .. .. ..$ : chr "NA20294"
-  .. .. .. ..$ : chr "NA20337"
-  .. .. .. ..$ : chr "NA20357"
-  .. .. .. ..$ : chr "NA19900"
-  .. .. .. ..$ : chr "NA20128"
-  .. .. .. ..$ : chr "NA20348"
-  .. .. .. ..$ : chr "NA20289"
-  .. .. .. ..$ : chr "NA20344"
-  .. .. .. ..$ : chr "NA20333"
-  .. .. .. ..$ : chr "NA20277"
-  .. .. .. ..$ : chr "NA20300"
-  .. .. .. ..$ : chr "NA19819"
-  .. .. .. ..$ : chr "NA20343"
-  .. .. .. ..$ : chr "NA19625"
-  .. .. .. ..$ : chr "NA20332"
-  .. .. .. ..$ : chr "NA19700"
-  .. .. .. ..$ : chr "NA20291"
-  .. .. .. ..$ : chr "NA20342"
-  .. .. .. ..$ : chr "NA20334"
-  .. .. .. ..$ : chr "NA20356"
-  .. .. .. ..$ : chr "NA20292"
-  .. .. .. ..$ : chr "NA20350"
-  .. .. .. ..$ : chr "NA19983"
-  .. .. .. ..$ : chr "NA20279"
-  .. .. .. ..$ : chr "NA20288"
-  .. .. .. ..$ : chr "NA20284"
-  .. .. .. ..$ : chr "NA19712"
-  .. .. .. ..$ : chr "NA20322"
-  .. .. .. ..$ : chr "NA19704"
-  .. .. .. ..$ : chr "NA19714"
-  .. .. .. ..$ : chr "NA19701"
-  .. .. .. ..$ : chr "NA20358"
-  .. .. .. ..$ : chr "NA20363"
-  .. .. .. ..$ : chr "NA20360"
-  .. .. .. ..$ : chr "NA20129"
-  .. .. .. ..$ : chr "NA19705"
-  .. .. .. ..$ : chr "NA19836"
-  .. .. .. ..$ : chr "NA20319"
-  .. .. .. ..$ : chr "NA20345"
-  .. .. .. ..$ : chr "NA20302"
-  .. .. .. ..$ : chr "NA19711"
-  .. .. .. ..$ : chr "NA20347"
-  .. .. .. ..$ : chr "NA19702"
-  .. .. .. ..$ : chr "NA20126"
-  .. .. .. ..$ : chr "NA20364"
-  .. .. .. ..$ : chr "NA20336"
-  .. .. .. ..$ : chr "NA19915"
-  .. .. .. ..$ : chr "NA19708"
-  .. .. .. ..$ : chr "NA20341"
-  .. .. .. ..$ : chr "NA19918"
-  .. .. .. ..$ : chr "NA19828"
-  .. .. .. ..$ : chr "NA19985"
-  .. .. .. ..$ : chr "NA20276"
-  .. .. .. ..$ : chr "NA20127"
-  .. .. .. ..$ : chr "NA19984"
-  .. .. .. ..$ : chr "NA20298"
-  .. .. .. ..$ : chr "NA20351"
-  .. .. .. ..$ : chr "NA20412"
-  .. .. .. ..$ : chr "NA19663"
-  .. .. .. ..$ : chr "NA19664"
-  .. .. .. ..$ : chr "NA19665"
-  .. .. .. ..$ : chr "NA19722"
-  .. .. .. ..$ : chr "NA19723"
-  .. .. .. ..$ : chr "NA19649"
-  .. .. .. ..$ : chr "NA19669"
-  .. .. .. ..$ : chr "NA19656"
-  .. .. .. ..$ : chr "NA19657"
-  .. .. .. ..$ : chr "NA19658"
-  .. .. .. ..$ : chr "NA19686"
-  .. .. .. ..$ : chr "NA19719"
-  .. .. .. .. [list output truncated]
-  .. .. ..$ rows  : int 173
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 9
-  .. .. ..$ name  : chr "sample_annotation_1KG"
-  .. .. ..$ title : chr "Annotation for 1000 genomes Phase 3 samples"
-  .. .. ..$ object: chr "sample_annotation_1KG"
-  .. .. ..$ file  : chr "sample_annotation_1KG.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 3
-  .. .. .. ..$ : chr "sample.id"
-  .. .. .. ..$ : chr "Population"
-  .. .. .. ..$ : chr "sex"
-  .. .. ..$ rows  : int 100
-  .. .. ..$ table : logi TRUE
-  .. .. ..$ tojson: logi TRUE
-  ..$ _help             :List of 21
+  ..$ _exports          :List of 8
+  .. ..$ : chr "calculateMultiUMAP"
+  .. ..$ : chr "computeCorrelations"
+  .. ..$ : chr "findTopCorrelations"
+  .. ..$ : chr "intersectClusters"
+  .. ..$ : chr "intersectGraphs"
+  .. ..$ : chr "multiModalMNN"
+  .. ..$ : chr "rescaleByNeighbors"
+  .. ..$ : chr "runMultiUMAP"
+  ..$ _help             :List of 7
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "GENESIS-package"
-  .. .. ..$ title : chr "GENetic EStimation and Inference in Structured samples (GENESIS): Statistical methods for analyzing genetic dat"| __truncated__
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "GENESIS-package"
-  .. .. .. ..$ : chr "GENESIS"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "admixMap"
-  .. .. ..$ title : chr "admixMap"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "admixMap"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "assocTestAggregate"
-  .. .. ..$ title : chr "Aggregate Association Testing"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "assocTestAggregate"
-  .. .. .. ..$ : chr "assocTestAggregate,GenotypeIterator-method"
-  .. .. .. ..$ : chr "assocTestAggregate,SeqVarIterator-method"
-  .. .. .. ..$ : chr "assocTestAggregate-methods"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "assocTestSingle"
-  .. .. ..$ title : chr "Genotype Association Testing with Mixed Models"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "assocTestSingle"
-  .. .. .. ..$ : chr "assocTestSingle,GenotypeIterator-method"
-  .. .. .. ..$ : chr "assocTestSingle,SeqVarIterator-method"
-  .. .. .. ..$ : chr "assocTestSingle-methods"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "computeVSIF"
-  .. .. ..$ title : chr "Computes variant-specific inflation factors"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "computeVSIF"
-  .. .. .. ..$ : chr "computeVSIFNullModel"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "effectAllele"
-  .. .. ..$ title : chr "Return the effect allele for association testing"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "effectAllele"
-  .. .. .. ..$ : chr "effectAllele,GenotypeData-method"
-  .. .. .. ..$ : chr "effectAllele,SeqVarGDSClass-method"
-  .. .. .. ..$ : chr "effectAllele-methods"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "fitNullModel"
-  .. .. ..$ title : chr "Fit a Model Under the Null Hypothesis"
-  .. .. ..$ topics:List of 16
-  .. .. .. ..$ : chr "calcScore"
-  .. .. .. ..$ : chr "fitNullModel"
-  .. .. .. ..$ : chr "fitNullModel,AnnotatedDataFrame-method"
-  .. .. .. ..$ : chr "fitNullModel,data.frame-method"
-  .. .. .. ..$ : chr "fitNullModel,GenotypeData-method"
-  .. .. .. ..$ : chr "fitNullModel,ScanAnnotationDataFrame-method"
-  .. .. .. ..$ : chr "fitNullModel,SeqVarData-method"
-  .. .. .. ..$ : chr "fitNullModel-methods"
-  .. .. .. ..$ : chr "fitNullModelFastScore"
-  .. .. .. ..$ : chr "fitNullModelFastScore,SeqVarData-method"
-  .. .. .. ..$ : chr "fitNullModelFastScore-methods"
-  .. .. .. ..$ : chr "isNullModelFastScore"
-  .. .. .. ..$ : chr "isNullModelSmall"
-  .. .. .. ..$ : chr "nullModelFastScore"
-  .. .. .. ..$ : chr "nullModelInvNorm"
-  .. .. .. ..$ : chr "nullModelSmall"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "defunct"
-  .. .. ..$ title : chr "Defunct functions in package 'GENESIS'"
-  .. .. ..$ topics:List of 13
-  .. .. .. ..$ : chr "admixMapMM"
-  .. .. .. ..$ : chr "assocTestMM"
-  .. .. .. ..$ : chr "assocTestSeq"
-  .. .. .. ..$ : chr "assocTestSeqWindow"
-  .. .. .. ..$ : chr "fitNullMM"
-  .. .. .. ..$ : chr "fitNullReg"
-  .. .. .. ..$ : chr "GENESIS-defunct"
-  .. .. .. ..$ : chr "king2mat"
-  .. .. .. ..$ : chr "pcrelate,GenotypeData-method"
-  .. .. .. ..$ : chr "pcrelate,SeqVarData-method"
-  .. .. .. ..$ : chr "pcrelateMakeGRM"
-  .. .. .. ..$ : chr "pcrelateReadInbreed"
-  .. .. .. ..$ : chr "pcrelateReadKinship"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "HapMap_ASW_MXL_KINGmat"
-  .. .. ..$ title : chr "Matrix of Pairwise Kinship Coefficient Estimates for the combined HapMap ASW and MXL Sample found with the KING"| __truncated__
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "HapMap_ASW_MXL_KINGmat"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "jointScoreTest"
-  .. .. ..$ title : chr "Perform a joint score test"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "jointScoreTest"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "kin2gds"
-  .. .. ..$ title : chr "Store kinship matrix in GDS"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "kin2gds"
-  .. .. .. ..$ : chr "mat2gds"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "kingToMatrix"
-  .. .. ..$ title : chr "Convert KING text output to an R Matrix"
+  .. .. ..$ page  : chr "computeCorrelations"
+  .. .. ..$ title : chr "Compute correlations between modes"
   .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "kingToMatrix"
-  .. .. .. ..$ : chr "kingToMatrix,character-method"
-  .. .. .. ..$ : chr "kingToMatrix,snpgdsIBDClass-method"
+  .. .. .. ..$ : chr "computeCorrelations"
+  .. .. .. ..$ : chr "computeCorrelations,ANY-method"
+  .. .. .. ..$ : chr "computeCorrelations,SummarizedExperiment-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "makeSparseMatrix"
-  .. .. ..$ title : chr "Make a sparse matrix from a dense matrix or a table of pairwise values"
-  .. .. ..$ topics:List of 6
-  .. .. .. ..$ : chr "makeSparseMatrix"
-  .. .. .. ..$ : chr "makeSparseMatrix,data.frame-method"
-  .. .. .. ..$ : chr "makeSparseMatrix,data.table-method"
-  .. .. .. ..$ : chr "makeSparseMatrix,Matrix-method"
-  .. .. .. ..$ : chr "makeSparseMatrix,matrix-method"
-  .. .. .. ..$ : chr "makeSparseMatrix-methods"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pcair"
-  .. .. ..$ title : chr "PC-AiR: Principal Components Analysis in Related Samples"
-  .. .. ..$ topics:List of 8
-  .. .. .. ..$ : chr "pcair"
-  .. .. .. ..$ : chr "pcair,gds.class-method"
-  .. .. .. ..$ : chr "pcair,GdsGenotypeReader-method"
-  .. .. .. ..$ : chr "pcair,GenotypeData-method"
-  .. .. .. ..$ : chr "pcair,MatrixGenotypeReader-method"
-  .. .. .. ..$ : chr "pcair,SeqVarGDSClass-method"
-  .. .. .. ..$ : chr "pcair,SNPGDSFileClass-method"
-  .. .. .. ..$ : chr "pcair-methods"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pcairPartition"
-  .. .. ..$ title : chr "Partition a sample into an ancestry representative 'unrelated subset' and a 'related subset'"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "pcairPartition"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pcrelate"
-  .. .. ..$ title : chr "PC-Relate: Model-Free Estimation of Recent Genetic Relatedness"
-  .. .. ..$ topics:List of 9
-  .. .. .. ..$ : chr "calcISAFBeta"
-  .. .. .. ..$ : chr "correctK0"
-  .. .. .. ..$ : chr "correctK2"
-  .. .. .. ..$ : chr "correctKin"
-  .. .. .. ..$ : chr "pcrelate"
-  .. .. .. ..$ : chr "pcrelate,GenotypeIterator-method"
-  .. .. .. ..$ : chr "pcrelate,SeqVarIterator-method"
-  .. .. .. ..$ : chr "pcrelateSampBlock"
-  .. .. .. ..$ : chr "samplesGdsOrder"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "pcrelateToMatrix"
-  .. .. ..$ title : chr "Creates a Genetic Relationship Matrix (GRM) of Pairwise Kinship Coefficient Estimates from PC-Relate Output"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "pcrelateToMatrix"
-  .. .. .. ..$ : chr "pcrelateToMatrix,pcrelate-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plot.pcair"
-  .. .. ..$ title : chr "PC-AiR: Plotting PCs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plot.pcair"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "print.pcair"
-  .. .. ..$ title : chr "PC-AiR: Principal Components Analysis in Related Samples"
+  .. .. ..$ page  : chr "findTopCorrelations"
+  .. .. ..$ title : chr "Find top correlations between features"
   .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "print.pcair"
-  .. .. .. ..$ : chr "print.summary.pcair"
-  .. .. .. ..$ : chr "summary.pcair"
+  .. .. .. ..$ : chr "findTopCorrelations"
+  .. .. .. ..$ : chr "findTopCorrelations,ANY-method"
+  .. .. .. ..$ : chr "findTopCorrelations,SummarizedExperiment-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "sample_annotation_1KG"
-  .. .. ..$ title : chr "Annotation for 1000 genomes Phase 3 samples"
+  .. .. ..$ page  : chr "intersectClusters"
+  .. .. ..$ title : chr "Intersect pre-defined clusters"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "sample_annotation_1KG"
+  .. .. .. ..$ : chr "intersectClusters"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "varCompCI"
-  .. .. ..$ title : chr "Variance Component Confidence Intervals"
+  .. .. ..$ page  : chr "intersectGraphs"
+  .. .. ..$ title : chr "Intersect two graphs"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "varCompCI"
-  ..$ _readme           : chr "https://github.com/bioc/GENESIS/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 107
-  .. ..$ : chr "backports"
+  .. .. .. ..$ : chr "intersectGraphs"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "multiModalMNN"
+  .. .. ..$ title : chr "Multi-modal batch correction with MNNs"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "multiModalMNN"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "rescaleByNeighbors"
+  .. .. ..$ title : chr "Rescale matrices for different modes"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "rescaleByNeighbors"
+  .. .. .. ..$ : chr "rescaleByNeighbors,ANY-method"
+  .. .. .. ..$ : chr "rescaleByNeighbors,SingleCellExperiment-method"
+  .. .. .. ..$ : chr "rescaleByNeighbors,SummarizedExperiment-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "runMultiUMAP"
+  .. .. ..$ title : chr "Multi-modal UMAP"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "calculateMultiUMAP"
+  .. .. .. ..$ : chr "calculateMultiUMAP,ANY-method"
+  .. .. .. ..$ : chr "calculateMultiUMAP,SingleCellExperiment-method"
+  .. .. .. ..$ : chr "calculateMultiUMAP,SummarizedExperiment-method"
+  .. .. .. ..$ : chr "runMultiUMAP"
+  ..$ _readme           : chr "https://github.com/bioc/mumosa/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 64
+  .. ..$ : chr "abind"
+  .. ..$ : chr "assorthead"
+  .. ..$ : chr "batchelor"
+  .. ..$ : chr "beachmat"
   .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocNeighbors"
   .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
-  .. ..$ : chr "blob"
-  .. ..$ : chr "boot"
-  .. ..$ : chr "broom"
-  .. ..$ : chr "cachem"
+  .. ..$ : chr "BiocSingular"
+  .. ..$ : chr "bluster"
   .. ..$ : chr "cli"
-  .. ..$ : chr "clipr"
+  .. ..$ : chr "cluster"
   .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
-  .. ..$ : chr "crayon"
-  .. ..$ : chr "data.table"
-  .. ..$ : chr "DBI"
-  .. ..$ : chr "digest"
-  .. ..$ : chr "DNAcopy"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "fastmap"
-  .. ..$ : chr "forcats"
-  .. ..$ : chr "foreach"
+  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "DelayedMatrixStats"
+  .. ..$ : chr "dqrng"
+  .. ..$ : chr "edgeR"
+  .. ..$ : chr "FNN"
   .. ..$ : chr "formatR"
-  .. ..$ : chr "formula.tools"
   .. ..$ : chr "futile.logger"
   .. ..$ : chr "futile.options"
-  .. ..$ : chr "gdsfmt"
   .. ..$ : chr "generics"
   .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "glmnet"
   .. ..$ : chr "glue"
-  .. ..$ : chr "GWASExactHW"
-  .. ..$ : chr "GWASTools"
-  .. ..$ : chr "haven"
-  .. ..$ : chr "hms"
   .. ..$ : chr "igraph"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "iterators"
-  .. ..$ : chr "jomo"
+  .. ..$ : chr "irlba"
   .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
-  .. ..$ : chr "lme4"
-  .. ..$ : chr "lmtest"
-  .. ..$ : chr "logistf"
+  .. ..$ : chr "limma"
+  .. ..$ : chr "locfit"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "MASS"
   .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixModels"
-  .. ..$ : chr "memoise"
-  .. ..$ : chr "mgcv"
-  .. ..$ : chr "mice"
-  .. ..$ : chr "minqa"
-  .. ..$ : chr "mitml"
-  .. ..$ : chr "nlme"
-  .. ..$ : chr "nloptr"
-  .. ..$ : chr "nnet"
-  .. ..$ : chr "numDeriv"
-  .. ..$ : chr "operator.tools"
-  .. ..$ : chr "ordinal"
-  .. ..$ : chr "pan"
-  .. ..$ : chr "pillar"
+  .. ..$ : chr "MatrixGenerics"
+  .. ..$ : chr "matrixStats"
+  .. ..$ : chr "metapod"
   .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plyr"
-  .. ..$ : chr "prettyunits"
-  .. ..$ : chr "progress"
-  .. ..$ : chr "purrr"
-  .. ..$ : chr "quantreg"
-  .. ..$ : chr "quantsmooth"
-  .. ..$ : chr "R6"
-  .. ..$ : chr "rbibutils"
   .. ..$ : chr "Rcpp"
+  .. ..$ : chr "RcppAnnoy"
   .. ..$ : chr "RcppEigen"
-  .. ..$ : chr "Rdpack"
-  .. ..$ : chr "readr"
-  .. ..$ : chr "reformulas"
-  .. ..$ : chr "reshape2"
-  .. ..$ : chr "RhpcBLASctl"
+  .. ..$ : chr "RcppProgress"
+  .. ..$ : chr "ResidualMatrix"
   .. ..$ : chr "rlang"
-  .. ..$ : chr "rpart"
-  .. ..$ : chr "RSQLite"
+  .. ..$ : chr "RSpectra"
+  .. ..$ : chr "rsvd"
+  .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "sandwich"
-  .. ..$ : chr "SeqArray"
+  .. ..$ : chr "ScaledMatrix"
+  .. ..$ : chr "scran"
+  .. ..$ : chr "scuttle"
   .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SeqVarTools"
-  .. ..$ : chr "shape"
+  .. ..$ : chr "SingleCellExperiment"
+  .. ..$ : chr "sitmo"
   .. ..$ : chr "snow"
-  .. ..$ : chr "SNPRelate"
-  .. ..$ : chr "SparseM"
-  .. ..$ : chr "stringi"
-  .. ..$ : chr "stringr"
-  .. ..$ : chr "survival"
-  .. ..$ : chr "tibble"
-  .. ..$ : chr "tidyr"
-  .. ..$ : chr "tidyselect"
-  .. .. [list output truncated]
-  ..$ _vignettes        :List of 3
+  .. ..$ : chr "SparseArray"
+  .. ..$ : chr "sparseMatrixStats"
+  .. ..$ : chr "statmod"
+  .. ..$ : chr "SummarizedExperiment"
+  .. ..$ : chr "uwot"
+  .. ..$ : chr "vctrs"
+  .. ..$ : chr "XVector"
+  ..$ _vignettes        :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "assoc_test_seq.Rmd"
-  .. .. ..$ filename: chr "assoc_test_seq.html"
-  .. .. ..$ title   : chr "Analyzing Sequence Data using the GENESIS Package"
-  .. .. ..$ author  : chr "Stephanie M. Gogarten"
+  .. .. ..$ source  : chr "overview.Rmd"
+  .. .. ..$ filename: chr "overview.html"
+  .. .. ..$ title   : chr "Utilities for multi-modal single-cell analyses"
+  .. .. ..$ author  : chr "Aaron Lun"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 12
+  .. .. ..$ headings:List of 8
   .. .. .. ..$ : chr "Overview"
-  .. .. .. ..$ : chr "Convert VCF to GDS"
-  .. .. .. ..$ : chr "Create a SeqVarData object"
-  .. .. .. ..$ : chr "Population structure and relatedness"
-  .. .. .. ..$ : chr "KING"
-  .. .. .. ..$ : chr "PC-AiR"
-  .. .. .. ..$ : chr "PC-Relate"
-  .. .. .. ..$ : chr "Association tests"
-  .. .. .. ..$ : chr "Null model"
-  .. .. .. ..$ : chr "Single variant tests"
-  .. .. .. ..$ : chr "Aggregate tests"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2018-04-26 23:07:52"
-  .. .. ..$ modified: chr "2025-06-28 21:58:55"
-  .. .. ..$ commits : int 9
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "assoc_test.Rmd"
-  .. .. ..$ filename: chr "assoc_test.html"
-  .. .. ..$ title   : chr "Genetic Association Testing using the GENESIS Package"
-  .. .. ..$ author  : chr "Matthew P. Conomos"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 22
-  .. .. .. ..$ : chr "Overview"
-  .. .. .. ..$ : chr "Data"
-  .. .. .. ..$ : chr "Preparing Scan Annotation Data"
-  .. .. .. ..$ : chr "Reading in Genotype Data"
-  .. .. .. ..$ : chr "R Matrix"
-  .. .. .. ..$ : chr "GDS files"
-  .. .. .. ..$ : chr "PLINK files"
-  .. .. .. ..$ : chr "HapMap Data"
-  .. .. .. ..$ : chr "Reading in the GRM from PC-Relate"
-  .. .. .. ..$ : chr "Mixed Model Association Testing"
-  .. .. .. ..$ : chr "Fit the Null Model"
-  .. .. .. ..$ : chr "Quantitative Phenotypes"
-  .. .. .. ..$ : chr "Multiple Fixed Effect Covariates"
-  .. .. .. ..$ : chr "Multiple Random Effects"
-  .. .. .. ..$ : chr "Heterogeneous Residual Variances"
-  .. .. .. ..$ : chr "Binary Phentoypes"
-  .. .. .. ..$ : chr "Run SNP-Phenotype Association Tests"
-  .. .. .. ..$ : chr "Output"
-  .. .. .. ..$ : chr "The Null Model"
-  .. .. .. ..$ : chr "The Association Tests"
-  .. .. .. ..$ : chr "Heritability Estimation"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2016-02-04 00:40:10"
-  .. .. ..$ modified: chr "2021-08-09 23:57:03"
-  .. .. ..$ commits : int 12
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "pcair.Rmd"
-  .. .. ..$ filename: chr "pcair.html"
-  .. .. ..$ title   : chr "Population Structure and Relatedness Inference using the GENESIS Package"
-  .. .. ..$ author  : chr "Matthew P. Conomos"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 19
-  .. .. .. ..$ : chr "Overview"
-  .. .. .. ..$ : chr "Principal Components Analysis in Related Samples (PC-AiR)"
-  .. .. .. ..$ : chr "Relatedness Estimation Adjusted for Principal Components (PC-Relate)"
-  .. .. .. ..$ : chr "Data"
-  .. .. .. ..$ : chr "Reading in Genotype Data"
-  .. .. .. ..$ : chr "R Matrix"
-  .. .. .. ..$ : chr "GDS files"
-  .. .. .. ..$ : chr "PLINK files"
-  .. .. .. ..$ : chr "HapMap Data"
-  .. .. .. ..$ : chr "LD pruning"
-  .. .. .. ..$ : chr "Pairwise Measures of Ancestry Divergence"
-  .. .. .. ..$ : chr "Running PC-AiR"
-  .. .. .. ..$ : chr "Reference Population Samples"
-  .. .. .. ..$ : chr "Partition a Sample without Running PCA"
-  .. .. .. ..$ : chr "Output from PC-AiR"
-  .. .. .. ..$ : chr "Plotting PC-AiR PCs"
-  .. .. .. ..$ : chr "Running PC-Relate"
-  .. .. .. ..$ : chr "Output from PC-Relate"
-  .. .. .. ..$ : chr "References"
-  .. .. ..$ created : chr "2015-03-20 17:13:09"
-  .. .. ..$ modified: chr "2021-08-09 23:57:03"
-  .. .. ..$ commits : int 11
-  ..$ _score            : num 10.6
+  .. .. .. ..$ : chr "Setting up the dataset"
+  .. .. .. ..$ : chr "Rescaling by neighbors"
+  .. .. .. ..$ : chr "Intersecting clusters"
+  .. .. .. ..$ : chr "Multi-metric UMAP"
+  .. .. .. ..$ : chr "Intersecting graphs"
+  .. .. .. ..$ : chr "Correlation analyses"
+  .. .. .. ..$ : chr "Session information"
+  .. .. ..$ created : chr "2020-11-30 06:25:23"
+  .. .. ..$ modified: chr "2024-03-05 23:12:36"
+  .. .. ..$ commits : int 7
+  ..$ _score            : num 4.32
   ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "genesis"
-  ..$ _universes        :List of 3
+  ..$ _nocasepkg        : chr "mumosa"
+  ..$ _universes        :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "smgogarten"
-  .. ..$ : chr "uw-gac"
-  ..$ _binaries         :List of 12
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:18:55.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "251528ed649d2e689c0e4f069589d60d62ad7210c99eed2931f7446c4dadacff"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:19:32.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "b20af34602bcb1e1d6b74377fd13825f4ea640170347cfa3889335ec3ee10ca5"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:18:29.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "b5216b8121b04cf20a9cb4a326c0585cd84c1844137b38aac01fa91ffd251239"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:19:14.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "ce274c9f59ece1b9ef58585ec373141bb59d94e1cc7860fcc3700b6fc7f69511"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
+  .. ..$ : chr "ltla"
+  ..$ _previous         : chr "1.19.0"
+  ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:44:16.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "d794604ff03fc72186720f10831634acbfa51f51a3eee0e006fdae06f94ae725"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T04:22:12.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "0ba0286a84ec815c96c07c8c6935f76e31faaa02948368cac5d5cf59212697f8"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:26:13.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "8ffe1cea64626122ea0fd3ba36c1297a940fe51129bd46986e10ec943cc2a392"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:45:00.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "ca1ee5b0a2aadcb04ea662955da59959acf104608ff4ba97f605749655568b89"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T04:22:49.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "0a0ee80f76e042eaefe735daf447ca48b45b16a18afab82ffe1af08193458f84"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:28:03.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "d1d8d39638f096539b267035dff492d4292bfd77ea40bb3871e63011db4e5d95"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
   .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T05:07:54.000Z"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "c4dadeaf7fd54a3d56570fb58876912f16f2eb26b9f6b9b61c94607d33b1cb68"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T05:09:03.000Z"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "cf2f1f3a00f14f54199b72c14025ec1b16a5dc0f1b5747e320093dd10dcafbed"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:18:57.000Z"
-  .. .. ..$ arch    : chr "emscripten"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "f6a1f39ec0566754a15e07cd7624df433f5849411727af41c02428dfadcc57a8"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T04:21:54.000Z"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "f1a888ffa2939773a6d1489f643c8d5da5d1f79458ff9375f67ed711fe9474c2"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 10
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:17:08.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "bad077dea92de72cb84923bad6c002627337ea6be9a30fb5fc5f094c54d5f4b4"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T04:20:52.000Z"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "48804d906ebd79ee675df0d034a60d479d6db8cd71821692cd14de98b2ae0f74"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 10
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:17:17.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "465ba18bacf69746b44152d6bf552b08a4d26900754fe69e9c2cdcd2721ed132"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T04:21:04.000Z"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "cfd3e3f5c4e3a5c55fa9f3c800813da4456d1ae4e8c077c1a507c9b995b94603"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"
-  .. ..$ :List of 10
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.41.0"
-  .. .. ..$ date    : chr "2026-03-04T04:16:59.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "dd480380c7705d36d1dbeb09c73b08f60623701a"
-  .. .. ..$ fileid  : chr "be6cb335e3d0e03259c7524023e733a21de301cdafb8794a88e1d6240facf886"
+  .. .. ..$ version : chr "1.19.1"
+  .. .. ..$ date    : chr "2026-03-05T04:20:40.000Z"
+  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
+  .. .. ..$ fileid  : chr "68c697a3eac53da0f31c98aa917665dbccb797eb3c72526a6a824d07394c9499"
   .. .. ..$ status  : chr "success"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22654633347"</code></pre>
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
