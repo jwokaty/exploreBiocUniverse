@@ -255,14 +255,14 @@ Total 2348 2361</code></pre>
 <td style="text-align: left;">OAtools</td>
 <td style="text-align: left;">0.99.12</td>
 <td style="text-align: left;">2026-03-05T04:29:13.000Z</td>
-<td style="text-align: left;">2026-03-05T05:25:58.754Z</td>
+<td style="text-align: left;">2026-03-06T03:49:01.202Z</td>
 <td style="text-align: left;">https://github.com/bioc/OAtools</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">PTMods</td>
-<td style="text-align: left;">0.99.1</td>
-<td style="text-align: left;">2026-02-19T06:02:38.000Z</td>
-<td style="text-align: left;">2026-02-19T06:05:49.828Z</td>
+<td style="text-align: left;">0.99.2</td>
+<td style="text-align: left;">2026-03-06T04:12:13.000Z</td>
+<td style="text-align: left;">2026-03-06T05:04:55.775Z</td>
 <td style="text-align: left;">https://github.com/bioc/PTMods</td>
 </tr>
 <tr class="odd">
@@ -304,7 +304,7 @@ Total 2348 2361</code></pre>
 <td style="text-align: left;">damidBind</td>
 <td style="text-align: left;">0.99.14</td>
 <td style="text-align: left;">2026-03-05T04:17:45.000Z</td>
-<td style="text-align: left;">2026-03-05T05:16:17.275Z</td>
+<td style="text-align: left;">2026-03-06T03:48:55.427Z</td>
 <td style="text-align: left;">https://github.com/bioc/damidBind</td>
 </tr>
 <tr class="odd">
@@ -330,9 +330,9 @@ Total 2348 2361</code></pre>
 </tr>
 <tr class="even">
 <td style="text-align: left;">epiSeeker</td>
-<td style="text-align: left;">0.99.14</td>
-<td style="text-align: left;">2026-02-14T05:28:01.000Z</td>
-<td style="text-align: left;">2026-02-14T05:42:31.262Z</td>
+<td style="text-align: left;">0.99.15</td>
+<td style="text-align: left;">2026-03-06T04:17:37.000Z</td>
+<td style="text-align: left;">2026-03-06T05:24:48.180Z</td>
 <td style="text-align: left;">https://github.com/bioc/epiSeeker</td>
 </tr>
 <tr class="odd">
@@ -345,8 +345,8 @@ Total 2348 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">immReferent</td>
 <td style="text-align: left;">0.99.6</td>
-<td style="text-align: left;">2026-02-04T04:28:11.000Z</td>
-<td style="text-align: left;">2026-02-04T04:45:37.759Z</td>
+<td style="text-align: left;">2026-03-06T04:36:39.000Z</td>
+<td style="text-align: left;">2026-03-06T05:31:13.042Z</td>
 <td style="text-align: left;">https://github.com/bioc/immReferent</td>
 </tr>
 <tr class="odd">
@@ -374,7 +374,7 @@ Total 2348 2361</code></pre>
 <td style="text-align: left;">posDemux</td>
 <td style="text-align: left;">0.99.11</td>
 <td style="text-align: left;">2026-03-05T04:05:46.000Z</td>
-<td style="text-align: left;">2026-03-05T04:57:37.868Z</td>
+<td style="text-align: left;">2026-03-06T03:48:23.528Z</td>
 <td style="text-align: left;">https://github.com/bioc/posDemux</td>
 </tr>
 <tr class="odd">
@@ -914,235 +914,294 @@ Total 2348 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 69
-  ..$ Package           : chr "mumosa"
-  ..$ Type              : chr "Package"
-  ..$ Authors@R         : chr "person(\"Aaron\", \"Lun\", role = c(\"aut\", \"cre\"), email=\"infinite.monkeys.with.keyboards@gmail.com\")"
-  ..$ Version           : chr "1.19.1"
-  ..$ Date              : chr "2026-03-05"
-  ..$ License           : chr "GPL-3"
-  ..$ Title             : chr "Multi-Modal Single-Cell Analysis Methods"
-  ..$ Description       : chr "Assorted utilities for multi-modal analyses of single-cell\ndatasets. Includes functions to combine multiple mo"| __truncated__
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ biocViews         : chr "ImmunoOncology, SingleCell, RNASeq"
+ $ :List of 73
+  ..$ Package           : chr "Biostrings"
+  ..$ Title             : chr "Efficient manipulation of biological strings"
+  ..$ Description       : chr "Memory efficient string containers, string matching\nalgorithms, and other utilities, for fast manipulation of "| __truncated__
+  ..$ biocViews         : chr "SequenceMatching, Alignment, Sequencing, Genetics,\nDataImport, DataRepresentation, Infrastructure"
+  ..$ URL               : chr "https://bioconductor.org/packages/Biostrings"
+  ..$ BugReports        : chr "https://github.com/Bioconductor/Biostrings/issues"
+  ..$ Version           : chr "2.79.5"
+  ..$ License           : chr "Artistic-2.0"
   ..$ Encoding          : chr "UTF-8"
-  ..$ RoxygenNote       : chr "7.3.2"
-  ..$ URL               : chr "http://bioconductor.org/packages/mumosa"
-  ..$ BugReports        : chr "https://support.bioconductor.org/"
-  ..$ Config/pak/sysreqs: chr "libglpk-dev libxml2-dev zlib1g-dev"
+  ..$ Authors@R         : chr "c(\nperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\nemail=\"hpages.on.github@gmail.com\"),\nperson(\"Pa"| __truncated__
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ Collate           : chr "utils.R IUPAC_CODE_MAP.R AMINO_ACID_CODE.R GENETIC_CODE.R\nXStringCodec-class.R seqtype.R coloring.R XString-cl"| __truncated__
+  ..$ Config/pak/sysreqs: chr "zlib1g-dev"
   ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-03-05 02:56:55 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/mumosa"
+  ..$ Date/Publication  : chr "2026-03-06 06:36:30 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/Biostrings"
   ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  ..$ NeedsCompilation  : chr "no"
+  ..$ RemoteSha         : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  ..$ NeedsCompilation  : chr "yes"
   ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-03-05 04:17:33 UTC"
+  .. ..$ Date: chr "2026-03-06 08:39:08 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Aaron Lun [aut, cre]"
-  ..$ Maintainer        : chr "Aaron Lun &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  ..$ MD5sum            : chr "4b005189298b4ad9654cf6fcdb779924"
+  ..$ Author            : chr "Hervé Pagès [aut, cre],\nPatrick Aboyoun [aut],\nRobert Gentleman [aut],\nSaikat DebRoy [aut],\nVince Carey [ct"| __truncated__
+  ..$ Maintainer        : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  ..$ MD5sum            : chr "3e61597f6c7ecbe6b4b25d2af7a3614d"
   ..$ _user             : chr "bioc"
   ..$ _type             : chr "src"
-  ..$ _file             : chr "mumosa_1.19.1.tar.gz"
-  ..$ _fileid           : chr "2b4887ed58b10aa50b48fefd6d34f529a4b37af351e0cc488062b796af8bc8e2"
-  ..$ _filesize         : int 470838
-  ..$ _sha256           : chr "2b4887ed58b10aa50b48fefd6d34f529a4b37af351e0cc488062b796af8bc8e2"
-  ..$ _created          : chr "2026-03-05T04:17:33.000Z"
-  ..$ _published        : chr "2026-03-05T05:12:43.669Z"
-  ..$ _jobs             :List of 10
+  ..$ _file             : chr "Biostrings_2.79.5.tar.gz"
+  ..$ _fileid           : chr "ed24618df104f1e6310761515692a806af703ae199793f23c67443edd1ba7fce"
+  ..$ _filesize         : int 12737994
+  ..$ _sha256           : chr "ed24618df104f1e6310761515692a806af703ae199793f23c67443edd1ba7fce"
+  ..$ _created          : chr "2026-03-06T08:39:08.000Z"
+  ..$ _published        : chr "2026-03-06T08:55:08.640Z"
+  ..$ _jobs             :List of 14
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 223
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 331
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5772946966"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5794349307"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 479
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 305
+  .. .. ..$ config  : chr "linux-devel-arm64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5794344028"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 401
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5772984738"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5794364710"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 512
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 561
+  .. .. ..$ config  : chr "linux-release-arm64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794402120"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 646
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5772989704"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794420866"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 280
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 455
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5773386993"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794380110"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 332
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 894
+  .. .. ..$ config  : chr "macos-devel-x86_64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794476763"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 490
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5773403251"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794387809"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 397
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 798
+  .. .. ..$ config  : chr "macos-release-x86_64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794457191"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 398
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5772909893"
+  .. .. ..$ artifact: chr "5794278038"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 228
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 294
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5772947552"
+  .. .. ..$ artifact: chr "5794341436"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 401
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 330
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5772973669"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5794349058"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 415
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 552
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5772975479"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794399926"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.58e+10
-  .. .. ..$ time    : int 392
+  .. .. ..$ job     : num 6.6e+10
+  .. .. ..$ time    : int 634
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5772972290"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5794418384"
   ..$ _bioccheck        :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 7
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. ..$ error  : int 1
+  .. ..$ warning: int 4
+  .. ..$ note   : int 19
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
   ..$ _status           : chr "success"
   ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/mumosa"
+  ..$ _upstream         : chr "https://github.com/bioc/Biostrings"
   ..$ _commit           :List of 5
-  .. ..$ id       : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. ..$ author   : chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  .. ..$ committer: chr "LTLA &lt;infinite.monkeys.with.keyboards@gmail.com&gt;"
-  .. ..$ message  : chr "Updates to BiocNeighbors function calls.\n"
-  .. ..$ time     : int 1772679415
+  .. ..$ id       : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. ..$ author   : chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ committer: chr "Hervé Pagès &lt;hpages.on.github@gmail.com&gt;"
+  .. ..$ message  : chr "Biostrings 2.79.5: Get rid of never-used SparseMIndex and SparseList classes\n\nThis also eliminates the non-API calls to R.\n"
+  .. ..$ time     : int 1772778990
   ..$ _maintainer       :List of 5
-  .. ..$ name   : chr "Aaron Lun"
-  .. ..$ email  : chr "infinite.monkeys.with.keyboards@gmail.com"
-  .. ..$ login  : chr "ltla"
-  .. ..$ twitter: chr "@realAaronLun"
-  .. ..$ uuid   : int 8166669
+  .. ..$ name    : chr "Hervé Pagès"
+  .. ..$ email   : chr "hpages.on.github@gmail.com"
+  .. ..$ login   : chr "hpages"
+  .. ..$ linkedin: chr "in/hervé-pagès-5038527"
+  .. ..$ uuid    : int 8810451
   ..$ _distro           : chr "noble"
   ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 30
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SingleCellExperiment"
+  ..$ _dependencies     :List of 32
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "R"
+  .. .. ..$ version: chr "&gt;= 4.1.0"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ version: chr "&gt;= 0.37.0"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ version: chr "&gt;= 0.27.12"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ version: chr "&gt;= 2.31.2"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "XVector"
+  .. .. ..$ version: chr "&gt;= 0.37.1"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
+  .. .. ..$ package: chr "Seqinfo"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "XVector"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "grDevices"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "igraph"
+  .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ package: chr "crayon"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "IRanges"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedArray"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DelayedMatrixStats"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocNeighbors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocSingular"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ScaledMatrix"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "beachmat"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scuttle"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "metapod"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scran"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "batchelor"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "uwot"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
+  .. .. ..$ package: chr "graphics"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "knitr"
+  .. .. ..$ package: chr "pwalign"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BSgenome"
+  .. .. ..$ version: chr "&gt;= 1.13.14"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BSgenome.Celegans.UCSC.ce2"
+  .. .. ..$ version: chr "&gt;= 1.3.11"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "BSgenome.Dmelanogaster.UCSC.dm3"
+  .. .. ..$ version: chr "&gt;= 1.3.11"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg18"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "drosophila2probe"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "hgu95av2probe"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "hgu133aprobe"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "GenomicFeatures"
+  .. .. ..$ version: chr "&gt;= 1.3.14"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "hgu95av2cdf"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "affy"
+  .. .. ..$ version: chr "&gt;= 1.41.3"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "affydata"
+  .. .. ..$ version: chr "&gt;= 1.11.5"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "RUnit"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ package: chr "knitr"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "scater"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "bluster"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DropletUtils"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "scRNAseq"
+  .. .. ..$ package: chr "covr"
   .. .. ..$ role   : chr "Suggests"
   ..$ _owner            : chr "bioc"
   ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 3
+  ..$ _usedby           : int 1174
+  ..$ _updates          :List of 8
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-19"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-25"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-45"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-51"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-02"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-10"
@@ -1151,268 +1210,1792 @@ Total 2348 2361</code></pre>
   ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.19.0"
+  .. .. ..$ version: chr "2.79.4"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.18.0"
+  .. .. ..$ version: chr "2.78.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics           :List of 3
-  .. ..$ : chr "immunooncology"
-  .. ..$ : chr "singlecell"
-  .. ..$ : chr "rnaseq"
+  ..$ _topics           :List of 9
+  .. ..$ : chr "sequencematching"
+  .. ..$ : chr "alignment"
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "genetics"
+  .. ..$ : chr "dataimport"
+  .. ..$ : chr "datarepresentation"
+  .. ..$ : chr "infrastructure"
+  .. ..$ : chr "bioconductor-package"
+  .. ..$ : chr "core-package"
+  ..$ _stars            : int 65
+  ..$ _contributors     :List of 12
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "hpages"
+  .. .. ..$ count: int 131
+  .. .. ..$ uuid : int 8810451
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "dtenenba"
+  .. .. ..$ count: int 25
+  .. .. ..$ uuid : int 2286826
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 16
+  .. .. ..$ uuid : int 1744257
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 14
+  .. .. ..$ uuid : int 2746443
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "ahl27"
+  .. .. ..$ count: int 12
+  .. .. ..$ uuid : int 30053966
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vjcitn"
+  .. .. ..$ count: int 6
+  .. .. ..$ uuid : int 4624066
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "felixernst"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 17824332
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "link-ny"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 4392950
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vobencha"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 2466173
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "hsadia538"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 24232785
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "oneillkza"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 3099991
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "digitalwright"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 6781840
   ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
   ..$ _downloads        :List of 2
-  .. ..$ count : int 318
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/mumosa"
-  ..$ _searchresults    : int 14
+  .. ..$ count : int 101125
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/Biostrings"
+  ..$ _mentions         : int 220
+  ..$ _devurl           : chr "https://github.com/bioconductor/biostrings"
+  ..$ _searchresults    : int 11840
   ..$ _rbuild           : chr "4.5.2"
-  ..$ _assets           :List of 9
+  ..$ _assets           :List of 11
+  .. ..$ : chr "extra/Biostrings.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/mumosa.html"
+  .. ..$ : chr "extra/NEWS.html"
+  .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
+  ..$ _homeurl          : chr "https://github.com/bioconductor/biostrings"
   ..$ _realowner        : chr "bioc"
   ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 8
-  .. ..$ : chr "calculateMultiUMAP"
-  .. ..$ : chr "computeCorrelations"
-  .. ..$ : chr "findTopCorrelations"
-  .. ..$ : chr "intersectClusters"
-  .. ..$ : chr "intersectGraphs"
-  .. ..$ : chr "multiModalMNN"
-  .. ..$ : chr "rescaleByNeighbors"
-  .. ..$ : chr "runMultiUMAP"
-  ..$ _help             :List of 7
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "computeCorrelations"
-  .. .. ..$ title : chr "Compute correlations between modes"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "computeCorrelations"
-  .. .. .. ..$ : chr "computeCorrelations,ANY-method"
-  .. .. .. ..$ : chr "computeCorrelations,SummarizedExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "findTopCorrelations"
-  .. .. ..$ title : chr "Find top correlations between features"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "findTopCorrelations"
-  .. .. .. ..$ : chr "findTopCorrelations,ANY-method"
-  .. .. .. ..$ : chr "findTopCorrelations,SummarizedExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "intersectClusters"
-  .. .. ..$ title : chr "Intersect pre-defined clusters"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "intersectClusters"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "intersectGraphs"
-  .. .. ..$ title : chr "Intersect two graphs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "intersectGraphs"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "multiModalMNN"
-  .. .. ..$ title : chr "Multi-modal batch correction with MNNs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "multiModalMNN"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "rescaleByNeighbors"
-  .. .. ..$ title : chr "Rescale matrices for different modes"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "rescaleByNeighbors"
-  .. .. .. ..$ : chr "rescaleByNeighbors,ANY-method"
-  .. .. .. ..$ : chr "rescaleByNeighbors,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "rescaleByNeighbors,SummarizedExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "runMultiUMAP"
-  .. .. ..$ title : chr "Multi-modal UMAP"
-  .. .. ..$ topics:List of 5
-  .. .. .. ..$ : chr "calculateMultiUMAP"
-  .. .. .. ..$ : chr "calculateMultiUMAP,ANY-method"
-  .. .. .. ..$ : chr "calculateMultiUMAP,SingleCellExperiment-method"
-  .. .. .. ..$ : chr "calculateMultiUMAP,SummarizedExperiment-method"
-  .. .. .. ..$ : chr "runMultiUMAP"
-  ..$ _readme           : chr "https://github.com/bioc/mumosa/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 64
-  .. ..$ : chr "abind"
-  .. ..$ : chr "assorthead"
-  .. ..$ : chr "batchelor"
-  .. ..$ : chr "beachmat"
-  .. ..$ : chr "BH"
-  .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocNeighbors"
-  .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "BiocSingular"
-  .. ..$ : chr "bluster"
-  .. ..$ : chr "cli"
-  .. ..$ : chr "cluster"
-  .. ..$ : chr "codetools"
-  .. ..$ : chr "cpp11"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "DelayedMatrixStats"
-  .. ..$ : chr "dqrng"
-  .. ..$ : chr "edgeR"
-  .. ..$ : chr "FNN"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
-  .. ..$ : chr "generics"
-  .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "glue"
-  .. ..$ : chr "igraph"
-  .. ..$ : chr "IRanges"
-  .. ..$ : chr "irlba"
-  .. ..$ : chr "lambda.r"
-  .. ..$ : chr "lattice"
-  .. ..$ : chr "lifecycle"
-  .. ..$ : chr "limma"
-  .. ..$ : chr "locfit"
-  .. ..$ : chr "magrittr"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
-  .. ..$ : chr "metapod"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "Rcpp"
-  .. ..$ : chr "RcppAnnoy"
-  .. ..$ : chr "RcppEigen"
-  .. ..$ : chr "RcppProgress"
-  .. ..$ : chr "ResidualMatrix"
-  .. ..$ : chr "rlang"
-  .. ..$ : chr "RSpectra"
-  .. ..$ : chr "rsvd"
-  .. ..$ : chr "S4Arrays"
-  .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "ScaledMatrix"
-  .. ..$ : chr "scran"
-  .. ..$ : chr "scuttle"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SingleCellExperiment"
-  .. ..$ : chr "sitmo"
-  .. ..$ : chr "snow"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "sparseMatrixStats"
-  .. ..$ : chr "statmod"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "uwot"
-  .. ..$ : chr "vctrs"
-  .. ..$ : chr "XVector"
-  ..$ _vignettes        :List of 1
+  ..$ _exports          :List of 218
+  .. ..$ : chr ".inplaceReplaceLetterAt"
+  .. ..$ : chr "%in%"
+  .. ..$ : chr "AA_ALPHABET"
+  .. ..$ : chr "AA_PROTEINOGENIC"
+  .. ..$ : chr "AA_STANDARD"
+  .. ..$ : chr "AAMultipleAlignment"
+  .. ..$ : chr "AAString"
+  .. ..$ : chr "AAStringSet"
+  .. ..$ : chr "AAStringSetList"
+  .. ..$ : chr "alphabet"
+  .. ..$ : chr "alphabetFrequency"
+  .. ..$ : chr "AMINO_ACID_CODE"
+  .. ..$ : chr "as.data.frame"
+  .. ..$ : chr "as.list"
+  .. ..$ : chr "as.matrix"
+  .. ..$ : chr "BString"
+  .. ..$ : chr "BStringSet"
+  .. ..$ : chr "BStringSetList"
+  .. ..$ : chr "chartr"
+  .. ..$ : chr "codons"
+  .. ..$ : chr "coerce"
+  .. ..$ : chr "collapse"
+  .. ..$ : chr "colmask"
+  .. ..$ : chr "colmask&lt;-"
+  .. ..$ : chr "Compare"
+  .. ..$ : chr "complement"
+  .. ..$ : chr "computeAllFlinks"
+  .. ..$ : chr "consensusMatrix"
+  .. ..$ : chr "consensusString"
+  .. ..$ : chr "consensusViews"
+  .. ..$ : chr "countPattern"
+  .. ..$ : chr "countPDict"
+  .. ..$ : chr "countPWM"
+  .. ..$ : chr "coverage"
+  .. ..$ : chr "detail"
+  .. ..$ : chr "dinucleotideFrequency"
+  .. ..$ : chr "dinucleotideFrequencyTest"
+  .. ..$ : chr "DNA_ALPHABET"
+  .. ..$ : chr "DNA_BASES"
+  .. ..$ : chr "DNAMultipleAlignment"
+  .. ..$ : chr "DNAString"
+  .. ..$ : chr "DNAStringSet"
+  .. ..$ : chr "DNAStringSetList"
+  .. ..$ : chr "duplicated"
+  .. ..$ : chr "encoding"
+  .. ..$ : chr "end"
+  .. ..$ : chr "endIndex"
+  .. ..$ : chr "extract_character_from_XString_by_positions"
+  .. ..$ : chr "extract_character_from_XString_by_ranges"
+  .. ..$ : chr "extractAllMatches"
+  .. ..$ : chr "extractAt"
+  .. ..$ : chr "fasta.index"
+  .. ..$ : chr "fasta.seqlengths"
+  .. ..$ : chr "fastq.geometry"
+  .. ..$ : chr "fastq.seqlengths"
+  .. ..$ : chr "findPalindromes"
+  .. ..$ : chr "gaps"
+  .. ..$ : chr "GENETIC_CODE"
+  .. ..$ : chr "GENETIC_CODE_TABLE"
+  .. ..$ : chr "get_seqtype_conversion_lookup"
+  .. ..$ : chr "getGeneticCode"
+  .. ..$ : chr "getSeq"
+  .. ..$ : chr "gregexpr2"
+  .. ..$ : chr "hasAllFlinks"
+  .. ..$ : chr "hasLetterAt"
+  .. ..$ : chr "hasOnlyBaseLetters"
+  .. ..$ : chr "head"
+  .. ..$ : chr "IlluminaQuality"
+  .. ..$ : chr "initialize"
+  .. ..$ : chr "injectHardMask"
+  .. ..$ : chr "intersect"
+  .. ..$ : chr "is.unsorted"
+  .. ..$ : chr "isMatchingAt"
+  .. ..$ : chr "isMatchingEndingAt"
+  .. ..$ : chr "isMatchingStartingAt"
+  .. ..$ : chr "IUPAC_CODE_MAP"
+  .. ..$ : chr "lcprefix"
+  .. ..$ : chr "lcsuffix"
+  .. ..$ : chr "letter"
+  .. ..$ : chr "letterFrequency"
+  .. ..$ : chr "letterFrequencyInSlidingView"
+  .. ..$ : chr "longestConsecutive"
+  .. ..$ : chr "make_XString_from_string"
+  .. ..$ : chr "make_XStringSet_from_strings"
+  .. ..$ : chr "mask"
+  .. ..$ : chr "maskeddim"
+  .. ..$ : chr "maskedncol"
+  .. ..$ : chr "maskednrow"
+  .. ..$ : chr "maskedratio"
+  .. ..$ : chr "maskedwidth"
+  .. ..$ : chr "maskGaps"
+  .. ..$ : chr "maskMotif"
+  .. ..$ : chr "masks"
+  .. ..$ : chr "masks&lt;-"
+  .. ..$ : chr "match"
+  .. ..$ : chr "matchLRPatterns"
+  .. ..$ : chr "matchPattern"
+  .. ..$ : chr "matchPDict"
+  .. ..$ : chr "matchProbePair"
+  .. .. [list output truncated]
+  ..$ _datasets         :List of 12
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "overview.Rmd"
-  .. .. ..$ filename: chr "overview.html"
-  .. .. ..$ title   : chr "Utilities for multi-modal single-cell analyses"
-  .. .. ..$ author  : chr "Aaron Lun"
+  .. .. ..$ name  : chr "BLOSUM100"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "BLOSUM100"
+  .. .. ..$ file  : chr "BLOSUM100.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 24
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 24
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "BLOSUM45"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "BLOSUM45"
+  .. .. ..$ file  : chr "BLOSUM45.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "J"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 25
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "BLOSUM50"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "BLOSUM50"
+  .. .. ..$ file  : chr "BLOSUM50.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 24
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 24
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "BLOSUM62"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "BLOSUM62"
+  .. .. ..$ file  : chr "BLOSUM62.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "J"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 25
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "BLOSUM80"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "BLOSUM80"
+  .. .. ..$ file  : chr "BLOSUM80.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "J"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 25
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "HNF4alpha"
+  .. .. ..$ title : chr "Known HNF4alpha binding sequences"
+  .. .. ..$ object: chr "HNF4alpha"
+  .. .. ..$ file  : chr "HNF4alpha.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "DNAStringSet"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi FALSE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "PAM120"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "PAM120"
+  .. .. ..$ file  : chr "PAM120.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 24
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 24
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "PAM250"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "PAM250"
+  .. .. ..$ file  : chr "PAM250.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 24
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 24
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "PAM30"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "PAM30"
+  .. .. ..$ file  : chr "PAM30.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "J"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 25
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "PAM40"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "PAM40"
+  .. .. ..$ file  : chr "PAM40.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 24
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 24
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "PAM70"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ object: chr "PAM70"
+  .. .. ..$ file  : chr "PAM70.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "moved_to_pwalign_pkg"
+  .. .. .. ..$ : chr "matrix"
+  .. .. .. ..$ : chr "array"
+  .. .. ..$ fields:List of 25
+  .. .. .. ..$ : chr "A"
+  .. .. .. ..$ : chr "R"
+  .. .. .. ..$ : chr "N"
+  .. .. .. ..$ : chr "D"
+  .. .. .. ..$ : chr "C"
+  .. .. .. ..$ : chr "Q"
+  .. .. .. ..$ : chr "E"
+  .. .. .. ..$ : chr "G"
+  .. .. .. ..$ : chr "H"
+  .. .. .. ..$ : chr "I"
+  .. .. .. ..$ : chr "L"
+  .. .. .. ..$ : chr "K"
+  .. .. .. ..$ : chr "M"
+  .. .. .. ..$ : chr "F"
+  .. .. .. ..$ : chr "P"
+  .. .. .. ..$ : chr "S"
+  .. .. .. ..$ : chr "T"
+  .. .. .. ..$ : chr "W"
+  .. .. .. ..$ : chr "Y"
+  .. .. .. ..$ : chr "V"
+  .. .. .. ..$ : chr "B"
+  .. .. .. ..$ : chr "J"
+  .. .. .. ..$ : chr "Z"
+  .. .. .. ..$ : chr "X"
+  .. .. .. ..$ : chr "*"
+  .. .. ..$ rows  : int 25
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "yeastSEQCHR1"
+  .. .. ..$ title : chr "An annotation data file for CHR1 in the yeastSEQ package"
+  .. .. ..$ object: chr "yeastSEQCHR1"
+  .. .. ..$ file  : chr "yeastSEQCHR1.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "character"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi TRUE
+  ..$ _help             :List of 53
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "AAString-class"
+  .. .. ..$ title : chr "AAString objects"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "AAString"
+  .. .. .. ..$ : chr "AAString-class"
+  .. .. .. ..$ : chr "AA_ALPHABET"
+  .. .. .. ..$ : chr "AA_PROTEINOGENIC"
+  .. .. .. ..$ : chr "AA_STANDARD"
+  .. .. .. ..$ : chr "class:AAString"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "AMINO_ACID_CODE"
+  .. .. ..$ title : chr "The Single-Letter Amino Acid Code"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "AMINO_ACID_CODE"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "chartr"
+  .. .. ..$ title : chr "Replace letters in a sequence or set of sequences"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "chartr"
+  .. .. .. ..$ : chr "chartr,ANY,ANY,MaskedXString-method"
+  .. .. .. ..$ : chr "chartr,ANY,ANY,XString-method"
+  .. .. .. ..$ : chr "chartr,ANY,ANY,XStringSet-method"
+  .. .. .. ..$ : chr "chartr,ANY,ANY,XStringViews-method"
+  .. .. .. ..$ : chr "replaceAmbiguities"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "coloring"
+  .. .. ..$ title : chr "XString Display Colors"
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "coloring"
+  .. .. .. ..$ : chr "update_AA_palette"
+  .. .. .. ..$ : chr "update_B_palette"
+  .. .. .. ..$ : chr "update_DNA_palette"
+  .. .. .. ..$ : chr "update_RNA_palette"
+  .. .. .. ..$ : chr "update_X_palette"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "detail"
+  .. .. ..$ title : chr "Show (display) detailed object content"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "detail"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "dinucleotideFrequencyTest"
+  .. .. ..$ title : chr "Pearson's chi-squared Test and G-tests for String Position Dependence"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "dinucleotideFrequencyTest"
+  .. .. .. ..$ : chr "dinucleotideFrequencyTest,DNAStringSet-method"
+  .. .. .. ..$ : chr "dinucleotideFrequencyTest,RNAStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "DNAString-class"
+  .. .. ..$ title : chr "DNAString objects"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "class:DNAString"
+  .. .. .. ..$ : chr "DNAString"
+  .. .. .. ..$ : chr "DNAString-class"
+  .. .. .. ..$ : chr "DNA_ALPHABET"
+  .. .. .. ..$ : chr "DNA_BASES"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "findPalindromes"
+  .. .. ..$ title : chr "Searching a sequence for palindromes"
+  .. .. ..$ topics:List of 18
+  .. .. .. ..$ : chr "findPalindromes"
+  .. .. .. ..$ : chr "findPalindromes,DNAString-method"
+  .. .. .. ..$ : chr "findPalindromes,MaskedXString-method"
+  .. .. .. ..$ : chr "findPalindromes,RNAString-method"
+  .. .. .. ..$ : chr "findPalindromes,XString-method"
+  .. .. .. ..$ : chr "findPalindromes,XStringViews-method"
+  .. .. .. ..$ : chr "palindromeArmLength"
+  .. .. .. ..$ : chr "palindromeArmLength,DNAString-method"
+  .. .. .. ..$ : chr "palindromeArmLength,RNAString-method"
+  .. .. .. ..$ : chr "palindromeArmLength,XString-method"
+  .. .. .. ..$ : chr "palindromeArmLength,XStringSet-method"
+  .. .. .. ..$ : chr "palindromeArmLength,XStringViews-method"
+  .. .. .. ..$ : chr "palindromeLeftArm"
+  .. .. .. ..$ : chr "palindromeLeftArm,XString-method"
+  .. .. .. ..$ : chr "palindromeLeftArm,XStringViews-method"
+  .. .. .. ..$ : chr "palindromeRightArm"
+  .. .. .. ..$ : chr "palindromeRightArm,XString-method"
+  .. .. .. ..$ : chr "palindromeRightArm,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "GENETIC_CODE"
+  .. .. ..$ title : chr "The Standard Genetic Code and its known variants"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "GENETIC_CODE"
+  .. .. .. ..$ : chr "GENETIC_CODE_TABLE"
+  .. .. .. ..$ : chr "getGeneticCode"
+  .. .. .. ..$ : chr "RNA_GENETIC_CODE"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getSeq"
+  .. .. ..$ title : chr "getSeq"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getSeq"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "gregexpr2"
+  .. .. ..$ title : chr "A replacement for R standard gregexpr function"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "gregexpr2"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "HNF4alpha"
+  .. .. ..$ title : chr "Known HNF4alpha binding sequences"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "HNF4alpha"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "injectHardMask"
+  .. .. ..$ title : chr "Injecting a hard mask in a sequence"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "injectHardMask"
+  .. .. .. ..$ : chr "injectHardMask,MaskedXString-method"
+  .. .. .. ..$ : chr "injectHardMask,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "IUPAC_CODE_MAP"
+  .. .. ..$ title : chr "The IUPAC Extended Genetic Alphabet"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "IUPAC_CODE_MAP"
+  .. .. .. ..$ : chr "mergeIUPACLetters"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "lcsuffix"
+  .. .. ..$ title : chr "Find Longest Common Prefix/Suffix"
+  .. .. ..$ topics:List of 10
+  .. .. .. ..$ : chr "lcprefix"
+  .. .. .. ..$ : chr "lcprefix,character,character-method"
+  .. .. .. ..$ : chr "lcprefix,character,XString-method"
+  .. .. .. ..$ : chr "lcprefix,XString,character-method"
+  .. .. .. ..$ : chr "lcprefix,XString,XString-method"
+  .. .. .. ..$ : chr "lcsuffix"
+  .. .. .. ..$ : chr "lcsuffix,character,character-method"
+  .. .. .. ..$ : chr "lcsuffix,character,XString-method"
+  .. .. .. ..$ : chr "lcsuffix,XString,character-method"
+  .. .. .. ..$ : chr "lcsuffix,XString,XString-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "letter"
+  .. .. ..$ title : chr "Subsetting a string"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "letter"
+  .. .. .. ..$ : chr "letter,character-method"
+  .. .. .. ..$ : chr "letter,MaskedXString-method"
+  .. .. .. ..$ : chr "letter,XString-method"
+  .. .. .. ..$ : chr "letter,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "letterFrequency"
+  .. .. ..$ title : chr "Calculate the frequency of letters in a biological sequence, or the consensus matrix of a set of sequences"
+  .. .. ..$ topics:List of 42
+  .. .. .. ..$ : chr "alphabetFrequency"
+  .. .. .. ..$ : chr "alphabetFrequency,AAString-method"
+  .. .. .. ..$ : chr "alphabetFrequency,AAStringSet-method"
+  .. .. .. ..$ : chr "alphabetFrequency,DNAString-method"
+  .. .. .. ..$ : chr "alphabetFrequency,DNAStringSet-method"
+  .. .. .. ..$ : chr "alphabetFrequency,MaskedXString-method"
+  .. .. .. ..$ : chr "alphabetFrequency,RNAString-method"
+  .. .. .. ..$ : chr "alphabetFrequency,RNAStringSet-method"
+  .. .. .. ..$ : chr "alphabetFrequency,XString-method"
+  .. .. .. ..$ : chr "alphabetFrequency,XStringSet-method"
+  .. .. .. ..$ : chr "alphabetFrequency,XStringViews-method"
+  .. .. .. ..$ : chr "consensusMatrix"
+  .. .. .. ..$ : chr "consensusMatrix,character-method"
+  .. .. .. ..$ : chr "consensusMatrix,matrix-method"
+  .. .. .. ..$ : chr "consensusMatrix,XStringSet-method"
+  .. .. .. ..$ : chr "consensusMatrix,XStringViews-method"
+  .. .. .. ..$ : chr "consensusString"
+  .. .. .. ..$ : chr "consensusString,ANY-method"
+  .. .. .. ..$ : chr "consensusString,BStringSet-method"
+  .. .. .. ..$ : chr "consensusString,DNAStringSet-method"
+  .. .. .. ..$ : chr "consensusString,matrix-method"
+  .. .. .. ..$ : chr "consensusString,RNAStringSet-method"
+  .. .. .. ..$ : chr "consensusString,XStringViews-method"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters,DNAString-method"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters,DNAStringSet-method"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters,MaskedXString-method"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters,RNAString-method"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters,RNAStringSet-method"
+  .. .. .. ..$ : chr "hasOnlyBaseLetters,XStringViews-method"
+  .. .. .. ..$ : chr "letterFrequency"
+  .. .. .. ..$ : chr "letterFrequency,MaskedXString-method"
+  .. .. .. ..$ : chr "letterFrequency,XString-method"
+  .. .. .. ..$ : chr "letterFrequency,XStringSet-method"
+  .. .. .. ..$ : chr "letterFrequency,XStringViews-method"
+  .. .. .. ..$ : chr "letterFrequencyInSlidingView"
+  .. .. .. ..$ : chr "letterFrequencyInSlidingView,XString-method"
+  .. .. .. ..$ : chr "uniqueLetters"
+  .. .. .. ..$ : chr "uniqueLetters,MaskedXString-method"
+  .. .. .. ..$ : chr "uniqueLetters,XString-method"
+  .. .. .. ..$ : chr "uniqueLetters,XStringSet-method"
+  .. .. .. ..$ : chr "uniqueLetters,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "longestConsecutive"
+  .. .. ..$ title : chr "Obtain the length of the longest substring containing only 'letter'"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "longestConsecutive"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "lowlevel-matching"
+  .. .. ..$ title : chr "Low-level matching functions"
+  .. .. ..$ topics:List of 29
+  .. .. .. ..$ : chr "hasLetterAt"
+  .. .. .. ..$ : chr "isMatchingAt"
+  .. .. .. ..$ : chr "isMatchingEndingAt"
+  .. .. .. ..$ : chr "isMatchingEndingAt,character-method"
+  .. .. .. ..$ : chr "isMatchingEndingAt,XString-method"
+  .. .. .. ..$ : chr "isMatchingEndingAt,XStringSet-method"
+  .. .. .. ..$ : chr "isMatchingStartingAt"
+  .. .. .. ..$ : chr "isMatchingStartingAt,character-method"
+  .. .. .. ..$ : chr "isMatchingStartingAt,XString-method"
+  .. .. .. ..$ : chr "isMatchingStartingAt,XStringSet-method"
+  .. .. .. ..$ : chr "lowlevel-matching"
+  .. .. .. ..$ : chr "neditAt"
+  .. .. .. ..$ : chr "neditEndingAt"
+  .. .. .. ..$ : chr "neditEndingAt,character-method"
+  .. .. .. ..$ : chr "neditEndingAt,XString-method"
+  .. .. .. ..$ : chr "neditEndingAt,XStringSet-method"
+  .. .. .. ..$ : chr "neditStartingAt"
+  .. .. .. ..$ : chr "neditStartingAt,character-method"
+  .. .. .. ..$ : chr "neditStartingAt,XString-method"
+  .. .. .. ..$ : chr "neditStartingAt,XStringSet-method"
+  .. .. .. ..$ : chr "which.isMatchingAt"
+  .. .. .. ..$ : chr "which.isMatchingEndingAt"
+  .. .. .. ..$ : chr "which.isMatchingEndingAt,character-method"
+  .. .. .. ..$ : chr "which.isMatchingEndingAt,XString-method"
+  .. .. .. ..$ : chr "which.isMatchingEndingAt,XStringSet-method"
+  .. .. .. ..$ : chr "which.isMatchingStartingAt"
+  .. .. .. ..$ : chr "which.isMatchingStartingAt,character-method"
+  .. .. .. ..$ : chr "which.isMatchingStartingAt,XString-method"
+  .. .. .. ..$ : chr "which.isMatchingStartingAt,XStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "MaskedXString-class"
+  .. .. ..$ title : chr "MaskedXString objects"
+  .. .. ..$ topics:List of 55
+  .. .. .. ..$ : chr "as.character,MaskedXString-method"
+  .. .. .. ..$ : chr "class:MaskedAAString"
+  .. .. .. ..$ : chr "class:MaskedBString"
+  .. .. .. ..$ : chr "class:MaskedDNAString"
+  .. .. .. ..$ : chr "class:MaskedRNAString"
+  .. .. .. ..$ : chr "class:MaskedXString"
+  .. .. .. ..$ : chr "coerce,AAString,MaskedAAString-method"
+  .. .. .. ..$ : chr "coerce,BString,MaskedBString-method"
+  .. .. .. ..$ : chr "coerce,DNAString,MaskedDNAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedAAString,AAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedBString,BString-method"
+  .. .. .. ..$ : chr "coerce,MaskedDNAString,DNAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedRNAString,RNAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,MaskCollection-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,MaskedAAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,MaskedBString-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,MaskedDNAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,MaskedRNAString-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,NormalIRanges-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,Views-method"
+  .. .. .. ..$ : chr "coerce,MaskedXString,XStringViews-method"
+  .. .. .. ..$ : chr "coerce,RNAString,MaskedRNAString-method"
+  .. .. .. ..$ : chr "collapse,MaskedXString-method"
+  .. .. .. ..$ : chr "gaps,MaskedXString-method"
+  .. .. .. ..$ : chr "length,MaskedXString-method"
+  .. .. .. ..$ : chr "MaskedAAString"
+  .. .. .. ..$ : chr "MaskedAAString-class"
+  .. .. .. ..$ : chr "MaskedBString"
+  .. .. .. ..$ : chr "MaskedBString-class"
+  .. .. .. ..$ : chr "MaskedDNAString"
+  .. .. .. ..$ : chr "MaskedDNAString-class"
+  .. .. .. ..$ : chr "maskedratio,MaskedXString-method"
+  .. .. .. ..$ : chr "MaskedRNAString"
+  .. .. .. ..$ : chr "MaskedRNAString-class"
+  .. .. .. ..$ : chr "maskedwidth,MaskedXString-method"
+  .. .. .. ..$ : chr "MaskedXString"
+  .. .. .. ..$ : chr "MaskedXString-class"
+  .. .. .. ..$ : chr "masks"
+  .. .. .. ..$ : chr "masks,MaskedXString-method"
+  .. .. .. ..$ : chr "masks,XString-method"
+  .. .. .. ..$ : chr "masks&lt;-"
+  .. .. .. ..$ : chr "masks&lt;-,MaskedXString,MaskCollection-method"
+  .. .. .. ..$ : chr "masks&lt;-,MaskedXString,NULL-method"
+  .. .. .. ..$ : chr "masks&lt;-,XString,ANY-method"
+  .. .. .. ..$ : chr "masks&lt;-,XString,NULL-method"
+  .. .. .. ..$ : chr "nchar,MaskedXString-method"
+  .. .. .. ..$ : chr "seqtype,MaskedXString-method"
+  .. .. .. ..$ : chr "seqtype&lt;-,MaskedXString-method"
+  .. .. .. ..$ : chr "show,MaskedXString-method"
+  .. .. .. ..$ : chr "subseq,MaskedXString-method"
+  .. .. .. ..$ : chr "toString,MaskedXString-method"
+  .. .. .. ..$ : chr "unmasked"
+  .. .. .. ..$ : chr "unmasked,MaskedXString-method"
+  .. .. .. ..$ : chr "unmasked,XString-method"
+  .. .. .. ..$ : chr "Views,MaskedXString-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "maskMotif"
+  .. .. ..$ title : chr "Masking by content (or by position)"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "mask"
+  .. .. .. ..$ : chr "maskMotif"
+  .. .. .. ..$ : chr "maskMotif,MaskedXString,character-method"
+  .. .. .. ..$ : chr "maskMotif,MaskedXString,XString-method"
+  .. .. .. ..$ : chr "maskMotif,XString,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "match-utils"
+  .. .. ..$ title : chr "Utility functions operating on the matches returned by a high-level matching function"
+  .. .. ..$ topics:List of 9
+  .. .. .. ..$ : chr "coverage,MaskedXString-method"
+  .. .. .. ..$ : chr "coverage,MIndex-method"
+  .. .. .. ..$ : chr "match-utils"
+  .. .. .. ..$ : chr "mismatch"
+  .. .. .. ..$ : chr "mismatch,ANY,XStringViews-method"
+  .. .. .. ..$ : chr "nmatch"
+  .. .. .. ..$ : chr "nmatch,ANY,XStringViews-method"
+  .. .. .. ..$ : chr "nmismatch"
+  .. .. .. ..$ : chr "nmismatch,ANY,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "matchLRPatterns"
+  .. .. ..$ title : chr "Find paired matches in a sequence"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "matchLRPatterns"
+  .. .. .. ..$ : chr "matchLRPatterns,MaskedXString-method"
+  .. .. .. ..$ : chr "matchLRPatterns,XString-method"
+  .. .. .. ..$ : chr "matchLRPatterns,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "matchPattern"
+  .. .. ..$ title : chr "String searching functions"
+  .. .. ..$ topics:List of 24
+  .. .. .. ..$ : chr "countPattern"
+  .. .. .. ..$ : chr "countPattern,character-method"
+  .. .. .. ..$ : chr "countPattern,MaskedXString-method"
+  .. .. .. ..$ : chr "countPattern,XString-method"
+  .. .. .. ..$ : chr "countPattern,XStringSet-method"
+  .. .. .. ..$ : chr "countPattern,XStringViews-method"
+  .. .. .. ..$ : chr "matchPattern"
+  .. .. .. ..$ : chr "matchPattern,character-method"
+  .. .. .. ..$ : chr "matchPattern,MaskedXString-method"
+  .. .. .. ..$ : chr "matchPattern,XString-method"
+  .. .. .. ..$ : chr "matchPattern,XStringSet-method"
+  .. .. .. ..$ : chr "matchPattern,XStringViews-method"
+  .. .. .. ..$ : chr "vcountPattern"
+  .. .. .. ..$ : chr "vcountPattern,character-method"
+  .. .. .. ..$ : chr "vcountPattern,MaskedXString-method"
+  .. .. .. ..$ : chr "vcountPattern,XString-method"
+  .. .. .. ..$ : chr "vcountPattern,XStringSet-method"
+  .. .. .. ..$ : chr "vcountPattern,XStringViews-method"
+  .. .. .. ..$ : chr "vmatchPattern"
+  .. .. .. ..$ : chr "vmatchPattern,character-method"
+  .. .. .. ..$ : chr "vmatchPattern,MaskedXString-method"
+  .. .. .. ..$ : chr "vmatchPattern,XString-method"
+  .. .. .. ..$ : chr "vmatchPattern,XStringSet-method"
+  .. .. .. ..$ : chr "vmatchPattern,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "matchPDict-exact"
+  .. .. ..$ title : chr "Matching a dictionary of patterns against a reference"
+  .. .. ..$ topics:List of 31
+  .. .. .. ..$ : chr "countPDict"
+  .. .. .. ..$ : chr "countPDict,MaskedXString-method"
+  .. .. .. ..$ : chr "countPDict,XString-method"
+  .. .. .. ..$ : chr "countPDict,XStringSet-method"
+  .. .. .. ..$ : chr "countPDict,XStringViews-method"
+  .. .. .. ..$ : chr "extractAllMatches"
+  .. .. .. ..$ : chr "matchPDict"
+  .. .. .. ..$ : chr "matchPDict,MaskedXString-method"
+  .. .. .. ..$ : chr "matchPDict,XString-method"
+  .. .. .. ..$ : chr "matchPDict,XStringSet-method"
+  .. .. .. ..$ : chr "matchPDict,XStringViews-method"
+  .. .. .. ..$ : chr "matchPDict-exact"
+  .. .. .. ..$ : chr "vcountPDict"
+  .. .. .. ..$ : chr "vcountPDict,MaskedXString-method"
+  .. .. .. ..$ : chr "vcountPDict,XString-method"
+  .. .. .. ..$ : chr "vcountPDict,XStringSet-method"
+  .. .. .. ..$ : chr "vcountPDict,XStringViews-method"
+  .. .. .. ..$ : chr "vmatchPDict"
+  .. .. .. ..$ : chr "vmatchPDict,ANY-method"
+  .. .. .. ..$ : chr "vmatchPDict,MaskedXString-method"
+  .. .. .. ..$ : chr "vmatchPDict,XString-method"
+  .. .. .. ..$ : chr "vwhichPDict"
+  .. .. .. ..$ : chr "vwhichPDict,MaskedXString-method"
+  .. .. .. ..$ : chr "vwhichPDict,XString-method"
+  .. .. .. ..$ : chr "vwhichPDict,XStringSet-method"
+  .. .. .. ..$ : chr "vwhichPDict,XStringViews-method"
+  .. .. .. ..$ : chr "whichPDict"
+  .. .. .. ..$ : chr "whichPDict,MaskedXString-method"
+  .. .. .. ..$ : chr "whichPDict,XString-method"
+  .. .. .. ..$ : chr "whichPDict,XStringSet-method"
+  .. .. .. ..$ : chr "whichPDict,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "matchPDict-inexact"
+  .. .. ..$ title : chr "Inexact matching with matchPDict()/countPDict()/whichPDict()"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "matchPDict-inexact"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "matchProbePair"
+  .. .. ..$ title : chr "Find \"theoretical amplicons\" mapped to a probe pair"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "matchProbePair"
+  .. .. .. ..$ : chr "matchProbePair,DNAString-method"
+  .. .. .. ..$ : chr "matchProbePair,MaskedDNAString-method"
+  .. .. .. ..$ : chr "matchProbePair,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "matchPWM"
+  .. .. ..$ title : chr "PWM creating, matching, and related utilities"
+  .. .. ..$ topics:List of 25
+  .. .. .. ..$ : chr "countPWM"
+  .. .. .. ..$ : chr "countPWM,character-method"
+  .. .. .. ..$ : chr "countPWM,DNAString-method"
+  .. .. .. ..$ : chr "countPWM,MaskedDNAString-method"
+  .. .. .. ..$ : chr "countPWM,XStringViews-method"
+  .. .. .. ..$ : chr "matchPWM"
+  .. .. .. ..$ : chr "matchPWM,character-method"
+  .. .. .. ..$ : chr "matchPWM,DNAString-method"
+  .. .. .. ..$ : chr "matchPWM,MaskedDNAString-method"
+  .. .. .. ..$ : chr "matchPWM,XStringViews-method"
+  .. .. .. ..$ : chr "maxScore"
+  .. .. .. ..$ : chr "maxScore,ANY-method"
+  .. .. .. ..$ : chr "maxWeights"
+  .. .. .. ..$ : chr "maxWeights,matrix-method"
+  .. .. .. ..$ : chr "minScore"
+  .. .. .. ..$ : chr "minScore,ANY-method"
+  .. .. .. ..$ : chr "minWeights"
+  .. .. .. ..$ : chr "minWeights,matrix-method"
+  .. .. .. ..$ : chr "PWM"
+  .. .. .. ..$ : chr "PWM,character-method"
+  .. .. .. ..$ : chr "PWM,DNAStringSet-method"
+  .. .. .. ..$ : chr "PWM,matrix-method"
+  .. .. .. ..$ : chr "PWMscoreStartingAt"
+  .. .. .. ..$ : chr "reverseComplement,matrix-method"
+  .. .. .. ..$ : chr "unitScale"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "MIndex-class"
+  .. .. ..$ title : chr "MIndex objects"
+  .. .. ..$ topics:List of 19
+  .. .. .. ..$ : chr "ByPos_MIndex-class"
+  .. .. .. ..$ : chr "class:ByPos_MIndex"
+  .. .. .. ..$ : chr "class:MIndex"
+  .. .. .. ..$ : chr "coerce,MIndex,CompressedIRangesList-method"
+  .. .. .. ..$ : chr "elementNROWS,MIndex-method"
+  .. .. .. ..$ : chr "endIndex"
+  .. .. .. ..$ : chr "endIndex,ByPos_MIndex-method"
+  .. .. .. ..$ : chr "length,MIndex-method"
+  .. .. .. ..$ : chr "MIndex"
+  .. .. .. ..$ : chr "MIndex-class"
+  .. .. .. ..$ : chr "names,MIndex-method"
+  .. .. .. ..$ : chr "names&lt;-,MIndex-method"
+  .. .. .. ..$ : chr "show,MIndex-method"
+  .. .. .. ..$ : chr "startIndex"
+  .. .. .. ..$ : chr "startIndex,ByPos_MIndex-method"
+  .. .. .. ..$ : chr "unlist,MIndex-method"
+  .. .. .. ..$ : chr "width0"
+  .. .. .. ..$ : chr "width0,MIndex-method"
+  .. .. .. ..$ : chr "[[,ByPos_MIndex-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "misc"
+  .. .. ..$ title : chr "Some miscellaneous stuff"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "misc"
+  .. .. .. ..$ : chr "N50"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "MultipleAlignment-class"
+  .. .. ..$ title : chr "MultipleAlignment objects"
+  .. .. ..$ topics:List of 66
+  .. .. .. ..$ : chr "AAMultipleAlignment"
+  .. .. .. ..$ : chr "AAMultipleAlignment-class"
+  .. .. .. ..$ : chr "alphabetFrequency,MultipleAlignment-method"
+  .. .. .. ..$ : chr "as.character,MultipleAlignment-method"
+  .. .. .. ..$ : chr "as.matrix,MultipleAlignment-method"
+  .. .. .. ..$ : chr "class:AAMultipleAlignment"
+  .. .. .. ..$ : chr "class:DNAMultipleAlignment"
+  .. .. .. ..$ : chr "class:MultipleAlignment"
+  .. .. .. ..$ : chr "class:RNAMultipleAlignment"
+  .. .. .. ..$ : chr "coerce,character,AAMultipleAlignment-method"
+  .. .. .. ..$ : chr "coerce,character,DNAMultipleAlignment-method"
+  .. .. .. ..$ : chr "coerce,character,RNAMultipleAlignment-method"
+  .. .. .. ..$ : chr "coerce,MultipleAlignment,AAStringSet-method"
+  .. .. .. ..$ : chr "coerce,MultipleAlignment,BStringSet-method"
+  .. .. .. ..$ : chr "coerce,MultipleAlignment,DNAStringSet-method"
+  .. .. .. ..$ : chr "coerce,MultipleAlignment,RNAStringSet-method"
+  .. .. .. ..$ : chr "colmask"
+  .. .. .. ..$ : chr "colmask,MultipleAlignment-method"
+  .. .. .. ..$ : chr "colmask&lt;-"
+  .. .. .. ..$ : chr "colmask&lt;-,MultipleAlignment,ANY-method"
+  .. .. .. ..$ : chr "colmask&lt;-,MultipleAlignment,NULL-method"
+  .. .. .. ..$ : chr "consensusMatrix,MultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusString,AAMultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusString,DNAMultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusString,MultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusString,RNAMultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusViews"
+  .. .. .. ..$ : chr "consensusViews,AAMultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusViews,DNAMultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusViews,MultipleAlignment-method"
+  .. .. .. ..$ : chr "consensusViews,RNAMultipleAlignment-method"
+  .. .. .. ..$ : chr "detail,MultipleAlignment-method"
+  .. .. .. ..$ : chr "dim,MultipleAlignment-method"
+  .. .. .. ..$ : chr "DNAMultipleAlignment"
+  .. .. .. ..$ : chr "DNAMultipleAlignment-class"
+  .. .. .. ..$ : chr "maskeddim"
+  .. .. .. ..$ : chr "maskeddim,MultipleAlignment-method"
+  .. .. .. ..$ : chr "maskedncol"
+  .. .. .. ..$ : chr "maskedncol,MultipleAlignment-method"
+  .. .. .. ..$ : chr "maskednrow"
+  .. .. .. ..$ : chr "maskednrow,MultipleAlignment-method"
+  .. .. .. ..$ : chr "maskedratio,MultipleAlignment-method"
+  .. .. .. ..$ : chr "maskGaps"
+  .. .. .. ..$ : chr "maskGaps,MultipleAlignment-method"
+  .. .. .. ..$ : chr "maskMotif,MultipleAlignment,ANY-method"
+  .. .. .. ..$ : chr "MultipleAlignment"
+  .. .. .. ..$ : chr "MultipleAlignment-class"
+  .. .. .. ..$ : chr "nchar,MultipleAlignment-method"
+  .. .. .. ..$ : chr "ncol,MultipleAlignment-method"
+  .. .. .. ..$ : chr "nrow,MultipleAlignment-method"
+  .. .. .. ..$ : chr "readAAMultipleAlignment"
+  .. .. .. ..$ : chr "readDNAMultipleAlignment"
+  .. .. .. ..$ : chr "readRNAMultipleAlignment"
+  .. .. .. ..$ : chr "RNAMultipleAlignment"
+  .. .. .. ..$ : chr "RNAMultipleAlignment-class"
+  .. .. .. ..$ : chr "rowmask"
+  .. .. .. ..$ : chr "rowmask,MultipleAlignment-method"
+  .. .. .. ..$ : chr "rowmask&lt;-"
+  .. .. .. ..$ : chr "rowmask&lt;-,MultipleAlignment,ANY-method"
+  .. .. .. ..$ : chr "rowmask&lt;-,MultipleAlignment,NULL-method"
+  .. .. .. ..$ : chr "rownames,MultipleAlignment-method"
+  .. .. .. ..$ : chr "rownames&lt;-,MultipleAlignment-method"
+  .. .. .. ..$ : chr "seqtype,MultipleAlignment-method"
+  .. .. .. ..$ : chr "show,MultipleAlignment-method"
+  .. .. .. ..$ : chr "unmasked,MultipleAlignment-method"
+  .. .. .. ..$ : chr "write.phylip"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "nucleotideFrequency"
+  .. .. ..$ title : chr "Calculate the frequency of oligonucleotides in a DNA or RNA sequence (and other related functions)"
+  .. .. ..$ topics:List of 12
+  .. .. .. ..$ : chr "dinucleotideFrequency"
+  .. .. .. ..$ : chr "mkAllStrings"
+  .. .. .. ..$ : chr "nucleotideFrequencyAt"
+  .. .. .. ..$ : chr "nucleotideFrequencyAt,XStringSet-method"
+  .. .. .. ..$ : chr "nucleotideFrequencyAt,XStringViews-method"
+  .. .. .. ..$ : chr "oligonucleotideFrequency"
+  .. .. .. ..$ : chr "oligonucleotideFrequency,MaskedXString-method"
+  .. .. .. ..$ : chr "oligonucleotideFrequency,XString-method"
+  .. .. .. ..$ : chr "oligonucleotideFrequency,XStringSet-method"
+  .. .. .. ..$ : chr "oligonucleotideFrequency,XStringViews-method"
+  .. .. .. ..$ : chr "oligonucleotideTransitions"
+  .. .. .. ..$ : chr "trinucleotideFrequency"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "padAndClip"
+  .. .. ..$ title : chr "Pad and clip strings"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "padAndClip"
+  .. .. .. ..$ : chr "stackStrings"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "PDict-class"
+  .. .. ..$ title : chr "PDict objects"
+  .. .. ..$ topics:List of 68
+  .. .. .. ..$ : chr "ACtree2"
+  .. .. .. ..$ : chr "ACtree2-class"
+  .. .. .. ..$ : chr "as.list,MTB_PDict-method"
+  .. .. .. ..$ : chr "class:ACtree2"
+  .. .. .. ..$ : chr "class:Expanded_TB_PDict"
+  .. .. .. ..$ : chr "class:MTB_PDict"
+  .. .. .. ..$ : chr "class:PDict"
+  .. .. .. ..$ : chr "class:PDict3Parts"
+  .. .. .. ..$ : chr "class:PreprocessedTB"
+  .. .. .. ..$ : chr "class:TB_PDict"
+  .. .. .. ..$ : chr "class:Twobit"
+  .. .. .. ..$ : chr "computeAllFlinks"
+  .. .. .. ..$ : chr "computeAllFlinks,ACtree2-method"
+  .. .. .. ..$ : chr "duplicated,PDict-method"
+  .. .. .. ..$ : chr "duplicated,PreprocessedTB-method"
+  .. .. .. ..$ : chr "Expanded_TB_PDict"
+  .. .. .. ..$ : chr "Expanded_TB_PDict-class"
+  .. .. .. ..$ : chr "hasAllFlinks"
+  .. .. .. ..$ : chr "hasAllFlinks,ACtree2-method"
+  .. .. .. ..$ : chr "head,PDict3Parts-method"
+  .. .. .. ..$ : chr "head,TB_PDict-method"
+  .. .. .. ..$ : chr "initialize,ACtree2-method"
+  .. .. .. ..$ : chr "initialize,PreprocessedTB-method"
+  .. .. .. ..$ : chr "initialize,Twobit-method"
+  .. .. .. ..$ : chr "length,PDict-method"
+  .. .. .. ..$ : chr "length,PDict3Parts-method"
+  .. .. .. ..$ : chr "length,PreprocessedTB-method"
+  .. .. .. ..$ : chr "MTB_PDict"
+  .. .. .. ..$ : chr "MTB_PDict-class"
+  .. .. .. ..$ : chr "names,PDict-method"
+  .. .. .. ..$ : chr "names&lt;-,PDict-method"
+  .. .. .. ..$ : chr "nnodes"
+  .. .. .. ..$ : chr "nnodes,ACtree2-method"
+  .. .. .. ..$ : chr "patternFrequency"
+  .. .. .. ..$ : chr "patternFrequency,PDict-method"
+  .. .. .. ..$ : chr "PDict"
+  .. .. .. ..$ : chr "PDict,AsIs-method"
+  .. .. .. ..$ : chr "PDict,character-method"
+  .. .. .. ..$ : chr "PDict,DNAStringSet-method"
+  .. .. .. ..$ : chr "PDict,probetable-method"
+  .. .. .. ..$ : chr "PDict,XStringViews-method"
+  .. .. .. ..$ : chr "PDict-class"
+  .. .. .. ..$ : chr "PDict3Parts"
+  .. .. .. ..$ : chr "PDict3Parts-class"
+  .. .. .. ..$ : chr "PreprocessedTB"
+  .. .. .. ..$ : chr "PreprocessedTB-class"
+  .. .. .. ..$ : chr "show,ACtree2-method"
+  .. .. .. ..$ : chr "show,MTB_PDict-method"
+  .. .. .. ..$ : chr "show,TB_PDict-method"
+  .. .. .. ..$ : chr "show,Twobit-method"
+  .. .. .. ..$ : chr "tail,PDict3Parts-method"
+  .. .. .. ..$ : chr "tail,TB_PDict-method"
+  .. .. .. ..$ : chr "tb"
+  .. .. .. ..$ : chr "tb,PDict3Parts-method"
+  .. .. .. ..$ : chr "tb,PreprocessedTB-method"
+  .. .. .. ..$ : chr "tb,TB_PDict-method"
+  .. .. .. ..$ : chr "tb.width"
+  .. .. .. ..$ : chr "tb.width,PDict3Parts-method"
+  .. .. .. ..$ : chr "tb.width,PreprocessedTB-method"
+  .. .. .. ..$ : chr "tb.width,TB_PDict-method"
+  .. .. .. ..$ : chr "TB_PDict"
+  .. .. .. ..$ : chr "TB_PDict-class"
+  .. .. .. ..$ : chr "Twobit"
+  .. .. .. ..$ : chr "Twobit-class"
+  .. .. .. ..$ : chr "width,PDict-method"
+  .. .. .. ..$ : chr "width,PDict3Parts-method"
+  .. .. .. ..$ : chr "width,PreprocessedTB-method"
+  .. .. .. ..$ : chr "[[,PDict-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "predefined_scoring_matrices"
+  .. .. ..$ title : chr "Predefined scoring matrices"
+  .. .. ..$ topics:List of 12
+  .. .. .. ..$ : chr "BLOSUM100"
+  .. .. .. ..$ : chr "BLOSUM45"
+  .. .. .. ..$ : chr "BLOSUM50"
+  .. .. .. ..$ : chr "BLOSUM62"
+  .. .. .. ..$ : chr "BLOSUM80"
+  .. .. .. ..$ : chr "PAM120"
+  .. .. .. ..$ : chr "PAM250"
+  .. .. .. ..$ : chr "PAM30"
+  .. .. .. ..$ : chr "PAM40"
+  .. .. .. ..$ : chr "PAM70"
+  .. .. .. ..$ : chr "predefined_scoring_matrices"
+  .. .. .. ..$ : chr "print.moved_to_pwalign_pkg"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "QualityScaledXStringSet-class"
+  .. .. ..$ title : chr "QualityScaledBStringSet, QualityScaledDNAStringSet, QualityScaledRNAStringSet and QualityScaledAAStringSet objects"
+  .. .. ..$ topics:List of 26
+  .. .. .. ..$ : chr "class:QualityScaledAAStringSet"
+  .. .. .. ..$ : chr "class:QualityScaledBStringSet"
+  .. .. .. ..$ : chr "class:QualityScaledDNAStringSet"
+  .. .. .. ..$ : chr "class:QualityScaledRNAStringSet"
+  .. .. .. ..$ : chr "class:QualityScaledXStringSet"
+  .. .. .. ..$ : chr "narrow,QualityScaledXStringSet-method"
+  .. .. .. ..$ : chr "parallel_slot_names,QualityScaledXStringSet-method"
+  .. .. .. ..$ : chr "quality"
+  .. .. .. ..$ : chr "quality,QualityScaledXStringSet-method"
+  .. .. .. ..$ : chr "QualityScaledAAStringSet"
+  .. .. .. ..$ : chr "QualityScaledAAStringSet-class"
+  .. .. .. ..$ : chr "QualityScaledBStringSet"
+  .. .. .. ..$ : chr "QualityScaledBStringSet-class"
+  .. .. .. ..$ : chr "QualityScaledDNAStringSet"
+  .. .. .. ..$ : chr "QualityScaledDNAStringSet-class"
+  .. .. .. ..$ : chr "QualityScaledRNAStringSet"
+  .. .. .. ..$ : chr "QualityScaledRNAStringSet-class"
+  .. .. .. ..$ : chr "QualityScaledXStringSet"
+  .. .. .. ..$ : chr "QualityScaledXStringSet-class"
+  .. .. .. ..$ : chr "readQualityScaledDNAStringSet"
+  .. .. .. ..$ : chr "reverse,QualityScaledXStringSet-method"
+  .. .. .. ..$ : chr "reverseComplement,QualityScaledDNAStringSet-method"
+  .. .. .. ..$ : chr "reverseComplement,QualityScaledRNAStringSet-method"
+  .. .. .. ..$ : chr "show,QualityScaledXStringSet-method"
+  .. .. .. ..$ : chr "windows,QualityScaledXStringSet-method"
+  .. .. .. ..$ : chr "writeQualityScaledXStringSet"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "replaceAt"
+  .. .. ..$ title : chr "Extract/replace arbitrary substrings from/in a string or set of strings."
+  .. .. ..$ topics:List of 6
+  .. .. .. ..$ : chr "extractAt"
+  .. .. .. ..$ : chr "extractAt,XString-method"
+  .. .. .. ..$ : chr "extractAt,XStringSet-method"
+  .. .. .. ..$ : chr "replaceAt"
+  .. .. .. ..$ : chr "replaceAt,XString-method"
+  .. .. .. ..$ : chr "replaceAt,XStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "replaceLetterAt"
+  .. .. ..$ title : chr "Replacing letters in a sequence (or set of sequences) at some specified locations"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr ".inplaceReplaceLetterAt"
+  .. .. .. ..$ : chr "replaceLetterAt"
+  .. .. .. ..$ : chr "replaceLetterAt,DNAString-method"
+  .. .. .. ..$ : chr "replaceLetterAt,DNAStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "reverseComplement"
+  .. .. ..$ title : chr "Sequence reversing and complementing"
+  .. .. ..$ topics:List of 17
+  .. .. .. ..$ : chr "complement"
+  .. .. .. ..$ : chr "complement,DNAString-method"
+  .. .. .. ..$ : chr "complement,DNAStringSet-method"
+  .. .. .. ..$ : chr "complement,MaskedDNAString-method"
+  .. .. .. ..$ : chr "complement,MaskedRNAString-method"
+  .. .. .. ..$ : chr "complement,RNAString-method"
+  .. .. .. ..$ : chr "complement,RNAStringSet-method"
+  .. .. .. ..$ : chr "complement,XStringViews-method"
+  .. .. .. ..$ : chr "reverse,MaskedXString-method"
+  .. .. .. ..$ : chr "reverseComplement"
+  .. .. .. ..$ : chr "reverseComplement,DNAString-method"
+  .. .. .. ..$ : chr "reverseComplement,DNAStringSet-method"
+  .. .. .. ..$ : chr "reverseComplement,MaskedDNAString-method"
+  .. .. .. ..$ : chr "reverseComplement,MaskedRNAString-method"
+  .. .. .. ..$ : chr "reverseComplement,RNAString-method"
+  .. .. .. ..$ : chr "reverseComplement,RNAStringSet-method"
+  .. .. .. ..$ : chr "reverseComplement,XStringViews-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "RNAString-class"
+  .. .. ..$ title : chr "RNAString objects"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "class:RNAString"
+  .. .. .. ..$ : chr "RNAString"
+  .. .. .. ..$ : chr "RNAString-class"
+  .. .. .. ..$ : chr "RNA_ALPHABET"
+  .. .. .. ..$ : chr "RNA_BASES"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "seqinfo-methods"
+  .. .. ..$ title : chr "seqinfo() method for DNAStringSet objects"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "seqinfo"
+  .. .. .. ..$ : chr "seqinfo,DNAStringSet-method"
+  .. .. .. ..$ : chr "seqinfo&lt;-,DNAStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "toComplex"
+  .. .. ..$ title : chr "Turning a DNA sequence into a vector of complex numbers"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "toComplex"
+  .. .. .. ..$ : chr "toComplex,DNAString-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "translate"
+  .. .. ..$ title : chr "Translating DNA/RNA sequences"
+  .. .. ..$ topics:List of 12
+  .. .. .. ..$ : chr "codons"
+  .. .. .. ..$ : chr "codons,DNAString-method"
+  .. .. .. ..$ : chr "codons,MaskedDNAString-method"
+  .. .. .. ..$ : chr "codons,MaskedRNAString-method"
+  .. .. .. ..$ : chr "codons,RNAString-method"
+  .. .. .. ..$ : chr "translate"
+  .. .. .. ..$ : chr "translate,DNAString-method"
+  .. .. .. ..$ : chr "translate,DNAStringSet-method"
+  .. .. .. ..$ : chr "translate,MaskedDNAString-method"
+  .. .. .. ..$ : chr "translate,MaskedRNAString-method"
+  .. .. .. ..$ : chr "translate,RNAString-method"
+  .. .. .. ..$ : chr "translate,RNAStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "trimLRPatterns"
+  .. .. ..$ title : chr "Trim Flanking Patterns from Sequences"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "trimLRPatterns"
+  .. .. .. ..$ : chr "trimLRPatterns,character-method"
+  .. .. .. ..$ : chr "trimLRPatterns,XString-method"
+  .. .. .. ..$ : chr "trimLRPatterns,XStringSet-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "xscat"
+  .. .. ..$ title : chr "Concatenate sequences contained in XString, XStringSet and/or XStringViews objects"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "xscat"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XString-class"
+  .. .. ..$ title : chr "BString objects"
+  .. .. ..$ topics:List of 35
+  .. .. .. ..$ : chr "alphabet"
+  .. .. .. ..$ : chr "alphabet,ANY-method"
+  .. .. .. ..$ : chr "as.character,XString-method"
+  .. .. .. ..$ : chr "as.vector,XString-method"
+  .. .. .. ..$ : chr "BString"
+  .. .. .. ..$ : chr "BString-class"
+  .. .. .. ..$ : chr "class:BString"
+  .. .. .. ..$ : chr "class:XString"
+  .. .. .. ..$ : chr "coerce,character,AAString-method"
+  .. .. .. ..$ : chr "coerce,character,BString-method"
+  .. .. .. ..$ : chr "coerce,character,DNAString-method"
+  .. .. .. ..$ : chr "coerce,character,RNAString-method"
+  .. .. .. ..$ : chr "coerce,character,XString-method"
+  .. .. .. ..$ : chr "coerce,XString,AAString-method"
+  .. .. .. ..$ : chr "coerce,XString,BString-method"
+  .. .. .. ..$ : chr "coerce,XString,DNAString-method"
+  .. .. .. ..$ : chr "coerce,XString,RNAString-method"
+  .. .. .. ..$ : chr "Compare,character,XString-method"
+  .. .. .. ..$ : chr "Compare,XString,character-method"
+  .. .. .. ..$ : chr "Compare,XString,XString-method"
+  .. .. .. ..$ : chr "nchar,XString-method"
+  .. .. .. ..$ : chr "seqtype,AAString-method"
+  .. .. .. ..$ : chr "seqtype,BString-method"
+  .. .. .. ..$ : chr "seqtype,DNAString-method"
+  .. .. .. ..$ : chr "seqtype,RNAString-method"
+  .. .. .. ..$ : chr "seqtype&lt;-,XString-method"
+  .. .. .. ..$ : chr "show,XString-method"
+  .. .. .. ..$ : chr "showAsCell,XString-method"
+  .. .. .. ..$ : chr "substr,XString-method"
+  .. .. .. ..$ : chr "substring,XString-method"
+  .. .. .. ..$ : chr "toString,XString-method"
+  .. .. .. ..$ : chr "updateObject,AAString-method"
+  .. .. .. ..$ : chr "updateObject,XString-method"
+  .. .. .. ..$ : chr "XString"
+  .. .. .. ..$ : chr "XString-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XStringQuality-class"
+  .. .. ..$ title : chr "PhredQuality, SolexaQuality and IlluminaQuality objects"
+  .. .. ..$ topics:List of 43
+  .. .. .. ..$ : chr "alphabet,XStringQuality-method"
+  .. .. .. ..$ : chr "as.matrix,XStringQuality-method"
+  .. .. .. ..$ : chr "as.vector,XStringQuality-method"
+  .. .. .. ..$ : chr "class:IlluminaQuality"
+  .. .. .. ..$ : chr "class:PhredQuality"
+  .. .. .. ..$ : chr "class:SolexaQuality"
+  .. .. .. ..$ : chr "class:XStringQuality"
+  .. .. .. ..$ : chr "coerce,BString,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,BString,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,BString,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,BStringSet,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,BStringSet,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,BStringSet,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,character,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,character,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,character,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,integer,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,integer,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,integer,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,IntegerList,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,IntegerList,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,IntegerList,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,numeric,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,numeric,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,numeric,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,NumericList,IlluminaQuality-method"
+  .. .. .. ..$ : chr "coerce,NumericList,PhredQuality-method"
+  .. .. .. ..$ : chr "coerce,NumericList,SolexaQuality-method"
+  .. .. .. ..$ : chr "coerce,XStringQuality,CompressedIntegerList-method"
+  .. .. .. ..$ : chr "coerce,XStringQuality,CompressedNumericList-method"
+  .. .. .. ..$ : chr "coerce,XStringQuality,IntegerList-method"
+  .. .. .. ..$ : chr "coerce,XStringQuality,matrix-method"
+  .. .. .. ..$ : chr "coerce,XStringQuality,NumericList-method"
+  .. .. .. ..$ : chr "encoding"
+  .. .. .. ..$ : chr "encoding,XStringQuality-method"
+  .. .. .. ..$ : chr "IlluminaQuality"
+  .. .. .. ..$ : chr "IlluminaQuality-class"
+  .. .. .. ..$ : chr "PhredQuality"
+  .. .. .. ..$ : chr "PhredQuality-class"
+  .. .. .. ..$ : chr "SolexaQuality"
+  .. .. .. ..$ : chr "SolexaQuality-class"
+  .. .. .. ..$ : chr "XStringQuality"
+  .. .. .. ..$ : chr "XStringQuality-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XStringSet-class"
+  .. .. ..$ title : chr "XStringSet objects"
+  .. .. ..$ topics:List of 43
+  .. .. .. ..$ : chr "AAStringSet"
+  .. .. .. ..$ : chr "AAStringSet-class"
+  .. .. .. ..$ : chr "anyNA,XStringSet-method"
+  .. .. .. ..$ : chr "as.character,XStringSet-method"
+  .. .. .. ..$ : chr "as.data.frame,XStringSet-method"
+  .. .. .. ..$ : chr "as.factor,XStringSet-method"
+  .. .. .. ..$ : chr "as.matrix,XStringSet-method"
+  .. .. .. ..$ : chr "as.vector,XStringSet-method"
+  .. .. .. ..$ : chr "BStringSet"
+  .. .. .. ..$ : chr "BStringSet-class"
+  .. .. .. ..$ : chr "class:AAStringSet"
+  .. .. .. ..$ : chr "class:BStringSet"
+  .. .. .. ..$ : chr "class:DNAStringSet"
+  .. .. .. ..$ : chr "class:RNAStringSet"
+  .. .. .. ..$ : chr "class:XStringSet"
+  .. .. .. ..$ : chr "coerce,ANY,AAStringSet-method"
+  .. .. .. ..$ : chr "coerce,ANY,BStringSet-method"
+  .. .. .. ..$ : chr "coerce,ANY,DNAStringSet-method"
+  .. .. .. ..$ : chr "coerce,ANY,RNAStringSet-method"
+  .. .. .. ..$ : chr "coerce,ANY,XStringSet-method"
+  .. .. .. ..$ : chr "DNAStringSet"
+  .. .. .. ..$ : chr "DNAStringSet-class"
+  .. .. .. ..$ : chr "is.na,XStringSet-method"
+  .. .. .. ..$ : chr "narrow,character-method"
+  .. .. .. ..$ : chr "nchar,XStringSet-method"
+  .. .. .. ..$ : chr "RNAStringSet"
+  .. .. .. ..$ : chr "RNAStringSet-class"
+  .. .. .. ..$ : chr "seqtype,XStringSet-method"
+  .. .. .. ..$ : chr "seqtype&lt;-,XStringSet-method"
+  .. .. .. ..$ : chr "show,XStringSet-method"
+  .. .. .. ..$ : chr "showAsCell,XStringSet-method"
+  .. .. .. ..$ : chr "subseq,character-method"
+  .. .. .. ..$ : chr "subseq&lt;-,character-method"
+  .. .. .. ..$ : chr "subseq&lt;-,XStringSet-method"
+  .. .. .. ..$ : chr "threebands,character-method"
+  .. .. .. ..$ : chr "toString,XStringSet-method"
+  .. .. .. ..$ : chr "unlist,XStringSet-method"
+  .. .. .. ..$ : chr "updateObject,AAStringSet-method"
+  .. .. .. ..$ : chr "updateObject,XStringSet-method"
+  .. .. .. ..$ : chr "width,character-method"
+  .. .. .. ..$ : chr "windows,character-method"
+  .. .. .. ..$ : chr "XStringSet"
+  .. .. .. ..$ : chr "XStringSet-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XStringSet-comparison"
+  .. .. ..$ title : chr "Element-wise comparison of XStringSet objects"
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "match,Vector,XStringSet-method"
+  .. .. .. ..$ : chr "match,vector,XStringSet-method"
+  .. .. .. ..$ : chr "match,XStringSet,Vector-method"
+  .. .. .. ..$ : chr "match,XStringSet,vector-method"
+  .. .. .. ..$ : chr "match,XStringSet,XStringSet-method"
+  .. .. .. ..$ : chr "pcompare,Vector,XStringSet-method"
+  .. .. .. ..$ : chr "pcompare,vector,XStringSet-method"
+  .. .. .. ..$ : chr "pcompare,XStringSet,Vector-method"
+  .. .. .. ..$ : chr "pcompare,XStringSet,vector-method"
+  .. .. .. ..$ : chr "pcompare,XStringSet,XStringSet-method"
+  .. .. .. ..$ : chr "XStringSet-comparison"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XStringSet-io"
+  .. .. ..$ title : chr "Read/write an XStringSet object from/to a file"
+  .. .. ..$ topics:List of 11
+  .. .. .. ..$ : chr "fasta.index"
+  .. .. .. ..$ : chr "fasta.seqlengths"
+  .. .. .. ..$ : chr "fastq.geometry"
+  .. .. .. ..$ : chr "fastq.seqlengths"
+  .. .. .. ..$ : chr "readAAStringSet"
+  .. .. .. ..$ : chr "readBStringSet"
+  .. .. .. ..$ : chr "readDNAStringSet"
+  .. .. .. ..$ : chr "readRNAStringSet"
+  .. .. .. ..$ : chr "saveXStringSet"
+  .. .. .. ..$ : chr "writeXStringSet"
+  .. .. .. ..$ : chr "XStringSet-io"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XStringSetList-class"
+  .. .. ..$ title : chr "XStringSetList objects"
+  .. .. ..$ topics:List of 31
+  .. .. .. ..$ : chr "AAStringSetList"
+  .. .. .. ..$ : chr "AAStringSetList-class"
+  .. .. .. ..$ : chr "BStringSetList"
+  .. .. .. ..$ : chr "BStringSetList-class"
+  .. .. .. ..$ : chr "class:AAStringSetList"
+  .. .. .. ..$ : chr "class:BStringSetList"
+  .. .. .. ..$ : chr "class:DNAStringSetList"
+  .. .. .. ..$ : chr "class:RNAStringSetList"
+  .. .. .. ..$ : chr "class:XStringSetList"
+  .. .. .. ..$ : chr "coerce,List,AAStringSetList-method"
+  .. .. .. ..$ : chr "coerce,list,AAStringSetList-method"
+  .. .. .. ..$ : chr "coerce,List,BStringSetList-method"
+  .. .. .. ..$ : chr "coerce,list,BStringSetList-method"
+  .. .. .. ..$ : chr "coerce,List,DNAStringSetList-method"
+  .. .. .. ..$ : chr "coerce,list,DNAStringSetList-method"
+  .. .. .. ..$ : chr "coerce,List,RNAStringSetList-method"
+  .. .. .. ..$ : chr "coerce,list,RNAStringSetList-method"
+  .. .. .. ..$ : chr "coerce,List,XStringSetList-method"
+  .. .. .. ..$ : chr "coerce,list,XStringSetList-method"
+  .. .. .. ..$ : chr "DNAStringSetList"
+  .. .. .. ..$ : chr "DNAStringSetList-class"
+  .. .. .. ..$ : chr "nchar,XStringSetList-method"
+  .. .. .. ..$ : chr "relistToClass,XStringSet-method"
+  .. .. .. ..$ : chr "RNAStringSetList"
+  .. .. .. ..$ : chr "RNAStringSetList-class"
+  .. .. .. ..$ : chr "seqtype,XStringSetList-method"
+  .. .. .. ..$ : chr "seqtype&lt;-,XStringSetList-method"
+  .. .. .. ..$ : chr "show,XStringSetList-method"
+  .. .. .. ..$ : chr "showAsCell,XStringSetList-method"
+  .. .. .. ..$ : chr "XStringSetList"
+  .. .. .. ..$ : chr "XStringSetList-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "XStringViews-class"
+  .. .. ..$ title : chr "The XStringViews class"
+  .. .. ..$ topics:List of 30
+  .. .. .. ..$ : chr "!=,character,XStringViews-method"
+  .. .. .. ..$ : chr "!=,XString,XStringViews-method"
+  .. .. .. ..$ : chr "!=,XStringViews,character-method"
+  .. .. .. ..$ : chr "!=,XStringViews,XString-method"
+  .. .. .. ..$ : chr "!=,XStringViews,XStringViews-method"
+  .. .. .. ..$ : chr "==,character,XStringViews-method"
+  .. .. .. ..$ : chr "==,XString,XStringViews-method"
+  .. .. .. ..$ : chr "==,XStringViews,character-method"
+  .. .. .. ..$ : chr "==,XStringViews,XString-method"
+  .. .. .. ..$ : chr "==,XStringViews,XStringViews-method"
+  .. .. .. ..$ : chr "as.character,XStringViews-method"
+  .. .. .. ..$ : chr "as.data.frame,XStringViews-method"
+  .. .. .. ..$ : chr "as.matrix,XStringViews-method"
+  .. .. .. ..$ : chr "class:XStringViews"
+  .. .. .. ..$ : chr "coerce,XStringSet,Views-method"
+  .. .. .. ..$ : chr "coerce,XStringSet,XStringViews-method"
+  .. .. .. ..$ : chr "coerce,XStringViews,AAStringSet-method"
+  .. .. .. ..$ : chr "coerce,XStringViews,BStringSet-method"
+  .. .. .. ..$ : chr "coerce,XStringViews,DNAStringSet-method"
+  .. .. .. ..$ : chr "coerce,XStringViews,RNAStringSet-method"
+  .. .. .. ..$ : chr "coerce,XStringViews,XStringSet-method"
+  .. .. .. ..$ : chr "nchar,XStringViews-method"
+  .. .. .. ..$ : chr "seqtype,XStringViews-method"
+  .. .. .. ..$ : chr "seqtype&lt;-,XStringViews-method"
+  .. .. .. ..$ : chr "show,XStringViews-method"
+  .. .. .. ..$ : chr "toString,XStringViews-method"
+  .. .. .. ..$ : chr "Views,character-method"
+  .. .. .. ..$ : chr "Views,XString-method"
+  .. .. .. ..$ : chr "XStringViews"
+  .. .. .. ..$ : chr "XStringViews-class"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "yeastSEQCHR1"
+  .. .. ..$ title : chr "An annotation data file for CHR1 in the yeastSEQ package"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "yeastSEQCHR1"
+  ..$ _readme           : chr "https://github.com/bioc/Biostrings/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 7
+  .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "crayon"
+  .. ..$ : chr "generics"
+  .. ..$ : chr "IRanges"
+  .. ..$ : chr "S4Vectors"
+  .. ..$ : chr "Seqinfo"
+  .. ..$ : chr "XVector"
+  ..$ _vignettes        :List of 5
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "Biostrings2Classes.Rnw"
+  .. .. ..$ filename: chr "Biostrings2Classes.pdf"
+  .. .. ..$ title   : chr "A short presentation of the basic classes defined in Biostrings 2"
+  .. .. ..$ engine  : chr "utils::Sweave"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2013-11-01 19:50:36"
+  .. .. ..$ modified: chr "2013-11-01 19:50:36"
+  .. .. ..$ commits : int 1
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "BiostringsQuickOverview.Rnw"
+  .. .. ..$ filename: chr "BiostringsQuickOverview.pdf"
+  .. .. ..$ title   : chr "Biostrings Quick Overview"
+  .. .. ..$ engine  : chr "utils::Sweave"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2013-11-01 19:50:36"
+  .. .. ..$ modified: chr "2024-04-23 05:10:42"
+  .. .. ..$ commits : int 6
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "matchprobes.Rmd"
+  .. .. ..$ filename: chr "matchprobes.html"
+  .. .. ..$ title   : chr "Using oligonucleotide microarray reporter sequence information for preprocessing and quality assessment"
+  .. .. ..$ author  : chr "Wolfgang Huber, Robert Gentleman"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
   .. .. ..$ headings:List of 8
   .. .. .. ..$ : chr "Overview"
-  .. .. .. ..$ : chr "Setting up the dataset"
-  .. .. .. ..$ : chr "Rescaling by neighbors"
-  .. .. .. ..$ : chr "Intersecting clusters"
-  .. .. .. ..$ : chr "Multi-metric UMAP"
-  .. .. .. ..$ : chr "Intersecting graphs"
-  .. .. .. ..$ : chr "Correlation analyses"
-  .. .. .. ..$ : chr "Session information"
-  .. .. ..$ created : chr "2020-11-30 06:25:23"
-  .. .. ..$ modified: chr "2024-03-05 23:12:36"
-  .. .. ..$ commits : int 7
-  ..$ _score            : num 4.32
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "mumosa"
-  ..$ _universes        :List of 2
-  .. ..$ : chr "bioc"
-  .. ..$ : chr "ltla"
-  ..$ _previous         : chr "1.19.0"
-  ..$ _binaries         :List of 8
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T04:22:12.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "0ba0286a84ec815c96c07c8c6935f76e31faaa02948368cac5d5cf59212697f8"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T04:22:49.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "0a0ee80f76e042eaefe735daf447ca48b45b16a18afab82ffe1af08193458f84"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. .. .. ..$ : chr "Using probe packages"
+  .. .. .. ..$ : chr "Basic functions"
+  .. .. .. ..$ : chr "Reverse and complementary sequence"
+  .. .. .. ..$ : chr "Matching sets of probes against each other"
+  .. .. .. ..$ : chr "Base content"
+  .. .. .. ..$ : chr "Relating to the features of an AffyBatch"
+  .. .. .. ..$ : chr "Some sequence related \"preprocessing and quality\" plots"
+  .. .. ..$ created : chr "2023-04-14 03:17:19"
+  .. .. ..$ modified: chr "2024-02-12 17:48:02"
+  .. .. ..$ commits : int 2
   .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T05:07:54.000Z"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "c4dadeaf7fd54a3d56570fb58876912f16f2eb26b9f6b9b61c94607d33b1cb68"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
-  .. ..$ :List of 9
-  .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T05:09:03.000Z"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "cf2f1f3a00f14f54199b72c14025ec1b16a5dc0f1b5747e320093dd10dcafbed"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
+  .. .. ..$ source  : chr "MultipleAlignments.Rmd"
+  .. .. ..$ filename: chr "MultipleAlignments.html"
+  .. .. ..$ title   : chr "MultipleAlignment Objects"
+  .. .. ..$ author  : chr "Marc Carlson, Beryl Kanali"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 5
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Creation and masking"
+  .. .. .. ..$ : chr "Analytic utilities"
+  .. .. .. ..$ : chr "Exporting to file"
+  .. .. .. ..$ : chr "Session Information"
+  .. .. ..$ created : chr "2024-06-07 17:02:07"
+  .. .. ..$ modified: chr "2025-05-09 05:50:52"
+  .. .. ..$ commits : int 2
   .. ..$ :List of 8
+  .. .. ..$ source  : chr "PairwiseAlignments.Rnw"
+  .. .. ..$ filename: chr "PairwiseAlignments.pdf"
+  .. .. ..$ title   : chr "Pairwise Sequence Alignments"
+  .. .. ..$ engine  : chr "utils::Sweave"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2013-11-01 19:50:36"
+  .. .. ..$ modified: chr "2024-04-23 05:10:42"
+  .. .. ..$ commits : int 5
+  ..$ _score            : num 17.8
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "biostrings"
+  ..$ _universes        :List of 3
+  .. ..$ : chr "bioc"
+  .. ..$ : chr "hpages"
+  .. ..$ : chr "bioconductor"
+  ..$ _previous         : chr "2.79.4"
+  ..$ _binaries         :List of 12
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:43:32.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "bb266fd039c35766c0577d7be2f1d919d96301f1be07d95f7080d8f533ea0db2"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:44:56.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "d5eba7bd2d43c663672b02225cc7d6eb10c0d3e470684c12973a5c40047bca81"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:43:57.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "ee5792fcc7fd183a3f7b35b190ce6e12c48872f87dc938b7a8dfdb07713a8e32"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:45:05.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "63f91af9642dae6aff7a0e338c9f9bb7e5ce53e88f8863a848ab4f11c5e2a925"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:42:30.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "2499b3d784cb796ff9670443c75ddbe596e1533746d12905a1bacbf2a404e202"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:45:05.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "ba14014f08c55c6c1536b62632396539de4ee96bc246d054b1b3b5acf892c327"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:42:20.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "f01da1f9b101253ab120c84635a801916b4e7f85d90a4ef704049248fa0733ff"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:45:35.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "34746a197c5e2cbd2ef4b78520cd470eb3f85af15323788a3e1369bafa34ebe4"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T04:21:54.000Z"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "f1a888ffa2939773a6d1489f643c8d5da5d1f79458ff9375f67ed711fe9474c2"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:44:33.000Z"
+  .. .. ..$ arch    : chr "emscripten"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "54ef70c3eed453cc16e750e3e12bbd41fab0d7e37ecaccca86ad065e34162562"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
-  .. ..$ :List of 9
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T04:20:52.000Z"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "48804d906ebd79ee675df0d034a60d479d6db8cd71821692cd14de98b2ae0f74"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
-  .. ..$ :List of 9
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:43:05.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "08d749dfc474789cdb66463f88a2fae3f92ad075041f11ca751db54b8307f7e0"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T04:21:04.000Z"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "cfd3e3f5c4e3a5c55fa9f3c800813da4456d1ae4e8c077c1a507c9b995b94603"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:42:55.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "34f35c0176d2af02c4d3fc59a54143f40f4057761a489ab26e98244b763a27b3"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.19.1"
-  .. .. ..$ date    : chr "2026-03-05T04:20:40.000Z"
-  .. .. ..$ commit  : chr "accca5c94cd0cf50ee15a9913113d033fac76b0a"
-  .. .. ..$ fileid  : chr "68c697a3eac53da0f31c98aa917665dbccb797eb3c72526a6a824d07394c9499"
+  .. .. ..$ version : chr "2.79.5"
+  .. .. ..$ date    : chr "2026-03-06T08:43:11.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "100602242840322b5f6c267faaf8198c1a5aa2af"
+  .. .. ..$ fileid  : chr "ba7f6d965e8ff48b6111d238f1bfa0fc59d84c48d87f84106775561314b77301"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22701901792"</code></pre>
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22755553048"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
