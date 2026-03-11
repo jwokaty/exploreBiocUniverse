@@ -379,9 +379,9 @@ Total 2351 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">leapR</td>
-<td style="text-align: left;">0.99.5</td>
-<td style="text-align: left;">2026-02-19T08:28:52.000Z</td>
-<td style="text-align: left;">2026-03-09T11:05:01.501Z</td>
+<td style="text-align: left;">0.99.8</td>
+<td style="text-align: left;">2026-03-11T04:21:07.000Z</td>
+<td style="text-align: left;">2026-03-11T07:42:11.548Z</td>
 <td style="text-align: left;">https://github.com/bioc/leapR</td>
 </tr>
 <tr class="even">
@@ -400,9 +400,9 @@ Total 2351 2361</code></pre>
 </tr>
 <tr class="even">
 <td style="text-align: left;">proBatch</td>
-<td style="text-align: left;">1.99.4</td>
-<td style="text-align: left;">2026-02-28T04:20:22.000Z</td>
-<td style="text-align: left;">2026-02-28T04:31:12.160Z</td>
+<td style="text-align: left;">1.99.5</td>
+<td style="text-align: left;">2026-03-11T04:16:00.000Z</td>
+<td style="text-align: left;">2026-03-11T07:17:08.924Z</td>
 <td style="text-align: left;">https://github.com/bioc/proBatch</td>
 </tr>
 <tr class="odd">
@@ -935,170 +935,214 @@ Total 2351 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 73
-  ..$ Package             : chr "gCrisprTools"
-  ..$ Type                : chr "Package"
-  ..$ Title               : chr "Suite of Functions for Pooled Crispr Screen QC and Analysis"
-  ..$ Version             : chr "2.17.2"
-  ..$ Date                : chr "2021-08-23"
-  ..$ Author              : chr "Russell Bainer, Dariusz Ratman, Steve Lianoglou, Peter Haverty"
-  ..$ Authors@R           : chr "c(\nperson(\"Russell\", \"Bainer\", , \"russ.bainer@gmail.com\", c(\"aut\", \"cre\", \"fnd\"), comment = \"2026"| __truncated__
-  ..$ Maintainer          : chr "Russell Bainer &lt;russ.bainer@gmail.com&gt;"
-  ..$ Description         : chr "Set of tools for evaluating pooled high-throughput\nscreening experiments, typically employing CRISPR/Cas9 or s"| __truncated__
-  ..$ License             : chr "Artistic-2.0"
-  ..$ RoxygenNote         : chr "7.3.3"
-  ..$ VignetteBuilder     : chr "knitr"
-  ..$ Encoding            : chr "UTF-8"
-  ..$ biocViews           : chr "ImmunoOncology, CRISPR, PooledScreens, ExperimentalDesign,\nBiomedicalInformatics, CellBiology, FunctionalGenom"| __truncated__
-  ..$ NeedsCompilation    : chr "no"
-  ..$ git_url             : chr "https://git.bioconductor.org/packages/gCrisprTools"
-  ..$ git_branch          : chr "RELEASE_3_14"
-  ..$ git_last_commit     : chr "4783d8f"
-  ..$ git_last_commit_date: chr "2021-10-26"
-  ..$ Packaged            :List of 2
-  .. ..$ Date: chr "2026-03-10 04:16:28 UTC"
+ $ :List of 75
+  ..$ Package           : chr "signatureSearch"
+  ..$ Title             : chr "Environment for Gene Expression Searching Combined with\nFunctional Enrichment Analysis"
+  ..$ Version           : chr "1.25.1"
+  ..$ Authors@R         : chr "c(person(\"Yuzhu\", \"Duan\", email = \"yduan004@ucr.edu\",\nrole = c(\"aut\")),\nperson(\"Brendan\", \"Gongol\"| __truncated__
+  ..$ Description       : chr "This package implements algorithms and data structures for\nperforming gene expression signature (GES) searches"| __truncated__
+  ..$ License           : chr "Artistic-2.0"
+  ..$ SystemRequirements: chr "C++20"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ RoxygenNote       : chr "7.3.3"
+  ..$ biocViews         : chr "Software, GeneExpression, GO, NetworkEnrichment, Sequencing,\nCoverage, DifferentialExpression"
+  ..$ URL               : chr "https://github.com/yduan004/signatureSearch/"
+  ..$ BugReports        : chr "https://github.com/yduan004/signatureSearch/issues"
+  ..$ LazyData          : chr "false"
+  ..$ Config/pak/sysreqs: chr "make libicu-dev libpng-dev libxml2-dev libssl-dev\nlibx11-dev zlib1g-dev"
+  ..$ Repository        : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication  : chr "2026-03-11 02:27:27 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/signatureSearch"
+  ..$ RemoteRef         : chr "HEAD"
+  ..$ RemoteSha         : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  ..$ NeedsCompilation  : chr "yes"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2026-03-11 04:20:02 UTC"
   .. ..$ User: chr "root"
-  ..$ Config/pak/sysreqs  : chr "make libpng-dev perl zlib1g-dev"
-  ..$ Repository          : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication    : chr "2026-03-09 22:46:22 UTC"
-  ..$ RemoteUrl           : chr "https://github.com/bioc/gCrisprTools"
-  ..$ RemoteRef           : chr "HEAD"
-  ..$ RemoteSha           : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  ..$ MD5sum              : chr "94ae53000ca0580fa94efec5c017a04a"
-  ..$ _user               : chr "bioc"
-  ..$ _type               : chr "src"
-  ..$ _file               : chr "gCrisprTools_2.17.2.tar.gz"
-  ..$ _fileid             : chr "cb799c98b9466a7cfa2c1eb6ad8fb17ea6fea97da29391055e3b693ab5f72f6c"
-  ..$ _filesize           : int 10146905
-  ..$ _sha256             : chr "cb799c98b9466a7cfa2c1eb6ad8fb17ea6fea97da29391055e3b693ab5f72f6c"
-  ..$ _created            : chr "2026-03-10T04:16:28.000Z"
-  ..$ _published          : chr "2026-03-10T06:24:42.093Z"
-  ..$ _jobs               :List of 10
+  ..$ Author            : chr "Yuzhu Duan [aut],\nBrendan Gongol [cre, aut],\nThomas Girke [aut]"
+  ..$ Maintainer        : chr "Brendan Gongol &lt;bgong001@ucr.edu&gt;"
+  ..$ MD5sum            : chr "8fd02a3ca82811b9967b850f0dccc411"
+  ..$ _user             : chr "bioc"
+  ..$ _type             : chr "src"
+  ..$ _file             : chr "signatureSearch_1.25.1.tar.gz"
+  ..$ _fileid           : chr "bf3d2a2608c29dad1b06dfa54a1208987f3c8c5473ad6359fca02e9cae777e8f"
+  ..$ _filesize         : int 5044523
+  ..$ _sha256           : chr "bf3d2a2608c29dad1b06dfa54a1208987f3c8c5473ad6359fca02e9cae777e8f"
+  ..$ _created          : chr "2026-03-11T04:20:02.000Z"
+  ..$ _published        : chr "2026-03-11T07:39:52.257Z"
+  ..$ _jobs             :List of 14
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 251
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 295
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "5842912014"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5863429237"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 491
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 637
+  .. .. ..$ config  : chr "linux-devel-arm64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863480133"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 738
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5842944912"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863494679"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 498
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 655
+  .. .. ..$ config  : chr "linux-release-arm64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863483391"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 686
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5842945921"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863487096"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 1125
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 1300
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5844000456"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5865373692"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 1256
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 792
+  .. .. ..$ config  : chr "macos-devel-x86_64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5864625214"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 1320
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5843971494"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5865368684"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 493
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 1846
+  .. .. ..$ config  : chr "macos-release-x86_64"
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5864848854"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 722
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5842874152"
+  .. .. ..$ artifact: chr "5863384008"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 207
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 312
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5842906041"
+  .. .. ..$ artifact: chr "5863432000"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 464
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 717
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5842941197"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863491986"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 515
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 598
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5842948295"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863474571"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.64e+10
-  .. .. ..$ time    : int 436
+  .. .. ..$ job     : num 6.66e+10
+  .. .. ..$ time    : int 568
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5842936944"
-  ..$ _bioccheck          :List of 3
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5863470284"
+  ..$ _bioccheck        :List of 3
   .. ..$ error  : int 0
-  .. ..$ warning: int 3
-  .. ..$ note   : int 11
-  ..$ _buildurl           : chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  ..$ _status             : chr "success"
-  ..$ _host               : chr "GitHub-Actions"
-  ..$ _upstream           : chr "https://github.com/bioc/gCrisprTools"
-  ..$ _commit             :List of 5
-  .. ..$ id       : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. ..$ author   : chr "Russell Bainer &lt;bainerr@eikontx.com&gt;"
-  .. ..$ committer: chr "Russell Bainer &lt;bainerr@eikontx.com&gt;"
-  .. ..$ message  : chr "pushing to new version\n"
-  .. ..$ time     : int 1773096382
-  ..$ _maintainer         :List of 4
-  .. ..$ name : chr "Russell Bainer"
-  .. ..$ email: chr "russ.bainer@gmail.com"
-  .. ..$ login: chr "oscarbrock"
-  .. ..$ uuid : int 15127721
-  ..$ _distro             : chr "noble"
-  ..$ _registered         : logi TRUE
-  ..$ _dependencies       :List of 27
+  .. ..$ warning: int 0
+  .. ..$ note   : int 13
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  ..$ _status           : chr "success"
+  ..$ _host             : chr "GitHub-Actions"
+  ..$ _upstream         : chr "https://github.com/bioc/signatureSearch"
+  ..$ _commit           :List of 5
+  .. ..$ id       : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. ..$ author   : chr "brendangongol &lt;brengong@gmail.com&gt;"
+  .. ..$ committer: chr "brendangongol &lt;brengong@gmail.com&gt;"
+  .. ..$ message  : chr "Merge branch 'devel' of https://github.com/girke-lab/signatureSearch into devel\n"
+  .. ..$ time     : int 1773196047
+  ..$ _maintainer       :List of 4
+  .. ..$ name : chr "Brendan Gongol"
+  .. ..$ email: chr "bgong001@ucr.edu"
+  .. ..$ login: chr "bgong001"
+  .. ..$ uuid : int 222736535
+  ..$ _distro           : chr "noble"
+  ..$ _registered       : logi TRUE
+  ..$ _dependencies     :List of 41
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.1"
+  .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Biobase"
-  .. .. ..$ role   : chr "Imports"
+  .. .. ..$ package: chr "Rcpp"
+  .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "limma"
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "org.Hs.eg.db"
+  .. .. ..$ role   : chr "Depends"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Rcpp"
+  .. .. ..$ role   : chr "LinkingTo"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "AnnotationDbi"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "ggplot2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ package: chr "data.table"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grid"
+  .. .. ..$ package: chr "ExperimentHub"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
+  .. .. ..$ package: chr "HDF5Array"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ package: chr "magrittr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
+  .. .. ..$ package: chr "RSQLite"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "fgsea"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "scales"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ComplexHeatmap"
+  .. .. ..$ package: chr "qvalue"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
@@ -1107,790 +1151,1117 @@ Total 2351 2361</code></pre>
   .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "parallel"
+  .. .. ..$ package: chr "reshape2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "MatrixGenerics"
+  .. .. ..$ package: chr "visNetwork"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
+  .. .. ..$ package: chr "BiocParallel"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "edgeR"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "fastmatch"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "reactome.db"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "readr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "rhdf5"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "GSEABase"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DelayedArray"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DOSE"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "AnnotationHub"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "stringr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "annotate"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationDbi"
+  .. .. ..$ package: chr "testthat"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Mm.eg.db"
+  .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
+  .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
+  .. .. ..$ package: chr "signatureSearchData"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "markdown"
+  .. .. ..$ package: chr "DT"
   .. .. ..$ role   : chr "Suggests"
+  ..$ _owner            : chr "bioc"
+  ..$ _selfowned        : logi TRUE
+  ..$ _usedby           : int 1
+  ..$ _updates          :List of 8
   .. ..$ :List of 2
-  .. .. ..$ package: chr "RUnit"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "sparrow"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "msigdbr"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "fgsea"
-  .. .. ..$ role   : chr "Suggests"
-  ..$ _owner              : chr "bioc"
-  ..$ _selfowned          : logi TRUE
-  ..$ _usedby             : int 0
-  ..$ _updates            :List of 4
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-21"
+  .. .. ..$ week: chr "2026-03"
   .. .. ..$ n   : int 1
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-09"
-  .. .. ..$ n   : int 4
+  .. .. ..$ week: chr "2026-04"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-05"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-06"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-07"
+  .. .. ..$ n   : int 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-08"
+  .. .. ..$ n   : int 3
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-10"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-11"
   .. .. ..$ n   : int 2
-  ..$ _tags               : list()
-  ..$ _bioc               :List of 2
+  ..$ _tags             : list()
+  ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "2.17.0"
+  .. .. ..$ version: chr "1.25.1"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "2.16.0"
+  .. .. ..$ version: chr "1.24.0"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics             :List of 21
-  .. ..$ : chr "immunooncology"
-  .. ..$ : chr "crispr"
-  .. ..$ : chr "pooledscreens"
-  .. ..$ : chr "experimentaldesign"
-  .. ..$ : chr "biomedicalinformatics"
-  .. ..$ : chr "cellbiology"
-  .. ..$ : chr "functionalgenomics"
-  .. ..$ : chr "pharmacogenomics"
-  .. ..$ : chr "pharmacogenetics"
-  .. ..$ : chr "systemsbiology"
-  .. ..$ : chr "differentialexpression"
-  .. ..$ : chr "genesetenrichment"
-  .. ..$ : chr "genetics"
-  .. ..$ : chr "multiplecomparison"
-  .. ..$ : chr "normalization"
-  .. ..$ : chr "preprocessing"
-  .. ..$ : chr "qualitycontrol"
-  .. ..$ : chr "rnaseq"
-  .. ..$ : chr "regression"
+  ..$ _topics           :List of 8
   .. ..$ : chr "software"
-  .. ..$ : chr "visualization"
-  ..$ _userbio            :List of 4
+  .. ..$ : chr "geneexpression"
+  .. ..$ : chr "go"
+  .. ..$ : chr "networkenrichment"
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "coverage"
+  .. ..$ : chr "differentialexpression"
+  .. ..$ : chr "cpp"
+  ..$ _stars            : int 21
+  ..$ _contributors     :List of 6
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "yduan004"
+  .. .. ..$ count: int 159
+  .. .. ..$ uuid : int 22733883
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "tgirke"
+  .. .. ..$ count: int 61
+  .. .. ..$ uuid : int 1336916
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "brendangongol"
+  .. .. ..$ count: int 47
+  .. .. ..$ uuid : int 8220574
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "jwokaty"
+  .. .. ..$ count: int 14
+  .. .. ..$ uuid : int 1744257
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 12
+  .. .. ..$ uuid : int 2746443
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "bgong001"
+  .. .. ..$ count: int 5
+  .. .. ..$ uuid : int 222736535
+  ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads          :List of 2
-  .. ..$ count : int 426
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/gCrisprTools"
-  ..$ _mentions           : int 2
-  ..$ _searchresults      : int 10
-  ..$ _rbuild             : chr "4.5.2"
-  ..$ _assets             :List of 11
+  ..$ _downloads        :List of 2
+  .. ..$ count : int 449
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/signatureSearch"
+  ..$ _mentions         : int 1
+  ..$ _devurl           : chr "https://github.com/yduan004/signaturesearch"
+  ..$ _searchresults    : int 76
+  ..$ _rbuild           : chr "4.5.2"
+  ..$ _assets           :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/gCrisprTools.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
+  .. ..$ : chr "extra/signatureSearch.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _realowner          : chr "bioc"
-  ..$ _cranurl            : logi FALSE
-  ..$ _exports            :List of 51
-  .. ..$ : chr "ct.alignmentChart"
-  .. ..$ : chr "ct.alphaBeta"
-  .. ..$ : chr "ct.applyAlpha"
-  .. ..$ : chr "ct.buildSE"
-  .. ..$ : chr "ct.CAT"
-  .. ..$ : chr "ct.compareContrasts"
-  .. ..$ : chr "ct.contrastBarchart"
-  .. ..$ : chr "ct.DirectionalTests"
-  .. ..$ : chr "ct.expandAnnotation"
-  .. ..$ : chr "ct.extractSE"
-  .. ..$ : chr "ct.filterReads"
-  .. ..$ : chr "ct.GCbias"
-  .. ..$ : chr "ct.generateResults"
-  .. ..$ : chr "ct.GREATdb"
-  .. ..$ : chr "ct.gRNARankByReplicate"
-  .. ..$ : chr "ct.guideCDF"
-  .. ..$ : chr "ct.keyCheck"
-  .. ..$ : chr "ct.makeContrastReport"
-  .. ..$ : chr "ct.makeQCReport"
-  .. ..$ : chr "ct.makeReport"
-  .. ..$ : chr "ct.makeRhoNull"
-  .. ..$ : chr "ct.normalizeBySlope"
-  .. ..$ : chr "ct.normalizeFQ"
-  .. ..$ : chr "ct.normalizeGenewise"
-  .. ..$ : chr "ct.normalizeGuides"
-  .. ..$ : chr "ct.normalizeMedians"
-  .. ..$ : chr "ct.normalizeNTC"
-  .. ..$ : chr "ct.normalizeSpline"
-  .. ..$ : chr "ct.parseGeneSymbol"
-  .. ..$ : chr "ct.PRC"
-  .. ..$ : chr "ct.prepareAnnotation"
-  .. ..$ : chr "ct.preprocessFit"
-  .. ..$ : chr "ct.rankSimple"
-  .. ..$ : chr "ct.rawCountDensities"
-  .. ..$ : chr "ct.regularizeContrasts"
-  .. ..$ : chr "ct.resultCheck"
-  .. ..$ : chr "ct.ROC"
-  .. ..$ : chr "ct.RRAalpha"
-  .. ..$ : chr "ct.RRAaPvals"
-  .. ..$ : chr "ct.scatter"
-  .. ..$ : chr "ct.seas"
-  .. ..$ : chr "ct.seasPrep"
-  .. ..$ : chr "ct.signalSummary"
-  .. ..$ : chr "ct.simpleResult"
-  .. ..$ : chr "ct.softLog"
-  .. ..$ : chr "ct.stackGuides"
-  .. ..$ : chr "ct.targetSetEnrichment"
-  .. ..$ : chr "ct.topTargets"
-  .. ..$ : chr "ct.upSet"
-  .. ..$ : chr "ct.viewControls"
-  .. ..$ : chr "ct.viewGuides"
-  ..$ _datasets           :List of 7
+  ..$ _homeurl          : chr "https://github.com/girke-lab/signaturesearch"
+  ..$ _realowner        : chr "bioc"
+  ..$ _cranurl          : logi FALSE
+  ..$ _exports          :List of 57
+  .. ..$ : chr "[.feaResult"
+  .. ..$ : chr "$.feaResult"
+  .. ..$ : chr "add_pcid"
+  .. ..$ : chr "addGESSannot"
+  .. ..$ : chr "addMOA"
+  .. ..$ : chr "append2H5"
+  .. ..$ : chr "build_custom_db"
+  .. ..$ : chr "cellNtestPlot"
+  .. ..$ : chr "comp_fea_res"
+  .. ..$ : chr "create_empty_h5"
+  .. ..$ : chr "drug_cell_ranks"
+  .. ..$ : chr "drugs"
+  .. ..$ : chr "drugs&lt;-"
+  .. ..$ : chr "dsea_GSEA"
+  .. ..$ : chr "dsea_hyperG"
+  .. ..$ : chr "dtnetplot"
+  .. ..$ : chr "enrichGO2"
+  .. ..$ : chr "enrichMOA"
+  .. ..$ : chr "enrichReactome"
+  .. ..$ : chr "feaResult"
+  .. ..$ : chr "gctx2h5"
+  .. ..$ : chr "gess_cmap"
+  .. ..$ : chr "gess_cor"
+  .. ..$ : chr "gess_fisher"
+  .. ..$ : chr "gess_gcmap"
+  .. ..$ : chr "gess_lincs"
+  .. ..$ : chr "gess_res_vis"
+  .. ..$ : chr "gessResult"
+  .. ..$ : chr "get_targets"
+  .. ..$ : chr "getDEGSig"
+  .. ..$ : chr "getSig"
+  .. ..$ : chr "getSPsubSig"
+  .. ..$ : chr "getTreats"
+  .. ..$ : chr "gmt2h5"
+  .. ..$ : chr "gseGO2"
+  .. ..$ : chr "gseReactome"
+  .. ..$ : chr "list_rev"
+  .. ..$ : chr "list2df"
+  .. ..$ : chr "mabsGO"
+  .. ..$ : chr "mabsReactome"
+  .. ..$ : chr "matrix2h5"
+  .. ..$ : chr "meanExpr2h5"
+  .. ..$ : chr "moa_conn"
+  .. ..$ : chr "parse_gctx"
+  .. ..$ : chr "qSig"
+  .. ..$ : chr "rand_query_ES"
+  .. ..$ : chr "read_gmt"
+  .. ..$ : chr "result"
+  .. ..$ : chr "runWF"
+  .. ..$ : chr "set_readable"
+  .. ..$ : chr "show"
+  .. ..$ : chr "sim_score_grp"
+  .. ..$ : chr "tarReduce"
+  .. ..$ : chr "tsea_dup_hyperG"
+  .. ..$ : chr "tsea_mabs"
+  .. ..$ : chr "tsea_mGSEA"
+  .. ..$ : chr "vec_char_redu"
+  ..$ _datasets         :List of 10
   .. ..$ :List of 9
-  .. .. ..$ name  : chr "aln"
-  .. .. ..$ title : chr "Precalculated alignment statistics of a crispr screen"
-  .. .. ..$ object: chr "aln"
-  .. .. ..$ file  : chr "aln.RData"
-  .. .. ..$ class :List of 2
-  .. .. .. ..$ : chr "matrix"
-  .. .. .. ..$ : chr "array"
-  .. .. ..$ fields:List of 9
-  .. .. .. ..$ : chr "SAMPLE_1"
-  .. .. .. ..$ : chr "SAMPLE_2"
-  .. .. .. ..$ : chr "SAMPLE_3"
-  .. .. .. ..$ : chr "SAMPLE_4"
-  .. .. .. ..$ : chr "SAMPLE_5"
-  .. .. .. ..$ : chr "SAMPLE_6"
-  .. .. .. ..$ : chr "SAMPLE_7"
-  .. .. .. ..$ : chr "SAMPLE_8"
-  .. .. .. ..$ : chr "SAMPLE_9"
-  .. .. ..$ rows  : int 4
+  .. .. ..$ name  : chr "cell_info"
+  .. .. ..$ title : chr "LINCS 2017 Cell Type Information"
+  .. .. ..$ object: chr "cell_info"
+  .. .. ..$ file  : chr "cell_info.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 5
+  .. .. .. ..$ : chr "cell_id"
+  .. .. .. ..$ : chr "cell_type"
+  .. .. .. ..$ : chr "primary_site"
+  .. .. .. ..$ : chr "subtype"
+  .. .. .. ..$ : chr "donor_sex"
+  .. .. ..$ rows  : int 30
   .. .. ..$ table : logi TRUE
   .. .. ..$ tojson: logi TRUE
   .. ..$ :List of 9
-  .. .. ..$ name  : chr "ann"
-  .. .. ..$ title : chr "Annotation file for a mouse Crispr library"
-  .. .. ..$ object: chr "ann"
-  .. .. ..$ file  : chr "ann.RData"
+  .. .. ..$ name  : chr "cell_info2"
+  .. .. ..$ title : chr "LINCS 2020 Cell Type Information"
+  .. .. ..$ object: chr "cell_info2"
+  .. .. ..$ file  : chr "cell_info2.rda"
   .. .. ..$ class :List of 1
   .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 9
-  .. .. .. ..$ : chr "ID"
-  .. .. .. ..$ : chr "target"
-  .. .. .. ..$ : chr "geneID"
-  .. .. .. ..$ : chr "chr"
-  .. .. .. ..$ : chr "end"
-  .. .. .. ..$ : chr "start"
-  .. .. .. ..$ : chr "strand"
-  .. .. .. ..$ : chr "size"
-  .. .. .. ..$ : chr "geneSymbol"
-  .. .. ..$ rows  : int 17214
+  .. .. ..$ fields:List of 5
+  .. .. .. ..$ : chr "cell_id"
+  .. .. .. ..$ : chr "cell_type"
+  .. .. .. ..$ : chr "subtype"
+  .. .. .. ..$ : chr "donor_sex"
+  .. .. .. ..$ : chr "primary_site"
+  .. .. ..$ rows  : int 240
   .. .. ..$ table : logi TRUE
   .. .. ..$ tojson: logi TRUE
   .. ..$ :List of 8
-  .. .. ..$ name  : chr "es"
-  .. .. ..$ title : chr "ExpressionSet of count data from a Crispr screen with strong selection"
-  .. .. ..$ object: chr "es"
-  .. .. ..$ file  : chr "es.RData"
+  .. .. ..$ name  : chr "chembl_moa_list"
+  .. .. ..$ title : chr "MOA to Gene Mappings"
+  .. .. ..$ object: chr "chembl_moa_list"
+  .. .. ..$ file  : chr "chembl_moa_list.rda"
   .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "ExpressionSet"
+  .. .. .. ..$ : chr "list"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
+  .. .. ..$ tojson: logi TRUE
   .. ..$ :List of 8
-  .. .. ..$ name  : chr "essential.genes"
-  .. .. ..$ title : chr "Artificial list of 'essential' genes in the example Crispr screen included for plotting purposes"
-  .. .. ..$ object: chr "essential.genes"
-  .. .. ..$ file  : chr "essential.genes.RData"
+  .. .. ..$ name  : chr "clue_moa_list"
+  .. .. ..$ title : chr "MOA to Drug Name Mappings"
+  .. .. ..$ object: chr "clue_moa_list"
+  .. .. ..$ file  : chr "clue_moa_list.rda"
+  .. .. ..$ class :List of 1
+  .. .. .. ..$ : chr "list"
+  .. .. ..$ fields: list()
+  .. .. ..$ table : logi FALSE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 8
+  .. .. ..$ name  : chr "drugs10"
+  .. .. ..$ title : chr "Drug Names Used in Examples"
+  .. .. ..$ object: chr "drugs10"
+  .. .. ..$ file  : chr "drugs10.rda"
   .. .. ..$ class :List of 1
   .. .. .. ..$ : chr "character"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi TRUE
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "fit"
-  .. .. ..$ title : chr "Precalculated contrast fit from a Crispr screen"
-  .. .. ..$ object: chr "fit"
-  .. .. ..$ file  : chr "fit.RData"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "MArrayLM"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "lincs_expr_inst_info"
+  .. .. ..$ title : chr "Instance Information of LINCS Expression Database"
+  .. .. ..$ object: chr "lincs_expr_inst_info"
+  .. .. ..$ file  : chr "lincs_expr_inst_info.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 3
+  .. .. .. ..$ : chr "pert"
+  .. .. .. ..$ : chr "cell"
+  .. .. .. ..$ : chr "pert_type"
+  .. .. ..$ rows  : int 38824
+  .. .. ..$ table : logi TRUE
   .. .. ..$ tojson: logi TRUE
   .. ..$ :List of 9
-  .. .. ..$ name  : chr "resultsDF"
-  .. .. ..$ title : chr "Precalculated gene-level summary of a crispr screen"
-  .. .. ..$ object: chr "resultsDF"
-  .. .. ..$ file  : chr "resultsDF.RData"
-  .. .. ..$ class :List of 1
+  .. .. ..$ name  : chr "lincs_pert_info"
+  .. .. ..$ title : chr "LINCS 2017 Perturbation Information"
+  .. .. ..$ object: chr "lincs_pert_info"
+  .. .. ..$ file  : chr "lincs_pert_info.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
   .. .. .. ..$ : chr "data.frame"
-  .. .. ..$ fields:List of 16
-  .. .. .. ..$ : chr "ID"
+  .. .. ..$ fields:List of 40
+  .. .. .. ..$ : chr "pert_id"
+  .. .. .. ..$ : chr "pert_iname"
+  .. .. .. ..$ : chr "pert_type"
+  .. .. .. ..$ : chr "is_touchstone"
+  .. .. .. ..$ : chr "inchi_key_prefix"
+  .. .. .. ..$ : chr "inchi_key"
+  .. .. .. ..$ : chr "canonical_smiles"
+  .. .. .. ..$ : chr "pubchem_cid"
+  .. .. .. ..$ : chr "MOA"
+  .. .. .. ..$ : chr "chembl_id"
+  .. .. .. ..$ : chr "molregno"
+  .. .. .. ..$ : chr "PubChem_ID"
+  .. .. .. ..$ : chr "DrugBank_ID"
+  .. .. .. ..$ : chr "pref_name"
+  .. .. .. ..$ : chr "max_phase"
+  .. .. .. ..$ : chr "therapeutic_flag"
+  .. .. .. ..$ : chr "molecule_type"
+  .. .. .. ..$ : chr "first_approval"
+  .. .. .. ..$ : chr "oral"
+  .. .. .. ..$ : chr "parenteral"
+  .. .. .. ..$ : chr "topical"
+  .. .. .. ..$ : chr "natural_product"
+  .. .. .. ..$ : chr "inorganic_flag"
+  .. .. .. ..$ : chr "usan_year"
+  .. .. .. ..$ : chr "availability_type"
+  .. .. .. ..$ : chr "usan_stem"
+  .. .. .. ..$ : chr "usan_stem_definition"
+  .. .. .. ..$ : chr "indication_class"
+  .. .. .. ..$ : chr "withdrawn_flag"
+  .. .. .. ..$ : chr "withdrawn_year"
+  .. .. .. ..$ : chr "withdrawn_country"
+  .. .. .. ..$ : chr "withdrawn_reason"
+  .. .. .. ..$ : chr "withdrawn_class"
+  .. .. .. ..$ : chr "mechanism_of_action"
+  .. .. .. ..$ : chr "action_type"
+  .. .. .. ..$ : chr "direct_interaction"
+  .. .. .. ..$ : chr "molecular_mechanism"
+  .. .. .. ..$ : chr "disease_efficacy"
+  .. .. .. ..$ : chr "mechanism_comment"
+  .. .. .. ..$ : chr "selectivity_comment"
+  .. .. ..$ rows  : int 8140
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "lincs_pert_info2"
+  .. .. ..$ title : chr "LINCS 2020 Perturbation Information"
+  .. .. ..$ object: chr "lincs_pert_info2"
+  .. .. ..$ file  : chr "lincs_pert_info2.rda"
+  .. .. ..$ class :List of 4
+  .. .. .. ..$ : chr "spec_tbl_df"
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 48
+  .. .. .. ..$ : chr "pert_id"
+  .. .. .. ..$ : chr "pert_iname"
+  .. .. .. ..$ : chr "canonical_smiles"
+  .. .. .. ..$ : chr "inchi_key"
+  .. .. .. ..$ : chr "compound_aliases"
   .. .. .. ..$ : chr "target"
-  .. .. .. ..$ : chr "geneID"
-  .. .. .. ..$ : chr "geneSymbol"
-  .. .. .. ..$ : chr "gRNA Log2 Fold Change"
-  .. .. .. ..$ : chr "gRNA Depletion P"
-  .. .. .. ..$ : chr "gRNA Depletion Q"
-  .. .. .. ..$ : chr "gRNA Enrichment P"
-  .. .. .. ..$ : chr "gRNA Enrichment Q"
-  .. .. .. ..$ : chr "Target-level Enrichment P"
-  .. .. .. ..$ : chr "Target-level Enrichment Q"
-  .. .. .. ..$ : chr "Target-level Depletion P"
-  .. .. .. ..$ : chr "Target-level Depletion Q"
-  .. .. .. ..$ : chr "Median log2 Fold Change"
-  .. .. .. ..$ : chr "Rho_enrich"
-  .. .. .. ..$ : chr "Rho_deplete"
-  .. .. ..$ rows  : int 17214
+  .. .. .. ..$ : chr "MOA"
+  .. .. .. ..$ : chr "is_touchstone"
+  .. .. .. ..$ : chr "pubchem_cid"
+  .. .. .. ..$ : chr "chembl_id"
+  .. .. .. ..$ : chr "molregno"
+  .. .. .. ..$ : chr "PubChem_ID"
+  .. .. .. ..$ : chr "DrugBank_ID"
+  .. .. .. ..$ : chr "pref_name"
+  .. .. .. ..$ : chr "max_phase"
+  .. .. .. ..$ : chr "therapeutic_flag"
+  .. .. .. ..$ : chr "molecule_type"
+  .. .. .. ..$ : chr "first_approval"
+  .. .. .. ..$ : chr "oral"
+  .. .. .. ..$ : chr "parenteral"
+  .. .. .. ..$ : chr "topical"
+  .. .. .. ..$ : chr "natural_product"
+  .. .. .. ..$ : chr "inorganic_flag"
+  .. .. .. ..$ : chr "usan_year"
+  .. .. .. ..$ : chr "availability_type"
+  .. .. .. ..$ : chr "usan_stem"
+  .. .. .. ..$ : chr "usan_stem_definition"
+  .. .. .. ..$ : chr "indication_class"
+  .. .. .. ..$ : chr "withdrawn_flag"
+  .. .. .. ..$ : chr "withdrawn_year"
+  .. .. .. ..$ : chr "withdrawn_country"
+  .. .. .. ..$ : chr "withdrawn_reason"
+  .. .. .. ..$ : chr "withdrawn_class"
+  .. .. .. ..$ : chr "mechanism_of_action"
+  .. .. .. ..$ : chr "action_type"
+  .. .. .. ..$ : chr "direct_interaction"
+  .. .. .. ..$ : chr "molecular_mechanism"
+  .. .. .. ..$ : chr "disease_efficacy"
+  .. .. .. ..$ : chr "mechanism_comment"
+  .. .. .. ..$ : chr "selectivity_comment"
+  .. .. .. ..$ : chr "NameAliasMer"
+  .. .. .. ..$ : chr "MOAclue"
+  .. .. .. ..$ : chr "mergeMOA"
+  .. .. .. ..$ : chr "t_gn_sym"
+  .. .. .. ..$ : chr "mergeTargets"
+  .. .. .. ..$ : chr "Ntar"
+  .. .. .. ..$ : chr "isLAD"
+  .. .. .. ..$ : chr "Target_pathway"
+  .. .. ..$ rows  : int 34419
+  .. .. ..$ table : logi TRUE
+  .. .. ..$ tojson: logi TRUE
+  .. ..$ :List of 9
+  .. .. ..$ name  : chr "lincs_sig_info"
+  .. .. ..$ title : chr "LINCS Signature Information"
+  .. .. ..$ object: chr "lincs_sig_info"
+  .. .. ..$ file  : chr "lincs_sig_info.rda"
+  .. .. ..$ class :List of 3
+  .. .. .. ..$ : chr "tbl_df"
+  .. .. .. ..$ : chr "tbl"
+  .. .. .. ..$ : chr "data.frame"
+  .. .. ..$ fields:List of 3
+  .. .. .. ..$ : chr "pert"
+  .. .. .. ..$ : chr "cell"
+  .. .. .. ..$ : chr "pert_type"
+  .. .. ..$ rows  : int 45956
   .. .. ..$ table : logi TRUE
   .. .. ..$ tojson: logi TRUE
   .. ..$ :List of 8
-  .. .. ..$ name  : chr "se"
-  .. .. ..$ title : chr "SummarizedExperiment of count data from a Crispr screen with strong selection"
-  .. .. ..$ object: chr "se"
-  .. .. ..$ file  : chr "se.RData"
+  .. .. ..$ name  : chr "targetList"
+  .. .. ..$ title : chr "Target Sample Data Set"
+  .. .. ..$ object: chr "targetList"
+  .. .. ..$ file  : chr "targetList.rda"
   .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SummarizedExperiment"
+  .. .. .. ..$ : chr "numeric"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  ..$ _help               :List of 55
+  .. .. ..$ tojson: logi TRUE
+  ..$ _help             :List of 65
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "aln"
-  .. .. ..$ title : chr "Precalculated alignment statistics of a crispr screen"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "aln"
+  .. .. ..$ page  : chr "signatureSearch-package"
+  .. .. ..$ title : chr "Environment for Gene Expression Signature Searching Combined with Functional Enrichment Analysis"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "signatureSearch-package"
+  .. .. .. ..$ : chr "signatureSearch"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ann"
-  .. .. ..$ title : chr "Annotation file for a mouse Crispr library"
+  .. .. ..$ page  : chr "add_pcid"
+  .. .. ..$ title : chr "Add PCID to drug data frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ann"
+  .. .. .. ..$ : chr "add_pcid"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.alignmentChart"
-  .. .. ..$ title : chr "View a Barchart Summarizing Alignment Statistics for a Crispr Screen"
+  .. .. ..$ page  : chr "addGESSannot"
+  .. .. ..$ title : chr "Add Compound Annotation Info to GESS Result Table"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.alignmentChart"
+  .. .. .. ..$ : chr "addGESSannot"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.applyAlpha"
-  .. .. ..$ title : chr "Apply RRA 'alpha' cutoff to RRAalpha input"
+  .. .. ..$ page  : chr "addMOA"
+  .. .. ..$ title : chr "Add MOA annotation to drug data frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.applyAlpha"
+  .. .. .. ..$ : chr "addMOA"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.buildSE"
-  .. .. ..$ title : chr "Package Screen Data into a `SummarizedExperiment` Object"
+  .. .. ..$ page  : chr "append2H5"
+  .. .. ..$ title : chr "Append Matrix to HDF5 File"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.buildSE"
+  .. .. .. ..$ : chr "append2H5"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.CAT"
-  .. .. ..$ title : chr "Compare Two CRISPR Screens via a CAT plot"
+  .. .. ..$ page  : chr "build_custom_db"
+  .. .. ..$ title : chr "build_custom_db"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.CAT"
+  .. .. .. ..$ : chr "build_custom_db"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.compareContrasts"
-  .. .. ..$ title : chr "Identify Replicated Signals in Pooled Screens Using Conditional Scoring"
+  .. .. ..$ page  : chr "calcGseaStatBatchCpp"
+  .. .. ..$ title : chr "Calculates GSEA statistic valus for all gene sets in `selectedStats` list."
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.compareContrasts"
+  .. .. .. ..$ : chr "calcGseaStatBatchCpp"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.contrastBarchart"
-  .. .. ..$ title : chr "Visualize Signal Across A List of Contrasts"
+  .. .. ..$ page  : chr "cell_info"
+  .. .. ..$ title : chr "LINCS 2017 Cell Type Information"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.contrastBarchart"
+  .. .. .. ..$ : chr "cell_info"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.DirectionalTests"
-  .. .. ..$ title : chr "Compute Directional P-values from eBayes Output"
+  .. .. ..$ page  : chr "cell_info2"
+  .. .. ..$ title : chr "LINCS 2020 Cell Type Information"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.DirectionalTests"
+  .. .. .. ..$ : chr "cell_info2"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.expandAnnotation"
-  .. .. ..$ title : chr "Expand an annotation object to allow annotations of reagents to multiple targets"
+  .. .. ..$ page  : chr "cellNtestPlot"
+  .. .. ..$ title : chr "Number of Tests in Cell Types"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.expandAnnotation"
+  .. .. .. ..$ : chr "cellNtestPlot"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.extractSE"
-  .. .. ..$ title : chr "Extract gCrisprTools objects from a `SummarizedExperiment`"
+  .. .. ..$ page  : chr "chembl_moa_list"
+  .. .. ..$ title : chr "MOA to Gene Mappings"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.extractSE"
+  .. .. .. ..$ : chr "chembl_moa_list"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.filterReads"
-  .. .. ..$ title : chr "Remove low-abundance elements from an ExpressionSet object"
+  .. .. ..$ page  : chr "clue_moa_list"
+  .. .. ..$ title : chr "MOA to Drug Name Mappings"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.filterReads"
+  .. .. .. ..$ : chr "clue_moa_list"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.GCbias"
-  .. .. ..$ title : chr "Visualization of gRNA GC Content Trends"
+  .. .. ..$ page  : chr "comp_fea_res"
+  .. .. ..$ title : chr "Plot for Comparing Ranking Results of FEA Methods"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.GCbias"
+  .. .. .. ..$ : chr "comp_fea_res"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.generateResults"
-  .. .. ..$ title : chr "Calculate results of a crispr screen from a contrast"
+  .. .. ..$ page  : chr "create_empty_h5"
+  .. .. ..$ title : chr "Create Empty HDF5 File"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.generateResults"
+  .. .. .. ..$ : chr "create_empty_h5"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.GREATdb"
-  .. .. ..$ title : chr "Update a gene-centric msdb object for GREAT-style enrichment analysis using a specified CRISPR annotation."
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.GREATdb"
+  .. .. ..$ page  : chr "dim-methods"
+  .. .. ..$ title : chr "Dimensions of an Object"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "dim"
+  .. .. .. ..$ : chr "dim,feaResult-method"
+  .. .. .. ..$ : chr "dim,gessResult-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.gRNARankByReplicate"
-  .. .. ..$ title : chr "Visualization of Ranked gRNA Abundances by Replicate"
+  .. .. ..$ page  : chr "drug_cell_ranks"
+  .. .. ..$ title : chr "Summary ranking statistics across cell types"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.gRNARankByReplicate"
+  .. .. .. ..$ : chr "drug_cell_ranks"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.guideCDF"
-  .. .. ..$ title : chr "View CDFs of the ranked gRNAs or Targets present in a crispr screen"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.guideCDF"
+  .. .. ..$ page  : chr "drugs-methods"
+  .. .. ..$ title : chr "Extract/Assign Drug Names for feaResult"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "drugs"
+  .. .. .. ..$ : chr "drugs,feaResult,ANY-method"
+  .. .. .. ..$ : chr "drugs,feaResult-method"
+  .. .. .. ..$ : chr "drugs&lt;-"
+  .. .. .. ..$ : chr "drugs&lt;-,feaResult-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.inputCheck"
-  .. .. ..$ title : chr "Check compatibility of a sample key with a supplied object"
+  .. .. ..$ page  : chr "drugs10"
+  .. .. ..$ title : chr "Drug Names Used in Examples"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.inputCheck"
+  .. .. .. ..$ : chr "drugs10"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.keyCheck"
-  .. .. ..$ title : chr "Check compatibility of a sample key with a supplied ExpressionSet or similar object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.keyCheck"
+  .. .. ..$ page  : chr "fea"
+  .. .. ..$ title : chr "FEA Methods"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "dsea_GSEA"
+  .. .. .. ..$ : chr "dsea_hyperG"
+  .. .. .. ..$ : chr "tsea_dup_hyperG"
+  .. .. .. ..$ : chr "tsea_mabs"
+  .. .. .. ..$ : chr "tsea_mGSEA"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.makeContrastReport"
-  .. .. ..$ title : chr "Generate a Contrast report from a pooled CRISPR screen"
+  .. .. ..$ page  : chr "dtnetplot"
+  .. .. ..$ title : chr "Drug-Target Network Visualization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.makeContrastReport"
+  .. .. .. ..$ : chr "dtnetplot"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.makeQCReport"
-  .. .. ..$ title : chr "Generate a QC report from a pooled CRISPR screen"
+  .. .. ..$ page  : chr "enrichGO2"
+  .. .. ..$ title : chr "GO Term Enrichment with Hypergeometric Test"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.makeQCReport"
+  .. .. .. ..$ : chr "enrichGO2"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.makeReport"
-  .. .. ..$ title : chr "Generate a full experimental report from a pooled CRISPR screen"
+  .. .. ..$ page  : chr "enrichMOA"
+  .. .. ..$ title : chr "MOA Category Enrichment with Hypergeometric Test"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.makeReport"
+  .. .. .. ..$ : chr "enrichMOA"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.makeRhoNull"
-  .. .. ..$ title : chr "Make null distribution for RRAalpha tests"
+  .. .. ..$ page  : chr "enrichReactome"
+  .. .. ..$ title : chr "Reactome Enrichment Analysis of a gene set. Given a vector of genes, this function will return the enriched Rea"| __truncated__
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.makeRhoNull"
+  .. .. .. ..$ : chr "enrichReactome"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeBySlope"
-  .. .. ..$ title : chr "Normalize sample abundance estimates by the slope of the values in the central range"
+  .. .. ..$ page  : chr "feaResult"
+  .. .. ..$ title : chr "Constructor for 'feaResult-class'"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeBySlope"
+  .. .. .. ..$ : chr "feaResult"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeFQ"
-  .. .. ..$ title : chr "Apply Factored Quantile Normalization to an eset"
+  .. .. ..$ page  : chr "feaResult-class"
+  .. .. ..$ title : chr "feaResult object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeFQ"
+  .. .. .. ..$ : chr "feaResult-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeGenewise"
-  .. .. ..$ title : chr "Normalize sample abundance estimates genewise by the median values of a subset of guides"
+  .. .. ..$ page  : chr "GCT-object"
+  .. .. ..$ title : chr "An S4 Class to Represent a GCT Object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeGenewise"
+  .. .. .. ..$ : chr "GCT object"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeGuides"
-  .. .. ..$ title : chr "Normalize an ExpressionSet Containing a Crispr Screen"
+  .. .. ..$ page  : chr "gctx2h5"
+  .. .. ..$ title : chr "Convert GCTX to HDF5 File"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeGuides"
+  .. .. .. ..$ : chr "gctx2h5"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeMedians"
-  .. .. ..$ title : chr "Normalize sample abundance estimates by median gRNA counts"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeMedians"
+  .. .. ..$ page  : chr "gess"
+  .. .. ..$ title : chr "GESS Methods"
+  .. .. ..$ topics:List of 5
+  .. .. .. ..$ : chr "gess_cmap"
+  .. .. .. ..$ : chr "gess_cor"
+  .. .. .. ..$ : chr "gess_fisher"
+  .. .. .. ..$ : chr "gess_gcmap"
+  .. .. .. ..$ : chr "gess_lincs"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeNTC"
-  .. .. ..$ title : chr "Normalize sample abundance estimates by the median values of nontargeting control guides"
+  .. .. ..$ page  : chr "gess_res_vis"
+  .. .. ..$ title : chr "GESS Result Visualization"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeNTC"
+  .. .. .. ..$ : chr "gess_res_vis"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.normalizeSpline"
-  .. .. ..$ title : chr "Normalize sample abundance estimates by a spline fit to specific shared elements"
+  .. .. ..$ page  : chr "gessResult"
+  .. .. ..$ title : chr "Constructor for 'gessResult-class'"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.normalizeSpline"
+  .. .. .. ..$ : chr "gessResult"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.parseGeneSymbol"
-  .. .. ..$ title : chr "Parse `geneSymbol` values to construct an alternative annotation list"
+  .. .. ..$ page  : chr "gessResult-class"
+  .. .. ..$ title : chr "gessResult object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.parseGeneSymbol"
+  .. .. .. ..$ : chr "gessResult-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.PRC"
-  .. .. ..$ title : chr "Generate a Precision-Recall Curve from a CRISPR screen"
+  .. .. ..$ page  : chr "get_targets"
+  .. .. ..$ title : chr "Target Gene/Protein IDs for Query Drugs"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.PRC"
+  .. .. .. ..$ : chr "get_targets"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.prepareAnnotation"
-  .. .. ..$ title : chr "Check and optionally subset an annotation file for use in a Crispr Screen"
+  .. .. ..$ page  : chr "getALLEG"
+  .. .. ..$ title : chr "getALLEG"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.prepareAnnotation"
+  .. .. .. ..$ : chr "getALLEG"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.rankSimple"
-  .. .. ..$ title : chr "Rank Signals in a Simplified Pooled Screen Result Object"
+  .. .. ..$ page  : chr "getDb"
+  .. .. ..$ title : chr "getDb"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.rankSimple"
+  .. .. .. ..$ : chr "getDb"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.rawCountDensities"
-  .. .. ..$ title : chr "Visualization of Raw gRNA Count Densities"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.rawCountDensities"
+  .. .. ..$ page  : chr "getSig"
+  .. .. ..$ title : chr "Draw GESs from Reference Database"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "getDEGSig"
+  .. .. .. ..$ : chr "getSig"
+  .. .. .. ..$ : chr "getSPsubSig"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.regularizeContrasts"
-  .. .. ..$ title : chr "Regularize Two Screening Results Objects"
+  .. .. ..$ page  : chr "getTreats"
+  .. .. ..$ title : chr "Get Treatment Information"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.regularizeContrasts"
+  .. .. .. ..$ : chr "getTreats"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.resultCheck"
-  .. .. ..$ title : chr "Determine whether a supplied object contains the results of a Pooled Screen"
+  .. .. ..$ page  : chr "gmt2h5"
+  .. .. ..$ title : chr "Convert GMT to HDF5 File"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.resultCheck"
+  .. .. .. ..$ : chr "gmt2h5"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.ROC"
-  .. .. ..$ title : chr "Generate a Receiver-Operator Characteristic (ROC) Curve from a CRISPR screen"
+  .. .. ..$ page  : chr "gseGO2"
+  .. .. ..$ title : chr "Modified GSEA with GO Terms"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.ROC"
+  .. .. .. ..$ : chr "gseGO2"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.scatter"
-  .. .. ..$ title : chr "Compare Two CRISPR Screen Contrasts via a Scatter Plot"
+  .. .. ..$ page  : chr "gseReactome"
+  .. .. ..$ title : chr "Modified GSEA with Reactome"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.scatter"
+  .. .. .. ..$ : chr "gseReactome"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.seas"
-  .. .. ..$ title : chr "Geneset Enrichment within a CRISPR screen using `sparrow`"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.seas"
+  .. .. ..$ page  : chr "head-methods"
+  .. .. ..$ title : chr "Return the First Part of an Object"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "head"
+  .. .. .. ..$ : chr "head,feaResult-method"
+  .. .. .. ..$ : chr "head,gessResult-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.seasPrep"
-  .. .. ..$ title : chr "Prepare one or more resultsDF objects for analysis via Sparrow."
+  .. .. ..$ page  : chr "lincs_expr_inst_info"
+  .. .. ..$ title : chr "Instance Information of LINCS Expression Database"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.seasPrep"
+  .. .. .. ..$ : chr "lincs_expr_inst_info"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.signalSummary"
-  .. .. ..$ title : chr "Generate a Figure Summarizing Overall Signal for One or More Targets"
+  .. .. ..$ page  : chr "lincs_pert_info"
+  .. .. ..$ title : chr "LINCS 2017 Perturbation Information"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.signalSummary"
+  .. .. .. ..$ : chr "lincs_pert_info"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.simpleResult"
-  .. .. ..$ title : chr "Convert a verbose results DF object to a gene-level result object"
+  .. .. ..$ page  : chr "lincs_pert_info2"
+  .. .. ..$ title : chr "LINCS 2020 Perturbation Information"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.simpleResult"
+  .. .. .. ..$ : chr "lincs_pert_info2"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.softLog"
-  .. .. ..$ title : chr "Log10 transform empirical P-values with a pseudocount"
+  .. .. ..$ page  : chr "lincs_sig_info"
+  .. .. ..$ title : chr "LINCS Signature Information"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.softLog"
+  .. .. .. ..$ : chr "lincs_sig_info"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.stackGuides"
-  .. .. ..$ title : chr "View a stacked representation of the most variable targets or individual guides within an experiment, as a perc"| __truncated__
+  .. .. ..$ page  : chr "list_rev"
+  .. .. ..$ title : chr "Reverse list"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.stackGuides"
+  .. .. .. ..$ : chr "list_rev"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.targetSetEnrichment"
-  .. .. ..$ title : chr "Test Whether a Specified Target Set is Enriched Within a Pooled Screen"
+  .. .. ..$ page  : chr "list2df"
+  .. .. ..$ title : chr "Named list to data frame"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.targetSetEnrichment"
+  .. .. .. ..$ : chr "list2df"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.topTargets"
-  .. .. ..$ title : chr "Display the log2 fold change estimates and associated standard deviations of the guides targeting the top candi"| __truncated__
+  .. .. ..$ page  : chr "mabsGO"
+  .. .. ..$ title : chr "MeanAbs Enrichment Analysis for GO"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.topTargets"
+  .. .. .. ..$ : chr "mabsGO"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.upSet"
-  .. .. ..$ title : chr "Consolidate shared signals across many contrasts in an UpSet Plot"
+  .. .. ..$ page  : chr "mabsReactome"
+  .. .. ..$ title : chr "MeanAbs Enrichment Analysis for Reactome"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.upSet"
+  .. .. .. ..$ : chr "mabsReactome"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.viewControls"
-  .. .. ..$ title : chr "View nontargeting guides within an experiment"
+  .. .. ..$ page  : chr "matrix2h5"
+  .. .. ..$ title : chr "Write Matrix to HDF5 file"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.viewControls"
+  .. .. .. ..$ : chr "matrix2h5"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ct.viewGuides"
-  .. .. ..$ title : chr "Generate a Plot of individual gRNA Pair Data in a Crispr Screen"
+  .. .. ..$ page  : chr "meanExpr2h5"
+  .. .. ..$ title : chr "Calculate Mean Expression Values of LINCS Level 3 Data"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ct.viewGuides"
+  .. .. .. ..$ : chr "meanExpr2h5"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "es"
-  .. .. ..$ title : chr "ExpressionSet of count data from a Crispr screen with strong selection"
+  .. .. ..$ page  : chr "moa_conn"
+  .. .. ..$ title : chr "Summarize GESS Results on MOA Level"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "es"
+  .. .. .. ..$ : chr "moa_conn"
+  .. ..$ :List of 4
+  .. .. ..$ page   : chr "parse_gctx"
+  .. .. ..$ title  : chr "Parse GCTX"
+  .. .. ..$ concept: chr "GCTX parsing functions"
+  .. .. ..$ topics :List of 1
+  .. .. .. ..$ : chr "parse_gctx"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "essential.genes"
-  .. .. ..$ title : chr "Artificial list of 'essential' genes in the example Crispr screen included for plotting purposes"
+  .. .. ..$ page  : chr "qSig"
+  .. .. ..$ title : chr "Helper Function to Construct a 'qSig' Object"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "essential.genes"
+  .. .. .. ..$ : chr "qSig"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "fit"
-  .. .. ..$ title : chr "Precalculated contrast fit from a Crispr screen"
+  .. .. ..$ page  : chr "qSig-class"
+  .. .. ..$ title : chr "Class \"qSig\""
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "fit"
+  .. .. .. ..$ : chr "qSig-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "resultsDF"
-  .. .. ..$ title : chr "Precalculated gene-level summary of a crispr screen"
+  .. .. ..$ page  : chr "rand_query_ES"
+  .. .. ..$ title : chr "Generate WTCS Null Distribution with Random Queries"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "resultsDF"
+  .. .. .. ..$ : chr "rand_query_ES"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "se"
-  .. .. ..$ title : chr "SummarizedExperiment of count data from a Crispr screen with strong selection"
+  .. .. ..$ page  : chr "read_gmt"
+  .. .. ..$ title : chr "Read in gene set information from .gmt files"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "se"
-  ..$ _readme             : chr "https://github.com/bioc/gCrisprTools/raw/HEAD/README.md"
-  ..$ _rundeps            :List of 72
+  .. .. .. ..$ : chr "read_gmt"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "result-methods"
+  .. .. ..$ title : chr "Method to Extract Result Slots"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "result"
+  .. .. .. ..$ : chr "result,feaResult-method"
+  .. .. .. ..$ : chr "result,gessResult-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "runWF"
+  .. .. ..$ title : chr "Run the Entire GESS/FEA Workflow"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "runWF"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "set_readable"
+  .. .. ..$ title : chr "Set Readable"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "set_readable"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "show-methods"
+  .. .. ..$ title : chr "show method"
+  .. .. ..$ topics:List of 4
+  .. .. .. ..$ : chr "show"
+  .. .. .. ..$ : chr "show,feaResult-method"
+  .. .. .. ..$ : chr "show,gessResult-method"
+  .. .. .. ..$ : chr "show,qSig-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "sim_score_grp"
+  .. .. ..$ title : chr "Summary Scores by Groups of Cell Types"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "sim_score_grp"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "tail-methods"
+  .. .. ..$ title : chr "Return the Last Part of an Object"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "tail"
+  .. .. .. ..$ : chr "tail,feaResult-method"
+  .. .. .. ..$ : chr "tail,gessResult-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "targetList"
+  .. .. ..$ title : chr "Target Sample Data Set"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "targetList"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "tarReduce"
+  .. .. ..$ title : chr "Show Reduced Targets"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "tarReduce"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "vec_char_redu"
+  .. .. ..$ title : chr "Reduce Number of Character"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "vec_char_redu"
+  ..$ _readme           : chr "https://github.com/bioc/signatureSearch/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 132
   .. ..$ : chr "abind"
+  .. ..$ : chr "annotate"
+  .. ..$ : chr "AnnotationDbi"
+  .. ..$ : chr "AnnotationHub"
+  .. ..$ : chr "askpass"
   .. ..$ : chr "base64enc"
+  .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocBaseUtils"
+  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocManager"
+  .. ..$ : chr "BiocParallel"
+  .. ..$ : chr "BiocVersion"
+  .. ..$ : chr "Biostrings"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "blob"
   .. ..$ : chr "bslib"
   .. ..$ : chr "cachem"
-  .. ..$ : chr "circlize"
   .. ..$ : chr "cli"
-  .. ..$ : chr "clue"
-  .. ..$ : chr "cluster"
+  .. ..$ : chr "clipr"
   .. ..$ : chr "codetools"
-  .. ..$ : chr "colorspace"
-  .. ..$ : chr "ComplexHeatmap"
+  .. ..$ : chr "cowplot"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
+  .. ..$ : chr "curl"
+  .. ..$ : chr "data.table"
+  .. ..$ : chr "DBI"
+  .. ..$ : chr "dbplyr"
   .. ..$ : chr "DelayedArray"
   .. ..$ : chr "digest"
-  .. ..$ : chr "doParallel"
+  .. ..$ : chr "DOSE"
+  .. ..$ : chr "dplyr"
+  .. ..$ : chr "enrichit"
   .. ..$ : chr "evaluate"
+  .. ..$ : chr "ExperimentHub"
   .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
+  .. ..$ : chr "fastmatch"
+  .. ..$ : chr "fgsea"
+  .. ..$ : chr "filelock"
   .. ..$ : chr "fontawesome"
-  .. ..$ : chr "foreach"
+  .. ..$ : chr "formatR"
   .. ..$ : chr "fs"
+  .. ..$ : chr "futile.logger"
+  .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
   .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "GetoptLong"
   .. ..$ : chr "ggplot2"
-  .. ..$ : chr "GlobalOptions"
   .. ..$ : chr "glue"
+  .. ..$ : chr "GO.db"
+  .. ..$ : chr "GOSemSim"
+  .. ..$ : chr "graph"
+  .. ..$ : chr "GSEABase"
   .. ..$ : chr "gtable"
+  .. ..$ : chr "h5mread"
+  .. ..$ : chr "HDF5Array"
   .. ..$ : chr "highr"
+  .. ..$ : chr "hms"
   .. ..$ : chr "htmltools"
+  .. ..$ : chr "htmlwidgets"
+  .. ..$ : chr "httr"
+  .. ..$ : chr "httr2"
   .. ..$ : chr "IRanges"
   .. ..$ : chr "isoband"
-  .. ..$ : chr "iterators"
   .. ..$ : chr "jquerylib"
   .. ..$ : chr "jsonlite"
+  .. ..$ : chr "KEGGREST"
   .. ..$ : chr "knitr"
   .. ..$ : chr "labeling"
+  .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
-  .. ..$ : chr "limma"
+  .. ..$ : chr "magrittr"
   .. ..$ : chr "Matrix"
   .. ..$ : chr "MatrixGenerics"
   .. ..$ : chr "matrixStats"
   .. ..$ : chr "memoise"
   .. ..$ : chr "mime"
+  .. ..$ : chr "openssl"
+  .. ..$ : chr "org.Hs.eg.db"
+  .. ..$ : chr "pillar"
+  .. ..$ : chr "pkgconfig"
+  .. ..$ : chr "plyr"
   .. ..$ : chr "png"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
+  .. ..$ : chr "purrr"
+  .. ..$ : chr "qvalue"
   .. ..$ : chr "R6"
   .. ..$ : chr "rappdirs"
   .. ..$ : chr "RColorBrewer"
-  .. ..$ : chr "rjson"
-  .. ..$ : chr "rlang"
-  .. ..$ : chr "rmarkdown"
-  .. ..$ : chr "S4Arrays"
-  .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "S7"
-  .. ..$ : chr "sass"
-  .. ..$ : chr "scales"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "shape"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "statmod"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "tinytex"
-  .. ..$ : chr "vctrs"
-  .. ..$ : chr "viridisLite"
-  .. ..$ : chr "withr"
-  .. ..$ : chr "xfun"
-  .. ..$ : chr "XVector"
-  .. ..$ : chr "yaml"
-  ..$ _vignettes          :List of 3
+  .. ..$ : chr "Rcpp"
+  .. ..$ : chr "reactome.db"
+  .. ..$ : chr "readr"
+  .. ..$ : chr "reshape2"
+  .. ..$ : chr "rhdf5"
+  .. ..$ : chr "rhdf5filters"
+  .. .. [list output truncated]
+  ..$ _sysdeps          :List of 1
+  .. ..$ :List of 7
+  .. .. ..$ shlib      : chr "libstdc++"
+  .. .. ..$ package    : chr "libstdc++6"
+  .. .. ..$ source     : chr "gcc"
+  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04.1"
+  .. .. ..$ name       : chr "c++"
+  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
+  .. .. ..$ description: chr "GNU Standard C++ Library v3"
+  ..$ _vignettes        :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "Contrast_Comparisons.Rmd"
-  .. .. ..$ filename: chr "Contrast_Comparisons.html"
-  .. .. ..$ title   : chr "Advanced Screen Analysis: Contrast Comparisons"
-  .. .. ..$ author  : chr "Russell Bainer"
-  .. .. ..$ engine  : chr "knitr::knitr"
-  .. .. ..$ headings:List of 5
-  .. .. .. ..$ : chr "Simplified Results Objects"
-  .. .. .. ..$ : chr "Testing Overlaps Between Two or More Screens"
-  .. .. .. ..$ : chr "Visualization of Screen Enrichment and Depletion Dynamics"
-  .. .. .. ..$ : chr "More Comparisons"
-  .. .. .. ..$ : chr "Ontological Enrichment"
-  .. .. ..$ created : chr "2021-03-16 21:47:59"
-  .. .. ..$ modified: chr "2025-05-21 23:24:52"
-  .. .. ..$ commits : int 11
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "Crispr_example_workflow.Rmd"
-  .. .. ..$ filename: chr "Crispr_example_workflow.html"
-  .. .. ..$ title   : chr "Example Workflow For Processing a Single Pooled Screen"
-  .. .. ..$ author  : chr "Russell Bainer"
-  .. .. ..$ engine  : chr "knitr::knitr"
-  .. .. ..$ headings:List of 4
-  .. .. .. ..$ : chr "Example Workflow For Processing a Single Screen"
-  .. .. .. ..$ : chr "Alternative Annotations"
-  .. .. .. ..$ : chr "Quality Control"
-  .. .. .. ..$ : chr "Target-Level Visualization and Analysis"
-  .. .. ..$ created : chr "2016-09-12 22:35:14"
-  .. .. ..$ modified: chr "2022-03-24 21:57:39"
-  .. .. ..$ commits : int 13
-  .. ..$ :List of 9
-  .. .. ..$ source  : chr "gCrisprTools_Vignette.Rmd"
-  .. .. ..$ filename: chr "gCrisprTools_Vignette.html"
-  .. .. ..$ title   : chr "gCrisprTools and the Analysis of Pooled Screening Data"
-  .. .. ..$ author  : chr "Russell Bainer"
-  .. .. ..$ engine  : chr "knitr::knitr"
-  .. .. ..$ headings:List of 30
-  .. .. .. ..$ : chr "1.0 Overview of gCrisprTools"
-  .. .. .. ..$ : chr "1.1 Installation"
-  .. .. .. ..$ : chr "1.4 Explore the Vignettes Folder"
-  .. .. .. ..$ : chr "1.3 Dependencies"
-  .. .. .. ..$ : chr "2.0 Inputs"
-  .. .. .. ..$ : chr "2.1 Counting Cassettes from Sequencing Data"
-  .. .. .. ..$ : chr "2.2 An ExpressionSet of Cassette Counts"
-  .. .. .. ..$ : chr "2.3 An Annotation Object"
-  .. .. .. ..$ : chr "2.4 A Sample Key"
-  .. .. .. ..$ : chr "2.5 Alignment Statistics"
-  .. .. .. ..$ : chr "3.0 Preprocess Raw Data"
-  .. .. .. ..$ : chr "3.1 ct.filterReads"
-  .. .. .. ..$ : chr "3.2 ct.normalizeGuides"
-  .. .. .. ..$ : chr "3.3 ct.makeQCReport"
-  .. .. .. ..$ : chr "4.0 Quality Assessment"
-  .. .. .. ..$ : chr "4.1 ct.rawCountDensities"
-  .. .. .. ..$ : chr "4.2 ct.gRNARankByReplicate"
-  .. .. .. ..$ : chr "4.3 ct.viewControls"
-  .. .. .. ..$ : chr "4.4 ct.guideCDF"
-  .. .. .. ..$ : chr "5.0 Identifying Candidate Targets"
-  .. .. .. ..$ : chr "5.1 ct.generateResults"
-  .. .. .. ..$ : chr "6.0 Visualization of Results"
-  .. .. .. ..$ : chr "6.1 ct.topTargets"
-  .. .. .. ..$ : chr "6.2 ct.stackGuides"
-  .. .. .. ..$ : chr "6.3 ct.viewGuides"
-  .. .. .. ..$ : chr "6.3 ct.signalSummary"
-  .. .. .. ..$ : chr "6.4 ct.makeContrastReport and ct.makeReport"
-  .. .. .. ..$ : chr "7.0 Hypothesis Testing"
-  .. .. .. ..$ : chr "7.1 ct.seas"
-  .. .. .. ..$ : chr "7.2 ct.targetSetEnrichment, ct.signalSummary, ct.ROC, and ct.PRC"
-  .. .. ..$ created : chr "2016-09-12 22:35:14"
-  .. .. ..$ modified: chr "2025-05-21 23:24:52"
-  .. .. ..$ commits : int 11
-  ..$ _score              : num 5.08
-  ..$ _indexed            : logi TRUE
-  ..$ _nocasepkg          : chr "gcrisprtools"
-  ..$ _universes          :List of 2
+  .. .. ..$ source  : chr "signatureSearch.Rmd"
+  .. .. ..$ filename: chr "signatureSearch.html"
+  .. .. ..$ title   : chr "signatureSearch: Environment for Gene Expression Searching Combined with Functional Enrichment Analysis"
+  .. .. ..$ author  : chr "Authors: Yuzhu Duan, Brendan Gongol, Dan S. Evans, Richard A. Miller, Nicholas J. Schork, Steven R. Cummings and Thomas Girke"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 48
+  .. .. .. ..$ : chr "Introduction"
+  .. .. .. ..$ : chr "Background"
+  .. .. .. ..$ : chr "Motivation and Design"
+  .. .. .. ..$ : chr "History of GES Databases"
+  .. .. .. ..$ : chr "Terminology"
+  .. .. .. ..$ : chr "Getting Started"
+  .. .. .. ..$ : chr "Package Install"
+  .. .. .. ..$ : chr "Reference Databases"
+  .. .. .. ..$ : chr "Signature Searches (GESS)"
+  .. .. .. ..$ : chr "Test Query and Database"
+  .. .. .. ..$ : chr "CMAP Search Method"
+  .. .. .. ..$ : chr "LINCS Search Method"
+  .. .. .. ..$ : chr "gCMAP Search Method"
+  .. .. .. ..$ : chr "Fisher Search Method"
+  .. .. .. ..$ : chr "Correlation-based Search Method"
+  .. .. .. ..$ : chr "CORall"
+  .. .. .. ..$ : chr "CORsub"
+  .. .. .. ..$ : chr "Summary of Search Results"
+  .. .. .. ..$ : chr "GESS Result Visualization"
+  .. .. .. ..$ : chr "Batch Processing of GESSs"
+  .. .. .. ..$ : chr "Sequential Processing"
+  .. .. .. ..$ : chr "Parallelization with Multiple CPU Cores"
+  .. .. .. ..$ : chr "Parallelization with Multiple Computer Systems"
+  .. .. .. ..$ : chr "Functional Enrichment (FEA)"
+  .. .. .. ..$ : chr "TSEA"
+  .. .. .. ..$ : chr "Hypergeometric Test"
+  .. .. .. ..$ : chr "With GO"
+  .. .. .. ..$ : chr "With Reactome"
+  .. .. .. ..$ : chr "mGSEA Method"
+  .. .. .. ..$ : chr "MeanAbs Method"
+  .. .. .. ..$ : chr "DSEA"
+  .. .. .. ..$ : chr "GSEA Method"
+  .. .. .. ..$ : chr "Comparing FEA Results"
+  .. .. .. ..$ : chr "Summary of FEA Results"
+  .. .. .. ..$ : chr "Drug-Target Network Visualization"
+  .. .. .. ..$ : chr "Run Workflow"
+  .. .. .. ..$ : chr "Additional Databases"
+  .. .. .. ..$ : chr "Gene Set Databases"
+  .. .. .. ..$ : chr "Overview"
+  .. .. .. ..$ : chr "Gene Sets as Queries"
+  .. .. .. ..$ : chr "Gene Sets as Database"
+  .. .. .. ..$ : chr "MSigDB"
+  .. .. .. ..$ : chr "GSKB"
+  .. .. .. ..$ : chr "Supplemental Material"
+  .. .. .. ..$ : chr "Construction of Toy Database"
+  .. .. .. ..$ : chr "Session Info"
+  .. .. .. ..$ : chr "Funding"
+  .. .. .. ..$ : chr "References"
+  .. .. ..$ created : chr "2018-10-05 23:19:37"
+  .. .. ..$ modified: chr "2026-01-29 20:42:11"
+  .. .. ..$ commits : int 104
+  ..$ _score            : num 7.98
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "signaturesearch"
+  ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "oscarbrock"
-  ..$ _previous           : chr "2.17.0"
-  ..$ _binaries           :List of 8
-  .. ..$ :List of 10
+  .. ..$ : chr "bgong001"
+  .. ..$ : chr "yduan004"
+  ..$ _binaries         :List of 12
+  .. ..$ :List of 11
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T04:20:54.000Z"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:25:24.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "ba8e00004e2251b5b329acc7a6cb3eed1321c8e8c354023cbb183ae7d9bb4568"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "9e073f2217d75134838829fbdcc1896b72cae26fe4e1b5d54d77b05581340ce7"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 10
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:26:40.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "5df51e77d6b5afe83ca22a055ab19c40a129611496c8671da27615403bd8e0cc"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 11
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T04:21:05.000Z"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:25:46.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "2a55f4aa3c9037d34a3e29e2f15a64fc19191b53da688359d2f59ddcc6b07d2b"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "11d869701134b83907752e89178bb36b3477319c8c5f6fc9b8020105e6898cd7"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:26:20.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "1e956f36164c9e3dc300a8f881716acc5c6bcde7c86025d95f81485ba08cb07b"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T06:18:26.000Z"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "414ef549422513536552b62f24b2a24ef31e7a95a22c1eec8c7d4a601e020004"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T07:31:23.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "31dd716ee2147ba7fb7569167e2294cf9fd8b8f85583cef0eb34e41bae591859"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T06:20:53.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "cf80aedda57d7dc995d6d1e331892955b5a473772f496cb3fa1222709909b8c5"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T06:14:01.000Z"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "5b3c40393276fc33490e5ae052aaf2913a27a78b9acbaaf7d9128dc4ce06b87d"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T07:30:58.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "cf7713c167b897de89072105ba4973b834202873eaa282bb3e8bfdd0cc58c9cf"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 8
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.2"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T06:37:51.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "178ee942d96d8e7dadc4a85cb89d8befe4bceff2691863cc4d60271c3bd77aca"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T04:20:36.000Z"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "da27e493da38ffa6e07cfef97da2dd9a359c1cd86110afff97c06ed4dbbfb4d1"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:26:03.000Z"
+  .. .. ..$ arch    : chr "emscripten"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "2fbefaac374803cae26adc6eacfa46869b924ac755b8be52200049983db16a50"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 9
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T04:19:20.000Z"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "c86fb085c5440fa0e2e83f0a0abd29d8eaad68521bfde13ea6e33fb9d331762a"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:24:58.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "16d2c063ef683c46e557200a742809d9ea99320412bfd14a0f132a45a68dd2c5"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T04:19:29.000Z"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "176a775a09872ffb0581980f0d99e707336b8b7f04c6151ca2c3e0847541717c"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:24:06.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "e3a97fde0ea87d4c6f39cf8fff2f7907355c6ac5b59047e8588ae5c2443c0ec2"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "2.17.2"
-  .. .. ..$ date    : chr "2026-03-10T04:19:06.000Z"
-  .. .. ..$ commit  : chr "8c620d1eecfe009bcef06548b47e88e7756ec2a3"
-  .. .. ..$ fileid  : chr "9b01e6b31b7fa5da1bff2195c016dc529763003950adb189e7060b94b4edb823"
+  .. .. ..$ version : chr "1.25.1"
+  .. .. ..$ date    : chr "2026-03-11T04:23:59.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "34f134f3e034487d019a91310459fbbeb65c4ab1"
+  .. .. ..$ fileid  : chr "9927a6c6cc911b0b03c784b00b909affe9040feeb255e05fb05d41589242ec4a"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22886658984"</code></pre>
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/22936294704"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
