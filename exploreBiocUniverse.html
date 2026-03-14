@@ -379,9 +379,9 @@ Total 2351 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">leapR</td>
-<td style="text-align: left;">0.99.8</td>
-<td style="text-align: left;">2026-03-11T04:21:07.000Z</td>
-<td style="text-align: left;">2026-03-11T07:42:11.548Z</td>
+<td style="text-align: left;">0.99.9</td>
+<td style="text-align: left;">2026-03-14T04:23:30.000Z</td>
+<td style="text-align: left;">2026-03-14T05:27:26.834Z</td>
 <td style="text-align: left;">https://github.com/bioc/leapR</td>
 </tr>
 <tr class="even">
@@ -478,9 +478,9 @@ Total 2351 2361</code></pre>
 <pre><code> [1] "biodbHmdb"          "biodbNcbi"          "biodbNci"          
  [4] "biodbUniprot"       "cisPath"            "CuratedAtlasQueryR"
  [7] "GEOexplorer"        "hiAnnotator"        "hmdbQuery"         
-[10] "IMAS"               "RgnTX"              "scviR"             
-[13] "SGCP"               "spatzie"            "tidytof"           
-[16] "traviz"            </code></pre>
+[10] "IMAS"               "netZooR"            "RgnTX"             
+[13] "scviR"              "SGCP"               "spatzie"           
+[16] "tidytof"            "traviz"            </code></pre>
 </div>
 </div>
 </section>
@@ -935,187 +935,234 @@ Total 2351 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 78
-  ..$ Package                : chr "smartid"
-  ..$ Title                  : chr "Scoring and Marker Selection Method Based on Modified TF-IDF"
-  ..$ Version                : chr "1.7.2"
-  ..$ Authors@R              : chr "person(\"Jinjin\", \"Chen\", email = \"chen.j@wehi.edu.au\", role = c(\"aut\", \"cre\"),\ncomment = c(ORCID = \"| __truncated__
-  ..$ Description            : chr "This package enables automated selection of group specific\nsignature, especially for rare population. The pack"| __truncated__
-  ..$ biocViews              : chr "Software, GeneExpression, Transcriptomics"
-  ..$ License                : chr "MIT + file LICENSE"
-  ..$ Encoding               : chr "UTF-8"
-  ..$ Roxygen                : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote            : chr "7.3.2"
-  ..$ Collate                : chr "'AllClasses.R' 'tf_idf_iae_wrappers.R' 'score.R'\n'AllGenerics.R' 'gs_score-methods.R' 'plot.R' 'scale_mgm.R'\n"| __truncated__
-  ..$ URL                    : chr "https://davislaboratory.github.io/smartid"
-  ..$ BugReports             : chr "https://github.com/DavisLaboratory/smartid/issues"
-  ..$ VignetteBuilder        : chr "knitr"
-  ..$ Language               : chr "en-US"
-  ..$ Config/testthat/edition: chr "3"
-  ..$ LazyData               : chr "false"
-  ..$ Config/pak/sysreqs     : chr "make libicu-dev libssl-dev zlib1g-dev"
-  ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2026-03-13 01:00:10 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/smartid"
-  ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  ..$ NeedsCompilation       : chr "no"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2026-03-13 05:50:39 UTC"
+ $ :List of 76
+  ..$ Package           : chr "BiocPkgTools"
+  ..$ Type              : chr "Package"
+  ..$ Title             : chr "Collection of simple tools for learning about Bioconductor\nPackages"
+  ..$ Version           : chr "1.29.4"
+  ..$ Date              : chr "2026-03-13"
+  ..$ Authors@R         : chr "c( \nperson(\"Shian\", \"Su\", role=c(\"aut\", \"ctb\"), email = \"su.s@wehi.edu.au\"),\nperson(\"Lori\", \"She"| __truncated__
+  ..$ Description       : chr "Bioconductor has a rich ecosystem of metadata around\npackages, usage, and build status. This package is a simp"| __truncated__
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ License           : chr "MIT + file LICENSE"
+  ..$ BugReports        : chr "https://github.com/seandavi/BiocPkgTools/issues/new"
+  ..$ URL               : chr "https://github.com/seandavi/BiocPkgTools"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ RoxygenNote       : chr "7.3.3"
+  ..$ Roxygen           : chr "list(markdown = TRUE)"
+  ..$ SystemRequirements: chr "mailsend-go"
+  ..$ biocViews         : chr "Software, Infrastructure"
+  ..$ Config/pak/sysreqs: chr "git libglpk-dev make libicu-dev libxml2-dev\nlibssl-dev libx11-dev"
+  ..$ Repository        : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication  : chr "2026-03-13 22:48:40 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/BiocPkgTools"
+  ..$ RemoteRef         : chr "HEAD"
+  ..$ RemoteSha         : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  ..$ NeedsCompilation  : chr "no"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2026-03-14 04:15:33 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Jinjin Chen [aut, cre] (ORCID: &lt;https://orcid.org/0000-0001-7923-5723&gt;)"
-  ..$ Maintainer             : chr "Jinjin Chen &lt;chen.j@wehi.edu.au&gt;"
-  ..$ MD5sum                 : chr "c21bc3bb4288bfc3668c51cc53a13397"
-  ..$ _user                  : chr "bioc"
-  ..$ _type                  : chr "src"
-  ..$ _file                  : chr "smartid_1.7.2.tar.gz"
-  ..$ _fileid                : chr "95722a9660ce8a061e59f916bfe870817b3370348c329fa3c72f993047e15cf0"
-  ..$ _filesize              : int 2408573
-  ..$ _sha256                : chr "95722a9660ce8a061e59f916bfe870817b3370348c329fa3c72f993047e15cf0"
-  ..$ _created               : chr "2026-03-13T05:50:39.000Z"
-  ..$ _published             : chr "2026-03-13T05:57:44.603Z"
-  ..$ _jobs                  :List of 10
+  ..$ Author            : chr "Shian Su [aut, ctb],\nLori Shepherd [ctb],\nMarcel Ramos [aut, ctb] (ORCID:\n&lt;https://orcid.org/0000-0002-3242-"| __truncated__
+  ..$ Maintainer        : chr "Sean Davis &lt;seandavi@gmail.com&gt;"
+  ..$ MD5sum            : chr "58dc4e883f152936a21a5b78bf9602f3"
+  ..$ _user             : chr "bioc"
+  ..$ _type             : chr "src"
+  ..$ _file             : chr "BiocPkgTools_1.29.4.tar.gz"
+  ..$ _fileid           : chr "a3df0e529e13a8043a6b5f0336b5074c0e1bf7d7f21265a6fe890ab628fbe14e"
+  ..$ _filesize         : int 1101871
+  ..$ _sha256           : chr "a3df0e529e13a8043a6b5f0336b5074c0e1bf7d7f21265a6fe890ab628fbe14e"
+  ..$ _created          : chr "2026-03-14T04:15:33.000Z"
+  ..$ _published        : chr "2026-03-14T05:16:02.283Z"
+  ..$ _jobs             :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 214
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 167
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5905306143"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5921909296"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 359
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 300
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905325725"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5921923214"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 346
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 340
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.2"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905323904"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5921927276"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 233
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 276
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905308798"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5922198915"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 203
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 297
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905304400"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5922224321"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 332
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 312
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905274745"
+  .. .. ..$ artifact: chr "5921892749"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 186
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 176
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905302109"
+  .. .. ..$ artifact: chr "5921910055"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 239
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 557
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905309566"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5921947773"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 241
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 678
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905309870"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5921958462"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.69e+10
-  .. .. ..$ time    : int 229
+  .. .. ..$ job     : num 6.7e+10
+  .. .. ..$ time    : int 522
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5905308112"
-  ..$ _bioccheck             :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 5
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
-  ..$ _status                : chr "success"
-  ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/smartid"
-  ..$ _commit                :List of 5
-  .. ..$ id       : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. ..$ author   : chr "Gene233 &lt;chen_jj97@163.com&gt;"
-  .. ..$ committer: chr "Gene233 &lt;chen_jj97@163.com&gt;"
-  .. ..$ message  : chr "Version bump.\n"
-  .. ..$ time     : int 1773363610
-  ..$ _maintainer            :List of 5
-  .. ..$ name : chr "Jinjin Chen"
-  .. ..$ email: chr "chen.j@wehi.edu.au"
-  .. ..$ login: chr "gene233"
-  .. ..$ uuid : int 44050457
-  .. ..$ orcid: chr "0000-0001-7923-5723"
-  ..$ _distro                : chr "noble"
-  ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 24
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "5921944771"
+  ..$ _bioccheck        :List of 3
+  .. ..$ error  : int 1
+  .. ..$ warning: int 3
+  .. ..$ note   : int 14
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
+  ..$ _status           : chr "success"
+  ..$ _host             : chr "GitHub-Actions"
+  ..$ _upstream         : chr "https://github.com/bioc/BiocPkgTools"
+  ..$ _commit           :List of 5
+  .. ..$ id       : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. ..$ author   : chr "Sean Davis &lt;seandavi@gmail.com&gt;"
+  .. ..$ committer: chr "GitHub &lt;noreply@github.com&gt;"
+  .. ..$ message  : chr "Merge pull request #80 from vjcitn/devel\n\nbiocPkgList: add handling of fnd field when present in Authors@R"
+  .. ..$ time     : int 1773442120
+  ..$ _maintainer       :List of 4
+  .. ..$ name : chr "Sean Davis"
+  .. ..$ email: chr "seandavi@gmail.com"
+  .. ..$ login: chr "seandavi"
+  .. ..$ uuid : int 92435
+  ..$ _distro           : chr "noble"
+  ..$ _registered       : logi TRUE
+  ..$ _dependencies     :List of 43
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "htmlwidgets"
+  .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.4"
+  .. .. ..$ version: chr "&gt;= 4.1.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ package: chr "BiocFileCache"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ package: chr "BiocManager"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
+  .. .. ..$ package: chr "biocViews"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Matrix"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "mclust"
+  .. .. ..$ package: chr "tibble"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "mixtools"
+  .. .. ..$ package: chr "rlang"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "sparseMatrixStats"
+  .. .. ..$ package: chr "stringr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ package: chr "rvest"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "xml2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "readr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "httr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "httr2"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "htmltools"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DT"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "tools"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "utils"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "igraph"
+  .. .. ..$ version: chr "&gt;= 2.0.0"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "jsonlite"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "gh"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "RBGL"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "graph"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "curl"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "glue"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "lubridate"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "purrr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "tidyr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "yaml"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "dbscan"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggpubr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
@@ -1124,77 +1171,173 @@ Total 2351 2361</code></pre>
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "scater"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "splatter"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
   .. .. ..$ package: chr "testthat"
-  .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tibble"
+  .. .. ..$ package: chr "tm"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tidytext"
+  .. .. ..$ package: chr "networkD3"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "UpSetR"
+  .. .. ..$ package: chr "visNetwork"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner                 : chr "bioc"
-  ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-11"
-  .. .. ..$ n   : int 5
+  .. .. ..$ package: chr "clipr"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-13"
-  .. .. ..$ n   : int 1
+  .. .. ..$ package: chr "blastula"
+  .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-05"
+  .. .. ..$ package: chr "kableExtra"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "DiagrammeR"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner            : chr "bioc"
+  ..$ _selfowned        : logi TRUE
+  ..$ _usedby           : int 0
+  ..$ _updates          :List of 15
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-15"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-17"
+  .. .. ..$ n   : int 9
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-18"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-19"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-11"
+  .. .. ..$ week: chr "2025-23"
   .. .. ..$ n   : int 2
-  ..$ _tags                  : list()
-  ..$ _bioc                  :List of 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-24"
+  .. .. ..$ n   : int 5
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-28"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-29"
+  .. .. ..$ n   : int 8
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-34"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ n   : int 8
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-43"
+  .. .. ..$ n   : int 16
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-44"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-47"
+  .. .. ..$ n   : int 13
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-11"
+  .. .. ..$ n   : int 1
+  ..$ _tags             : list()
+  ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.7.1"
+  .. .. ..$ version: chr "1.29.2"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.6.1"
+  .. .. ..$ version: chr "1.28.3"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics                :List of 3
+  ..$ _topics           :List of 5
   .. ..$ : chr "software"
-  .. ..$ : chr "geneexpression"
-  .. ..$ : chr "transcriptomics"
-  ..$ _stars                 : int 1
-  ..$ _contributors          :List of 2
+  .. ..$ : chr "infrastructure"
+  .. ..$ : chr "bioconductor"
+  .. ..$ : chr "metadata"
+  .. ..$ : chr "u24ca289073"
+  ..$ _stars            : int 22
+  ..$ _contributors     :List of 15
   .. ..$ :List of 3
-  .. .. ..$ user : chr "gene233"
-  .. .. ..$ count: int 59
-  .. .. ..$ uuid : int 44050457
+  .. .. ..$ user : chr "seandavi"
+  .. .. ..$ count: int 169
+  .. .. ..$ uuid : int 92435
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "link-ny"
+  .. .. ..$ count: int 163
+  .. .. ..$ uuid : int 4392950
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "felixernst"
+  .. .. ..$ count: int 22
+  .. .. ..$ uuid : int 17824332
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "shians"
+  .. .. ..$ count: int 19
+  .. .. ..$ uuid : int 6036662
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 8
+  .. .. ..$ count: int 18
   .. .. ..$ uuid : int 1744257
-  ..$ _userbio               :List of 4
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 14
+  .. .. ..$ uuid : int 2746443
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "grimbough"
+  .. .. ..$ count: int 9
+  .. .. ..$ uuid : int 971237
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vjcitn"
+  .. .. ..$ count: int 8
+  .. .. ..$ uuid : int 4624066
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "csoneson"
+  .. .. ..$ count: int 5
+  .. .. ..$ uuid : int 5628952
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "lshep"
+  .. .. ..$ count: int 5
+  .. .. ..$ uuid : int 18724380
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "mtmorgan"
+  .. .. ..$ count: int 4
+  .. .. ..$ uuid : int 118552
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "copilot"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 198982749
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vobencha"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 2466173
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "rcastelo"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 1677433
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "hpages"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 8810451
+  ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads             :List of 2
-  .. ..$ count : int 220
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/smartid"
-  ..$ _devurl                : chr "https://github.com/davislaboratory/smartid"
-  ..$ _pkgdown               : chr "https://davislaboratory.github.io/smartid"
-  ..$ _searchresults         : int 2
-  ..$ _rbuild                : chr "4.5.2"
-  ..$ _assets                :List of 11
+  ..$ _downloads        :List of 2
+  .. ..$ count : int 614
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/BiocPkgTools"
+  ..$ _mentions         : int 1
+  ..$ _devurl           : chr "https://github.com/seandavi/biocpkgtools"
+  ..$ _searchresults    : int 90
+  ..$ _rbuild           : chr "4.5.2"
+  ..$ _assets           :List of 11
+  .. ..$ : chr "extra/BiocPkgTools.html"
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -1204,407 +1347,501 @@ Total 2351 2361</code></pre>
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/smartid.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/davislaboratory/smartid"
-  ..$ _realowner             : chr "bioc"
-  ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 15
-  .. ..$ : chr "cal_score"
-  .. ..$ : chr "gs_score"
-  .. ..$ : chr "gs_score_init"
-  .. ..$ : chr "idf_iae_methods"
-  .. ..$ : chr "markers_hdbscan"
-  .. ..$ : chr "markers_mclust"
-  .. ..$ : chr "markers_mixmdl"
-  .. ..$ : chr "ova_score_boxplot"
-  .. ..$ : chr "scale_mgm"
-  .. ..$ : chr "score_barplot"
-  .. ..$ : chr "sin_score_boxplot"
-  .. ..$ : chr "top_markers"
-  .. ..$ : chr "top_markers_abs"
-  .. ..$ : chr "top_markers_glm"
-  .. ..$ : chr "top_markers_init"
-  ..$ _datasets              :List of 1
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "sim_sce_test"
-  .. .. ..$ title : chr "scRNA-seq test data of 4 groups simulated by 'splatter'."
-  .. .. ..$ object: chr "sim_sce_test"
-  .. .. ..$ file  : chr "sim_sce_test.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SingleCellExperiment"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  ..$ _help                  :List of 32
+  ..$ _homeurl          : chr "https://github.com/seandavi/biocpkgtools"
+  ..$ _realowner        : chr "bioc"
+  ..$ _cranurl          : logi FALSE
+  ..$ _exports          :List of 48
+  .. ..$ : chr "activitySince"
+  .. ..$ : chr "anacondaDownloadStats"
+  .. ..$ : chr "biocBuildEmail"
+  .. ..$ : chr "biocBuildReport"
+  .. ..$ : chr "biocBuildReportDB"
+  .. ..$ : chr "biocBuildStatusDB"
+  .. ..$ : chr "biocDownloadStats"
+  .. ..$ : chr "biocExplore"
+  .. ..$ : chr "biocMaintained"
+  .. ..$ : chr "biocPkgList"
+  .. ..$ : chr "biocPkgRanges"
+  .. ..$ : chr "biocRevDepEmail"
+  .. ..$ : chr "biocVIEWSdb"
+  .. ..$ : chr "buildClassDepData"
+  .. ..$ : chr "buildClassDepFromPackage"
+  .. ..$ : chr "buildClassDepGraph"
+  .. ..$ : chr "buildPkgDependencyDataFrame"
+  .. ..$ : chr "buildPkgDependencyIgraph"
+  .. ..$ : chr "CRANstatus"
+  .. ..$ : chr "firstInBioc"
+  .. ..$ : chr "get_bioc_data"
+  .. ..$ : chr "get_cre_orcids"
+  .. ..$ : chr "getBiocVignette"
+  .. ..$ : chr "getPackageInfo"
+  .. ..$ : chr "getPkgYearsInBioc"
+  .. ..$ : chr "githubDetails"
+  .. ..$ : chr "githubURLParts"
+  .. ..$ : chr "hasBiocMaint"
+  .. ..$ : chr "inducedSubgraphByPkgs"
+  .. ..$ : chr "latestPkgStats"
+  .. ..$ : chr "orcid_table"
+  .. ..$ : chr "pkgBiocDeps"
+  .. ..$ : chr "pkgBiocRevDeps"
+  .. ..$ : chr "pkgCombDependencyGain"
+  .. ..$ : chr "pkgDepImports"
+  .. ..$ : chr "pkgDepMetrics"
+  .. ..$ : chr "pkgDownloadRank"
+  .. ..$ : chr "pkgDownloadStats"
+  .. ..$ : chr "pkgToolsCache"
+  .. ..$ : chr "plotClassDep"
+  .. ..$ : chr "plotClassDepData"
+  .. ..$ : chr "plotClassDepGraph"
+  .. ..$ : chr "problemPage"
+  .. ..$ : chr "repositoryStats"
+  .. ..$ : chr "sentHistory"
+  .. ..$ : chr "setCache"
+  .. ..$ : chr "subgraphByDegree"
+  .. ..$ : chr "templatePath"
+  ..$ _help             :List of 44
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "cal_score"
-  .. .. ..$ title : chr "calculate combined score"
+  .. .. ..$ page  : chr "dot-get_cre_orcid"
+  .. .. ..$ title : chr "get the ORCID id from cre field of Authors@R in packageDescription result"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr ".get_cre_orcid"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "activitySince"
+  .. .. ..$ title : chr "What are the issues, pulls, commits created since a date?"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "activitySince"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "anacondaDownloadStats"
+  .. .. ..$ title : chr "Get download statistics for Bioconductor packages distributed via Anaconda."
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "anacondaDownloadStats"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocBuildEmail"
+  .. .. ..$ title : chr "Create and copy e-mail package notification template to clipboard"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "biocBuildEmail"
+  .. .. .. ..$ : chr "sentHistory"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocBuildReport"
+  .. .. ..$ title : chr "Tidy Bioconductor build report results"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocBuildReport"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocBuildReportDB"
+  .. .. ..$ title : chr "Parse the Build Report tarball for a Bioconductor release"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocBuildReportDB"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocBuildStatusDB"
+  .. .. ..$ title : chr "Download and parse the build status information for Bioconductor packages"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocBuildStatusDB"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocDownloadStats"
+  .. .. ..$ title : chr "Get Bioconductor download statistics"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocDownloadStats"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocExplore"
+  .. .. ..$ title : chr "Explore Bioconductor packages interactively"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocExplore"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocMaintained"
+  .. .. ..$ title : chr "Bioconductor Maintained Packages"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "biocMaintained"
+  .. .. .. ..$ : chr "hasBiocMaint"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocPkgList"
+  .. .. ..$ title : chr "Get full Bioconductor software package listing, with details"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocPkgList"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "biocPkgRanges"
+  .. .. ..$ title : chr "Grab build report results from BUILD_STATUS_DB for a particular package range"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "biocPkgRanges"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BiocPkgTools"
+  .. .. ..$ title : chr "BiocPkgTools: Examine and analyze Bioconductor package metadata"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "BiocPkgTools-package"
+  .. .. .. ..$ : chr "BiocPkgTools"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "BiocPkgTools-cache"
+  .. .. ..$ title : chr "Manage cache for BiocPkgTools"
   .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "cal_score"
-  .. .. .. ..$ : chr "cal_score,AnyMatrix-method"
-  .. .. .. ..$ : chr "cal_score,SummarizedExperiment-method"
+  .. .. .. ..$ : chr "BiocPkgTools-cache"
+  .. .. .. ..$ : chr "pkgToolsCache"
+  .. .. .. ..$ : chr "setCache"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "cal_score_init"
-  .. .. ..$ title : chr "Calculate score for each feature in each cell"
+  .. .. ..$ page  : chr "biocRevDepEmail"
+  .. .. ..$ title : chr "Notify downstream maintainers of changes in upstream packages"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "cal_score_init"
+  .. .. .. ..$ : chr "biocRevDepEmail"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "gs_score"
-  .. .. ..$ title : chr "compute overall score based on the given marker list"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "gs_score"
-  .. .. .. ..$ : chr "gs_score,AnyMatrix,ANY-method"
-  .. .. .. ..$ : chr "gs_score,AnyMatrix,list-method"
-  .. .. .. ..$ : chr "gs_score,SummarizedExperiment,ANY-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "gs_score_init"
-  .. .. ..$ title : chr "Calculate scores of each cell on given features"
+  .. .. ..$ page  : chr "biocVIEWSdb"
+  .. .. ..$ title : chr "Parse and return the VIEWS file for a Bioconductor Release"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "gs_score_init"
+  .. .. .. ..$ : chr "biocVIEWSdb"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae"
-  .. .. ..$ title : chr "standard inverse average expression"
+  .. .. ..$ page  : chr "buildPkgDependencyDataFrame"
+  .. .. ..$ title : chr "Work with Bioconductor package dependencies"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae"
+  .. .. .. ..$ : chr "buildPkgDependencyDataFrame"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae_hdb"
-  .. .. ..$ title : chr "inverse average expression using hdbscan cluster as label"
+  .. .. ..$ page  : chr "buildPkgDependencyIgraph"
+  .. .. ..$ title : chr "Work with package dependencies as a graph"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae_hdb"
+  .. .. .. ..$ : chr "buildPkgDependencyIgraph"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae_igm"
-  .. .. ..$ title : chr "labeled inverse average expression: IGM"
+  .. .. ..$ page  : chr "class-dependencies"
+  .. .. ..$ title : chr "Retrieve Class relationships"
+  .. .. ..$ topics:List of 7
+  .. .. .. ..$ : chr "buildClassDepData"
+  .. .. .. ..$ : chr "buildClassDepFromPackage"
+  .. .. .. ..$ : chr "buildClassDepGraph"
+  .. .. .. ..$ : chr "class-dependencies"
+  .. .. .. ..$ : chr "plotClassDep"
+  .. .. .. ..$ : chr "plotClassDepData"
+  .. .. .. ..$ : chr "plotClassDepGraph"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "CRANstatus"
+  .. .. ..$ title : chr "Check the CRAN build report page and email a notification"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae_igm"
+  .. .. .. ..$ : chr "CRANstatus"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae_m"
-  .. .. ..$ title : chr "inverse average expression: max"
+  .. .. ..$ page  : chr "firstInBioc"
+  .. .. ..$ title : chr "When did a package enter Bioconductor?"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae_m"
+  .. .. .. ..$ : chr "firstInBioc"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae_prob"
-  .. .. ..$ title : chr "labeled inverse average expression: probability based"
+  .. .. ..$ page  : chr "generateBiocPkgDOI"
+  .. .. ..$ title : chr "Generate a DOI for a Bioconductor package"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae_prob"
+  .. .. .. ..$ : chr "generateBiocPkgDOI"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae_rf"
-  .. .. ..$ title : chr "labeled inverse average expression: relative frequency"
+  .. .. ..$ page  : chr "generateBiocPkgDOI_REST"
+  .. .. ..$ title : chr "Generate a DOI for a Bioconductor package"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae_rf"
+  .. .. .. ..$ : chr "generateBiocPkgDOI_REST"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "iae_sd"
-  .. .. ..$ title : chr "inverse average expression using standard deviation (SD)"
+  .. .. ..$ page  : chr "get_bioc_data"
+  .. .. ..$ title : chr "Get data from Bioconductor"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "iae_sd"
+  .. .. .. ..$ : chr "get_bioc_data"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf"
-  .. .. ..$ title : chr "standard inverse cell frequency"
+  .. .. ..$ page  : chr "get_cre_orcids"
+  .. .. ..$ title : chr "get ORCID ids from cre fields of Authors@R in packageDescription results"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf"
+  .. .. .. ..$ : chr "get_cre_orcids"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_hdb"
-  .. .. ..$ title : chr "inverse document frequency using hdbscan cluster as label"
+  .. .. ..$ page  : chr "getBiocVignette"
+  .. .. ..$ title : chr "Download a Bioconductor vignette"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_hdb"
+  .. .. .. ..$ : chr "getBiocVignette"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_iae_methods"
-  .. .. ..$ title : chr "Get names of available IDF and IAE methods"
+  .. .. ..$ page  : chr "getPackageInfo"
+  .. .. ..$ title : chr "Generate needed information to create DOI from a package directory."
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_iae_methods"
+  .. .. .. ..$ : chr "getPackageInfo"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_igm"
-  .. .. ..$ title : chr "labeled inverse cell frequency: IGM"
+  .. .. ..$ page  : chr "getPkgYearsInBioc"
+  .. .. ..$ title : chr "Calculate the years in Bioconductor"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_igm"
+  .. .. .. ..$ : chr "getPkgYearsInBioc"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_m"
-  .. .. ..$ title : chr "inverse cell frequency: max"
+  .. .. ..$ page  : chr "githubDetails"
+  .. .. ..$ title : chr "Get package details from GitHub"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_m"
+  .. .. .. ..$ : chr "githubDetails"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_prob"
-  .. .. ..$ title : chr "labeled inverse cell frequency: probability based"
+  .. .. ..$ page  : chr "githubURLParts"
+  .. .. ..$ title : chr "Extract GitHub user and repo name from GitHub URL"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_prob"
+  .. .. .. ..$ : chr "githubURLParts"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_rf"
-  .. .. ..$ title : chr "labeled inverse cell frequency: relative frequency"
+  .. .. ..$ page  : chr "inducedSubgraphByPkgs"
+  .. .. ..$ title : chr "Return a minimal subgraph based on package name(s)"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_rf"
+  .. .. .. ..$ : chr "inducedSubgraphByPkgs"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "idf_sd"
-  .. .. ..$ title : chr "inverse cell frequency using standard deviation (SD)"
+  .. .. ..$ page  : chr "latestPkgStats"
+  .. .. ..$ title : chr "Summary of the latest package statistics"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "idf_sd"
+  .. .. .. ..$ : chr "latestPkgStats"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "markers_hdbscan"
-  .. .. ..$ title : chr "select markers using HDBSCAN method"
+  .. .. ..$ page  : chr "orcid_table"
+  .. .. ..$ title : chr "Obtain employment data from ORCID"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "markers_hdbscan"
+  .. .. .. ..$ : chr "orcid_table"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "markers_mclust"
-  .. .. ..$ title : chr "select markers using mclust EM method"
+  .. .. ..$ page  : chr "pkgBiocDeps"
+  .. .. ..$ title : chr "Look up a package's Bioconductor dependencies"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "markers_mclust"
+  .. .. .. ..$ : chr "pkgBiocDeps"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "markers_mixmdl"
-  .. .. ..$ title : chr "select markers using mixtools EM method"
+  .. .. ..$ page  : chr "pkgBiocRevDeps"
+  .. .. ..$ title : chr "Obtain all the reverse dependencies for a Bioconductor package"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "pkgBiocRevDeps"
+  .. .. .. ..$ : chr "summary.biocrevdeps"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "pkgCombDependencyGain"
+  .. .. ..$ title : chr "Calculate dependency gain achieved by excluding combinations of packages"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "markers_mixmdl"
+  .. .. .. ..$ : chr "pkgCombDependencyGain"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "ova_score_boxplot"
-  .. .. ..$ title : chr "boxplot of features overall score"
+  .. .. ..$ page  : chr "pkgDepImports"
+  .. .. ..$ title : chr "Report package imported functionality"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "ova_score_boxplot"
+  .. .. .. ..$ : chr "pkgDepImports"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "scale_mgm"
-  .. .. ..$ title : chr "scale by mean of group mean for imbalanced data"
+  .. .. ..$ page  : chr "pkgDepMetrics"
+  .. .. ..$ title : chr "Report package dependency burden"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "scale_mgm"
+  .. .. .. ..$ : chr "pkgDepMetrics"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "score_barplot"
-  .. .. ..$ title : chr "barplot of processed score"
+  .. .. ..$ page  : chr "pkgDownloadRank"
+  .. .. ..$ title : chr "What is a package's download rank?"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "score_barplot"
+  .. .. .. ..$ : chr "pkgDownloadRank"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "sim_sce_test"
-  .. .. ..$ title : chr "scRNA-seq test data of 4 groups simulated by 'splatter'."
+  .. .. ..$ page  : chr "pkgDownloadStats"
+  .. .. ..$ title : chr "Get Bioconductor download statistics for a package"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "sim_sce_test"
+  .. .. .. ..$ : chr "pkgDownloadStats"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "sin_score_boxplot"
-  .. .. ..$ title : chr "boxplot of split single feature score"
+  .. .. ..$ page  : chr "problemPage"
+  .. .. ..$ title : chr "generate hyperlinked HTML for build reports for Bioc packages"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "sin_score_boxplot"
+  .. .. .. ..$ : chr "problemPage"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "tf"
-  .. .. ..$ title : chr "compute term/feature frequency within each cell"
+  .. .. ..$ page  : chr "repositoryStats"
+  .. .. ..$ title : chr "Bioconductor Binary Repository Statistics"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "print.repositoryStats"
+  .. .. .. ..$ : chr "repositoryStats"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "subgraphByDegree"
+  .. .. ..$ title : chr "Subset graph by degree"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "tf"
+  .. .. .. ..$ : chr "subgraphByDegree"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "top_markers"
-  .. .. ..$ title : chr "scale score and return top markers"
-  .. .. ..$ topics:List of 3
-  .. .. .. ..$ : chr "top_markers"
-  .. .. .. ..$ : chr "top_markers,AnyMatrix-method"
-  .. .. .. ..$ : chr "top_markers,SummarizedExperiment-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "top_markers_abs"
-  .. .. ..$ title : chr "calculate group median, MAD or mean score and order genes based on scores"
+  .. .. ..$ page  : chr "templatePath"
+  .. .. ..$ title : chr "Obtain the location of available email templates"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "top_markers_abs"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "top_markers_glm"
-  .. .. ..$ title : chr "calculate group mean score using glm and order genes based on scores difference"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "top_markers_glm"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "top_markers_init"
-  .. .. ..$ title : chr "compute group summarized score and order genes based on processed scores"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "top_markers_init"
-  ..$ _readme                : chr "https://github.com/bioc/smartid/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 88
-  .. ..$ : chr "abind"
+  .. .. .. ..$ : chr "templatePath"
+  ..$ _readme           : chr "https://github.com/bioc/BiocPkgTools/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 93
   .. ..$ : chr "askpass"
   .. ..$ : chr "base64enc"
+  .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
+  .. ..$ : chr "BiocManager"
+  .. ..$ : chr "biocViews"
+  .. ..$ : chr "bit"
+  .. ..$ : chr "bit64"
+  .. ..$ : chr "bitops"
+  .. ..$ : chr "blob"
   .. ..$ : chr "bslib"
   .. ..$ : chr "cachem"
   .. ..$ : chr "cli"
+  .. ..$ : chr "clipr"
   .. ..$ : chr "cpp11"
+  .. ..$ : chr "crayon"
   .. ..$ : chr "crosstalk"
   .. ..$ : chr "curl"
-  .. ..$ : chr "data.table"
-  .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "DBI"
+  .. ..$ : chr "dbplyr"
   .. ..$ : chr "digest"
   .. ..$ : chr "dplyr"
+  .. ..$ : chr "DT"
   .. ..$ : chr "evaluate"
-  .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
+  .. ..$ : chr "filelock"
   .. ..$ : chr "fontawesome"
   .. ..$ : chr "fs"
   .. ..$ : chr "generics"
-  .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "ggplot2"
+  .. ..$ : chr "gh"
+  .. ..$ : chr "gitcreds"
   .. ..$ : chr "glue"
-  .. ..$ : chr "gtable"
+  .. ..$ : chr "graph"
   .. ..$ : chr "highr"
+  .. ..$ : chr "hms"
   .. ..$ : chr "htmltools"
   .. ..$ : chr "htmlwidgets"
   .. ..$ : chr "httr"
-  .. ..$ : chr "IRanges"
-  .. ..$ : chr "isoband"
+  .. ..$ : chr "httr2"
+  .. ..$ : chr "igraph"
+  .. ..$ : chr "ini"
   .. ..$ : chr "jquerylib"
   .. ..$ : chr "jsonlite"
-  .. ..$ : chr "kernlab"
   .. ..$ : chr "knitr"
-  .. ..$ : chr "labeling"
   .. ..$ : chr "later"
   .. ..$ : chr "lattice"
   .. ..$ : chr "lazyeval"
   .. ..$ : chr "lifecycle"
+  .. ..$ : chr "lubridate"
   .. ..$ : chr "magrittr"
-  .. ..$ : chr "MASS"
   .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
-  .. ..$ : chr "mclust"
   .. ..$ : chr "memoise"
   .. ..$ : chr "mime"
-  .. ..$ : chr "mixtools"
-  .. ..$ : chr "nlme"
   .. ..$ : chr "openssl"
   .. ..$ : chr "otel"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plotly"
+  .. ..$ : chr "prettyunits"
+  .. ..$ : chr "progress"
   .. ..$ : chr "promises"
   .. ..$ : chr "purrr"
   .. ..$ : chr "R6"
   .. ..$ : chr "rappdirs"
-  .. ..$ : chr "RColorBrewer"
+  .. ..$ : chr "RBGL"
   .. ..$ : chr "Rcpp"
+  .. ..$ : chr "RCurl"
+  .. ..$ : chr "readr"
   .. ..$ : chr "rlang"
   .. ..$ : chr "rmarkdown"
-  .. ..$ : chr "S4Arrays"
-  .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "S7"
+  .. ..$ : chr "RSQLite"
+  .. ..$ : chr "RUnit"
+  .. ..$ : chr "rvest"
   .. ..$ : chr "sass"
-  .. ..$ : chr "scales"
-  .. ..$ : chr "segmented"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "sparseMatrixStats"
+  .. ..$ : chr "selectr"
   .. ..$ : chr "stringi"
   .. ..$ : chr "stringr"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "survival"
   .. ..$ : chr "sys"
   .. ..$ : chr "tibble"
   .. ..$ : chr "tidyr"
   .. ..$ : chr "tidyselect"
+  .. ..$ : chr "timechange"
   .. ..$ : chr "tinytex"
+  .. ..$ : chr "tzdb"
   .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
-  .. ..$ : chr "viridisLite"
+  .. ..$ : chr "vroom"
   .. ..$ : chr "withr"
   .. ..$ : chr "xfun"
-  .. ..$ : chr "XVector"
+  .. ..$ : chr "XML"
+  .. ..$ : chr "xml2"
   .. ..$ : chr "yaml"
-  ..$ _vignettes             :List of 1
+  ..$ _vignettes        :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "smartid_Demo.Rmd"
-  .. .. ..$ filename: chr "smartid_Demo.html"
-  .. .. ..$ title   : chr "A quick start guide to smartid: Scoring and MARker selection method based on modified Tf-IDf"
-  .. .. ..$ author  : chr "Jinjin Chen"
+  .. .. ..$ source  : chr "BiocPkgTools.Rmd"
+  .. .. ..$ filename: chr "BiocPkgTools.html"
+  .. .. ..$ title   : chr "Overview of BiocPkgTools"
+  .. .. ..$ author  : chr "Shian Su, Vince Carey, Marcel Ramos, Lori Shepherd, Martin Morgan, Sean Davis"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 10
+  .. .. ..$ headings:List of 13
   .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Prepare Data"
-  .. .. .. ..$ : chr "Labeled Data"
-  .. .. .. ..$ : chr "Score Samples"
-  .. .. .. ..$ : chr "Scale and Transform Score"
-  .. .. .. ..$ : chr "Marker Selection"
-  .. .. .. ..$ : chr "Un-labeled Data"
-  .. .. .. ..$ : chr "Compute Overall Score for Gene-set"
-  .. .. .. ..$ : chr "SessionInfo"
-  .. .. ..$ created : chr "2024-01-08 14:56:18"
-  .. .. ..$ modified: chr "2024-03-29 12:23:10"
-  .. .. ..$ commits : int 17
-  ..$ _score                 : num 4.3
-  ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "smartid"
-  ..$ _universes             :List of 3
+  .. .. .. ..$ : chr "Build reports"
+  .. .. .. ..$ : chr "Personal build report"
+  .. .. .. ..$ : chr "Download statistics"
+  .. .. .. ..$ : chr "Package details"
+  .. .. .. ..$ : chr "Package Explorer"
+  .. .. .. ..$ : chr "Dependency graphs"
+  .. .. .. ..$ : chr "Working with dependency graphs"
+  .. .. .. ..$ : chr "Graph visualization"
+  .. .. .. ..$ : chr "Integration with r Biocpkg(\"BiocViews\")"
+  .. .. .. ..$ : chr "Dependency burden"
+  .. .. .. ..$ : chr "Identities of maintainers"
+  .. .. .. ..$ : chr "Provenance"
+  .. .. ..$ created : chr "2017-12-08 16:23:47"
+  .. .. ..$ modified: chr "2025-07-11 16:14:21"
+  .. .. ..$ commits : int 22
+  ..$ _score            : num 8.32
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "biocpkgtools"
+  ..$ _universes        :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "gene233"
-  .. ..$ : chr "davislaboratory"
-  ..$ _previous              : chr "1.7.1"
-  ..$ _binaries              :List of 8
+  .. ..$ : chr "seandavi"
+  ..$ _previous         : chr "1.29.2"
+  ..$ _binaries         :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:54:56.000Z"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T04:18:21.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "4a09fb805125c5204adb23511f2537b11ac53cb6535d780993fab31d603e7ef3"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "8251a7c53a0560965fcb607ac632f7e6b492a6609f3ff46429cc87666cdf9623"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:54:38.000Z"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T04:18:51.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "9d70c09ba0717287cbe06e705bc18013ca9996c0f7892f35b23d34d09b8a4452"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "60f5db3f52345acf48303ef896cc7eb6c07fc1c3ab4aff4b1c1cff4471838722"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:53:15.000Z"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "c21c5e6b0044874da189872fc1073ace5cabe0d8e13272ee2e634da59ba7cc78"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T05:07:45.000Z"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "e873a0ef63674026bf40135690bd0c5a7a56d15d4327a855a06fe11cc505e755"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:52:47.000Z"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "d5fcf8fb6292795c283efedc4069a742d969c465241de84e6c55b22d8851f271"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T05:12:26.000Z"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "a7d977dccf079ec5dfb1ffb1d58505b7b0299677e9b7b2585e282722020a6ded"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:54:23.000Z"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "9d620f8152563d3fcb7c123cb72a8cdab56225a09ddfb9f6c80cbc8f7c5f0c8b"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T04:18:49.000Z"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "59eb9a5254393f373be3380662f9e5b716c802cf9a189d8898c3751e9b720a19"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:52:46.000Z"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "e8b0571e072e48680e0d80d490d0ddd6fdef460f5dbdcab75c42ca5635b082f2"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T04:17:19.000Z"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "9c5fd3edc4faa3cef4a79ca7f72c8b56dc3997d9e2aadb82e3e823c3a2b7c108"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:52:51.000Z"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "0a744213c39dd5ea7571eba50d956e8f8583e541e9db71e745c59729c32627e9"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T04:17:29.000Z"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "fcd1c7573eabdc3ece8d1fba613fba4bfb399fc664346de1819b54ea61639de6"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.7.2"
-  .. .. ..$ date    : chr "2026-03-13T05:52:41.000Z"
-  .. .. ..$ commit  : chr "9f60653a1afad57734f9510c135b1b377d3b6897"
-  .. .. ..$ fileid  : chr "2d27d9687c3a01148d1fc2a313010da0cafb6734a7a358df9be45df73f2879a4"
+  .. .. ..$ version : chr "1.29.4"
+  .. .. ..$ date    : chr "2026-03-14T04:17:08.000Z"
+  .. .. ..$ commit  : chr "84c17b51649bb715406fdd6b9fbeb653970044db"
+  .. .. ..$ fileid  : chr "388cc402a7c9317db3795a554776caf827feaaa1609665114bc899fea351ff88"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23038018718"</code></pre>
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23080105673"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
