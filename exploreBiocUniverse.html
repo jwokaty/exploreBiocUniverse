@@ -142,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"Total"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        RU  BBS
-Total 2332 2361</code></pre>
+Total 2327 2361</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>not_in_ru <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(bbs_pkgs, ru_pkgs)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>not_in_bbs <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(ru_pkgs, bbs_pkgs)</span>
@@ -225,9 +225,9 @@ Total 2332 2361</code></pre>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">DOTSeq</td>
-<td style="text-align: left;">0.99.4</td>
-<td style="text-align: left;">2026-03-16T13:12:06.000Z</td>
-<td style="text-align: left;">2026-03-16T13:28:57.856Z</td>
+<td style="text-align: left;">0.99.6</td>
+<td style="text-align: left;">2026-03-17T06:08:01.000Z</td>
+<td style="text-align: left;">2026-03-17T06:29:31.562Z</td>
 <td style="text-align: left;">https://github.com/bioc/DOTSeq</td>
 </tr>
 <tr class="even">
@@ -246,9 +246,9 @@ Total 2332 2361</code></pre>
 </tr>
 <tr class="even">
 <td style="text-align: left;">LACHESIS</td>
-<td style="text-align: left;">0.99.4</td>
-<td style="text-align: left;">2026-02-21T07:34:09.000Z</td>
-<td style="text-align: left;">2026-02-21T07:46:00.461Z</td>
+<td style="text-align: left;">0.99.5</td>
+<td style="text-align: left;">2026-03-17T06:06:13.000Z</td>
+<td style="text-align: left;">2026-03-17T06:18:32.390Z</td>
 <td style="text-align: left;">https://github.com/bioc/LACHESIS</td>
 </tr>
 <tr class="odd">
@@ -345,8 +345,8 @@ Total 2332 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">drugfindR</td>
 <td style="text-align: left;">0.99.2516</td>
-<td style="text-align: left;">2026-02-15T06:00:42.000Z</td>
-<td style="text-align: left;">2026-02-15T06:05:57.004Z</td>
+<td style="text-align: left;">2026-03-17T05:55:50.000Z</td>
+<td style="text-align: left;">2026-03-17T06:01:16.955Z</td>
 <td style="text-align: left;">https://github.com/bioc/drugfindR</td>
 </tr>
 <tr class="odd">
@@ -451,28 +451,30 @@ Total 2332 2361</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>not_in_ru</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "APAlyzer"               "barcodetrackR"          "bgx"                   
- [4] "BiGGR"                  "biodbHmdb"              "biodbNcbi"             
- [7] "biodbNci"               "biodbUniprot"           "BPRMeth"               
-[10] "ccmap"                  "CellScore"              "ChIPQC"                
-[13] "CINdex"                 "cisPath"                "cummeRbund"            
-[16] "CuratedAtlasQueryR"     "debCAM"                 "DEP"                   
-[19] "GEOexplorer"            "gpuMagic"               "granulator"            
-[22] "Harshlight"             "hca"                    "hiAnnotator"           
-[25] "hiReadsProcessor"       "hmdbQuery"              "IMAS"                  
-[28] "interactiveDisplay"     "interactiveDisplayBase" "lapmix"                
-[31] "LinTInd"                "lute"                   "MADSEQ"                
-[34] "MetaNeighbor"           "mfa"                    "microSTASIS"           
-[37] "MineICA"                "netZooR"                "oppti"                 
-[40] "Organism.dplyr"         "PhenStat"               "qckitfastq"            
-[43] "RcisTarget"             "ReactomeGraph4R"        "receptLoss"            
-[46] "Repitools"              "rGADEM"                 "RgnTX"                 
-[49] "RiboProfiling"          "rRDP"                   "SARC"                  
-[52] "scviR"                  "seqArchR"               "seqArchRplus"          
-[55] "seqTools"               "SGCP"                   "SigFuge"               
-[58] "soGGi"                  "spatzie"                "SQLDataFrame"          
-[61] "Streamer"               "tidytof"                "TitanCNA"              
-[64] "TransView"              "traviz"                 "XNAString"             </code></pre>
+<pre><code> [1] "APAlyzer"               "barcodetrackR"          "beadarray"             
+ [4] "bgx"                    "BiGGR"                  "biodbHmdb"             
+ [7] "biodbNcbi"              "biodbNci"               "biodbUniprot"          
+[10] "BiRewire"               "BPRMeth"                "ccmap"                 
+[13] "CellScore"              "ChIPQC"                 "CINdex"                
+[16] "cisPath"                "cummeRbund"             "CuratedAtlasQueryR"    
+[19] "debCAM"                 "DeconRNASeq"            "DEP"                   
+[22] "GEOexplorer"            "gpuMagic"               "granulator"            
+[25] "Harshlight"             "hca"                    "hiAnnotator"           
+[28] "hiReadsProcessor"       "hmdbQuery"              "IMAS"                  
+[31] "interactiveDisplay"     "interactiveDisplayBase" "lapmix"                
+[34] "LinTInd"                "lute"                   "MADSEQ"                
+[37] "Melissa"                "MetaNeighbor"           "mfa"                   
+[40] "microSTASIS"            "MineICA"                "netZooR"               
+[43] "oppti"                  "Organism.dplyr"         "PhenStat"              
+[46] "qckitfastq"             "RcisTarget"             "ReactomeGraph4R"       
+[49] "receptLoss"             "Repitools"              "rGADEM"                
+[52] "RgnTX"                  "RiboProfiling"          "rRDP"                  
+[55] "SARC"                   "scviR"                  "seqArchR"              
+[58] "seqArchRplus"           "seqTools"               "SGCP"                  
+[61] "shiny.gosling"          "SigFuge"                "soGGi"                 
+[64] "spatzie"                "SQLDataFrame"           "Streamer"              
+[67] "tidytof"                "TitanCNA"               "TransView"             
+[70] "traviz"                 "XNAString"             </code></pre>
 </div>
 </div>
 <p>The following packages are not deprecated but are not in RU.</p>
@@ -481,18 +483,20 @@ Total 2332 2361</code></pre>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unique</span>()</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setdiff</span>(not_in_ru, depre_pkgs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "APAlyzer"           "barcodetrackR"      "biodbHmdb"         
- [4] "biodbNcbi"          "biodbNci"           "biodbUniprot"      
- [7] "BPRMeth"            "ChIPQC"             "cisPath"           
-[10] "cummeRbund"         "CuratedAtlasQueryR" "debCAM"            
-[13] "GEOexplorer"        "granulator"         "hca"               
-[16] "hiAnnotator"        "hmdbQuery"          "IMAS"              
-[19] "MetaNeighbor"       "mfa"                "microSTASIS"       
-[22] "MineICA"            "netZooR"            "Organism.dplyr"    
-[25] "RcisTarget"         "receptLoss"         "RgnTX"             
-[28] "RiboProfiling"      "scviR"              "SGCP"              
-[31] "SigFuge"            "soGGi"              "spatzie"           
-[34] "SQLDataFrame"       "tidytof"            "traviz"            </code></pre>
+<pre><code> [1] "APAlyzer"           "barcodetrackR"      "beadarray"         
+ [4] "biodbHmdb"          "biodbNcbi"          "biodbNci"          
+ [7] "biodbUniprot"       "BiRewire"           "BPRMeth"           
+[10] "ChIPQC"             "cisPath"            "cummeRbund"        
+[13] "CuratedAtlasQueryR" "debCAM"             "DeconRNASeq"       
+[16] "GEOexplorer"        "granulator"         "hca"               
+[19] "hiAnnotator"        "hmdbQuery"          "IMAS"              
+[22] "Melissa"            "MetaNeighbor"       "mfa"               
+[25] "microSTASIS"        "MineICA"            "netZooR"           
+[28] "Organism.dplyr"     "RcisTarget"         "receptLoss"        
+[31] "RgnTX"              "RiboProfiling"      "scviR"             
+[34] "SGCP"               "shiny.gosling"      "SigFuge"           
+[37] "soGGi"              "spatzie"            "SQLDataFrame"      
+[40] "tidytof"            "traviz"            </code></pre>
 </div>
 </div>
 </section>
@@ -645,6 +649,18 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">ClustIRR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.8.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.6 on Linux</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">CONFESS</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -656,7 +672,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">consensusDE</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -668,7 +684,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">ddPCRclust</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -680,7 +696,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">esATAC</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -692,7 +708,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">GEOmetadb</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">ERROR</td>
@@ -704,7 +720,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">HilbertVisGUI</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -716,7 +732,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">nearBynding</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -728,7 +744,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">profileplyr</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -740,7 +756,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SamSPECTRAL</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -752,7 +768,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SwathXtend</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -764,7 +780,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">wavClusteR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -776,7 +792,7 @@ Total 2332 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">zellkonverter</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -923,272 +939,259 @@ Total 2332 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 75
-  ..$ Package                : chr "tidyprint"
-  ..$ Title                  : chr "Custom Print Methods for SummarizedExperiment"
-  ..$ Version                : chr "0.99.10"
-  ..$ Authors@R              : chr "person(\"Chen\", \"Zhan\", , \"chen.zhan@adelaide.edu.au\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0"| __truncated__
-  ..$ Description            : chr "Provides customized print methods for\n'SummarizedExperiment' objects to enhance readability and\nusability wit"| __truncated__
-  ..$ License                : chr "GPL-3"
-  ..$ License_use_gpl3       : chr "file LICENSE"
-  ..$ Encoding               : chr "UTF-8"
-  ..$ Roxygen                : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote            : chr "7.3.3"
-  ..$ Config/testthat/edition: chr "3"
-  ..$ VignetteBuilder        : chr "knitr"
-  ..$ URL                    : chr "https://github.com/tidyomics/tidyprint"
-  ..$ BugReports             : chr "https://github.com/tidyomics/tidyprint/issues"
-  ..$ biocViews              : chr "Software, Visualization, Infrastructure"
-  ..$ Config/pak/sysreqs     : chr "libicu-dev zlib1g-dev"
-  ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2026-03-16 01:01:15 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/tidyprint"
-  ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "704be89304cb71044de200cb4a845460328ae55a"
-  ..$ NeedsCompilation       : chr "no"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2026-03-16 06:27:51 UTC"
+ $ :List of 62
+  ..$ Package         : chr "Rsubread"
+  ..$ Version         : chr "2.25.1"
+  ..$ Date            : chr "2025-12-18"
+  ..$ Title           : chr "Mapping, quantification and variant analysis of sequencing data"
+  ..$ Author          : chr "Wei Shi, Yang Liao and Gordon K Smyth with contributions from\nJenny Dai"
+  ..$ Maintainer      : chr "Wei Shi &lt;wei.shi2@monash.edu&gt;, Yang Liao\n&lt;yang.liao@monash.edu&gt; and Gordon K Smyth &lt;smyth@wehi.edu.au&gt;"
+  ..$ Description     : chr "Alignment, quantification and analysis of RNA sequencing\ndata (including both bulk RNA-seq and scRNA-seq) and "| __truncated__
+  ..$ URL             : chr "http://bioconductor.org/packages/Rsubread"
+  ..$ License         : chr "GPL (&gt;=3)"
+  ..$ biocViews       : chr "Sequencing, Alignment, SequenceMatching, RNASeq, ChIPSeq,\nSingleCell, GeneExpression, GeneRegulation, Genetics"| __truncated__
+  ..$ Repository      : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication: chr "2026-03-17 04:04:55 UTC"
+  ..$ RemoteUrl       : chr "https://github.com/bioc/Rsubread"
+  ..$ RemoteRef       : chr "HEAD"
+  ..$ RemoteSha       : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  ..$ NeedsCompilation: chr "yes"
+  ..$ Packaged        :List of 2
+  .. ..$ Date: chr "2026-03-17 06:05:51 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Chen Zhan [aut, cre] (ORCID: &lt;https://orcid.org/0000-0002-4794-8339&gt;)"
-  ..$ Maintainer             : chr "Chen Zhan &lt;chen.zhan@adelaide.edu.au&gt;"
-  ..$ MD5sum                 : chr "6472b5f241871b0670a667ec97847a0f"
-  ..$ _user                  : chr "bioc"
-  ..$ _type                  : chr "src"
-  ..$ _file                  : chr "tidyprint_0.99.10.tar.gz"
-  ..$ _fileid                : chr "708d4f572a9e0d934c049659769ae69c7597531b5c614bd8d8e9e97e01e6ba25"
-  ..$ _filesize              : int 485072
-  ..$ _sha256                : chr "708d4f572a9e0d934c049659769ae69c7597531b5c614bd8d8e9e97e01e6ba25"
-  ..$ _created               : chr "2026-03-16T06:27:51.000Z"
-  ..$ _published             : chr "2026-03-16T06:34:12.995Z"
-  ..$ _jobs                  :List of 10
+  ..$ MD5sum          : chr "7807248d3084c777b4dd84ce0edbd4f4"
+  ..$ _user           : chr "bioc"
+  ..$ _type           : chr "src"
+  ..$ _file           : chr "Rsubread_2.25.1.tar.gz"
+  ..$ _fileid         : chr "33f37227360bf2ca1598fde8efbe6fe2074d902a8b72217afbe520ae0872b856"
+  ..$ _filesize       : int 13799770
+  ..$ _sha256         : chr "33f37227360bf2ca1598fde8efbe6fe2074d902a8b72217afbe520ae0872b856"
+  ..$ _created        : chr "2026-03-17T06:05:51.000Z"
+  ..$ _published      : chr "2026-03-17T06:23:59.770Z"
+  ..$ _jobs           :List of 14
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 214
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 178
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938208098"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "5958794078"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 307
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 256
+  .. .. ..$ config  : chr "linux-devel-arm64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958805182"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 368
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938223687"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958822684"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 325
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 250
+  .. .. ..$ config  : chr "linux-release-arm64"
+  .. .. ..$ r       : chr "4.5.3"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958804210"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 356
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938226713"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958821032"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 207
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 239
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938206764"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958811901"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 182
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 762
+  .. .. ..$ config  : chr "macos-devel-x86_64"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958883900"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 467
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938202793"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958847176"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 298
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 981
+  .. .. ..$ config  : chr "macos-release-x86_64"
+  .. .. ..$ r       : chr "4.5.3"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958923124"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 459
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.2"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5938170459"
+  .. .. ..$ artifact: chr "5958765050"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 187
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 88
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "5938203644"
+  .. .. ..$ check   : chr "FAIL"
+  .. .. ..$ artifact: chr ""
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 240
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 225
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938212716"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958801239"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 228
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 242
   .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.4.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938210715"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958803522"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.72e+10
-  .. .. ..$ time    : int 264
+  .. .. ..$ job     : num 6.74e+10
+  .. .. ..$ time    : int 219
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "5938216667"
-  ..$ _bioccheck             :List of 3
-  .. ..$ error  : int 0
-  .. ..$ warning: int 0
-  .. ..$ note   : int 8
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  ..$ _status                : chr "success"
-  ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/tidyprint"
-  ..$ _commit                :List of 5
-  .. ..$ id       : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. ..$ author   : chr "Chen Zhan &lt;8347019+zhanchen@users.noreply.github.com&gt;"
-  .. ..$ committer: chr "GitHub &lt;noreply@github.com&gt;"
-  .. ..$ message  : chr "Merge pull request #31 from tidyomics/fix-pasilla-show\n\nFix pasilla show"
-  .. ..$ time     : int 1773622875
-  ..$ _maintainer            :List of 5
-  .. ..$ name : chr "Chen Zhan"
-  .. ..$ email: chr "chen.zhan@adelaide.edu.au"
-  .. ..$ login: chr "zhanchen"
-  .. ..$ orcid: chr "0000-0002-4794-8339"
-  .. ..$ uuid : int 8347019
-  ..$ _distro                : chr "noble"
-  ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 22
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "R"
-  .. .. ..$ version: chr "&gt;= 4.4.0"
-  .. .. ..$ role   : chr "Depends"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ artifact: chr "5958800148"
+  ..$ _bioccheck      :List of 3
+  .. ..$ error  : int 2
+  .. ..$ warning: int 6
+  .. ..$ note   : int 17
+  ..$ _buildurl       : chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  ..$ _status         : chr "success"
+  ..$ _host           : chr "GitHub-Actions"
+  ..$ _upstream       : chr "https://github.com/bioc/Rsubread"
+  ..$ _commit         :List of 5
+  .. ..$ id       : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. ..$ author   : chr "Yang Liao (Monash University) &lt;yliao@m3v109.massive.org.au&gt;"
+  .. ..$ committer: chr "Yang Liao (Monash University) &lt;yliao@m3v109.massive.org.au&gt;"
+  .. ..$ message  : chr "added the strandSpecific option to simReads()\n"
+  .. ..$ time     : int 1773720295
+  ..$ _maintainer     :List of 2
+  .. ..$ name : chr "Wei Shi"
+  .. ..$ email: chr "smyth@wehi.edu.au"
+  ..$ _distro         : chr "noble"
+  ..$ _registered     : logi TRUE
+  ..$ _dependencies   :List of 4
   .. ..$ :List of 2
-  .. .. ..$ package: chr "magrittr"
+  .. .. ..$ package: chr "grDevices"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "tibble"
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ package: chr "Matrix"
   .. .. ..$ role   : chr "Imports"
+  ..$ _owner          : chr "bioc"
+  ..$ _selfowned      : logi TRUE
+  ..$ _usedby         : int 10
+  ..$ _updates        :List of 15
   .. ..$ :List of 2
-  .. .. ..$ package: chr "purrr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "pillar"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "stringr"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "cli"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "vctrs"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "methods"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rlang"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "fansi"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "pkgconfig"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "knitr"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocStyle"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "airway"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "pasilla"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ version: chr "&gt;= 3.0.0"
-  .. .. ..$ role   : chr "Suggests"
-  ..$ _owner                 : chr "bioc"
-  ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 9
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-11"
-  .. .. ..$ n   : int 13
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-13"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-26"
-  .. .. ..$ n   : int 9
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-35"
+  .. .. ..$ week: chr "2025-12"
   .. .. ..$ n   : int 7
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-36"
-  .. .. ..$ n   : int 12
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-37"
+  .. .. ..$ week: chr "2025-16"
   .. .. ..$ n   : int 6
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-43"
+  .. .. ..$ week: chr "2025-24"
   .. .. ..$ n   : int 4
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-02"
+  .. .. ..$ week: chr "2025-29"
+  .. .. ..$ n   : int 13
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-30"
   .. .. ..$ n   : int 5
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-12"
+  .. .. ..$ week: chr "2025-31"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-36"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-41"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-42"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-44"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-51"
   .. .. ..$ n   : int 1
-  ..$ _tags                  : list()
-  ..$ _bioc                  :List of 1
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-06"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-07"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-08"
+  .. .. ..$ n   : int 6
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2026-12"
+  .. .. ..$ n   : int 2
+  ..$ _tags           : list()
+  ..$ _bioc           :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "0.99.9"
+  .. .. ..$ version: chr "2.25.1"
   .. .. ..$ bioc   : chr "3.23"
-  ..$ _topics                :List of 3
-  .. ..$ : chr "software"
-  .. ..$ : chr "visualization"
-  .. ..$ : chr "infrastructure"
-  ..$ _stars                 : int 2
-  ..$ _contributors          :List of 3
   .. ..$ :List of 3
-  .. .. ..$ user : chr "zhanchen"
-  .. .. ..$ count: int 61
-  .. .. ..$ uuid : int 8347019
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "stemangiola"
-  .. .. ..$ count: int 35
-  .. .. ..$ uuid : int 7232890
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "mikelove"
-  .. .. ..$ count: int 2
-  .. .. ..$ uuid : int 69203
-  ..$ _userbio               :List of 4
+  .. .. ..$ branch : chr "release"
+  .. .. ..$ version: chr "2.24.0"
+  .. .. ..$ bioc   : chr "3.22"
+  ..$ _topics         :List of 21
+  .. ..$ : chr "sequencing"
+  .. ..$ : chr "alignment"
+  .. ..$ : chr "sequencematching"
+  .. ..$ : chr "rnaseq"
+  .. ..$ : chr "chipseq"
+  .. ..$ : chr "singlecell"
+  .. ..$ : chr "geneexpression"
+  .. ..$ : chr "generegulation"
+  .. ..$ : chr "genetics"
+  .. ..$ : chr "immunooncology"
+  .. ..$ : chr "snp"
+  .. ..$ : chr "geneticvariability"
+  .. ..$ : chr "preprocessing"
+  .. ..$ : chr "qualitycontrol"
+  .. ..$ : chr "genomeannotation"
+  .. ..$ : chr "genefusiondetection"
+  .. ..$ : chr "indeldetection"
+  .. ..$ : chr "variantannotation"
+  .. ..$ : chr "variantdetection"
+  .. ..$ : chr "multiplesequencealignment"
+  .. ..$ : chr "zlib"
+  ..$ _userbio        :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads             :List of 2
-  .. ..$ count : int 41
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/tidyprint"
-  ..$ _devurl                : chr "https://github.com/tidyomics/tidyprint"
-  ..$ _searchresults         : int 17
-  ..$ _rbuild                : chr "4.5.2"
-  ..$ _assets                :List of 11
+  ..$ _downloads      :List of 2
+  .. ..$ count : int 3594
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/Rsubread"
+  ..$ _mentions       : int 331
+  ..$ _searchresults  : int 1304
+  ..$ _rbuild         : chr "4.5.2"
+  ..$ _assets         :List of 9
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
@@ -1196,230 +1199,302 @@ Total 2332 2361</code></pre>
   .. ..$ : chr "extra/contents.json"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
-  .. ..$ : chr "extra/readme.html"
-  .. ..$ : chr "extra/readme.md"
-  .. ..$ : chr "extra/tidyprint.html"
+  .. ..$ : chr "extra/Rsubread.html"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/tidyomics/tidyprint"
-  ..$ _realowner             : chr "bioc"
-  ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 5
-  .. ..$ : chr "demo_tidy_message"
-  .. ..$ : chr "tidy_message"
-  .. ..$ : chr "tidy_print_enabled"
-  .. ..$ : chr "tidy_print_off"
-  .. ..$ : chr "tidy_print_on"
-  ..$ _datasets              :List of 1
-  .. ..$ :List of 8
-  .. .. ..$ name  : chr "se_airway"
-  .. .. ..$ title : chr "Example SummarizedExperiment dataset"
-  .. .. ..$ object: chr "se_airway"
-  .. .. ..$ file  : chr "se_airway.rda"
-  .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SummarizedExperiment"
-  .. .. ..$ fields: list()
-  .. .. ..$ table : logi FALSE
-  .. .. ..$ tojson: logi FALSE
-  ..$ _help                  :List of 9
+  ..$ _realowner      : chr "bioc"
+  ..$ _cranurl        : logi FALSE
+  ..$ _exports        :List of 24
+  .. ..$ : chr "align"
+  .. ..$ : chr "atgcContent"
+  .. ..$ : chr "buildindex"
+  .. ..$ : chr "cellCounts"
+  .. ..$ : chr "detectionCall"
+  .. ..$ : chr "detectionCallAnnotation"
+  .. ..$ : chr "exactSNP"
+  .. ..$ : chr "featureCounts"
+  .. ..$ : chr "findCommonVariants"
+  .. ..$ : chr "flattenGTF"
+  .. ..$ : chr "getInBuiltAnnotation"
+  .. ..$ : chr "processExons"
+  .. ..$ : chr "promoterRegions"
+  .. ..$ : chr "propmapped"
+  .. ..$ : chr "qualityScores"
+  .. ..$ : chr "removeDupReads"
+  .. ..$ : chr "repair"
+  .. ..$ : chr "RsubreadUsersGuide"
+  .. ..$ : chr "sam2bed"
+  .. ..$ : chr "scanFasta"
+  .. ..$ : chr "simReads"
+  .. ..$ : chr "subjunc"
+  .. ..$ : chr "sublong"
+  .. ..$ : chr "txUnique"
+  ..$ _help           :List of 22
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "tidyprint-package"
-  .. .. ..$ title : chr "tidyprint: Custom Print Methods for SummarizedExperiment"
+  .. .. ..$ page  : chr "align"
+  .. .. ..$ title : chr "Align Sequence Reads to a Reference Genome via Seed-and-Vote"
   .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "tidyprint-package"
-  .. .. .. ..$ : chr "tidyprint"
+  .. .. .. ..$ : chr "align"
+  .. .. .. ..$ : chr "subjunc"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "as_tibble.SummarizedExperiment"
-  .. .. ..$ title : chr "Convert SummarizedExperiment to tibble"
+  .. .. ..$ page  : chr "atgcContent"
+  .. .. ..$ title : chr "Calculate Percentages of Nucleotides in Reads"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "as_tibble.SummarizedExperiment"
+  .. .. .. ..$ : chr "atgcContent"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "demo_tidy_message"
-  .. .. ..$ title : chr "Demonstrate tidy_message usage"
+  .. .. ..$ page  : chr "buildindex"
+  .. .. ..$ title : chr "Build Index for a Reference Genome"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "demo_tidy_message"
+  .. .. .. ..$ : chr "buildindex"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "format_covariate_header"
-  .. .. ..$ title : chr "Format covariate header by distributing label across covariate columns"
+  .. .. ..$ page  : chr "cellCounts"
+  .. .. ..$ title : chr "Map and quantify single-cell RNA-seq data generated by 10X Genomics"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "format_covariate_header"
+  .. .. .. ..$ : chr "cellCounts"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "print.SummarizedExperiment"
-  .. .. ..$ title : chr "Print method for SummarizedExperiment with tidyprint styles"
+  .. .. ..$ page  : chr "detectionCall"
+  .. .. ..$ title : chr "Determine Detection P Values for Each Gene in an RNA-seq Dataset"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "print.SummarizedExperiment"
+  .. .. .. ..$ : chr "detectionCall"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "se_airway"
-  .. .. ..$ title : chr "Example SummarizedExperiment dataset"
+  .. .. ..$ page  : chr "detectionCallAnnotation"
+  .. .. ..$ title : chr "Generate Annotation Data Used for Calculating Detection P Values"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "se_airway"
+  .. .. .. ..$ : chr "detectionCallAnnotation"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "tbl_format_header.SE_print_abstraction"
-  .. .. ..$ title : chr "Custom header for SE_print_abstraction"
+  .. .. ..$ page  : chr "exactSNP"
+  .. .. ..$ title : chr "Accurately and Efficiently call SNPs"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "tbl_format_header.SE_print_abstraction"
+  .. .. .. ..$ : chr "exactSNP"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "tidy_message"
-  .. .. ..$ title : chr "Print a styled tidyprint message"
+  .. .. ..$ page  : chr "featureCounts"
+  .. .. ..$ title : chr "Count Reads by Genomic Features"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "tidy_message"
+  .. .. .. ..$ : chr "featureCounts"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "tidy_print_toggle"
-  .. .. ..$ title : chr "Enable or disable tidy print for SummarizedExperiment objects"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "tidy_print_enabled"
-  .. .. .. ..$ : chr "tidy_print_off"
-  .. .. .. ..$ : chr "tidy_print_on"
-  .. .. .. ..$ : chr "tidy_print_toggle"
-  ..$ _readme                : chr "https://github.com/bioc/tidyprint/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 37
-  .. ..$ : chr "abind"
-  .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "cli"
-  .. ..$ : chr "cpp11"
-  .. ..$ : chr "DelayedArray"
-  .. ..$ : chr "dplyr"
-  .. ..$ : chr "fansi"
-  .. ..$ : chr "generics"
-  .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "glue"
-  .. ..$ : chr "IRanges"
+  .. .. ..$ page  : chr "findCommonVariants"
+  .. .. ..$ title : chr "Finding the Common Variants Among All Input VCF Files"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "findCommonVariants"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "flattenGTF"
+  .. .. ..$ title : chr "Flatten Features in GTF or GFF Annotation Files"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "flattenGTF"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "getInBuiltAnnotation"
+  .. .. ..$ title : chr "Retrieve inbuilt gene annotations"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "getInBuiltAnnotation"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "processExons"
+  .. .. ..$ title : chr "Obtain Chromosomal Coordiates of Each Exon Using NCBI Annotation"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "processExons"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "promoterRegions"
+  .. .. ..$ title : chr "Generate Annotation for Promoter Regions of Genes"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "promoterRegions"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "propmapped"
+  .. .. ..$ title : chr "Calculate the Proportion of Mapped Reads or Fragments in SAM/BAM Files"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "propmapped"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "qualityScores"
+  .. .. ..$ title : chr "Extract Quality Score Data in a Sequencing Read Dataset"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "qualityScores"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "removeDupReads"
+  .. .. ..$ title : chr "Remove Sequencing Reads Mapped to Identical Locations"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "removeDupReads"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "repair"
+  .. .. ..$ title : chr "Re-Order Paired-End Reads to Place Reads"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "repair"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "RsubreadUsersGuide"
+  .. .. ..$ title : chr "View Rsubread Users Guide"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "RsubreadUsersGuide"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "sam2bed"
+  .. .. ..$ title : chr "Convert a SAM Format File to a BED File"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "sam2bed"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "simReads"
+  .. .. ..$ title : chr "Generate Simulated Reads from a Set of Transcripts"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "scanFasta"
+  .. .. .. ..$ : chr "simReads"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "sublong"
+  .. .. ..$ title : chr "Align Long Sequence Reads to a Reference Genome via Seed-and-Vote"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "sublong"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "txUnique"
+  .. .. ..$ title : chr "Count Number of Bases Unique to Each Transcript"
+  .. .. ..$ topics:List of 1
+  .. .. .. ..$ : chr "txUnique"
+  ..$ _rundeps        :List of 2
   .. ..$ : chr "lattice"
-  .. ..$ : chr "lifecycle"
-  .. ..$ : chr "magrittr"
   .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
-  .. ..$ : chr "pillar"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "purrr"
-  .. ..$ : chr "R6"
-  .. ..$ : chr "rlang"
-  .. ..$ : chr "S4Arrays"
-  .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "SparseArray"
-  .. ..$ : chr "stringi"
-  .. ..$ : chr "stringr"
-  .. ..$ : chr "SummarizedExperiment"
-  .. ..$ : chr "tibble"
-  .. ..$ : chr "tidyr"
-  .. ..$ : chr "tidyselect"
-  .. ..$ : chr "utf8"
-  .. ..$ : chr "vctrs"
-  .. ..$ : chr "withr"
-  .. ..$ : chr "XVector"
-  ..$ _vignettes             :List of 1
+  ..$ _sysdeps        :List of 1
   .. ..$ :List of 8
-  .. .. ..$ source  : chr "Introduction.Rmd"
-  .. .. ..$ filename: chr "Introduction.html"
-  .. .. ..$ title   : chr "tidyprint"
-  .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 11
-  .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Package Overview"
-  .. .. .. ..$ : chr "Installation"
-  .. .. .. ..$ : chr "Demo"
-  .. .. .. ..$ : chr "Load Required Packages"
-  .. .. .. ..$ : chr "SummarizedExperiment"
-  .. .. .. ..$ : chr "Opting In and Out of Tidy Print"
-  .. .. .. ..$ : chr "Opt In to Tidy Print"
-  .. .. .. ..$ : chr "Opt Out of Tidy Print"
-  .. .. .. ..$ : chr "Messaging function"
-  .. .. .. ..$ : chr "Session info"
-  .. .. ..$ created : chr "2025-02-14 14:04:40"
-  .. .. ..$ modified: chr "2026-01-07 02:59:09"
-  .. .. ..$ commits : int 19
-  ..$ _score                 : num 5.49
-  ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "tidyprint"
-  ..$ _universes             :List of 3
+  .. .. ..$ shlib      : chr "libz"
+  .. .. ..$ package    : chr "zlib1g"
+  .. .. ..$ headers    : chr "zlib1g-dev"
+  .. .. ..$ source     : chr "zlib"
+  .. .. ..$ version    : chr "1:1.3.dfsg-3.1ubuntu2.1"
+  .. .. ..$ name       : chr "zlib"
+  .. .. ..$ homepage   : chr "http://zlib.net/"
+  .. .. ..$ description: chr "compression library - runtime"
+  ..$ _vignettes      :List of 1
+  .. ..$ :List of 8
+  .. .. ..$ source  : chr "Rsubread.Rnw"
+  .. .. ..$ filename: chr "Rsubread.pdf"
+  .. .. ..$ title   : chr "Rsubread Vignette"
+  .. .. ..$ engine  : chr "utils::Sweave"
+  .. .. ..$ headings: list()
+  .. .. ..$ created : chr "2013-10-25 04:04:02"
+  .. .. ..$ modified: chr "2024-12-16 03:15:52"
+  .. .. ..$ commits : int 36
+  ..$ _score          : num 9.32
+  ..$ _indexed        : logi TRUE
+  ..$ _nocasepkg      : chr "rsubread"
+  ..$ _universes      :List of 1
   .. ..$ : chr "bioc"
-  .. ..$ : chr "zhanchen"
-  .. ..$ : chr "tidyomics"
-  ..$ _previous              : chr "0.99.9"
-  ..$ _binaries              :List of 8
-  .. ..$ :List of 10
+  ..$ _binaries       :List of 11
+  .. ..$ :List of 11
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:31:43.000Z"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:08:26.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "a1961f4643168a1d3a12fba72aa7344d94fc8299d2f44b96f249e05ffb0eabd1"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "5f3959316bfc3bf56b1bf5033505c5068bb3a34fb2d5f2220df504ff406b2989"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 10
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:09:21.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "a4c76a1fa97e98eb438ceb47320519c8c16f13880458cfda23c10de1535e9e30"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 11
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:31:53.000Z"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:08:22.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "4db344707429e6bcc8839508d7de7b2b0c3e1070f3a40aa2b1d68a7113a34d8a"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "7dc74f38bb37bd8aedd1c65a037d40984991b28a437c363a4854088e82881be4"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 11
+  .. .. ..$ r       : chr "4.5.3"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:09:13.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "eb11566f456ce4384406e485110f1ef927acbb0affff207dfd0e5af05fb64265"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:30:15.000Z"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "b010b44683b3878e50169e2526305c9288f1036241f2cd92cf085e7d8ef97d65"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:09:25.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "76760229d3b9213f332ae6cf8584542b75dea466c091a090ade46f5f084cb7fd"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:09:12.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "69bddbb4f7b78d91c9cd95336f1dbb3181fc78e517d4d63f51b4fb9517329543"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:30:08.000Z"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "289580dba4253cfd0b0a017b107c3e9f0264fccfb7688f2a5c7699d6b6d49375"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:09:11.000Z"
+  .. .. ..$ arch    : chr "aarch64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "146cfe8b08a64e0a7e29553742dc8bf5a72aac05f234532a47624872d8872478"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 8
-  .. .. ..$ r       : chr "4.5.1"
-  .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:31:32.000Z"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "5075aa98715279b51d6002a3a67ff830935fe4470968560a1a6bbcb62531fa51"
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
+  .. .. ..$ r       : chr "4.5.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:09:51.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "7204a0ae6f191f9975749b7729f30133374e8fa2b21bdeef891d3bf19e8c7f50"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:30:19.000Z"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "efaf4f74868fa36cfdb4cb07336f1035ddcb173af1c15c0cb6eb5960c27437b5"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:07:52.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "d97a8c1c24b902f442f0136388d264b51e2e7ff74bf75c68abd04f550cb2949e"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.4.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:30:17.000Z"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "9eb97967342db88b04f1b5bd48f84916575ca91315c3b048b46d5b143726c644"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:07:55.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "68fcb7b8ea0000492ccb6b266c3a0fce2e3e17612d3773e4af13ea5b9f9c8120"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"
-  .. ..$ :List of 9
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"
+  .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.10"
-  .. .. ..$ date    : chr "2026-03-16T06:30:47.000Z"
-  .. .. ..$ commit  : chr "704be89304cb71044de200cb4a845460328ae55a"
-  .. .. ..$ fileid  : chr "d6c0b11e5c4da7017d6a73598545f06368873a2d0f4a632d48560690e06d69fa"
+  .. .. ..$ version : chr "2.25.1"
+  .. .. ..$ date    : chr "2026-03-17T06:07:50.000Z"
+  .. .. ..$ arch    : chr "x86_64"
+  .. .. ..$ commit  : chr "b5a6885b11b5e35f7c170973638fd9f3c8a7329b"
+  .. .. ..$ fileid  : chr "f9737df605d2469ed58dc1ea3426357457919ee7e02a2ecad3a0a6eedb07e9b2"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23130763616"</code></pre>
+  .. .. ..$ check   : chr "WARNING"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23180705821"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
