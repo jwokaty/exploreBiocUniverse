@@ -33,7 +33,8 @@ bioc_version <- "3.23"
 uni <- "bioc"
 uni_os_branch <- "devel"
 os <- "linux"
-ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version, os)
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version,
+                                              bioc_version, os)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
 ```
@@ -44,7 +45,8 @@ bbs_builds <- bbs_pkgs_i |>
     dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
     dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
                   Check = result)
-ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version, os)
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version,
+                                              bioc_version, os)
 
 builds <- merge(bbs_builds, ru_builds, by = c("Package", "Version"))
 unmatched_ru_builds <- ru_builds |>
@@ -83,7 +85,7 @@ for (pkg in not_in_ru_pkgs$Package) {
 
 ### Bioc 3.23: Early failures and missing dependencies
 
-These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors.  Note: in devel (bioc.r-universe.dev), deprecated packages are removed whereas in the BBS they continue to build. They also don't have a landing page in R Universe.
+These packages fail early, sometimes due to missing dependencies or possibly DESCRIPTION file errors. Note: in devel (bioc.r-universe.dev), deprecated packages are removed whereas in the BBS they continue to build. They also don't have a landing page in R Universe.
 
 ```{r missing-deps-or-early-failures-devel, echo = FALSE}
 reactable::reactable(not_in_ru_pkgs,
@@ -104,7 +106,6 @@ reactable::reactable(not_in_ru_pkgs,
 
 ### Bioc 3.23: Different version
 
-
 ```{r different-versions-devel, echo = FALSE}
 unmatched <- unmatched |>
     dplyr::filter(!Package %in% c(not_in_ru_pkgs$Package, not_in_bbs_pkgs)) |>
@@ -121,9 +122,9 @@ These packages have the same versions and commits for Linux. `Check` shows the r
 ```{r same-versions-devel, echo = FALSE}
 
 condensed_builds <- builds |>
-    dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
     dplyr::rename(JobCheck = `_jobs_check`, BinariesCheck = `_binaries_check`,
-                  BinariesUrl = `_binaries_buildurl`) |>
+                  BinariesUrl = `_binaries_buildurl`, RU_commit = RemoteSha) |>
+    dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
     dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck,
                   BinariesCheck, JobUrl, BinariesUrl)
 reactable::reactable(condensed_builds, searchable = TRUE,
@@ -237,9 +238,9 @@ Only showing result of linux builds and `Check` is the BBS result.
 
 ```{r same-versions-release, echo = FALSE}
 condensed_builds <- builds |>
-    dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
     dplyr::rename(JobCheck = `_jobs_check`, BinariesCheck = `_binaries_check`,
-                  BinariesUrl = `_binaries_buildurl`) |>
+                  BinariesUrl = `_binaries_buildurl`, RU_commit = RemoteSha) |>
+    dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
     dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck,
                   BinariesCheck, JobUrl, BinariesUrl)
 reactable::reactable(condensed_builds, searchable = TRUE,
