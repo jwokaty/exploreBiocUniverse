@@ -17,7 +17,6 @@ Using the R Universe API, this document looks at differences in packages between
 ```{r install_universe, echo = FALSE, message = FALSE}
 library(BiocPkgTools)
 library(dplyr)
-library(universe)
 library(biocUniTools)
 library(httr2)
 library(reactable)
@@ -33,8 +32,8 @@ r_version <- "4.6.0"
 bioc_version <- "3.23"
 uni <- "bioc"
 uni_os_branch <- "devel"
-ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
-                                        "linux", verbose = FALSE)
+os <- "linux"
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version, os)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
 ```
@@ -45,13 +44,13 @@ bbs_builds <- bbs_pkgs_i |>
     dplyr::select(pkg, version, Deprecated, git_last_commit, result) |>
     dplyr::rename(Package = pkg, Version = version, BBS_commit = git_last_commit,
                   Check = result)
-ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version, "linux")
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version, os)
 
 builds <- merge(bbs_builds, ru_builds, by = c("Package", "Version"))
 unmatched_ru_builds <- ru_builds |>
     dplyr::filter(!Package %in% builds$Package) |>
-    dplyr::select(Package, Version, RU_commit) |>
-    dplyr::rename(RU_Version = Version)
+    dplyr::select(Package, Version, RemoteSha) |>
+    dplyr::rename(RU_Version = Version, RU_commit = RemoteSha)
 unmatched_bbs_builds <- bbs_builds |>
     dplyr::filter(!Package %in% builds$Package) |>
     dplyr::select(Package, Version, BBS_commit, Deprecated) |>
@@ -123,6 +122,8 @@ These packages have the same versions and commits for Linux. `Check` shows the r
 
 condensed_builds <- builds |>
     dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
+    dplyr::rename(JobCheck = `_jobs_check`, BinariesCheck = `_binaries_check`,
+                  BinariesUrl = `_binaries_buildurl`) |>
     dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck,
                   BinariesCheck, JobUrl, BinariesUrl)
 reactable::reactable(condensed_builds, searchable = TRUE,
@@ -151,8 +152,7 @@ r_version <- "4.5.0"
 bioc_version <- "3.22"
 uni_os_branch <- "release"
 uni <- "bioc-release"
-ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
-                                        "linux", verbose = FALSE)
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version, os)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
 ```
@@ -167,13 +167,14 @@ bbs_builds <- bbs_pkgs_i |>
 builds <- merge(bbs_builds, ru_builds, by = c("Package", "Version"))
 unmatched_ru_builds <- ru_builds |>
     dplyr::filter(!Package %in% builds$Package) |>
-    dplyr::select(Package, Version, RU_commit) |>
-    dplyr::rename(RU_Version = Version)
+    dplyr::select(Package, Version, RemoteSha) |>
+    dplyr::rename(RU_Version = Version, RU_commit = RemoteSha)
 unmatched_bbs_builds <- bbs_builds |>
     dplyr::filter(!Package %in% builds$Package) |>
     dplyr::select(Package, Version, BBS_commit, Deprecated) |>
     dplyr::rename(BBS_Version = Version)
-unmatched <- dplyr::full_join(unmatched_bbs_builds, unmatched_ru_builds, by = "Package")
+unmatched <- dplyr::full_join(unmatched_bbs_builds, unmatched_ru_builds,
+                              by = "Package")
 not_in_bbs_pkgs <- setdiff(unmatched$Package, unmatched_bbs_builds$Package)
 not_in_ru_pkgs <- data.frame(Package = setdiff(unmatched$Package, unmatched_ru_builds$Package),
                              Deprecated = FALSE,
@@ -237,8 +238,10 @@ Only showing result of linux builds and `Check` is the BBS result.
 ```{r same-versions-release, echo = FALSE}
 condensed_builds <- builds |>
     dplyr::mutate(CommitMatch = BBS_commit == RU_commit) |>
-    dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck, BinariesCheck,
-                  JobUrl, BinariesUrl)
+    dplyr::rename(JobCheck = `_jobs_check`, BinariesCheck = `_binaries_check`,
+                  BinariesUrl = `_binaries_buildurl`) |>
+    dplyr::select(Package, Version, Deprecated, CommitMatch, Check, JobCheck,
+                  BinariesCheck, JobUrl, BinariesUrl)
 reactable::reactable(condensed_builds, searchable = TRUE,
                      showPageSizeOptions = TRUE, compact = TRUE,
                      columns = list(
