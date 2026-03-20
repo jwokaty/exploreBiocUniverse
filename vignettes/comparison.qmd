@@ -153,7 +153,8 @@ r_version <- "4.5.0"
 bioc_version <- "3.22"
 uni_os_branch <- "release"
 uni <- "bioc-release"
-ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version, os)
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version,
+                                              bioc_version, os)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
 ```
