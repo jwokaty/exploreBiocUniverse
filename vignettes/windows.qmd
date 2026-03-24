@@ -3,6 +3,7 @@ title: "Windows Builds"
 format:
   html:
     code-fold: true
+    page-layout: full
 editor: visual
 engine: knitr
 ---
@@ -36,17 +37,16 @@ r_version <- "4.6.0"
 bioc_version <- "3.23"
 uni <- "bioc"
 uni_os_branch <- "devel"
-ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
-                                        "windows", verbose = FALSE)
+os <- "windows"
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version,
+                                              bioc_version, os)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
 ```
 
 ## Bioconductor Devel Windows on bioc.r-universe.dev
 
-Note: The following packages may not have the same version or commit hash in
-R Universe and the BBS. Only packages with the same version and commit hash
-are currently propagated.
+Note: The following packages may not have the same version or commit hash in R Universe and the BBS. Only packages with the same version and commit hash are currently propagated.
 
 ```{r devel-windows-results, message = FALSE}
 bbs_builds <- bbs_pkgs_i |>
@@ -57,19 +57,22 @@ bbs_builds <- bbs_pkgs_i |>
 
 devel_builds <- merge(bbs_builds, ru_builds, by = "Package")
 devel_builds <- devel_builds |>
-  dplyr::rename(`RU Version` = `Version.x`, `BBS Version` = `Version.y`,
-                `BBS Commit` = `BBS_commit`, `RU Commit` = `RU_commit`,
-                `BBS Check` = Check, `RU Job Check` = JobCheck,
-                `RU Binaries Check` = `BinariesCheck`,
-                `RU Binary Status` = BinariesStatus, `Job Url` = JobUrl) |>
-dplyr::select(Package, `RU Version`, `BBS Version`, `BBS Commit`, `RU Commit`,
-              `BBS Check`, `RU Job Check`, `RU Binaries Check`,
+    dplyr::rename(`RU Version` = `Version.x`, `BBS Version` = `Version.y`,
+                  `BBS Commit` = `BBS_commit`, `RU Commit` = `RemoteSha`,
+                  `BBS Check` = Check, `RU Job Check` = `_jobs_check`,
+                  `RU Binaries Check` = `_binaries_check`,
+                  `RU Binary Status` = `_binaries_status`, `Job Url` = JobUrl) |>
+dplyr::select(Package, `RU Version`, `BBS Version`, `BBS Commit`,
+              `RU Commit`, `BBS Check`, `RU Job Check`, `RU Binaries Check`,
               `RU Binary Status`, `Job Url`, Deprecated)
 
 reactable::reactable(subset(devel_builds, select = -`Job Url`),
                      defaultPageSize = 50,
                      compact = TRUE,
                      columns = list(
+                        `RU Commit` = reactable::colDef(cell = function(value, index) {
+                            substr(value, 1, 7)
+                        }),
                         `RU Job Check` = reactable::colDef(cell = function(value, index) {
                             if (is.na(value)) {
                                 "No url"
@@ -84,17 +87,16 @@ reactable::reactable(subset(devel_builds, select = -`Job Url`),
 
 ## Bioconductor Release Windows on bioc-release.r-universe.dev
 
-Note: The following packages may not have the same version or commit hash in
-R Universe and the BBS. Only packages with the same version and commit hash
-are currently propagated.
+Note: The following packages may not have the same version or commit hash in R Universe and the BBS. Only packages with the same version and commit hash are currently propagated.
 
 ```{r release-windows-results, message = FALSE}
 r_version <- "4.5.0"
 bioc_version <- "3.22"
 uni <- "bioc-release"
 uni_os_branch <- "release"
-ru_builds <- biocUniTools::get_uni_pkgs(uni, uni_os_branch, r_version,
-                                        "windows", verbose = FALSE)
+os <- "windows"
+ru_builds <- biocUniTools::get_binaries_by_os(uni, uni_os_branch, r_version,
+                                              bioc_version, os)
 bbs_pkgs_i <- BiocPkgTools::biocBuildReport(version = bioc_version,
                                             pkgType = "software")
 
@@ -106,30 +108,32 @@ bbs_builds <- bbs_pkgs_i |>
 
 release_builds <- merge(bbs_builds, ru_builds, by = "Package")
 release_builds <- release_builds |>
-  dplyr::rename(`RU Version` = `Version.x`, `BBS Version` = `Version.y`,
-                `BBS Commit` = `BBS_commit`, `RU Commit` = `RU_commit`,
-                `BBS Check` = Check, `RU Job Check` = JobCheck,
-                `RU Binaries Check` = `BinariesCheck`,
-                `RU Binary Status` = BinariesStatus, `Job Url` = JobUrl) |>
-dplyr::select(Package, `RU Version`, `BBS Version`, `BBS Commit`, `RU Commit`,
-              `BBS Check`, `RU Job Check`, `RU Binaries Check`,
+    dplyr::rename(`RU Version` = `Version.x`, `BBS Version` = `Version.y`,
+                  `BBS Commit` = `BBS_commit`, `RU Commit` = RemoteSha,
+                  `BBS Check` = Check, `RU Job Check` = `_jobs_check`,
+                  `RU Binaries Check` = `_binaries_check`,
+                  `RU Binary Status` = `_binaries_status`, `Job Url` = JobUrl) |>
+dplyr::select(Package, `RU Version`, `BBS Version`, `BBS Commit`,
+              `RU Commit`, `BBS Check`, `RU Job Check`, `RU Binaries Check`,
               `RU Binary Status`, `Job Url`, Deprecated)
 
-reactable::reactable(subset(release_builds, select = -`Job Url`),
+reactable::reactable(subset(devel_builds, select = -`Job Url`),
                      defaultPageSize = 50,
                      compact = TRUE,
                      columns = list(
+                        `RU Commit` = reactable::colDef(cell = function(value, index) {
+                            substr(value, 1, 7)
+                        }),
                         `RU Job Check` = reactable::colDef(cell = function(value, index) {
                             if (is.na(value)) {
                                 "No url"
                             } else {
-                                htmltools::tags$a(href = release_builds[index, "Job Url"],
+                                htmltools::tags$a(href = devel_builds[index, "Job Url"],
                                                   target = "_blank",
                                                   as.character(value))
                             }}))
 )
 ```
-
 
 ### Understanding the error
 
