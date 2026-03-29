@@ -262,7 +262,7 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">HiSpaR</td>
 <td style="text-align: left;">0.99.6</td>
 <td style="text-align: left;">2026-03-27T04:43:42.000Z</td>
-<td style="text-align: left;">2026-03-28T11:15:12.355Z</td>
+<td style="text-align: left;">2026-03-29T04:27:43.864Z</td>
 <td style="text-align: left;">https://github.com/bioc/HiSpaR</td>
 </tr>
 <tr class="odd">
@@ -513,8 +513,8 @@ Total 2338 2361</code></pre>
 <tr class="even">
 <td style="text-align: left;">toppgene</td>
 <td style="text-align: left;">0.99.1</td>
-<td style="text-align: left;">2026-02-27T05:52:59.000Z</td>
-<td style="text-align: left;">2026-03-09T11:33:37.851Z</td>
+<td style="text-align: left;">2026-03-29T09:50:18.000Z</td>
+<td style="text-align: left;">2026-03-29T09:54:17.426Z</td>
 <td style="text-align: left;">https://github.com/bioc/toppgene</td>
 </tr>
 </tbody>
@@ -774,6 +774,18 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">miloR</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">OK</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2.6.0</td>
+<td style="text-align: left;">2.7.0</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Missing R4.6 on Linux</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">nearBynding</td>
 <td style="text-align: left;">ERROR</td>
 <td style="text-align: left;">ERROR</td>
@@ -785,7 +797,7 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">profileplyr</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -797,7 +809,7 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">SamSPECTRAL</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -809,7 +821,7 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">SwathXtend</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -821,7 +833,7 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">wavClusteR</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -833,7 +845,7 @@ Total 2338 2361</code></pre>
 <td style="text-align: left;">NA</td>
 <td style="text-align: left;">Missing R4.6 on Linux</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">zellkonverter</td>
 <td style="text-align: left;">OK</td>
 <td style="text-align: left;">OK</td>
@@ -980,522 +992,907 @@ Total 2338 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 74
-  ..$ Package                : chr "LimROTS"
-  ..$ Title                  : chr "LimROTS: A Hybrid Method Integrating Empirical Bayes and\nReproducibility-Optimized Statistics for Robust Diffe"| __truncated__
-  ..$ Version                : chr "1.3.18"
-  ..$ Authors@R              : chr "c(person(given = \"Ali\", family = \"Mostafa Anwar\", role = c(\"aut\", \"cre\"),\nemail= \"aliali.mostafa99@gm"| __truncated__
-  ..$ Description            : chr "Differential expression analysis is a prevalent method\nutilised in the examination of diverse biological data."| __truncated__
-  ..$ License                : chr "GPL (&gt;= 2)"
-  ..$ Encoding               : chr "UTF-8"
-  ..$ Roxygen                : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote            : chr "7.3.3"
-  ..$ biocViews              : chr "Software, GeneExpression, DifferentialExpression,\nMicroarray, RNASeq, Proteomics, ImmunoOncology, Metabolomics"| __truncated__
-  ..$ URL                    : chr "https://github.com/AliYoussef96/LimROTS,\nhttps://aliyoussef96.github.io/LimROTS/"
-  ..$ BugReports             : chr "https://github.com/AliYoussef96/LimROTS/issues"
-  ..$ VignetteBuilder        : chr "knitr"
-  ..$ Config/testthat/edition: chr "3"
-  ..$ Config/pak/sysreqs     : chr "libicu-dev zlib1g-dev"
-  ..$ Repository             : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication       : chr "2026-03-25 10:01:24 UTC"
-  ..$ RemoteUrl              : chr "https://github.com/bioc/LimROTS"
-  ..$ RemoteRef              : chr "HEAD"
-  ..$ RemoteSha              : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  ..$ NeedsCompilation       : chr "no"
-  ..$ Packaged               :List of 2
-  .. ..$ Date: chr "2026-03-26 04:40:47 UTC"
+ $ :List of 78
+  ..$ Package           : chr "MultiAssayExperiment"
+  ..$ Title             : chr "Software for the integration of multi-omics experiments in\nBioconductor"
+  ..$ Version           : chr "1.37.4"
+  ..$ Authors@R         : chr "c(\nperson(\"Marcel\", \"Ramos\", , \"marcel.ramos@sph.cuny.edu\",\nc(\"aut\", \"cre\"), c(ORCID = \"0000-0002-"| __truncated__
+  ..$ Description       : chr "Harmonize data management of multiple experimental assays\nperformed on an overlapping set of specimens.  It pr"| __truncated__
+  ..$ License           : chr "Artistic-2.0"
+  ..$ URL               : chr "http://waldronlab.io/MultiAssayExperiment/"
+  ..$ BugReports        : chr "https://github.com/waldronlab/MultiAssayExperiment/issues"
+  ..$ VignetteBuilder   : chr "knitr"
+  ..$ biocViews         : chr "Infrastructure, DataRepresentation"
+  ..$ Encoding          : chr "UTF-8"
+  ..$ RoxygenNote       : chr "7.3.3"
+  ..$ Roxygen           : chr "list(markdown = TRUE)"
+  ..$ Video             : chr "https://youtu.be/w6HWAHaDpyk, https://youtu.be/Vh0hVVUKKFM"
+  ..$ Collate           : chr "'ExperimentList-class.R' 'MultiAssayExperiment-class.R'\n'MatchedAssayExperiment-class.R' 'subsetBy-methods.R'\"| __truncated__
+  ..$ Date              : chr "2026-03-28"
+  ..$ Config/pak/sysreqs: chr "libicu-dev zlib1g-dev"
+  ..$ Repository        : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication  : chr "2026-03-28 20:45:09 UTC"
+  ..$ RemoteUrl         : chr "https://github.com/bioc/MultiAssayExperiment"
+  ..$ RemoteRef         : chr "HEAD"
+  ..$ RemoteSha         : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  ..$ NeedsCompilation  : chr "no"
+  ..$ Packaged          :List of 2
+  .. ..$ Date: chr "2026-03-29 06:16:42 UTC"
   .. ..$ User: chr "root"
-  ..$ Author                 : chr "Ali Mostafa Anwar [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-5201-387X&gt;),\nLeo Lahti [aut, ths] (ORCID: &lt;"| __truncated__
-  ..$ Maintainer             : chr "Ali Mostafa Anwar &lt;aliali.mostafa99@gmail.com&gt;"
-  ..$ MD5sum                 : chr "f20f80464dc757dc1f299c66bd3b777d"
-  ..$ _user                  : chr "bioc"
-  ..$ _type                  : chr "src"
-  ..$ _file                  : chr "LimROTS_1.3.18.tar.gz"
-  ..$ _fileid                : chr "ff021d3d4d097d91b087ec8b5efdc8c8358f69139de338aca10b0abccfc5e6b0"
-  ..$ _filesize              : int 379702
-  ..$ _sha256                : chr "ff021d3d4d097d91b087ec8b5efdc8c8358f69139de338aca10b0abccfc5e6b0"
-  ..$ _created               : chr "2026-03-26T04:40:47.000Z"
-  ..$ _jobs                  :List of 9
+  ..$ Author            : chr "Marcel Ramos [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0002-3242-0582&gt;),\nMartin Morgan [aut, ctb],\nLori She"| __truncated__
+  ..$ Maintainer        : chr "Marcel Ramos &lt;marcel.ramos@sph.cuny.edu&gt;"
+  ..$ MD5sum            : chr "11e351e7db065fc4abfc946d4f9c0780"
+  ..$ _user             : chr "bioc"
+  ..$ _type             : chr "src"
+  ..$ _file             : chr "MultiAssayExperiment_1.37.4.tar.gz"
+  ..$ _fileid           : chr "39e8ba04ae4119ad18185c48e7f9f0ba442e3ac554d4a6ff85e43fd2d3974330"
+  ..$ _filesize         : int 742787
+  ..$ _sha256           : chr "39e8ba04ae4119ad18185c48e7f9f0ba442e3ac554d4a6ff85e43fd2d3974330"
+  ..$ _created          : chr "2026-03-29T06:16:42.000Z"
+  ..$ _published        : chr "2026-03-29T06:24:18.748Z"
+  ..$ _jobs             :List of 9
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 200
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 219
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "WARNING"
-  .. .. ..$ artifact: chr "6116479079"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6163996844"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 333
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 350
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116499142"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6164009135"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 343
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 351
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116500354"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6164009173"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 218
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 179
   .. .. ..$ config  : chr "macos-devel-arm64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116493336"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6163993148"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 143
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 159
   .. .. ..$ config  : chr "macos-release-arm64"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116553182"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6163991513"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 251
+  .. .. ..$ job     : num 6.9e+10
+  .. .. ..$ time    : int 298
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116448495"
+  .. .. ..$ check   : chr "OK"
+  .. .. ..$ artifact: chr "6163977152"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 163
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 158
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6116473574"
+  .. .. ..$ artifact: chr "6163991338"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 239
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 394
   .. .. ..$ config  : chr "windows-devel"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116484868"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6164013504"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.87e+10
-  .. .. ..$ time    : int 221
+  .. .. ..$ job     : num 6.91e+10
+  .. .. ..$ time    : int 231
   .. .. ..$ config  : chr "windows-release"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6116482258"
-  ..$ _bioccheck             :List of 3
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ artifact: chr "6163997966"
+  ..$ _bioccheck        :List of 3
   .. ..$ error  : int 0
-  .. ..$ warning: int 1
-  .. ..$ note   : int 6
-  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
-  ..$ _status                : chr "failure"
-  ..$ _host                  : chr "GitHub-Actions"
-  ..$ _upstream              : chr "https://github.com/bioc/LimROTS"
-  ..$ _commit                :List of 5
-  .. ..$ id       : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. ..$ author   : chr "Ali Youssef &lt;aliali.mostafa99@gmail.com&gt;"
-  .. ..$ committer: chr "Ali Youssef &lt;aliali.mostafa99@gmail.com&gt;"
-  .. ..$ message  : chr "Update the README file and bump the version.\n"
-  .. ..$ time     : int 1774432884
-  ..$ _maintainer            :List of 5
-  .. ..$ name : chr "Ali Mostafa Anwar"
-  .. ..$ email: chr "aliali.mostafa99@gmail.com"
-  .. ..$ login: chr "aliyoussef96"
-  .. ..$ uuid : int 42375503
-  .. ..$ orcid: chr "0000-0002-5201-387X"
-  ..$ _distro                : chr "noble"
-  ..$ _registered            : logi TRUE
-  ..$ _dependencies          :List of 18
+  .. ..$ warning: int 0
+  .. ..$ note   : int 8
+  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
+  ..$ _status           : chr "success"
+  ..$ _host             : chr "GitHub-Actions"
+  ..$ _upstream         : chr "https://github.com/bioc/MultiAssayExperiment"
+  ..$ _commit           :List of 5
+  .. ..$ id       : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. ..$ author   : chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. ..$ committer: chr "LiNk-NY &lt;marcel.ramos@sph.cuny.edu&gt;"
+  .. ..$ message  : chr "fix typo in NEWS.md\n"
+  .. ..$ time     : int 1774730709
+  ..$ _maintainer       :List of 8
+  .. ..$ name    : chr "Marcel Ramos"
+  .. ..$ email   : chr "marcel.ramos@sph.cuny.edu"
+  .. ..$ login   : chr "link-ny"
+  .. ..$ bluesky : chr "@mramos148.bsky.social"
+  .. ..$ linkedin: chr "in/mramos148"
+  .. ..$ orcid   : chr "0000-0002-3242-0582"
+  .. ..$ twitter : chr "@M2RuseR"
+  .. ..$ uuid    : int 4392950
+  ..$ _distro           : chr "noble"
+  ..$ _registered       : logi TRUE
+  ..$ _dependencies     :List of 25
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "SummarizedExperiment"
+  .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 3
   .. .. ..$ package: chr "R"
   .. .. ..$ version: chr "&gt;= 4.4.0"
   .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "SummarizedExperiment"
-  .. .. ..$ role   : chr "Depends"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "limma"
+  .. .. ..$ package: chr "Biobase"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stringr"
+  .. .. ..$ package: chr "BiocBaseUtils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "qvalue"
+  .. .. ..$ package: chr "BiocGenerics"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "DelayedArray"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "stats"
+  .. .. ..$ package: chr "GenomicRanges"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
+  .. .. ..$ package: chr "IRanges"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "MatrixGenerics"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "S4Vectors"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "dplyr"
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "utils"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
+  .. .. ..$ package: chr "HDF5Array"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "magick"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 3
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ version: chr "&gt;= 3.0.0"
+  .. .. ..$ package: chr "h5mread"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
+  .. .. ..$ package: chr "maftools"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "RaggedExperiment"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "reshape2"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
   .. .. ..$ package: chr "rmarkdown"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "caret"
+  .. .. ..$ package: chr "survival"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "ROTS"
+  .. .. ..$ package: chr "survminer"
   .. .. ..$ role   : chr "Suggests"
-  ..$ _owner                 : chr "bioc"
-  ..$ _selfowned             : logi TRUE
-  ..$ _usedby                : int 0
-  ..$ _updates               :List of 8
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ role   : chr "Suggests"
+  .. ..$ :List of 2
+  .. .. ..$ package: chr "UpSetR"
+  .. .. ..$ role   : chr "Suggests"
+  ..$ _owner            : chr "bioc"
+  ..$ _selfowned        : logi TRUE
+  ..$ _usedby           : int 141
+  ..$ _updates          :List of 12
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-15"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 2
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-17"
+  .. .. ..$ n   : int 17
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-19"
+  .. .. ..$ n   : int 5
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-30"
+  .. .. ..$ n   : int 9
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-32"
+  .. .. ..$ n   : int 4
+  .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-33"
   .. .. ..$ n   : int 3
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-20"
-  .. .. ..$ n   : int 7
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-25"
-  .. .. ..$ n   : int 1
+  .. .. ..$ week: chr "2025-34"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
+  .. .. ..$ week: chr "2025-45"
+  .. .. ..$ n   : int 3
+  .. ..$ :List of 2
   .. .. ..$ week: chr "2025-46"
   .. .. ..$ n   : int 2
   .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-47"
-  .. .. ..$ n   : int 10
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-49"
-  .. .. ..$ n   : int 14
-  .. ..$ :List of 2
   .. .. ..$ week: chr "2026-13"
-  .. .. ..$ n   : int 10
-  ..$ _tags                  : list()
-  ..$ _bioc                  :List of 2
+  .. .. ..$ n   : int 9
+  ..$ _tags             : list()
+  ..$ _bioc             :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "1.3.15"
+  .. .. ..$ version: chr "1.37.3"
   .. .. ..$ bioc   : chr "3.23"
   .. ..$ :List of 3
   .. .. ..$ branch : chr "release"
-  .. .. ..$ version: chr "1.2.8"
+  .. .. ..$ version: chr "1.36.1"
   .. .. ..$ bioc   : chr "3.22"
-  ..$ _topics                :List of 9
-  .. ..$ : chr "software"
-  .. ..$ : chr "geneexpression"
-  .. ..$ : chr "differentialexpression"
-  .. ..$ : chr "microarray"
-  .. ..$ : chr "rnaseq"
-  .. ..$ : chr "proteomics"
-  .. ..$ : chr "immunooncology"
-  .. ..$ : chr "metabolomics"
-  .. ..$ : chr "mrnamicroarray"
-  ..$ _stars                 : int 4
-  ..$ _contributors          :List of 3
+  ..$ _topics           :List of 8
+  .. ..$ : chr "infrastructure"
+  .. ..$ : chr "datarepresentation"
+  .. ..$ : chr "bioconductor"
+  .. ..$ : chr "bioconductor-package"
+  .. ..$ : chr "genomics"
+  .. ..$ : chr "nci-itcr"
+  .. ..$ : chr "tcga"
+  .. ..$ : chr "u24ca289073"
+  ..$ _stars            : int 73
+  ..$ _contributors     :List of 20
   .. ..$ :List of 3
-  .. .. ..$ user : chr "aliyoussef96"
-  .. .. ..$ count: int 368
-  .. .. ..$ uuid : int 42375503
+  .. .. ..$ user : chr "link-ny"
+  .. .. ..$ count: int 1301
+  .. .. ..$ uuid : int 4392950
   .. ..$ :List of 3
-  .. .. ..$ user : chr "ake123"
-  .. .. ..$ count: int 11
-  .. .. ..$ uuid : int 40662956
+  .. .. ..$ user : chr "lwaldron"
+  .. .. ..$ count: int 88
+  .. .. ..$ uuid : int 639942
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vjcitn"
+  .. .. ..$ count: int 61
+  .. .. ..$ uuid : int 4624066
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "nturaga"
+  .. .. ..$ count: int 14
+  .. .. ..$ uuid : int 2746443
   .. ..$ :List of 3
   .. .. ..$ user : chr "jwokaty"
-  .. .. ..$ count: int 3
+  .. .. ..$ count: int 14
   .. .. ..$ uuid : int 1744257
-  ..$ _userbio               :List of 4
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "mtmorgan"
+  .. .. ..$ count: int 11
+  .. .. ..$ uuid : int 118552
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "schifferl"
+  .. .. ..$ count: int 11
+  .. .. ..$ uuid : int 3837776
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "hpages"
+  .. .. ..$ count: int 9
+  .. .. ..$ uuid : int 8810451
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "lshep"
+  .. .. ..$ count: int 7
+  .. .. ..$ uuid : int 18724380
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "ar00"
+  .. .. ..$ count: int 5
+  .. .. ..$ uuid : int 6967166
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "lavkan"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 5639262
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "dtenenba"
+  .. .. ..$ count: int 3
+  .. .. ..$ uuid : int 2286826
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "vobencha"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 2466173
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "carmenbr61"
+  .. .. ..$ count: int 2
+  .. .. ..$ uuid : int 22799360
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "ltla"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 8166669
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "aboyounp-gne"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 171627243
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "petehaitch"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 1049741
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "poisonalien"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 8164062
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "seandavi"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 92435
+  .. ..$ :List of 3
+  .. .. ..$ user : chr "leopoldguyot"
+  .. .. ..$ count: int 1
+  .. .. ..$ uuid : int 104364239
+  ..$ _userbio          :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads             :List of 2
-  .. ..$ count : int 283
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/LimROTS"
-  ..$ _devurl                : chr "https://github.com/aliyoussef96/limrots"
-  ..$ _pkgdown               : chr "https://aliyoussef96.github.io/LimROTS/"
-  ..$ _searchresults         : int 28
-  ..$ _rbuild                : chr "4.5.3"
-  ..$ _assets                :List of 11
+  ..$ _downloads        :List of 2
+  .. ..$ count : int 9736
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/MultiAssayExperiment"
+  ..$ _mentions         : int 16
+  ..$ _devurl           : chr "https://github.com/waldronlab/multiassayexperiment"
+  ..$ _pkgdown          : chr "http://waldronlab.io/MultiAssayExperiment/"
+  ..$ _searchresults    : int 920
+  ..$ _rbuild           : chr "4.5.3"
+  ..$ _assets           :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/LimROTS.html"
+  .. ..$ : chr "extra/MultiAssayExperiment.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl               : chr "https://github.com/aliyoussef96/limrots"
-  ..$ _realowner             : chr "bioc"
-  ..$ _cranurl               : logi FALSE
-  ..$ _exports               :List of 1
-  .. ..$ : chr "LimROTS"
-  ..$ _datasets              :List of 1
+  ..$ _homeurl          : chr "https://github.com/waldronlab/multiassayexperiment"
+  ..$ _realowner        : chr "bioc"
+  ..$ _cranurl          : logi FALSE
+  ..$ _exports          :List of 55
+  .. ..$ : chr "anyReplicated"
+  .. ..$ : chr "assay"
+  .. ..$ : chr "assays"
+  .. ..$ : chr "coerce"
+  .. ..$ : chr "colData"
+  .. ..$ : chr "colData&lt;-"
+  .. ..$ : chr "colnames"
+  .. ..$ : chr "colnames&lt;-"
+  .. ..$ : chr "complete.cases"
+  .. ..$ : chr "DataFrame"
+  .. ..$ : chr "drops"
+  .. ..$ : chr "drops&lt;-"
+  .. ..$ : chr "ExperimentList"
+  .. ..$ : chr "experiments"
+  .. ..$ : chr "experiments&lt;-"
+  .. ..$ : chr "exportClass"
+  .. ..$ : chr "getWithColData"
+  .. ..$ : chr "hasAssay"
+  .. ..$ : chr "hasRowData"
+  .. ..$ : chr "hasRowRanges"
+  .. ..$ : chr "intersectByRowData"
+  .. ..$ : chr "intersectColumns"
+  .. ..$ : chr "intersectRows"
+  .. ..$ : chr "isEmpty"
+  .. ..$ : chr "listToMap"
+  .. ..$ : chr "loadHDF5MultiAssayExperiment"
+  .. ..$ : chr "longForm"
+  .. ..$ : chr "makeHitList"
+  .. ..$ : chr "mapToList"
+  .. ..$ : chr "MatchedAssayExperiment"
+  .. ..$ : chr "mergeReplicates"
+  .. ..$ : chr "metadata"
+  .. ..$ : chr "metadata&lt;-"
+  .. ..$ : chr "MultiAssayExperiment"
+  .. ..$ : chr "MultiAssayExperimentToMAF"
+  .. ..$ : chr "prepMultiAssay"
+  .. ..$ : chr "renameColname"
+  .. ..$ : chr "renamePrimary"
+  .. ..$ : chr "replicated"
+  .. ..$ : chr "replicates"
+  .. ..$ : chr "rownames"
+  .. ..$ : chr "sampleMap"
+  .. ..$ : chr "sampleMap&lt;-"
+  .. ..$ : chr "saveHDF5MultiAssayExperiment"
+  .. ..$ : chr "show"
+  .. ..$ : chr "showReplicated"
+  .. ..$ : chr "splitAssays"
+  .. ..$ : chr "subsetByAssay"
+  .. ..$ : chr "subsetByColData"
+  .. ..$ : chr "subsetByColumn"
+  .. ..$ : chr "subsetByRow"
+  .. ..$ : chr "subsetByRowData"
+  .. ..$ : chr "updateObject"
+  .. ..$ : chr "upsetSamples"
+  .. ..$ : chr "wideFormat"
+  ..$ _datasets         :List of 1
   .. ..$ :List of 8
-  .. .. ..$ name  : chr "UPS1.Case4"
-  .. .. ..$ title : chr "Spectronaut and ScaffoldDIA UPS1 Spiked Dataset case 4"
-  .. .. ..$ object: chr "UPS1.Case4"
-  .. .. ..$ file  : chr "UPS1.Case4.rda"
+  .. .. ..$ name  : chr "miniACC"
+  .. .. ..$ title : chr "Adrenocortical Carcinoma (ACC) MultiAssayExperiment"
+  .. .. ..$ object: chr "miniACC"
+  .. .. ..$ file  : chr "miniACC.RData"
   .. .. ..$ class :List of 1
-  .. .. .. ..$ : chr "SummarizedExperiment"
+  .. .. .. ..$ : chr "MultiAssayExperiment"
   .. .. ..$ fields: list()
   .. .. ..$ table : logi FALSE
   .. .. ..$ tojson: logi FALSE
-  ..$ _help                  :List of 16
+  ..$ _help             :List of 17
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Boot_parallel"
-  .. .. ..$ title : chr "Parallel processing handling function"
+  .. .. ..$ page  : chr "MultiAssayExperiment-package"
+  .. .. ..$ title : chr "MultiAssayExperiment: Build an integrative multi-assay container"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Boot_parallel"
+  .. .. .. ..$ : chr "MultiAssayExperiment-package"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "bootstrapS"
-  .. .. ..$ title : chr "Generate Bootstrap Samples"
+  .. .. ..$ page  : chr "ExperimentList"
+  .. .. ..$ title : chr "Represent multiple experiments as a List-derivative 'ExperimentList'"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "bootstrapS"
+  .. .. .. ..$ : chr "ExperimentList"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "bootstrapSamples_limRots"
-  .. .. ..$ title : chr "Generate Stratified Bootstrap Samples for limRots"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "bootstrapSamples_limRots"
+  .. .. ..$ page  : chr "ExperimentList-class"
+  .. .. ..$ title : chr "ExperimentList - A container for multi-experiment data"
+  .. .. ..$ topics:List of 15
+  .. .. .. ..$ : chr "assay,ANY,missing-method"
+  .. .. .. ..$ : chr "assay,ExperimentList,character-method"
+  .. .. .. ..$ : chr "assay,ExperimentList,missing-method"
+  .. .. .. ..$ : chr "assay,ExperimentList,numeric-method"
+  .. .. .. ..$ : chr "assays,ExperimentList-method"
+  .. .. .. ..$ : chr "coerce,List,ExperimentList-method"
+  .. .. .. ..$ : chr "coerce,list,ExperimentList-method"
+  .. .. .. ..$ : chr "coerce-ExperimentList"
+  .. .. .. ..$ : chr "colnames,ExperimentList-method"
+  .. .. .. ..$ : chr "dimnames,ExperimentList-method"
+  .. .. .. ..$ : chr "ExperimentList-class"
+  .. .. .. ..$ : chr "isEmpty,ExperimentList-method"
+  .. .. .. ..$ : chr "mergeReplicates,ExperimentList-method"
+  .. .. .. ..$ : chr "rownames,ExperimentList-method"
+  .. .. .. ..$ : chr "show,ExperimentList-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "calculateFalseDiscoveryRate"
-  .. .. ..$ title : chr "Calculate False Discovery Rate (FDR) Using Permuted Values (Adjusted)"
+  .. .. ..$ page  : chr "hasAssay"
+  .. .. ..$ title : chr "Checking assay method for any class"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calculateFalseDiscoveryRate"
+  .. .. .. ..$ : chr "hasAssay"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "calOverlaps"
-  .. .. ..$ title : chr "Calculate Overlaps Between Observed and Permuted Data"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calOverlaps"
+  .. .. ..$ page  : chr "HDF5MultiAssayExperiment"
+  .. .. ..$ title : chr "Save a MultiAssayExperiment class object to HDF5 and Rds files"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "HDF5MultiAssayExperiment"
+  .. .. .. ..$ : chr "loadHDF5MultiAssayExperiment"
+  .. .. .. ..$ : chr "saveHDF5MultiAssayExperiment"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "calOverlaps_slr"
-  .. .. ..$ title : chr "Calculate Overlaps for Single-Label Replicates (SLR)"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calOverlaps_slr"
+  .. .. ..$ page  : chr "mapToList"
+  .. .. ..$ title : chr "Convert map from data.frame or DataFrame to list and vice versa"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "listToMap"
+  .. .. .. ..$ : chr "mapToList"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Check_meta_info"
-  .. .. ..$ title : chr "Check if meta info is correct"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Check_meta_info"
+  .. .. ..$ page  : chr "MatchedAssayExperiment-class"
+  .. .. ..$ title : chr "MatchedAssayExperiment - A matched-samples MultiAssayExperiment class"
+  .. .. ..$ topics:List of 3
+  .. .. .. ..$ : chr "coerce,MultiAssayExperiment,MatchedAssayExperiment-method"
+  .. .. .. ..$ : chr "MatchedAssayExperiment"
+  .. .. .. ..$ : chr "MatchedAssayExperiment-class"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Check_SummarizedExperiment"
-  .. .. ..$ title : chr "Check if SummarizedExperiment or data is correct"
+  .. .. ..$ page  : chr "miniACC"
+  .. .. ..$ title : chr "Adrenocortical Carcinoma (ACC) MultiAssayExperiment"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Check_SummarizedExperiment"
+  .. .. .. ..$ : chr "miniACC"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "countLargerThan"
-  .. .. ..$ title : chr "Count Larger Permuted Values (Modified)"
+  .. .. ..$ page  : chr "MultiAssayExperiment"
+  .. .. ..$ title : chr "Construct an integrative representation of multi-omic data with 'MultiAssayExperiment'"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "countLargerThan"
+  .. .. .. ..$ : chr "MultiAssayExperiment"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Limma_bootstrap"
-  .. .. ..$ title : chr "Perform Linear Modeling with Covariates using Limma"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Limma_bootstrap"
+  .. .. ..$ page  : chr "MultiAssayExperiment-class"
+  .. .. ..$ title : chr "MultiAssayExperiment - An integrative multi-assay class for experiment data"
+  .. .. ..$ topics:List of 16
+  .. .. .. ..$ : chr "assay,MultiAssayExperiment,character-method"
+  .. .. .. ..$ : chr "assay,MultiAssayExperiment,missing-method"
+  .. .. .. ..$ : chr "assay,MultiAssayExperiment,numeric-method"
+  .. .. .. ..$ : chr "assays,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "c,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "coerce,List,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "coerce,list,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "coerce-MultiAssayExperiment"
+  .. .. .. ..$ : chr "dimnames,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "exportClass"
+  .. .. .. ..$ : chr "exportClass,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "length,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "MultiAssayExperiment-class"
+  .. .. .. ..$ : chr "names,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "show,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "updateObject,MultiAssayExperiment-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Limma_fit"
-  .. .. ..$ title : chr "Perform Linear Modeling with Covariates using Limma"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Limma_fit"
+  .. .. ..$ page  : chr "MultiAssayExperiment-helpers"
+  .. .. ..$ title : chr "A group of helper functions for manipulating and cleaning a MultiAssayExperiment"
+  .. .. ..$ topics:List of 33
+  .. .. .. ..$ : chr "anyReplicated"
+  .. .. .. ..$ : chr "anyReplicated,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "complete.cases,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "getWithColData"
+  .. .. .. ..$ : chr "hasRowData"
+  .. .. .. ..$ : chr "hasRowData,ExperimentList-method"
+  .. .. .. ..$ : chr "hasRowData,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "hasRowRanges"
+  .. .. .. ..$ : chr "hasRowRanges,ExperimentList-method"
+  .. .. .. ..$ : chr "hasRowRanges,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "intersectColumns"
+  .. .. .. ..$ : chr "intersectRows"
+  .. .. .. ..$ : chr "isEmpty,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "longForm,ANY-method"
+  .. .. .. ..$ : chr "longForm,ExperimentList-method"
+  .. .. .. ..$ : chr "longForm,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "makeHitList"
+  .. .. .. ..$ : chr "makeMatchList"
+  .. .. .. ..$ : chr "mergeReplicates"
+  .. .. .. ..$ : chr "mergeReplicates,ANY-method"
+  .. .. .. ..$ : chr "mergeReplicates,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "MultiAssayExperiment-helpers"
+  .. .. .. ..$ : chr "renameColname"
+  .. .. .. ..$ : chr "renamePrimary"
+  .. .. .. ..$ : chr "replicated"
+  .. .. .. ..$ : chr "replicated,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "replicates"
+  .. .. .. ..$ : chr "replicates,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "showReplicated"
+  .. .. .. ..$ : chr "showReplicated,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "splitAssays"
+  .. .. .. ..$ : chr "splitAssays,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "wideFormat"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Limma_permutating"
-  .. .. ..$ title : chr "Perform Permutation-Based Linear Modeling with Covariates using Limma"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Limma_permutating"
+  .. .. ..$ page  : chr "MultiAssayExperiment-methods"
+  .. .. ..$ title : chr "Accessing and modifying information in MultiAssayExperiment"
+  .. .. ..$ topics:List of 25
+  .. .. .. ..$ : chr "$,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "$&lt;-,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "colData,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "colData&lt;-,MultiAssayExperiment,ANY-method"
+  .. .. .. ..$ : chr "colData&lt;-,MultiAssayExperiment,DataFrame-method"
+  .. .. .. ..$ : chr "colnames&lt;-,MultiAssayExperiment,List-method"
+  .. .. .. ..$ : chr "colnames&lt;-,MultiAssayExperiment,list-method"
+  .. .. .. ..$ : chr "drops"
+  .. .. .. ..$ : chr "drops,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "drops&lt;-"
+  .. .. .. ..$ : chr "drops&lt;-,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "experiments"
+  .. .. .. ..$ : chr "experiments,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "experiments&lt;-"
+  .. .. .. ..$ : chr "experiments&lt;-,MultiAssayExperiment,ExperimentList-method"
+  .. .. .. ..$ : chr "experiments&lt;-,MultiAssayExperiment,List-method"
+  .. .. .. ..$ : chr "metadata,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "metadata&lt;-,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "MultiAssayExperiment-methods"
+  .. .. .. ..$ : chr "names&lt;-,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "sampleMap"
+  .. .. .. ..$ : chr "sampleMap,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "sampleMap&lt;-"
+  .. .. .. ..$ : chr "sampleMap&lt;-,MultiAssayExperiment,ANY-method"
+  .. .. .. ..$ : chr "sampleMap&lt;-,MultiAssayExperiment,DataFrame-method"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "LimROTS"
-  .. .. ..$ title : chr "'LimROTS': A Hybrid Method Integrating Empirical Bayes and Reproducibility-Optimized Statistics for Robust Diff"| __truncated__
+  .. .. ..$ page  : chr "MultiAssayExperimentToMAF"
+  .. .. ..$ title : chr "Convert MultiAssayExperiment to MAF class"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "LimROTS"
+  .. .. .. ..$ : chr "MultiAssayExperimentToMAF"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "Optimizing"
-  .. .. ..$ title : chr "Optimize Parameters Based on Overlap Calculations"
+  .. .. ..$ page  : chr "prepMultiAssay"
+  .. .. ..$ title : chr "Prepare a 'MultiAssayExperiment' instance"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "Optimizing"
+  .. .. .. ..$ : chr "prepMultiAssay"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "SanityChecK"
-  .. .. ..$ title : chr "Sanity Check for Input Data and Parameters"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "SanityChecK"
+  .. .. ..$ page  : chr "reexports"
+  .. .. ..$ title : chr "Objects exported from other packages"
+  .. .. ..$ topics:List of 2
+  .. .. .. ..$ : chr "DataFrame"
+  .. .. .. ..$ : chr "reexports"
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "UPS1.Case4"
-  .. .. ..$ title : chr "Spectronaut and ScaffoldDIA UPS1 Spiked Dataset case 4"
+  .. .. ..$ page  : chr "subsetBy"
+  .. .. ..$ title : chr "Subsetting a MultiAssayExperiment object"
+  .. .. ..$ topics:List of 30
+  .. .. .. ..$ : chr "intersectByRowData"
+  .. .. .. ..$ : chr "intersectByRowData,MultiAssayExperiment,character,character-method"
+  .. .. .. ..$ : chr "subset"
+  .. .. .. ..$ : chr "subsetBy"
+  .. .. .. ..$ : chr "subsetByAssay"
+  .. .. .. ..$ : chr "subsetByAssay,ExperimentList-method"
+  .. .. .. ..$ : chr "subsetByAssay,MultiAssayExperiment-method"
+  .. .. .. ..$ : chr "subsetByColData"
+  .. .. .. ..$ : chr "subsetByColData,MultiAssayExperiment,ANY-method"
+  .. .. .. ..$ : chr "subsetByColData,MultiAssayExperiment,character-method"
+  .. .. .. ..$ : chr "subsetByColumn"
+  .. .. .. ..$ : chr "subsetByColumn,ExperimentList,List-method"
+  .. .. .. ..$ : chr "subsetByColumn,ExperimentList,list-method"
+  .. .. .. ..$ : chr "subsetByColumn,ExperimentList,logical-method"
+  .. .. .. ..$ : chr "subsetByColumn,MultiAssayExperiment,ANY-method"
+  .. .. .. ..$ : chr "subsetByRow"
+  .. .. .. ..$ : chr "subsetByRow,ExperimentList,ANY-method"
+  .. .. .. ..$ : chr "subsetByRow,ExperimentList,List-method"
+  .. .. .. ..$ : chr "subsetByRow,ExperimentList,list-method"
+  .. .. .. ..$ : chr "subsetByRow,ExperimentList,logical-method"
+  .. .. .. ..$ : chr "subsetByRow,MultiAssayExperiment,ANY-method"
+  .. .. .. ..$ : chr "subsetByRow,MultiAssayExperiment,List-method"
+  .. .. .. ..$ : chr "subsetByRow,MultiAssayExperiment,list-method"
+  .. .. .. ..$ : chr "subsetByRowData"
+  .. .. .. ..$ : chr "subsetByRowData,MultiAssayExperiment,character,character-method"
+  .. .. .. ..$ : chr "[,MultiAssayExperiment,ANY,ANY,ANY-method"
+  .. .. .. ..$ : chr "[,MultiAssayExperiment,ANY-method"
+  .. .. .. ..$ : chr "[&lt;-,MultiAssayExperiment,ANY,ANY,ANY-method"
+  .. .. .. ..$ : chr "[[,MultiAssayExperiment,ANY,ANY-method"
+  .. .. .. ..$ : chr "[[&lt;-,MultiAssayExperiment,ANY,ANY-method"
+  .. ..$ :List of 3
+  .. .. ..$ page  : chr "upsetSamples"
+  .. .. ..$ title : chr "Create a generalized Venn Diagram analog for sample membership in multiple assays, using the upset algorithm in 'UpSetR'"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "UPS1.Case4"
-  ..$ _readme                : chr "https://github.com/bioc/LimROTS/raw/HEAD/README.md"
-  ..$ _rundeps               :List of 57
+  .. .. .. ..$ : chr "upsetSamples"
+  ..$ _readme           : chr "https://github.com/bioc/MultiAssayExperiment/raw/HEAD/README.md"
+  ..$ _rundeps          :List of 37
   .. ..$ : chr "abind"
-  .. ..$ : chr "BH"
   .. ..$ : chr "Biobase"
+  .. ..$ : chr "BiocBaseUtils"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocParallel"
   .. ..$ : chr "cli"
-  .. ..$ : chr "codetools"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "DelayedArray"
   .. ..$ : chr "dplyr"
-  .. ..$ : chr "farver"
-  .. ..$ : chr "formatR"
-  .. ..$ : chr "futile.logger"
-  .. ..$ : chr "futile.options"
   .. ..$ : chr "generics"
   .. ..$ : chr "GenomicRanges"
-  .. ..$ : chr "ggplot2"
   .. ..$ : chr "glue"
-  .. ..$ : chr "gtable"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "isoband"
-  .. ..$ : chr "labeling"
-  .. ..$ : chr "lambda.r"
   .. ..$ : chr "lattice"
   .. ..$ : chr "lifecycle"
-  .. ..$ : chr "limma"
   .. ..$ : chr "magrittr"
   .. ..$ : chr "Matrix"
   .. ..$ : chr "MatrixGenerics"
   .. ..$ : chr "matrixStats"
   .. ..$ : chr "pillar"
   .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "plyr"
-  .. ..$ : chr "qvalue"
+  .. ..$ : chr "purrr"
   .. ..$ : chr "R6"
-  .. ..$ : chr "RColorBrewer"
-  .. ..$ : chr "Rcpp"
-  .. ..$ : chr "reshape2"
   .. ..$ : chr "rlang"
   .. ..$ : chr "S4Arrays"
   .. ..$ : chr "S4Vectors"
-  .. ..$ : chr "S7"
-  .. ..$ : chr "scales"
   .. ..$ : chr "Seqinfo"
-  .. ..$ : chr "snow"
   .. ..$ : chr "SparseArray"
-  .. ..$ : chr "statmod"
   .. ..$ : chr "stringi"
   .. ..$ : chr "stringr"
   .. ..$ : chr "SummarizedExperiment"
   .. ..$ : chr "tibble"
+  .. ..$ : chr "tidyr"
   .. ..$ : chr "tidyselect"
   .. ..$ : chr "utf8"
   .. ..$ : chr "vctrs"
-  .. ..$ : chr "viridisLite"
   .. ..$ : chr "withr"
   .. ..$ : chr "XVector"
-  ..$ _score                 : num 4.95
-  ..$ _indexed               : logi TRUE
-  ..$ _nocasepkg             : chr "limrots"
-  ..$ _universes             :List of 2
+  ..$ _vignettes        :List of 4
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "MultiAssayExperiment.Rmd"
+  .. .. ..$ filename: chr "MultiAssayExperiment.html"
+  .. .. ..$ title   : chr "MultiAssayExperiment: The Integrative Bioconductor Container"
+  .. .. ..$ author  : chr "MultiAssay Special Interest Group"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 50
+  .. .. .. ..$ : chr "Installation"
+  .. .. .. ..$ : chr "Citing MultiAssayExperiment"
+  .. .. .. ..$ : chr "A Brief Description"
+  .. .. .. ..$ : chr "Choosing the appropriate data structure"
+  .. .. .. ..$ : chr "Overview of the MultiAssayExperiment class"
+  .. .. .. ..$ : chr "Components of the MultiAssayExperiment"
+  .. .. .. ..$ : chr "ExperimentList: experimental data"
+  .. .. .. ..$ : chr "Class requirements within ExperimentList container"
+  .. .. .. ..$ : chr "colData: primary data"
+  .. .. .. ..$ : chr "colData slot requirements"
+  .. .. .. ..$ : chr "Note on the flexibility of the DataFrame"
+  .. .. .. ..$ : chr "sampleMap: relating colData to multiple assays"
+  .. .. .. ..$ : chr "sampleMap structure"
+  .. .. .. ..$ : chr "Instances where sampleMap isn't provided"
+  .. .. .. ..$ : chr "metadata"
+  .. .. .. ..$ : chr "Creating a MultiAssayExperiment object: a rich example"
+  .. .. .. ..$ : chr "Create toy datasets demonstrating all supported data types"
+  .. .. .. ..$ : chr "sampleMap creation"
+  .. .. .. ..$ : chr "Experimental data as a list()"
+  .. .. .. ..$ : chr "Creation of the MultiAssayExperiment class object"
+  .. .. .. ..$ : chr "Helper function to create a MultiAssayExperiment object"
+  .. .. .. ..$ : chr "Helper functions to create Bioconductor classes from raw data"
+  .. .. .. ..$ : chr "Integrated subsetting across experiments"
+  .. .. .. ..$ : chr "Subsetting by square bracket ["
+  .. .. .. ..$ : chr "Subsetting by character, integer, and logical"
+  .. .. .. ..$ : chr "the \"drop\" argument"
+  .. .. .. ..$ : chr "More on subsetting by columns"
+  .. .. .. ..$ : chr "Subsetting assays"
+  .. .. .. ..$ : chr "Subsetting rows (features) by IDs, integers, or logicals"
+  .. .. .. ..$ : chr "Subsetting rows (features) by GenomicRanges"
+  .. .. .. ..$ : chr "Subsetting is endomorphic"
+  .. .. .. ..$ : chr "Double-bracket subsetting to select experiments"
+  .. .. .. ..$ : chr "Helpers for data clean-up and management"
+  .. .. .. ..$ : chr "complete.cases"
+  .. .. .. ..$ : chr "replicated"
+  .. .. .. ..$ : chr "intersectRows"
+  .. .. .. ..$ : chr "intersectColumns"
+  .. .. .. ..$ : chr "mergeReplicates"
+  .. .. .. ..$ : chr "combine c"
+  .. .. .. ..$ : chr "Extractor functions"
+  .. .. .. ..$ : chr "getWithColData"
+  .. .. .. ..$ : chr "longForm &amp; wideFormat"
+  .. .. .. ..$ : chr "assay / assays"
+  .. .. .. ..$ : chr "The Cancer Genome Atlas and MultiAssayExperiment"
+  .. .. .. ..$ : chr "Dimension names: rownames and colnames"
+  .. .. .. ..$ : chr "Requirements for support of additional data classes"
+  .. .. .. ..$ : chr "Application Programming Interface (API)"
+  .. .. .. ..$ : chr "Methods for MultiAssayExperiment"
+  .. .. .. ..$ : chr "sessionInfo()"
+  .. .. .. ..$ : chr "References"
+  .. .. ..$ created : chr "2016-03-27 22:24:23"
+  .. .. ..$ modified: chr "2025-08-08 20:18:07"
+  .. .. ..$ commits : int 42
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "UsingHDF5Array.Rmd"
+  .. .. ..$ filename: chr "UsingHDF5Array.html"
+  .. .. ..$ title   : chr "Using DelayedMatrix with MultiAssayExperiment"
+  .. .. ..$ author  : chr "MultiAssay Special Interest Group"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 8
+  .. .. .. ..$ : chr "Integrating an HDF5 backend for MultiAssayExperiment"
+  .. .. .. ..$ : chr "Dependencies"
+  .. .. .. ..$ : chr "HDF5Array and DelayedArray Constructor"
+  .. .. .. ..$ : chr "Writing to a file with dimnames"
+  .. .. .. ..$ : chr "Importing HDF5 files"
+  .. .. .. ..$ : chr "Using a DelayedMatrix with MultiAssayExperiment"
+  .. .. .. ..$ : chr "SummarizedExperiment with DelayedMatrix backend"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2016-07-14 20:29:26"
+  .. .. ..$ modified: chr "2025-07-21 21:48:16"
+  .. .. ..$ commits : int 13
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "MultiAssayExperiment_cheatsheet.Rmd"
+  .. .. ..$ filename: chr "MultiAssayExperiment_cheatsheet.html"
+  .. .. ..$ title   : chr "MultiAssayExperiment Cheatsheet"
+  .. .. ..$ author  : chr "MultiAssay Special Interest Group"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 11
+  .. .. .. ..$ : chr "Summary of the MultiAssayExperiment API"
+  .. .. .. ..$ : chr "API Overview"
+  .. .. .. ..$ : chr "Constructors"
+  .. .. .. ..$ : chr "Accessors"
+  .. .. .. ..$ : chr "Subsetting"
+  .. .. .. ..$ : chr "Management"
+  .. .. .. ..$ : chr "Reshaping"
+  .. .. .. ..$ : chr "Combining"
+  .. .. .. ..$ : chr "Coercion"
+  .. .. .. ..$ : chr "Export"
+  .. .. .. ..$ : chr "Notes"
+  .. .. ..$ created : chr "2025-04-21 22:55:59"
+  .. .. ..$ modified: chr "2025-11-04 18:59:12"
+  .. .. ..$ commits : int 3
+  .. ..$ :List of 9
+  .. .. ..$ source  : chr "QuickStartMultiAssay.Rmd"
+  .. .. ..$ filename: chr "QuickStartMultiAssay.html"
+  .. .. ..$ title   : chr "MultiAssayExperiment: Quick Start Guide"
+  .. .. ..$ author  : chr "Marcel Ramos &amp; Levi Waldron"
+  .. .. ..$ engine  : chr "knitr::rmarkdown"
+  .. .. ..$ headings:List of 26
+  .. .. .. ..$ : chr "Component slots"
+  .. .. .. ..$ : chr "colData - information on biological units"
+  .. .. .. ..$ : chr "ExperimentList - experiment data"
+  .. .. .. ..$ : chr "sampleMap - relationship graph"
+  .. .. .. ..$ : chr "metadata"
+  .. .. .. ..$ : chr "Subsetting"
+  .. .. .. ..$ : chr "Single bracket ["
+  .. .. .. ..$ : chr "Subsetting by genomic ranges"
+  .. .. .. ..$ : chr "Double bracket [["
+  .. .. .. ..$ : chr "Patients with complete data"
+  .. .. .. ..$ : chr "Row names that are common across assays"
+  .. .. .. ..$ : chr "Extraction"
+  .. .. .. ..$ : chr "assay and assays"
+  .. .. .. ..$ : chr "Summary of slots and accessors"
+  .. .. .. ..$ : chr "Transformation / reshaping"
+  .. .. .. ..$ : chr "longForm"
+  .. .. .. ..$ : chr "wideFormat"
+  .. .. .. ..$ : chr "MultiAssayExperiment class construction and concatenation"
+  .. .. .. ..$ : chr "MultiAssayExperiment constructor function"
+  .. .. .. ..$ : chr "prepMultiAssay - Constructor function helper"
+  .. .. .. ..$ : chr "c - concatenate to MultiAssayExperiment"
+  .. .. .. ..$ : chr "Examples"
+  .. .. .. ..$ : chr "UpsetR \"Venn\" diagram"
+  .. .. .. ..$ : chr "Kaplan-meier plot stratified by a clinical variable"
+  .. .. .. ..$ : chr "Multivariate Cox regression including RNA-seq, copy number, and pathology"
+  .. .. .. ..$ : chr "Session info"
+  .. .. ..$ created : chr "2017-03-31 23:29:35"
+  .. .. ..$ modified: chr "2025-07-21 21:48:16"
+  .. .. ..$ commits : int 15
+  ..$ _score            : num 15.1
+  ..$ _indexed          : logi TRUE
+  ..$ _nocasepkg        : chr "multiassayexperiment"
+  ..$ _universes        :List of 3
   .. ..$ : chr "bioc"
-  .. ..$ : chr "aliyoussef96"
-  ..$ _previous              : chr "1.3.17"
-  ..$ _failure               :List of 5
-  .. ..$ version : chr "1.3.19"
-  .. ..$ commit  :List of 5
-  .. .. ..$ id       : chr "65345d2f46c12694f8f2256ce1648410c2fecdb5"
-  .. .. ..$ author   : chr "Ali Youssef &lt;aliali.mostafa99@gmail.com&gt;"
-  .. .. ..$ committer: chr "Ali Youssef &lt;aliali.mostafa99@gmail.com&gt;"
-  .. .. ..$ message  : chr "fix version\n"
-  .. .. ..$ time     : int 1774649228
-  .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23678907613"
-  .. ..$ date    : chr "2026-03-28T10:44:11.967Z"
-  .. ..$ job     :List of 6
-  .. .. ..$ job     : num 6.9e+10
-  .. .. ..$ time    : int 203
-  .. .. ..$ config  : chr "source"
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ artifact: chr "6158087697"
-  ..$ _binaries              :List of 7
+  .. ..$ : chr "link-ny"
+  .. ..$ : chr "waldronlab"
+  ..$ _previous         : chr "1.37.3"
+  ..$ _binaries         :List of 7
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:44:42.000Z"
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:20:33.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "4cb2e1b93e6b82f150c7621eff0b5d44c24b85f409ccf89acca2de3bf0e6d199"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "0f616141b1b3900dec8831fc58d849a90db882928f246fb190f31fc8654e7c81"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:44:50.000Z"
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:20:17.000Z"
   .. .. ..$ distro  : chr "noble"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "48a44b86d032c57aca5be51f0ba024c44310f44b9a742cddbf41ce771a1a2a7c"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "cda782c3f7257a4bd204574dcba57cab5cba7a14eb86d5e273c202e174f1d4f9"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:44:17.000Z"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "b0d15bcbf084879c1d0a51e6064fca151f9281d962b64204367ed3b4db3eebc2"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:18:40.000Z"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "1c7cbdba181947e87c6b192d2f7d0e6b1057341e5d1826ccfbb2500fb0550ea3"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:51:31.000Z"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "d9f9589eebc4c5f14c85b2c4c20da5b903a87f92785d3080c722ca79ff5e9146"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:18:36.000Z"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "b6e8f765c57ef05ce4f32a70df7ee733a585855b36755d29e8582427a42c182f"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
   .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:44:05.000Z"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "ab77df853cc1badd6051e778adc29bb7bb303a770566f828b39e3a766fb172c3"
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:19:53.000Z"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "34108a31c2e2886844fab5a21ad8efb125195fdd8ad7f7538c53d5c8fa793254"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.6.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:42:59.000Z"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "48bbe8203f25f9a6af8ab860ca5e062ea97f5731eabb09b7f1a6a769c2ab5e4a"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:21:01.000Z"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "3a43a476568eab54c2853e6ea7d6473b9d7cf0290a6b32e9c9fc94d177d3b27b"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"
   .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "1.3.18"
-  .. .. ..$ date    : chr "2026-03-26T04:42:40.000Z"
-  .. .. ..$ commit  : chr "b141d052a45cd90e55e03d6f17b2cb05f8b40e84"
-  .. .. ..$ fileid  : chr "c1e96342ccb2aaa378cdcbb585d20ded0f9ab58ab7ea511d1815ad2842a9bfd8"
-  .. .. ..$ status  : chr "failure"
-  .. .. ..$ check   : chr "ERROR"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23577742256"</code></pre>
+  .. .. ..$ version : chr "1.37.4"
+  .. .. ..$ date    : chr "2026-03-29T06:18:28.000Z"
+  .. .. ..$ commit  : chr "2e22d1fcdd4f722d59e857f8ec9e8a4b350db361"
+  .. .. ..$ fileid  : chr "1c860bc144da786ca46762bf73ba1d1cc69afab8d0ff08932cd1cba149a66d44"
+  .. .. ..$ status  : chr "success"
+  .. .. ..$ check   : chr "NOTE"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23702943330"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
