@@ -240,8 +240,8 @@ Total 2338 2361</code></pre>
 <tr class="odd">
 <td style="text-align: left;">DOTSeq</td>
 <td style="text-align: left;">0.99.8</td>
-<td style="text-align: left;">2026-03-30T06:46:50.000Z</td>
-<td style="text-align: left;">2026-03-30T07:05:04.199Z</td>
+<td style="text-align: left;">2026-04-01T06:38:03.000Z</td>
+<td style="text-align: left;">2026-04-01T07:10:53.294Z</td>
 <td style="text-align: left;">https://github.com/bioc/DOTSeq</td>
 </tr>
 <tr class="even">
@@ -992,853 +992,467 @@ Total 2338 2361</code></pre>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">str</span>(ru_pkgs_i[<span class="dv">1</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 1
- $ :List of 74
-  ..$ Package           : chr "DOTSeq"
-  ..$ Type              : chr "Package"
-  ..$ Title             : chr "Differential Analysis of Translation Efficiency and Usage of\nOpen Reading Frames"
-  ..$ Version           : chr "0.99.8"
-  ..$ Authors@R         : chr "c(\nperson(\ngiven = \"Chun Shen\",\nfamily = \"Lim\",\nemail=\"lim.bioinfo@gmail.com\",\nrole = c(\"aut\",\"cr"| __truncated__
-  ..$ Description       : chr "Differential open reading frame (ORF) translation analysis\nframework for ribosome profiling (Ribo-seq) with ma"| __truncated__
-  ..$ URL               : chr "https://github.com/compgenom/DOTSeq"
-  ..$ BugReports        : chr "https://github.com/compgenom/DOTSeq/issues"
-  ..$ Encoding          : chr "UTF-8"
-  ..$ Roxygen           : chr "list(markdown = TRUE)"
-  ..$ RoxygenNote       : chr "7.3.3"
-  ..$ VignetteBuilder   : chr "knitr"
-  ..$ biocViews         : chr "RiboSeq, SingleCell, GeneRegulation, GeneExpression,\nDifferentialExpression, Genetics, Sequencing, Software, R"| __truncated__
-  ..$ License           : chr "MIT + file LICENSE"
-  ..$ Config/pak/sysreqs: chr "cmake make libbz2-dev libicu-dev liblzma-dev\nlibpng-dev libxml2-dev libssl-dev xz-utils zlib1g-dev"
-  ..$ Repository        : chr "https://bioc.r-universe.dev"
-  ..$ Date/Publication  : chr "2026-03-30 04:41:24 UTC"
-  ..$ RemoteUrl         : chr "https://github.com/bioc/DOTSeq"
-  ..$ RemoteRef         : chr "HEAD"
-  ..$ RemoteSha         : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  ..$ NeedsCompilation  : chr "yes"
-  ..$ Packaged          :List of 2
-  .. ..$ Date: chr "2026-03-30 06:46:50 UTC"
+ $ :List of 66
+  ..$ Package                : chr "CyTOFpower"
+  ..$ Type                   : chr "Package"
+  ..$ Title                  : chr "Power analysis for CyTOF experiments"
+  ..$ Version                : chr "1.17.1"
+  ..$ Authors@R              : chr "c(person(\"Anne-Maud\", \"Ferreira\",\nemail = \"anne-maud.ferreira@epfedu.fr\",\nrole = c(\"cre\", \"aut\"),\n"| __truncated__
+  ..$ Description            : chr "This package is a tool to predict the power of CyTOF\nexperiments in the context of differential state analyses"| __truncated__
+  ..$ biocViews              : chr "FlowCytometry, SingleCell, CellBiology, StatisticalMethod,\nSoftware"
+  ..$ License                : chr "LGPL-3"
+  ..$ Encoding               : chr "UTF-8"
+  ..$ RoxygenNote            : chr "7.1.2"
+  ..$ VignetteBuilder        : chr "knitr"
+  ..$ Config/testthat/edition: chr "3"
+  ..$ Config/pak/sysreqs     : chr "cmake libfontconfig1-dev libfreetype6-dev\nlibglpk-dev make libicu-dev libpng-dev libuv1-dev libxml2-dev\nperl zlib1g-dev"
+  ..$ Repository             : chr "https://bioc.r-universe.dev"
+  ..$ Date/Publication       : chr "2026-04-01 04:42:17 UTC"
+  ..$ RemoteUrl              : chr "https://github.com/bioc/CyTOFpower"
+  ..$ RemoteRef              : chr "HEAD"
+  ..$ RemoteSha              : chr "43535638005ba00159434fcde06d5c603b748544"
+  ..$ NeedsCompilation       : chr "no"
+  ..$ Packaged               :List of 2
+  .. ..$ Date: chr "2026-04-01 04:56:26 UTC"
   .. ..$ User: chr "root"
-  ..$ Author            : chr "Chun Shen Lim [aut, cre] (ORCID:\n&lt;https://orcid.org/0000-0001-7015-0125&gt;),\nGabrielle Chieng [aut, ctb],\nMarsden [fnd]"
-  ..$ Maintainer        : chr "Chun Shen Lim &lt;lim.bioinfo@gmail.com&gt;"
-  ..$ MD5sum            : chr "e86daf2b23a7d593af20dc211a2375d7"
-  ..$ _user             : chr "bioc"
-  ..$ _type             : chr "src"
-  ..$ _file             : chr "DOTSeq_0.99.8.tar.gz"
-  ..$ _fileid           : chr "9d7f497c8b2d728fa6e8d19d8d02f069122ccb9c67bba113c69066573ccb96be"
-  ..$ _filesize         : int 1497466
-  ..$ _sha256           : chr "9d7f497c8b2d728fa6e8d19d8d02f069122ccb9c67bba113c69066573ccb96be"
-  ..$ _created          : chr "2026-03-30T06:46:50.000Z"
-  ..$ _published        : chr "2026-03-30T07:05:04.199Z"
-  ..$ _jobs             :List of 13
+  ..$ Author                 : chr "Anne-Maud Ferreira [cre, aut] (ORCID:\n&lt;https://orcid.org/0000-0002-4749-746X&gt;),\nCatherine Blish [aut],\nSusan Holmes [aut]"
+  ..$ Maintainer             : chr "Anne-Maud Ferreira &lt;anne-maud.ferreira@epfedu.fr&gt;"
+  ..$ MD5sum                 : chr "216d4b958e246f6cf137baafc43fb554"
+  ..$ _user                  : chr "bioc"
+  ..$ _type                  : chr "src"
+  ..$ _file                  : chr "CyTOFpower_1.17.1.tar.gz"
+  ..$ _fileid                : chr "2a5b865ea6e6e0b53ee5114df00e50f1e71b0ce5452dd42117c2a4137c3850f2"
+  ..$ _filesize              : int 175060
+  ..$ _sha256                : chr "2a5b865ea6e6e0b53ee5114df00e50f1e71b0ce5452dd42117c2a4137c3850f2"
+  ..$ _created               : chr "2026-04-01T04:56:26.000Z"
+  ..$ _published             : chr "2026-04-01T13:44:51.939Z"
+  ..$ _jobs                  :List of 10
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 369
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 200
   .. .. ..$ config  : chr "bioc-checks"
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ check   : chr "NOTE"
-  .. .. ..$ artifact: chr "6172533139"
+  .. .. ..$ artifact: chr "6213802406"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 644
-  .. .. ..$ config  : chr "linux-devel-arm64"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172590145"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 686
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 284
   .. .. ..$ config  : chr "linux-devel-x86_64"
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172599332"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6221019458"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 633
-  .. .. ..$ config  : chr "linux-release-arm64"
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172588167"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 735
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 252
   .. .. ..$ config  : chr "linux-release-x86_64"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172608524"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6221009982"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 414
-  .. .. ..$ config  : chr "macos-devel-arm64"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172542681"
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 117
+  .. .. ..$ config  : chr "macos-oldrel-arm64"
+  .. .. ..$ r       : chr "4.5.3"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6220970589"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 833
-  .. .. ..$ config  : chr "macos-devel-x86_64"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172627554"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 429
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 147
   .. .. ..$ config  : chr "macos-release-arm64"
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172545736"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6220979373"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 975
-  .. .. ..$ config  : chr "macos-release-x86_64"
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172656647"
-  .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 888
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 267
   .. .. ..$ config  : chr "source"
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172453153"
+  .. .. ..$ artifact: chr "6213770349"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 318
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 220
   .. .. ..$ config  : chr "wasm-release"
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172522113"
+  .. .. ..$ artifact: chr "6213805464"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 771
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 2169
   .. .. ..$ config  : chr "windows-devel"
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172615651"
+  .. .. ..$ r       : chr "4.7.0"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6221631377"
   .. ..$ :List of 6
-  .. .. ..$ job     : num 6.91e+10
-  .. .. ..$ time    : int 730
-  .. .. ..$ config  : chr "windows-release"
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 151
+  .. .. ..$ config  : chr "windows-oldrel"
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ artifact: chr "6172609152"
-  ..$ _bioccheck        :List of 3
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6220980617"
+  .. ..$ :List of 6
+  .. .. ..$ job     : num 6.95e+10
+  .. .. ..$ time    : int 182
+  .. .. ..$ config  : chr "windows-release"
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ artifact: chr "6220989414"
+  ..$ _bioccheck             :List of 3
   .. ..$ error  : int 0
   .. ..$ warning: int 0
-  .. ..$ note   : int 3
-  ..$ _buildurl         : chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  ..$ _status           : chr "success"
-  ..$ _host             : chr "GitHub-Actions"
-  ..$ _upstream         : chr "https://github.com/bioc/DOTSeq"
-  ..$ _commit           :List of 5
-  .. ..$ id       : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. ..$ author   : chr "lcscs12345 &lt;lcscs12345@gmail.com&gt;"
-  .. ..$ committer: chr "lcscs12345 &lt;lcscs12345@gmail.com&gt;"
-  .. ..$ message  : chr "update CITATION and NEWS\n"
-  .. ..$ time     : int 1774845684
-  ..$ _maintainer       :List of 5
-  .. ..$ name : chr "Chun Shen Lim"
-  .. ..$ email: chr "lim.bioinfo@gmail.com"
-  .. ..$ login: chr "lcscs12345"
-  .. ..$ uuid : int 12958807
-  .. ..$ orcid: chr "0000-0001-7015-0125"
-  ..$ _distro           : chr "noble"
-  ..$ _registered       : logi TRUE
-  ..$ _dependencies     :List of 48
+  .. ..$ note   : int 8
+  ..$ _buildurl              : chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
+  ..$ _status                : chr "success"
+  ..$ _host                  : chr "GitHub-Actions"
+  ..$ _upstream              : chr "https://github.com/bioc/CyTOFpower"
+  ..$ _commit                :List of 5
+  .. ..$ id       : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. ..$ author   : chr "Andreas Gschwind &lt;andreas.gschwind@stanford.edu&gt;"
+  .. ..$ committer: chr "Andreas Gschwind &lt;andreas.gschwind@stanford.edu&gt;"
+  .. ..$ message  : chr "Increment the devel branch package version to 1.17.1\n"
+  .. ..$ time     : int 1775018537
+  ..$ _maintainer            :List of 5
+  .. ..$ name : chr "Anne-Maud Ferreira"
+  .. ..$ email: chr "anne-maud.ferreira@epfedu.fr"
+  .. ..$ login: chr "ferreiraam"
+  .. ..$ uuid : int 55205274
+  .. ..$ orcid: chr "0000-0002-4749-746X"
+  ..$ _distro                : chr "noble"
+  ..$ _registered            : logi TRUE
+  ..$ _dependencies          :List of 20
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "R"
+  .. .. ..$ version: chr "&gt;= 4.1"
+  .. .. ..$ role   : chr "Depends"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
-  .. .. ..$ role   : chr "LinkingTo"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ashr"
+  .. .. ..$ package: chr "CytoGLMM"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "boot"
+  .. .. ..$ package: chr "diffcyt"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "data.table"
+  .. .. ..$ package: chr "DT"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "emmeans"
+  .. .. ..$ package: chr "dplyr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "glmmTMB"
+  .. .. ..$ package: chr "ggplot2"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Matrix"
+  .. .. ..$ package: chr "magrittr"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "methods"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "Rcpp"
+  .. .. ..$ package: chr "rlang"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "stats"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "utils"
+  .. .. ..$ package: chr "shiny"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "graphics"
+  .. .. ..$ package: chr "shinyFeedback"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "grDevices"
+  .. .. ..$ package: chr "shinyjs"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "pbapply"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "AnnotationDbi"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocGenerics"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BiocParallel"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Biostrings"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "txdbmaker"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DESeq2"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicAlignments"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicFeatures"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDb"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomeInfoDbData"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "GenomicRanges"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "IRanges"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "rtracklayer"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "Rsamtools"
-  .. .. ..$ role   : chr "Imports"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "S4Vectors"
+  .. .. ..$ package: chr "shinyMatrix"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
   .. .. ..$ package: chr "SummarizedExperiment"
   .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "BSgenome.Hsapiens.UCSC.hg38"
-  .. .. ..$ role   : chr "Suggests"
+  .. .. ..$ package: chr "tibble"
+  .. .. ..$ role   : chr "Imports"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "TxDb.Hsapiens.UCSC.hg38.knownGene"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "TxDb.Dmelanogaster.UCSC.dm3.ensGene"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "org.Hs.eg.db"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "curl"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "pasillaBamSubset"
+  .. .. ..$ package: chr "tidyr"
+  .. .. ..$ role   : chr "Imports"
+  .. ..$ :List of 3
+  .. .. ..$ package: chr "testthat"
+  .. .. ..$ version: chr "&gt;= 3.0.0"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
   .. .. ..$ package: chr "BiocStyle"
   .. .. ..$ role   : chr "Suggests"
   .. ..$ :List of 2
-  .. .. ..$ package: chr "biomaRt"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "DHARMa"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "eulerr"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggplot2"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "ggsignif"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
   .. .. ..$ package: chr "knitr"
   .. .. ..$ role   : chr "Suggests"
+  ..$ _owner                 : chr "bioc"
+  ..$ _selfowned             : logi TRUE
+  ..$ _usedby                : int 0
+  ..$ _updates               :List of 3
   .. ..$ :List of 2
-  .. .. ..$ package: chr "rmarkdown"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "testthat"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "withr"
-  .. .. ..$ role   : chr "Suggests"
-  .. ..$ :List of 2
-  .. .. ..$ package: chr "magick"
-  .. .. ..$ role   : chr "Suggests"
-  ..$ _owner            : chr "bioc"
-  ..$ _selfowned        : logi TRUE
-  ..$ _usedby           : int 0
-  ..$ _updates          :List of 15
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-33"
-  .. .. ..$ n   : int 34
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-34"
-  .. .. ..$ n   : int 27
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-35"
-  .. .. ..$ n   : int 7
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-39"
-  .. .. ..$ n   : int 7
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-40"
-  .. .. ..$ n   : int 13
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-41"
-  .. .. ..$ n   : int 7
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-42"
-  .. .. ..$ n   : int 40
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-43"
-  .. .. ..$ n   : int 42
+  .. .. ..$ week: chr "2025-16"
+  .. .. ..$ n   : int 2
   .. ..$ :List of 2
   .. .. ..$ week: chr "2025-44"
-  .. .. ..$ n   : int 18
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-45"
-  .. .. ..$ n   : int 22
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-47"
   .. .. ..$ n   : int 2
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2025-48"
-  .. .. ..$ n   : int 7
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-05"
-  .. .. ..$ n   : int 1
-  .. ..$ :List of 2
-  .. .. ..$ week: chr "2026-12"
-  .. .. ..$ n   : int 6
   .. ..$ :List of 2
   .. .. ..$ week: chr "2026-14"
-  .. .. ..$ n   : int 2
-  ..$ _tags             : list()
-  ..$ _bioc             :List of 1
+  .. .. ..$ n   : int 3
+  ..$ _tags                  : list()
+  ..$ _bioc                  :List of 2
   .. ..$ :List of 3
   .. .. ..$ branch : chr "devel"
-  .. .. ..$ version: chr "0.99.7"
+  .. .. ..$ version: chr "1.17.0"
   .. .. ..$ bioc   : chr "3.23"
-  ..$ _topics           :List of 13
-  .. ..$ : chr "riboseq"
+  .. ..$ :List of 3
+  .. .. ..$ branch : chr "release"
+  .. .. ..$ version: chr "1.16.0"
+  .. .. ..$ bioc   : chr "3.22"
+  ..$ _topics                :List of 5
+  .. ..$ : chr "flowcytometry"
   .. ..$ : chr "singlecell"
-  .. ..$ : chr "generegulation"
-  .. ..$ : chr "geneexpression"
-  .. ..$ : chr "differentialexpression"
-  .. ..$ : chr "genetics"
-  .. ..$ : chr "sequencing"
+  .. ..$ : chr "cellbiology"
+  .. ..$ : chr "statisticalmethod"
   .. ..$ : chr "software"
-  .. ..$ : chr "rnaseq"
-  .. ..$ : chr "bayesian"
-  .. ..$ : chr "regression"
-  .. ..$ : chr "multiplecomparison"
-  .. ..$ : chr "cpp"
-  ..$ _stars            : int 1
-  ..$ _contributors     :List of 2
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "lcscs12345"
-  .. .. ..$ count: int 203
-  .. .. ..$ uuid : int 12958807
-  .. ..$ :List of 3
-  .. .. ..$ user : chr "gabriellecsw"
-  .. .. ..$ count: int 49
-  .. .. ..$ uuid : int 152338545
-  ..$ _userbio          :List of 4
+  ..$ _userbio               :List of 4
   .. ..$ uuid       : int 2286807
   .. ..$ type       : chr "organization"
   .. ..$ name       : chr "Bioconductor"
   .. ..$ description: chr "Software for the analysis and comprehension of high-throughput genomic data"
-  ..$ _downloads        :List of 2
-  .. ..$ count : int 136
-  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/DOTSeq"
-  ..$ _devurl           : chr "https://github.com/compgenom/dotseq"
-  ..$ _searchresults    : int 1
-  ..$ _rbuild           : chr "4.5.3"
-  ..$ _assets           :List of 11
+  ..$ _downloads             :List of 2
+  .. ..$ count : int 148
+  .. ..$ source: chr "https://www.bioconductor.org/packages/stats/bioc/CyTOFpower"
+  ..$ _searchresults         : int 2
+  ..$ _rbuild                : chr "4.5.3"
+  ..$ _assets                :List of 11
   .. ..$ : chr "extra/citation.cff"
   .. ..$ : chr "extra/citation.html"
   .. ..$ : chr "extra/citation.json"
   .. ..$ : chr "extra/citation.txt"
   .. ..$ : chr "extra/contents.json"
-  .. ..$ : chr "extra/DOTSeq.html"
+  .. ..$ : chr "extra/CyTOFpower.html"
   .. ..$ : chr "extra/NEWS.html"
   .. ..$ : chr "extra/NEWS.txt"
   .. ..$ : chr "extra/readme.html"
   .. ..$ : chr "extra/readme.md"
   .. ..$ : chr "manual.pdf"
-  ..$ _homeurl          : chr "https://github.com/compgenom/dotseq"
-  ..$ _realowner        : chr "bioc"
-  ..$ _cranurl          : logi FALSE
-  ..$ _exports          :List of 25
-  .. ..$ : chr ".PostHoc"
-  .. ..$ : chr "calculateUsage"
-  .. ..$ : chr "countReads"
-  .. ..$ : chr "countReadsSingleCell"
-  .. ..$ : chr "DOTSeq"
-  .. ..$ : chr "DOTSeqDataSetsFromFeatureCounts"
-  .. ..$ : chr "DOTSeqDataSetsFromSummarizeOverlaps"
-  .. ..$ : chr "fitDOU"
-  .. ..$ : chr "fitResults"
-  .. ..$ : chr "getContrasts"
-  .. ..$ : chr "getContrasts&lt;-"
-  .. ..$ : chr "getDOU"
-  .. ..$ : chr "getDOU&lt;-"
-  .. ..$ : chr "getDTE"
-  .. ..$ : chr "getDTE&lt;-"
-  .. ..$ : chr "getExonicReads"
-  .. ..$ : chr "getORFs"
-  .. ..$ : chr "mapIDs"
-  .. ..$ : chr "modelType"
-  .. ..$ : chr "plotDOT"
-  .. ..$ : chr "posthoc"
-  .. ..$ : chr "PostHoc"
-  .. ..$ : chr "show"
-  .. ..$ : chr "simDOT"
-  .. ..$ : chr "testDOU"
-  ..$ _help             :List of 25
+  ..$ _realowner             : chr "bioc"
+  ..$ _cranurl               : logi FALSE
+  ..$ _exports               :List of 1
+  .. ..$ : chr "CyTOFpower"
+  ..$ _help                  :List of 1
   .. ..$ :List of 3
-  .. .. ..$ page  : chr "calculateUsage"
-  .. .. ..$ title : chr "Calculate ORF usage across conditions from a SummarizedExperiment"
+  .. .. ..$ page  : chr "CyTOFpower"
+  .. .. ..$ title : chr "CyTOFpower: R-package to predict the power of a CyTOF experiment"
   .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "calculateUsage"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "countReads"
-  .. .. ..$ title : chr "Count reads from BAM files over genomic features"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "countReads"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "countReadsSingleCell"
-  .. .. ..$ title : chr "Count single-cell reads/UMIs from BAM over genomic features (optimized)"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "countReadsSingleCell"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "DOTSeq"
-  .. .. ..$ title : chr "DOTSeq: Differential Analysis of Translation Efficiency and Usage of Open Reading Frames"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "DOTSeq-package"
-  .. .. .. ..$ : chr "DOTSeq"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "DOTSeqDataSets-class"
-  .. .. ..$ title : chr "DOTSeqDataSets-class"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "DOTSeqDataSets-class"
-  .. .. .. ..$ : chr "show,DOTSeqDataSets-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "DOTSeqDataSets"
-  .. .. ..$ title : chr "Construct DOTSeqDatasets from featureCounts output for Differential ORF Translation Analysis"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr "DOTSeqDataSetsFromFeatureCounts"
-  .. .. .. ..$ : chr "DOTSeqDataSetsFromSummarizeOverlaps"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "DOUData-class"
-  .. .. ..$ title : chr "DOUData-class"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "DOUData-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "DOUData-validity"
-  .. .. ..$ title : chr "Validity method for DOUData"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "DOUData-validity"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "DTEData-class"
-  .. .. ..$ title : chr "DTEData-class"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "DTEData-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "findORFsFasta"
-  .. .. ..$ title : chr "Find ORFs in FASTA sequences using ORFik's C++ engine"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "findORFsFasta"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "fitDOU"
-  .. .. ..$ title : chr "Fit Differential ORF Usage Models"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "fitDOU"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getContrasts-method"
-  .. .. ..$ title : chr "Access and replace contrast results from post hoc analysis"
-  .. .. ..$ topics:List of 7
-  .. .. .. ..$ : chr "getContrasts"
-  .. .. .. ..$ : chr "getContrasts,DOTSeqDataSets-method"
-  .. .. .. ..$ : chr "getContrasts,DOUData-method"
-  .. .. .. ..$ : chr "getContrasts,DTEData-method"
-  .. .. .. ..$ : chr "getContrasts&lt;-"
-  .. .. .. ..$ : chr "getContrasts&lt;-,DOUData-method"
-  .. .. .. ..$ : chr "getContrasts&lt;-,DTEData-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getDOU-method"
-  .. .. ..$ title : chr "Accessor and replacement methods for DOU slot"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "getDOU"
-  .. .. .. ..$ : chr "getDOU,DOTSeqDataSets-method"
-  .. .. .. ..$ : chr "getDOU&lt;-"
-  .. .. .. ..$ : chr "getDOU&lt;-,DOTSeqDataSets-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getDTE-method"
-  .. .. ..$ title : chr "Accessor and replacement methods for DTE slot"
-  .. .. ..$ topics:List of 4
-  .. .. .. ..$ : chr "getDTE"
-  .. .. .. ..$ : chr "getDTE,DOTSeqDataSets-method"
-  .. .. .. ..$ : chr "getDTE&lt;-"
-  .. .. .. ..$ : chr "getDTE&lt;-,DOTSeqDataSets-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getExonicReads"
-  .. .. ..$ title : chr "Filter BAM files to retain only reads overlapping exonic regions"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getExonicReads"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "getORFs"
-  .. .. ..$ title : chr "Extract Genomic ORFs from Transcript Sequences"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "getORFs"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "mapIDs"
-  .. .. ..$ title : chr "Retrieve Gene Symbols from Ensembl or Ensembl Genomes"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "mapIDs"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "PostHoc-accessors"
-  .. .. ..$ title : chr "Access the model type from a PostHoc object"
-  .. .. ..$ topics:List of 6
-  .. .. .. ..$ : chr "fitResults"
-  .. .. .. ..$ : chr "fitResults,PostHoc-method"
-  .. .. .. ..$ : chr "modelType"
-  .. .. .. ..$ : chr "modelType,PostHoc-method"
-  .. .. .. ..$ : chr "posthoc"
-  .. .. .. ..$ : chr "posthoc,PostHoc-method"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "numExonsPerGroup"
-  .. .. ..$ title : chr "Get list of the number of exons per group"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "numExonsPerGroup"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "plotDOT"
-  .. .. ..$ title : chr "Generate Differential ORF Translation (DOT) Visualization Suite"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "plotDOT"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "PostHoc"
-  .. .. ..$ title : chr "Construct a PostHoc Object"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "PostHoc"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "PostHoc-class"
-  .. .. ..$ title : chr "The PostHoc class for DOTSeq"
-  .. .. ..$ topics:List of 2
-  .. .. .. ..$ : chr ".PostHoc"
-  .. .. .. ..$ : chr "PostHoc-class"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "remove_random_effects"
-  .. .. ..$ title : chr "Remove random effects from a formula"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "remove_random_effects"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "simDOT"
-  .. .. ..$ title : chr "Simulate Differential ORF Translation (DOT)"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "simDOT"
-  .. ..$ :List of 3
-  .. .. ..$ page  : chr "testDOU"
-  .. .. ..$ title : chr "Compute Differential ORF Usage (DOU) Contrasts Using EMMs"
-  .. .. ..$ topics:List of 1
-  .. .. .. ..$ : chr "testDOU"
-  ..$ _readme           : chr "https://github.com/bioc/DOTSeq/raw/HEAD/README.md"
-  ..$ _rundeps          :List of 148
+  .. .. .. ..$ : chr "CyTOFpower"
+  ..$ _readme                : chr "https://github.com/bioc/CyTOFpower/raw/HEAD/README.md"
+  ..$ _rundeps               :List of 226
   .. ..$ : chr "abind"
-  .. ..$ : chr "AnnotationDbi"
-  .. ..$ : chr "ashr"
-  .. ..$ : chr "askpass"
+  .. ..$ : chr "ALL"
   .. ..$ : chr "backports"
+  .. ..$ : chr "base64enc"
   .. ..$ : chr "BH"
+  .. ..$ : chr "bigmemory"
+  .. ..$ : chr "bigmemory.sri"
   .. ..$ : chr "Biobase"
-  .. ..$ : chr "BiocFileCache"
   .. ..$ : chr "BiocGenerics"
-  .. ..$ : chr "BiocIO"
+  .. ..$ : chr "biocmake"
   .. ..$ : chr "BiocParallel"
-  .. ..$ : chr "biomaRt"
-  .. ..$ : chr "Biostrings"
-  .. ..$ : chr "bit"
-  .. ..$ : chr "bit64"
-  .. ..$ : chr "bitops"
-  .. ..$ : chr "blob"
   .. ..$ : chr "boot"
   .. ..$ : chr "broom"
-  .. ..$ : chr "BSgenome"
+  .. ..$ : chr "bslib"
   .. ..$ : chr "cachem"
-  .. ..$ : chr "cigarillo"
+  .. ..$ : chr "car"
+  .. ..$ : chr "carData"
+  .. ..$ : chr "caret"
+  .. ..$ : chr "circlize"
+  .. ..$ : chr "class"
   .. ..$ : chr "cli"
+  .. ..$ : chr "clock"
+  .. ..$ : chr "clue"
+  .. ..$ : chr "cluster"
   .. ..$ : chr "codetools"
+  .. ..$ : chr "colorRamps"
   .. ..$ : chr "colorspace"
+  .. ..$ : chr "commonmark"
+  .. ..$ : chr "ComplexHeatmap"
+  .. ..$ : chr "ConsensusClusterPlus"
+  .. ..$ : chr "corrplot"
   .. ..$ : chr "cowplot"
   .. ..$ : chr "cpp11"
   .. ..$ : chr "crayon"
-  .. ..$ : chr "curl"
+  .. ..$ : chr "crosstalk"
+  .. ..$ : chr "CytoGLMM"
+  .. ..$ : chr "cytolib"
   .. ..$ : chr "data.table"
-  .. ..$ : chr "DBI"
-  .. ..$ : chr "dbplyr"
   .. ..$ : chr "DelayedArray"
+  .. ..$ : chr "dendextend"
   .. ..$ : chr "Deriv"
-  .. ..$ : chr "DESeq2"
+  .. ..$ : chr "diagram"
+  .. ..$ : chr "diffcyt"
+  .. ..$ : chr "digest"
+  .. ..$ : chr "dir.expiry"
   .. ..$ : chr "doBy"
+  .. ..$ : chr "doParallel"
   .. ..$ : chr "dplyr"
+  .. ..$ : chr "DT"
+  .. ..$ : chr "e1071"
+  .. ..$ : chr "edgeR"
+  .. ..$ : chr "ellipse"
   .. ..$ : chr "emmeans"
   .. ..$ : chr "estimability"
-  .. ..$ : chr "etrunct"
+  .. ..$ : chr "evaluate"
+  .. ..$ : chr "factoextra"
+  .. ..$ : chr "FactoMineR"
   .. ..$ : chr "farver"
   .. ..$ : chr "fastmap"
   .. ..$ : chr "filelock"
+  .. ..$ : chr "flashClust"
+  .. ..$ : chr "flexmix"
+  .. ..$ : chr "flowCore"
+  .. ..$ : chr "FlowSOM"
+  .. ..$ : chr "fontawesome"
+  .. ..$ : chr "foreach"
   .. ..$ : chr "forecast"
   .. ..$ : chr "formatR"
+  .. ..$ : chr "Formula"
   .. ..$ : chr "fracdiff"
+  .. ..$ : chr "fs"
   .. ..$ : chr "futile.logger"
   .. ..$ : chr "futile.options"
+  .. ..$ : chr "future"
+  .. ..$ : chr "future.apply"
   .. ..$ : chr "generics"
-  .. ..$ : chr "GenomeInfoDb"
-  .. ..$ : chr "GenomeInfoDbData"
-  .. ..$ : chr "GenomicAlignments"
-  .. ..$ : chr "GenomicFeatures"
   .. ..$ : chr "GenomicRanges"
+  .. ..$ : chr "GetoptLong"
+  .. ..$ : chr "ggforce"
+  .. ..$ : chr "ggnewscale"
   .. ..$ : chr "ggplot2"
-  .. ..$ : chr "glmmTMB"
+  .. ..$ : chr "ggpubr"
+  .. ..$ : chr "ggrepel"
+  .. ..$ : chr "ggsci"
+  .. ..$ : chr "ggsignif"
+  .. ..$ : chr "GlobalOptions"
+  .. ..$ : chr "globals"
   .. ..$ : chr "glue"
+  .. ..$ : chr "gower"
+  .. ..$ : chr "gridExtra"
   .. ..$ : chr "gtable"
-  .. ..$ : chr "hms"
-  .. ..$ : chr "httr"
-  .. ..$ : chr "httr2"
-  .. ..$ : chr "invgamma"
+  .. ..$ : chr "hardhat"
+  .. ..$ : chr "highr"
+  .. ..$ : chr "htmltools"
+  .. ..$ : chr "htmlwidgets"
+  .. ..$ : chr "httpuv"
+  .. ..$ : chr "igraph"
+  .. ..$ : chr "ipred"
   .. ..$ : chr "IRanges"
-  .. ..$ : chr "irlba"
-  .. ..$ : chr "isoband"
-  .. ..$ : chr "jsonlite"
-  .. ..$ : chr "KEGGREST"
-  .. ..$ : chr "labeling"
-  .. ..$ : chr "lambda.r"
-  .. ..$ : chr "lattice"
-  .. ..$ : chr "lifecycle"
-  .. ..$ : chr "lme4"
-  .. ..$ : chr "lmtest"
-  .. ..$ : chr "locfit"
-  .. ..$ : chr "magrittr"
-  .. ..$ : chr "MASS"
-  .. ..$ : chr "Matrix"
-  .. ..$ : chr "MatrixGenerics"
-  .. ..$ : chr "matrixStats"
-  .. ..$ : chr "memoise"
-  .. ..$ : chr "mgcv"
-  .. ..$ : chr "microbenchmark"
-  .. ..$ : chr "mime"
-  .. ..$ : chr "minqa"
-  .. ..$ : chr "mixsqp"
-  .. ..$ : chr "modelr"
-  .. ..$ : chr "mvtnorm"
-  .. ..$ : chr "nlme"
-  .. ..$ : chr "nloptr"
-  .. ..$ : chr "nnet"
-  .. ..$ : chr "numDeriv"
-  .. ..$ : chr "openssl"
-  .. ..$ : chr "pbapply"
-  .. ..$ : chr "pbkrtest"
-  .. ..$ : chr "pillar"
-  .. ..$ : chr "pkgconfig"
-  .. ..$ : chr "png"
-  .. ..$ : chr "prettyunits"
-  .. ..$ : chr "progress"
   .. .. [list output truncated]
-  ..$ _sysdeps          :List of 1
-  .. ..$ :List of 7
-  .. .. ..$ shlib      : chr "libstdc++"
-  .. .. ..$ package    : chr "libstdc++6"
-  .. .. ..$ source     : chr "gcc"
-  .. .. ..$ version    : chr "14.2.0-4ubuntu2~24.04.1"
-  .. .. ..$ name       : chr "c++"
-  .. .. ..$ homepage   : chr "http://gcc.gnu.org/"
-  .. .. ..$ description: chr "GNU Standard C++ Library v3"
-  ..$ _vignettes        :List of 1
+  ..$ _vignettes             :List of 1
   .. ..$ :List of 9
-  .. .. ..$ source  : chr "DOTSeq.Rmd"
-  .. .. ..$ filename: chr "DOTSeq.html"
-  .. .. ..$ title   : chr "DOTSeq: Detecting Differential ORF Usage in Ribosome Profiling Data"
-  .. .. ..$ author  : chr "Chun Shen Lim, Gabrielle S.W. Chieng"
+  .. .. ..$ source  : chr "CyTOFpower.Rmd"
+  .. .. ..$ filename: chr "CyTOFpower.html"
+  .. .. ..$ title   : chr "Power analysis for CyTOF experiments"
+  .. .. ..$ author  : chr "Anne-Maud Ferreira"
   .. .. ..$ engine  : chr "knitr::rmarkdown"
-  .. .. ..$ headings:List of 19
+  .. .. ..$ headings:List of 9
   .. .. .. ..$ : chr "Introduction"
-  .. .. .. ..$ : chr "Load required library"
-  .. .. .. ..$ : chr "Example dataset"
-  .. .. .. ..$ : chr "Input data"
-  .. .. .. ..$ : chr "ORF annotation"
-  .. .. .. ..$ : chr "Prepare condition table"
-  .. .. .. ..$ : chr "Run DOTSeq"
-  .. .. .. ..$ : chr "Inspect results"
-  .. .. .. ..$ : chr "Visualisation"
-  .. .. .. ..$ : chr "Venn diagram:"
-  .. .. .. ..$ : chr "Composite scatter plot:"
-  .. .. .. ..$ : chr "Volcano plot:"
-  .. .. .. ..$ : chr "Heatmap:"
-  .. .. .. ..$ : chr "ORF usage plot:"
-  .. .. .. ..$ : chr "Summary"
+  .. .. .. ..$ : chr "Simulate in-silico data"
+  .. .. .. ..$ : chr "Power computation"
+  .. .. .. ..$ : chr "Shiny app"
+  .. .. .. ..$ : chr "Precomputed dataset"
+  .. .. .. ..$ : chr "Personalized dataset"
+  .. .. .. ..$ : chr "Run the app"
+  .. .. .. ..$ : chr "Session information"
   .. .. .. ..$ : chr "References"
-  .. .. .. ..$ : chr "Prepare annotations"
-  .. .. .. ..$ : chr "Simulation and benchmarking"
-  .. .. .. ..$ : chr "Session info"
-  .. .. ..$ created : chr "2025-08-17 07:37:55"
-  .. .. ..$ modified: chr "2026-03-17 07:14:35"
-  .. .. ..$ commits : int 69
-  ..$ _score            : num 4.88
-  ..$ _indexed          : logi TRUE
-  ..$ _nocasepkg        : chr "dotseq"
-  ..$ _universes        :List of 3
+  .. .. ..$ created : chr "2021-09-24 23:25:15"
+  .. .. ..$ modified: chr "2021-10-18 20:34:24"
+  .. .. ..$ commits : int 4
+  ..$ _score                 : num 4.18
+  ..$ _indexed               : logi TRUE
+  ..$ _nocasepkg             : chr "cytofpower"
+  ..$ _universes             :List of 2
   .. ..$ : chr "bioc"
-  .. ..$ : chr "lcscs12345"
-  .. ..$ : chr "compgenom"
-  ..$ _previous         : chr "0.99.7"
-  ..$ _binaries         :List of 11
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:52:56.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "42446a868fe0efbfea456c4915bf129ae2372f50f4c13de2df80fe2166f23cab"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:53:33.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "a021a4d0df46bba321c242ff708bb9b77b929997077efeba51fb87b92e031e31"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:52:56.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "7a7105b585a8140448ea417cfd01e528c9efa5d7b0b8f1b77516af9e3680fd2e"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 11
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ os      : chr "linux"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:53:53.000Z"
-  .. .. ..$ distro  : chr "noble"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "b739373956577b26c1f64ef275befabd26c7bd910be02b7d78a2c8a962908e0e"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
+  .. ..$ : chr "ferreiraam"
+  ..$ _binaries              :List of 8
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:51:01.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "8da94e2b611a2b116da5bf5a4aba6e4809a9acba2c425b2f9123289adb08ebf1"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:53:00.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "d48a6f1c20495cf0b8244d042132c3e379592651d3013422872286a955768c42"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:12:10.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "a4aba9f7ad4347e9144de77d2aa4e5e55c919b0d075698e54d40505e8973392d"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
   .. ..$ :List of 10
   .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:50:56.000Z"
-  .. .. ..$ arch    : chr "aarch64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "b94ec37efe22bb829eeb92a0f3661f63571d83bae4aaa25d4f30d7299c11064c"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.5.3"
-  .. .. ..$ os      : chr "mac"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:55:16.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "a64a4e6668fc84640240651a8574d8eae7f302b175a094e477360d3b40d2c3cf"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
+  .. .. ..$ os      : chr "linux"
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:11:38.000Z"
+  .. .. ..$ distro  : chr "noble"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "b1a198f963fe88588e8c18dfc6f714358fc1d560226cd916a7bb053758a8f948"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
   .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.5.3"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:09:38.000Z"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "17dcf9b8147394476f789f1c50ed910d6d8c201ae3d408e4f1866a289cdabf6b"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "mac"
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:10:01.000Z"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "cdfbc8eed8f7c4b961828655ceca34739c6de2770fee753f1948d863add88523"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
+  .. ..$ :List of 8
   .. .. ..$ r       : chr "4.5.1"
   .. .. ..$ os      : chr "wasm"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:53:31.000Z"
-  .. .. ..$ arch    : chr "emscripten"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "7fc1dcc115f0f3e9edf43de9211a0434144d1e334501fc5e1c55618e1abb970a"
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T05:00:22.000Z"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "c8acc41af96efc832599ae52191f09dd8375193a95ed6adbb3fb3413ec06d3c9"
   .. .. ..$ status  : chr "success"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 10
-  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.7.0"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:51:39.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "4386cae50abc8a6a2c22ac84209fc16d0aef65cf1625335cf20cd402b1b9a114"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"
-  .. ..$ :List of 10
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:43:28.000Z"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "2a5ea5e6f2ba8764af5edf88bd512070a4ea0c82440aeeee4a88daa3a7ca3d60"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
+  .. ..$ :List of 9
   .. .. ..$ r       : chr "4.5.3"
   .. .. ..$ os      : chr "win"
-  .. .. ..$ version : chr "0.99.8"
-  .. .. ..$ date    : chr "2026-03-30T06:51:40.000Z"
-  .. .. ..$ arch    : chr "x86_64"
-  .. .. ..$ commit  : chr "266ada8d31265e459d49166ca35e5dee2f9b24ba"
-  .. .. ..$ fileid  : chr "e6fd054900bf26972646d7ed435d1a6b4b8305d479cdddde1159a3794512acab"
-  .. .. ..$ status  : chr "success"
-  .. .. ..$ check   : chr "OK"
-  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23731229642"</code></pre>
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:09:45.000Z"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "b1e439b120d9d8fe4da357de8d32e4dc03f25ed07b5da2d9d57c6b9c25899fe5"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"
+  .. ..$ :List of 9
+  .. .. ..$ r       : chr "4.6.0"
+  .. .. ..$ os      : chr "win"
+  .. .. ..$ version : chr "1.17.1"
+  .. .. ..$ date    : chr "2026-04-01T13:10:10.000Z"
+  .. .. ..$ commit  : chr "43535638005ba00159434fcde06d5c603b748544"
+  .. .. ..$ fileid  : chr "a4abd5d477fe45c17e376e92f5ee02dec276da5a69672f3a4cc03600de343f4a"
+  .. .. ..$ status  : chr "failure"
+  .. .. ..$ check   : chr "ERROR"
+  .. .. ..$ buildurl: chr "https://github.com/r-universe/bioc/actions/runs/23832533999"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>NULL</code></pre>
